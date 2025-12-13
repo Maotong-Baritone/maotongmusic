@@ -1,6 +1,58 @@
 // 最后更新于 2025-12-13
 const musicData = [
     {
+        "id": 12,
+        "title": "Cantata BWV 82",
+        "composer": "J.S. Bach/巴赫",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "宗教声乐作品总谱/BWV_82_.pdf",
+        "date": "2025-12-13"
+    },
+    {
+        "id": 11,
+        "title": "Ein deutsches Requiem/德意志安魂曲",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "宗教声乐作品总谱/pdf",
+        "date": "2025-12-13"
+    },
+    {
+        "id": 10,
+        "title": "Confrontation",
+        "composer": "Claude-Michel Schönberg",
+        "work": "Les Misérables/悲惨世界",
+        "language": "英语",
+        "category": "音乐剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "TB",
+        "tonality": "",
+        "filename": "音乐剧重唱/-_.pdf",
+        "date": "2025-12-13"
+    },
+    {
+        "id": 9,
+        "title": "Estuans interius",
+        "composer": "Carl Orff/奥尔夫",
+        "work": "Carmina Burana/布兰诗歌",
+        "language": "拉丁语",
+        "category": "清唱剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "清唱剧咏叹调/Estuans_interius-.pdf",
+        "date": "2025-12-13"
+    },
+    {
         "id": 8,
         "title": "Pezzo concertato",
         "composer": "Gioachino Rossini/罗西尼",
@@ -103,6 +155,26 @@ const musicData = [
     }
 ];
 const changeLog = [
+    {
+        "date": "2025-12-13 11:57",
+        "type": "add",
+        "msg": "添加了新乐谱：《Cantata BWV 82》 (J.S. Bach/巴赫)"
+    },
+    {
+        "date": "2025-12-13 11:56",
+        "type": "add",
+        "msg": "添加了新乐谱：《Ein deutsches Requiem/德意志安魂曲》 (Johannes Brahms/勃拉姆斯)"
+    },
+    {
+        "date": "2025-12-13 11:54",
+        "type": "add",
+        "msg": "添加了新乐谱：《Confrontation》 (Claude-Michel Schönberg)"
+    },
+    {
+        "date": "2025-12-13 11:51",
+        "type": "add",
+        "msg": "添加了新乐谱：《Estuans interius》 (Carl Orff/奥尔夫)"
+    },
     {
         "date": "2025-12-13 09:49",
         "type": "update",

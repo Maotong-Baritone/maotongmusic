@@ -257,9 +257,11 @@ CATEGORY_SELECT_HTML = """
             <option value="清唱剧咏叹调" {{ 'selected' if current == '清唱剧咏叹调' else '' }}>清唱剧咏叹调</option>
             <option value="康塔塔咏叹调" {{ 'selected' if current == '康塔塔咏叹调' else '' }}>康塔塔咏叹调</option>
             <option value="艺术歌曲" {{ 'selected' if current == '艺术歌曲' else '' }}>艺术歌曲</option>
+            <option value="音乐剧选段" {{ 'selected' if current == '音乐剧选段' else '' }}>音乐剧选段 (Musical)</option>
             <option value="独唱片段/选段" {{ 'selected' if current == '独唱片段/选段' else '' }}>独唱片段/选段 (Solo Excerpts)</option>
             <option value="----------" disabled>----------</option>
-            <option value="歌剧重唱" {{ 'selected' if current == '歌剧重唱' else '' }}>歌剧重唱 (Ensembles)</option>
+            <option value="歌剧重唱" {{ 'selected' if current == '歌剧重唱' else '' }}>歌剧重唱 (Opera Ensembles)</option>
+            <option value="音乐剧重唱" {{ 'selected' if current == '音乐剧重唱' else '' }}>音乐剧重唱 (Musical Ensembles)</option>
             <option value="清唱剧重唱" {{ 'selected' if current == '清唱剧重唱' else '' }}>清唱剧重唱</option>
             <option value="艺术歌曲重唱" {{ 'selected' if current == '艺术歌曲重唱' else '' }}>艺术歌曲重唱 (Duets/Trios)</option>
             <option value="----------" disabled>----------</option>
