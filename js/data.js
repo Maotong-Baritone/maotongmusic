@@ -1,6 +1,19 @@
 // 最后更新于 2025-12-13
 const musicData = [
     {
+        "id": 13,
+        "title": "Ein deutsches Requiem/德意志安魂曲",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "宗教声乐作品总谱/Brahms_Requiem.pdf",
+        "date": "2025-12-13"
+    },
+    {
         "id": 12,
         "title": "Cantata BWV 82",
         "composer": "J.S. Bach/巴赫",
@@ -11,19 +24,6 @@ const musicData = [
         "voice_types": "",
         "tonality": "",
         "filename": "宗教声乐作品总谱/BWV_82_.pdf",
-        "date": "2025-12-13"
-    },
-    {
-        "id": 11,
-        "title": "Ein deutsches Requiem/德意志安魂曲",
-        "composer": "Johannes Brahms/勃拉姆斯",
-        "work": "",
-        "language": "德语",
-        "category": "宗教声乐作品总谱",
-        "voice_count": "",
-        "voice_types": "",
-        "tonality": "",
-        "filename": "宗教声乐作品总谱/pdf",
         "date": "2025-12-13"
     },
     {
@@ -155,6 +155,41 @@ const musicData = [
     }
 ];
 const changeLog = [
+    {
+        "date": "2025-12-13 12:22",
+        "type": "update",
+        "msg": "更新了乐谱信息：《Ein deutsches Requiem/德意志安魂曲》"
+    },
+    {
+        "date": "2025-12-13 12:20",
+        "type": "add",
+        "msg": "添加了新乐谱：《德意志安魂曲》 (勃拉姆斯)"
+    },
+    {
+        "date": "2025-12-13 12:19",
+        "type": "delete",
+        "msg": "移除了乐谱：《德意志安魂曲》 (勃拉姆斯)"
+    },
+    {
+        "date": "2025-12-13 12:18",
+        "type": "add",
+        "msg": "添加了新乐谱：《德意志安魂曲》 (勃拉姆斯)"
+    },
+    {
+        "date": "2025-12-13 12:18",
+        "type": "delete",
+        "msg": "移除了乐谱：《德意志安魂曲》 (勃拉姆斯)"
+    },
+    {
+        "date": "2025-12-13 12:17",
+        "type": "add",
+        "msg": "添加了新乐谱：《德意志安魂曲》 (勃拉姆斯)"
+    },
+    {
+        "date": "2025-12-13 12:16",
+        "type": "delete",
+        "msg": "移除了乐谱：《Ein deutsches Requiem/德意志安魂曲》 (Johannes Brahms/勃拉姆斯)"
+    },
     {
         "date": "2025-12-13 11:57",
         "type": "add",
