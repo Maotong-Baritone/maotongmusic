@@ -1,6 +1,16 @@
 // 最后更新于 2025-12-12
 const musicData = [
     {
+        "id": 4,
+        "title": "When I Fly",
+        "composer": "Rachel Portman",
+        "work": "The Little Prince",
+        "language": "英语",
+        "category": "歌剧咏叹调",
+        "filename": "歌剧咏叹调/When_I_Fly-_The_Little_Prince.pdf",
+        "date": "2025-12-12"
+    },
+    {
         "id": 3,
         "title": "Herr Oluf",
         "composer": "Carl Loewe",
