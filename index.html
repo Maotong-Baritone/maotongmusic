@@ -13,7 +13,7 @@
         :root {
             --primary-color: #264653;
             --accent-color: #e76f51;
-            --bg-color: #fdfbf7; /* 暖米色背景，类似乐谱纸 */
+            --bg-color: #fdfbf7;
             --card-bg: #ffffff;
             --text-main: #2b2d42;
         }
@@ -25,12 +25,10 @@
             display: flex; flex-direction: column; min-height: 100vh; 
         }
 
-        /* 艺术字体类 */
         .font-serif { font-family: 'Playfair Display', serif; }
-        
         .container { flex: 1; }
         
-        /* 导航栏 - 毛玻璃效果 */
+        /* 导航栏 */
         .navbar {
             background: rgba(38, 70, 83, 0.9) !important;
             backdrop-filter: blur(10px);
@@ -47,140 +45,103 @@
             position: relative;
             overflow: hidden;
         }
-        
-        /* 背景装饰纹理 */
         .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
             background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 20%),
                               radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 20%);
             pointer-events: none;
         }
 
-        /* 搜索框 - 悬浮质感 */
+        /* 搜索框 */
         .search-container {
             background: rgba(255, 255, 255, 0.95);
-            padding: 8px;
-            border-radius: 50px;
+            padding: 8px; border-radius: 50px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.15);
             backdrop-filter: blur(5px);
         }
 
-        /* 分类卡片 - 极简艺术风格 */
+        /* 卡片设计 */
         .category-card {
-            border: none; 
-            border-radius: 16px;
-            transition: all 0.3s ease;
-            height: 100%; 
-            background: var(--card-bg); 
+            border: none; border-radius: 16px; transition: all 0.3s ease;
+            height: 100%; background: var(--card-bg); 
             box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 10px 20px rgba(0,0,0,0.03);
             overflow: hidden;
         }
-        .category-card:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
-        }
-        
+        .category-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
         .cat-header { 
-            padding: 1.2rem; 
-            font-family: 'Playfair Display', serif;
-            font-weight: 700; 
-            font-size: 1.1rem;
-            text-align: center; 
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid rgba(0,0,0,0.03);
+            padding: 1.2rem; font-family: 'Playfair Display', serif; font-weight: 700; 
+            font-size: 1.1rem; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.03);
         }
         
-        /* 列表项美化 */
         .list-group-item {
-            border: none;
-            border-bottom: 1px solid #f0f0f0;
-            padding: 0.8rem 1.2rem;
-            transition: background 0.2s;
-            font-size: 0.95rem;
+            border: none; border-bottom: 1px solid #f0f0f0; padding: 0.8rem 1.2rem;
+            transition: background 0.2s; font-size: 0.95rem;
         }
-        .list-group-item:last-child { border-bottom: none; }
         .list-group-item:hover { background-color: #f8f9fa; color: var(--primary-color); }
         .list-group-item.active-cat {
-            background-color: #eef4ed; 
-            color: #264653; 
-            font-weight: bold; 
-            border-left: 4px solid #2a9d8f;
+            background-color: #eef4ed; color: #264653; font-weight: bold; border-left: 4px solid #2a9d8f;
         }
 
         .content-section { margin-top: 3rem; }
         
-        /* 表格美化 */
         .table-custom thead th {
-            border-top: none;
-            border-bottom: 2px solid #e9ecef;
-            font-family: 'Playfair Display', serif;
-            color: #6c757d;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+            border-top: none; border-bottom: 2px solid #e9ecef;
+            font-family: 'Playfair Display', serif; color: #6c757d; font-weight: 700;
         }
         .hover-row { transition: background 0.2s; border-radius: 8px; }
         .hover-row:hover { background-color: #fffcf5; cursor: pointer; }
         
         footer { 
-            background-color: #264653; 
-            color: #a8b2d1; 
-            padding: 4rem 0; 
-            margin-top: 5rem; 
-            font-family: 'Playfair Display', serif;
+            background-color: #264653; color: #a8b2d1; padding: 4rem 0; margin-top: 5rem; font-family: 'Playfair Display', serif;
         }
 
-        /* === 🎨 标签颜色优化 (更柔和的色调) === */
-        .badge-custom { 
-            font-weight: 500; 
-            letter-spacing: 0.3px; 
-            border-radius: 4px;
-            padding: 0.4em 0.6em;
-        }
-        
-        /* 声乐 */
+        /* 标签颜色 */
+        .badge-custom { font-weight: 500; border-radius: 4px; padding: 0.4em 0.6em; }
         .bg-opera { background-color: #d00000; color: white; }
         .bg-oratorio { background-color: #7209b7; color: white; }
         .bg-cantata { background-color: #3f37c9; color: white; }
         .bg-artsong { background-color: #4895ef; color: white; }
         .bg-musical { background-color: #f72585; color: white; }
         .bg-solo { background-color: #f48c06; color: white; }
-        
-        /* 套曲与书 */
         .bg-cycle { background-color: #0096c7; color: white; }
         .bg-book { background-color: #9d6b53; color: white; }
-
-        /* 重唱合唱 */
         .bg-opera-ens { background-color: #6a040f; color: white; }
         .bg-musical-ens { background-color: #560bad; color: white; }
         .bg-sacred-ens { background-color: #3a0ca3; color: white; }
         .bg-artsong-ens { background-color: #bde0fe; color: #264653; }
         .bg-choral { background-color: #2a9d8f; color: white; }
-        
-        /* 器乐 */
         .bg-inst-solo { background-color: #e9c46a; color: #333; }
         .bg-chamber { background-color: #606c38; color: white; }
-        
-        /* 总谱 */
-        .bg-score-opera { background-color: #212529; color: #f8f9fa; border: 1px solid #495057; }
+        .bg-score-opera { background-color: #212529; color: #f8f9fa; }
         .bg-score-orch { background-color: #343a40; color: #f8f9fa; }
         .bg-score-con { background-color: #495057; color: white; }
         .bg-score-sac { background-color: #6c757d; color: white; }
-        
         .bg-other { background-color: #e9ecef; color: #495057; }
 
-        .btn-primary {
-            background-color: #2a9d8f; border-color: #2a9d8f;
+        .btn-primary { background-color: #2a9d8f; border-color: #2a9d8f; }
+        .btn-primary:hover { background-color: #21867a; border-color: #21867a; }
+        .btn-outline-primary { color: #2a9d8f; border-color: #2a9d8f; }
+        .btn-outline-primary:hover { background-color: #2a9d8f; border-color: #2a9d8f; color: white; }
+
+        /* === 📖 剧本阅读器样式 === */
+        #readerContent {
+            white-space: pre-wrap; /* 保持段落换行 */
+            line-height: 1.8;
         }
-        .btn-primary:hover {
-            background-color: #21867a; border-color: #21867a;
+        .reader-text-col {
+            padding: 2rem;
+            font-size: 1.05rem;
         }
-        .btn-outline-primary {
-            color: #2a9d8f; border-color: #2a9d8f;
+        .reader-original {
+            background-color: #fff;
+            border-right: 1px solid #eee;
+            color: #333;
+            font-family: 'Playfair Display', serif; /* 原文用衬线体更优雅 */
         }
-        .btn-outline-primary:hover {
-            background-color: #2a9d8f; border-color: #2a9d8f; color: white;
+        .reader-translation {
+            background-color: #fafafa;
+            color: #555;
+            font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
@@ -192,7 +153,7 @@
             <div class="d-flex align-items-center gap-3">
                 <button class="btn btn-sm btn-outline-light rounded-pill px-3" onclick="showLogModal()">🔔 动态</button>
                 <div class="text-end">
-                    <span class="badge bg-warning text-dark me-2">v0.5</span>
+                    <span class="badge bg-warning text-dark me-2">v0.7</span>
                 </div>
             </div>
         </div>
@@ -202,7 +163,6 @@
         <div class="container position-relative" style="z-index: 2;">
             <h1 class="font-serif display-4 fw-bold mb-3">Music Collection</h1>
             <p class="text-white-50 mb-5 font-serif fst-italic fs-5">"Sharing music, preserving art."</p>
-            
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                     <div class="input-group input-group-lg search-container">
@@ -210,11 +170,8 @@
                         <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="Search title, composer, opus..." style="box-shadow: none;">
                         <button class="btn btn-primary rounded-pill px-4 fw-bold" type="button" onclick="performSearch()">搜索</button>
                     </div>
-                    
                     <div class="mt-4 d-flex flex-column align-items-center gap-2">
-                        <button class="btn btn-link text-white text-decoration-none opacity-75 hover-opacity-100" onclick="resetFilters()">
-                            🌟 查看完整列表 (View All)
-                        </button>
+                        <button class="btn btn-link text-white text-decoration-none opacity-75 hover-opacity-100" onclick="resetFilters()">🌟 查看完整列表 (View All)</button>
                         <div class="d-flex gap-4 text-white-50 mt-1 small font-serif">
                             <span>📚 Total: <span id="statTotal" class="text-white fw-bold">0</span></span>
                             <span>👤 Composers: <span id="statComposer" class="text-white fw-bold">0</span></span>
@@ -233,12 +190,9 @@
 
     <div class="container position-relative mt-4" style="z-index: 10;">
         <div class="row g-4">
-            
             <div class="col-lg-4 col-md-6">
                 <div class="category-card">
-                    <div class="cat-header text-primary bg-light bg-opacity-50">
-                        🎤 声乐作品 <span class="small text-muted fw-normal d-block mt-1" style="font-size: 0.8rem; font-family: 'Lato'">Vocal Music</span>
-                    </div>
+                    <div class="cat-header text-primary bg-light bg-opacity-50">🎤 声乐作品 <span class="small text-muted fw-normal d-block mt-1" style="font-size:0.8rem">Vocal Music</span></div>
                     <div class="list-group list-group-flush category-group">
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧咏叹调', this)">歌剧咏叹调 <span class="badge bg-light text-dark count-badge" data-cat="歌剧咏叹调">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('清唱剧咏叹调', this)">清唱剧咏叹调 <span class="badge bg-light text-dark count-badge" data-cat="清唱剧咏叹调">0</span></button>
@@ -246,7 +200,6 @@
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('艺术歌曲', this)">艺术歌曲 <span class="badge bg-light text-dark count-badge" data-cat="艺术歌曲">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('音乐剧选段', this)">音乐剧选段 <span class="badge bg-light text-dark count-badge" data-cat="音乐剧选段">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('独唱片段/选段', this)">独唱片段/选段 <span class="badge bg-light text-dark count-badge" data-cat="独唱片段/选段">0</span></button>
-                        
                         <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">ENSEMBLES & CHORAL</div>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧重唱', this)">歌剧重唱 <span class="badge bg-light text-dark count-badge" data-cat="歌剧重唱">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('音乐剧重唱', this)">音乐剧重唱 <span class="badge bg-light text-dark count-badge" data-cat="音乐剧重唱">0</span></button>
@@ -256,18 +209,14 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="category-card">
-                    <div class="cat-header text-success bg-light bg-opacity-50">
-                        📚 曲集与器乐 <span class="small text-muted fw-normal d-block mt-1" style="font-size: 0.8rem; font-family: 'Lato'">Collections & Inst.</span>
-                    </div>
+                    <div class="cat-header text-success bg-light bg-opacity-50">📚 曲集与器乐 <span class="small text-muted fw-normal d-block mt-1" style="font-size:0.8rem">Collections & Inst.</span></div>
                     <div class="list-group list-group-flush category-group">
                         <div class="py-2 bg-light text-center small text-muted fw-bold border-bottom font-serif">COLLECTIONS</div>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('声乐套曲', this)">声乐套曲 <span class="badge bg-light text-dark count-badge" data-cat="声乐套曲">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('乐谱书/曲集', this)">乐谱书/曲集 <span class="badge bg-light text-dark count-badge" data-cat="乐谱书/曲集">0</span></button>
                     </div>
-                    
                     <div class="list-group list-group-flush category-group mt-3">
                          <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">INSTRUMENTAL</div>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('器乐独奏', this)">器乐独奏 <span class="badge bg-light text-dark count-badge" data-cat="器乐独奏">0</span></button>
@@ -275,20 +224,14 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="category-card">
-                    <div class="cat-header text-danger bg-light bg-opacity-50">
-                        🎼 总谱 <span class="small text-muted fw-normal d-block mt-1" style="font-size: 0.8rem; font-family: 'Lato'">Full Scores</span>
-                    </div>
+                    <div class="cat-header text-danger bg-light bg-opacity-50">🎼 总谱 <span class="small text-muted fw-normal d-block mt-1" style="font-size:0.8rem">Full Scores</span></div>
                     <div class="list-group list-group-flush category-group">
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧总谱', this)">歌剧总谱 <span class="badge bg-light text-dark count-badge" data-cat="歌剧总谱">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('管弦乐/交响曲', this)">管弦乐/交响曲 <span class="badge bg-light text-dark count-badge" data-cat="管弦乐/交响曲">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('协奏曲总谱', this)">协奏曲总谱 <span class="badge bg-light text-dark count-badge" data-cat="协奏曲总谱">0</span></button>
-                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('宗教声乐作品总谱', this)">
-                            <div>宗教声乐作品总谱</div>
-                            <span class="badge bg-light text-dark count-badge" data-cat="宗教声乐作品总谱">0</span>
-                        </button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('宗教声乐作品总谱', this)"><div>宗教声乐作品总谱</div><span class="badge bg-light text-dark count-badge" data-cat="宗教声乐作品总谱">0</span></button>
                     </div>
                      <div class="mt-3 list-group list-group-flush category-group">
                          <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">OTHERS</div>
@@ -300,36 +243,14 @@
     </div>
 
     <div class="container content-section" id="mainContentArea">
-        
         <div class="card shadow-sm border-0 mb-4" style="background: white; border-radius: 12px;">
             <div class="card-body py-3">
                 <div class="row align-items-center g-3">
-                    <div class="col-md-2">
-                        <input class="form-control form-control-sm border-0 bg-light" list="composerOptions" id="composerInput" placeholder="👤 作曲家 Composer" oninput="applyFilters()">
-                        <datalist id="composerOptions"></datalist>
-                    </div>
-                    <div class="col-md-2">
-                        <input class="form-control form-control-sm border-0 bg-light" list="voiceOptions" id="voiceInput" placeholder="🎻 编制/声部 Voice" oninput="applyFilters()">
-                        <datalist id="voiceOptions"></datalist>
-                    </div>
-                    <div class="col-md-2">
-                        <select id="languageSelect" class="form-select form-select-sm border-0 bg-light" onchange="applyFilters()">
-                            <option value="all">🌐 所有语言 Language</option>
-                        </select>
-                    </div>
-                    
-                    <div class="col-md-3 border-start ps-4">
-                        <select id="sortSelect" class="form-select form-select-sm fw-bold text-primary border-0" onchange="applyFilters()">
-                            <option value="date_desc">📅 上传时间 (Newest)</option>
-                            <option value="date_asc">📅 上传时间 (Oldest)</option>
-                            <option value="title_asc">🔤 按曲名 (A-Z)</option>
-                            <option value="composer_asc">👤 按作曲家 (A-Z)</option>
-                        </select>
-                    </div>
-
-                    <div class="col-md-auto ms-auto">
-                         <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" onclick="resetFilters()">🔄 重置 Reset</button>
-                    </div>
+                    <div class="col-md-2"><input class="form-control form-control-sm border-0 bg-light" list="composerOptions" id="composerInput" placeholder="👤 作曲家 Composer" oninput="applyFilters()"><datalist id="composerOptions"></datalist></div>
+                    <div class="col-md-2"><input class="form-control form-control-sm border-0 bg-light" list="voiceOptions" id="voiceInput" placeholder="🎻 编制/声部 Voice" oninput="applyFilters()"><datalist id="voiceOptions"></datalist></div>
+                    <div class="col-md-2"><select id="languageSelect" class="form-select form-select-sm border-0 bg-light" onchange="applyFilters()"><option value="all">🌐 所有语言 Language</option></select></div>
+                    <div class="col-md-3 border-start ps-4"><select id="sortSelect" class="form-select form-select-sm fw-bold text-primary border-0" onchange="applyFilters()"><option value="date_desc">📅 上传时间 (Newest)</option><option value="date_asc">📅 上传时间 (Oldest)</option><option value="title_asc">🔤 按曲名 (A-Z)</option><option value="composer_asc">👤 按作曲家 (A-Z)</option></select></div>
+                    <div class="col-md-auto ms-auto"><button class="btn btn-sm btn-outline-secondary rounded-pill px-3" onclick="resetFilters()">🔄 重置 Reset</button></div>
                 </div>
             </div>
         </div>
@@ -340,55 +261,28 @@
                     <h5 class="mb-4 font-serif fw-bold" style="color: #264653; border-left: 4px solid #e76f51; padding-left: 10px;">🆕 Recent Additions</h5>
                     <div class="row row-cols-1 row-cols-md-3 g-4" id="recentList"></div>
                 </div>
-
                 <div id="listSection">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h4 id="listTitle" class="fw-bold font-serif display-6" style="font-size: 1.5rem;">📚 Catalogue</h4>
                         <span class="badge rounded-pill" style="background-color: #e9c46a; color: #333;" id="filteredCount">0 Scores</span>
                     </div>
-                    
                     <div class="card shadow-sm border-0" style="border-radius: 12px; overflow: hidden;">
                         <div class="table-responsive">
                             <table class="table table-hover align-middle mb-0 table-custom">
-                                <thead class="bg-light">
-                                    <tr>
-                                        <th width="40%" class="ps-4 py-3">Title / Work</th>
-                                        <th width="20%">Composer</th>
-                                        <th width="10%">Lang</th>
-                                        <th width="15%">Category</th>
-                                        <th class="text-end pe-4">Action</th>
-                                    </tr>
-                                </thead>
+                                <thead class="bg-light"><tr><th width="40%" class="ps-4 py-3">Title / Work</th><th width="20%">Composer</th><th width="10%">Lang</th><th width="15%">Category</th><th class="text-end pe-4">Action</th></tr></thead>
                                 <tbody id="mainTableBody" class="bg-white"></tbody>
                             </table>
                         </div>
                     </div>
-                    
-                    <nav aria-label="Page navigation" class="mt-5" id="paginationNav">
-                        <ul class="pagination justify-content-center" id="paginationUl"></ul>
-                    </nav>
-                    
-                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;">
-                        <div class="fs-1 mb-3">🧐</div>
-                        <h4 class="font-serif">No scores found</h4>
-                        <p>Try adjusting your filters.</p>
-                    </div>
+                    <nav aria-label="Page navigation" class="mt-5" id="paginationNav"><ul class="pagination justify-content-center" id="paginationUl"></ul></nav>
+                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">No scores found</h4><p>Try adjusting your filters.</p></div>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div class="container text-center">
-            <h4 class="text-white mb-3 font-serif">Maotong's Library</h4>
-            <p class="mb-4 text-white-50 small">Designed for classical vocalists & musicians.</p>
-            <div class="d-inline-block border-top border-secondary pt-4 mt-2">
-                <p class="small text-muted mb-0">
-                    &copy; 2023-2025 Yu Maotong. All Rights Reserved.<br>
-                    <span style="font-size: 0.8em; opacity: 0.5;">For educational purposes only.</span>
-                </p>
-            </div>
-        </div>
+        <div class="container text-center"><h4 class="text-white mb-3 font-serif">Maotong's Library</h4><p class="mb-4 text-white-50 small">Designed for classical vocalists & musicians.</p><div class="d-inline-block border-top border-secondary pt-4 mt-2"><p class="small text-muted mb-0">&copy; 2023-2025 Yu Maotong. All Rights Reserved.<br><span style="font-size: 0.8em; opacity: 0.5;">For educational purposes only.</span></p></div></div>
     </footer>
 
     <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
@@ -404,7 +298,6 @@
                             <span class="badge bg-primary mb-3" id="mCategory" style="background-color: #264653 !important;"></span>
                             <h3 id="mTitle" class="mb-2 fw-bold text-dark font-serif"></h3>
                             <p class="mb-4 text-muted fst-italic"><span id="mWork" class="fs-6">-</span></p>
-                            
                             <div class="card mb-4 border-0 bg-light rounded-3 p-3">
                                 <ul class="list-unstyled mb-0 small gap-2 d-flex flex-column">
                                     <li>👤 <strong>Composer:</strong> <span id="mComposer"></span></li>
@@ -414,16 +307,44 @@
                                     <li>📅 <strong>Added:</strong> <span id="mDate"></span></li>
                                 </ul>
                             </div>
+                            
+                            <button id="btnReadLyrics" class="btn btn-outline-dark w-100 py-2 mb-3 shadow-sm rounded-pill fw-bold" style="display:none;" onclick="openLyricsReader()">
+                                📖 Read Libretto / 剧本
+                            </button>
+
                             <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" download>⬇️ Download PDF</a>
-                            <div class="mt-4 pt-3 border-top text-center text-muted small">
-                                Please delete within 24 hours after study.
-                            </div>
+                            <div class="mt-4 pt-3 border-top text-center text-muted small">Please delete within 24 hours after study.</div>
                         </div>
                         <div class="col-md-9 bg-secondary position-relative">
                             <iframe id="mPreview" src="" width="100%" height="100%" style="border:none;"></iframe>
-                            <div id="noPreview" class="d-flex flex-column align-items-center justify-content-center h-100 text-white" style="display:none;">
-                                <div class="fs-1 mb-3">📄</div>
-                                <p class="fs-5">No Preview Available</p>
+                            <div id="noPreview" class="d-flex flex-column align-items-center justify-content-center h-100 text-white" style="display:none;"><div class="fs-1 mb-3">📄</div><p class="fs-5">No Preview Available</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="readerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header border-bottom shadow-sm">
+                    <div class="d-flex align-items-center">
+                         <h5 class="modal-title fw-bold font-serif me-3" id="readerTitle">Libretto Reader</h5>
+                         <span class="badge bg-secondary" id="readerComposer"></span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0" style="background-color: #fcfcfc;">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-md-6 h-100 overflow-auto reader-text-col reader-original">
+                                <h6 class="text-muted text-uppercase small fw-bold mb-4 border-bottom pb-2">Original Text</h6>
+                                <div id="readerOriginalText">Loading...</div>
+                            </div>
+                            <div class="col-md-6 h-100 overflow-auto reader-text-col reader-translation">
+                                <h6 class="text-muted text-uppercase small fw-bold mb-4 border-bottom pb-2">Chinese Translation</h6>
+                                <div id="readerTransText">Loading...</div>
                             </div>
                         </div>
                     </div>
@@ -432,481 +353,158 @@
         </div>
     </div>
 
-    <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content" style="border-radius: 12px;">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold font-serif">Recent Updates</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="logBody"></div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">Recent Updates</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-<script>
-        document.write('<script src="js/data.js?v=' + new Date().getTime() + '"><\/script>');
-    </script>
-    
+    <script>document.write('<script src="js/data.js?v=' + new Date().getTime() + '"><\/script>');</script>
     <script>
         let filters = { category: 'all', composer: '', language: 'all', voice: '', search: '' };
         let sortType = 'date_desc';
         let currentPage = 1;
         const itemsPerPage = 15;
+        let currentLyricsId = null; // 记录当前正在查看的歌词ID
 
-        // === 1. 作曲家别名/搜索关键词字典 (在此处添加更多) ===
-        // 格式: "显示的名字": "隐藏的搜索关键词 (中文 英文全名 无重音拼写等)"
+        // 别名与颜色配置
         const composerAliases = {
-            "Mozart": "莫扎特 Wolfgang Amadeus 沃尔夫冈 阿玛迪乌斯",
-            "Dvořák": "Dvorak 德沃夏克 Antonin 安东宁",
-            "Bach": "巴赫 J.S.Bach Johann Sebastian",
-            "Beethoven": "贝多芬 Ludwig van 路德维希",
-            "Schubert": "舒伯特 Franz 弗朗茨",
-            "Schumann": "舒曼 Robert 罗伯特",
-            "Tchaikovsky": "柴可夫斯基 Pyotr Ilyich",
-            "Rachmaninoff": "拉赫玛尼诺夫 Rachmaninov Sergey",
-            "Fauré": "Faure 福雷 Gabriel",
-            "Debussy": "德彪西 Claude",
-            "Verdi": "威尔第 Giuseppe",
-            "Puccini": "普契尼 Giacomo",
-            "Wagner": "瓦格纳 Richard",
-            "Mahler": "马勒 Gustav",
-            "Strauss": "施特劳斯 Richard Johann"
+            "Mozart": "莫扎特 Wolfgang Amadeus 沃尔夫冈 阿玛迪乌斯", "Dvořák": "Dvorak 德沃夏克 Antonin 安东宁",
+            "Bach": "巴赫 J.S.Bach Johann Sebastian", "Beethoven": "贝多芬 Ludwig van 路德维希",
+            "Schubert": "舒伯特 Franz 弗朗茨", "Schumann": "舒曼 Robert 罗伯特",
+            "Tchaikovsky": "柴可夫斯基 Pyotr Ilyich", "Rachmaninoff": "拉赫玛尼诺夫 Rachmaninov Sergey",
+            "Fauré": "Faure 佛瑞 Gabriel", "Debussy": "德彪西 Claude", "Verdi": "威尔第 Giuseppe",
+            "Puccini": "普契尼 Giacomo", "Wagner": "瓦格纳 Richard", "Mahler": "马勒 Gustav", "Strauss": "施特劳斯 Richard Johann"
         };
-
-        // 颜色映射字典
-        const categoryMap = {
-            '歌剧咏叹调': 'bg-opera',
-            '清唱剧咏叹调': 'bg-oratorio',
-            '康塔塔咏叹调': 'bg-cantata',
-            '艺术歌曲': 'bg-artsong',
-            '音乐剧选段': 'bg-musical',
-            '独唱片段': 'bg-solo',
-            '歌剧重唱': 'bg-opera-ens',
-            '音乐剧重唱': 'bg-musical-ens',
-            '清唱剧重唱': 'bg-sacred-ens',
-            '艺术歌曲重唱': 'bg-artsong-ens',
-            '合唱': 'bg-choral',
-            '声乐套曲': 'bg-cycle',
-            '乐谱书': 'bg-book',
-            '曲集': 'bg-book',
-            '器乐': 'bg-inst-solo',
-            '室内乐': 'bg-chamber',
-            '歌剧总谱': 'bg-score-opera',
-            '管弦乐': 'bg-score-orch',
-            '交响曲': 'bg-score-orch',
-            '协奏曲': 'bg-score-con',
-            '宗教声乐作品总谱': 'bg-score-sac'
-        };
+        const categoryMap = { '歌剧咏叹调': 'bg-opera', '清唱剧咏叹调': 'bg-oratorio', '康塔塔咏叹调': 'bg-cantata', '艺术歌曲': 'bg-artsong', '音乐剧选段': 'bg-musical', '独唱片段': 'bg-solo', '歌剧重唱': 'bg-opera-ens', '音乐剧重唱': 'bg-musical-ens', '清唱剧重唱': 'bg-sacred-ens', '艺术歌曲重唱': 'bg-artsong-ens', '合唱': 'bg-choral', '声乐套曲': 'bg-cycle', '乐谱书': 'bg-book', '曲集': 'bg-book', '器乐': 'bg-inst-solo', '室内乐': 'bg-chamber', '歌剧总谱': 'bg-score-opera', '管弦乐': 'bg-score-orch', '交响曲': 'bg-score-orch', '协奏曲': 'bg-score-con', '宗教声乐作品总谱': 'bg-score-sac' };
 
         window.addEventListener('load', () => {
-            if (typeof musicData === 'undefined') {
-                document.getElementById('recentList').innerHTML = '<div class="alert alert-light w-100 text-center font-serif">Loading library data...</div>';
-                return;
-            }
-            initStatsAndDropdowns();
-            renderRecent();
-            applyFilters();
-            
-            document.getElementById('searchInput').addEventListener('keypress', (e) => {
-                if(e.key === 'Enter') performSearch();
-            });
+            if (typeof musicData === 'undefined') { document.getElementById('recentList').innerHTML = '<div class="alert alert-light w-100 text-center font-serif">Loading library data...</div>'; return; }
+            initStatsAndDropdowns(); renderRecent(); applyFilters();
+            document.getElementById('searchInput').addEventListener('keypress', (e) => { if(e.key === 'Enter') performSearch(); });
         });
 
-        // === 2. 强力去重音/标准化函数 ===
-        // 将 Dvořák -> dvorak, 莫扎特 -> 莫扎特 (中文不变), Search -> search
-        function normalizeStr(str) {
-            if (!str) return "";
-            return str.normalize("NFD") // 分解重音符号
-                      .replace(/[\u0300-\u036f]/g, "") // 移除重音符号
-                      .toLowerCase(); // 转小写
-        }
-
-        function performSearch() {
-            // 不需要在这里处理 value，直接在 applyFilters 里处理
-            const val = document.getElementById('searchInput').value; 
-            filters.search = val; // 这里保存原始输入即可
-            if(val.length > 0) {
-                 document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
-            }
-            applyFilters();
-        }
+        function normalizeStr(str) { if (!str) return ""; return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+        function performSearch() { const val = document.getElementById('searchInput').value; filters.search = val; if(val.length > 0) { document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); } applyFilters(); }
 
         function initStatsAndDropdowns() {
             document.getElementById('statTotal').innerText = musicData.length;
             const composers = [...new Set(musicData.map(m => m.composer).filter(c => c))].sort((a, b) => a.localeCompare(b));
             const languages = [...new Set(musicData.map(m => m.language).filter(l => l))].sort();
             const voiceTypes = [...new Set(musicData.map(m => m.voice_types).filter(v => v))].sort();
-
             document.getElementById('statComposer').innerText = composers.length;
-            
-            const composerDataList = document.getElementById('composerOptions');
-            composers.forEach(c => { composerDataList.innerHTML += `<option value="${c}">`; });
-            const langSelect = document.getElementById('languageSelect');
-            languages.forEach(l => { langSelect.innerHTML += `<option value="${l}">${l}</option>`; });
-            const voiceDataList = document.getElementById('voiceOptions');
-            voiceTypes.forEach(v => { voiceDataList.innerHTML += `<option value="${v}">`; });
-
-            document.querySelectorAll('.count-badge').forEach(badge => {
-                const cat = badge.getAttribute('data-cat');
-                const count = musicData.filter(m => m.category === cat).length;
-                badge.innerText = count;
-                if(count === 0) badge.classList.add('opacity-25');
-            });
+            const composerDataList = document.getElementById('composerOptions'); composers.forEach(c => { composerDataList.innerHTML += `<option value="${c}">`; });
+            const langSelect = document.getElementById('languageSelect'); languages.forEach(l => { langSelect.innerHTML += `<option value="${l}">${l}</option>`; });
+            const voiceDataList = document.getElementById('voiceOptions'); voiceTypes.forEach(v => { voiceDataList.innerHTML += `<option value="${v}">`; });
+            document.querySelectorAll('.count-badge').forEach(badge => { const cat = badge.getAttribute('data-cat'); const count = musicData.filter(m => m.category === cat).length; badge.innerText = count; if(count === 0) badge.classList.add('opacity-25'); });
         }
 
         function applyFilters() {
-            filters.composer = document.getElementById('composerInput').value;
-            filters.language = document.getElementById('languageSelect').value;
-            filters.voice = document.getElementById('voiceInput').value;
-            sortType = document.getElementById('sortSelect').value;
-
-            // 获取标准化的搜索词
-            const searchBase = normalizeStr(filters.search);
-            const searchComposer = normalizeStr(filters.composer);
-            const searchVoice = normalizeStr(filters.voice);
+            filters.composer = document.getElementById('composerInput').value; filters.language = document.getElementById('languageSelect').value;
+            filters.voice = document.getElementById('voiceInput').value; sortType = document.getElementById('sortSelect').value;
+            const searchBase = normalizeStr(filters.search); const searchComposer = normalizeStr(filters.composer); const searchVoice = normalizeStr(filters.voice);
 
             let result = musicData.filter(item => {
-                // 1. 基础字段标准化
-                const itemTitle = normalizeStr(item.title);
-                const itemComposer = normalizeStr(item.composer);
-                const itemWork = normalizeStr(item.work);
-                const itemVoice = normalizeStr(item.voice_types);
-                
-                // 2. 智能别名处理 (Smart Aliasing)
-                // 如果该曲目的作曲家在我们的字典里，把别名也加进搜索范围
-                let composerKeywords = itemComposer;
-                if (composerAliases[item.composer]) {
-                    composerKeywords += " " + normalizeStr(composerAliases[item.composer]);
-                }
-
-                // 3. 构建完整的“搜索池” (包含曲名、作曲家、别名、作品号)
+                const itemTitle = normalizeStr(item.title); const itemComposer = normalizeStr(item.composer); const itemWork = normalizeStr(item.work); const itemVoice = normalizeStr(item.voice_types);
+                let composerKeywords = itemComposer; if (composerAliases[item.composer]) { composerKeywords += " " + normalizeStr(composerAliases[item.composer]); }
                 const fullSearchableText = `${itemTitle} ${composerKeywords} ${itemWork}`;
-
-                // --- 匹配逻辑 ---
-                const matchCat = filters.category === 'all' || item.category === filters.category;
-                const matchLang = filters.language === 'all' || item.language === filters.language;
-                
-                // 作曲家筛选 (支持模糊匹配别名)
-                const matchComp = filters.composer === '' || composerKeywords.includes(searchComposer);
-                
-                // 声部筛选
-                const matchVoice = filters.voice === '' || (item.voice_types && itemVoice.includes(searchVoice));
-                
-                // 全局搜索框 (核心逻辑)
-                const matchSearch = filters.search === '' || fullSearchableText.includes(searchBase);
-
-                return matchCat && matchComp && matchLang && matchVoice && matchSearch;
+                return (filters.category === 'all' || item.category === filters.category) && (filters.language === 'all' || item.language === filters.language) && (filters.composer === '' || composerKeywords.includes(searchComposer)) && (filters.voice === '' || (item.voice_types && itemVoice.includes(searchVoice))) && (filters.search === '' || fullSearchableText.includes(searchBase));
             });
 
             result.sort((a, b) => {
-                if (sortType === 'date_desc') return b.id - a.id;
-                if (sortType === 'date_asc') return a.id - b.id;
-                if (sortType === 'title_asc') return a.title.localeCompare(b.title);
-                if (sortType === 'composer_asc') return a.composer.localeCompare(b.composer);
-                return 0;
+                if (sortType === 'date_desc') return b.id - a.id; if (sortType === 'date_asc') return a.id - b.id;
+                if (sortType === 'title_asc') return a.title.localeCompare(b.title); if (sortType === 'composer_asc') return a.composer.localeCompare(b.composer); return 0;
             });
-
             renderPaginationTable(result);
-            const isFiltering = filters.search || filters.composer || filters.language !== 'all' || filters.voice || filters.category !== 'all';
-            document.getElementById('recentSection').style.display = isFiltering ? 'none' : 'block';
+            document.getElementById('recentSection').style.display = (filters.search || filters.composer || filters.language !== 'all' || filters.voice || filters.category !== 'all') ? 'none' : 'block';
         }
 
-        function getCategoryClass(categoryName) {
-            for (const key in categoryMap) {
-                if (categoryName.includes(key)) {
-                    return categoryMap[key];
-                }
-            }
-            return 'bg-other';
-        }
+        function getCategoryClass(cat) { for (const key in categoryMap) { if (cat.includes(key)) return categoryMap[key]; } return 'bg-other'; }
 
         function renderPaginationTable(data) {
-            const totalItems = data.length;
-            const totalPages = Math.ceil(totalItems / itemsPerPage);
-            if (currentPage > totalPages) currentPage = totalPages || 1;
-            if (currentPage < 1) currentPage = 1;
-
-            const startIndex = (currentPage - 1) * itemsPerPage;
-            const endIndex = startIndex + itemsPerPage;
-            const pageData = data.slice(startIndex, endIndex);
-
-            const tbody = document.getElementById('mainTableBody');
-            const noResult = document.getElementById('noResult');
-            document.getElementById('filteredCount').innerText = totalItems + ' Scores';
-
-            if (totalItems === 0) {
-                tbody.innerHTML = '';
-                noResult.style.display = 'block';
-                document.getElementById('paginationNav').style.display = 'none';
-                return;
-            }
-            noResult.style.display = 'none';
-            document.getElementById('paginationNav').style.display = 'block';
+            const total = data.length; const pages = Math.ceil(total / itemsPerPage);
+            if (currentPage > pages) currentPage = pages || 1; if (currentPage < 1) currentPage = 1;
+            const start = (currentPage - 1) * itemsPerPage; const pageData = data.slice(start, start + itemsPerPage);
+            const tbody = document.getElementById('mainTableBody'); document.getElementById('filteredCount').innerText = total + ' Scores';
+            if (total === 0) { tbody.innerHTML = ''; document.getElementById('noResult').style.display = 'block'; document.getElementById('paginationNav').style.display = 'none'; return; }
+            document.getElementById('noResult').style.display = 'none'; document.getElementById('paginationNav').style.display = 'block';
 
             let html = '';
             pageData.forEach(item => {
                 let badgeClass = getCategoryClass(item.category);
                 let tonalityBadge = item.tonality ? `<span class="badge bg-light text-dark border ms-2" style="font-size:0.7rem; opacity: 0.7;">${item.tonality}</span>` : '';
                 let voiceBadge = item.voice_types ? `<span class="badge bg-secondary ms-1" style="font-size:0.7rem; opacity: 0.8;">${item.voice_types}</span>` : '';
+                // 如果有歌词，显示一个小图标
+                let lyricIcon = item.has_lyrics ? `<span class="badge bg-info text-dark ms-1" style="font-size:0.6rem" title="Contains Libretto">📖</span>` : '';
 
-                html += `
-                <tr onclick="openDetail(${item.id})" class="hover-row">
-                    <td class="ps-4">
-                        <div class="fw-bold text-dark" style="font-family: 'Lato', sans-serif;">
-                            ${item.title} ${tonalityBadge} ${voiceBadge}
-                        </div>
-                        ${item.work ? `<small class="text-muted fst-italic">from ${item.work}</small>` : ''}
-                    </td>
-                    <td><span class="fw-medium text-secondary">${item.composer}</span></td>
-                    <td>${item.language ? `<span class="text-muted small">${item.language}</span>` : '-'}</td>
-                    <td><span class="badge badge-custom ${badgeClass}">${item.category}</span></td>
-                    <td class="text-end pe-4">
-                        <button class="btn btn-sm btn-outline-primary rounded-pill px-3 shadow-sm">View</button>
-                    </td>
-                </tr>`;
+                html += `<tr onclick="openDetail(${item.id})" class="hover-row"><td class="ps-4"><div class="fw-bold text-dark" style="font-family: 'Lato', sans-serif;">${item.title} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>${item.work ? `<small class="text-muted fst-italic">from ${item.work}</small>` : ''}</td><td><span class="fw-medium text-secondary">${item.composer}</span></td><td>${item.language ? `<span class="text-muted small">${item.language}</span>` : '-'}</td><td><span class="badge badge-custom ${badgeClass}">${item.category}</span></td><td class="text-end pe-4"><button class="btn btn-sm btn-outline-primary rounded-pill px-3 shadow-sm">View</button></td></tr>`;
             });
-            tbody.innerHTML = html;
-            renderPaginationControls(totalPages);
+            tbody.innerHTML = html; renderPaginationControls(pages);
         }
 
-        function renderPaginationControls(totalPages) {
-            const ul = document.getElementById('paginationUl');
-            let html = '';
-            html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-                        <a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${currentPage - 1}); return false;">Prev</a>
-                     </li>`;
-            html += `<li class="page-item disabled"><span class="page-link border-0 bg-transparent fw-bold text-dark">${currentPage} / ${totalPages}</span></li>`;
-            html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
-                        <a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${currentPage + 1}); return false;">Next</a>
-                     </li>`;
-            ul.innerHTML = html;
+        function renderPaginationControls(pages) {
+            const ul = document.getElementById('paginationUl'); let html = `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}"><a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${currentPage - 1}); return false;">Prev</a></li><li class="page-item disabled"><span class="page-link border-0 bg-transparent fw-bold text-dark">${currentPage} / ${pages}</span></li><li class="page-item ${currentPage === pages ? 'disabled' : ''}"><a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${currentPage + 1}); return false;">Next</a></li>`; ul.innerHTML = html;
         }
-
-        window.changePage = function(page) {
-            currentPage = page;
-            const data = getFilteredAndSortedData(); 
-            renderPaginationTable(data);
-            document.getElementById('listSection').scrollIntoView({ behavior: 'smooth' });
-        }
-        
-        function getFilteredAndSortedData() {
-            // 这个函数是 changePage 专用的，逻辑与 applyFilters 保持一致即可
-            // 为了避免代码重复，applyFilters 其实已经更新了全局状态，这里再次调用 applyFilters 的筛选逻辑获取数据
-             const searchBase = normalizeStr(filters.search);
-             const searchComposer = normalizeStr(filters.composer);
-             const searchVoice = normalizeStr(filters.voice);
-
-             let result = musicData.filter(item => {
-                const itemTitle = normalizeStr(item.title);
-                const itemComposer = normalizeStr(item.composer);
-                const itemWork = normalizeStr(item.work);
-                const itemVoice = normalizeStr(item.voice_types);
-                
-                let composerKeywords = itemComposer;
-                if (composerAliases[item.composer]) {
-                    composerKeywords += " " + normalizeStr(composerAliases[item.composer]);
-                }
-                const fullSearchableText = `${itemTitle} ${composerKeywords} ${itemWork}`;
-
-                const matchCat = filters.category === 'all' || item.category === filters.category;
-                const matchLang = filters.language === 'all' || item.language === filters.language;
-                const matchComp = filters.composer === '' || composerKeywords.includes(searchComposer);
-                const matchVoice = filters.voice === '' || (item.voice_types && itemVoice.includes(searchVoice));
-                const matchSearch = filters.search === '' || fullSearchableText.includes(searchBase);
-
-                return matchCat && matchComp && matchLang && matchVoice && matchSearch;
-            });
-            result.sort((a, b) => {
-                if (sortType === 'date_desc') return b.id - a.id;
-                if (sortType === 'date_asc') return a.id - b.id;
-                if (sortType === 'title_asc') return a.title.localeCompare(b.title);
-                if (sortType === 'composer_asc') return a.composer.localeCompare(b.composer);
-                return 0;
-            });
-            return result;
-        }
-
-        // ... 后面的 renderRecent, filterCategory, resetFilters, openDetail, showLogModal 保持不变 ...
+        window.changePage = (p) => { currentPage = p; applyFilters(); document.getElementById('listSection').scrollIntoView({ behavior: 'smooth' }); };
         function renderRecent() {
-            const list = document.getElementById('recentList');
-            const recents = musicData.slice(0, 3);
-            let html = '';
-            recents.forEach(item => {
-                html += `
-                <div class="col">
-                    <div class="card h-100 border-0 shadow-sm cursor-pointer hover-card" style="border-radius: 12px; overflow:hidden;" onclick="openDetail(${item.id})">
-                        <div class="card-body bg-white">
-                            <span class="badge bg-light text-muted mb-2 border">${item.category}</span>
-                            <h6 class="card-title text-truncate fw-bold text-dark font-serif" style="font-size: 1.1rem;">${item.title}</h6>
-                            <p class="card-text small text-secondary mb-0">${item.composer}</p>
-                        </div>
-                        <div class="card-footer bg-white border-0 pt-0">
-                             <small class="text-muted" style="font-size: 0.75rem">Added: ${item.date}</small>
-                        </div>
-                    </div>
-                </div>`;
-            });
-            list.innerHTML = html;
+            const list = document.getElementById('recentList'); const recents = musicData.slice(0, 3); let html = '';
+            recents.forEach(item => { html += `<div class="col"><div class="card h-100 border-0 shadow-sm cursor-pointer hover-card" style="border-radius: 12px; overflow:hidden;" onclick="openDetail(${item.id})"><div class="card-body bg-white"><span class="badge bg-light text-muted mb-2 border">${item.category}</span><h6 class="card-title text-truncate fw-bold text-dark font-serif" style="font-size: 1.1rem;">${item.title}</h6><p class="card-text small text-secondary mb-0">${item.composer}</p></div><div class="card-footer bg-white border-0 pt-0"><small class="text-muted" style="font-size: 0.75rem">Added: ${item.date}</small></div></div></div>`; }); list.innerHTML = html;
         }
+        window.filterCategory = (cat, btn) => { currentPage = 1; filters.category = cat; document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat')); if (cat !== 'all') btn.classList.add('active-cat'); document.getElementById('listTitle').innerText = cat === 'all' ? '📚 Catalogue' : `📂 ${cat}`; document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); applyFilters(); };
+        window.resetFilters = () => { currentPage = 1; filters = { category: 'all', composer: '', language: 'all', voice: '', search: '' }; document.getElementById('searchInput').value = ''; document.getElementById('composerInput').value = ''; document.getElementById('languageSelect').value = 'all'; document.getElementById('voiceInput').value = ''; document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat')); document.getElementById('listTitle').innerText = '📚 Catalogue'; document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); applyFilters(); };
+        window.showLogModal = () => { const body = document.getElementById('logBody'); if (typeof changeLog === 'undefined' || changeLog.length === 0) { body.innerHTML = '<p class="text-muted text-center my-4">暂无动态记录</p>'; } else { let html = '<ul class="list-group list-group-flush">'; changeLog.forEach(log => { let badgeClass = log.type === 'add' ? 'bg-success' : (log.type === 'update' ? 'bg-primary' : 'bg-danger'); let typeText = log.type === 'add' ? 'Added' : (log.type === 'update' ? 'Edited' : 'Deleted'); html += `<li class="list-group-item d-flex justify-content-between align-items-start px-0"><div class="ms-2 me-auto"><div class="fw-bold small text-muted mb-1">${log.date}</div>${log.msg}</div><span class="badge ${badgeClass} rounded-pill">${typeText}</span></li>`; }); html += '</ul>'; body.innerHTML = html; } new bootstrap.Modal(document.getElementById('logModal')).show(); };
 
-        window.filterCategory = function(cat, btn) {
-            currentPage = 1;
-            filters.category = cat;
-            document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat'));
-            if (cat !== 'all') btn.classList.add('active-cat');
-            document.getElementById('listTitle').innerText = cat === 'all' ? '📚 Catalogue' : `📂 ${cat}`;
-            document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
-            applyFilters();
-        }
-
-        window.resetFilters = function() {
-            currentPage = 1;
-            filters = { category: 'all', composer: '', language: 'all', voice: '', search: '' };
-            document.getElementById('searchInput').value = '';
-            document.getElementById('composerInput').value = '';
-            document.getElementById('languageSelect').value = 'all';
-            document.getElementById('voiceInput').value = '';
-            document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat'));
-            document.getElementById('listTitle').innerText = '📚 Catalogue';
-            document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
-            applyFilters();
-        }
-
+        // === 详情页与歌词逻辑 ===
         window.openDetail = function(id) {
-            const item = musicData.find(m => m.id === id);
-            if (!item) return;
-            document.getElementById('mTitle').innerText = item.title;
-            document.getElementById('mWork').innerText = item.work || '-';
-            document.getElementById('mComposer').innerText = item.composer;
-            document.getElementById('mCategory').innerText = item.category;
-            document.getElementById('mLanguage').innerText = item.language || '-';
-            document.getElementById('mDate').innerText = item.date || '-';
-            document.getElementById('mTonality').innerText = item.tonality || '-';
+            const item = musicData.find(m => m.id === id); if (!item) return;
+            document.getElementById('mTitle').innerText = item.title; document.getElementById('mWork').innerText = item.work || '-'; document.getElementById('mComposer').innerText = item.composer; document.getElementById('mCategory').innerText = item.category; document.getElementById('mLanguage').innerText = item.language || '-'; document.getElementById('mDate').innerText = item.date || '-'; document.getElementById('mTonality').innerText = item.tonality || '-';
+            let voiceInfo = '-'; if(item.voice_count || item.voice_types) voiceInfo = `${item.voice_count || ''} ${item.voice_types ? '('+item.voice_types+')' : ''}`; document.getElementById('mVoice').innerText = voiceInfo;
+            document.getElementById('mDownload').href = `scores/${item.filename}`;
             
-            let voiceInfo = '-';
-            if(item.voice_count || item.voice_types) voiceInfo = `${item.voice_count || ''} ${item.voice_types ? '('+item.voice_types+')' : ''}`;
-            document.getElementById('mVoice').innerText = voiceInfo;
-            
-            const filePath = `scores/${item.filename}`;
-            document.getElementById('mDownload').href = filePath;
-            const previewFrame = document.getElementById('mPreview');
-            const noPreview = document.getElementById('noPreview');
-            if (item.filename.toLowerCase().endsWith('.pdf')) {
-                previewFrame.src = filePath;
-                previewFrame.style.display = 'block';
-                noPreview.style.display = 'none';
+            // 歌词按钮逻辑
+            const btn = document.getElementById('btnReadLyrics');
+            if (item.has_lyrics) {
+                btn.style.display = 'block';
+                currentLyricsId = id; // 保存当前ID供读取使用
             } else {
-                previewFrame.style.display = 'none';
-                noPreview.style.display = 'flex';
+                btn.style.display = 'none';
+                currentLyricsId = null;
             }
+
+            const previewFrame = document.getElementById('mPreview'); const noPreview = document.getElementById('noPreview');
+            if (item.filename.toLowerCase().endsWith('.pdf')) { previewFrame.src = `scores/${item.filename}`; previewFrame.style.display = 'block'; noPreview.style.display = 'none'; } else { previewFrame.style.display = 'none'; noPreview.style.display = 'flex'; }
             new bootstrap.Modal(document.getElementById('detailModal')).show();
         }
 
-        window.showLogModal = function() {
-            const body = document.getElementById('logBody');
-            if (typeof changeLog === 'undefined' || changeLog.length === 0) {
-                body.innerHTML = '<p class="text-muted text-center my-4">暂无动态记录</p>';
-            } else {
-                let html = '<ul class="list-group list-group-flush">';
-                changeLog.forEach(log => {
-                    let badgeClass = 'bg-secondary';
-                    if (log.type === 'add') badgeClass = 'bg-success';
-                    if (log.type === 'update') badgeClass = 'bg-primary';
-                    if (log.type === 'delete') badgeClass = 'bg-danger';
-                    let typeText = 'Added';
-                    if (log.type === 'update') typeText = 'Edited';
-                    if (log.type === 'delete') typeText = 'Deleted';
-                    html += `
-                    <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold small text-muted mb-1">${log.date}</div>
-                            ${log.msg}
-                        </div>
-                        <span class="badge ${badgeClass} rounded-pill">${typeText}</span>
-                    </li>`;
+        // 打开歌词阅读器
+        window.openLyricsReader = function() {
+            if (!currentLyricsId) return;
+            
+            // 1. 获取基本信息填充标题
+            const item = musicData.find(m => m.id === currentLyricsId);
+            document.getElementById('readerTitle').innerText = item.title;
+            document.getElementById('readerComposer').innerText = item.composer;
+
+            // 2. 显示Loading
+            document.getElementById('readerOriginalText').innerText = 'Loading...';
+            document.getElementById('readerTransText').innerText = 'Loading...';
+
+            // 3. 打开全屏模态框
+            new bootstrap.Modal(document.getElementById('readerModal')).show();
+
+            // 4. 异步获取歌词内容
+            // 加上时间戳防止缓存
+            fetch(`lyrics/${currentLyricsId}.json?v=${new Date().getTime()}`)
+                .then(response => {
+                    if (!response.ok) throw new Error("Lyrics not found");
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('readerOriginalText').innerText = data.original || 'No original text provided.';
+                    document.getElementById('readerTransText').innerText = data.translation || 'No translation provided.';
+                })
+                .catch(err => {
+                    document.getElementById('readerOriginalText').innerText = 'Error loading lyrics.';
+                    document.getElementById('readerTransText').innerText = '';
                 });
-                html += '</ul>';
-                body.innerHTML = html;
-            }
-            new bootstrap.Modal(document.getElementById('logModal')).show();
         }
     </script>
-
-<div class="music-player-container">
-        <div class="music-icon">
-            🎵
-        </div>
-        <div class="music-iframe-wrapper">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" 
-                src="//music.163.com/outchain/player?type=0&id=713993697&auto=1&height=66">
-            </iframe>
-        </div>
-    </div>
-
-    <style>
-        /* 播放器容器：固定在左下角，默认只显示图标 */
-        .music-player-container {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px); /* 毛玻璃效果 */
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255,255,255,0.5);
-            overflow: hidden;
-            width: 50px; /* 默认宽度：圆形 */
-            height: 50px;
-            cursor: pointer;
-        }
-
-        /* 鼠标悬停时：展开播放器 */
-        .music-player-container:hover {
-            width: 350px; /* 展开宽度 */
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.95);
-        }
-
-        /* 音乐图标 */
-        .music-icon {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            flex-shrink: 0;
-            animation: spin 10s linear infinite; /* 缓慢旋转 */
-        }
-        
-        /* 悬停时停止图标旋转 */
-        .music-player-container:hover .music-icon {
-            animation-play-state: paused;
-        }
-
-        /* iframe 包装器 */
-        .music-iframe-wrapper {
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none; /* 未展开时不干扰点击 */
-            margin-left: -10px; /* 微调位置 */
-        }
-
-        /* 展开后显示 iframe */
-        .music-player-container:hover .music-iframe-wrapper {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        /* 旋转动画 */
-        @keyframes spin { 100% { transform: rotate(360deg); } }
-    </style>
 </body>
 </html>

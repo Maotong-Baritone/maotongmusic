@@ -1,5 +1,19 @@
-// 最后更新于 2025-12-14
+// 最后更新于 2025-12-14 12:16:37
 const musicData = [
+    {
+        "id": 79,
+        "title": "Le Nozze di Figaro, K.492/费加罗的婚礼",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "",
+        "language": "意大利语",
+        "category": "歌剧总谱",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "歌剧总谱/1765739733.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": true
+    },
     {
         "id": 78,
         "title": "Warm as the Autumn Light",
@@ -988,6 +1002,16 @@ const musicData = [
 ];
 const changeLog = [
     {
+        "date": "2025-12-14 12:16",
+        "type": "update",
+        "msg": "更新: Le Nozze di Figaro, K.492/费加罗的婚礼"
+    },
+    {
+        "date": "2025-12-14 12:15",
+        "type": "add",
+        "msg": "添加: Le Nozze di Figaro, K.492/费加罗的婚礼"
+    },
+    {
         "date": "2025-12-14 01:59",
         "type": "add",
         "msg": "添加了新乐谱：《Warm as the Autumn Light》 (Douglas Stuart Moore)"
@@ -1226,15 +1250,5 @@ const changeLog = [
         "date": "2025-12-14 01:11",
         "type": "update",
         "msg": "更新了乐谱信息：《Der Vogelfänger bin ich ja/我是一个捕鸟人》"
-    },
-    {
-        "date": "2025-12-14 01:11",
-        "type": "add",
-        "msg": "添加了新乐谱：《Ein Madchen oder Weibchen/愿姑娘或大嫂》 (Wolfgang Amadeus Mozart/莫扎特)"
-    },
-    {
-        "date": "2025-12-14 01:10",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Come un'ape ne giorni d'aprile》"
     }
 ];
