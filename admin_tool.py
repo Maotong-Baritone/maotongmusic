@@ -10,7 +10,7 @@ from werkzeug.utils import secure_filename
 
 # ===⚙️ 配置区域 ===
 SCORES_DIR = 'scores'
-LYRICS_DIR = 'lyrics'          # 新增：歌词存放目录
+LYRICS_DIR = 'lyrics'          # 歌词存放目录
 DATA_FILE = 'js/data.js'
 BACKUP_DIR = 'backup'
 ALLOWED_EXTENSIONS = {'pdf', 'midi', 'mp3', 'sib', 'musx'}
@@ -74,9 +74,8 @@ def add_log(change_log, action_type, message):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-# --- 新增：保存歌词到单独的 JSON 文件 ---
+# --- 歌词处理函数 ---
 def save_lyrics(item_id, original, translation):
-    # 如果两个都为空，则删除文件（如果存在）
     if not original.strip() and not translation.strip():
         path = os.path.join(LYRICS_DIR, f"{item_id}.json")
         if os.path.exists(path): os.remove(path)
@@ -91,7 +90,6 @@ def save_lyrics(item_id, original, translation):
         json.dump(data, f, ensure_ascii=False)
     return True
 
-# --- 新增：读取歌词 ---
 def load_lyrics(item_id):
     path = os.path.join(LYRICS_DIR, f"{item_id}.json")
     if os.path.exists(path):
@@ -100,6 +98,63 @@ def load_lyrics(item_id):
     return {"original": "", "translation": ""}
 
 # --- HTML Templates ---
+CATEGORY_SELECT_HTML = """
+<div class="mb-3"><label class="form-label">分类</label><select class="form-select" name="category">
+{% set current = item.category if item else '' %}
+<optgroup label="🎤 声乐">
+    <option value="歌剧咏叹调" {{ 'selected' if current == '歌剧咏叹调' }}>歌剧咏叹调</option>
+    <option value="歌剧重唱" {{ 'selected' if current == '歌剧重唱' }}>歌剧重唱</option>
+    <option value="宗教声乐作品" {{ 'selected' if current == '宗教声乐作品' }}>宗教声乐作品 (Sacred Vocal Music)</option>
+    <option value="艺术歌曲" {{ 'selected' if current == '艺术歌曲' }}>艺术歌曲</option>
+    <option value="音乐剧选段" {{ 'selected' if current == '音乐剧选段' }}>音乐剧选段</option>
+    <option value="合唱作品" {{ 'selected' if current == '合唱作品' }}>合唱作品</option>
+</optgroup>
+<optgroup label="✨ 特殊/世俗康塔塔">
+    <option value="音乐会咏叹调/世俗康塔塔" {{ 'selected' if current == '音乐会咏叹调/世俗康塔塔' }}>音乐会咏叹调/世俗康塔塔</option>
+</optgroup>
+<optgroup label="📚 曲集"><option value="声乐套曲" {{ 'selected' if current == '声乐套曲' }}>声乐套曲</option><option value="乐谱书/曲集" {{ 'selected' if current == '乐谱书/曲集' }}>乐谱书/曲集</option></optgroup>
+<optgroup label="🎻 器乐"><option value="器乐独奏" {{ 'selected' if current == '器乐独奏' }}>器乐独奏</option><option value="室内乐" {{ 'selected' if current == '室内乐' }}>室内乐</option></optgroup>
+<optgroup label="🎼 总谱"><option value="歌剧总谱" {{ 'selected' if current == '歌剧总谱' }}>歌剧总谱</option><option value="管弦乐/交响曲" {{ 'selected' if current == '管弦乐/交响曲' }}>管弦乐/交响曲</option><option value="协奏曲总谱" {{ 'selected' if current == '协奏曲总谱' }}>协奏曲总谱</option><option value="宗教声乐作品总谱" {{ 'selected' if current == '宗教声乐作品总谱' }}>宗教声乐总谱</option></optgroup>
+<option value="其他" {{ 'selected' if current == '其他' }}>其他</option>
+</select></div>
+"""
+
+FORM_HTML = """
+<div class="row mb-3">
+    <div class="col-md-6"><label class="form-label">曲名 *</label><input type="text" class="form-control" name="title" value="{{ item.title if item else '' }}" required></div>
+    <div class="col-md-6"><label class="form-label">作曲家 *</label><input type="text" class="form-control" name="composer" value="{{ item.composer if item else '' }}" required></div>
+</div>
+<div class="row mb-3">
+    <div class="col-md-4"><label class="form-label">所属作品</label><input type="text" class="form-control" name="work" value="{{ item.work if item else '' }}"></div>
+    <div class="col-md-4"><label class="form-label">语言</label><input type="text" class="form-control" name="language" value="{{ item.language if item else '' }}"></div>
+    <div class="col-md-4"><label class="form-label">调性</label><input type="text" class="form-control" name="tonality" value="{{ item.tonality if item else '' }}"></div>
+</div>
+<div class="row mb-3 p-3 bg-light rounded border mx-0">
+    <div class="col-md-6"><label class="form-label small">编制 (声部/乐器)</label><input type="text" class="form-control" name="voice_types" value="{{ item.voice_types if item else '' }}" placeholder="如: Soprano, SATB"></div>
+    <div class="col-md-6"><label class="form-label small">数量/类型补充</label><input type="text" class="form-control" name="voice_count" value="{{ item.voice_count if item else '' }}" placeholder="如: 二重唱"></div>
+</div>
+
+""" + CATEGORY_SELECT_HTML + """
+
+<div class="mb-3">
+    <label class="form-label fw-bold">📝 简介 / 包含曲目列表 (Description)</label>
+    <textarea class="form-control" name="description" rows="3" placeholder="填写乐谱简介或合集曲目列表...">{{ item.description if item and item.description else '' }}</textarea>
+</div>
+<hr class="my-4">
+<h5 class="text-primary fw-bold">📖 歌词与剧本 (Lyrics & Libretto)</h5>
+<div class="alert alert-info small">提示：可以直接粘贴文本。如果要实现“左右对照”，请尽量让原文和译文的段落数保持一致。</div>
+<div class="row">
+    <div class="col-md-6">
+        <label class="form-label fw-bold">原文 (Original Text)</label>
+        <textarea class="form-control font-monospace" name="lyrics_og" rows="10" style="font-size: 0.9rem;">{{ lyrics.original if lyrics else '' }}</textarea>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label fw-bold">中文翻译 (Translation)</label>
+        <textarea class="form-control font-monospace" name="lyrics_cn" rows="10" style="font-size: 0.9rem;">{{ lyrics.translation if lyrics else '' }}</textarea>
+    </div>
+</div>
+"""
+
 LOGIN_HTML = """
 <!doctype html>
 <html lang="zh">
@@ -112,38 +167,6 @@ LOGIN_HTML = """
     <form method="post"><input type="text" name="username" class="form-control mb-2" placeholder="User" required><input type="password" name="password" class="form-control mb-3" placeholder="Pass" required><button class="btn btn-primary w-100">Login</button></form>
 </div>
 </body></html>
-"""
-
-# 修改后的上传/编辑表单，增加了歌词录入区域
-FORM_HTML = """
-<div class="row mb-3">
-    <div class="col-md-6"><label class="form-label">曲名 *</label><input type="text" class="form-control" name="title" value="{{ item.title if item else '' }}" required></div>
-    <div class="col-md-6"><label class="form-label">作曲家 *</label><input type="text" class="form-control" name="composer" value="{{ item.composer if item else '' }}" required></div>
-</div>
-<div class="row mb-3">
-    <div class="col-md-4"><label class="form-label">所属作品</label><input type="text" class="form-control" name="work" value="{{ item.work if item else '' }}"></div>
-    <div class="col-md-4"><label class="form-label">语言</label><input type="text" class="form-control" name="language" value="{{ item.language if item else '' }}"></div>
-    <div class="col-md-4"><label class="form-label">调性</label><input type="text" class="form-control" name="tonality" value="{{ item.tonality if item else '' }}"></div>
-</div>
-<div class="row mb-3 p-3 bg-light rounded border mx-0">
-    <div class="col-md-6"><label class="form-label small">编制</label><input type="text" class="form-control" name="voice_types" value="{{ item.voice_types if item else '' }}"></div>
-    <div class="col-md-6"><label class="form-label small">数量</label><input type="text" class="form-control" name="voice_count" value="{{ item.voice_count if item else '' }}"></div>
-</div>
-{% include 'category_select.html' %}
-
-<hr class="my-4">
-<h5 class="text-primary fw-bold">📖 歌词与剧本 (Lyrics & Libretto)</h5>
-<div class="alert alert-info small">提示：可以直接粘贴文本。如果要实现“左右对照”，请尽量让原文和译文的段落数保持一致。</div>
-<div class="row">
-    <div class="col-md-6">
-        <label class="form-label fw-bold">原文 (Original Text)</label>
-        <textarea class="form-control font-monospace" name="lyrics_og" rows="15" style="font-size: 0.9rem;">{{ lyrics.original if lyrics else '' }}</textarea>
-    </div>
-    <div class="col-md-6">
-        <label class="form-label fw-bold">中文翻译 (Translation)</label>
-        <textarea class="form-control font-monospace" name="lyrics_cn" rows="15" style="font-size: 0.9rem;">{{ lyrics.translation if lyrics else '' }}</textarea>
-    </div>
-</div>
 """
 
 HTML_TEMPLATE = """
@@ -210,34 +233,6 @@ HTML_TEMPLATE = """
 </div></body></html>
 """
 
-# admin_tool.py 中
-
-# admin_tool.py 中的 CATEGORY_SELECT_HTML 部分
-
-CATEGORY_SELECT_HTML = """
-<div class="mb-3"><label class="form-label">分类</label><select class="form-select" name="category">
-{% set current = item.category if item else '' %}
-<optgroup label="🎤 声乐">
-    <option value="歌剧咏叹调" {{ 'selected' if current == '歌剧咏叹调' }}>歌剧咏叹调</option>
-    <option value="歌剧重唱" {{ 'selected' if current == '歌剧重唱' }}>歌剧重唱</option>
-    <option value="宗教声乐作品" {{ 'selected' if current == '宗教声乐作品' }}>宗教声乐作品 (Sacred Vocal Music)</option>
-    <option value="艺术歌曲" {{ 'selected' if current == '艺术歌曲' }}>艺术歌曲</option>
-    <option value="艺术歌曲重唱" {{ 'selected' if current == '艺术歌曲重唱' }}>艺术歌曲重唱</option>
-    <option value="音乐剧选段" {{ 'selected' if current == '音乐剧选段' }}>音乐剧选段</option>
-    <option value="音乐剧重唱" {{ 'selected' if current == '音乐剧重唱' }}>音乐剧重唱</option>
-    <option value="独唱片段/选段" {{ 'selected' if current == '独唱片段/选段' }}>独唱片段/选段</option>
-    <option value="合唱作品" {{ 'selected' if current == '合唱作品' }}>合唱作品</option>
-</optgroup>
-<optgroup label="✨ 特殊/世俗康塔塔">
-    <option value="音乐会咏叹调/世俗康塔塔" {{ 'selected' if current == '音乐会咏叹调/世俗康塔塔' }}>音乐会咏叹调/世俗康塔塔</option>
-</optgroup>
-<optgroup label="📚 曲集"><option value="声乐套曲" {{ 'selected' if current == '声乐套曲' }}>声乐套曲</option><option value="乐谱书/曲集" {{ 'selected' if current == '乐谱书/曲集' }}>乐谱书/曲集</option></optgroup>
-<optgroup label="🎻 器乐"><option value="器乐独奏" {{ 'selected' if current == '器乐独奏' }}>器乐独奏</option><option value="室内乐" {{ 'selected' if current == '室内乐' }}>室内乐</option></optgroup>
-<optgroup label="🎼 总谱"><option value="歌剧总谱" {{ 'selected' if current == '歌剧总谱' }}>歌剧总谱</option><option value="管弦乐/交响曲" {{ 'selected' if current == '管弦乐/交响曲' }}>管弦乐/交响曲</option><option value="协奏曲总谱" {{ 'selected' if current == '协奏曲总谱' }}>协奏曲总谱</option><option value="宗教声乐作品总谱" {{ 'selected' if current == '宗教声乐作品总谱' }}>宗教声乐总谱</option></optgroup>
-<option value="其他" {{ 'selected' if current == '其他' }}>其他</option>
-</select></div>
-"""
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -272,15 +267,16 @@ def index():
             # 保存歌词
             has_lyrics = save_lyrics(new_id, request.form.get('lyrics_og', ''), request.form.get('lyrics_cn', ''))
 
-            # 保存数据
+            # 保存数据 (增加了 description)
             music_data.append({
                 "id": new_id, "title": request.form['title'], "composer": request.form['composer'],
                 "work": request.form.get('work',''), "language": request.form.get('language',''),
                 "category": request.form['category'], "voice_count": request.form.get('voice_count',''),
                 "voice_types": request.form.get('voice_types',''), "tonality": request.form.get('tonality',''),
+                "description": request.form.get('description',''), # ✅ 修复：保存简介
                 "filename": f"{request.form['category']}/{filename}", 
                 "date": datetime.date.today().strftime("%Y-%m-%d"),
-                "has_lyrics": has_lyrics  # 标记该条目是否有歌词
+                "has_lyrics": has_lyrics
             })
             add_log(change_log, 'add', f"添加: {request.form['title']}")
             save_all(music_data, change_log)
@@ -308,7 +304,8 @@ def edit(item_id):
             "title": request.form['title'], "composer": request.form['composer'],
             "work": request.form.get('work',''), "language": request.form.get('language',''),
             "category": request.form['category'], "voice_count": request.form.get('voice_count',''),
-            "voice_types": request.form.get('voice_types',''), "tonality": request.form.get('tonality','')
+            "voice_types": request.form.get('voice_types',''), "tonality": request.form.get('tonality',''),
+            "description": request.form.get('description','') # ✅ 修复：更新简介
         })
         # 更新歌词状态
         has_lyrics = save_lyrics(item_id, request.form.get('lyrics_og', ''), request.form.get('lyrics_cn', ''))

@@ -12,13 +12,13 @@
     <style>
         :root {
             --primary-color: #264653;
-            --accent-color: #e76f51;
+            --accent-color: #2a9d8f;
             --bg-color: #fdfbf7;
             --card-bg: #ffffff;
             --text-main: #2b2d42;
         }
 
-        /* 全局字体优化：中文使用 Noto Sans */
+        /* 全局字体 */
         body { 
             background-color: var(--bg-color); 
             font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif; 
@@ -26,13 +26,12 @@
             display: flex; flex-direction: column; min-height: 100vh; 
         }
 
-        /* 标题字体：中文使用 Noto Serif */
         .font-serif { font-family: 'Playfair Display', 'Noto Serif SC', serif; }
         .container { flex: 1; }
         
         /* 导航栏 */
         .navbar {
-            background: rgba(38, 70, 83, 0.9) !important;
+            background: rgba(38, 70, 83, 0.95) !important;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
@@ -62,7 +61,7 @@
             backdrop-filter: blur(5px);
         }
 
-        /* 卡片设计 */
+        /* 分类卡片 */
         .category-card {
             border: none; border-radius: 16px; transition: all 0.3s ease;
             height: 100%; background: var(--card-bg); 
@@ -86,6 +85,7 @@
 
         .content-section { margin-top: 3rem; }
         
+        /* 表格样式 */
         .table-custom thead th {
             border-top: none; border-bottom: 2px solid #e9ecef;
             font-family: 'Noto Serif SC', serif; color: #6c757d; font-weight: 700;
@@ -97,61 +97,30 @@
             background-color: #264653; color: #a8b2d1; padding: 4rem 0; margin-top: 5rem; font-family: 'Noto Serif SC', serif;
         }
 
-        /* 标签颜色配置 */
+        /* 标签颜色映射 */
         .badge-custom { font-weight: 500; border-radius: 4px; padding: 0.4em 0.6em; }
-        
-        /* 歌剧 */
         .bg-opera { background-color: #d00000; color: white; }
         .bg-opera-ens { background-color: #6a040f; color: white; }
-        
-        /* 宗教 (合并后) */
-        .bg-oratorio { background-color: #7209b7; color: white; } /* 紫色系 */
-        .bg-sacred-ens { background-color: #3a0ca3; color: white; } 
-
-        /* 艺术歌曲 */
+        .bg-oratorio { background-color: #7209b7; color: white; }
         .bg-artsong { background-color: #4895ef; color: white; }
         .bg-artsong-ens { background-color: #bde0fe; color: #264653; }
-        
-        /* 音乐剧 */
         .bg-musical { background-color: #f72585; color: white; }
         .bg-musical-ens { background-color: #560bad; color: white; }
-        
-        /* 世俗康塔塔/独唱 */
         .bg-solo { background-color: #f48c06; color: white; }
-        
-        /* 曲集/合唱 */
+        .bg-choral { background-color: #2a9d8f; color: white; }
         .bg-cycle { background-color: #0096c7; color: white; }
         .bg-book { background-color: #9d6b53; color: white; }
-        .bg-choral { background-color: #2a9d8f; color: white; }
-        
-        /* 器乐 */
         .bg-inst-solo { background-color: #e9c46a; color: #333; }
         .bg-chamber { background-color: #606c38; color: white; }
-        
-        /* 总谱 */
         .bg-score-opera { background-color: #212529; color: #f8f9fa; }
         .bg-score-orch { background-color: #343a40; color: #f8f9fa; }
         .bg-score-con { background-color: #495057; color: white; }
         .bg-score-sac { background-color: #6c757d; color: white; }
-        
         .bg-other { background-color: #e9ecef; color: #495057; }
 
-        .btn-primary { background-color: #2a9d8f; border-color: #2a9d8f; }
-        .btn-primary:hover { background-color: #21867a; border-color: #21867a; }
-        .btn-outline-primary { color: #2a9d8f; border-color: #2a9d8f; }
-        .btn-outline-primary:hover { background-color: #2a9d8f; border-color: #2a9d8f; color: white; }
-
-        /* === 📖 剧本阅读器样式 === */
-        #readerContent { white-space: pre-wrap; line-height: 1.8; }
-        .reader-text-col { padding: 2rem; font-size: 1.05rem; }
-        .reader-original {
-            background-color: #fff; border-right: 1px solid #eee; color: #333;
-            font-family: 'Playfair Display', serif; /* 原文保留西文衬线 */
-        }
-        .reader-translation {
-            background-color: #fafafa; color: #555;
-            font-family: 'Noto Sans SC', sans-serif; /* 译文用中文无衬线 */
-        }
+        .reader-text-col { padding: 2rem; font-size: 1.05rem; line-height: 1.8; }
+        .reader-original { background-color: #fff; border-right: 1px solid #eee; color: #333; font-family: 'Playfair Display', serif; }
+        .reader-translation { background-color: #fafafa; color: #555; font-family: 'Noto Sans SC', sans-serif; }
     </style>
 </head>
 <body>
@@ -176,8 +145,8 @@
                 <div class="col-md-8 col-lg-6">
                     <div class="input-group input-group-lg search-container">
                         <span class="input-group-text bg-transparent border-0 ps-3 text-muted">🔍</span>
-                        <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="搜索曲名、作曲家、作品号..." style="box-shadow: none;">
-                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="button" onclick="performSearch()">搜索</button>
+                        <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="搜曲名、作曲家、目录内容..." style="box-shadow: none;">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" style="background-color:#2a9d8f; border:none;" type="button" onclick="performSearch()">搜索</button>
                     </div>
                     <div class="mt-4 d-flex flex-column align-items-center gap-2">
                         <button class="btn btn-link text-white text-decoration-none opacity-75 hover-opacity-100" onclick="resetFilters()">🌟 查看完整乐谱列表</button>
@@ -292,7 +261,7 @@
                         </div>
                     </div>
                     <nav aria-label="Page navigation" class="mt-5" id="paginationNav"><ul class="pagination justify-content-center" id="paginationUl"></ul></nav>
-                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>请尝试调整筛选条件。</p></div>
+                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>请尝试调整筛选条件或搜索关键词。</p></div>
                 </div>
             </div>
         </div>
@@ -325,11 +294,18 @@
                                 </ul>
                             </div>
                             
+                            <div class="card bg-light border-0 shadow-sm mb-3" id="descCard" style="display:none;">
+                                <div class="card-body p-3">
+                                    <h6 class="card-subtitle mb-2 text-muted small fw-bold">📝 简介 / 包含曲目</h6>
+                                    <p class="card-text small text-secondary" id="mDescription" style="white-space: pre-wrap;"></p>
+                                </div>
+                            </div>
+                            
                             <button id="btnReadLyrics" class="btn btn-outline-dark w-100 py-2 mb-3 shadow-sm rounded-pill fw-bold" style="display:none;" onclick="openLyricsReader()">
                                 📖 阅读歌词 / 剧本
                             </button>
 
-                            <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" download>⬇️ 下载 PDF</a>
+                            <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" style="background-color:#2a9d8f; border:none;" download>⬇️ 下载 PDF</a>
                             <div class="mt-4 pt-3 border-top text-center text-muted small">仅供学习交流，请于下载后24小时内删除。</div>
                         </div>
                         <div class="col-md-9 bg-secondary position-relative">
@@ -390,15 +366,11 @@
             "Puccini": "普契尼 Giacomo", "Wagner": "瓦格纳 Richard", "Mahler": "马勒 Gustav", "Strauss": "施特劳斯 Richard Johann"
         };
         
-        // 更新后的分类颜色映射
         const categoryMap = { 
             '歌剧咏叹调': 'bg-opera', 
             '歌剧重唱': 'bg-opera-ens',
-            
-            // ✅ 新增/合并的分类
             '宗教声乐作品': 'bg-oratorio', 
             '音乐会咏叹调/世俗康塔塔': 'bg-solo',
-            
             '艺术歌曲': 'bg-artsong', 
             '艺术歌曲重唱': 'bg-artsong-ens',
             '音乐剧选段': 'bg-musical',
@@ -444,9 +416,10 @@
             const searchBase = normalizeStr(filters.search); const searchComposer = normalizeStr(filters.composer); const searchVoice = normalizeStr(filters.voice);
 
             let result = musicData.filter(item => {
-                const itemTitle = normalizeStr(item.title); const itemComposer = normalizeStr(item.composer); const itemWork = normalizeStr(item.work); const itemVoice = normalizeStr(item.voice_types);
+                const itemTitle = normalizeStr(item.title); const itemComposer = normalizeStr(item.composer); const itemWork = normalizeStr(item.work); const itemVoice = normalizeStr(item.voice_types); const itemDesc = normalizeStr(item.description);
                 let composerKeywords = itemComposer; if (composerAliases[item.composer]) { composerKeywords += " " + normalizeStr(composerAliases[item.composer]); }
-                const fullSearchableText = `${itemTitle} ${composerKeywords} ${itemWork}`;
+                // 搜索范围：标题、作曲家、作品号、编制、简介
+                const fullSearchableText = `${itemTitle} ${composerKeywords} ${itemWork} ${itemDesc}`;
                 return (filters.category === 'all' || item.category === filters.category) && (filters.language === 'all' || item.language === filters.language) && (filters.composer === '' || composerKeywords.includes(searchComposer)) && (filters.voice === '' || (item.voice_types && itemVoice.includes(searchVoice))) && (filters.search === '' || fullSearchableText.includes(searchBase));
             });
 
@@ -489,7 +462,6 @@
             recents.forEach(item => { html += `<div class="col"><div class="card h-100 border-0 shadow-sm cursor-pointer hover-card" style="border-radius: 12px; overflow:hidden;" onclick="openDetail(${item.id})"><div class="card-body bg-white"><span class="badge bg-light text-muted mb-2 border">${item.category}</span><h6 class="card-title text-truncate fw-bold text-dark font-serif" style="font-size: 1.1rem;">${item.title}</h6><p class="card-text small text-secondary mb-0">${item.composer}</p></div><div class="card-footer bg-white border-0 pt-0"><small class="text-muted" style="font-size: 0.75rem">上传于: ${item.date}</small></div></div></div>`; }); list.innerHTML = html;
         }
         
-        // 修改：将标题改为中文
         window.filterCategory = (cat, btn) => { 
             currentPage = 1; filters.category = cat; 
             document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat')); 
@@ -515,6 +487,16 @@
             let voiceInfo = '-'; if(item.voice_count || item.voice_types) voiceInfo = `${item.voice_count || ''} ${item.voice_types ? '('+item.voice_types+')' : ''}`; document.getElementById('mVoice').innerText = voiceInfo;
             document.getElementById('mDownload').href = `scores/${item.filename}`;
             
+            // 显示简介 (如果存在)
+            const descCard = document.getElementById('descCard');
+            const descText = document.getElementById('mDescription');
+            if (item.description && item.description.trim() !== '') {
+                descText.innerText = item.description;
+                descCard.style.display = 'block';
+            } else {
+                descCard.style.display = 'none';
+            }
+
             const btn = document.getElementById('btnReadLyrics');
             if (item.has_lyrics) {
                 btn.style.display = 'block';

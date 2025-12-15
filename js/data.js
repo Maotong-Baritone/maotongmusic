@@ -1,5 +1,1046 @@
-// 最后更新于 2025-12-14 20:38:00
+// 最后更新于 2025-12-14 23:41:38
 const musicData = [
+    {
+        "id": 158,
+        "title": "The House of Life/生命之屋",
+        "composer": "Ralph Vaughan Williams/沃恩·威廉姆斯",
+        "work": "",
+        "language": "英语",
+        "category": "声乐套曲",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "声乐套曲/1765779692.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false,
+        "description": "1. Love Sight\r\n2. Silent Noon\r\n3. Love's Minstrels\r\n4. Heart's Haven\r\n5. Death in Love\r\n6. Love's Last Gift"
+    },
+    {
+        "id": 157,
+        "title": "Ten Blake Songs",
+        "composer": "Ralph Vaughan Williams/沃恩·威廉姆斯",
+        "work": "",
+        "language": "英语",
+        "category": "声乐套曲",
+        "voice_count": "",
+        "voice_types": "人声与双簧管",
+        "tonality": "",
+        "filename": "声乐套曲/1765779618.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false,
+        "description": "Infant Joy no.1\r\nA Poison Tree no.2\r\nThe Piper no.3\r\nLondon no.4\r\nThe Lamb no.5\r\nThe Shepherd no.6\r\nAh, sunflower no.7\r\nCruelty has a human heart no.8\r\nThe Divine Image no.9\r\nEternity no.10"
+    },
+    {
+        "id": 156,
+        "title": "A Shropshire Lad/什罗普郡小伙子",
+        "composer": "George Butterworth",
+        "work": "",
+        "language": "英语",
+        "category": "声乐套曲",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "降调",
+        "filename": "声乐套曲/1765779501.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false,
+        "description": "1. Loveliest of trees\r\n2. When I was one-and-twenty\r\n3. Look not in my eyes\r\n4. Think no more, lad\r\n5. The lads in their hundreds\r\n6. Is my team ploughing?"
+    },
+    {
+        "id": 155,
+        "title": "Henry Purcell Songs/普赛尔歌曲集",
+        "composer": "Henry Purcell/普赛尔",
+        "work": "",
+        "language": "英语",
+        "category": "乐谱书/曲集",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "乐谱书/曲集/1765779072.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 154,
+        "title": "A Young Man's Exhortation",
+        "composer": "Gerald Finzi",
+        "work": "",
+        "language": "英语",
+        "category": "声乐套曲",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "声乐套曲/1765778980.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false,
+        "description": "1. A young man's exhortation\r\n2. Budmouth Dears\r\n3. Ditty\r\n4. Her temple\r\n5. The Comet at Yell'ham\r\n6. Shortening days\r\n7. The sigh\r\n8. Former beauties\r\n9. Transformations\r\n10. The dance continued"
+    },
+    {
+        "id": 153,
+        "title": "Baber歌曲集",
+        "composer": "Samuel Barber",
+        "work": "",
+        "language": "英语",
+        "category": "乐谱书/曲集",
+        "voice_count": "",
+        "voice_types": "高声部",
+        "tonality": "",
+        "filename": "乐谱书/曲集/1765778795.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 152,
+        "title": "Let us garlands bring",
+        "composer": "Gerald Finzi",
+        "work": "",
+        "language": "英语",
+        "category": "声乐套曲",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "声乐套曲/1765778479.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 151,
+        "title": "Ives 114 Songs",
+        "composer": "Charles Ives",
+        "work": "",
+        "language": "英语",
+        "category": "乐谱书/曲集",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "乐谱书/曲集/1765778386.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 150,
+        "title": "Songs of Travel/旅行之歌",
+        "composer": "Ralph Vaughan Williams/沃恩·威廉姆斯",
+        "work": "",
+        "language": "英语",
+        "category": "声乐套曲",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "filename": "声乐套曲/1765778286.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false,
+        "description": "1. The vagabond\r\n2. Let Beauty awake\r\n3. The roadside fire\r\n4. Youth and love\r\n5. In dreams\r\n6. The infinite shining heavens\r\n7. Whither must I wander?\r\n8. Bright is the ring of words\r\n9. I have trod the upward and the downward slope"
+    },
+    {
+        "id": 149,
+        "title": "Sono all'ara…barriera tremenda…Ciel pietoso, in sì crudo momento",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La straniera",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777839.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 148,
+        "title": "Or sei pago, o ciel tremendo",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La straniera",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777819.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 147,
+        "title": "Sventurata, anch'io deliro",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777799.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 146,
+        "title": "Lo sognai ferito, esangue",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777781.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 145,
+        "title": "Col sorriso d'innocenza",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777765.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 144,
+        "title": "La mia scelta a voi sia grata… Contenta appien quest'alma",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777733.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 143,
+        "title": "Deh! Non ferir… Alla gioia ed al piacer",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777715.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 142,
+        "title": "Oh! Mie fedeli!...Ma la sola, ohimè! son io…Ah! La pena in lor piombò",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Beatrice di Tenda",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777690.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 141,
+        "title": "Dopo l'oscuro nembo",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Adelson e Salvini",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777652.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 140,
+        "title": "È serbato, a questo acciaro",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Capuleti ed i Montecchi",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777584.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 139,
+        "title": "Ah! Se non m'ami piu",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La straniera",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Mezzo Soprano/次女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777534.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 138,
+        "title": "Tu sola… Deh! Tu, deh! Tu, bell'anima",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Capuleti ed i Montecchi",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Mezzo Soprano/次女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777504.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 137,
+        "title": "Se Romeo l'uccise un figlio",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Capuleti ed i Montecchi",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Mezzo Soprano/次女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777478.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 136,
+        "title": "Tutto è gioia, tutto è festa",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777414.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 135,
+        "title": "De' lieti auguri a voi",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777398.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 134,
+        "title": "Sovra il sen la man mi posa",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777369.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 133,
+        "title": "Care compagne… Come per me serena",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777347.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 132,
+        "title": "Ah! Non giunge uman pensiero",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777322.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 131,
+        "title": "Ah! non credea mirarti",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777279.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 130,
+        "title": "Son vergin vezzosa",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777263.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 129,
+        "title": "Qui la voce… Vien, diletto",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777208.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 128,
+        "title": "Morte io non temo",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Capuleti ed i Montecchi",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777178.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 127,
+        "title": "Eccomi in lieta vesta…Oh quante volte ti chiedo",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Capuleti ed i Montecchi",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Coloratura/花腔女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765777140.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 126,
+        "title": "Vi ravviso, o luoghi ameni",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776810.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 125,
+        "title": "Tu non sai conquei begli occhi",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776786.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 124,
+        "title": "Cinta di fiori",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776752.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 123,
+        "title": "Vieni, vieni fra questa braccia",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776611.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 122,
+        "title": "Sprezzo, audace, il tuo furore",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776583.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 121,
+        "title": "Son salvo...La mia canzon d'amore…Ad altro lato",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776560.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 120,
+        "title": "Credeasi, misera",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776539.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 119,
+        "title": "A te, o cara, amor talora",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776515.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 118,
+        "title": "Ah! perchè non posso odiarti",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776446.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 117,
+        "title": "Prendi: I'anel ti dono",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776378.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 116,
+        "title": "Tu vedrai la sventurata",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776348.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 115,
+        "title": "Per te di vane lagrime",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776324.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 114,
+        "title": "Nel furor delle tempeste",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776304.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 113,
+        "title": "All'udir del padre afflitto… Odo il tuo pianto",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765776244.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 112,
+        "title": "All'udir del padre afflitto… Odo il tuo pianto",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775472.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 111,
+        "title": "A tanto duol…Ascolta, o padre",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775443.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 110,
+        "title": "Meco all'altar di Venere… Me protegge, me difende",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Norma/诺玛/诺尔玛",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775410.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 109,
+        "title": "Qual cor tradisti, qual cor perdesti… Deh! Non volerli vittime",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Norma/诺玛/诺尔玛",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775364.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 108,
+        "title": "Casta Diva, che inargenti… Ah! Bello a me ritorna/圣洁的女神",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Norma/诺玛/诺尔玛",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775251.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 107,
+        "title": "Taci, attendi, e allor vedrai",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Adelson e Salvini",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775176.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 106,
+        "title": "Bonifacio Beccheria qui presente",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Adelson e Salvini",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775152.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 105,
+        "title": "Ferma! Invan, invan rapir pretendi",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "I Puritanti/清教徒",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765775044.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 104,
+        "title": "Allor che notte avanza… Bramato momento",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774953.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 103,
+        "title": "Ah no, si licia sorte… O contento",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774879.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 102,
+        "title": "Da gelido sudore",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Bianca e Fernando (Bianca e Gernando)",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774849.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 101,
+        "title": "Io provo un palpito per tal dimora",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Adelson e Salvini",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774797.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 100,
+        "title": "Ehi! Geronio!",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Adelson e Salvini",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774769.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 99,
+        "title": "Si li sciogliete, o giudici",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La straniera",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774697.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 98,
+        "title": "Qui m'accolse oppresso, errante",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Beatrice di Tenda",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774651.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 97,
+        "title": "Rimorso in lei",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Beatrice di Tenda",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774570.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 96,
+        "title": "Il mulino il fonte il bosco",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "La Sonnambula/梦游女",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774343.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 95,
+        "title": "Si vinceremo e il pregio io sento",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "Il Pirata/海盗",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774243.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 94,
+        "title": "Se il cor guerriero",
+        "composer": "Antonio Vivaldi/维瓦尔第",
+        "work": "Tito Manlio, RV 738",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass-Baritone/低男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765774083.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 93,
+        "title": "Batter my heart",
+        "composer": "John Adams/约翰·亚当斯",
+        "work": "Dr. Atomic/原子博士",
+        "language": "英语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765773684.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 92,
+        "title": "You rascal, you! I never knew you had a soul",
+        "composer": "Samuel Barber",
+        "work": "Vanessa",
+        "language": "English",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765773474.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 91,
+        "title": "Soave sia il vento",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Così fan tutte, K. 588/女人心",
+        "language": "意大利语",
+        "category": "歌剧重唱",
+        "voice_count": "三重唱",
+        "voice_types": "Bass / Soprano / Mezzo-Soprano",
+        "tonality": "",
+        "filename": "歌剧重唱/1765773156.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 90,
+        "title": "O statua gentilissima",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Don Giovanni, K527/唐璜",
+        "language": "意大利语",
+        "category": "歌剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "Bass-Baritone / Baritone",
+        "tonality": "",
+        "filename": "歌剧重唱/1765773074.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 89,
+        "title": "Eh! via buffone",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Don Giovanni, K527/唐璜",
+        "language": "意大利语",
+        "category": "歌剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "Bass-Baritone / Baritone",
+        "tonality": "",
+        "filename": "歌剧重唱/1765773009.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 88,
+        "title": "Se a caso madama",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Le Nozze di Figaro, K.492/费加罗的婚礼",
+        "language": "意大利语",
+        "category": "歌剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "Soprano / Bass-Baritone",
+        "tonality": "",
+        "filename": "歌剧重唱/1765772774.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 87,
+        "title": "Pa-Pa-Pa-Papageno",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Die Zauberflöte, K.620/魔笛",
+        "language": "德语",
+        "category": "歌剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "Soprano / Baritone",
+        "tonality": "",
+        "filename": "歌剧重唱/1765772301.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 86,
+        "title": "Cinque...dieci...venti",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Le Nozze di Figaro, K.492/费加罗的婚礼",
+        "language": "意大利语",
+        "category": "歌剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "Bass-Baritone / Soprano",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765771966.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
+    {
+        "id": 85,
+        "title": "Là ci darem la mano/让我们携手同行",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Don Giovanni, K527/唐璜",
+        "language": "意大利语",
+        "category": "歌剧重唱",
+        "voice_count": "二重唱",
+        "voice_types": "Soprano / Baritone",
+        "tonality": "",
+        "filename": "歌剧咏叹调/1765771793.pdf",
+        "date": "2025-12-14",
+        "has_lyrics": false
+    },
     {
         "id": 84,
         "title": "A Sea Symphony/大海交响曲",
@@ -68,7 +1109,8 @@ const musicData = [
         "tonality": "",
         "filename": "声乐套曲/1765768898.pdf",
         "date": "2025-12-14",
-        "has_lyrics": false
+        "has_lyrics": false,
+        "description": "1. Loveliest of trees\r\n2. When I was one-and-twenty\r\n3. Look not in my eyes\r\n4. Think no more, lad\r\n5. The lads in their hundreds\r\n6. Is my team ploughing?"
     },
     {
         "id": 79,
@@ -991,10 +2033,11 @@ const musicData = [
         "language": "意大利语",
         "category": "歌剧重唱",
         "voice_count": "二重唱",
-        "voice_types": "SA",
+        "voice_types": "CounterTenor or Soprano / Soprano",
         "tonality": "",
         "filename": "歌剧重唱/Duet_Pur_ti_miro_Lincoronazione_di_Poppea.pdf",
-        "date": "2025-12-13"
+        "date": "2025-12-13",
+        "has_lyrics": false
     },
     {
         "id": 6,
@@ -1004,10 +2047,11 @@ const musicData = [
         "language": "意大利语",
         "category": "歌剧重唱",
         "voice_count": "四重唱",
-        "voice_types": "SATB",
+        "voice_types": "Soprano / Contralto / Tenor / Baritone",
         "filename": "歌剧重唱/Rigoletto_Quartet.pdf",
         "date": "2025-12-13",
-        "tonality": ""
+        "tonality": "",
+        "has_lyrics": false
     },
     {
         "id": 5,
@@ -1074,253 +2118,253 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-14 20:38",
+        "date": "2025-12-14 23:41",
+        "type": "update",
+        "msg": "更新: Songs of Travel/旅行之歌"
+    },
+    {
+        "date": "2025-12-14 23:40",
+        "type": "update",
+        "msg": "更新: A Young Man's Exhortation"
+    },
+    {
+        "date": "2025-12-14 23:37",
+        "type": "update",
+        "msg": "更新: Ten Blake Songs"
+    },
+    {
+        "date": "2025-12-14 23:37",
+        "type": "update",
+        "msg": "更新: The House of Life/生命之屋"
+    },
+    {
+        "date": "2025-12-14 23:36",
         "type": "update",
         "msg": "更新: A Shropshire Lad/什罗普郡小伙子"
     },
     {
-        "date": "2025-12-14 20:36",
-        "type": "add",
-        "msg": "添加: A Sea Symphony/大海交响曲"
-    },
-    {
-        "date": "2025-12-14 20:32",
+        "date": "2025-12-14 23:35",
         "type": "update",
-        "msg": "更新: Sonata No.3 Op.25/奏鸣曲"
+        "msg": "更新: A Shropshire Lad/什罗普郡小伙子"
     },
     {
-        "date": "2025-12-14 20:31",
+        "date": "2025-12-14 23:21",
+        "type": "add",
+        "msg": "添加: The House of Life/生命之屋"
+    },
+    {
+        "date": "2025-12-14 23:20",
+        "type": "add",
+        "msg": "添加: Ten Blake Songs"
+    },
+    {
+        "date": "2025-12-14 23:18",
+        "type": "add",
+        "msg": "添加: A Shropshire Lad/什罗普郡小伙子"
+    },
+    {
+        "date": "2025-12-14 23:11",
+        "type": "add",
+        "msg": "添加: Henry Purcell Songs/普赛尔歌曲集"
+    },
+    {
+        "date": "2025-12-14 23:09",
+        "type": "add",
+        "msg": "添加: A Young Man's Exhortation"
+    },
+    {
+        "date": "2025-12-14 23:06",
+        "type": "add",
+        "msg": "添加: Baber歌曲集"
+    },
+    {
+        "date": "2025-12-14 23:01",
+        "type": "add",
+        "msg": "添加: Let us garlands bring"
+    },
+    {
+        "date": "2025-12-14 22:59",
+        "type": "add",
+        "msg": "添加: Ives 114 Songs"
+    },
+    {
+        "date": "2025-12-14 22:58",
+        "type": "add",
+        "msg": "添加: Songs of Travel/旅行之歌"
+    },
+    {
+        "date": "2025-12-14 22:50",
         "type": "update",
-        "msg": "更新: Sonata Op.25/奏鸣曲"
+        "msg": "更新: Or sei pago, o ciel tremendo"
     },
     {
-        "date": "2025-12-14 20:31",
-        "type": "update",
-        "msg": "更新: Sonata op.25/奏鸣曲"
-    },
-    {
-        "date": "2025-12-14 20:30",
+        "date": "2025-12-14 22:50",
         "type": "add",
-        "msg": "添加: Sonata op.25/奏鸣曲"
+        "msg": "添加: Sono all'ara…barriera tremenda…Ciel pietoso, in sì crudo momento"
     },
     {
-        "date": "2025-12-14 20:27",
+        "date": "2025-12-14 22:50",
         "type": "add",
-        "msg": "添加: Ave Verum Corpus, K.618"
+        "msg": "添加: Or sei pago, o ciel tremendo"
     },
     {
-        "date": "2025-12-14 20:22",
+        "date": "2025-12-14 22:49",
         "type": "add",
-        "msg": "添加: 罗忠镕艺术歌曲集"
+        "msg": "添加: Sventurata, anch'io deliro"
     },
     {
-        "date": "2025-12-14 20:21",
+        "date": "2025-12-14 22:49",
         "type": "add",
-        "msg": "添加: A Shropshire Lad"
+        "msg": "添加: Lo sognai ferito, esangue"
     },
     {
-        "date": "2025-12-14 20:19",
-        "type": "update",
-        "msg": "更新: Estuans interius"
-    },
-    {
-        "date": "2025-12-14 20:17",
-        "type": "update",
-        "msg": "更新: Come paride vezzoso"
-    },
-    {
-        "date": "2025-12-14 12:16",
-        "type": "update",
-        "msg": "更新: Le Nozze di Figaro, K.492/费加罗的婚礼"
-    },
-    {
-        "date": "2025-12-14 12:15",
+        "date": "2025-12-14 22:49",
         "type": "add",
-        "msg": "添加: Le Nozze di Figaro, K.492/费加罗的婚礼"
+        "msg": "添加: Col sorriso d'innocenza"
     },
     {
-        "date": "2025-12-14 01:59",
+        "date": "2025-12-14 22:48",
         "type": "add",
-        "msg": "添加了新乐谱：《Warm as the Autumn Light》 (Douglas Stuart Moore)"
+        "msg": "添加: La mia scelta a voi sia grata… Contenta appien quest'alma"
     },
     {
-        "date": "2025-12-14 01:58",
+        "date": "2025-12-14 22:48",
         "type": "add",
-        "msg": "添加了新乐谱：《Votre toast (Toreador Song)/斗牛士之歌》 (Georges Bizet/比才)"
+        "msg": "添加: Deh! Non ferir… Alla gioia ed al piacer"
     },
     {
-        "date": "2025-12-14 01:57",
+        "date": "2025-12-14 22:48",
         "type": "add",
-        "msg": "添加了新乐谱：《Vision fugitive/短暂的幻影》 (Jules Massenet/马斯奈)"
+        "msg": "添加: Oh! Mie fedeli!...Ma la sola, ohimè! son io…Ah! La pena in lor piombò"
     },
     {
-        "date": "2025-12-14 01:56",
+        "date": "2025-12-14 22:47",
         "type": "add",
-        "msg": "添加了新乐谱：《Uzhel ta samaya Tatyana》 (Pyotr Ilyich Tchaikovsky/柴可夫斯基)"
+        "msg": "添加: Dopo l'oscuro nembo"
     },
     {
-        "date": "2025-12-14 01:55",
+        "date": "2025-12-14 22:46",
         "type": "add",
-        "msg": "添加了新乐谱：《Their brains are boiled/他们的脑浆在沸腾》 (Thomas adès)"
+        "msg": "添加: È serbato, a questo acciaro"
     },
     {
-        "date": "2025-12-14 01:54",
+        "date": "2025-12-14 22:45",
         "type": "add",
-        "msg": "添加了新乐谱：《Starbuck's Aria》 (Jake Heggie)"
+        "msg": "添加: Ah! Se non m'ami piu"
     },
     {
-        "date": "2025-12-14 01:53",
+        "date": "2025-12-14 22:45",
         "type": "add",
-        "msg": "添加了新乐谱：《Sorge infausta/刮起一阵不祥的暴风雨》 (Georg Friedrich Händel/亨德尔)"
+        "msg": "添加: Tu sola… Deh! Tu, deh! Tu, bell'anima"
     },
     {
-        "date": "2025-12-14 01:52",
+        "date": "2025-12-14 22:44",
         "type": "add",
-        "msg": "添加了新乐谱：《Sosi immobile》 (Gioachino Rossini/罗西尼)"
+        "msg": "添加: Se Romeo l'uccise un figlio"
     },
     {
-        "date": "2025-12-14 01:52",
+        "date": "2025-12-14 22:43",
         "type": "add",
-        "msg": "添加了新乐谱：《Sibilar gli angui d'Aletto》 (Georg Friedrich Händel/亨德尔)"
+        "msg": "添加: Tutto è gioia, tutto è festa"
     },
     {
-        "date": "2025-12-14 01:50",
+        "date": "2025-12-14 22:43",
         "type": "add",
-        "msg": "添加了新乐谱：《Si puo, Si puo/原谅，原谅》 (Ruggero Leoncavallo/莱昂卡瓦洛)"
+        "msg": "添加: De' lieti auguri a voi"
     },
     {
-        "date": "2025-12-14 01:49",
+        "date": "2025-12-14 22:42",
         "type": "add",
-        "msg": "添加了新乐谱：《See the raging flames arise》 (Georg Friedrich Händel/亨德尔)"
+        "msg": "添加: Sovra il sen la man mi posa"
     },
     {
-        "date": "2025-12-14 01:47",
+        "date": "2025-12-14 22:42",
         "type": "add",
-        "msg": "添加了新乐谱：《Scintille diamant》 (Jacques Offenbach/奥芬巴赫)"
+        "msg": "添加: Care compagne… Come per me serena"
     },
     {
-        "date": "2025-12-14 01:46",
+        "date": "2025-12-14 22:42",
         "type": "add",
-        "msg": "添加了新乐谱：《Rivolgete a lui lo sguardo/转向她，注视她》 (Wolfgang Amadeus Mozart/莫扎特)"
+        "msg": "添加: Ah! Non giunge uman pensiero"
     },
     {
-        "date": "2025-12-14 01:45",
+        "date": "2025-12-14 22:41",
         "type": "add",
-        "msg": "添加了新乐谱：《Questo amor vergogna mia》 (Giacomo Puccini/普契尼)"
+        "msg": "添加: Ah! non credea mirarti"
     },
     {
-        "date": "2025-12-14 01:44",
+        "date": "2025-12-14 22:41",
         "type": "add",
-        "msg": "添加了新乐谱：《Per me giunto/我的末日就在眼前》 (Giuseppe Verdi/威尔第)"
+        "msg": "添加: Son vergin vezzosa"
     },
     {
-        "date": "2025-12-14 01:43",
+        "date": "2025-12-14 22:40",
         "type": "add",
-        "msg": "添加了新乐谱：《Papagena Papagena Papagena!》 (Wolfgang Amadeus Mozart/莫扎特)"
+        "msg": "添加: Qui la voce… Vien, diletto"
     },
     {
-        "date": "2025-12-14 01:42",
+        "date": "2025-12-14 22:39",
         "type": "add",
-        "msg": "添加了新乐谱：《O vin dissipe la tristesse/美酒驱散悲伤（饮酒歌）》 (Ambroise Thomas/托玛)"
+        "msg": "添加: Morte io non temo"
     },
     {
-        "date": "2025-12-14 01:40",
+        "date": "2025-12-14 22:39",
         "type": "add",
-        "msg": "添加了新乐谱：《O Lisbona, alfin ti miro》 (Gaetano Donizetti/多尼采蒂)"
+        "msg": "添加: Eccomi in lieta vesta…Oh quante volte ti chiedo"
     },
     {
-        "date": "2025-12-14 01:39",
+        "date": "2025-12-14 22:33",
         "type": "add",
-        "msg": "添加了新乐谱：《O du mein holder Abendstern/晚星颂》 (Richard Wagner/瓦格纳)"
+        "msg": "添加: Vi ravviso, o luoghi ameni"
     },
     {
-        "date": "2025-12-14 01:38",
+        "date": "2025-12-14 22:33",
         "type": "add",
-        "msg": "添加了新乐谱：《Nulla! Silenzio》 (Giacomo Puccini/普契尼)"
+        "msg": "添加: Tu non sai conquei begli occhi"
     },
     {
-        "date": "2025-12-14 01:37",
+        "date": "2025-12-14 22:32",
         "type": "add",
-        "msg": "添加了新乐谱：《Nemico della patria/他是祖国的敌人》 (Umberto Giordano/乔尔达诺)"
+        "msg": "添加: Cinta di fiori"
     },
     {
-        "date": "2025-12-14 01:35",
+        "date": "2025-12-14 22:30",
         "type": "add",
-        "msg": "添加了新乐谱：《Miei rampolli femminini》 (Giaochino Rossini)"
+        "msg": "添加: Vieni, vieni fra questa braccia"
     },
     {
-        "date": "2025-12-14 01:34",
+        "date": "2025-12-14 22:29",
         "type": "add",
-        "msg": "添加了新乐谱：《Mein Sehnen mein Wähnen/我的思念，我的幻想》 (Erich Korngold/科恩戈尔德)"
+        "msg": "添加: Sprezzo, audace, il tuo furore"
     },
     {
-        "date": "2025-12-14 01:33",
+        "date": "2025-12-14 22:29",
         "type": "add",
-        "msg": "添加了新乐谱：《Mab la reine des mensonges》 (Charles Gounod/古诺)"
+        "msg": "添加: Son salvo...La mia canzon d'amore…Ad altro lato"
     },
     {
-        "date": "2025-12-14 01:32",
+        "date": "2025-12-14 22:28",
         "type": "add",
-        "msg": "添加了新乐谱：《Look! Through the port》 (Benjamin Britten/布里顿)"
+        "msg": "添加: Credeasi, misera"
     },
     {
-        "date": "2025-12-14 01:31",
+        "date": "2025-12-14 22:28",
         "type": "add",
-        "msg": "添加了新乐谱：《Largo al factotum/快给大忙人让路》 (Gioachino Rossini/罗西尼)"
+        "msg": "添加: A te, o cara, amor talora"
     },
     {
-        "date": "2025-12-14 01:30",
+        "date": "2025-12-14 22:27",
         "type": "add",
-        "msg": "添加了新乐谱：《L'orage s'est calme》 (Georges Bizet/比才)"
+        "msg": "添加: Ah! perchè non posso odiarti"
     },
     {
-        "date": "2025-12-14 01:29",
+        "date": "2025-12-14 22:26",
         "type": "add",
-        "msg": "添加了新乐谱：《Kogda bi zhizn domashnim krugom》 (Pyotr Ilyich Tchaikovsky/柴可夫斯基)"
+        "msg": "添加: Prendi: I'anel ti dono"
     },
     {
-        "date": "2025-12-14 01:28",
+        "date": "2025-12-14 22:25",
         "type": "add",
-        "msg": "添加了新乐谱：《Kennst du das land》 (Mark Adamo)"
-    },
-    {
-        "date": "2025-12-14 01:25",
-        "type": "add",
-        "msg": "添加了新乐谱：《Ja vas lyublyu/我爱你》 (Pyotr Ilyich Tchaikovsky/柴可夫斯基)"
-    },
-    {
-        "date": "2025-12-14 01:23",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Aprite un po quegli occhi/睁开你们的眼睛》"
-    },
-    {
-        "date": "2025-12-14 01:23",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Deh vieni alla finestra/请你到窗前来》"
-    },
-    {
-        "date": "2025-12-14 01:23",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Der Vogelfänger bin ich ja/我是一个捕鸟人》"
-    },
-    {
-        "date": "2025-12-14 01:23",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Donne mie la fate a tanti/我们女人总是这样做》"
-    },
-    {
-        "date": "2025-12-14 01:23",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Ein Madchen oder Weibchen/愿姑娘或大嫂》"
-    },
-    {
-        "date": "2025-12-14 01:21",
-        "type": "update",
-        "msg": "更新了乐谱信息：《Fin ch'han dal vino/让大家痛饮，让大家狂欢》"
-    },
-    {
-        "date": "2025-12-14 01:21",
-        "type": "add",
-        "msg": "添加了新乐谱：《Hai gia vinta la causa/你已赢得了诉讼》 (Wolfgang Amadeus Mozart/莫扎特)"
+        "msg": "添加: Tu vedrai la sventurata"
     }
 ];
