@@ -1,9 +1,9 @@
-// 最后更新于 2025-12-16 10:07:52
+// 最后更新于 2025-12-16 10:01:56
 const musicData = [
     {
         "id": 161,
-        "title": "Belsazar, Op.57",
-        "composer": "Robert Schumann/舒曼",
+        "title": "Belsazar",
+        "composer": "舒曼",
         "work": "",
         "language": "德语",
         "category": "艺术歌曲",
@@ -13,7 +13,7 @@ const musicData = [
         "description": "",
         "filename": "艺术歌曲/1765904516.pdf",
         "date": "2025-12-16",
-        "has_lyrics": true
+        "has_lyrics": false
     },
     {
         "id": 160,
@@ -2163,11 +2163,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-16 10:07",
-        "type": "update",
-        "msg": "更新: Belsazar, Op.57"
-    },
-    {
         "date": "2025-12-16 10:01",
         "type": "add",
         "msg": "添加: Belsazar"
@@ -2411,5 +2406,10 @@ const changeLog = [
         "date": "2025-12-14 22:29",
         "type": "add",
         "msg": "添加: Son salvo...La mia canzon d'amore…Ad altro lato"
+    },
+    {
+        "date": "2025-12-14 22:28",
+        "type": "add",
+        "msg": "添加: Credeasi, misera"
     }
 ];
