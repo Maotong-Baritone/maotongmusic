@@ -98,6 +98,20 @@ def load_lyrics(item_id):
     return {"original": "", "translation": ""}
 
 # --- HTML Templates ---
+LOGIN_HTML = """
+<!doctype html>
+<html lang="zh">
+<head><meta charset="utf-8"><title>登录</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="height:100vh">
+<div class="card p-4 shadow" style="width:350px">
+    <h3 class="text-center mb-3">登录</h3>
+    <form method="post"><input type="text" name="username" class="form-control mb-2" placeholder="User" required><input type="password" name="password" class="form-control mb-3" placeholder="Pass" required><button class="btn btn-primary w-100">Login</button></form>
+</div>
+</body></html>
+"""
+
 CATEGORY_SELECT_HTML = """
 <div class="mb-3"><label class="form-label">分类</label><select class="form-select" name="category">
 {% set current = item.category if item else '' %}
@@ -140,6 +154,7 @@ FORM_HTML = """
     <label class="form-label fw-bold">📝 简介 / 包含曲目列表 (Description)</label>
     <textarea class="form-control" name="description" rows="3" placeholder="填写乐谱简介或合集曲目列表...">{{ item.description if item and item.description else '' }}</textarea>
 </div>
+
 <hr class="my-4">
 <h5 class="text-primary fw-bold">📖 歌词与剧本 (Lyrics & Libretto)</h5>
 <div class="alert alert-info small">提示：可以直接粘贴文本。如果要实现“左右对照”，请尽量让原文和译文的段落数保持一致。</div>
@@ -153,20 +168,6 @@ FORM_HTML = """
         <textarea class="form-control font-monospace" name="lyrics_cn" rows="10" style="font-size: 0.9rem;">{{ lyrics.translation if lyrics else '' }}</textarea>
     </div>
 </div>
-"""
-
-LOGIN_HTML = """
-<!doctype html>
-<html lang="zh">
-<head><meta charset="utf-8"><title>登录</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light d-flex align-items-center justify-content-center" style="height:100vh">
-<div class="card p-4 shadow" style="width:350px">
-    <h3 class="text-center mb-3">登录</h3>
-    <form method="post"><input type="text" name="username" class="form-control mb-2" placeholder="User" required><input type="password" name="password" class="form-control mb-3" placeholder="Pass" required><button class="btn btn-primary w-100">Login</button></form>
-</div>
-</body></html>
 """
 
 HTML_TEMPLATE = """
@@ -256,24 +257,24 @@ def index():
             music_data, change_log = load_data_and_log()
             new_id = 1 if not music_data else max(i['id'] for i in music_data) + 1
             
-            # 处理文件
-            safe_name = secure_filename(file.filename)
-            ext = safe_name.rsplit('.', 1)[1].lower() if safe_name else 'pdf'
+            # --- 修复核心：安全获取扩展名 ---
+            # 不再依赖 safe_name 去分割，因为 safe_name 可能没有后缀
+            # 既然 allowed_file 过了，说明原始 file.filename 一定有点号
+            ext = file.filename.rsplit('.', 1)[1].lower()
             filename = f"{int(time.time())}.{ext}"
+            
             cat_dir = os.path.join(SCORES_DIR, request.form['category'])
             if not os.path.exists(cat_dir): os.makedirs(cat_dir)
             file.save(os.path.join(cat_dir, filename))
             
-            # 保存歌词
             has_lyrics = save_lyrics(new_id, request.form.get('lyrics_og', ''), request.form.get('lyrics_cn', ''))
 
-            # 保存数据 (增加了 description)
             music_data.append({
                 "id": new_id, "title": request.form['title'], "composer": request.form['composer'],
                 "work": request.form.get('work',''), "language": request.form.get('language',''),
                 "category": request.form['category'], "voice_count": request.form.get('voice_count',''),
                 "voice_types": request.form.get('voice_types',''), "tonality": request.form.get('tonality',''),
-                "description": request.form.get('description',''), # ✅ 修复：保存简介
+                "description": request.form.get('description',''),
                 "filename": f"{request.form['category']}/{filename}", 
                 "date": datetime.date.today().strftime("%Y-%m-%d"),
                 "has_lyrics": has_lyrics
@@ -305,9 +306,8 @@ def edit(item_id):
             "work": request.form.get('work',''), "language": request.form.get('language',''),
             "category": request.form['category'], "voice_count": request.form.get('voice_count',''),
             "voice_types": request.form.get('voice_types',''), "tonality": request.form.get('tonality',''),
-            "description": request.form.get('description','') # ✅ 修复：更新简介
+            "description": request.form.get('description','')
         })
-        # 更新歌词状态
         has_lyrics = save_lyrics(item_id, request.form.get('lyrics_og', ''), request.form.get('lyrics_cn', ''))
         item['has_lyrics'] = has_lyrics
         
@@ -326,7 +326,6 @@ def delete(item_id):
     item = next((i for i in data if i['id'] == item_id), None)
     if item:
         data = [i for i in data if i['id'] != item_id]
-        # 删除歌词文件
         lyric_path = os.path.join(LYRICS_DIR, f"{item_id}.json")
         if os.path.exists(lyric_path): os.remove(lyric_path)
         

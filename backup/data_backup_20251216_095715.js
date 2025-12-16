@@ -1,24 +1,9 @@
-// 最后更新于 2025-12-16 09:57:24
+// 最后更新于 2025-12-16 09:54:49
 const musicData = [
-    {
-        "id": 160,
-        "title": "Die beiden Grenadiere/两个禁卫军/两个掷弹兵",
-        "composer": "Richard Wagner/瓦格纳",
-        "work": "Les deux grenadiers, WWV 60",
-        "language": "德语",
-        "category": "歌剧咏叹调",
-        "voice_count": "",
-        "voice_types": "",
-        "tonality": "",
-        "description": "",
-        "filename": "歌剧咏叹调/1765904235.pdf",
-        "date": "2025-12-16",
-        "has_lyrics": false
-    },
     {
         "id": 159,
         "title": "Am meer/在海边",
-        "composer": "Franz Schubert/舒伯特",
+        "composer": "Fr",
         "work": "Schwanengesang, D.957",
         "language": "德语",
         "category": "歌剧咏叹调",
@@ -2148,16 +2133,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-16 09:57",
-        "type": "update",
-        "msg": "更新: Am meer/在海边"
-    },
-    {
-        "date": "2025-12-16 09:57",
-        "type": "add",
-        "msg": "添加: Die beiden Grenadiere/两个禁卫军/两个掷弹兵"
-    },
-    {
         "date": "2025-12-16 09:54",
         "type": "add",
         "msg": "添加: Am meer/在海边"
@@ -2396,5 +2371,15 @@ const changeLog = [
         "date": "2025-12-14 22:28",
         "type": "add",
         "msg": "添加: A te, o cara, amor talora"
+    },
+    {
+        "date": "2025-12-14 22:27",
+        "type": "add",
+        "msg": "添加: Ah! perchè non posso odiarti"
+    },
+    {
+        "date": "2025-12-14 22:26",
+        "type": "add",
+        "msg": "添加: Prendi: I'anel ti dono"
     }
 ];

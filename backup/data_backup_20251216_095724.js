@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-16 09:57:24
+// 最后更新于 2025-12-16 09:57:15
 const musicData = [
     {
         "id": 160,
@@ -18,7 +18,7 @@ const musicData = [
     {
         "id": 159,
         "title": "Am meer/在海边",
-        "composer": "Franz Schubert/舒伯特",
+        "composer": "Fr",
         "work": "Schwanengesang, D.957",
         "language": "德语",
         "category": "歌剧咏叹调",
@@ -2149,11 +2149,6 @@ const musicData = [
 const changeLog = [
     {
         "date": "2025-12-16 09:57",
-        "type": "update",
-        "msg": "更新: Am meer/在海边"
-    },
-    {
-        "date": "2025-12-16 09:57",
         "type": "add",
         "msg": "添加: Die beiden Grenadiere/两个禁卫军/两个掷弹兵"
     },
@@ -2396,5 +2391,10 @@ const changeLog = [
         "date": "2025-12-14 22:28",
         "type": "add",
         "msg": "添加: A te, o cara, amor talora"
+    },
+    {
+        "date": "2025-12-14 22:27",
+        "type": "add",
+        "msg": "添加: Ah! perchè non posso odiarti"
     }
 ];
