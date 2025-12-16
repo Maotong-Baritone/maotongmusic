@@ -28,13 +28,12 @@
         .font-serif { font-family: 'Playfair Display', 'Noto Serif SC', serif; }
         .container { flex: 1; }
         
-        /* === 导航栏优化 === */
+        /* 导航栏 */
         .navbar {
-            background: rgba(38, 70, 83, 0.98) !important; /* 增加不透明度 */
+            background: rgba(38, 70, 83, 0.98) !important;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
-        /* 手机端下拉菜单背景微调 */
         @media (max-width: 991px) {
             .navbar-collapse {
                 background: rgba(38, 70, 83, 0.95);
@@ -44,7 +43,7 @@
             }
         }
 
-        /* === Hero 区域优化 === */
+        /* Hero 区域 */
         .hero-section {
             background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
             padding: 4rem 0 6rem 0;
@@ -54,15 +53,10 @@
             position: relative;
             overflow: hidden;
         }
-        /* 手机端减小 Hero 间距 */
         @media (max-width: 768px) {
-            .hero-section {
-                padding: 3rem 0 5rem 0;
-                margin-bottom: -3rem;
-            }
-            .display-4 { font-size: 2.5rem; } /* 缩小手机端标题 */
+            .hero-section { padding: 3rem 0 5rem 0; margin-bottom: -3rem; }
+            .display-4 { font-size: 2.5rem; }
         }
-
         .hero-section::before {
             content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
             background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 20%),
@@ -139,14 +133,65 @@
         .btn-outline-primary { color: #2a9d8f; border-color: #2a9d8f; }
         .btn-outline-primary:hover { background-color: #2a9d8f; border-color: #2a9d8f; color: white; }
 
+        /* === 剧本阅读器样式 === */
         .reader-text-col { padding: 2rem; font-size: 1.05rem; line-height: 1.8; }
         .reader-original { background-color: #fff; border-right: 1px solid #eee; color: #333; font-family: 'Playfair Display', serif; }
         .reader-translation { background-color: #fafafa; color: #555; font-family: 'Noto Sans SC', sans-serif; }
         
-        /* 手机阅读器优化 */
         @media (max-width: 768px) {
             .reader-original { border-right: none; border-bottom: 1px solid #eee; height: 50% !important; }
             .reader-translation { height: 50% !important; }
+        }
+
+        /* === 🚀 关键修复：响应式详情弹窗 CSS === */
+        /* 默认（手机端）：自然高度，允许页面滚动 */
+        .responsive-modal-content {
+            height: auto !important; 
+            min-height: auto !important;
+            overflow: visible !important;
+            border-radius: 16px;
+        }
+        .responsive-modal-body {
+            height: auto !important;
+        }
+        .responsive-row {
+            height: auto !important;
+            display: flex;
+            flex-direction: column; /* 手机端强制垂直排列 */
+        }
+        .responsive-col-left {
+            height: auto !important;
+            overflow: visible !important;
+            border-right: none !important;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .responsive-col-right {
+            height: 60vh !important; /* 手机上预览区固定高度 */
+            min-height: 400px;
+        }
+
+        /* 电脑端 (>= 992px)：切回高级分栏模式 */
+        @media (min-width: 992px) {
+            .responsive-modal-content {
+                height: 90vh !important;
+                overflow: hidden !important;
+            }
+            .responsive-modal-body {
+                height: 100% !important;
+            }
+            .responsive-row {
+                height: 100% !important;
+                flex-direction: row; /* 电脑端水平排列 */
+            }
+            .responsive-col-left {
+                height: 100% !important;
+                overflow-y: auto !important; /* 左侧独立滚动 */
+                border-right: 1px solid #dee2e6 !important;
+                border-bottom: none !important;
+            }
+            .responsive-col-right {
+                height: 100% !important;
+            }
         }
     </style>
 </head>
@@ -177,19 +222,12 @@
                             <li><a class="dropdown-item" href="http://www.theoperadatabase.com/" target="_blank">📂 The Opera Database</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start">
-                            👋 联系我
-                        </a>
+                        <a href="contact.html" class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start">👋 联系我</a>
                     </li>
-
                     <li class="nav-item">
-                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showLogModal()">
-                            🔔 动态
-                        </button>
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showLogModal()">🔔 动态</button>
                     </li>
-                    
                     <li class="nav-item d-none d-lg-block">
                         <span class="badge bg-warning text-dark ms-2">v0.2测试版</span>
                     </li>
@@ -209,7 +247,6 @@
                         <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="搜曲名、作曲家、目录内容..." style="box-shadow: none;">
                         <button class="btn btn-primary rounded-pill px-4 fw-bold" style="background-color:#2a9d8f; border:none;" type="button" onclick="performSearch()">搜索</button>
                     </div>
-                    
                     <div class="mt-4 d-flex flex-column align-items-center gap-2">
                         <button class="btn btn-link text-white text-decoration-none opacity-75 hover-opacity-100" onclick="resetFilters()">🌟 查看完整乐谱列表</button>
                         <div class="d-flex gap-4 text-white-50 mt-1 small font-serif">
@@ -236,18 +273,14 @@
                     <div class="list-group list-group-flush category-group">
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧咏叹调', this)">歌剧咏叹调 <span class="badge bg-light text-dark count-badge" data-cat="歌剧咏叹调">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧重唱', this)">歌剧重唱 <span class="badge bg-light text-dark count-badge" data-cat="歌剧重唱">0</span></button>
-                        
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('宗教声乐作品', this)">宗教声乐作品 <span class="badge bg-light text-dark count-badge" data-cat="宗教声乐作品">0</span></button>
-                        
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('艺术歌曲', this)">艺术歌曲 <span class="badge bg-light text-dark count-badge" data-cat="艺术歌曲">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('音乐剧选段', this)">音乐剧选段 <span class="badge bg-light text-dark count-badge" data-cat="音乐剧选段">0</span></button>
-                        
                         <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">其他分类</div>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('合唱作品', this)">合唱作品 <span class="badge bg-light text-dark count-badge" data-cat="合唱作品">0</span></button>
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="category-card">
                     <div class="cat-header text-success bg-light bg-opacity-50">📚 曲集与器乐</div>
@@ -263,7 +296,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="category-card">
                     <div class="cat-header text-danger bg-light bg-opacity-50">🎼 总谱与特殊</div>
@@ -272,12 +304,7 @@
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('管弦乐/交响曲', this)">管弦乐/交响曲 <span class="badge bg-light text-dark count-badge" data-cat="管弦乐/交响曲">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('协奏曲总谱', this)">协奏曲总谱 <span class="badge bg-light text-dark count-badge" data-cat="协奏曲总谱">0</span></button>
                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('宗教声乐作品总谱', this)">
-                            <div>
-                                宗教声乐作品总谱
-                                <div class="small text-muted" style="font-size: 0.65rem; font-weight: normal; margin-top: 2px; line-height: 1.2;">
-                                    (清唱剧、康塔塔、弥撒、安魂曲等)
-                                </div>
-                            </div>
+                            <div>宗教声乐作品总谱<div class="small text-muted" style="font-size:0.65rem">(弥撒、清唱剧、康塔塔等)</div></div>
                             <span class="badge bg-light text-dark count-badge" data-cat="宗教声乐作品总谱">0</span>
                         </button>
                     </div>
@@ -292,12 +319,10 @@
     </div>
 
     <div class="container content-section" id="mainContentArea">
-        
         <div class="card shadow-sm border-0 mb-4" style="background: white; border-radius: 12px;">
             <div class="card-body py-3">
                 <div class="row align-items-center g-3">
                     <div class="col-md-auto fw-bold text-secondary d-none d-md-block">🌪️ 筛选:</div>
-                    
                     <div class="col-6 col-md-2">
                         <input class="form-control form-control-sm border-0 bg-light" list="composerOptions" id="composerInput" placeholder="👤 作曲家" oninput="applyFilters()">
                         <datalist id="composerOptions"></datalist>
@@ -306,11 +331,9 @@
                         <input class="form-control form-control-sm border-0 bg-light" list="voiceOptions" id="voiceInput" placeholder="🎻 编制" oninput="applyFilters()">
                         <datalist id="voiceOptions"></datalist>
                     </div>
-                    
                     <div class="col-6 col-md-2">
                         <select id="languageSelect" class="form-select form-select-sm border-0 bg-light" onchange="applyFilters()"><option value="all">🌐 语言</option></select>
                     </div>
-                    
                     <div class="col-6 col-md-3 border-start ps-4">
                         <select id="sortSelect" class="form-select form-select-sm fw-bold text-primary border-0" onchange="applyFilters()">
                             <option value="date_desc">📅 时间 (新)</option>
@@ -319,7 +342,6 @@
                             <option value="composer_asc">👤 作曲家</option>
                         </select>
                     </div>
-                    
                     <div class="col-12 col-md-auto ms-auto d-grid d-md-block">
                          <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 w-100" onclick="resetFilters()">🔄 重置</button>
                     </div>
@@ -359,14 +381,14 @@
 
     <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content" style="height: 90vh; border-radius: 16px; overflow: hidden;">
+            <div class="modal-content responsive-modal-content">
                 <div class="modal-header border-0 bg-light">
                     <h5 class="modal-title fw-bold font-serif">乐谱详情</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0">
-                    <div class="row h-100 g-0">
-                        <div class="col-md-3 p-4 bg-white border-end overflow-auto">
+                <div class="modal-body p-0 responsive-modal-body">
+                    <div class="row g-0 responsive-row">
+                        <div class="col-lg-3 col-12 p-4 bg-white responsive-col-left">
                             <span class="badge bg-primary mb-3" id="mCategory" style="background-color: #264653 !important;"></span>
                             <h3 id="mTitle" class="mb-2 fw-bold text-dark font-serif"></h3>
                             <p class="mb-4 text-muted fst-italic"><span id="mWork" class="fs-6">-</span></p>
@@ -394,7 +416,8 @@
                             <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" style="background-color:#2a9d8f; border:none;" download>⬇️ 下载 PDF</a>
                             <div class="mt-4 pt-3 border-top text-center text-muted small">仅供学习交流，请于下载后24小时内删除。</div>
                         </div>
-                        <div class="col-md-9 bg-secondary position-relative">
+                        
+                        <div class="col-lg-9 col-12 bg-secondary position-relative responsive-col-right">
                             <iframe id="mPreview" src="" width="100%" height="100%" style="border:none;"></iframe>
                             <div id="noPreview" class="d-flex flex-column align-items-center justify-content-center h-100 text-white" style="display:none;"><div class="fs-1 mb-3">📄</div><p class="fs-5">暂无预览</p></div>
                         </div>
@@ -538,23 +561,18 @@
             tbody.innerHTML = html; renderPaginationControls(pages);
         }
 
-        // 分页控件 (带跳转功能)
+        // 分页控件
         function renderPaginationControls(pages) {
             const ul = document.getElementById('paginationUl');
             let html = '';
             
-            // 首页 & 上一页
             html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
                         <a class="page-link border-0 bg-transparent" href="#" onclick="changePage(1); return false;">首页</a>
                      </li>`;
             html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
                         <a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${currentPage - 1}); return false;">上一页</a>
                      </li>`;
-            
-            // 页码显示
             html += `<li class="page-item disabled"><span class="page-link border-0 bg-transparent fw-bold text-dark" style="white-space: nowrap;">${currentPage} / ${pages}</span></li>`;
-
-            // 下一页 & 尾页
             html += `<li class="page-item ${currentPage === pages ? 'disabled' : ''}">
                         <a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${currentPage + 1}); return false;">下一页</a>
                      </li>`;
@@ -562,7 +580,6 @@
                         <a class="page-link border-0 bg-transparent" href="#" onclick="changePage(${pages}); return false;">尾页</a>
                      </li>`;
 
-            // ✨ 跳转输入框 (仅当页数>1时显示)
             if (pages > 1) {
                 html += `
                 <li class="page-item ms-3 d-flex align-items-center">
@@ -575,18 +592,14 @@
                             onclick="jumpToPage()">Go</button>
                 </li>`;
             }
-
             ul.innerHTML = html;
         }
 
-        // 跳转逻辑
         window.jumpToPage = function() {
             const input = document.getElementById('jumpInput');
             if (!input) return;
             let page = parseInt(input.value);
-            if (!isNaN(page) && page > 0) {
-                changePage(page);
-            }
+            if (!isNaN(page) && page > 0) { changePage(page); }
         }
 
         window.changePage = (p) => { currentPage = p; applyFilters(); document.getElementById('listSection').scrollIntoView({ behavior: 'smooth' }); };
