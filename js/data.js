@@ -1,5 +1,21 @@
-// 最后更新于 2025-12-18 02:34:24
+// 最后更新于 2025-12-18 02:52:18
 const musicData = [
+    {
+        "id": 235,
+        "title": "中国小提琴曲十二首",
+        "composer": "杨林，莫若伟等",
+        "work": "",
+        "language": "汉语",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "小提琴",
+        "tonality": "",
+        "description": "1凤阳花鼓（安徽民歌）\r\n2摇篮曲（东北民歌）\r\n3绣荷包（云南民歌）\r\n4康定情歌（四川民歌）\r\n5东北小调（东北民歌）\r\n6回娘家（河北民歌）\r\n7茉莉花（江苏民歌）\r\n8在银色的月光下（塔塔儿民歌）\r\n9山丹丹花开红艳艳（陕北民歌）\r\n10嘎达梅林（内蒙民歌）\r\n11喜新春（杨林 曲）\r\n12山乡行（杨林 曲）",
+        "filename": "乐谱书/曲集/1765997538.pdf",
+        "date": "2025-12-18",
+        "has_lyrics": false
+    },
     {
         "id": 234,
         "title": "CZARDAS/Csárdás/查尔达什",
@@ -3329,6 +3345,11 @@ const musicData = [
 ];
 const changeLog = [
     {
+        "date": "2025-12-18 02:52",
+        "type": "add",
+        "msg": "添加: 中国小提琴曲十二首"
+    },
+    {
         "date": "2025-12-18 02:34",
         "type": "update",
         "msg": "更新: CZARDAS/Csárdás/查尔达什"
@@ -3572,10 +3593,5 @@ const changeLog = [
         "date": "2025-12-16 21:08",
         "type": "add",
         "msg": "添加: Gedichte von Eduard Mörike/莫里克诗选艺术歌曲集（第一卷选段）"
-    },
-    {
-        "date": "2025-12-16 21:06",
-        "type": "add",
-        "msg": "添加: Eichendorff-Lieder, Volume I/艾兴多夫艺术歌曲集，第一卷"
     }
 ];
