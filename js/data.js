@@ -1,5 +1,485 @@
-// 最后更新于 2025-12-16 15:17:44
+// 最后更新于 2025-12-16 22:21:32
 const musicData = [
+    {
+        "id": 232,
+        "title": "Ach Gott, vom Himmel sieh darein, BWV 2 / 噢，上帝，请从天上垂顾",
+        "composer": "J.S. Bach/巴赫",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "康塔塔",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "1. Chorus: Ach Gott, vom Himmel sieh darein / 合唱：噢，上帝，请从天上垂顾（经文歌风格）\r\n2. Recitative: Sie lehren eitel falsche List / 女中音宣叙调：他们教导虚假诡诈\r\n3. Aria: Tilg, o Gott, die Lehren / 女中音咏叹调：噢，上帝，请铲除这些教义（带小提琴独奏）\r\n4. Recitative: Die Armen sind verstört / 男低音宣叙调：贫穷的人们惊恐不安\r\n5. Aria: Durchs Feuer wird das Silber rein / 男高音咏叹调：银子经火炼而纯净\r\n6. Chorale: Das wollst du, Gott, bewahren rein/ 圣咏：上帝，愿你保持它的纯洁\r\n",
+        "filename": "宗教声乐作品总谱/1765948892.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 231,
+        "title": "Ich will den Kreuzstab gerne tragen, BWV 56/我愿欣然背负苦架",
+        "composer": "J.S. Bach/巴赫",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "康塔塔",
+        "voice_count": "",
+        "voice_types": "男低音独唱与SATB合唱及管弦乐团",
+        "tonality": "",
+        "description": "1. Aria: Ich will den Kreuzstab gerne tragen/咏叹调：我愿欣然背负苦架\r\n2. Recitative: Mein Wandel auf der Welt ist einer Schiffahrt gleich/宣叙调：我在世间的行径犹如航海\r\n3. Aria: Endlich, endlich wird mein Joch/咏叹调：最终，我的枷锁终将卸下\r\n4. Recitative: Ich stehe fertig und bereit/宣叙调：我已准备就绪\r\n5. Chorale: Komm, o Tod, du Schlafes Bruder/圣咏：来吧，哦死亡，你这睡眠的兄弟\r\n",
+        "filename": "宗教声乐作品总谱/1765948524.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 230,
+        "title": "Matthäus-Passion, BWV 244/St. Matthew Passion/马太受难曲",
+        "composer": "J.S. Bach/巴赫",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "受难曲",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "第一部分 (Part I)\r\n\r\n1. Kommt, ihr Töchter, helft mir klagen (合唱与圣咏)\r\n2. Evangelist, Jesus: Da Jesus diese Rede vollendet hatte (宣叙调)\r\n3. Herzliebster Jesu, was hast du verbrochen (圣咏)\r\n4. Evangelist: Da versammleten sich die Hohenpriester (宣叙调与合唱)\r\n5. Evangelist: Da nun Jesus war zu Bethanien (宣叙调与合唱)\r\n6. Evangelist: Da das Jesus merkete (宣叙调)\r\n7. Du lieber Heiland du (女中音宣叙调)\r\n8. Buß und Reu (女中音咏叹调)\r\n9. Evangelist, Judas: Da ging hin der Zwölfen einer (宣叙调)\r\n10. Blute nur, du liebes Herz! (女高音咏叹调)\r\n11. Evangelist: Aber am ersten Tage der süßen Brot (宣叙调与合唱)\r\n12. Evangelist, Jesus: Er sprach: Gehet hin in die Stadt (宣叙调)\r\n13. Evangelist: Und sie wurden sehr betrübt (宣叙调)\r\n14. Ich bin's, ich sollte büßen (圣咏)\r\n15. Evangelist, Jesus, Judas: Er antwortete und sprach (宣叙调)\r\n16. Wiewohl mein Herz in Tränen schwimmt (女高音宣叙调)\r\n17. Ich will dir mein Herze schenken (女高音咏叹调)\r\n18. Evangelist, Jesus: Und da sie den Lobgesang gesprochen hatten (宣叙调)\r\n19. Erkene mich, mein Hüter (圣咏)\r\n20. Evangelist, Jesus, Petrus: Petrus aber antwortete (宣叙调)\r\n21. Ich will hier bei dir stehen (圣咏)\r\n22. Evangelist, Jesus: Da kam Jesus mit ihnen zu einem Hofe (宣叙调)\r\n23. O Schmerz! Hier zittert das gequälte Herz (男高音宣叙调与合唱)\r\n24. Ich will bei meinem Jesu wachen (男高音咏叹调与合唱)\r\n25. Evangelist, Jesus: Und ging hin ein wenig (宣叙调)\r\n26. Der Heiland fällt vor seinem Vater nieder (男低音宣叙调)\r\n27. Gerne will ich mich bequemen (男低音咏叹调)\r\n28. Evangelist, Jesus: Und er kam zu seinen Jüngern (宣叙调)\r\n29. Was mein Gott will, das g'scheh allzeit (圣咏)\r\n30. Evangelist, Jesus, Judas: Und er kam und fand sie aber schlafend (宣叙调)\r\n31. So ist mein Jesus nun gefangen (女高音、女中音二重唱与合唱)\r\n32. Evangelist, Jesus: Und siehe, einer aus denen (宣叙调)\r\n33. O Mensch, bewein dein Sünde groß (大合唱圣咏)\r\n\r\n第二部分 (Part II)\r\n\r\n34. Ach, nun ist mein Jesus hin! (女中音咏叹调与合唱)\r\n35. Evangelist: Die aber Jesum gegriffen hatten (宣叙调)\r\n36. Mir hat die Welt trüglich gericht't (圣咏)\r\n37. Evangelist, Zeugen, Hohepriester: Und wiewohl viel falsche Zeugen (宣叙调)\r\n38. Mein Jesus schweigt zu falschen Lügen stille (男高音宣叙调)\r\n39. Geduld, Geduld! (男高音咏叹调)\r\n40. Evangelist, Hohepriester, Jesus: Und der Hohepriester antwortete (宣叙调与合唱)\r\n41. Evangelist: Da speieten sie aus in sein Angesicht (宣叙调与合唱)\r\n42. Wer hat dich so geschlagen (圣咏)\r\n43. Evangelist, Petrus, Mägde: Petrus aber saß draußen im Hof (宣叙调与合唱)\r\n44. Evangelist, Petrus: Da hub er an sich zu verfluchen (宣叙调)\r\n45. Erbarme dich, mein Gott (女中音咏叹调)\r\n46. Bin ich gleich von dir gewichen (圣咏)\r\n47. Evangelist, Judas: Des Morgens aber hielten alle Hohepriester (宣叙调与合唱)\r\n48. Gebt mir meinen Jesum wieder! (男中音咏叹调)\r\n49. Evangelist, Pilatus, Jesus: Sie hielten aber einen Rat (宣叙调)\r\n50. Befiehl du deine Wege (圣咏)\r\n51. Evangelist, Pilatus, Weib des Pilatus: Auf das Fest aber hatte der Landpfleger (宣叙调与合唱)\r\n52. Wie wunderbarlich ist doch diese Strafe (圣咏)\r\n53. Evangelist, Pilatus: Der Landpfleger sagte (宣叙调)\r\n54. Er hat uns allen wohlgetan (女中音宣叙调)\r\n55. Aus Liebe will mein Heiland sterben (女高音咏叹调)\r\n56. Evangelist: Sie schrieen aber noch mehr (宣叙调与合唱)\r\n57. Erbarm es Gott! (女中音宣叙调)\r\n58. Können Tränen meiner Wangen (女中音咏叹调)\r\n59. Evangelist: Da gaben ihm die Kriegsknechte (宣叙调与合唱)\r\n60. O Haupt voll Blut und Wunden (圣咏)\r\n61. Evangelist: Und da sie ihn verspottet hatten (宣叙调)\r\n62. Ja freilich will in uns das Fleisch und Blut (男低音宣叙调)\r\n63. Komm, süßes Kreuz (男低音咏叹调)\r\n64. Evangelist: Und da sie an die Stätte kamen (宣叙调与合唱)\r\n65. Evangelist: Desgleichen schmäheten ihn auch die Mörder (宣叙调)\r\n66. Ach Golgatha, unsel'ges Golgatha! (女中音宣叙调)\r\n67. Sehet, Jesus hat die Hand (女中音咏叹调与合唱)\r\n68. Evangelist, Jesus: Und von der sechsten Stunde an (宣叙调与合唱)\r\n69. Wenn ich einmal soll scheiden (圣咏)\r\n70. Evangelist: Und siehe da, der Vorhang im Tempel zerriß (宣叙调与合唱)\r\n71. Am Abend, da es kühle war (男低音宣叙调)\r\n72. Mache dich, mein Herze, rein (男低音咏叹调)\r\n73. Evangelist: Und Joseph nahm den Leib (宣叙调与合唱)\r\n74. Nun ist der Herr zur Ruh gebracht (SATB独唱与合唱)\r\n75. Wir setzen uns mit Tränen nieder (终曲合唱)",
+        "filename": "宗教声乐作品总谱/1765948178.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 229,
+        "title": "Mass in B minor, BWV 232/b小调弥撒",
+        "composer": "J.S. Bach/巴赫",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "弥撒",
+        "voice_count": "",
+        "voice_types": "SSATB独唱与SATB合唱与管弦乐队",
+        "tonality": "b小调",
+        "description": "I. Kyrie / 垂怜经\r\n\r\n1. Kyrie eleison / 主，求你垂怜（合唱）\r\n2. Christe eleison / 基督，求你垂怜（女高音 I & II 二重唱）\r\n3. Kyrie eleison / 主，求你垂怜（合唱）\r\n\r\nII. Gloria / 光荣颂\r\n4.  Gloria in excelsis / 天主在天受荣福（合唱）\r\n5.  Et in terra pax / 地上人享平安（合唱）\r\n6.  Laudamus te / 我们赞美你（女高音 II 咏叹调）\r\n7.  Gratias agimus tibi / 我们感谢你（合唱）\r\n8.  Domine Deus / 主，天主（女高音 I 与男高音二重唱）\r\n9.  Qui tollis peccata mundi / 除免世罪者（合唱）\r\n10. Qui sedes ad dexteram Patris / 坐在圣父之右者（女中音咏叹调）\r\n11. Quoniam tu solus sanctus / 因为只有你是神圣的（男低音咏叹调）\r\n12. Cum Sancto Spiritu / 连同圣神（合唱）\r\n\r\nIII. Credo / 信经\r\n13. Credo in unum Deum / 我信唯一全能的天主（合唱）\r\n14. Patrem omnipotentem / 全能的圣父（合唱）\r\n15. Et in unum Dominum / 我信唯一的主（女高音 I 与女中音二重唱）\r\n16. Et incarnatus est / 他因圣神降孕（合唱）\r\n17. Crucifixus / 他被钉在十字架上（合唱）\r\n18. Et resurrexit / 他复活了（合唱）\r\n19. Et in Spiritum Sanctum / 我信圣神（男低音咏叹调）\r\n20. Confiteor / 我承认（合唱）\r\n21. Et exspecto / 我期待（合唱）\r\n\r\nIV. Sanctus / 圣哉经\r\n22. Sanctus / 圣哉经（合唱）\r\n\r\nV. Benedictus & Agnus Dei / 降福经与羔羊经\r\n23. Benedictus / 降福经（男高音咏叹调）\r\n24. Osanna in excelsis / 欢呼之声响彻云霄（合唱）\r\n25. Agnus Dei / 羔羊经（女中音咏叹调）\r\n26. Dona nobis pacem / 赐予我们平安（合唱）\r\n",
+        "filename": "宗教声乐作品总谱/1765947912.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 228,
+        "title": "La Damnation de Faust, Op. 24/浮士德的天罚",
+        "composer": "Hector Berlioz/柏辽兹",
+        "work": "",
+        "language": "法语",
+        "category": "音乐会咏叹调/世俗康塔塔",
+        "sub_category": "传奇剧",
+        "voice_count": "",
+        "voice_types": "STBB独唱与SATB合唱与管弦乐队",
+        "tonality": "",
+        "description": "柏辽兹将此作定义为“传奇剧”（Légende dramatique），在形式上介于歌剧和清唱剧之间，但在网站录入时，常被归类为大型世俗康塔塔或戏剧合唱。",
+        "filename": "音乐会咏叹调/世俗康塔塔/1765947752.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 227,
+        "title": "Carmina Burana/布兰诗歌",
+        "composer": "Carl Orff/奥尔夫",
+        "work": "",
+        "language": "拉丁语、中古高地德语、古普罗旺斯语",
+        "category": "音乐会咏叹调/世俗康塔塔",
+        "sub_category": "世俗康塔塔/清唱剧式康塔塔",
+        "voice_count": "",
+        "voice_types": "STB独唱与SATB合唱与童声合唱与管弦乐队",
+        "tonality": "",
+        "description": "幸运女神 (Fortuna Imperatrix Mundi)\r\n\r\n1. O Fortuna / 哦，命运（合唱）\r\n2. Fortune plango vulnera / 我控诉命运的创伤（合唱）\r\n\r\n第一部分：初春 (Primo Vere)\r\n3. Veris leta facies / 春天迷人的面庞（合唱）\r\n4. Omnia Sol temperat / 阳光抚慰一切（**男中音咏叹调**）\r\n5. Ecce gratum / 看哪，那令人愉悦的（合唱）\r\n\r\n在草地上 (Uf dem Anger)\r\n6. Tanz / 舞蹈（器乐）\r\n7. Floret silva / 森林开花了（合唱）\r\n8. Chramer, gip die varwe mir / 店主，给我胭脂（合唱）\r\n9. Reie / 轮舞（合唱）\r\n10. Were diu werlt alle min / 假若整个世界都是我的（合唱）\r\n\r\n第二部分：在酒馆里 (In Taberna)\r\n11. Estuans interius / 内心愤懑（男中音咏叹调）\r\n12. Olim lacus coluerat / 昔日我住在湖上（男高音咏叹调）\r\n13. Ego sum abbas / 我是修道院院长（男中音与合唱）\r\n14. In taberna quando sumus / 当我们在酒馆时（合唱）\r\n\r\n第三部分：爱情宫殿 (Cour d'amours)\r\n15. Amor volat undique / 爱神到处飞翔（女高音与童声合唱）\r\n16. Dies, nox et omnia / 白天、黑夜和一切（男中音咏叹调）\r\n17. Stetit puella / 一个姑娘站着（女高音咏叹调）\r\n18. Circa mea pectora / 在我心中（男中音与合唱）\r\n19. Si puer cum puellula / 如果男孩与女孩（男声小合唱）\r\n20. Veni, veni, venias / 来吧，来吧，快来吧（双合唱）\r\n21. In trutina / 在天平上（女高音咏叹调）\r\n22. Tempus est iocundum / 欢愉的时光（女高音、**男中音**、童声与合唱）\r\n23. Dulcissime / 最亲爱的人（女高音花腔选段）\r\n白花和海伦 (Blanziflor et Helena)\r\n24. Ave formosissima / 欢呼吧，最美的人（合唱）\r\n幸运女神 (Fortuna Imperatrix Mundi)\r\n25. O Fortuna / 哦，命运（合唱 - 重复首曲）\r\n",
+        "filename": "音乐会咏叹调/世俗康塔塔/1765947492.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 226,
+        "title": "Mass in D major, Op. 8 /D大调弥撒",
+        "composer": "Antonín Dvořák/德沃夏克",
+        "work": "",
+        "language": "拉丁语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "弥撒",
+        "voice_count": "",
+        "voice_types": "SATB独唱与SATB合唱与管弦乐队或管风琴",
+        "tonality": "D大调",
+        "description": "1. Kyrie / 垂怜经\r\n2. Gloria / 光荣颂\r\n3. Credo / 信经\r\n4. Sanctus / 圣哉经\r\n5. Benedictus / 降福经\r\n6. Agnus Dei / 羔羊经",
+        "filename": "宗教声乐作品总谱/1765947259.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 225,
+        "title": "The Seasons (Die Jahreszeiten), Hob. XXI:3/四季",
+        "composer": "Franz Joseph Haydn/海顿",
+        "work": "",
+        "language": "德语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "清唱剧",
+        "voice_count": "",
+        "voice_types": "STB独唱与SATB合唱与管弦乐队",
+        "tonality": "",
+        "description": "脚本作者：Gottfried van Swieten（根据汤姆逊的同名长诗改编）\r\n\r\n角色（独唱）：\r\nSimon / 西蒙（男低音 - 农夫）\r\nHanne / 汉娜（女高音 - 西蒙的女儿）\r\nLukas / 卢卡斯（男高音 - 年轻农民）\r\n\r\n第一部分：春 (Der Frühling)\r\n\r\n1. Overture / 序曲（描写冬去春来）\r\n2. Komm, holder Lenz / 来吧，可爱的春天（合唱）\r\n3. Vom Widder strahlt jetzt / 太阳已照在白羊座（西蒙宣叙调）\r\n4. Schon eilet froh der Ackersmann / 农夫欢快地走往田间（西蒙咏叹调 - 极著名）\r\n5. Der Landmann hat sein Werk vollbracht / 农夫已完成他的工作（卢卡斯宣叙调）\r\n6. Sei nun gnädig, milder Himmel / 仁慈的上天，请施恩（三重唱与合唱）\r\n7. Erhört ist unser Fleh'n / 我们的祈祷已获垂听（汉娜宣叙调）\r\n8. O wie lieblich ist der Anblick / 景象何其动人（青年们的合唱）\r\n9. Ewiger, mächtiger, gütiger Gott / 永恒、全能、仁慈的神（赞美诗 - 三重唱与合唱）\r\n\r\n第二部分：夏 (Der Sommer)\r\n10. Overture / 序曲与宣叙调（汉娜、卢卡斯）\r\n11. Der muntere Hirt versammelt nun / 活泼的牧人聚集羊群（汉娜咏叹调）\r\n12. Die Mittagssonne brennet jetzt / 正午的烈日正在灼烧（卢卡斯宣叙调）\r\n13. Dem Druck erlieget die Natur / 大自然在重压下屈服（卢卡斯咏叹调）\r\n14. Willkommen jetzt, o dunkler Hain / 欢迎你，幽暗的树林（汉娜宣叙调）\r\n15. Welche Labung für die Sinne / 感官何等舒畅（汉娜咏叹调）\r\n16. O seht! Es steiget in der schwülen Luft / 看哪！在闷热的空气中升起（卢卡斯、西蒙、汉娜）\r\n17. Ach! Das Ungewitter naht / 啊！暴风雨临近了（合唱）\r\n18. Die düst'ren Wolken trennen sich / 阴暗的云层散开了（三重唱与合唱）\r\n\r\n第三部分：秋 (Der Herbst)\r\n19. Overture / 序曲与宣叙调（汉娜、卢卡斯、西蒙）\r\n20. So lohnet die Natur den Fleiß / 大自然如此奖赏勤劳（三重唱与合唱）\r\n21. Seht, wie zum Haselbusche dort / 看，在那榛树丛边（汉娜、卢卡斯、西蒙）\r\n22. Ihr Schönen aus der Stadt / 你们城里的美人（二重唱：汉娜、卢卡斯）\r\n23. Nun zeiget das entblößte Feld / 如今空旷的田野显现（西蒙宣叙调）\r\n24. Seht auf die breite Wiese hin / 看那辽阔的草场（西蒙咏叹调 - 描写猎狗捕猎）\r\n25. Hier treibt ein dichter Kreis / 这里一群猎人（卢卡斯宣叙调）\r\n26. Hört, das laute Geräusch / 听，那响亮的喧闹声（狩猎合唱）\r\n27. Am Rebenstock blinket nun / 葡萄藤上正闪烁（汉娜、卢卡斯、西蒙）\r\n28. Juchhe! Juchhe! Der Wein ist da / 欢呼吧！美酒在此（饮酒合唱）\r\n\r\n第四部分：冬 (Der Winter)\r\n29. Overture / 序曲（描写浓雾）\r\n30. Nun senket sich das blasse Jahr / 如今苍白的一年降临（汉娜、西蒙宣叙调）\r\n31. Licht und Leben sind geschwächt / 光明与生命已衰弱（汉娜咏叹调）\r\n32. Gefesselt steht der breite Strom / 辽阔的河流已封冻（卢卡斯宣叙调）\r\n33. Hier steht der Wand'rer nun / 漫步者站在这里（卢卡斯咏叹调）\r\n34. So wie er naht / 当他靠近时（汉娜、卢卡斯、西蒙）\r\n35. Knurre, schnurre, rädchen / 旋转吧，转动吧，小轮子（纺纱之歌 - 汉娜与合唱）\r\n36. Ein Mädchen, das auf Ehre hielt / 一个守本分的姑娘（汉娜的逸事歌曲）\r\n37. Vom dürren Oste dringt nun her / 从枯燥的东方传来（西蒙宣叙调）\r\n38. Erblicke hier, betörter Mensch / 看这里，被迷惑的人（西蒙咏叹调 - 极深沉的总结）\r\n39. Die bleibt allein / 唯有它留下（西蒙宣叙调）\r\n40. Dann bricht der große Morgen an / 然后伟大的清晨将降临（三重唱与合唱）",
+        "filename": "宗教声乐作品总谱/1765947094.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 224,
+        "title": "The Creation (Die Schöpfung), Hob. XXI:2/创世纪",
+        "composer": "Franz Joseph Haydn/海顿",
+        "work": "",
+        "language": "德语/英语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "清唱剧",
+        "voice_count": "",
+        "voice_types": "SATB独唱与SATB合唱与管弦乐队",
+        "tonality": "",
+        "description": "天使拉斐尔（Raphael，男低音）、天使乌列（Uriel，男高音）、天使加百列（Gabriel，女高音）以及第三部分的亚当（Adam，男低音）与夏娃（Eve，女高音）。\r\n\r\n第一部分 (Part I)\r\n\r\n1. Die Vorstellung des Chaos / 混沌的描写（管弦乐序曲）\r\n2. Im Anfange schuf Gott / 起初，神创造天地（拉斐尔与合唱）\r\n3. Nun schwand vor dem heiligen Strahle / 如今在神圣的光芒前（乌列与合唱）\r\n4. Und Gott machte das Firmament / 神造出穹苍（拉斐尔宣叙调）\r\n5. Mit Staunen sieht das Wunderwerk / 惊叹这奇妙的杰作（加百列与合唱）\r\n6. Und Gott sprach: Es sammle sich das Wasser / 神说：天下的水要聚在一处（拉斐尔宣叙调）\r\n7. Rollend in schäumenden Wellen / 波涛汹涌，翻滚起伏（拉斐尔咏叹调）\r\n8. Und Gott sprach: Es bringe die Erde Gras hervor / 神说：地要发生青草（加百列宣叙调）\r\n9. Nun beut die Flur das frische Grün / 如今原野铺上了新绿（加百列咏叹调）\r\n10. Und die himmlischen Heere / 天上的众军（乌列宣叙调）\r\n11. Stimmt an die Saiten / 拨动琴弦（合唱）\r\n12. Und Gott sprach: Es sei'n Lichter an der Feste / 神说：天上要有光体（乌列宣叙调）\r\n13. In vollem Glanze steget nun / 如今太阳在圆满的光辉中升起（乌列宣叙调）\r\n14. Die Himmel erzählen die Ehre Gottes / 诸天述说神的荣耀（三重唱与合唱）\r\n\r\n第二部分 (Part II)\r\n\r\n15. Und Gott sprach: Es bringe das Wasser / 神说：水要滋生有生命的物（加百列宣叙调）\r\n16. Auf starkem Fittiche schwinget sich / 展开强大的翅膀（加百列咏叹调）\r\n17. Und Gott schuf große Walfische / 神就造出大鲸（拉斐尔宣叙调）\r\n18. Seid fruchtbar alle / 你们要多产（拉斐尔宣叙调）\r\n19. Wie viel sind deine Werke / 你的作为何其多（拉斐尔与加百列、乌列三重唱）\r\n20. Der Herr ist groß / 主是伟大的（三重唱与合唱）\r\n21. Und Gott sprach: Es bringe die Erde hervor / 神说：地要生出活物（拉斐尔宣叙调）\r\n22. Gleich öffnet sich der Erde Schoß / 大地的子宫立即开启（拉斐尔宣叙调）\r\n23. Nun scheint in vollem Glanze der Himmel / 如今上天闪耀着圆满的光辉（拉斐尔咏叹调）\r\n24. Und Gott schuf den Menschen / 神就照着自己的形象造人（乌列宣叙调）\r\n25. Mit Würd' und Hoheit angetan / 披上尊严与高贵（乌列咏叹调）\r\n26. Und Gott sah jedes Ding / 神看着一切（拉斐尔宣叙调）\r\n27. Vollendet ist das große Werk / 伟大的工程已完成（合唱）\r\n28. Zu dir, o Herr, blickt alles auf / 主啊，万物都仰望你（三重唱）\r\n29. Vollendet ist das große Werk / 伟大的工程已完成（合唱 - 赋格）\r\n\r\n第三部分 (Part III)\r\n\r\n30. Aus dem Geiste von der Morgenröthe / 从清晨的灵气中（乌列宣叙调）\r\n31. Von deiner Güt', o Herr und Gott / 上主，你的仁慈（亚当、夏娃与合唱）\r\n32. Nun ist die erste Pflicht erfüllt / 如今第一项职责已完成（亚当与夏娃宣叙调）\r\n33. Holde Gattin, dir zur Seite / 亲爱的妻子，在你身边（亚当与夏娃二重唱）\r\n34. Singt dem Herren alle Stimmen / 众口同声赞美主（合唱）",
+        "filename": "宗教声乐作品总谱/1765946933.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 223,
+        "title": "Elijah, Op. 70/以利亚",
+        "composer": "Felix Mendelssohn/门德尔松",
+        "work": "",
+        "language": "德语/英语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "清唱剧",
+        "voice_count": "",
+        "voice_types": "SATB独唱与SATB合唱与管弦乐队",
+        "tonality": "",
+        "description": "这部作品在德语区常用德语（Elias），在英语区常用英语（Elijah），国内通常两种版本都会使用。\r\n\r\n第一部分 (Part I)\r\n\r\n序曲 (Overture)\r\n\r\n1. Help, Lord! / 耶和华啊，求你帮助（合唱）\r\n2. Lord! bow thine ear / 主啊，垂听我们的祷告（二重唱与合唱）\r\n3. Ye people, rend your hearts / 你们要撕裂心肠（男高音宣叙调）\r\n4. If with all your hearts / 若你一心寻求（男高音咏叹调）\r\n5. Yet doth the Lord see it not / 耶和华却不看顾（合唱）\r\n6. Elijah! get thee hence / 以利亚，你离开这里（女高音宣叙调）\r\n7. For He shall give His angels / 因他要为你吩咐他的使者（八重唱）\r\n8. What have I to do with thee / 我与你有什么相干（女高音与以利亚二重唱）\r\n9. Blessed are the men who fear Him / 敬畏主的人有福了（合唱）\r\n10. As God the Lord of Sabaoth / 我指着所事奉永生耶和华起誓（以利亚宣叙调与合唱）\r\n11. Baal, we cry to thee / 巴力啊，求你应允我们（合唱）\r\n12. Call him louder! / 大声求告吧！（以利亚宣叙调与合唱）\r\n13. Call him louder! / 大声求告吧！（以利亚宣叙调与合唱）\r\n14. Lord God of Abraham / 主啊，亚伯拉罕的神（以利亚咏叹调）\r\n15. Cast thy burden upon the Lord / 把你的重担卸给主（四重唱）\r\n16. O Thou, who makest Thine angels spirits / 你使使者为风（以利亚宣叙调与合唱）\r\n17. Is not His word like a fire! / 耶和华的话不就像火吗（以利亚咏叹调）\r\n18. Woe unto them who forsake Him! / 离弃主的人有祸了（女低音咏叹调）\r\n19. O man of God, help thy people! / 神人啊，救助你的百姓（男高音、以利亚与合唱）\r\n20. Thanks be to God / 感谢神（合唱）\r\n\r\n第二部分 (Part II)\r\n\r\n21. Hear ye, Israel! / 以色列啊，你要听（女高音咏叹调）\r\n22. Be not afraid / 不要惧怕（合唱）\r\n23. The Lord hath exalted thee / 耶和华提升了你（以利亚宣叙调与合唱）\r\n24. Woe to him, he shall perish / 他有祸了，他必灭亡（合唱）\r\n25. Man of God, now let my words / 神人啊，请听我的话（男高音与以利亚宣叙调）\r\n26. It is enough / 够了，主啊（以利亚咏叹调）\r\n27. See, now he sleepeth / 看哪，他睡着了（男高音宣叙调）\r\n28. Lift thine eyes / 举目向山（女声三重唱）\r\n29. He, watching over Israel / 保护以色列的（合唱）\r\n30. Arise, Elijah! / 以利亚，起来（女低音与以利亚宣叙调）\r\n31. O rest in the Lord / 在主里安息（女低音咏叹调）\r\n32. He that shall endure to the end / 忍耐到底的必然得救（合唱）\r\n33. Night falleth round me / 黑夜笼罩我（以利亚与女高音宣叙调）\r\n34. Behold! God the Lord passed by! / 看哪，耶和华经过（合唱）\r\n35. Above Him stood the Seraphim / 在他上面有撒拉弗（女低音、三重唱与合唱）\r\n36. Go, return upon thy way / 你回去吧（合唱）\r\n37. For the mountains shall depart / 大山可以挪开（以利亚咏叹调）\r\n38. Then shall the righteous shine forth / 那时义人要发出光来（男高音咏叹调）\r\n39. Behold, God hath sent Elijah / 看哪，神差遣先知以利亚（女高音宣叙调）\r\n40. But the Lord from the north hath raised one / 主从北方兴起一人（合唱）\r\n41. O come every one that thirsteth / 你们一切渴了的都就近水来（四重唱）\r\n42. And then shall your light break forth / 你的光就必发现（合唱）",
+        "filename": "宗教声乐作品总谱/1765946696.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 222,
+        "title": "Missa Solemnis in D major, Op. 123/庄严弥撒",
+        "composer": "Ludwig van Beethoven/贝多芬",
+        "work": "",
+        "language": "拉丁语",
+        "category": "歌剧咏叹调",
+        "sub_category": "弥撒",
+        "voice_count": "",
+        "voice_types": "SATB独唱与SATB合唱与管弦乐队",
+        "tonality": "D大调",
+        "description": "1. Kyrie / 垂怜经\r\n2. Gloria / 光荣颂\r\n3. Credo / 信经\r\n4. Sanctus / 圣哉经\r\n5. Benedictus / 降福经\r\n6. Agnus Dei / 羔羊经",
+        "filename": "歌剧咏叹调/1765946498.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 221,
+        "title": "Mass in C major, Op. 86 / C大调弥撒",
+        "composer": "Ludwig van Beethoven/贝多芬",
+        "work": "",
+        "language": "拉丁语",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "弥撒",
+        "voice_count": "",
+        "voice_types": "SATB独唱与SATB合唱与管弦乐队",
+        "tonality": "C大调",
+        "description": "1. Kyrie / 垂怜经\r\n2. Gloria / 光荣颂\r\n3. Credo / 信经\r\n4. Sanctus / 圣哉经\r\n5. Benedictus / 降福经\r\n6. Agnus Dei / 羔羊经",
+        "filename": "宗教声乐作品总谱/1765946405.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 220,
+        "title": "Symphony No. 9 in D minor, Op. 125/贝多芬第九交响曲第四乐章",
+        "composer": "Ludwig van Beethoven/贝多芬",
+        "work": "",
+        "language": "德语",
+        "category": "管弦乐/交响曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "SATB独唱与SATB合唱与管弦乐队",
+        "tonality": "",
+        "description": "",
+        "filename": "管弦乐/交响曲/1765946322.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 219,
+        "title": "Cinq mélodies populaires grecques, M. A 9/五首希腊民歌",
+        "composer": "Maurice Ravel/拉威尔",
+        "work": "",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "诗人：希腊民歌素材, 原歌词为希腊语，由 M. D. Calvocoressi 翻译\r\n1. Le Réveil de la mariée / 新娘醒来\r\n2. Là-bas, vers l'église / 那边，在教堂旁\r\n3. Quel galant m'est comparable / 哪个小伙子能与我相比\r\n4. Chanson des cueilleuses de lentisques / 采乳香姑娘之歌\r\n5. Tout gai! / 大家快乐！",
+        "filename": "歌剧咏叹调/1765946060.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 218,
+        "title": "Don Quichotte à Dulcinée, M. 84/堂吉诃德致杜尔西内亚",
+        "composer": "Maurice Ravel/拉威尔",
+        "work": "",
+        "language": "法语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音或Bass-Baritone/低男中音或Baritone/男中音",
+        "tonality": "",
+        "description": "1. Chanson romantique / 浪漫曲\r\n2. Chanson épique / 史诗曲\r\n3. Chanson à boire / 饮酒歌\r\n\r\n诗人：Paul Morand / 保罗·莫朗\r\n这是拉威尔在1932年为电影比稿而作的。虽然最终落选，但这三首歌成为了他最后完成的作品，也是男声（尤其是男中音）重要的现代法语套曲之一。",
+        "filename": "声乐套曲/1765945622.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 217,
+        "title": "孔雀/Le Paon",
+        "composer": "Maurice Ravel/拉威尔",
+        "work": "Histoires naturelles, M.50/自然的故事",
+        "language": "法语",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "艺术歌曲/1765945438.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 216,
+        "title": "Histoires naturelles, M. 50/自然的故事",
+        "composer": "Maurice Ravel/拉威尔",
+        "work": "",
+        "language": "法语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "1. Le Paon / 孔雀\r\n2. Le Grillon / 蟋蟀\r\n3. Le Cygne / 天鹅\r\n4. Le Martin-Pêcheur / 翠鸟\r\n5. La Pintade / 珍珠鸡\r\n\r\n诗人：Jules Renard / 朱尔·勒纳尔\r\n创作年份：1906年\r\n编制：声乐与钢琴（原调适合女高音或男高音，但男中音也经常选唱）\r\n艺术风格：这组作品在声乐史上非常特殊，因为它打破了传统的旋律性，模仿了法语日常说话的语调（Recitativic style），具有很强的幽默感和对动物习性的敏锐观察。\r\n",
+        "filename": "声乐套曲/1765945379.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 215,
+        "title": "Quatre Chansons de Don Quichotte/堂吉诃德的四首歌",
+        "composer": "Jacques Ibert/伊贝尔",
+        "work": "",
+        "language": "法语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音或Bass-Baritone/低男中音或Baritone/男中音",
+        "tonality": "",
+        "description": "1. Chanson du départ / 出发之歌\r\n2. Chanson à Dulcinée / 致杜尔西内亚\r\n3. Chanson du Duc / 公爵之歌\r\n4. Chanson de la mort / 死亡之歌\r\n\r\n1932年，电影导演帕布斯特拍摄电影《堂吉诃德》，当时邀请了包括伊贝尔、拉威尔（Maurice Ravel）、法雅（Manuel de Falla）在内的多位作曲家比稿。最终伊贝尔的作品被选中，由伟大的男低音夏里亚宾（Feodor Chaliapin）在电影中演唱。\r\n小知识： 拉威尔当年也参与了比稿，虽然落选了，但他创作的那三首《堂吉诃德致杜尔西内亚》（Don Quichotte à Dulcinée）后来也成为了极其著名的男声套曲。",
+        "filename": "声乐套曲/1765945181.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 214,
+        "title": "Fifty Modern English Songs/五十首现代英语歌曲",
+        "composer": "多位作曲家",
+        "work": "",
+        "language": "英语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "括号内为作词家（Words By），括号前为作曲家（Composer）\r\n1. Bells of Clermont Town (The) - A. M. Goodhart (Hilaire Belloc)\r\n2. Birds in the high hall Garden - Arthur Somervell (Tennyson)\r\n3. Bird of Blue - Edward German (\"Chrystabel\")\r\n4. Boat Song - C. Villiers Stanford (Walter Herries Pollock)\r\n5. Carol of the Skiddaw Yowes - Ivor Gurney (Ernest Casson)\r\n6. Come into the Garden, Maud - Arthur Somervell (Tennyson)\r\n7. Corinna's going a-maying - Ernest Walker (Herrick)\r\n8. Crabbed Age and Youth - Maude V. White (Shakespeare)\r\n9. Cuttin' Rushes - C. Villiers Stanford (Moira O'Neill)\r\n10. Dainty little Maiden - Arthur Somervell (Tennyson)\r\n11. Diaphenia - Harold Samuel (H. Constable)\r\n12. Eldorado - Richard H. Walthew (Edgar Allan Poe)\r\n13. Fairy Lough (The) - C. Villiers Stanford (Moira O'Neill)\r\n14. Fairy Boat (The) - Harold Samuel (Annette Horey)\r\n15. Grace for Light - Hamilton Harty (Moira O'Neill)\r\n16. Green Cornfield (A) - Michael Head (Christina Rossetti)\r\n17. Hymn for Aviators (A) - C. Hubert H. Parry (Mary C. D. Hamilton)\r\n18. I will go with my father a-ploughing - Ivor Gurney (S. Mac Cathmhaoil)\r\n19. In Summertime on Bredon - Arthur Somervell (A. E. Housman)\r\n20. Johneen - C. Villiers Stanford (Moira O'Neill)\r\n21. Lads in their hundreds (The) - Arthur Somervell (A. E. Housman)\r\n22. Love's Philosophy - Roger Quilter (Shelley)\r\n23. Love on my heart from heaven fell - Clive Carey (Robert Bridges)\r\n24. Lullaby (A) - C. Villiers Stanford (Thos. Dekker)\r\n25. Magdalen - Caroline Maude (Henry Kingsley)\r\n26. Maiden Blush (The) - Roger Quilter (Herrick)\r\n27. Mistress Mine - Richard H. Walthew (Shakespeare)\r\n28. Nanny - Harold Samuel (Thos. Percy)\r\n29. Night Piece (The) - Roger Quilter (Herrick)\r\n30. Ochone, when I used to be young! - C. Villiers Stanford (Geo. H. Jessop)\r\n31. Ophelia's Song - Maude V. White (Shakespeare)\r\n32. O Men from the fields - Herbert Hughes (Padraic Colum)\r\n33. Oh my Swetynge - Harold Samuel (Anon)\r\n34. Ould Lad (The) - Hamilton Harty (Moira O'Neill)\r\n35. Rain it raineth every day (The) - C. Villiers Stanford (Shakespeare)\r\n36. Row, Burnie, row - H. Burgess Weston (Walter C. Smith)\r\n37. Scythe Song - Hamilton Harty (Riccardo Stephens)\r\n38. See where my love a-maying goes - C. A. Lidgey (XVII Century)\r\n39. Since thou, O fondest - Samuel Liddle (Robert Bridges)\r\n40. Splendour falls (The) - Richard H. Walthew (Tennyson)\r\n41. Spring Song (A) - C. Hubert H. Parry (Shakespeare)\r\n42. Sunny March - C. A. Lidgey (Norman Gale)\r\n43. There's a Bower of Roses - C. Villiers Stanford (Thomas Moore)\r\n44. To the Soul - C. Villiers Stanford (Walt Whitman)\r\n45. Villanelle - Cyril Scott (Ernest Dowson)\r\n46. Virgin's Cradle Hymn (The) - Herbert Fryer (Arthur Charlton)\r\n47. Whither must I wander? - R. Vaughan Williams (R. L. Stevenson)\r\n48. Widow Bird sat mourning (A) - B. Luard Selby (Shelley)\r\n49. Young love lies sleeping - Arthur Somervell (Christina Rossetti)\r\n50. Youth and Love - R. Vaughan Williams (R. L. Stevenson)\r\n附加曲目 (Additional Song):\r\nSigh no more ladies - Frederick Keel (Shakespeare)",
+        "filename": "歌剧咏叹调/1765944876.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 213,
+        "title": "五十首沃尔夫艺术歌曲",
+        "composer": "Hugo Wolf/沃尔夫",
+        "work": "",
+        "language": "德语",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "女性声部歌曲 (Songs for a Woman’s Voice)\r\nMausfallen-Sprüchlein / 捕鼠咒\r\n\r\n谢费尔等人的诗 (Songs by Scheffel, etc.)\r\nZur Ruh, zur Ruh! / 安息吧，安息吧！\r\nBiterolf / 比特罗夫\r\n\r\n艾兴多夫歌曲 (Eichendorff Songs)\r\nDer Soldat, II / 士兵（第二首）\r\nDer Soldat, I / 士兵（第一首）\r\nSeemanns Abschied / 水手的告别\r\nDas Ständchen / 小夜曲\r\n\r\n莫里克歌曲 (Mörike Songs)\r\nDer Tambour / 鼓手\r\nDer Jäger / 猎人\r\nNimmersatte Liebe / 永不满足的爱\r\nAuftrag / 差遣\r\nDer Genesene an die Hoffnung / 病愈者致希望\r\nDer Gärtner / 园丁\r\nAuf einer Wanderung / 在徒步旅途中\r\nGebet / 祈祷\r\nVerborgenheit / 隐居\r\nErstes Liebeslied eines Mädchens / 女孩的第一首情歌\r\nFussreise / 徒步旅行\r\nDas verlassene Mägdlein / 被遗弃的小女仆\r\nLebe wohl / 永别了\r\nAuf ein altes Bild / 题一幅古画\r\nEr ist's / 又是他（春天来了）\r\nIn der Frühe / 在清晨\r\nNeue Liebe / 新的爱\r\nGesang Weyla's / 薇拉之歌\r\n\r\n歌德歌曲 (Goethe Songs)\r\nWer sich der Einsamkeit ergiebt / 投身孤独的人\r\nAnakreon's Grab / 安纳克里翁的坟墓\r\nSo lasst mich scheinen bis ich werde / 请让我保持这幻象，直到梦圆\r\nSo lang man nüchtern ist / 只要人还清醒\r\nTrunken müssen wir alle sein / 我们都必须醉一场\r\nNicht Gelegenheit macht Diebe / 机会并不造就小偷\r\nHochbeglückt in deiner Liebe / 在你的爱中无比幸福\r\n\r\n西班牙歌曲集 (Spanish Songs)\r\nIch fuhr über Meer / 我曾漂洋过海\r\nWenn du zu den Blumen gehst / 当你走向花丛\r\nNun wandre, Maria / 走吧，玛丽亚\r\nTreibe nur mit Lieben Spott / 尽管嘲笑爱吧\r\nKlinge, klinge, mein Pandero / 响吧，响吧，我的小手鼓\r\nAuf dem grünen Balcon / 在绿色的阳台上\r\nMüh'voll komm' ich und beladen / 我满怀辛劳与重担而来\r\nNun bin ich Dein / 现今我是你的\r\nAch, im Maien war's, im Maien / 啊，那是在五月，在五月里\r\nLiebe mir im Busen / 爱在我心中\r\n\r\n古风格六首 (Six Songs in Ancient Style)\r\nTretet ein, hoher Krieger / 进来吧，高贵的战士\r\n\r\n意大利歌曲集 (Italian Songs)\r\nIhr seid die Allerschönste / 您是最美的一位\r\nUnd willst du deinen Liebsten sterben sehen / 若你想见你的爱人死去\r\nAuch kleine Dinge / 哪怕是微小的事物\r\nMein Liebster hat zu Tische mich geladen / 我的爱人请我赴宴\r\nWie viele Zeit verlor ich / 我虚度了多少光阴\r\nWenn du, mein Liebster, steigst zum Himmel auf / 当你，我亲爱的，升入天堂\r\n\r\n米开朗基罗歌曲 (Michelangelo Songs)\r\nAlles endet, was entstehet / 一切生成的必将毁灭",
+        "filename": "乐谱书/曲集/1765944640.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 212,
+        "title": "Gedichte von Eduard Mörike/莫里克诗选艺术歌曲集（第一卷选段）",
+        "composer": "Hugo Wolf/沃尔夫",
+        "work": "",
+        "language": "德语",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "低音调",
+        "description": "1. Der Genesene an die Hoffnung / 病愈者致希望\r\n2. Der Knabe und das Immlein / 男孩与小蜜蜂\r\n3. Ein Stündlein wohl vor Tag / 黎明前的一小时\r\n4. Jägerlied / 猎人之歌\r\n5. Der Tambour / 鼓手\r\n6. Er ist's / 又是他（春天来了）\r\n7. Das verlassene Mägdlein / 被遗弃的小女仆\r\n8. Begegnung / 相遇\r\n9. Nimmersatte Liebe / 永不满足的爱\r\n10. Fussreise / 徒步旅行\r\n11. An eine Aeolsharfe / 致风弦琴\r\n12. Verborgenheit / 隐居",
+        "filename": "歌剧咏叹调/1765944489.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 211,
+        "title": "Eichendorff-Lieder, Volume I/艾兴多夫艺术歌曲集，第一卷",
+        "composer": "Hugo Wolf/沃尔夫",
+        "work": "",
+        "language": "德语",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "低音调",
+        "description": "1. Der Freund: Wer auf den Wogen schliefe / 朋友：谁若睡在波浪上\r\n2. Der Musikant: Wandern lieb' ich für mein Leben / 流浪艺人：我一生热爱漫游\r\n3. Verschwiegene Liebe: Über Wipfel und Saaten / 沉默的爱：越过树梢和庄稼\r\n4. Das Ständchen: Auf die Dächer zwischen blassen Wolken / 小夜曲：在苍白云朵间的屋顶上\r\n5. Der Soldat No. 1: Ist auch schmuck nicht mein Rösslein / 士兵第一首：我的小马难道不漂亮吗\r\n6. Der Soldat No. 2: Wagen musst du und flüchtig erbeuten / 士兵第二首：你必须勇敢并迅速夺取战利品\r\n7. Die Zigeunerin: Am Kreuzweg da lausche ich / 吉普赛女郎：我在十字路口倾听\r\n8. Nachtzauber: Hörst du nicht die Quellen gehen / 夜之魔力：你没听到泉水流淌的声音吗\r\n9. Der Schreckenberger: Aufs Wohlsein meiner Dame / 施莱肯贝格人：为了我夫人的健康\r\n10. Der Glücksritter: Wenn Fortuna spröde tut / 寻欢作乐的骑士：当命运女神显得冷淡",
+        "filename": "乐谱书/曲集/1765944377.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 210,
+        "title": "Schwanengesang, D. 957/天鹅之歌",
+        "composer": "Franz Schubert/舒伯特",
+        "work": "",
+        "language": "德语",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "高音调",
+        "description": "1. Liebesbotschaft / 爱的使者\r\n2. Kriegers Ahnung / 战士的预感\r\n3. Frühlingssehnsucht / 春之憧憬\r\n4. Ständchen / 小夜曲\r\n5. Aufenthalt / 驿站（或译：安息之所）\r\n6. In der Ferne / 在远方\r\n7. Abschied / 告别\r\n8. Der Atlas / 阿特拉斯\r\n9. Ihr Bild / 她的肖像\r\n10. Das Fischermädchen / 渔家姑娘\r\n11. Die Stadt / 城市\r\n12. Am Meer / 在海滨\r\n13. Der Doppelgänger / 幻影（或译：替身）\r\n14. Die Taubenpost / 鸽子邮使",
+        "filename": "乐谱书/曲集/1765944211.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 209,
+        "title": "Dichterliebe, Op. 48/诗人之恋",
+        "composer": "Robert Schumann/舒曼",
+        "work": "",
+        "language": "德语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "诗人：Heinrich Heine / 海因里希·海涅\r\n1. Im wunderschönen Monat Mai / 在那美丽的五月\r\n2. Aus meinen Tränen sprießen / 从我的眼泪里长出\r\n3. Die Rose, die Lilie, die Taube, die Sonne / 玫瑰、百合、鸽子、太阳\r\n4. Wenn ich in deine Augen seh' / 当我凝视你的双眼\r\n5. Ich will meine Seele tauchen / 我要将我的灵魂浸入\r\n6. Im Rhein, im heiligen Strome / 在莱茵河，在那神圣的河流中\r\n7. Ich grolle nicht / 我不怨恨\r\n8. Und wüßten's die Blumen, die kleinen / 如果小花儿知道\r\n9. Das ist ein Flöten und Geigen / 那是长笛和提琴的声音\r\n10. Hör' ich das Liedchen klingen / 当我听到那小歌响起\r\n11. Ein Jüngling liebt ein Mädchen / 一个青年爱上一个姑娘\r\n12. Am leuchtenden Sommermorgen / 在灿烂的夏日清晨\r\n13. Ich hab' im Traum geweinet / 我在梦中哭泣\r\n14. Allnächtlich im Traume seh' ich dich / 每晚在梦里见到你\r\n15. Aus alten Märchen winkt es / 从古老的童话中招手\r\n16. Die alten, bösen Lieder / 那些古老而邪恶的歌",
+        "filename": "声乐套曲/1765943889.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 208,
+        "title": "Dichterliebe, Op. 48/诗人之恋",
+        "composer": "Robert Schumann/舒曼",
+        "work": "",
+        "language": "德语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "低音调",
+        "description": "诗人：Heinrich Heine / 海因里希·海涅\r\n1. Im wunderschönen Monat Mai / 在那美丽的五月\r\n2. Aus meinen Tränen sprießen / 从我的眼泪里长出\r\n3. Die Rose, die Lilie, die Taube, die Sonne / 玫瑰、百合、鸽子、太阳\r\n4. Wenn ich in deine Augen seh' / 当我凝视你的双眼\r\n5. Ich will meine Seele tauchen / 我要将我的灵魂浸入\r\n6. Im Rhein, im heiligen Strome / 在莱茵河，在那神圣的河流中\r\n7. Ich grolle nicht / 我不怨恨\r\n8. Und wüßten's die Blumen, die kleinen / 如果小花儿知道\r\n9. Das ist ein Flöten und Geigen / 那是长笛和提琴的声音\r\n10. Hör' ich das Liedchen klingen / 当我听到那小歌响起\r\n11. Ein Jüngling liebt ein Mädchen / 一个青年爱上一个姑娘\r\n12. Am leuchtenden Sommermorgen / 在灿烂的夏日清晨\r\n13. Ich hab' im Traum geweinet / 我在梦中哭泣\r\n14. Allnächtlich im Traume seh' ich dich / 每晚在梦里见到你\r\n15. Aus alten Märchen winkt es / 从古老的童话中招手\r\n16. Die alten, bösen Lieder / 那些古老而邪恶的歌",
+        "filename": "歌剧咏叹调/1765943845.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 207,
+        "title": "Konzertarien für Bass/Concert Arias for Bass/莫扎特男低音音乐会咏叹调集",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "",
+        "language": "",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "1. Recitativo: Così dunque tradisci – Aria: Aspri rimorsi atroci KV 432\r\n宣叙调：你就这样背叛了——咏叹调：残酷、痛苦的悔恨\r\n2. Recitativo: Alcandro, lo confesso – Aria: Non sò d’onde viene KV 512\r\n宣叙调：阿坎德罗，我承认——咏叹调：我不知道它从何而来\r\n3. Aria: Mentre ti lascio, oh figlia KV 513\r\n咏叹调：当我离开你时，哦女儿\r\n4. Kriegslied: Ich möchte wohl der Kaiser sein KV 539\r\n战争之歌：我真想当皇帝\r\n5. Ariette: Un bacio di mano KV 541\r\n小咏叹调：亲吻一下手\r\n6. Aria: Per questa bella mano KV 612\r\n咏叹调：为了这双美丽的手\r\n7. Aria: Io ti lascio, oh cara, addio KV Anh. 245\r\n咏叹调：我离开你，哦亲爱的，永别了",
+        "filename": "乐谱书/曲集/1765943696.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 206,
+        "title": "Winterreise, D. 911/冬之旅",
+        "composer": "Franz Schubert/舒伯特",
+        "work": "",
+        "language": "德语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "每首两个调",
+        "description": "诗人：Wilhelm Müller / 威廉·缪勒\r\n1. Gute Nacht: Fremd bin ich eingezogen\r\n晚安：我来时是孤单一人\r\n2. Die Wetterfahne: Der Wind spielt\r\n风向标：风在吹弄\r\n3. Gefrorne Tränen: Gefrorne Tropfen fallen\r\n冻结的泪珠：冰冻的泪滴落下\r\n4. Erstarrung: Ich such im Schnee vergebens\r\n凝结：我在雪地里徒劳寻找\r\n5. Der Lindenbaum: Am Brunnen vor dem Tore\r\n菩提树：门前的井边\r\n6. Wasserflut: Manche Trän aus meinen Augen\r\n泪洪：许多泪水从我眼中流出\r\n7. Auf dem Flusse: Der du so lustig rauschest\r\n在河面上：曾经欢快流淌的你\r\n8. Rückblick: Es brennt mir unter beiden Sohlen\r\n回顾：我的脚底在燃烧\r\n9. Irrlicht: In die tiefsten Felsengründe\r\n鬼火：在最深的山谷里\r\n10. Rast: Nun merk ich erst, wie müd ich bin\r\n休息：现在我才发觉我有多累\r\n11. Frühlingstraum: Ich träumte von bunten Blumen\r\n春梦：我梦见五彩的花朵\r\n12. Einsamkeit: Wie eine trübe Wolke\r\n孤独：像一片阴沉的云\r\n13. Die Post: Von der Straße her\r\n邮递马车：从街道那边传来\r\n14. Der greise Kopf: Der Reif hat einen weißen Schein\r\n白头：霜雪泛着白光\r\n15. Die Krähe: Eine Krähe war mit mir\r\n乌鸦：一只乌鸦伴随着我\r\n16. Letzte Hoffnung: Hie und da ist an den Bäumen\r\n最后的希望：树上零星地\r\n17. Im Dorfe: Es bellen die Hunde\r\n在村庄里：狗在叫\r\n18. Der stürmische Morgen: Wie hat der Sturm zerrissen\r\n风暴的早晨：暴风雨如何撕裂了天空\r\n19. Täuschung: Ein light tanzt freundlich\r\n幻觉：一盏灯光友善地跳动\r\n20. Der Wegweiser: Was vermeid ich denn die Wege\r\n路标：为什么我要避开那些路\r\n21. Das Wirtshaus: Auf einen Totenacker\r\n旅店：指向墓地\r\n22. Mut: Fliegt der Schnee mir ins Gesicht\r\n勇气：雪花飞向我的脸\r\n23. Die Nebensonnen: Drei Sonnen sah ich\r\n幻日：我看见三个太阳\r\n24. Der Leiermann: Drüben hinterm Dorfe\r\n摇得如琴的老人：在村后的那边",
+        "filename": "声乐套曲/1765943468.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 205,
+        "title": "Winterreise, D. 911/冬之旅",
+        "composer": "Franz Schubert/舒伯特",
+        "work": "",
+        "language": "德语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "高音调",
+        "description": "诗人：Wilhelm Müller / 威廉·缪勒\r\n1. Gute Nacht: Fremd bin ich eingezogen\r\n晚安：我来时是孤单一人\r\n2. Die Wetterfahne: Der Wind spielt\r\n风向标：风在吹弄\r\n3. Gefrorne Tränen: Gefrorne Tropfen fallen\r\n冻结的泪珠：冰冻的泪滴落下\r\n4. Erstarrung: Ich such im Schnee vergebens\r\n凝结：我在雪地里徒劳寻找\r\n5. Der Lindenbaum: Am Brunnen vor dem Tore\r\n菩提树：门前的井边\r\n6. Wasserflut: Manche Trän aus meinen Augen\r\n泪洪：许多泪水从我眼中流出\r\n7. Auf dem Flusse: Der du so lustig rauschest\r\n在河面上：曾经欢快流淌的你\r\n8. Rückblick: Es brennt mir unter beiden Sohlen\r\n回顾：我的脚底在燃烧\r\n9. Irrlicht: In die tiefsten Felsengründe\r\n鬼火：在最深的山谷里\r\n10. Rast: Nun merk ich erst, wie müd ich bin\r\n休息：现在我才发觉我有多累\r\n11. Frühlingstraum: Ich träumte von bunten Blumen\r\n春梦：我梦见五彩的花朵\r\n12. Einsamkeit: Wie eine trübe Wolke\r\n孤独：像一片阴沉的云\r\n13. Die Post: Von der Straße her\r\n邮递马车：从街道那边传来\r\n14. Der greise Kopf: Der Reif hat einen weißen Schein\r\n白头：霜雪泛着白光\r\n15. Die Krähe: Eine Krähe war mit mir\r\n乌鸦：一只乌鸦伴随着我\r\n16. Letzte Hoffnung: Hie und da ist an den Bäumen\r\n最后的希望：树上零星地\r\n17. Im Dorfe: Es bellen die Hunde\r\n在村庄里：狗在叫\r\n18. Der stürmische Morgen: Wie hat der Sturm zerrissen\r\n风暴的早晨：暴风雨如何撕裂了天空\r\n19. Täuschung: Ein light tanzt freundlich\r\n幻觉：一盏灯光友善地跳动\r\n20. Der Wegweiser: Was vermeid ich denn die Wege\r\n路标：为什么我要避开那些路\r\n21. Das Wirtshaus: Auf einen Totenacker\r\n旅店：指向墓地\r\n22. Mut: Fliegt der Schnee mir ins Gesicht\r\n勇气：雪花飞向我的脸\r\n23. Die Nebensonnen: Drei Sonnen sah ich\r\n幻日：我看见三个太阳\r\n24. Der Leiermann: Drüben hinterm Dorfe\r\n摇得如琴的老人：在村后的那边",
+        "filename": "声乐套曲/1765943403.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 204,
+        "title": "Die schöne Müllerin/美丽的磨坊女",
+        "composer": "Franz Schubert/舒伯特",
+        "work": "",
+        "language": "德语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "低音调",
+        "description": "诗人：Wilhelm Müller / 威廉·缪勒\r\n1. Das Wandern: Das Wandern ist des Müllers Lust.\r\n流浪：流浪是磨坊工的快乐\r\n2. Wohin?: Ich hört ein Bächlein rauschen.\r\n去哪里？：我听到小溪潺潺流淌\r\n3. Halt!: Eine Mühle seh ich blinken.\r\n停！：我看见磨坊在闪烁\r\n4. Danksagung an den Bach: War es also gemeint.\r\n对小溪的谢意：原来是这个意思\r\n5. Am Feierabend: Hätt ich tausend Arme.\r\n歇工：要是我有一千条手臂\r\n6. Der Neugierige: Ich frage keine Blume.\r\n好奇的人：我不问花儿\r\n7. Ungeduld: Ich schnitt' es gern in alle Rinden ein.\r\n焦急：我愿把名字刻在所有树皮上\r\n8. Morgengruß: Guten Morgen, schöne Müllerin.\r\n晨间问候：早安，美丽的磨坊女\r\n9. Des Müllers Blumen: Am Bach viel kleine Blumen stehn.\r\n磨坊工的花：小溪旁开着许多小花\r\n10. Tränenregen: Wir saßen so traulich.\r\n泪雨：我们亲密地坐在一起\r\n11. Mein!: Bächlein, laß dein Rauschen sein\r\n属于我！：小溪，停下你的喧哗\r\n12. Pause: Meine Laute hab ich gehängt\r\n停顿：我把诗琴挂起\r\n13. Mit dem grünen Lautenbande: Schad um das schöne grüne Band\r\n绿色的琴带：可惜了这美丽的绿丝带\r\n14. Der Jäger: Was sucht denn der Jäger\r\n猎人：猎人在寻找什么\r\n15. Eifersucht und Stolz: Wohin so schnell\r\n嫉妒与骄傲：跑得这么快去哪里\r\n16. Die liebe Farbe: In Grün will ich mich kleiden\r\n可爱的颜色：我要把自己穿成绿色\r\n17. Die böse Farbe: Ich möchte ziehn\r\n可恶的颜色：我想要远行\r\n18. Trockne Blumen: Ihr Blümlein alle\r\n枯萎的花：你们所有的小花\r\n19. Der Müller und der Bach: Wo ein treues Herze\r\n磨坊工与小溪：哪里有一颗忠实的心\r\n20. Des Baches Wiegenlied: Gute Ruh, gute Ruh.\r\n小溪的摇篮曲：好好安息，好好安息",
+        "filename": "声乐套曲/1765943205.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
+    {
+        "id": 203,
+        "title": "亨德尔清唱剧著名咏叹调选集（中低音用）",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "",
+        "language": "英语",
+        "category": "乐谱书/曲集",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音或Bass-Baritone/低男中音或Baritone/男中音",
+        "tonality": "",
+        "description": "1. 酒神永远美丽而青春（选自《亚历山大的欢宴》）\r\nBacchus ever fair and young (from Alexander's Feast)\r\n2. 来吧，跳吧（选自《欢欣鼓舞》）\r\nCome and trip it (from L'Allegro)\r\n3. 感谢你，上帝（选自《弥赛亚》）\r\nDank sei Dir, Herr (from Messiah)\r\n4. 天国之父（选自《犹大马迦比》）\r\nFather of Heav'n (from Judas Maccabeus)\r\n5. 荣誉和武器（选自《参松》）\r\nHonor and arms (from Samson)\r\n6. 慈父之爱（选自《参松》）\r\nHow willing my paternal love (from Samson)\r\n7. 我心里感到造物主的存在……武装，武装，勇敢的人！（选自《犹大马迦比》）\r\nI feel the deity within... Arm, arm, ye brave! (from Judas Maccabeus)\r\n8. 我发怒，我融化，我燃烧……比樱桃更红（选自《阿西斯和该拉忒亚》）\r\nI rage, I melt, I burn... O ruddier than the cherry (from Acis and Galatea)\r\n9. 噢，为什么我无法入眠？（选自《塞默勒》）\r\nO sleep, why dost thou leave me? (from Semele)\r\n10. 归来呀，万君之主！（选自《参松》）\r\nReturn, oh God of hosts! (from Samson)\r\n11. 报仇呀，提谟修斯叫喊着（选自《亚历山大的欢宴》）\r\nRevenge, Timotheus cries (from Alexander's Feast)\r\n12. 看这熊熊的火焰（选自《约书亚》）\r\nSee the raging flames (from Joshua)\r\n13. 光辉的事迹激励了我的舌头（选自《参松》）\r\nThy glorious deeds inspired my tongue (from Samson)\r\n14. 答应我吧，主人啊（选自《众神》）\r\nVouchsafe, o Lord (from Dettinger Te Deum)\r\n15. 无论你走到哪里（选自《塞默勒》）\r\nWhere'er you walk (from Semele)",
+        "filename": "乐谱书/曲集/1765942829.pdf",
+        "date": "2025-12-16",
+        "has_lyrics": false
+    },
     {
         "id": 202,
         "title": "Lieben, Hassen, Hoffen, Zagen / 爱着、恨着、希望着、恐惧着/哈莱金的咏叹调",
@@ -680,7 +1160,8 @@ const musicData = [
         "filename": "声乐套曲/1765779692.pdf",
         "date": "2025-12-14",
         "has_lyrics": false,
-        "description": "1. Love Sight\r\n2. Silent Noon\r\n3. Love's Minstrels\r\n4. Heart's Haven\r\n5. Death in Love\r\n6. Love's Last Gift"
+        "description": "诗人：Dante Gabriel Rossetti / 但丁·加布里埃尔·罗塞蒂\r\n1. Love Sight\r\n2. Silent Noon\r\n3. Love's Minstrels\r\n4. Heart's Haven\r\n5. Death in Love\r\n6. Love's Last Gift",
+        "sub_category": ""
     },
     {
         "id": 157,
@@ -695,7 +1176,8 @@ const musicData = [
         "filename": "声乐套曲/1765779618.pdf",
         "date": "2025-12-14",
         "has_lyrics": false,
-        "description": "Infant Joy no.1\r\nA Poison Tree no.2\r\nThe Piper no.3\r\nLondon no.4\r\nThe Lamb no.5\r\nThe Shepherd no.6\r\nAh, sunflower no.7\r\nCruelty has a human heart no.8\r\nThe Divine Image no.9\r\nEternity no.10"
+        "description": "诗人：William Blake / 威廉·布莱克\r\nInfant Joy no.1\r\nA Poison Tree no.2\r\nThe Piper no.3\r\nLondon no.4\r\nThe Lamb no.5\r\nThe Shepherd no.6\r\nAh, sunflower no.7\r\nCruelty has a human heart no.8\r\nThe Divine Image no.9\r\nEternity no.10",
+        "sub_category": ""
     },
     {
         "id": 156,
@@ -710,7 +1192,8 @@ const musicData = [
         "filename": "声乐套曲/1765779501.pdf",
         "date": "2025-12-14",
         "has_lyrics": false,
-        "description": "1. Loveliest of trees\r\n2. When I was one-and-twenty\r\n3. Look not in my eyes\r\n4. Think no more, lad\r\n5. The lads in their hundreds\r\n6. Is my team ploughing?"
+        "description": "诗人：A. E. Housman / A. E. 豪斯曼\r\n1. Loveliest of trees\r\n2. When I was one-and-twenty\r\n3. Look not in my eyes\r\n4. Think no more, lad\r\n5. The lads in their hundreds\r\n6. Is my team ploughing?",
+        "sub_category": ""
     },
     {
         "id": 155,
@@ -728,7 +1211,7 @@ const musicData = [
     },
     {
         "id": 154,
-        "title": "A Young Man's Exhortation",
+        "title": "A Young Man's Exhortation/一个青年的劝诫",
         "composer": "Gerald Finzi",
         "work": "",
         "language": "英语",
@@ -739,7 +1222,8 @@ const musicData = [
         "filename": "声乐套曲/1765778980.pdf",
         "date": "2025-12-14",
         "has_lyrics": false,
-        "description": "1. A young man's exhortation\r\n2. Budmouth Dears\r\n3. Ditty\r\n4. Her temple\r\n5. The Comet at Yell'ham\r\n6. Shortening days\r\n7. The sigh\r\n8. Former beauties\r\n9. Transformations\r\n10. The dance continued"
+        "description": "诗人：Thomas Hardy / 托马斯·哈代\r\n1. A young man's exhortation\r\n2. Budmouth Dears\r\n3. Ditty\r\n4. Her temple\r\n5. The Comet at Yell'ham\r\n6. Shortening days\r\n7. The sigh\r\n8. Former beauties\r\n9. Transformations\r\n10. The dance continued",
+        "sub_category": ""
     },
     {
         "id": 153,
@@ -757,7 +1241,7 @@ const musicData = [
     },
     {
         "id": 152,
-        "title": "Let us garlands bring",
+        "title": "Let us garlands bring, Op. 18/让我们献上花环",
         "composer": "Gerald Finzi",
         "work": "",
         "language": "英语",
@@ -767,7 +1251,9 @@ const musicData = [
         "tonality": "",
         "filename": "声乐套曲/1765778479.pdf",
         "date": "2025-12-14",
-        "has_lyrics": false
+        "has_lyrics": false,
+        "sub_category": "",
+        "description": "诗人：William Shakespeare / 威廉·莎士比亚\r\n1. Come away, come away, death / 过来吧，过来吧，死亡\r\n2. Who is Silvia? / 谁是西尔维亚？\r\n3. Fear no more the heat o' the sun / 不再畏惧烈日的酷热\r\n4. O Mistress Mine / 哦，我的爱人\r\n5. It was a lover and his lass / 从前有一个爱人和他的少女"
     },
     {
         "id": 151,
@@ -796,7 +1282,8 @@ const musicData = [
         "filename": "声乐套曲/1765778286.pdf",
         "date": "2025-12-14",
         "has_lyrics": false,
-        "description": "1. The vagabond\r\n2. Let Beauty awake\r\n3. The roadside fire\r\n4. Youth and love\r\n5. In dreams\r\n6. The infinite shining heavens\r\n7. Whither must I wander?\r\n8. Bright is the ring of words\r\n9. I have trod the upward and the downward slope"
+        "description": "诗人：Robert Louis Stevenson / 罗伯特·路易斯·史蒂文森\r\n1. The vagabond\r\n2. Let Beauty awake\r\n3. The roadside fire\r\n4. Youth and love\r\n5. In dreams\r\n6. The infinite shining heavens\r\n7. Whither must I wander?\r\n8. Bright is the ring of words\r\n9. I have trod the upward and the downward slope",
+        "sub_category": ""
     },
     {
         "id": 149,
@@ -1778,7 +2265,8 @@ const musicData = [
         "filename": "声乐套曲/1765768898.pdf",
         "date": "2025-12-14",
         "has_lyrics": false,
-        "description": "1. Loveliest of trees\r\n2. When I was one-and-twenty\r\n3. Look not in my eyes\r\n4. Think no more, lad\r\n5. The lads in their hundreds\r\n6. Is my team ploughing?"
+        "description": "诗人：A. E. Housman / A. E. 豪斯曼\r\n1. Loveliest of trees\r\n2. When I was one-and-twenty\r\n3. Look not in my eyes\r\n4. Think no more, lad\r\n5. The lads in their hundreds\r\n6. Is my team ploughing?",
+        "sub_category": ""
     },
     {
         "id": 79,
@@ -2662,7 +3150,7 @@ const musicData = [
     },
     {
         "id": 12,
-        "title": "Cantata BWV 82/Ich habe genug",
+        "title": "Ich habe genug, BWV 82/我满足了",
         "composer": "J.S. Bach/巴赫",
         "work": "",
         "language": "德语",
@@ -2673,7 +3161,7 @@ const musicData = [
         "filename": "宗教声乐作品总谱/BWV_82_.pdf",
         "date": "2025-12-13",
         "sub_category": "康塔塔",
-        "description": "",
+        "description": "1. Aria: Ich habe genug / 咏叹调：我满足了\r\n2. Recitative: Ich habe genug / 宣叙调：我满足了\r\n3. Aria: Schlummert ein, ihr matten Augen / 咏叹调：闭上吧，疲倦的双眼（极著名的摇篮曲）\r\n4. Recitative: Mein Gott! wann kommt das schöne: Nun! / 宣叙调：我的神！那美好的时刻何时到来！\r\n5. Aria: Ich freue mich auf meinen Tod / 咏叹调：我欣喜于我的死亡\r\n",
         "has_lyrics": false
     },
     {
@@ -2809,6 +3297,241 @@ const musicData = [
 ];
 const changeLog = [
     {
+        "date": "2025-12-16 22:21",
+        "type": "add",
+        "msg": "添加: Ach Gott, vom Himmel sieh darein, BWV 2 / 噢，上帝，请从天上垂顾"
+    },
+    {
+        "date": "2025-12-16 22:16",
+        "type": "update",
+        "msg": "更新: Ich habe genug, BWV 82/我满足了"
+    },
+    {
+        "date": "2025-12-16 22:15",
+        "type": "add",
+        "msg": "添加: Ich will den Kreuzstab gerne tragen, BWV 56/我愿欣然背负苦架"
+    },
+    {
+        "date": "2025-12-16 22:09",
+        "type": "add",
+        "msg": "添加: Matthäus-Passion, BWV 244/St. Matthew Passion/马太受难曲"
+    },
+    {
+        "date": "2025-12-16 22:05",
+        "type": "add",
+        "msg": "添加: Mass in B minor, BWV 232/b小调弥撒"
+    },
+    {
+        "date": "2025-12-16 22:02",
+        "type": "add",
+        "msg": "添加: La Damnation de Faust, Op. 24/浮士德的天罚"
+    },
+    {
+        "date": "2025-12-16 21:58",
+        "type": "add",
+        "msg": "添加: Carmina Burana/布兰诗歌"
+    },
+    {
+        "date": "2025-12-16 21:54",
+        "type": "add",
+        "msg": "添加: Mass in D major, Op. 8 /D大调弥撒"
+    },
+    {
+        "date": "2025-12-16 21:51",
+        "type": "add",
+        "msg": "添加: The Seasons (Die Jahreszeiten), Hob. XXI:3/四季"
+    },
+    {
+        "date": "2025-12-16 21:48",
+        "type": "add",
+        "msg": "添加: The Creation (Die Schöpfung), Hob. XXI:2/创世纪"
+    },
+    {
+        "date": "2025-12-16 21:44",
+        "type": "add",
+        "msg": "添加: Elijah, Op. 70/以利亚"
+    },
+    {
+        "date": "2025-12-16 21:41",
+        "type": "add",
+        "msg": "添加: Missa Solemnis in D major, Op. 123/庄严弥撒"
+    },
+    {
+        "date": "2025-12-16 21:40",
+        "type": "add",
+        "msg": "添加: Mass in C major, Op. 86 / C大调弥撒"
+    },
+    {
+        "date": "2025-12-16 21:38",
+        "type": "add",
+        "msg": "添加: Symphony No. 9 in D minor, Op. 125/贝多芬第九交响曲第四乐章"
+    },
+    {
+        "date": "2025-12-16 21:34",
+        "type": "add",
+        "msg": "添加: Cinq mélodies populaires grecques, M. A 9/五首希腊民歌"
+    },
+    {
+        "date": "2025-12-16 21:32",
+        "type": "update",
+        "msg": "更新: Let us garlands bring, Op. 18/让我们献上花环"
+    },
+    {
+        "date": "2025-12-16 21:31",
+        "type": "update",
+        "msg": "更新: A Shropshire Lad/什罗普郡小伙子"
+    },
+    {
+        "date": "2025-12-16 21:31",
+        "type": "update",
+        "msg": "更新: Songs of Travel/旅行之歌"
+    },
+    {
+        "date": "2025-12-16 21:30",
+        "type": "update",
+        "msg": "更新: Let us garlands bring"
+    },
+    {
+        "date": "2025-12-16 21:30",
+        "type": "update",
+        "msg": "更新: A Young Man's Exhortation/一个青年的劝诫"
+    },
+    {
+        "date": "2025-12-16 21:29",
+        "type": "update",
+        "msg": "更新: A Shropshire Lad/什罗普郡小伙子"
+    },
+    {
+        "date": "2025-12-16 21:29",
+        "type": "update",
+        "msg": "更新: Ten Blake Songs"
+    },
+    {
+        "date": "2025-12-16 21:29",
+        "type": "update",
+        "msg": "更新: The House of Life/生命之屋"
+    },
+    {
+        "date": "2025-12-16 21:29",
+        "type": "update",
+        "msg": "更新: Die schöne Müllerin/美丽的磨坊女"
+    },
+    {
+        "date": "2025-12-16 21:28",
+        "type": "update",
+        "msg": "更新: Winterreise, D. 911/冬之旅"
+    },
+    {
+        "date": "2025-12-16 21:28",
+        "type": "update",
+        "msg": "更新: Winterreise, D. 911/冬之旅"
+    },
+    {
+        "date": "2025-12-16 21:28",
+        "type": "update",
+        "msg": "更新: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 21:28",
+        "type": "update",
+        "msg": "更新: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 21:27",
+        "type": "add",
+        "msg": "添加: Don Quichotte à Dulcinée, M. 84/堂吉诃德致杜尔西内亚"
+    },
+    {
+        "date": "2025-12-16 21:23",
+        "type": "add",
+        "msg": "添加: 孔雀/Le Paon"
+    },
+    {
+        "date": "2025-12-16 21:22",
+        "type": "add",
+        "msg": "添加: Histoires naturelles, M. 50/自然的故事"
+    },
+    {
+        "date": "2025-12-16 21:20",
+        "type": "update",
+        "msg": "更新: Quatre Chansons de Don Quichotte/堂吉诃德的四首歌"
+    },
+    {
+        "date": "2025-12-16 21:19",
+        "type": "add",
+        "msg": "添加: Quatre Chansons de Don Quichotte/堂吉诃德的四首歌"
+    },
+    {
+        "date": "2025-12-16 21:14",
+        "type": "add",
+        "msg": "添加: Fifty Modern English Songs/五十首现代英语歌曲"
+    },
+    {
+        "date": "2025-12-16 21:10",
+        "type": "update",
+        "msg": "更新: Gedichte von Eduard Mörike/莫里克诗选艺术歌曲集（第一卷选段）"
+    },
+    {
+        "date": "2025-12-16 21:10",
+        "type": "add",
+        "msg": "添加: 五十首沃尔夫艺术歌曲"
+    },
+    {
+        "date": "2025-12-16 21:08",
+        "type": "add",
+        "msg": "添加: Gedichte von Eduard Mörike/莫里克诗选艺术歌曲集（第一卷选段）"
+    },
+    {
+        "date": "2025-12-16 21:06",
+        "type": "add",
+        "msg": "添加: Eichendorff-Lieder, Volume I/艾兴多夫艺术歌曲集，第一卷"
+    },
+    {
+        "date": "2025-12-16 21:03",
+        "type": "add",
+        "msg": "添加: Schwanengesang, D. 957/天鹅之歌"
+    },
+    {
+        "date": "2025-12-16 20:58",
+        "type": "update",
+        "msg": "更新: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:58",
+        "type": "add",
+        "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:57",
+        "type": "add",
+        "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:54",
+        "type": "add",
+        "msg": "添加: Konzertarien für Bass/Concert Arias for Bass/莫扎特男低音音乐会咏叹调集"
+    },
+    {
+        "date": "2025-12-16 20:51",
+        "type": "add",
+        "msg": "添加: Winterreise, D. 911/冬之旅"
+    },
+    {
+        "date": "2025-12-16 20:50",
+        "type": "add",
+        "msg": "添加: Winterreise, D. 911/冬之旅"
+    },
+    {
+        "date": "2025-12-16 20:46",
+        "type": "add",
+        "msg": "添加: Die schöne Müllerin/美丽的磨坊女"
+    },
+    {
+        "date": "2025-12-16 20:40",
+        "type": "add",
+        "msg": "添加: 亨德尔清唱剧著名咏叹调选集（中低音用）"
+    },
+    {
         "date": "2025-12-16 15:17",
         "type": "update",
         "msg": "更新: Ein deutsches Requiem/德意志安魂曲"
@@ -2822,240 +3545,5 @@ const changeLog = [
         "date": "2025-12-16 15:17",
         "type": "update",
         "msg": "更新: Requiem in D Minor, Op. 48/安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:17",
-        "type": "update",
-        "msg": "更新: Requiem in B♭ minor, Op. 89, B. 165/安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:17",
-        "type": "update",
-        "msg": "更新: Messe de Requiem, Op. 54/安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:17",
-        "type": "update",
-        "msg": "更新: Requiem in D minor, K. 626/安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:17",
-        "type": "update",
-        "msg": "更新: Requiem, Op. 9/安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:16",
-        "type": "update",
-        "msg": "更新: Requiem/安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:16",
-        "type": "update",
-        "msg": "更新: Mass No. 2 in G major, D 167/G大调弥撒"
-    },
-    {
-        "date": "2025-12-16 15:16",
-        "type": "update",
-        "msg": "更新: War Requiem, Op. 66/战争安魂曲"
-    },
-    {
-        "date": "2025-12-16 15:16",
-        "type": "update",
-        "msg": "更新: Messiah, HWV 56/弥赛亚"
-    },
-    {
-        "date": "2025-12-16 15:01",
-        "type": "update",
-        "msg": "更新: Ich habe genung"
-    },
-    {
-        "date": "2025-12-16 15:01",
-        "type": "delete",
-        "msg": "删除: See the raging flames arise"
-    },
-    {
-        "date": "2025-12-16 15:01",
-        "type": "update",
-        "msg": "更新: See the raging flames arise"
-    },
-    {
-        "date": "2025-12-16 15:01",
-        "type": "update",
-        "msg": "更新: Et in Spritm Sanctum"
-    },
-    {
-        "date": "2025-12-16 15:01",
-        "type": "update",
-        "msg": "更新: Gebt mir meinen Jesum wieder"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: Komm Süßes Kreuz"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: Mache dich mein herze rein"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: And God Made The Firmament"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: Rolling in foaming"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: Schon eilet froh der ackersmann"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: Seht auf die breiten"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: Es ist genug/It is enough"
-    },
-    {
-        "date": "2025-12-16 15:00",
-        "type": "update",
-        "msg": "更新: So wahr der Herr, der Gott Israels lebet/As God the Lord of Israel Liveth"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: False destructive ways of pleasure"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: Loathsome urns disclose your treasure"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: Honor and Arms/荣誉与武装"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: How willing my paternal love"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: Thy glorious deeds inspired my tongue"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: Revenge, Timotheus cries/复仇，提摩太在呼唤"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: Bacchus, ever fair and young/酒神永远青春而美丽"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: See the raging flames arise / 看那烈火升腾"
-    },
-    {
-        "date": "2025-12-16 14:59",
-        "type": "update",
-        "msg": "更新: Shall I in Mamre's fertile plain/我要在幔利肥沃的平原上"
-    },
-    {
-        "date": "2025-12-16 14:58",
-        "type": "update",
-        "msg": "更新: Tears, such as tender fathers shed/泪水，正如慈父所流/慈父的眼泪"
-    },
-    {
-        "date": "2025-12-16 14:58",
-        "type": "update",
-        "msg": "更新: Turn not, O Queen, thy face away/王后啊，请不要转过脸去"
-    },
-    {
-        "date": "2025-12-16 14:58",
-        "type": "update",
-        "msg": "更新: The trumpet shall sound/号角响起/号角将鸣响"
-    },
-    {
-        "date": "2025-12-16 14:50",
-        "type": "update",
-        "msg": "更新: You rascal, you! I never knew you had a soul"
-    },
-    {
-        "date": "2025-12-16 14:46",
-        "type": "add",
-        "msg": "添加: Lieben, Hassen, Hoffen, Zagen / 爱着、恨着、希望着、恐惧着/哈莱金的咏叹调"
-    },
-    {
-        "date": "2025-12-16 14:44",
-        "type": "update",
-        "msg": "更新: Mir ist die Ehre widerfahren/我荣幸地承担了这使命/献玫瑰"
-    },
-    {
-        "date": "2025-12-16 14:43",
-        "type": "add",
-        "msg": "添加: Mir ist die Ehre widerfahren/我荣幸地承担了这使命/献玫瑰"
-    },
-    {
-        "date": "2025-12-16 14:40",
-        "type": "add",
-        "msg": "添加: The trumpet shall sound/号角响起/号角将鸣响"
-    },
-    {
-        "date": "2025-12-16 14:38",
-        "type": "add",
-        "msg": "添加: Si, tra i ceppi/在牢笼中"
-    },
-    {
-        "date": "2025-12-16 14:36",
-        "type": "add",
-        "msg": "添加: Ombra mai fu/绿树成荫"
-    },
-    {
-        "date": "2025-12-16 14:35",
-        "type": "add",
-        "msg": "添加: Ombra mai fu/绿树成荫"
-    },
-    {
-        "date": "2025-12-16 14:26",
-        "type": "add",
-        "msg": "添加: Turn not, O Queen, thy face away/王后啊，请不要转过脸去"
-    },
-    {
-        "date": "2025-12-16 14:25",
-        "type": "add",
-        "msg": "添加: Tu sei il cor di questo core"
-    },
-    {
-        "date": "2025-12-16 14:23",
-        "type": "add",
-        "msg": "添加: Sorge infausta una procella/刮起一阵不祥的暴风雨/起了一阵不祥的飓风"
-    },
-    {
-        "date": "2025-12-16 14:22",
-        "type": "add",
-        "msg": "添加: Tra caligini profonde/在浓浓的黑暗中"
-    },
-    {
-        "date": "2025-12-16 14:19",
-        "type": "add",
-        "msg": "添加: Tears, such as tender fathers shed/泪水，正如慈父所流/慈父的眼泪"
-    },
-    {
-        "date": "2025-12-16 14:18",
-        "type": "add",
-        "msg": "添加: Sibilar gli angui d'Aletto/听那复仇女神的蛇在嘶鸣/复仇女神的嘶鸣"
     }
 ];
