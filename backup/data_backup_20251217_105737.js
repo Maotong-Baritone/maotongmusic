@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-17 10:58:04
+// 最后更新于 2025-12-17 23:29:42
 const musicData = [
     {
         "id": 233,
@@ -182,7 +182,7 @@ const musicData = [
         "composer": "Ludwig van Beethoven/贝多芬",
         "work": "",
         "language": "拉丁语",
-        "category": "宗教声乐作品总谱",
+        "category": "歌剧咏叹调",
         "sub_category": "弥撒",
         "voice_count": "",
         "voice_types": "SATB独唱与SATB合唱与管弦乐队",
@@ -230,7 +230,7 @@ const musicData = [
         "composer": "Maurice Ravel/拉威尔",
         "work": "",
         "language": "法语",
-        "category": "声乐套曲",
+        "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "",
@@ -310,7 +310,7 @@ const musicData = [
         "composer": "多位作曲家",
         "work": "",
         "language": "英语",
-        "category": "乐谱书/曲集",
+        "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "",
@@ -3313,21 +3313,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-17 10:58",
-        "type": "update",
-        "msg": "更新: Cinq mélodies populaires grecques, M. A 9/五首希腊民歌"
-    },
-    {
-        "date": "2025-12-17 10:57",
-        "type": "update",
-        "msg": "更新: Fifty Modern English Songs/五十首现代英语歌曲"
-    },
-    {
-        "date": "2025-12-17 10:57",
-        "type": "update",
-        "msg": "更新: Missa Solemnis in D major, Op. 123/庄严弥撒"
-    },
-    {
         "date": "2025-12-17 23:29",
         "type": "update",
         "msg": "更新: Paganini 24 Caprices,Op.1/帕格尼尼24首随想曲"
@@ -3561,5 +3546,20 @@ const changeLog = [
         "date": "2025-12-16 20:58",
         "type": "add",
         "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:57",
+        "type": "add",
+        "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:54",
+        "type": "add",
+        "msg": "添加: Konzertarien für Bass/Concert Arias for Bass/莫扎特男低音音乐会咏叹调集"
+    },
+    {
+        "date": "2025-12-16 20:51",
+        "type": "add",
+        "msg": "添加: Winterreise, D. 911/冬之旅"
     }
 ];

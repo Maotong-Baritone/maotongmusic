@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-17 10:58:04
+// 最后更新于 2025-12-17 10:57:53
 const musicData = [
     {
         "id": 233,
@@ -230,7 +230,7 @@ const musicData = [
         "composer": "Maurice Ravel/拉威尔",
         "work": "",
         "language": "法语",
-        "category": "声乐套曲",
+        "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "",
@@ -3313,11 +3313,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-17 10:58",
-        "type": "update",
-        "msg": "更新: Cinq mélodies populaires grecques, M. A 9/五首希腊民歌"
-    },
-    {
         "date": "2025-12-17 10:57",
         "type": "update",
         "msg": "更新: Fifty Modern English Songs/五十首现代英语歌曲"
@@ -3559,6 +3554,11 @@ const changeLog = [
     },
     {
         "date": "2025-12-16 20:58",
+        "type": "add",
+        "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:57",
         "type": "add",
         "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
     }
