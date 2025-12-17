@@ -1,21 +1,5 @@
-// 最后更新于 2025-12-18 02:26:34
+// 最后更新于 2025-12-17 10:58:04
 const musicData = [
-    {
-        "id": 234,
-        "title": "CZARDAS/Csárdás/查尔达什",
-        "composer": "Vittorio Monti/维托里奥·蒙蒂",
-        "work": "",
-        "language": "",
-        "category": "器乐独奏",
-        "sub_category": "狂想曲",
-        "voice_count": "独奏",
-        "voice_types": "小提琴独奏",
-        "tonality": "开始是d小调，后半部转为D大调",
-        "description": "查尔达什是维托里奥·蒙蒂最著名的曲子。于1904年基于一首著名的匈牙利查尔达什所写成的狂想曲",
-        "filename": "器乐独奏/1765995994.pdf",
-        "date": "2025-12-18",
-        "has_lyrics": false
-    },
     {
         "id": 233,
         "title": "Paganini 24 Caprices,Op.1/帕格尼尼24首随想曲",
@@ -3329,11 +3313,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-18 02:26",
-        "type": "add",
-        "msg": "添加: CZARDAS/Csárdás/查尔达什"
-    },
-    {
         "date": "2025-12-17 10:58",
         "type": "update",
         "msg": "更新: Cinq mélodies populaires grecques, M. A 9/五首希腊民歌"
@@ -3577,5 +3556,10 @@ const changeLog = [
         "date": "2025-12-16 20:58",
         "type": "update",
         "msg": "更新: Dichterliebe, Op. 48/诗人之恋"
+    },
+    {
+        "date": "2025-12-16 20:58",
+        "type": "add",
+        "msg": "添加: Dichterliebe, Op. 48/诗人之恋"
     }
 ];
