@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-18 00:40:18
+// 最后更新于 2025-12-17 23:56:27
 const musicData = [
     {
         "id": 1882,
@@ -9,9 +9,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Edoardo",
         "tonality": "",
-        "description": "原文: Pietoso al lungo pianto… Deh lasciate a un alma amante\r\n出处: Un giorno di regno (Il finto Stanislao)\r\n(批量上传)",
+        "description": "原文: Pietoso al lungo pianto… Deh lasciate a un alma amante\n出处: Un giorno di regno (Il finto Stanislao)\n(批量上传)",
         "filename": "歌剧咏叹调/1766039222623_Pietoso_al_lungo_pianto..._Deh_lasciate_a_un_alma_amante.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -25,9 +25,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Marchesa del Poggio",
         "tonality": "",
-        "description": "原文: Si mostri a chi l'adora...Si, scordar saprò l'infido\r\n出处: Un giorno di regno (Il finto Stanislao)\r\n(批量上传)",
+        "description": "原文: Si mostri a chi l'adora...Si, scordar saprò l'infido\n出处: Un giorno di regno (Il finto Stanislao)\n(批量上传)",
         "filename": "歌剧咏叹调/1766039219488_Si_mostri_a_chi_ladora...Si_scordar_sapro_linfido.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -41,9 +41,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Marchesa del Poggio",
         "tonality": "",
-        "description": "原文: Grave a core innamorato...Se dee cader la vedova\r\n出处: Un giorno di regno (Il finto Stanislao)\r\n(批量上传)",
+        "description": "原文: Grave a core innamorato...Se dee cader la vedova\n出处: Un giorno di regno (Il finto Stanislao)\n(批量上传)",
         "filename": "歌剧咏叹调/1766039215948_Grave_a_core_innamorato...Se_dee_cader_la_vedova.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -57,9 +57,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Mezzo Soprano/次女高音",
+        "voice_types": "Giulietta di Kelbar",
         "tonality": "",
-        "description": "原文: Non san quant'io nel petto… Non vo' quel vecchio\r\n出处: Un giorno di regno (Il finto Stanislao)\r\n(批量上传)",
+        "description": "原文: Non san quant'io nel petto… Non vo' quel vecchio\n出处: Un giorno di regno (Il finto Stanislao)\n(批量上传)",
         "filename": "歌剧咏叹调/1766039212642_Non_san_quantio_nel_petto..._Non_vo_quel_vecchio.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -73,9 +73,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Cavaliere di Belfiore",
         "tonality": "",
-        "description": "原文: Compagnoni di Parigi...Verrà purtroppo il giorno\r\n出处: Un giorno di regno (Il finto Stanislao)\r\n(批量上传)",
+        "description": "原文: Compagnoni di Parigi...Verrà purtroppo il giorno\n出处: Un giorno di regno (Il finto Stanislao)\n(批量上传)",
         "filename": "歌剧咏叹调/1766039209487_Compagnoni_di_Parigi...Verra_purtroppo_il_giorno.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -249,9 +249,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Stiffelio",
         "tonality": "",
-        "description": "原文: Vidi dovunque gemere\r\n出处: Stiffelio\r\n(批量上传)",
+        "description": "原文: Vidi dovunque gemere\n出处: Stiffelio\n(批量上传)",
         "filename": "歌剧咏叹调/1766039174796_Vidi_dovunque_gemere.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -265,9 +265,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Stiffelio",
         "tonality": "",
-        "description": "原文: Di qua varcando sul primo albore\r\n出处: Stiffelio\r\n(批量上传)",
+        "description": "原文: Di qua varcando sul primo albore\n出处: Stiffelio\n(批量上传)",
         "filename": "歌剧咏叹调/1766039172200_Di_qua_varcando_sul_primo_albore.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -281,9 +281,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Stiffelio",
         "tonality": "",
-        "description": "原文: Ah v'appare in fronte scritto\r\n出处: Stiffelio\r\n(批量上传)",
+        "description": "原文: Ah v'appare in fronte scritto\n出处: Stiffelio\n(批量上传)",
         "filename": "歌剧咏叹调/1766039169216_Ah_vappare_in_fronte_scritto.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -345,9 +345,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Stankar",
         "tonality": "",
-        "description": "原文: Lina pensai che un angelo...O gioia inesprimibile\r\n出处: Stiffelio\r\n(批量上传)",
+        "description": "原文: Lina pensai che un angelo...O gioia inesprimibile\n出处: Stiffelio\n(批量上传)",
         "filename": "歌剧咏叹调/1766039158247_Lina_pensai_che_un_angelo...O_gioia_inesprimibile.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -745,9 +745,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Bass/男低音或Bass-Baritone/低男中音",
+        "voice_types": "Oberto",
         "tonality": "",
-        "description": "原文: L'orror del tradimento… Ma tu superbo giovane\r\n出处: Oberto, conte di San Bonifacio\r\n(批量上传)",
+        "description": "原文: L'orror del tradimento… Ma tu superbo giovane\n出处: Oberto, conte di San Bonifacio\n(批量上传)",
         "filename": "歌剧咏叹调/1766039076304_Lorror_del_tradimento..._Ma_tu_superbo_giovane.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -777,9 +777,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Mezzo-soprano/次女高音",
+        "voice_types": "Fenema",
         "tonality": "",
-        "description": "原文: O dischius'è il firmamento\r\n出处: Nabucco\r\n(批量上传)",
+        "description": "原文: O dischius'è il firmamento\n出处: Nabucco\n(批量上传)",
         "filename": "歌剧咏叹调/1766039067141_O_dischiuse_il_firmamento.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1289,9 +1289,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Don Alvaro",
         "tonality": "",
-        "description": "原文: La vita è inferno . . . O tu che in seno agli angeli\r\n出处: La forza del destino\r\n(批量上传)",
+        "description": "原文: La vita è inferno . . . O tu che in seno agli angeli\n出处: La forza del destino\n(批量上传)",
         "filename": "歌剧咏叹调/1766038964798_La_vita_e_inferno_._._._O_tu_che_in_seno_agli_angeli.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1417,9 +1417,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Lida",
         "tonality": "",
-        "description": "原文: Quante volte come un dono\r\n出处: La battaglia di Legnano\r\n(批量上传)",
+        "description": "原文: Quante volte come un dono\n出处: La battaglia di Legnano\n(批量上传)",
         "filename": "歌剧咏叹调/1766038941049_Quante_volte_come_un_dono.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1433,9 +1433,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Lida",
         "tonality": "",
-        "description": "原文: A frenarti o cor nel petto\r\n出处: La battaglia di Legnano\r\n(批量上传)",
+        "description": "原文: A frenarti o cor nel petto\n出处: La battaglia di Legnano\n(批量上传)",
         "filename": "歌剧咏叹调/1766038938499_A_frenarti_o_cor_nel_petto.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1493,13 +1493,13 @@ const musicData = [
         "title": "Ô mes amis, mes frères d'armes/啊，我的朋友们，我的战友们",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Gaston",
         "tonality": "",
-        "description": "原文: Ô mes amis, mes frères d'armes\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Ô mes amis, mes frères d'armes\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038924952_O_mes_amis_mes_freres_darmes.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1509,13 +1509,13 @@ const musicData = [
         "title": "Je veux encore entendre/我愿再听一次",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Gaston",
         "tonality": "",
-        "description": "原文: Je veux encore entendre\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Je veux encore entendre\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038922166_Je_veux_encore_entendre.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1525,13 +1525,13 @@ const musicData = [
         "title": "Quell'ivresse, bonheur suprême/那沉醉，至高的幸福",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Hélène",
         "tonality": "",
-        "description": "原文: Quell'ivresse, bonheur suprême\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Quell'ivresse, bonheur suprême\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038919660_Quellivresse_bonheur_supreme.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1541,13 +1541,13 @@ const musicData = [
         "title": "Non, non votre rage/不，不，你的愤怒",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Hélène",
         "tonality": "",
-        "description": "原文: Non, non votre rage\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Non, non votre rage\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038916675_Non_non_votre_rage.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1557,13 +1557,13 @@ const musicData = [
         "title": "Mes plaintes mes plaintes sont vaines/我的哀叹，我的哀叹徒劳无益",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Hélène",
         "tonality": "",
-        "description": "原文: Mes plaintes mes plaintes sont vaines\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Mes plaintes mes plaintes sont vaines\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038913975_Mes_plaintes_mes_plaintes_sont_vaines.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1573,13 +1573,13 @@ const musicData = [
         "title": "Oh dans l'ombre, dans la mystère/哦，在阴影中，在神秘里",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Bass/男低音或Bass-Baritone/低男中音",
+        "voice_types": "Roger",
         "tonality": "",
-        "description": "原文: Oh dans l'ombre, dans la mystère\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Oh dans l'ombre, dans la mystère\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038911224_Oh_dans_lombre_dans_la_mystere.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1589,13 +1589,13 @@ const musicData = [
         "title": "Ô jour fatal, ô crime/悲惨的日子，罪恶啊",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Bass/男低音或Bass-Baritone/低男中音",
+        "voice_types": "Roger",
         "tonality": "",
-        "description": "原文: Ô jour fatal, ô crime\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Ô jour fatal, ô crime\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038908488_O_jour_fatal_o_crime.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -1605,13 +1605,13 @@ const musicData = [
         "title": "Ah viens démon, esprit du mal/来吧恶魔，邪恶之灵",
         "composer": "Giuseppe Verdi/威尔第",
         "work": "Jérusalem/耶路撒冷",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Bass/男低音或Bass-Baritone/低男中音",
+        "voice_types": "Roger",
         "tonality": "",
-        "description": "原文: Ah viens démon, esprit du mal\r\n出处: Jérusalem\r\n(批量上传)",
+        "description": "原文: Ah viens démon, esprit du mal\n出处: Jérusalem\n(批量上传)",
         "filename": "歌剧咏叹调/1766038905585_Ah_viens_demon_esprit_du_mal.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2361,9 +2361,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Giacomo",
         "tonality": "",
-        "description": "原文: Speme al vecchio ora una figlia\r\n出处: Giovanna d'Arco\r\n(批量上传)",
+        "description": "原文: Speme al vecchio ora una figlia\n出处: Giovanna d'Arco\n(批量上传)",
         "filename": "歌剧咏叹调/1766038761034_Speme_al_vecchio_ora_una_figlia.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2377,9 +2377,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Giacomo",
         "tonality": "",
-        "description": "原文: So che per via dei triboli\r\n出处: Giovanna d'Arco\r\n(批量上传)",
+        "description": "原文: So che per via dei triboli\n出处: Giovanna d'Arco\n(批量上传)",
         "filename": "歌剧咏叹调/1766038757904_So_che_per_via_dei_triboli.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2393,9 +2393,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Giacomo",
         "tonality": "",
-        "description": "原文: Franco son io\r\n出处: Giovanna d'Arco\r\n(批量上传)",
+        "description": "原文: Franco son io\n出处: Giovanna d'Arco\n(批量上传)",
         "filename": "歌剧咏叹调/1766038755072_Franco_son_io.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2409,9 +2409,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Giacomo",
         "tonality": "",
-        "description": "原文: Comparire il ciel m'ha stretto\r\n出处: Giovanna d'Arco\r\n(批量上传)",
+        "description": "原文: Comparire il ciel m'ha stretto\n出处: Giovanna d'Arco\n(批量上传)",
         "filename": "歌剧咏叹调/1766038752573_Comparire_il_ciel_mha_stretto.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2697,7 +2697,7 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
         "description": "原文: Toi qui sus le néant\r\n出处: Don Carlos\r\n(批量上传)",
         "filename": "歌剧咏叹调/1766038694534_Toi_qui_sus_le_neant.pdf",
@@ -2713,7 +2713,7 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
         "description": "原文: Oh ma chère compagne\r\n出处: Don Carlos\r\n(批量上传)",
         "filename": "歌剧咏叹调/1766038691839_Oh_ma_chere_compagne.pdf",
@@ -2729,9 +2729,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: De quels transports poignants et doux\r\n出处: Don Carlos\r\n(批量上传)",
+        "description": "原文: De quels transports poignants et doux\n出处: Don Carlos\n(批量上传)",
         "filename": "歌剧咏叹调/1766038689055_De_quels_transports_poignants_et_doux.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2841,9 +2841,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: Tu che le vanità conosce\r\n出处: Don Carlo\r\n(批量上传)",
+        "description": "原文: Tu che le vanità conosce\n出处: Don Carlo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038669180_Tu_che_le_vanita_conosce.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2857,9 +2857,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: Non pianger, mia compagna\r\n出处: Don Carlo\r\n(批量上传)",
+        "description": "原文: Non pianger, mia compagna\n出处: Don Carlo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038666693_Non_pianger_mia_compagna.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2873,9 +2873,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: Di quale amor, di quanto ardor\r\n出处: Don Carlo\r\n(批量上传)",
+        "description": "原文: Di quale amor, di quanto ardor\n出处: Don Carlo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038663859_Di_quale_amor_di_quanto_ardor.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3161,9 +3161,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Aroldo",
         "tonality": "",
-        "description": "原文: Sotto il sol di Siria ardente\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Sotto il sol di Siria ardente\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038609104_Sotto_il_sol_di_Siria_ardente.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3177,9 +3177,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Mina",
         "tonality": "",
-        "description": "原文: Ah! dagli scanni eterci\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Ah! dagli scanni eterci\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038606580_Ah_dagli_scanni_eterci.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3193,9 +3193,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Egberto",
         "tonality": "",
-        "description": "原文: Mina, pensai che un angelo\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Mina, pensai che un angelo\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038603964_Mina_pensai_che_un_angelo.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3337,9 +3337,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Radamès",
         "tonality": "",
-        "description": "原文: Celeste Aida\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: Celeste Aida\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038573103_Celeste_Aida.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3353,9 +3353,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: Ritorna vincitor!\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: Ritorna vincitor!\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038570709_Ritorna_vincitor.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3369,9 +3369,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: O Patria Mia\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: O Patria Mia\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038568361_O_Patria_Mia.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -27098,201 +27098,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: O Patria Mia/啊，我亲爱的祖国"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: Ritorna vincitor!/凯旋归来！"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: Celeste Aida/圣洁的阿依达"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Mina, pensai che un angelo/米娜，我想到一位天使"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Ah! dagli scanni eterci/啊！来自永恒的天庭"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Sotto il sol di Siria ardente/叙利亚烈日下"
-    },
-    {
-        "date": "2025-12-18 00:38",
-        "type": "update",
-        "msg": "更新: Di quale amor, di quanto ardor/这是何等样的爱，何等样的热情"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: Non pianger, mia compagna/莫悲伤，我的伙伴"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: Tu che le vanità conosce/你知晓尘世虚荣"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: Toi qui sus le néant/深知虚无的你"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: De quels transports poignants et doux/何等尖锐而甜蜜的激动"
-    },
-    {
-        "date": "2025-12-18 00:36",
-        "type": "update",
-        "msg": "更新: Oh ma chère compagne/哦，我亲爱的伴侣"
-    },
-    {
-        "date": "2025-12-18 00:35",
-        "type": "update",
-        "msg": "更新: Comparire il ciel m'ha stretto/天穹紧逼我现身"
-    },
-    {
-        "date": "2025-12-18 00:35",
-        "type": "update",
-        "msg": "更新: Franco son io/我就是弗兰科"
-    },
-    {
-        "date": "2025-12-18 00:35",
-        "type": "update",
-        "msg": "更新: So che per via dei triboli/我知荆棘之路"
-    },
-    {
-        "date": "2025-12-18 00:35",
-        "type": "update",
-        "msg": "更新: Speme al vecchio ora una figlia/老父今有女慰望"
-    },
-    {
-        "date": "2025-12-18 00:33",
-        "type": "update",
-        "msg": "更新: Ah viens démon, esprit du mal/来吧恶魔，邪恶之灵"
-    },
-    {
-        "date": "2025-12-18 00:33",
-        "type": "update",
-        "msg": "更新: Ô jour fatal, ô crime/悲惨的日子，罪恶啊"
-    },
-    {
-        "date": "2025-12-18 00:32",
-        "type": "update",
-        "msg": "更新: Oh dans l'ombre, dans la mystère/哦，在阴影中，在神秘里"
-    },
-    {
-        "date": "2025-12-18 00:32",
-        "type": "update",
-        "msg": "更新: Mes plaintes mes plaintes sont vaines/我的哀叹，我的哀叹徒劳无益"
-    },
-    {
-        "date": "2025-12-18 00:32",
-        "type": "update",
-        "msg": "更新: Non, non votre rage/不，不，你的愤怒"
-    },
-    {
-        "date": "2025-12-18 00:32",
-        "type": "update",
-        "msg": "更新: Quell'ivresse, bonheur suprême/那沉醉，至高的幸福"
-    },
-    {
-        "date": "2025-12-18 00:32",
-        "type": "update",
-        "msg": "更新: Je veux encore entendre/我愿再听一次"
-    },
-    {
-        "date": "2025-12-18 00:31",
-        "type": "update",
-        "msg": "更新: Ô mes amis, mes frères d'armes/啊，我的朋友们，我的战友们"
-    },
-    {
-        "date": "2025-12-18 00:31",
-        "type": "update",
-        "msg": "更新: A frenarti o cor nel petto/抑住胸中的心"
-    },
-    {
-        "date": "2025-12-18 00:31",
-        "type": "update",
-        "msg": "更新: Quante volte come un dono/多少次作为礼物"
-    },
-    {
-        "date": "2025-12-18 00:26",
-        "type": "update",
-        "msg": "更新: La vita è inferno . . . O tu che in seno agli angeli/人生如地狱……啊，你置身于天使之中"
-    },
-    {
-        "date": "2025-12-18 00:25",
-        "type": "update",
-        "msg": "更新: O dischius'è il firmamento/天幕已开"
-    },
-    {
-        "date": "2025-12-18 00:24",
-        "type": "update",
-        "msg": "更新: L'orror del tradimento… Ma tu superbo giovane/背叛的恐怖… 但你这傲慢的年轻人"
-    },
-    {
-        "date": "2025-12-18 00:23",
-        "type": "update",
-        "msg": "更新: Lina pensai che un angelo...O gioia inesprimibile/丽娜，我以为是一位天使……哦，难以言喻的喜悦"
-    },
-    {
-        "date": "2025-12-18 00:22",
-        "type": "update",
-        "msg": "更新: Ah v'appare in fronte scritto/额间字迹昭然"
-    },
-    {
-        "date": "2025-12-18 00:22",
-        "type": "update",
-        "msg": "更新: Di qua varcando sul primo albore/破晓初光越此方"
-    },
-    {
-        "date": "2025-12-18 00:21",
-        "type": "update",
-        "msg": "更新: Compagnoni di Parigi...Verrà purtroppo il giorno/巴黎的同伴……不幸的日子终将到来"
-    },
-    {
-        "date": "2025-12-18 00:21",
-        "type": "update",
-        "msg": "更新: Non san quant'io nel petto… Non vo' quel vecchio/不知我心中苦… 不要那老头"
-    },
-    {
-        "date": "2025-12-18 00:21",
-        "type": "update",
-        "msg": "更新: Non san quant'io nel petto… Non vo' quel vecchio/不知我心中苦… 不要那老头"
-    },
-    {
-        "date": "2025-12-18 00:20",
-        "type": "update",
-        "msg": "更新: Grave a core innamorato...Se dee cader la vedova/深情的心如此沉重…若寡妇注定倒下"
-    },
-    {
-        "date": "2025-12-18 00:17",
-        "type": "update",
-        "msg": "更新: Si mostri a chi l'adora...Si, scordar saprò l'infido/向崇拜者显现吧……是的，我将学会遗忘负心人"
-    },
-    {
-        "date": "2025-12-18 00:17",
-        "type": "update",
-        "msg": "更新: Pietoso al lungo pianto… Deh lasciate a un alma amante/请怜悯这长久的哭泣… 啊，让一颗爱恋的心"
-    },
-    {
-        "date": "2025-12-18 00:16",
-        "type": "update",
-        "msg": "更新: Vidi dovunque gemere/我见处处哀叹"
-    },
-    {
         "date": "2025-12-17 23:56",
         "type": "update",
         "msg": "更新: Au sein de la puissance (In braccio alle dovizie)/在权势的怀抱中"
@@ -28046,5 +27851,200 @@ const changeLog = [
         "date": "2025-12-17 23:20",
         "type": "add",
         "msg": "添加: Di ladroni attorniato/被强盗包围"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: In cielo benedetto/在天堂受祝福"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Tu del mio Carlo al seno/你来到我卡尔洛的身旁"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Lo sguardo avea degli angeli/天使般的目光"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Carlo vive? O caro accento/卡洛还活着？哦，亲爱的声音"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: La mia letizia infondere...Come poteva un angelo/愿把欢乐倾注……天使般纯洁的心灵"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Un ignoto tre lune or saranno/未知的三月如今将成"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Tremate, o miseri/颤抖吧，可怜的人们"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Pareami che sorto da lanto convito/我仿佛从欢乐的宴会起身"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: La sua lampada vitale/她生命之灯"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: La mia letizia infondere...Come poteva un angelo/愿把欢乐倾注……天使般纯洁的心灵"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: In cielo benedetto/在天堂受祝福"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Se vano è il pregare...No giusta causa non è d'Iddio/倘若祈祷是徒劳……不，上帝行事无偏私"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Salve Maria/万福玛利亚"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Non fu sogno/并非梦境"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Sciagurata, ed hai creduto...O speranza di vendetta/不幸的人，你竟相信……哦，复仇的希望"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Ma quando un suon terrible/但可怕的号角声响起"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Non maledirmi o prode/莫要诅咒我，哦勇士"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Dal più remoto esilio... Odio solo ed odio atroce/从最遥远的流放地... 唯有仇恨与残酷的仇恨"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: All'infelice veglio/不幸的老人"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Ah padre, figli, sposa/啊，父亲，儿女，妻子"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Tu al cui sguardi onni possente... La clemenza! s'aggiunge lo scherno/你那无所不能的目光……仁慈啊！竟还加上嘲讽"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Più non vive/不复生存"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "update",
+        "msg": "更新: Dormirò sol nel manto mio regal/我只愿睡在我的龙床上"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Questa dunque è l'iniqua mercede... Quel bronzo feral/这就是那邪恶的奖赏……那致命的青铜"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: O vecchio cor che batte/老心啊，你为何跳动"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Sotto una quercia parvemi/在一棵橡树下"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Quale al più fido amico/致最忠实的朋友"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Pond'è letal martirio/这致命的痛苦"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Sempre all'alba ed alla sera/黎明与黄昏"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "update",
+        "msg": "更新: Per me giunto... O Carlo, ascolta/我的末日就在眼前……啊，卡洛，请听我说"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: O fatidica foresta/噢，命运之林"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Speme al vecchio ora una figlia/老父今有女慰望"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: So che per via dei triboli/我知荆棘之路"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Franco son io/我就是弗兰科"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Comparire il ciel m'ha stretto/天穹紧逼我现身"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Dal labbro il canto estasiato vola/歌声从狂喜的唇边飞出"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Sul fil d'un soffio etesio/在微风轻拂下"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "delete",
+        "msg": "删除: È sogno? o realtà/是梦？还是现实"
+    },
+    {
+        "date": "2025-12-17 23:19",
+        "type": "add",
+        "msg": "添加: Va, vecchio John/去吧，老约翰"
     }
 ];

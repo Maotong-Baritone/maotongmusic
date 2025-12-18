@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-18 00:40:18
+// 最后更新于 2025-12-18 00:35:27
 const musicData = [
     {
         "id": 1882,
@@ -2393,9 +2393,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Giacomo",
         "tonality": "",
-        "description": "原文: Franco son io\r\n出处: Giovanna d'Arco\r\n(批量上传)",
+        "description": "原文: Franco son io\n出处: Giovanna d'Arco\n(批量上传)",
         "filename": "歌剧咏叹调/1766038755072_Franco_son_io.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2409,9 +2409,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Giacomo",
         "tonality": "",
-        "description": "原文: Comparire il ciel m'ha stretto\r\n出处: Giovanna d'Arco\r\n(批量上传)",
+        "description": "原文: Comparire il ciel m'ha stretto\n出处: Giovanna d'Arco\n(批量上传)",
         "filename": "歌剧咏叹调/1766038752573_Comparire_il_ciel_mha_stretto.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2697,7 +2697,7 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
         "description": "原文: Toi qui sus le néant\r\n出处: Don Carlos\r\n(批量上传)",
         "filename": "歌剧咏叹调/1766038694534_Toi_qui_sus_le_neant.pdf",
@@ -2713,7 +2713,7 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
         "description": "原文: Oh ma chère compagne\r\n出处: Don Carlos\r\n(批量上传)",
         "filename": "歌剧咏叹调/1766038691839_Oh_ma_chere_compagne.pdf",
@@ -2729,9 +2729,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: De quels transports poignants et doux\r\n出处: Don Carlos\r\n(批量上传)",
+        "description": "原文: De quels transports poignants et doux\n出处: Don Carlos\n(批量上传)",
         "filename": "歌剧咏叹调/1766038689055_De_quels_transports_poignants_et_doux.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2841,9 +2841,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: Tu che le vanità conosce\r\n出处: Don Carlo\r\n(批量上传)",
+        "description": "原文: Tu che le vanità conosce\n出处: Don Carlo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038669180_Tu_che_le_vanita_conosce.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2857,9 +2857,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: Non pianger, mia compagna\r\n出处: Don Carlo\r\n(批量上传)",
+        "description": "原文: Non pianger, mia compagna\n出处: Don Carlo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038666693_Non_pianger_mia_compagna.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -2873,9 +2873,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Elisabeth of Valois",
         "tonality": "",
-        "description": "原文: Di quale amor, di quanto ardor\r\n出处: Don Carlo\r\n(批量上传)",
+        "description": "原文: Di quale amor, di quanto ardor\n出处: Don Carlo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038663859_Di_quale_amor_di_quanto_ardor.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3161,9 +3161,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Aroldo",
         "tonality": "",
-        "description": "原文: Sotto il sol di Siria ardente\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Sotto il sol di Siria ardente\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038609104_Sotto_il_sol_di_Siria_ardente.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3177,9 +3177,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Mina",
         "tonality": "",
-        "description": "原文: Ah! dagli scanni eterci\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Ah! dagli scanni eterci\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038606580_Ah_dagli_scanni_eterci.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3193,9 +3193,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Egberto",
         "tonality": "",
-        "description": "原文: Mina, pensai che un angelo\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Mina, pensai che un angelo\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038603964_Mina_pensai_che_un_angelo.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3337,9 +3337,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Radamès",
         "tonality": "",
-        "description": "原文: Celeste Aida\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: Celeste Aida\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038573103_Celeste_Aida.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3353,9 +3353,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: Ritorna vincitor!\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: Ritorna vincitor!\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038570709_Ritorna_vincitor.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3369,9 +3369,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: O Patria Mia\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: O Patria Mia\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038568361_O_Patria_Mia.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -27098,76 +27098,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: O Patria Mia/啊，我亲爱的祖国"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: Ritorna vincitor!/凯旋归来！"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: Celeste Aida/圣洁的阿依达"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Mina, pensai che un angelo/米娜，我想到一位天使"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Ah! dagli scanni eterci/啊！来自永恒的天庭"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Sotto il sol di Siria ardente/叙利亚烈日下"
-    },
-    {
-        "date": "2025-12-18 00:38",
-        "type": "update",
-        "msg": "更新: Di quale amor, di quanto ardor/这是何等样的爱，何等样的热情"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: Non pianger, mia compagna/莫悲伤，我的伙伴"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: Tu che le vanità conosce/你知晓尘世虚荣"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: Toi qui sus le néant/深知虚无的你"
-    },
-    {
-        "date": "2025-12-18 00:37",
-        "type": "update",
-        "msg": "更新: De quels transports poignants et doux/何等尖锐而甜蜜的激动"
-    },
-    {
-        "date": "2025-12-18 00:36",
-        "type": "update",
-        "msg": "更新: Oh ma chère compagne/哦，我亲爱的伴侣"
-    },
-    {
-        "date": "2025-12-18 00:35",
-        "type": "update",
-        "msg": "更新: Comparire il ciel m'ha stretto/天穹紧逼我现身"
-    },
-    {
-        "date": "2025-12-18 00:35",
-        "type": "update",
-        "msg": "更新: Franco son io/我就是弗兰科"
-    },
-    {
         "date": "2025-12-18 00:35",
         "type": "update",
         "msg": "更新: So che per via dei triboli/我知荆棘之路"
@@ -28046,5 +27976,75 @@ const changeLog = [
         "date": "2025-12-17 23:20",
         "type": "add",
         "msg": "添加: Di ladroni attorniato/被强盗包围"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: In cielo benedetto/在天堂受祝福"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Tu del mio Carlo al seno/你来到我卡尔洛的身旁"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Lo sguardo avea degli angeli/天使般的目光"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Carlo vive? O caro accento/卡洛还活着？哦，亲爱的声音"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: La mia letizia infondere...Come poteva un angelo/愿把欢乐倾注……天使般纯洁的心灵"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Un ignoto tre lune or saranno/未知的三月如今将成"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Tremate, o miseri/颤抖吧，可怜的人们"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Pareami che sorto da lanto convito/我仿佛从欢乐的宴会起身"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: La sua lampada vitale/她生命之灯"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: La mia letizia infondere...Come poteva un angelo/愿把欢乐倾注……天使般纯洁的心灵"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: In cielo benedetto/在天堂受祝福"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Se vano è il pregare...No giusta causa non è d'Iddio/倘若祈祷是徒劳……不，上帝行事无偏私"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Salve Maria/万福玛利亚"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Non fu sogno/并非梦境"
     }
 ];

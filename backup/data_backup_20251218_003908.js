@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-18 00:40:18
+// 最后更新于 2025-12-18 00:38:11
 const musicData = [
     {
         "id": 1882,
@@ -3161,9 +3161,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Aroldo",
         "tonality": "",
-        "description": "原文: Sotto il sol di Siria ardente\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Sotto il sol di Siria ardente\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038609104_Sotto_il_sol_di_Siria_ardente.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3177,9 +3177,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Mina",
         "tonality": "",
-        "description": "原文: Ah! dagli scanni eterci\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Ah! dagli scanni eterci\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038606580_Ah_dagli_scanni_eterci.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3193,9 +3193,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Baritone/男中音",
+        "voice_types": "Egberto",
         "tonality": "",
-        "description": "原文: Mina, pensai che un angelo\r\n出处: Aroldo\r\n(批量上传)",
+        "description": "原文: Mina, pensai che un angelo\n出处: Aroldo\n(批量上传)",
         "filename": "歌剧咏叹调/1766038603964_Mina_pensai_che_un_angelo.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3337,9 +3337,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Tenor/男高音",
+        "voice_types": "Radamès",
         "tonality": "",
-        "description": "原文: Celeste Aida\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: Celeste Aida\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038573103_Celeste_Aida.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3353,9 +3353,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: Ritorna vincitor!\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: Ritorna vincitor!\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038570709_Ritorna_vincitor.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -3369,9 +3369,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: O Patria Mia\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: O Patria Mia\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038568361_O_Patria_Mia.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -27098,36 +27098,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: O Patria Mia/啊，我亲爱的祖国"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: Ritorna vincitor!/凯旋归来！"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
-        "msg": "更新: Celeste Aida/圣洁的阿依达"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Mina, pensai che un angelo/米娜，我想到一位天使"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Ah! dagli scanni eterci/啊！来自永恒的天庭"
-    },
-    {
-        "date": "2025-12-18 00:39",
-        "type": "update",
-        "msg": "更新: Sotto il sol di Siria ardente/叙利亚烈日下"
-    },
-    {
         "date": "2025-12-18 00:38",
         "type": "update",
         "msg": "更新: Di quale amor, di quanto ardor/这是何等样的爱，何等样的热情"
@@ -28046,5 +28016,35 @@ const changeLog = [
         "date": "2025-12-17 23:20",
         "type": "add",
         "msg": "添加: Di ladroni attorniato/被强盗包围"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: In cielo benedetto/在天堂受祝福"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Tu del mio Carlo al seno/你来到我卡尔洛的身旁"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Lo sguardo avea degli angeli/天使般的目光"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Carlo vive? O caro accento/卡洛还活着？哦，亲爱的声音"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: La mia letizia infondere...Come poteva un angelo/愿把欢乐倾注……天使般纯洁的心灵"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "add",
+        "msg": "添加: Un ignoto tre lune or saranno/未知的三月如今将成"
     }
 ];

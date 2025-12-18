@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-18 00:40:18
+// 最后更新于 2025-12-18 00:40:11
 const musicData = [
     {
         "id": 1882,
@@ -3369,9 +3369,9 @@ const musicData = [
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
-        "voice_types": "Soprano/女高音",
+        "voice_types": "Aïda",
         "tonality": "",
-        "description": "原文: O Patria Mia\r\n出处: Aida\r\n(批量上传)",
+        "description": "原文: O Patria Mia\n出处: Aida\n(批量上传)",
         "filename": "歌剧咏叹调/1766038568361_O_Patria_Mia.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
@@ -27100,11 +27100,6 @@ const changeLog = [
     {
         "date": "2025-12-18 00:40",
         "type": "update",
-        "msg": "更新: O Patria Mia/啊，我亲爱的祖国"
-    },
-    {
-        "date": "2025-12-18 00:40",
-        "type": "update",
         "msg": "更新: Ritorna vincitor!/凯旋归来！"
     },
     {
@@ -28046,5 +28041,10 @@ const changeLog = [
         "date": "2025-12-17 23:20",
         "type": "add",
         "msg": "添加: Di ladroni attorniato/被强盗包围"
+    },
+    {
+        "date": "2025-12-17 23:20",
+        "type": "update",
+        "msg": "更新: In cielo benedetto/在天堂受祝福"
     }
 ];
