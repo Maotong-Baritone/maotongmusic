@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-17 17:48:37
+// 最后更新于 2025-12-17 17:47:11
 const musicData = [
     {
         "id": 1669,
@@ -5329,6 +5329,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 1195,
+        "title": "How willing my paternal love",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Samson",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007807549_How_willing_my_paternal_love.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 1193,
         "title": "Stragi, morti, sangue ed armi",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -9953,6 +9969,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 904,
+        "title": "Tra caligini profonde",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Orlando",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007779574_Tra_caligini_profonde.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 902,
         "title": "Lascia Amor, e siegui Marte",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -10797,6 +10829,22 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007774643_Heroes_when_with_glory_burning.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 849,
+        "title": "Shall I in Mamre's fertile plain",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Joshua",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007774559_Shall_I_in_Mamres_fertile_plain.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -12657,6 +12705,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 732,
+        "title": "Tu sei il cor di questo core",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Giulio Cesare in Egitto",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007764514_Tu_sei_il_cor_di_questo_core.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 731,
         "title": "Se a me non sei crudele, ogn' or",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -14317,6 +14381,22 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007755881_O_beauteous_Queen.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 626,
+        "title": "Turn not, O Queen, thy face away",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Esther",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007755805_Turn_not_O_Queen_thy_face_away.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -23815,31 +23895,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
-        "msg": "删除: Turn not, O Queen, thy face away"
-    },
-    {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
-        "msg": "删除: Tu sei il cor di questo core"
-    },
-    {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
-        "msg": "删除: Tra caligini profonde"
-    },
-    {
-        "date": "2025-12-17 17:47",
-        "type": "delete",
-        "msg": "删除: Shall I in Mamre's fertile plain"
-    },
-    {
-        "date": "2025-12-17 17:47",
-        "type": "delete",
-        "msg": "删除: How willing my paternal love"
-    },
-    {
         "date": "2025-12-17 17:47",
         "type": "delete",
         "msg": "删除: Thy glorious deeds inspired my tongue"
@@ -24748,5 +24803,30 @@ const changeLog = [
         "date": "2025-12-17 16:00",
         "type": "add",
         "msg": "添加: L'odio nel cor frenate/将仇恨深藏心底"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Venga pur, minacci e frema/任你威胁，任你发怒"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Va, l'error mio palesa/去吧，我的错误已昭然"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Son reo; l'error confesso/我是罪人；我承认错误"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Già dagli occhi il velo è tolto/面纱已从眼前揭去"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Il desio di vendetta e di morte/复仇与死亡之愿"
     }
 ];

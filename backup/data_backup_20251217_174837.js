@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-17 17:48:37
+// 最后更新于 2025-12-17 17:48:30
 const musicData = [
     {
         "id": 1669,
@@ -14321,6 +14321,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 626,
+        "title": "Turn not, O Queen, thy face away",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Esther",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007755805_Turn_not_O_Queen_thy_face_away.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 625,
         "title": "Sì, che desio quel che tu brami maggior legami",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -23817,11 +23833,6 @@ const changeLog = [
     {
         "date": "2025-12-17 17:48",
         "type": "delete",
-        "msg": "删除: Turn not, O Queen, thy face away"
-    },
-    {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
         "msg": "删除: Tu sei il cor di questo core"
     },
     {
@@ -24748,5 +24759,10 @@ const changeLog = [
         "date": "2025-12-17 16:00",
         "type": "add",
         "msg": "添加: L'odio nel cor frenate/将仇恨深藏心底"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Venga pur, minacci e frema/任你威胁，任你发怒"
     }
 ];

@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-17 17:48:37
+// 最后更新于 2025-12-17 17:43:54
 const musicData = [
     {
         "id": 1669,
@@ -1885,6 +1885,38 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007830656_As_with_rosy_steps_the_morn.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 1414,
+        "title": "Loathsome urns, disclose your treasure",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "The Triumph of Time and Truth",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007830547_Loathsome_urns_disclose_your_treasure.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 1413,
+        "title": "False, destructive ways of pleasure",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "The Triumph of Time and Truth",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007830439_False_destructive_ways_of_pleasure.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -4705,6 +4737,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 1236,
+        "title": "Leave me, loathsome light!",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Semele",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007811720_Leave_me_loathsome_light.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 1235,
         "title": "Temo che lusinghiero il labbro",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -5325,6 +5373,54 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007807744_Thus_when_the_sun.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 1196,
+        "title": "Thy glorious deeds inspired my tongue",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Samson",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007807646_Thy_glorious_deeds_inspired_my_tongue.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 1195,
+        "title": "How willing my paternal love",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Samson",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007807549_How_willing_my_paternal_love.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 1194,
+        "title": "Honor and arms",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Samson",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007807444_Honor_and_arms.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -9953,6 +10049,38 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 904,
+        "title": "Tra caligini profonde",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Orlando",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007779574_Tra_caligini_profonde.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 903,
+        "title": "Sorge infausta una procella, che oscurar",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Orlando",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007779488_Sorge_infausta_una_procella_che_oscurar.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 902,
         "title": "Lascia Amor, e siegui Marte",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -10797,6 +10925,22 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007774643_Heroes_when_with_glory_burning.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 849,
+        "title": "Shall I in Mamre's fertile plain",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Joshua",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007774559_Shall_I_in_Mamres_fertile_plain.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -12657,6 +12801,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 732,
+        "title": "Tu sei il cor di questo core",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Giulio Cesare in Egitto",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007764514_Tu_sei_il_cor_di_questo_core.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 731,
         "title": "Se a me non sei crudele, ogn' or",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -14317,6 +14477,22 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007755881_O_beauteous_Queen.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 626,
+        "title": "Turn not, O Queen, thy face away",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Esther",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007755805_Turn_not_O_Queen_thy_face_away.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -18225,6 +18401,22 @@ const musicData = [
         "has_lyrics": false
     },
     {
+        "id": 381,
+        "title": "Revenge, Timotheus cries",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Alexander's Feast",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007736785_Revenge_Timotheus_cries.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
         "id": 380,
         "title": "Here amid the shady woods",
         "composer": "Georg Friedrich Händel/亨德尔",
@@ -20493,6 +20685,38 @@ const musicData = [
         "tonality": "",
         "description": "",
         "filename": "歌剧咏叹调/1766007726417_As_When_the_Dove.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 238,
+        "title": "O Ruddier Than the Cherry!",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Acis and Galatea",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007726352_O_Ruddier_Than_the_Cherry.pdf",
+        "date": "2025-12-17",
+        "has_lyrics": false
+    },
+    {
+        "id": 236,
+        "title": "O ruddier than the cherry",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Acis and Galatea",
+        "language": "",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧咏叹调/1766007726210_O_ruddier_than_the_cherry.pdf",
         "date": "2025-12-17",
         "has_lyrics": false
     },
@@ -22905,6 +23129,19 @@ const musicData = [
         "date": "2025-12-14"
     },
     {
+        "id": 72,
+        "title": "Sorge infausta/刮起一阵不祥的暴风雨",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Orlando/奥兰多",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Bass-Baritone/低男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/Sorge_infausta-Orlando.pdf",
+        "date": "2025-12-14"
+    },
+    {
         "id": 71,
         "title": "Sosi immobile",
         "composer": "Gioachino Rossini/罗西尼",
@@ -22915,6 +23152,19 @@ const musicData = [
         "voice_types": "Baritone/男中音",
         "tonality": "",
         "filename": "歌剧咏叹调/Sois_immobile-Guillame_Tell.pdf",
+        "date": "2025-12-14"
+    },
+    {
+        "id": 70,
+        "title": "Sibilar gli angui d'Aletto",
+        "composer": "Georg Friedrich Händel/亨德尔",
+        "work": "Rinaldo/里纳尔多",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "filename": "歌剧咏叹调/Sibilar_gli_angui_dAletto-Rinaldo.pdf",
         "date": "2025-12-14"
     },
     {
@@ -23815,86 +24065,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
-        "msg": "删除: Turn not, O Queen, thy face away"
-    },
-    {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
-        "msg": "删除: Tu sei il cor di questo core"
-    },
-    {
-        "date": "2025-12-17 17:48",
-        "type": "delete",
-        "msg": "删除: Tra caligini profonde"
-    },
-    {
-        "date": "2025-12-17 17:47",
-        "type": "delete",
-        "msg": "删除: Shall I in Mamre's fertile plain"
-    },
-    {
-        "date": "2025-12-17 17:47",
-        "type": "delete",
-        "msg": "删除: How willing my paternal love"
-    },
-    {
-        "date": "2025-12-17 17:47",
-        "type": "delete",
-        "msg": "删除: Thy glorious deeds inspired my tongue"
-    },
-    {
-        "date": "2025-12-17 17:47",
-        "type": "delete",
-        "msg": "删除: O ruddier than the cherry"
-    },
-    {
-        "date": "2025-12-17 17:46",
-        "type": "delete",
-        "msg": "删除: O Ruddier Than the Cherry!"
-    },
-    {
-        "date": "2025-12-17 17:46",
-        "type": "delete",
-        "msg": "删除: Revenge, Timotheus cries"
-    },
-    {
-        "date": "2025-12-17 17:46",
-        "type": "delete",
-        "msg": "删除: Honor and arms"
-    },
-    {
-        "date": "2025-12-17 17:46",
-        "type": "delete",
-        "msg": "删除: Leave me, loathsome light!"
-    },
-    {
-        "date": "2025-12-17 17:45",
-        "type": "delete",
-        "msg": "删除: Loathsome urns, disclose your treasure"
-    },
-    {
-        "date": "2025-12-17 17:45",
-        "type": "delete",
-        "msg": "删除: False, destructive ways of pleasure"
-    },
-    {
-        "date": "2025-12-17 17:45",
-        "type": "delete",
-        "msg": "删除: Sibilar gli angui d'Aletto"
-    },
-    {
-        "date": "2025-12-17 17:44",
-        "type": "delete",
-        "msg": "删除: Sorge infausta una procella, che oscurar"
-    },
-    {
-        "date": "2025-12-17 17:44",
-        "type": "delete",
-        "msg": "删除: Sorge infausta/刮起一阵不祥的暴风雨"
-    },
-    {
         "date": "2025-12-17 17:43",
         "type": "delete",
         "msg": "删除: Cease to Beauty to be Suing"
@@ -24748,5 +24918,85 @@ const changeLog = [
         "date": "2025-12-17 16:00",
         "type": "add",
         "msg": "添加: L'odio nel cor frenate/将仇恨深藏心底"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Venga pur, minacci e frema/任你威胁，任你发怒"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Va, l'error mio palesa/去吧，我的错误已昭然"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Son reo; l'error confesso/我是罪人；我承认错误"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Già dagli occhi il velo è tolto/面纱已从眼前揭去"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Il desio di vendetta e di morte/复仇与死亡之愿"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: D'ogni pietà mi spoglio/我抛弃一切怜悯"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Guerrier, che d'un acciaro/战士，手持利剑"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Vieni ov'amor t'invita/来吧，爱神指引的地方"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Nel fortunato istante/在幸运的时刻"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: De' più superbi il core/高傲的心"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Parto, m'affretto/我离去，我匆忙"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Fra i pensier più funesti di morte/在死亡最阴郁的思绪中"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Dalla sponda tenebrosa/来自幽暗的彼岸"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Ah se il crudel periglio/啊，残酷的危险"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Strider sento la procella/我听见风暴在咆哮"
+    },
+    {
+        "date": "2025-12-17 16:00",
+        "type": "add",
+        "msg": "添加: Se lusinghiera speme/若希望以甜言蜜语相欺"
     }
 ];
