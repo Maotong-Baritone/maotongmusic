@@ -1,5 +1,21 @@
-// 最后更新于 2025-12-18 17:05:18 (Voice Trans)
+// 最后更新于 2025-12-18 17:43:24
 const musicData = [
+    {
+        "id": 2480,
+        "title": "Fuor del mar ho un mar in seno/我胸中翻腾着另一片海洋（带花腔/跑花）",
+        "composer": "Wolfgang Amadeus Mozart/莫扎特",
+        "work": "Idomeneo, K.366/伊多梅纽斯",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "带花腔/跑花版本",
+        "filename": "歌剧咏叹调/1766105004673_FUOR_DEL_MAR_Idomeneo_WMozart_2.pdf",
+        "date": "2025-12-18",
+        "has_lyrics": false
+    },
     {
         "id": 2479,
         "title": "Di che amore io t'abbia amato/我是以何等深情爱着你",
@@ -36634,6 +36650,11 @@ const musicData = [
 ];
 const changeLog = [
     {
+        "date": "2025-12-18 17:43",
+        "type": "add",
+        "msg": "添加: Fuor del mar ho un mar in seno/我胸中翻腾着另一片海洋（带花腔/跑花）"
+    },
+    {
         "date": "2025-12-18 17:05",
         "type": "update",
         "msg": "批量补全声部中文翻译 (300 条)。"
@@ -37597,10 +37618,5 @@ const changeLog = [
         "date": "2025-12-18 15:51",
         "type": "add",
         "msg": "添加: Bella siccome un angelo/美如天使"
-    },
-    {
-        "date": "2025-12-18 15:51",
-        "type": "add",
-        "msg": "添加: Seul sur la terre/孤身于世"
     }
 ];
