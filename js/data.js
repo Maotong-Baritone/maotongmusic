@@ -1,5 +1,21 @@
-// 最后更新于 2025-12-20 22:57:06 (Gluck Lang Fix)
+// 最后更新于 2025-12-20 23:07:59
 const musicData = [
+    {
+        "id": 2647,
+        "title": "I puritani/清教徒",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "",
+        "language": "意大利语",
+        "category": "歌剧总谱",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧总谱/1766297279202_pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
     {
         "id": 2646,
         "title": "Bella mia/我的美人",
@@ -39296,6 +39312,11 @@ const musicData = [
 ];
 const changeLog = [
     {
+        "date": "2025-12-20 23:07",
+        "type": "add",
+        "msg": "添加: I puritani/清教徒"
+    },
+    {
         "date": "2025-12-20 22:57",
         "type": "update",
         "msg": "修正格鲁克 (Gluck) 作品的语言归属 (法语/德语) (38 条)。"
@@ -40284,10 +40305,5 @@ const changeLog = [
         "date": "2025-12-18 16:00",
         "type": "add",
         "msg": "添加: Sogno talor di correre/我有时梦见奔跑"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Forse un destin, che intendere/或许命运，可曾知晓"
     }
 ];
