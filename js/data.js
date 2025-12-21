@@ -1,5 +1,2645 @@
-// 最后更新于 2025-12-19 14:35:23
+// 最后更新于 2025-12-20 22:57:06 (Gluck Lang Fix)
 const musicData = [
+    {
+        "id": 2646,
+        "title": "Bella mia/我的美人",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Il maestro di musica/音乐大师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Bella mia\n出处: Il maestro di musica",
+        "filename": "歌剧咏叹调/1766294218433_Bella_mia.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2645,
+        "title": "Sola mi lasci a piangere/让我独自哭泣",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Sola mi lasci a piangere\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294218083_Sola_mi_lasci_a_piangere.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2644,
+        "title": "Quell' amplesso e quel perdono/那拥抱与那宽恕",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Quell' amplesso e quel perdono\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294217722_Quell_amplesso_e_quel_perdono.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2643,
+        "title": "Prigioniera abbandonata/被遗弃的女囚",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Prigioniera abbandonata\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294217374_Prigioniera_abbandonata.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2642,
+        "title": "Fra poco assiso in trono/不久我将登上宝座",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Fra poco assiso in trono\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294217026_Fra_poco_assiso_in_trono.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2641,
+        "title": "Saper bramate/渴望知道",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Saper bramate\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294216642_Saper_bramate.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2640,
+        "title": "Ecco l'ora s'avvicina/看哪，时刻已临近",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ecco l'ora s'avvicina\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294216284_Ecco_lora_savvicina.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2639,
+        "title": "Giusto ciel, che conoscete/公正的天，你知晓一切",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Giusto ciel, che conoscete\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294215925_Giusto_ciel_che_conoscete.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2638,
+        "title": "Già riede primavera/春天已归来",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Già riede primavera\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294215567_Gia_riede_primavera.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2637,
+        "title": "La calunnia, mio signore/诽谤，我的主人",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: La calunnia, mio signore\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294215196_La_calunnia_mio_signore.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2636,
+        "title": "Vuoi tu, Rosina/你可愿意，罗西娜",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Vuoi tu, Rosina\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294214835_Vuoi_tu_Rosina.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2635,
+        "title": "Veramente ha torto, è vero/确实是他错了，是真的",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Veramente ha torto, è vero\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294214475_Veramente_ha_torto_e_vero.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2634,
+        "title": "Scorsi già molti paesi/我已游历许多地方",
+        "composer": "Giovanni Paisiello/乔瓦尼·帕伊谢洛",
+        "work": "Il barbiere di Siviglia/塞维利亚的理发师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Scorsi già molti paesi\n出处: Il barbiere di Siviglia",
+        "filename": "歌剧咏叹调/1766294214110_Scorsi_gia_molti_paesi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2633,
+        "title": "Je suis joyeux comme un pinson/我像麻雀一样快乐",
+        "composer": "Antonio Lotti/安东尼奥·洛蒂",
+        "work": "Rita/丽塔",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Check (Peppe)",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Je suis joyeux comme un pinson\n出处: Rita",
+        "filename": "歌剧咏叹调/1766294213702_Je_suis_joyeux_comme_un_pinson.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2632,
+        "title": "Mon ménage et l'auberge/我的家与客栈",
+        "composer": "Antonio Lotti/安东尼奥·洛蒂",
+        "work": "Rita/丽塔",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Check (Rita)",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Mon ménage et l'auberge\n出处: Rita",
+        "filename": "歌剧咏叹调/1766294213332_Mon_menage_et_lauberge.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2631,
+        "title": "Mon ménage pour modèle/我的家庭为榜样",
+        "composer": "Antonio Lotti/安东尼奥·洛蒂",
+        "work": "Rita/丽塔",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Check (Gasparo)",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Mon ménage pour modèle\n出处: Rita",
+        "filename": "歌剧咏叹调/1766294212956_Mon_menage_pour_modele.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2630,
+        "title": "Parmi veder ancor ah non turbi/但愿我还能看见",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Telemaco, ossia L'isola di Circe/忒勒马科斯，或喀耳刻之岛",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Parmi veder ancor ah non turbi\n出处: Telemaco, ossia L'isola di Circe",
+        "filename": "歌剧咏叹调/1766294212524_Parmi_veder_ancor_ah_non_turbi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2629,
+        "title": "Padre tu non m'ascolti se per entro/父亲，你听不见我内心的声音",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Telemaco, ossia L'isola di Circe/忒勒马科斯，或喀耳刻之岛",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Padre tu non m'ascolti se per entro\n出处: Telemaco, ossia L'isola di Circe",
+        "filename": "歌剧咏叹调/1766294212142_Padre_tu_non_mascolti_se_per_entro.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2628,
+        "title": "D'un genio che m'accende/被点燃的天才",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Semiramide riconosciuta/被认出的塞米拉米德",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: D'un genio che m'accende\n出处: Semiramide riconosciuta",
+        "filename": "歌剧咏叹调/1766294211787_Dun_genio_che_maccende.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2627,
+        "title": "Voi che le mie vivende/你们，我的生命",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Semiramide riconosciuta/被认出的塞米拉米德",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Voi che le mie vivende\n出处: Semiramide riconosciuta",
+        "filename": "歌剧咏叹调/1766294211427_Voi_che_le_mie_vivende.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2626,
+        "title": "Vieni che poi sereno/来吧，晴朗的时光",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Semiramide riconosciuta/被认出的塞米拉米德",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Vieni che poi sereno\n出处: Semiramide riconosciuta",
+        "filename": "歌剧咏叹调/1766294211066_Vieni_che_poi_sereno.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2625,
+        "title": "Tradita sprezzata che piango/被背叛，被蔑视，我哭泣",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Semiramide riconosciuta/被认出的塞米拉米德",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Tradita sprezzata che piango\n出处: Semiramide riconosciuta",
+        "filename": "歌剧咏叹调/1766294210706_Tradita_sprezzata_che_piango.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2624,
+        "title": "Oscura il sol le stelle/太阳黯淡，星辰无光",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Semiramide riconosciuta/被认出的塞米拉米德",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Oscura il sol le stelle\n出处: Semiramide riconosciuta",
+        "filename": "歌剧咏叹调/1766294210336_Oscura_il_sol_le_stelle.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2623,
+        "title": "Fuggi dagl'occhi miei/从我眼前消失",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Semiramide riconosciuta/被认出的塞米拉米德",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Fuggi dagl'occhi miei\n出处: Semiramide riconosciuta",
+        "filename": "歌剧咏叹调/1766294209955_Fuggi_daglocchi_miei.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2622,
+        "title": "Spiagge amate, ove talora/亲爱的海岸，我时常在此",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Spiagge amate, ove talora\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294209582_Spiagge_amate_ove_talora.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2621,
+        "title": "Quegli occhi belli/那双美丽的眼睛",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Quegli occhi belli\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294209223_Quegli_occhi_belli.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2620,
+        "title": "Oh del mio dolce ardor/哦，我甜蜜的渴望",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Oh del mio dolce ardor\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294208860_Oh_del_mio_dolce_ardor.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2619,
+        "title": "Le belle imagini d'un dolce amore/甜蜜爱情的美好幻影",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Le belle imagini d'un dolce amore\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294208496_Le_belle_imagini_dun_dolce_amore.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2618,
+        "title": "Di te scordarmi e vivere!/忘记你而活下去！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Di te scordarmi e vivere!\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294208135_Di_te_scordarmi_e_vivere.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2617,
+        "title": "Dall'aurea sua stella colombe amorose/来自他金色星辰的温柔鸽子",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Dall'aurea sua stella colombe amorose\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294207764_Dallaurea_sua_stella_colombe_amorose.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2616,
+        "title": "T'inganni, il tuo destino/你的命运在欺骗你",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: T'inganni, il tuo destino\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294207368_Tinganni_il_tuo_destino.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2615,
+        "title": "Forse più d'una beltà/或许不止一位美人",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Forse più d'una beltà\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294206994_Forse_piu_duna_belta.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2614,
+        "title": "Lo potrò! Ma fra tanto/我能做到！但与此同时",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Lo potrò! Ma fra tanto\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294206633_Lo_potro_Ma_fra_tanto.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2613,
+        "title": "Donzelle semplici, no non credete a quelle lagrime/单纯的姑娘们，不要相信那些眼泪",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Donzelle semplici, no non credete a quelle lagrime\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294206257_Donzelle_semplici_no_non_credete_a_quelle_lagrime.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2612,
+        "title": "Nell'idea ch'ei volge in mente/在他心中盘旋的念头",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Paride ed Elena/帕里斯与海伦",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Nell'idea ch'ei volge in mente\n出处: Paride ed Elena",
+        "filename": "歌剧咏叹调/1766294205899_Nellidea_chei_volge_in_mente.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2611,
+        "title": "Cet asile aimable et tranquille/这可爱而宁静的居所",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Cet asile aimable et tranquille\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294205536_Cet_asile_aimable_et_tranquille.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2610,
+        "title": "Soumis au silence/臣服于寂静",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Soumis au silence\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294205172_Soumis_au_silence.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2609,
+        "title": "Si les doux accords de ta lyre/若你琴弦的甜美和声",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Si les doux accords de ta lyre\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294204786_Si_les_doux_accords_de_ta_lyre.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2608,
+        "title": "Fortune ennemie!/与命运为敌！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Fortune ennemie!\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294204422_Fortune_ennemie.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2607,
+        "title": "Quel nouveau ciel pare ces lieux?/何等新的天空装点此地？",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Quel nouveau ciel pare ces lieux?\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294204063_Quel_nouveau_ciel_pare_ces_lieux.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2606,
+        "title": "O cher trésor d'amour/啊，爱情的珍贵宝藏",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O cher trésor d'amour\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294203697_O_cher_tresor_damour.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2605,
+        "title": "J'ai perdu mon Eurydice/我失去了我的欧律狄刻",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: J'ai perdu mon Eurydice\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294203340_Jai_perdu_mon_Eurydice.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2604,
+        "title": "Amour, viens rendre à mon âme/爱神，请归还我的灵魂",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orphée et Euridice/奥尔菲与尤丽狄茜",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Amour, viens rendre à mon âme\n出处: Orphée et Euridice",
+        "filename": "歌剧咏叹调/1766294202975_Amour_viens_rendre_a_mon_ame.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2603,
+        "title": "È quest'asilo ameno e grato/这宜人而惬意的栖身之所",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: È quest'asilo ameno e grato\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294202609_E_questasilo_ameno_e_grato.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2602,
+        "title": "Che fiero momento/多么残酷的时刻",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Che fiero momento\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294202210_Che_fiero_momento.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2601,
+        "title": "Gli sguardi trattieni Amor/爱神，请收敛你的目光",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Gli sguardi trattieni Amor\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294201841_Gli_sguardi_trattieni_Amor.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2600,
+        "title": "Dalla cetra tua/来自你的竖琴",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Dalla cetra tua\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294201485_Dalla_cetra_tua.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2599,
+        "title": "Piango il mio ben cosi/我为我心爱的人如此哭泣",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Piango il mio ben cosi\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294201127_Piango_il_mio_ben_cosi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2598,
+        "title": "Mille pene/千般痛楚",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Mille pene\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294200770_Mille_pene.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2597,
+        "title": "Men tiranne voi sareste/你们会成为暴君",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Men tiranne voi sareste\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294200415_Men_tiranne_voi_sareste.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2596,
+        "title": "Deh placatevi con me/请你们对我平息怒气",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Deh placatevi con me\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294200050_Deh_placatevi_con_me.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2595,
+        "title": "Chiamo il mio ben cosi/我这样呼唤我的爱人",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Chiamo il mio ben cosi\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294199675_Chiamo_il_mio_ben_cosi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2594,
+        "title": "Che puro ciel/多么纯净的天空",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Che puro ciel\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294199304_Che_puro_ciel.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2593,
+        "title": "Che farò senza Euridice/没有尤丽狄茜我该怎么办",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Che farò senza Euridice\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294198946_Che_faro_senza_Euridice.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2592,
+        "title": "Cerco il mio ben cosi/我如此寻找我的爱人",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Cerco il mio ben cosi\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294198592_Cerco_il_mio_ben_cosi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2591,
+        "title": "Addio, addio, o miei sospiri/别了，别了，我的叹息",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Orfeo ed Euridice/奥菲欧与尤丽狄茜",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Addio, addio, o miei sospiri\n出处: Orfeo ed Euridice",
+        "filename": "歌剧咏叹调/1766294198234_Addio_addio_o_miei_sospiri.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2590,
+        "title": "Nume offensi/被冒犯的神明",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Le feste d'Apollo/阿波罗的节庆",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Nume offensi\n出处: Le feste d'Apollo",
+        "filename": "歌剧咏叹调/1766294197877_Nume_offensi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2589,
+        "title": "Ad un riso/一笑",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Le cinesi/中国姑娘",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Contralto/女低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ad un riso\n出处: Le cinesi",
+        "filename": "歌剧咏叹调/1766294197513_Ad_un_riso.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2588,
+        "title": "Ferma, crudele/停下，残忍的人",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Le cinesi/中国姑娘",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ferma, crudele\n出处: Le cinesi",
+        "filename": "歌剧咏叹调/1766294197133_Ferma_crudele.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2587,
+        "title": "Heureux l'amant qui se dépètre De Cupidon/挣脱丘比特枷锁的情人多么幸福",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Heureux l'amant qui se dépètre De Cupidon\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294196757_Heureux_lamant_qui_se_depetre_De_Cupidon.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2586,
+        "title": "Vous ressemblez à la rose naissante/您宛若初绽的玫瑰",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Vous ressemblez à la rose naissante\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294196400_Vous_ressemblez_a_la_rose_naissante.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2585,
+        "title": "Tout ce que j'aime est au tombeau/我所爱的一切都已长眠",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Tout ce que j'aime est au tombeau\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294196039_Tout_ce_que_jaime_est_au_tombeau.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2584,
+        "title": "Je chérirai jusqu'au trépas/我将珍爱至死不渝",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Je chérirai jusqu'au trépas\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294195673_Je_cherirai_jusquau_trepas.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2583,
+        "title": "Maître des coeurs, achève ton ouvrage/心灵之主，请完成你的作品",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Maître des coeurs, achève ton ouvrage\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294195317_Maitre_des_coeurs_acheve_ton_ouvrage.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2582,
+        "title": "Je sais que l'amoureux flambeau/我知道爱情之火",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Je sais que l'amoureux flambeau\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294194953_Je_sais_que_lamoureux_flambeau.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2581,
+        "title": "Ah! qu'il est doux de se revoir/啊！重逢多么甜蜜",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ah! qu'il est doux de se revoir\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294194583_Ah_quil_est_doux_de_se_revoir.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2580,
+        "title": "J'ai fait un rève des plus doux/我做了一个最甜蜜的梦",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: J'ai fait un rève des plus doux\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294194209_Jai_fait_un_reve_des_plus_doux.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2579,
+        "title": "A ma maîtresse J'avais promis, Seigneur/我曾向我的女主人承诺，大人",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: A ma maîtresse J'avais promis, Seigneur\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294193849_A_ma_maitresse_Javais_promis_Seigneur.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2578,
+        "title": "J'ai perdu mon doux ramage/我失去了甜美的歌喉",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: J'ai perdu mon doux ramage\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294193489_Jai_perdu_mon_doux_ramage.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2577,
+        "title": "Venez, venez, troupe brillante/来吧，来吧，闪亮的队伍",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Venez, venez, troupe brillante\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294193126_Venez_venez_troupe_brillante.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2576,
+        "title": "Sans votre brusque retraite/若非您突然离去",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Sans votre brusque retraite\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294192770_Sans_votre_brusque_retraite.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2575,
+        "title": "Bel inconnu qu'ici l'amour amène/被爱神引至此地的陌生美少年",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Bel inconnu qu'ici l'amour amène\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294192396_Bel_inconnu_quici_lamour_amene.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2574,
+        "title": "Les homme pieusement/虔诚的人们",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Les homme pieusement\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294192010_Les_homme_pieusement.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2573,
+        "title": "Il fait entendre sa sonnette/他摇响了铃铛",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Il fait entendre sa sonnette\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294191639_Il_fait_entendre_sa_sonnette.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2572,
+        "title": "D'une telle lâcheté/如此怯懦",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: D'une telle lâcheté\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294191280_Dune_telle_lachete.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2571,
+        "title": "Castagno, castagna, Pista fanache/栗树，栗子，皮斯塔·法纳切",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Castagno, castagna, Pista fanache\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294190922_Castagno_castagna_Pista_fanache.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2570,
+        "title": "Un ruisselet, Bien clair, bien net/一条清澈明亮的小溪",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Un ruisselet, Bien clair, bien net\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294190564_Un_ruisselet_Bien_clair_bien_net.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2569,
+        "title": "Des combats J'ai peint l'horreur/我曾描绘战斗的恐怖",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Des combats J'ai peint l'horreur\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294190209_Des_combats_Jai_peint_lhorreur.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2568,
+        "title": "D'un céleste transport mon âme est agitée/一种神圣的激情激荡着我的灵魂",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: D'un céleste transport mon âme est agitée\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294189837_Dun_celeste_transport_mon_ame_est_agitee.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2567,
+        "title": "C'est un torrent impétueux/这是一股汹涌的激流",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: C'est un torrent impétueux\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294189444_Cest_un_torrent_impetueux.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2566,
+        "title": "Mahomet, notre grand prophète/我们伟大的先知穆罕默德",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "La rencontre imprévue/不期而遇",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Mahomet, notre grand prophète\n出处: La rencontre imprévue",
+        "filename": "歌剧咏叹调/1766294189072_Mahomet_notre_grand_prophete.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2565,
+        "title": "Unis dès la plus tendre enfance/自幼便结同心",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Unis dès la plus tendre enfance\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294188715_Unis_des_la_plus_tendre_enfance.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2564,
+        "title": "Divinité des grandes âmes!/伟大灵魂的神性！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Divinité des grandes âmes!\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294188360_Divinite_des_grandes_ames.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2563,
+        "title": "Ah! mon ami, j'implore ta pitié!/啊！我的朋友，我祈求你的怜悯！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ah! mon ami, j'implore ta pitié!\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294187996_Ah_mon_ami_jimplore_ta_pitie.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2562,
+        "title": "Tremblez! on sait tout le mystère/颤抖吧！一切秘密都已揭晓",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Tremblez! on sait tout le mystère\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294187642_Tremblez_on_sait_tout_le_mystere.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2561,
+        "title": "Ô toi qui, prolongeas mes jours/噢，你延长了我的生命",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ô toi qui, prolongeas mes jours\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294187280_O_toi_qui_prolongeas_mes_jours.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2560,
+        "title": "O malheureuse Iphigénie/不幸的伊菲姬尼",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O malheureuse Iphigénie\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294186888_O_malheureuse_Iphigenie.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2559,
+        "title": "Je t'implore et je tremble/我祈求你，我颤抖",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Je t'implore et je tremble\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294186517_Je_timplore_et_je_tremble.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2558,
+        "title": "D'une image, hélas! trop chérie/一幅画像，唉！太过珍爱",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: D'une image, hélas! trop chérie\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294186160_Dune_image_helas_trop_cherie.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2557,
+        "title": "Ah! laissons-là ce souvenir funeste/啊！让我们忘却那悲伤的回忆",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ah! laissons-là ce souvenir funeste\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294185803_Ah_laissons-la_ce_souvenir_funeste.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2556,
+        "title": "De tes forfaits la trame est découverte/你罪行的阴谋已被揭露",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: De tes forfaits la trame est découverte\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294185447_De_tes_forfaits_la_trame_est_decouverte.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2555,
+        "title": "De noirs pressentiments, mon âme intimidée/不祥的预感，我胆怯的灵魂",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: De noirs pressentiments, mon âme intimidée\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294185092_De_noirs_pressentiments_mon_ame_intimidee.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2554,
+        "title": "Quoi! toujours à mes voeux vous êtes inflexible?/什么！你总是对我的愿望如此固执？",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Quoi! toujours à mes voeux vous êtes inflexible?\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294184724_Quoi_toujours_a_mes_voeux_vous_etes_inflexible.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2553,
+        "title": "Que ces regrets touchants pour mon coeur ont des charmes/这些动人的遗憾对我心多么有魅力",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Que ces regrets touchants pour mon coeur ont des charmes\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294184329_Que_ces_regrets_touchants_pour_mon_coeur_ont_des_charmes.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2552,
+        "title": "Le calme rentre dans mon coeur/宁静重回我心",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Le calme rentre dans mon coeur\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294183960_Le_calme_rentre_dans_mon_coeur.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2551,
+        "title": "Dieux qui me poursuivez!/众神啊，你们紧追不舍！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Dieux qui me poursuivez!\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294183606_Dieux_qui_me_poursuivez.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2550,
+        "title": "Dans cet objet touchant/在这动人的事物中",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Tauride/伊菲姬尼在陶里德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Dans cet objet touchant\n出处: Iphigénie en Tauride",
+        "filename": "歌剧咏叹调/1766294183246_Dans_cet_objet_touchant.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2549,
+        "title": "Heureux guerriers, volez a la victoire/幸福的战士们，飞向胜利",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Heureux guerriers, volez a la victoire\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294182891_Heureux_guerriers_volez_a_la_victoire.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2548,
+        "title": "Vivez, vivez pour Oreste, mon frère/活下去，活下去，为了我的兄弟俄瑞斯忒斯",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Vivez, vivez pour Oreste, mon frère\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294182539_Vivez_vivez_pour_Oreste_mon_frere.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2547,
+        "title": "Par la crainte et par l'espérance/因恐惧与希望",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Par la crainte et par l'espérance\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294182180_Par_la_crainte_et_par_lesperance.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2546,
+        "title": "Les voeux, dont ce peuple m'honore/人民向我致敬的誓言",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Les voeux, dont ce peuple m'honore\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294181827_Les_voeux_dont_ce_peuple_mhonore.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2545,
+        "title": "Iphigénie, hélas! vous a trop fait connaitre/伊菲革涅亚，唉！你已让人太过了解",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Iphigénie, hélas! vous a trop fait connaitre\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294181464_Iphigenie_helas_vous_a_trop_fait_connaitre.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2544,
+        "title": "Il faut de mon destin/我命运的必然",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Il faut de mon destin\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294181111_Il_faut_de_mon_destin.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2543,
+        "title": "Hélas! mon coeur sensible et tendre/唉！我这颗敏感而温柔的心",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Hélas! mon coeur sensible et tendre\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294180751_Helas_mon_coeur_sensible_et_tendre.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2542,
+        "title": "Adieu, conservez dans votre âme/别了，请将这份记忆永存心底",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Adieu, conservez dans votre âme\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294180391_Adieu_conservez_dans_votre_ame.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2541,
+        "title": "Son front est couronne des manos de la victoire/他的额头被胜利之手加冕",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Son front est couronne des mains de la victoire\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294180033_Son_front_est_couronne_des_mains_de_la_victoire.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2540,
+        "title": "Que j'aime à voir ces hommage flatteurs/我多么爱看这谄媚的致敬",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Que j'aime à voir ces hommage flatteurs\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294179676_Que_jaime_a_voir_ces_hommage_flatteurs.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2539,
+        "title": "Par son père cruel à la mort condamnée/被残酷的父亲判处死刑",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Par son père cruel à la mort condamnée\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294179310_Par_son_pere_cruel_a_la_mort_condamnee.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2538,
+        "title": "Jupiter, lance ta foudre/朱庇特，掷出你的雷霆",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Jupiter, lance ta foudre\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294178930_Jupiter_lance_ta_foudre.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2537,
+        "title": "Armez-vous d'un noble courage/鼓起你高贵的勇气",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Armez-vous d'un noble courage\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294178571_Armez-vous_dun_noble_courage.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2536,
+        "title": "Cruelle, non, jamais votre insensible/残忍，不，你冷酷的心永不会",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Cruelle, non, jamais votre insensible\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294178214_Cruelle_non_jamais_votre_insensible.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2535,
+        "title": "Cours, et dis-lui: qu'elle n'a rien à craindre/去吧，去告诉她：她无需畏惧",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Cours, et dis-lui: qu'elle n'a rien à craindre\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294177856_Cours_et_dis-lui_quelle_na_rien_a_craindre.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2534,
+        "title": "Calchas, d'un trait mortel blessé/卡尔卡斯，被致命一击所伤",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Calchas, d'un trait mortel blessé\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294177502_Calchas_dun_trait_mortel_blesse.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2533,
+        "title": "Peuvents-ils ordonner/他们能下令吗",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Peuvents-ils ordonner\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294177147_Peuvents-ils_ordonner.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2532,
+        "title": "O toi, l'objet le plus aimable/哦，你，最可爱的对象",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O toi, l'objet le plus aimable\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294176791_O_toi_lobjet_le_plus_aimable.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2531,
+        "title": "Brillant auteur de la lumière!/光辉的造光者！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Brillant auteur de la lumière!\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294176421_Brillant_auteur_de_la_lumiere.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2530,
+        "title": "Au faite des grandeurs/荣耀之巅",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Iphigénie en Aulide/伊菲姬尼在奥利德",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Baritone/男中音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Au faite des grandeurs\n出处: Iphigénie en Aulide",
+        "filename": "歌剧咏叹调/1766294176063_Au_faite_des_grandeurs.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2529,
+        "title": "Al mio fedel dirai/告诉我的爱人",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Il re pastore/牧人王",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Al mio fedel dirai\n出处: Il re pastore",
+        "filename": "歌剧咏叹调/1766294175706_Al_mio_fedel_dirai.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2528,
+        "title": "Rien dans la nature/自然万物皆空",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Écho et Narcisse/回声与那喀索斯",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Rien dans la nature\n出处: Écho et Narcisse",
+        "filename": "歌剧咏叹调/1766294175348_Rien_dans_la_nature.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2527,
+        "title": "Deinen Worten weicht das Bangen/你的话语驱散了恐惧",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Deinen Worten weicht das Bangen\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294174991_Deinen_Worten_weicht_das_Bangen.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2526,
+        "title": "Göttin der Liebe, der ich mein Herz geweiht/爱之女神，我献上我的心",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Göttin der Liebe, der ich mein Herz geweiht\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294174630_Gottin_der_Liebe_der_ich_mein_Herz_geweiht.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2525,
+        "title": "Lebe wohl, der Spass ist aus/永别了，欢乐已逝",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Lebe wohl, der Spass ist aus\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294174275_Lebe_wohl_der_Spass_ist_aus.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2524,
+        "title": "Komm, mein süsser Mann/来吧，我亲爱的丈夫",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Komm, mein süsser Mann\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294173903_Komm_mein_susser_Mann.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2523,
+        "title": "Mein Männchen, mein Herzchen/我的小丈夫，我的心肝",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Mein Männchen, mein Herzchen\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294173545_Mein_Mannchen_mein_Herzchen.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2522,
+        "title": "Ach, wie ist doch zu bedauern/啊，多么令人惋惜",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ach, wie ist doch zu bedauern\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294173190_Ach_wie_ist_doch_zu_bedauern.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2521,
+        "title": "Will mein Weib zu Hause brummen/若我妻子在家抱怨",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Will mein Weib zu Hause brummen\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294172823_Will_mein_Weib_zu_Hause_brummen.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2520,
+        "title": "O Tag, so wonniglich/哦，多么美妙的一天",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O Tag, so wonniglich\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294172469_O_Tag_so_wonniglich.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2519,
+        "title": "Du spottest meiner, erbärmlicher Tropf/你嘲笑我，可悲的蠢货",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Der betrogene Kadi/受骗的卡迪",
+        "language": "德语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Du spottest meiner, erbärmlicher Tropf\n出处: Der betrogene Kadi",
+        "filename": "歌剧咏叹调/1766294172109_Du_spottest_meiner_erbarmlicher_Tropf.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2518,
+        "title": "Padre perdona/父亲，请宽恕",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Padre perdona\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294171749_Padre_perdona.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2517,
+        "title": "In te spero, sposo amato/我寄望于你，钟爱的夫君",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: In te spero, sposo amato\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294171376_In_te_spero_sposo_amato.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2516,
+        "title": "Non curo l'affetto/我不在乎爱情",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Non curo l'affetto\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294171011_Non_curo_laffetto.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2515,
+        "title": "Sperai vicino il lido/我原以为已靠近海岸",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Sperai vicino il lido\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294170657_Sperai_vicino_il_lido.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2514,
+        "title": "Gemo in un punto e fremo/我时而呻吟，时而颤抖",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Gemo in un punto e fremo\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294170302_Gemo_in_un_punto_e_fremo.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2513,
+        "title": "Per lei fra l'armi/为她，在战场上",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Per lei fra l'armi\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294169945_Per_lei_fra_larmi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2512,
+        "title": "Vuoi ch'io m'uccida/你要我死吗",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Vuoi ch'io m'uccida\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294169586_Vuoi_chio_muccida.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2511,
+        "title": "Il suo leggiadro viso/她娇美的面容",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Mezzo-soprano/次女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Il suo leggiadro viso\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294169226_Il_suo_leggiadro_viso.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2510,
+        "title": "O più tremar non voglio/我不愿再颤抖",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Demofoonte/德莫丰特",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O più tremar non voglio\n出处: Demofoonte",
+        "filename": "歌剧咏叹调/1766294168857_O_piu_tremar_non_voglio.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2509,
+        "title": "Perchè nutrir terror/为何滋生恐惧",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Perchè nutrir terror\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294168505_Perche_nutrir_terror.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2508,
+        "title": "Pel Dio, pe' Numi tuoi/凭你的神，凭你的众神",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Pel Dio, pe' Numi tuoi\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294168151_Pel_Dio_pe_Numi_tuoi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2507,
+        "title": "Crudele, senza te/残忍的人，没有你",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Crudele, senza te\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294167783_Crudele_senza_te.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2506,
+        "title": "Barbare, non, sans toi/野蛮人，不，没有你",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Barbare, non, sans toi\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294167430_Barbare_non_sans_toi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2505,
+        "title": "Bannis la crainte et les alarmes/驱散恐惧与惊慌",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Bannis la crainte et les alarmes\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294167070_Bannis_la_crainte_et_les_alarmes.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2504,
+        "title": "Alceste, au nom des Dieux/阿尔切斯特，以众神之名",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Alceste, au nom des Dieux\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294166709_Alceste_au_nom_des_Dieux.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2503,
+        "title": "Senza del tuo sospir/没有你的叹息",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Senza del tuo sospir\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294166337_Senza_del_tuo_sospir.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2502,
+        "title": "O funesta Dea/啊，不祥的女神",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O funesta Dea\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294165968_O_funesta_Dea.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2501,
+        "title": "O Dei, del mio fato tiranno/哦，命运的无情主宰",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: O Dei, del mio fato tiranno\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294165614_O_Dei_del_mio_fato_tiranno.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2500,
+        "title": "Mi arridea sin or la vita/生命向我微笑",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Mi arridea sin or la vita\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294165259_Mi_arridea_sin_or_la_vita.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2499,
+        "title": "Je n'ai jamais chéri la vie/我从未珍视过生命",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Je n'ai jamais chéri la vie\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294164906_Je_nai_jamais_cheri_la_vie.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2498,
+        "title": "Grand Dieux, du destin, qui m'accable/伟大的神啊，这压垮我的命运",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Grand Dieux, du destin, qui m'accable\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294164551_Grand_Dieux_du_destin_qui_maccable.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2497,
+        "title": "Fatal divinità/致命的神明",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Fatal divinità\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294164197_Fatal_divinita.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2496,
+        "title": "Eh! Pourrai je vivre sans toi/唉！没有你，我怎能活下去",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Eh! Pourrai je vivre sans toi\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294163837_Eh_Pourrai_je_vivre_sans_toi.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2495,
+        "title": "Divinités du Styx/冥河之神",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Divinités du Styx\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294163469_Divinites_du_Styx.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2494,
+        "title": "Ah! Divinités implacables/啊！冷酷无情的众神",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Ah! Divinités implacables\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294163088_Ah_Divinites_implacables.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2493,
+        "title": "A vostri lai/为你的歌声",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: A vostri lai\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294162717_A_vostri_lai.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2492,
+        "title": "Caron t'appelle, entends sa voix!/卡隆在呼唤你，倾听他的声音！",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Caron t'appelle, entends sa voix!\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294162361_Caron_tappelle_entends_sa_voix.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2491,
+        "title": "Se grave è a te/若你感到沉重",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Se grave è a te\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294161995_Se_grave_e_a_te.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2490,
+        "title": "Déjà la mort s'apprête/死神已备好",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Déjà la mort s'apprête\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294161640_Deja_la_mort_sapprete.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2489,
+        "title": "La Dea d'Averno avvolta/被阿维尔诺女神笼罩",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: La Dea d'Averno avvolta\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294161287_La_Dea_dAverno_avvolta.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2488,
+        "title": "C'est envain/这是徒劳",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: C'est envain\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294160926_Cest_envain.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2487,
+        "title": "L'implacabile Dea/冷酷的女神",
+        "composer": "Christoph Willibald Gluck/格鲁克",
+        "work": "Alceste/阿尔切斯特",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: L'implacabile Dea\n出处: Alceste",
+        "filename": "歌剧咏叹调/1766294160570_Limplacabile_Dea.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2486,
+        "title": "Bella mia/我的美人",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Il maestro di musica/音乐大师",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Bass/男低音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Bella mia\n出处: Il maestro di musica",
+        "filename": "歌剧咏叹调/1766294155475_Bella_mia.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2485,
+        "title": "Sola mi lasci a piangere/让我独自哭泣",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Sola mi lasci a piangere\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294155126_Sola_mi_lasci_a_piangere.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2484,
+        "title": "Quell' amplesso e quel perdono/那拥抱与那宽恕",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Quell' amplesso e quel perdono\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294154730_Quell_amplesso_e_quel_perdono.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2483,
+        "title": "Prigioniera abbandonata/被遗弃的女囚",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Prigioniera abbandonata\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294154328_Prigioniera_abbandonata.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
+    {
+        "id": 2482,
+        "title": "Fra poco assiso in trono/不久我将登上宝座",
+        "composer": "Giovanni Battista Pergolesi/佩尔戈莱西",
+        "work": "Adriano in Siria/叙利亚的哈德良",
+        "language": "意大利语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Soprano/女高音",
+        "tonality": "",
+        "description": "Arie Antiche / Classical Selection\n原文标题: Fra poco assiso in trono\n出处: Adriano in Siria",
+        "filename": "歌剧咏叹调/1766294153919_Fra_poco_assiso_in_trono.pdf",
+        "date": "2025-12-20",
+        "has_lyrics": false
+    },
     {
         "id": 2481,
         "title": "The Tempest/暴风雨",
@@ -9317,7 +11957,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 8 2024/英皇小提琴八级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9333,7 +11973,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 8 2024/英皇小提琴八级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9349,7 +11989,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 7 2024/英皇小提琴七级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9365,7 +12005,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 7 2024/英皇小提琴七级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9381,7 +12021,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 6 2024/英皇小提琴六级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9397,7 +12037,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 6 2024/英皇小提琴六级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9413,7 +12053,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 5 2024/英皇小提琴五级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9429,7 +12069,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 5 2024/英皇小提琴五级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9445,7 +12085,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 4 2024/英皇小提琴四级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9461,7 +12101,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 4 2024/英皇小提琴四级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9477,7 +12117,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 3 2024/英皇小提琴三级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9493,7 +12133,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 3 2024/英皇小提琴三级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9509,7 +12149,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 2 2024/英皇小提琴二级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9525,7 +12165,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 2 2024/英皇小提琴二级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9541,7 +12181,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 1 2024/英皇小提琴一级考级书 2024 伴奏谱",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -9557,7 +12197,7 @@ const musicData = [
         "title": "ABRSM Violin Grade 1 2024/英皇小提琴一级考级书 2024",
         "composer": "ABRSM",
         "work": "",
-        "language": "English",
+        "language": "英语",
         "category": "乐谱书/曲集",
         "sub_category": "",
         "voice_count": "",
@@ -36656,6 +39296,856 @@ const musicData = [
 ];
 const changeLog = [
     {
+        "date": "2025-12-20 22:57",
+        "type": "update",
+        "msg": "修正格鲁克 (Gluck) 作品的语言归属 (法语/德语) (38 条)。"
+    },
+    {
+        "date": "2025-12-20 22:51",
+        "type": "update",
+        "msg": "批量清洗语言标签：移除外文前缀，保留纯中文显示 (181 条)。"
+    },
+    {
+        "date": "2025-12-20 22:49",
+        "type": "update",
+        "msg": "最终修正格鲁克 (Gluck) 的遗留角色声部 (21 条)。"
+    },
+    {
+        "date": "2025-12-20 22:38",
+        "type": "update",
+        "msg": "批量翻译 Arie Antiche 古典歌曲标题与出处 (AI + 字典)。"
+    },
+    {
+        "date": "2025-12-20 22:28",
+        "type": "update",
+        "msg": "精细修正 Gluck, Paisiello, Pergolesi 的角色声部 (含 Omega 错误修复) (112 条)。"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Bella mia"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Sola mi lasci a piangere"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Quell' amplesso e quel perdono"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Prigioniera abbandonata"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Fra poco assiso in trono"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Saper bramate"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ecco l'ora s'avvicina"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Giusto ciel, che conoscete"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Già riede primavera"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: La calunnia, mio signore"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Vuoi tu, Rosina"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Veramente ha torto, è vero"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Scorsi già molti paesi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Je suis joyeux comme un pinson"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Mon ménage et l'auberge"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Mon ménage pour modèle"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Parmi veder ancor ah non turbi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Padre tu non m'ascolti se per entro"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: D'un genio che m'accende"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Voi che le mie vivende"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Vieni che poi sereno"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Tradita sprezzata che piango"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Oscura il sol le stelle"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Fuggi dagl'occhi miei"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Spiagge amate, ove talora"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Quegli occhi belli"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Oh del mio dolce ardor"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Le belle imagini d'un dolce amore"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Di te scordarmi e vivere!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Dall'aurea sua stella colombe amorose"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: T'inganni, il tuo destino"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Forse più d'una beltà"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Lo potrò! Ma fra tanto"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Donzelle semplici, no non credete a quelle lagrime"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Nell'idea ch'ei volge in mente"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Cet asile aimable et tranquille"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Soumis au silence"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Si les doux accords de ta lyre"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Fortune ennemie!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Quel nouveau ciel pare ces lieux?"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O cher trésor d'amour"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: J'ai perdu mon Eurydice"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Amour, viens rendre à mon âme"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: È quest'asilo ameno e grato"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Che fiero momento"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Gli sguardi trattieni Amor"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Dalla cetra tua"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Piango il mio ben cosi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Mille pene"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Men tiranne voi sareste"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Deh placatevi con me"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Chiamo il mio ben cosi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Che puro ciel"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Che farò senza Euridice"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Cerco il mio ben cosi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Addio, addio, o miei sospiri"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Nume offensi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ad un riso"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ferma, crudele"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Heureux l'amant qui se dépètre De Cupidon"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Vous ressemblez à la rose naissante"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Tout ce que j'aime est au tombeau"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Je chérirai jusqu'au trépas"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Maître des coeurs, achève ton ouvrage"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Je sais que l'amoureux flambeau"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ah! qu'il est doux de se revoir"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: J'ai fait un rève des plus doux"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: A ma maîtresse J'avais promis, Seigneur"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: J'ai perdu mon doux ramage"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Venez, venez, troupe brillante"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Sans votre brusque retraite"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Bel inconnu qu'ici l'amour amène"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Les homme pieusement"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Il fait entendre sa sonnette"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: D'une telle lâcheté"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Castagno, castagna, Pista fanache"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Un ruisselet, Bien clair, bien net"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Des combats J'ai peint l'horreur"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: D'un céleste transport mon âme est agitée"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: C'est un torrent impétueux"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Mahomet, notre grand prophète"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Unis dès la plus tendre enfance"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Divinité des grandes âmes!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ah! mon ami, j'implore ta pitié!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Tremblez! on sait tout le mystère"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ô toi qui, prolongeas mes jours"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O malheureuse Iphigénie"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Je t'implore et je tremble"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: D'une image, hélas! trop chérie"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ah! laissons-là ce souvenir funeste"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: De tes forfaits la trame est découverte"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: De noirs pressentiments, mon âme intimidée"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Quoi! toujours à mes voeux vous êtes inflexible?"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Que ces regrets touchants pour mon coeur ont des charmes"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Le calme rentre dans mon coeur"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Dieux qui me poursuivez!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Dans cet objet touchant"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Heureux guerriers, volez a la victoire"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Vivez, vivez pour Oreste, mon frère"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Par la crainte et par l'espérance"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Les voeux, dont ce peuple m'honore"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Iphigénie, hélas! vous a trop fait connaitre"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Il faut de mon destin"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Hélas! mon coeur sensible et tendre"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Adieu, conservez dans votre âme"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Son front est couronne des mains de la victoire"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Que j'aime à voir ces hommage flatteurs"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Par son père cruel à la mort condamnée"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Jupiter, lance ta foudre"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Armez-vous d'un noble courage"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Cruelle, non, jamais votre insensible"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Cours, et dis-lui: qu'elle n'a rien à craindre"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Calchas, d'un trait mortel blessé"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Peuvents-ils ordonner"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O toi, l'objet le plus aimable"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Brillant auteur de la lumière!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Au faite des grandeurs"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Al mio fedel dirai"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Rien dans la nature"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Deinen Worten weicht das Bangen"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Göttin der Liebe, der ich mein Herz geweiht"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Lebe wohl, der Spass ist aus"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Komm, mein süsser Mann"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Mein Männchen, mein Herzchen"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ach, wie ist doch zu bedauern"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Will mein Weib zu Hause brummen"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O Tag, so wonniglich"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Du spottest meiner, erbärmlicher Tropf"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Padre perdona"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: In te spero, sposo amato"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Non curo l'affetto"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Sperai vicino il lido"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Gemo in un punto e fremo"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Per lei fra l'armi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Vuoi ch'io m'uccida"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Il suo leggiadro viso"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O più tremar non voglio"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Perchè nutrir terror"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Pel Dio, pe' Numi tuoi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Crudele, senza te"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Barbare, non, sans toi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Bannis la crainte et les alarmes"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Alceste, au nom des Dieux"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Senza del tuo sospir"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O funesta Dea"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: O Dei, del mio fato tiranno"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Mi arridea sin or la vita"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Je n'ai jamais chéri la vie"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Grand Dieux, du destin, qui m'accable"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Fatal divinità"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Eh! Pourrai je vivre sans toi"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Divinités du Styx"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Ah! Divinités implacables"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: A vostri lai"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Caron t'appelle, entends sa voix!"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Se grave è a te"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: Déjà la mort s'apprête"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: La Dea d'Averno avvolta"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: C'est envain"
+    },
+    {
+        "date": "2025-12-20 22:16",
+        "type": "add",
+        "msg": "添加: L'implacabile Dea"
+    },
+    {
+        "date": "2025-12-20 22:15",
+        "type": "add",
+        "msg": "添加: Bella mia"
+    },
+    {
+        "date": "2025-12-20 22:15",
+        "type": "add",
+        "msg": "添加: Sola mi lasci a piangere"
+    },
+    {
+        "date": "2025-12-20 22:15",
+        "type": "add",
+        "msg": "添加: Quell' amplesso e quel perdono"
+    },
+    {
+        "date": "2025-12-20 22:15",
+        "type": "add",
+        "msg": "添加: Prigioniera abbandonata"
+    },
+    {
+        "date": "2025-12-20 22:15",
+        "type": "add",
+        "msg": "添加: Fra poco assiso in trono"
+    },
+    {
         "date": "2025-12-19 14:35",
         "type": "add",
         "msg": "添加: The Tempest/暴风雨"
@@ -36799,830 +40289,5 @@ const changeLog = [
         "date": "2025-12-18 16:00",
         "type": "add",
         "msg": "添加: Forse un destin, che intendere/或许命运，可曾知晓"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Ciel sei tu che in tal momento/天啊，是你在这时刻"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Per veder sù quel bel viso/为仰望那美丽的脸庞"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Grazie clementi Dei!/感谢仁慈的天神！"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Se palpitai d'affanno/若你为痛苦而悸动"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Come vuoi ch'io freni il pianto/你怎能让我止住泪水"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Bene, bravi/好，真棒"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Io ti veggio, or vegli e tremi... Questa è l'ora/我凝视着你，此刻你警醒而颤抖……正是此刻"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Di mia patria o' bel soggiorno... Un solo conforto/啊，我美丽的祖国故土……唯一的慰藉"
-    },
-    {
-        "date": "2025-12-18 16:00",
-        "type": "add",
-        "msg": "添加: Tutto or morte, oh Dio!... Fra due tombe fra due spettri/全胜或死亡，哦上帝！... 在两座坟墓两个幽灵之间"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Bello ardir di congiurati... Fosca notte, notte orrenda/谋反者英勇无畏... 阴沉的夜，恐怖的夜"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Odo il suon di chi sprezza i perigli/我听见藐视危险者的声音"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Era anch'io di quella schiero/我也曾是那队伍中的一员"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Ah! rimiro il bel sembiante/啊！我凝视那美丽的容颜"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Oh nube! che lieve per l'aria ti aggiri...Nella pace del mesto riposo/浮云啊！你如此轻盈地在空中飘荡……在这忧伤休憩的宁静中"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Di un cor che more/一颗垂死的心"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Ah! se un giorno da queste ritorte/啊！若有一天挣脱这枷锁"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Quella vita a me funesta/那令我悲伤的生命"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Ah! quando all'ara sorgemi…Ah dal ciel discenda un raggio/啊！当我走向祭坛…啊，愿天降光芒"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Je marchais pieux dans la vie/我虔诚地行走在人生路上"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Nos deux ames étaient faites/我们两颗心本为一体"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Ah! ce fut pour mon coeur/啊！这曾是我心之所向"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Quando il cor da lei piagato... A te, divina immagine/当这颗心被她创伤……致你，神圣的化身"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Alma soave e cara/温柔可爱的灵魂"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Preghiera: Havvi un Dio che in sua clemenza/祈祷：有一位慈悲的神"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Cupa fatal mestizia... Ben fu il giorno avventurato/阴郁致命的悲伤……那幸运的日子"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Benigno il cielo arridere/仁慈的天空微笑"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Son leggero, è ver, d'amore/我确实轻浮善变，这是爱情使然"
-    },
-    {
-        "date": "2025-12-18 15:59",
-        "type": "add",
-        "msg": "添加: Per non istare in ozio/为不虚度光阴"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Gemea di tetro carcere... Se ancor m'è dato stringerti/阴郁牢笼的呻吟……若我还能将你拥抱"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Bella e di sol vestita/身披阳光的美人"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Talor nel mio delirio/在我狂乱中"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Si, del chiostro penitente/是的，来自忏悔的修道院"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Mostro iniquo tremar tu dovevi/邪恶的怪物，你本该颤抖"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Ah! non avea piu lagrime/啊！不再有眼泪"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Di pescatore ignobile/卑微的渔夫"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: M'odi, ah m'odi/恨我，啊，恨我"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Era desso il figlio mio/那正是我的儿子"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Com'è bello/多么美丽"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Nella fatal di Rimini/在里米尼的致命一天"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Il segreto per esser felici/幸福的秘诀"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Vieni! la mia vendetta/来吧！我的复仇"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Tu che a Dio spiegasti l'ali/你展开双翼飞向天主"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Tombe degl'avi miei / 我祖先的坟墓"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Spargi d'amaro pianto/洒下辛酸的泪"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Regnava nel silenzio/寂静笼罩"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Quando rapito in estasi/当狂喜将我席卷"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Il dolce suono mi colpì di sua voce/他那甜蜜的声音以嗓音击中了我"
-    },
-    {
-        "date": "2025-12-18 15:58",
-        "type": "add",
-        "msg": "添加: Dalle stanze, ove Lucia/露琪亚所在房间"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Ah, cedi, cedi!/啊，屈服吧，屈服吧！"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: La pietade in suo favore/怜悯归于他"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Cruda, funesta smania/残酷的，致命的疯狂"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Se tanto inica agli uomini/若对人们如此不公"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: È la voce che primiera/那是第一个声音"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: O luce di quest'anima/我灵魂的光芒"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Cari luoghi ov'io passai/亲爱的地方我曾走过"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Ella è un giglio di puro candore/她是一朵纯洁无瑕的百合"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Buona gente/善良的人们"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Ambo nati in questa valle/同生此谷"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: E puoi goder tiranno!/暴君，你且得意吧！"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Che credete che mia figlia/你以为我女儿会怎样"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Lazaroni sfacendati/游手好闲的拉扎罗尼"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Assisa a pie d'un salice/柳树下"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: A te nell'appressarmi/当我靠近你"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: E fia ver di si grandono/如此伟大的诺言会实现吗"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Donzelle a penetrar/少女们，请进"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Perchè non basto afrangervi/为何我无法击碎你们"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Ecco il pugnal sù/看，匕首在此"
-    },
-    {
-        "date": "2025-12-18 15:57",
-        "type": "add",
-        "msg": "添加: Tu di rose inghirlandate/你以玫瑰为冠"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Si colpevole son io/若我有罪"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Non v'è maggior dolore/没有更大的痛苦"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: No, non è vero/不，这不是真的"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Ricevi in questo amplesso/请收下这深情的拥抱"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Maitre de danse par excellence/卓越的舞蹈大师"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Pour me rapprocher de Marie/为更近玛丽身旁"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Ah! mes amis, quel jour de fête!...Pour mon âme/啊！朋友们，这是多么欢乐的日子！…为我的灵魂"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Salut à la France/法兰西礼赞"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Par le rang et par l'opulence/以地位与财富之名"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Il faut partir mes bons compagnons d'armes/别了，我亲爱的战友"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Chacun le sait/人人都知道"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Un ange, une femme inconnue (Una vergine, un angel di Dio)/一位天使，一位陌生的女子（一位贞女，一位天使）"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Oui, ta voix m'inspire (Si, che un tuo solo accento)/是，你的声音激励着我（是的，仅你一声叹息）"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Ange si pur (Spirto gentil)/纯洁的天使（高贵的精神）"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: Rayons dorés (Dolce zeffiro, il seconda)/金色光芒（甜蜜的微风，第二首）"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: O mon Fernand (O mio Fernando)/啊，我的费尔南德"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: A tanto amor/如此深情"
-    },
-    {
-        "date": "2025-12-18 15:56",
-        "type": "add",
-        "msg": "添加: S'io finor, bell'idol mio/假如至今，我美丽的偶像"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Aure di Roma!... Tacqui allor, l'abbandonai… Se ad altri il core/罗马之魂！……那时我沉默，我离弃……若心已属他人"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Tardi tardi il pie la volgi/迟迟，迟迟，你才转身"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Entra nel circo/进入马戏团"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Eccomi a voi/我来到你们面前"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Madre deh placati/母亲啊，请息怒"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: In dura schiavitei/在残酷的奴役中"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Una furtiva lagrima/一滴隐秘的泪"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Quanto è bella, quanto è cara/多么美丽，多么珍贵"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Prendi, per me sei libero/请听，我已是自由身"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Della crudele Isotta/冷酷的伊索尔德"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Udite, udite, o rustici/听吧，听吧，乡民们"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Come Paride vezzoso/俊美的帕里斯"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Al mio cor oggetti amati/我心所爱的珍宝"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Ogni inciampo è alfin distrutto/一切障碍终被扫除"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Nel primo fior degl'anni/在青春初绽的年华"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Quel tuo sorriso, o padre/你那微笑，哦父亲"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Figlia son d'un colonnello/上校之女"
-    },
-    {
-        "date": "2025-12-18 15:55",
-        "type": "add",
-        "msg": "添加: Sugli occhi tuoi, spietata/在你无情的双眸上"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Là dove il ciel s'estelle/在那繁星点点的天空下"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Pare a che mentre l'aloe/看那当芦荟"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Il figlio è qui/儿子在此"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Qui pel figlio una madre gridava/为子泣血的母亲"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Servi gente/奴仆们"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Or che l'annoda Imene/此刻伊梅内将我们相连"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Mo che si scoperto a vamma/我心中燃烧的火焰"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Taci il voglio/我愿你沉默"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Se ai voti di quest'alma... Affrettati vola momento beato/若这颗心所愿... 快来吧，幸福的时刻"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Dalle piume in cui giacea/在羽毛中安眠"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Vedea languir quel misero/眼看那可怜人憔悴"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Se pietoso d'un obblio copri/若你仁慈地以遗忘掩盖"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Angelo casto e bel/纯洁美丽的天使"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Ombra paterna/父亲的影子"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: In seno ai mar/在海的怀抱中"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Nei miei superbi gaudi/在我骄傲的欢愉中"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Addio conquistata mia terra/别了，我征服的土地"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Senza colpa mi se acciaste/你无故将我抛弃"
-    },
-    {
-        "date": "2025-12-18 15:54",
-        "type": "add",
-        "msg": "添加: Perchè nell' alma inquesto loco/为何在我灵魂深处"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Non mi tradir, speranza/莫负我，希望"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: In quell' arca rispettate/在那受敬重的圣柜中"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Dio tremendo onnipossente/威严全能的神"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Tu potesti un sol istante/你哪怕只有一瞬间"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Par che mi dica ancora/仿佛还在对我说"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Lo stringi, e giunta appena/刚拥抱，她已来到"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Bella cosa, amici cara/美好的事物，亲爱的朋友"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Mesci, mesci e sperda il vento/斟吧，斟吧，愿风消散"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Quanto grata è a voi/我是多么感激你们"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Lungi da te mio ben/远离你，我的爱人"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Fate largo al Borgomastro/给市长让路"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Va, e la nave in un baleno/去吧，船儿如箭般飞驰"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Piacer si nuovo e grato/如此新奇而愉悦的欢欣"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: All' udir che il mio tesor/听我的爱人"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Di quai soa vi lagrime/你为何流泪"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Di tua belta de immagine/你美丽形象的魅力"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Fastì? Pompe? Omaggi? Onori?/盛典？排场？致敬？荣誉？"
-    },
-    {
-        "date": "2025-12-18 15:53",
-        "type": "add",
-        "msg": "添加: Perche Gemma/为何哭泣，宝石"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Una voce al cor d'intorno/耳边响起一个声音"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Un'altare, ed una benda/一座祭坛，一条绷带"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Un fatal presentimento/不祥的预感"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Nella stanza, che romita/在寂静的房间里"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Ecco il pegno ch'io le porsi/这是我给她的信物"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Ah! nel cor mi suona un grido/啊！心中响起一声呼喊"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Ah perchè dirmi crudel/啊，为何说我残忍"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Tu che voli, già spirto beato/你已飞翔，幸福的灵魂"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Par che mi dica ancora/仿佛还在对我说"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Dea che siedi in terzo cielo/端坐于第三重天的女神"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Manca alcuno/缺席者"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Se di regnar desio/若你渴望统治"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Que ton âme se rassure/愿你的灵魂得到安宁"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Faut-il, helas!/唉！难道必须"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Faut-il donc que je desespere/难道我必须绝望吗"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Assez de soupirs!/叹息已足！"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Pardon pardon mon père/宽恕宽恕我的父亲"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Oui je devais/是的，我本该"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Je suis courrier/我是信使"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Allons donc/那么走吧"
-    },
-    {
-        "date": "2025-12-18 15:52",
-        "type": "add",
-        "msg": "添加: Com'è gentil/多么亲切"
-    },
-    {
-        "date": "2025-12-18 15:51",
-        "type": "add",
-        "msg": "添加: Cercherò lontana terra/我将去往那遥远的地方"
-    },
-    {
-        "date": "2025-12-18 15:51",
-        "type": "add",
-        "msg": "添加: Quel guardo, il cavaliere...So anch'io la virtù magica/那目光，那骑士……我也懂得那神奇的魅力"
-    },
-    {
-        "date": "2025-12-18 15:51",
-        "type": "add",
-        "msg": "添加: La morale in tutto questo/这其中一切的道理"
     }
 ];
