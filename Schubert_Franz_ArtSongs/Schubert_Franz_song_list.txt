@@ -1,0 +1,610 @@
+Song Title | Composer | Voice Type | Tonality | Filename
+----------------------------------------------------------------------------------------------------
+Abendbilder - D650 | Schubert, Franz | Medium | Original | Abendbilder_-_D650_Medium_Original.pdf
+Abendlied - D276 | Schubert, Franz | Medium | Original | Abendlied_-_D276_Medium_Original.pdf
+Abendlied - D382 | Schubert, Franz | Medium | Original | Abendlied_-_D382_Medium_Original.pdf
+Abendlied - D499 | Schubert, Franz | Medium | Original | Abendlied_-_D499_Medium_Original.pdf
+Abendlied der Fürstin - D495 | Schubert, Franz | Medium | Original | Abendlied_der_Fürstin_-_D495_Medium_Original.pdf
+Abendlied für die entfernte - D856 | Schubert, Franz | Medium | Original | Abendlied_für_die_entfernte_-_D856_Medium_Original.pdf
+Abendröte - D690 | Schubert, Franz | Medium | Original | Abendröte_-_D690_Medium_Original.pdf
+Abends unter der Linde - D235 | Schubert, Franz | Medium | Original | Abends_unter_der_Linde_-_D235_Medium_Original.pdf
+Abends unter der Linde - D237 | Schubert, Franz | Medium | Original | Abends_unter_der_Linde_-_D237_Medium_Original.pdf
+Abendständchen. An Lina - D265 | Schubert, Franz | Medium | Original | Abendständchen._An_Lina_-_D265_Medium_Original.pdf
+Abenstern - D806 | Schubert, Franz | Medium | Original | Abenstern_-_D806_Medium_Original.pdf
+Abschied - D475 | Schubert, Franz | Medium | Original | Abschied_-_D475_Medium_Original.pdf
+Abschied von der Erde - D829 | Schubert, Franz | Medium | Original | Abschied_von_der_Erde_-_D829_Medium_Original.pdf
+Abschied von der Harfe - D406 | Schubert, Franz | Medium | Original | Abschied_von_der_Harfe_-_D406_Medium_Original.pdf
+Abschied von einem Freunde - D578 | Schubert, Franz | Medium | Original | Abschied_von_einem_Freunde_-_D578_Medium_Original.pdf
+Adelaide - D95 | Schubert, Franz | Medium | Original | Adelaide_-_D95_Medium_Original.pdf
+Adelwold und Emma - D211 | Schubert, Franz | Medium | Original | Adelwold_und_Emma_-_D211_Medium_Original.pdf
+Alinde - D904 | Schubert, Franz | Medium | Original | Alinde_-_D904_Medium_Original.pdf
+Alles um Liebe - D241 | Schubert, Franz | Medium | Original | Alles_um_Liebe_-_D241_Medium_Original.pdf
+Als ich sie erröten sah - D153 | Schubert, Franz | Medium | Original | Als_ich_sie_erröten_sah_-_D153_Medium_Original.pdf
+Alte Liebe rostet nie - D477 | Schubert, Franz | Medium | Original | Alte_Liebe_rostet_nie_-_D477_Medium_Original.pdf
+Am Bach im Frühlinge - D361 | Schubert, Franz | Medium | Original | Am_Bach_im_Frühlinge_-_D361_Medium_Original.pdf
+Am Fenster - D878 | Schubert, Franz | Medium | Original | Am_Fenster_-_D878_Medium_Original.pdf
+Am Flusse - D160 | Schubert, Franz | Medium | Original | Am_Flusse_-_D160_Medium_Original.pdf
+Am Flusse - D766 | Schubert, Franz | Medium | Original | Am_Flusse_-_D766_Medium_Original.pdf
+Am Grabe Anselmos - D504 | Schubert, Franz | Medium | Original | Am_Grabe_Anselmos_-_D504_Medium_Original.pdf
+Am See - D124 | Schubert, Franz | Medium | Original | Am_See_-_D124_Medium_Original.pdf
+Am See - D746 | Schubert, Franz | Medium | Original | Am_See_-_D746_Medium_Original.pdf
+Am Strome - D539 | Schubert, Franz | Medium | Original | Am_Strome_-_D539_Medium_Original.pdf
+Amalie - D195 | Schubert, Franz | Medium | Original | Amalie_-_D195_Medium_Original.pdf
+Ammenlied - D122 | Schubert, Franz | Medium | Original | Ammenlied_-_D122_Medium_Original.pdf
+Amphiaraos - D166 | Schubert, Franz | Medium | Original | Amphiaraos_-_D166_Medium_Original.pdf
+An Chloen - D462 | Schubert, Franz | Medium | Original | An_Chloen_-_D462_Medium_Original.pdf
+An den Frühling - D283 | Schubert, Franz | Medium | Original | An_den_Frühling_-_D283_Medium_Original.pdf
+An den Frühling - D587 | Schubert, Franz | Medium | Original | An_den_Frühling_-_D587_Medium_Original.pdf
+An den Mond - D193 | Schubert, Franz | Medium | Original | An_den_Mond_-_D193_Medium_Original.pdf
+An den Mond - D259 | Schubert, Franz | Medium | Original | An_den_Mond_-_D259_Medium_Original.pdf
+An den Mond - D259 or 296 | Schubert, Franz | Medium | Original | An_den_Mond_-_D259_or_296_Medium_Original.pdf
+An den Mond - D259 or 296 | Schubert, Franz | Medium | Original | An_den_Mond_-_D259_or_296_Medium_Original.pdf
+An den Mond - D296 | Schubert, Franz | Medium | Original | An_den_Mond_-_D296_Medium_Original.pdf
+An den Mond - D468 | Schubert, Franz | Medium | Original | An_den_Mond_-_D468_Medium_Original.pdf
+An den Mond in einer Herbstnacht - D614 | Schubert, Franz | Medium | Original | An_den_Mond_in_einer_Herbstnacht_-_D614_Medium_Original.pdf
+An den Schlaf - D447 | Schubert, Franz | Medium | Original | An_den_Schlaf_-_D447_Medium_Original.pdf
+An den Tod - D518 | Schubert, Franz | Low | Original | An_den_Tod_-_D518_Low_Original.pdf
+An die Apfelbäume - D197 | Schubert, Franz | Medium | Original | An_die_Apfelbäume_-_D197_Medium_Original.pdf
+An die Entfernte - D765 | Schubert, Franz | Medium | Original | An_die_Entfernte_-_D765_Medium_Original.pdf
+An die Freude - D189 | Schubert, Franz | Medium | Original | An_die_Freude_-_D189_Medium_Original.pdf
+An die Freunde - D654 | Schubert, Franz | Medium | Original | An_die_Freunde_-_D654_Medium_Original.pdf
+An die Geliebte - D303 | Schubert, Franz | Medium | Original | An_die_Geliebte_-_D303_Medium_Original.pdf
+An die Harmonie - D394 | Schubert, Franz | Medium | Original | An_die_Harmonie_-_D394_Medium_Original.pdf
+An die Laute - D905 | Schubert, Franz | Medium | Original | An_die_Laute_-_D905_Medium_Original.pdf
+An die Leier - D737 | Schubert, Franz | Medium | Original | An_die_Leier_-_D737_Medium_Original.pdf
+An die Musik - D547 | Schubert, Franz | Medium | Original | An_die_Musik_-_D547_Medium_Original.pdf
+An die Musik - D547 | Schubert, Franz | Medium | Original | An_die_Musik_-_D547_Medium_Original.pdf
+An die Nachtigall - D196 | Schubert, Franz | Medium | Original | An_die_Nachtigall_-_D196_Medium_Original.pdf
+An die Nachtigall - D497 | Schubert, Franz | Medium | Original | An_die_Nachtigall_-_D497_Medium_Original.pdf
+An die Natur - D372 | Schubert, Franz | Medium | Original | An_die_Natur_-_D372_Medium_Original.pdf
+An die Sonne - D270 | Schubert, Franz | Medium | Original | An_die_Sonne_-_D270_Medium_Original.pdf
+An die Sonne - D272 | Schubert, Franz | Medium | Original | An_die_Sonne_-_D272_Medium_Original.pdf
+An die untergehende Sonne - D457 | Schubert, Franz | Medium | Original | An_die_untergehende_Sonne_-_D457_Medium_Original.pdf
+An eine Quelle - D530 | Schubert, Franz | Medium | Original | An_eine_Quelle_-_D530_Medium_Original.pdf
+An Emma - D113 | Schubert, Franz | Medium | Original | An_Emma_-_D113_Medium_Original.pdf
+An Laura - D115 | Schubert, Franz | Medium | Original | An_Laura_-_D115_Medium_Original.pdf
+An mein Herz - D860 | Schubert, Franz | Medium | Original | An_mein_Herz_-_D860_Medium_Original.pdf
+An mein Klavier - D342 | Schubert, Franz | Medium | Original | An_mein_Klavier_-_D342_Medium_Original.pdf
+An Mignon - D161 | Schubert, Franz | Medium | Original | An_Mignon_-_D161_Medium_Original.pdf
+An Rosa I - D315 | Schubert, Franz | Medium | Original | An_Rosa_I_-_D315_Medium_Original.pdf
+An Rosa II - D316 | Schubert, Franz | Medium | Original | An_Rosa_II_-_D316_Medium_Original.pdf
+An Schwager Kronos - D369 | Schubert, Franz | Medium | Original | An_Schwager_Kronos_-_D369_Medium_Original.pdf
+An Sie - D288 | Schubert, Franz | Medium | Original | An_Sie_-_D288_Medium_Original.pdf
+Andenken - D99 | Schubert, Franz | Medium | Original | Andenken_-_D99_Medium_Original.pdf
+Antigone und Oedip - D542 | Schubert, Franz | Medium | Original | Antigone_und_Oedip_-_D542_Medium_Original.pdf
+Atys - D585 | Schubert, Franz | Medium | Original | Atys_-_D585_Medium_Original.pdf
+Auf dem See - D543 | Schubert, Franz | Medium | Original | Auf_dem_See_-_D543_Medium_Original.pdf
+Auf dem Strom - D943 | Schubert, Franz | Medium | Original | Auf_dem_Strom_-_D943_Medium_Original.pdf
+Auf dem Wasser zu singer - D774 | Schubert, Franz | Medium | Original | Auf_dem_Wasser_zu_singer_-_D774_Medium_Original.pdf
+Auf den Tod einer Nachtigall - D399 | Schubert, Franz | Medium | Original | Auf_den_Tod_einer_Nachtigall_-_D399_Medium_Original.pdf
+Auf der Bruck - D853 | Schubert, Franz | Medium | Original | Auf_der_Bruck_-_D853_Medium_Original.pdf
+Auf der Donau - D553 | Schubert, Franz | Medium | Original | Auf_der_Donau_-_D553_Medium_Original.pdf
+Auf der Riesenkoppe - D611 | Schubert, Franz | Medium | Original | Auf_der_Riesenkoppe_-_D611_Medium_Original.pdf
+Auf einen Kirchhof - D151 | Schubert, Franz | Medium | Original | Auf_einen_Kirchhof_-_D151_Medium_Original.pdf
+Auflösung - D807 | Schubert, Franz | Medium | Original | Auflösung_-_D807_Medium_Original.pdf
+Augenlied - D297 | Schubert, Franz | Medium | Original | Augenlied_-_D297_Medium_Original.pdf
+Aus Diego Manazares. Ilmerine - D458 | Schubert, Franz | Medium | Original | Aus_Diego_Manazares._Ilmerine_-_D458_Medium_Original.pdf
+Aus Heliopolis - D753 | Schubert, Franz | Medium | Original | Aus_Heliopolis_-_D753_Medium_Original.pdf
+Ave Maria - Ellens Gesang III - D839 | Schubert, Franz | Medium | Original | Ave_Maria_-_Ellens_Gesang_III_-_D839_Medium_Original.pdf
+Ballade ('Ein Fräulein schaut') - D134 | Schubert, Franz | Medium | Original | Ballade_('Ein_Fräulein_schaut')_-_D134_Medium_Original.pdf
+Bei dem Grabe meines Vaters - D496 | Schubert, Franz | Medium | Original | Bei_dem_Grabe_meines_Vaters_-_D496_Medium_Original.pdf
+Bei dir - D866 | Schubert, Franz | Medium | Original | Bei_dir_-_D866_Medium_Original.pdf
+Beim Winde - D669 | Schubert, Franz | Medium | Original | Beim_Winde_-_D669_Medium_Original.pdf
+Bertas Lied in der Nacht - D653 | Schubert, Franz | Medium | Original | Bertas_Lied_in_der_Nacht_-_D653_Medium_Original.pdf
+Blanka - D631 | Schubert, Franz | Medium | Original | Blanka_-_D631_Medium_Original.pdf
+Blondel zu Marien - D626 | Schubert, Franz | Medium | Original | Blondel_zu_Marien_-_D626_Medium_Original.pdf
+Blumenlied - D431 | Schubert, Franz | Medium | Original | Blumenlied_-_D431_Medium_Original.pdf
+Bundeslied - D258 | Schubert, Franz | Medium | Original | Bundeslied_-_D258_Medium_Original.pdf
+Cora an die Sonne - D263 | Schubert, Franz | Medium | Original | Cora_an_die_Sonne_-_D263_Medium_Original.pdf
+Cronnan - D282 | Schubert, Franz | Medium | Original | Cronnan_-_D282_Medium_Original.pdf
+Da quel sembiante appresi - D688 | Schubert, Franz | Medium | Original | Da_quel_sembiante_appresi_-_D688_Medium_Original.pdf
+Daphne am Bach - D411 | Schubert, Franz | Medium | Original | Daphne_am_Bach_-_D411_Medium_Original.pdf
+Das Abendroth - D627 | Schubert, Franz | Medium | Original | Das_Abendroth_-_D627_Medium_Original.pdf
+Das Bild - D155 | Schubert, Franz | Medium | Original | Das_Bild_-_D155_Medium_Original.pdf
+Das Echo - D990C | Schubert, Franz | Medium | Original | Das_Echo_-_D990C_Medium_Original.pdf
+Das Finden - D219 | Schubert, Franz | Medium | Original | Das_Finden_-_D219_Medium_Original.pdf
+Das Geheimnis - D250 | Schubert, Franz | Medium | Original | Das_Geheimnis_-_D250_Medium_Original.pdf
+Das Geheimnis - D793 | Schubert, Franz | Medium | Original | Das_Geheimnis_-_D793_Medium_Original.pdf
+Das gestörte Glück - D309 | Schubert, Franz | Medium | Original | Das_gestörte_Glück_-_D309_Medium_Original.pdf
+Das große Halleluja - D442 | Schubert, Franz | Medium | Original | Das_große_Halleluja_-_D442_Medium_Original.pdf
+Das Heimweh - D456 | Schubert, Franz | Medium | Original | Das_Heimweh_-_D456_Medium_Original.pdf
+Das Heimweh - D851 | Schubert, Franz | Medium | Original | Das_Heimweh_-_D851_Medium_Original.pdf
+Das Lied im Grünen - D917 | Schubert, Franz | Medium | Original | Das_Lied_im_Grünen_-_D917_Medium_Original.pdf
+Das Lied vom Reifen - D532 | Schubert, Franz | Medium | Original | Das_Lied_vom_Reifen_-_D532_Medium_Original.pdf
+Das Mädchen - D652 | Schubert, Franz | Medium | Original | Das_Mädchen_-_D652_Medium_Original.pdf
+Das Mädchen aus der Fremde - D117 | Schubert, Franz | Medium | Original | Das_Mädchen_aus_der_Fremde_-_D117_Medium_Original.pdf
+Das Mädchen aus der Fremde - D117 or 252 | Schubert, Franz | Medium | Original | Das_Mädchen_aus_der_Fremde_-_D117_or_252_Medium_Original.pdf
+Das Mädchen aus der Fremde - D252 | Schubert, Franz | Medium | Original | Das_Mädchen_aus_der_Fremde_-_D252_Medium_Original.pdf
+Das Mädchen von Inistore - D281 | Schubert, Franz | Medium | Original | Das_Mädchen_von_Inistore_-_D281_Medium_Original.pdf
+Das Marienbild - D623 | Schubert, Franz | Medium | Original | Das_Marienbild_-_D623_Medium_Original.pdf
+Das Rosenband - D280 | Schubert, Franz | Medium | Original | Das_Rosenband_-_D280_Medium_Original.pdf
+Das Sehnen - D231 | Schubert, Franz | Medium | Original | Das_Sehnen_-_D231_Medium_Original.pdf
+Daß sie hier gewesen - D775 | Schubert, Franz | Medium | Original | Daß_sie_hier_gewesen_-_D775_Medium_Original.pdf
+Das war ich - D174 | Schubert, Franz | Medium | Original | Das_war_ich_-_D174_Medium_Original.pdf
+Das Weinen - D926 | Schubert, Franz | Medium | Original | Das_Weinen_-_D926_Medium_Original.pdf
+Das Zügenglöcklein - D871 | Schubert, Franz | Medium | Original | Das_Zügenglöcklein_-_D871_Medium_Original.pdf
+Delphine - D857 | Schubert, Franz | Medium | Original | Delphine_-_D857_Medium_Original.pdf
+Dem Unendlichen - D291 | Schubert, Franz | Medium | Original | Dem_Unendlichen_-_D291_Medium_Original.pdf
+Der Abend - D108 | Schubert, Franz | Medium | Original | Der_Abend_-_D108_Medium_Original.pdf
+Der Abend - D221 | Schubert, Franz | Medium | Original | Der_Abend_-_D221_Medium_Original.pdf
+Der Alpenjäger - D524 | Schubert, Franz | Low | Original | Der_Alpenjäger_-_D524_Low_Original.pdf
+Der Alpenjäger - D588 | Schubert, Franz | Medium | Original | Der_Alpenjäger_-_D588_Medium_Original.pdf
+Der blinde Knabe - D833 | Schubert, Franz | Medium | Original | Der_blinde_Knabe_-_D833_Medium_Original.pdf
+Der Blumen Schmerz - D731 | Schubert, Franz | Medium | Original | Der_Blumen_Schmerz_-_D731_Medium_Original.pdf
+Der Blumenbrief - D622 | Schubert, Franz | Medium | Original | Der_Blumenbrief_-_D622_Medium_Original.pdf
+Der Einsame - D800 | Schubert, Franz | Medium | Original | Der_Einsame_-_D800_Medium_Original.pdf
+Der Entfernten - D350 | Schubert, Franz | Medium | Original | Der_Entfernten_-_D350_Medium_Original.pdf
+Der entsühnte Orest - D699 | Schubert, Franz | Medium | Original | Der_entsühnte_Orest_-_D699_Medium_Original.pdf
+Der Fischer - D225 | Schubert, Franz | Medium | Original | Der_Fischer_-_D225_Medium_Original.pdf
+Der Flüchtling - D402 | Schubert, Franz | Medium | Original | Der_Flüchtling_-_D402_Medium_Original.pdf
+Der Flug der Zeit - D515 | Schubert, Franz | Medium | Original | Der_Flug_der_Zeit_-_D515_Medium_Original.pdf
+Der Fluß - D693 | Schubert, Franz | Medium | Original | Der_Fluß_-_D693_Medium_Original.pdf
+Der Geistertanz - D116 | Schubert, Franz | Medium | Original | Der_Geistertanz_-_D116_Medium_Original.pdf
+Der Geistertanz - D15 | Schubert, Franz | Medium | Original | Der_Geistertanz_-_D15_Medium_Original.pdf
+Der Geistertanz - D15A | Schubert, Franz | Medium | Original | Der_Geistertanz_-_D15A_Medium_Original.pdf
+Der getäuschte Verräther - D902 | Schubert, Franz | Low | Original | Der_getäuschte_Verräther_-_D902_Low_Original.pdf
+Der Goldschmiedsgeselle - D560 | Schubert, Franz | Medium | Original | Der_Goldschmiedsgeselle_-_D560_Medium_Original.pdf
+Der Gott und die Bajadere - D254 | Schubert, Franz | Medium | Original | Der_Gott_und_die_Bajadere_-_D254_Medium_Original.pdf
+Der gute Hirt - D449 | Schubert, Franz | Medium | Original | Der_gute_Hirt_-_D449_Medium_Original.pdf
+Der Herbstabend - D405 | Schubert, Franz | Medium | Original | Der_Herbstabend_-_D405_Medium_Original.pdf
+Der Hirt - D490 | Schubert, Franz | Medium | Original | Der_Hirt_-_D490_Medium_Original.pdf
+Der Hirt auf dem Felsen - D965 | Schubert, Franz | Medium | Original | Der_Hirt_auf_dem_Felsen_-_D965_Medium_Original.pdf
+Der Jüngling am Bache - D192 | Schubert, Franz | Medium | Original | Der_Jüngling_am_Bache_-_D192_Medium_Original.pdf
+Der Jüngling am Bache - D30 | Schubert, Franz | Medium | Original | Der_Jüngling_am_Bache_-_D30_Medium_Original.pdf
+Der Jüngling am Bache - D638 | Schubert, Franz | Medium | Original | Der_Jüngling_am_Bache_-_D638_Medium_Original.pdf
+Der Jüngling am Bache - D638 or 30 or 192 | Schubert, Franz | Medium | Original | Der_Jüngling_am_Bache_-_D638_or_30_or_192_Medium_Original.pdf
+Der Jüngling an der Quelle - D300 | Schubert, Franz | Medium | Original | Der_Jüngling_an_der_Quelle_-_D300_Medium_Original.pdf
+Der Jüngling auf dem Hügel - D702 | Schubert, Franz | Medium | Original | Der_Jüngling_auf_dem_Hügel_-_D702_Medium_Original.pdf
+Der Jüngling und der Tod - D545 | Schubert, Franz | Medium | Original | Der_Jüngling_und_der_Tod_-_D545_Medium_Original.pdf
+Der Kampf - D594 | Schubert, Franz | Medium | Original | Der_Kampf_-_D594_Medium_Original.pdf
+Der Knabe - D692 | Schubert, Franz | Medium | Original | Der_Knabe_-_D692_Medium_Original.pdf
+Der Knabe in der Wiege - D579 | Schubert, Franz | Medium | Original | Der_Knabe_in_der_Wiege_-_D579_Medium_Original.pdf
+Der König von Thule - D367 | Schubert, Franz | Medium | Original | Der_König_von_Thule_-_D367_Medium_Original.pdf
+Der Kreuzzug - D932 | Schubert, Franz | Medium | Original | Der_Kreuzzug_-_D932_Medium_Original.pdf
+Der Leidende - D432 | Schubert, Franz | Medium | Original | Der_Leidende_-_D432_Medium_Original.pdf
+Der Liebende - D207 | Schubert, Franz | Medium | Original | Der_Liebende_-_D207_Medium_Original.pdf
+Der liebliche Stern - D861 | Schubert, Franz | Medium | Original | Der_liebliche_Stern_-_D861_Medium_Original.pdf
+Der Liedler - D209 | Schubert, Franz | Medium | Original | Der_Liedler_-_D209_Medium_Original.pdf
+Der Mondabend - D141 | Schubert, Franz | Medium | Original | Der_Mondabend_-_D141_Medium_Original.pdf
+Der Morgenkuß - D264 | Schubert, Franz | Medium | Original | Der_Morgenkuß_-_D264_Medium_Original.pdf
+Der Musensohn - D764 | Schubert, Franz | Medium | Original | Der_Musensohn_-_D764_Medium_Original.pdf
+Der Pilgrim - D794 | Schubert, Franz | Medium | Original | Der_Pilgrim_-_D794_Medium_Original.pdf
+Der Rattenfänger - D255 | Schubert, Franz | Medium | Original | Der_Rattenfänger_-_D255_Medium_Original.pdf
+Der Sänger - D149 | Schubert, Franz | Medium | Original | Der_Sänger_-_D149_Medium_Original.pdf
+Der Sänger am Felsen - D482 | Schubert, Franz | Medium | Original | Der_Sänger_am_Felsen_-_D482_Medium_Original.pdf
+Der Schäfer und der Reiter - D517 | Schubert, Franz | Medium | Original | Der_Schäfer_und_der_Reiter_-_D517_Medium_Original.pdf
+Der Schatzgräber - D256 | Schubert, Franz | Medium | Original | Der_Schatzgräber_-_D256_Medium_Original.pdf
+Der Schiffer - D536 | Schubert, Franz | Low | Original | Der_Schiffer_-_D536_Low_Original.pdf
+Der Schiffer - D694 | Schubert, Franz | Medium | Original | Der_Schiffer_-_D694_Medium_Original.pdf
+Der Schmetterling - D633 | Schubert, Franz | Medium | Original | Der_Schmetterling_-_D633_Medium_Original.pdf
+Der Sieg - D805 | Schubert, Franz | Low | Original | Der_Sieg_-_D805_Low_Original.pdf
+Der Strom - D565 | Schubert, Franz | Low | Original | Der_Strom_-_D565_Low_Original.pdf
+Der Taucher - D77 | Schubert, Franz | Low | Original | Der_Taucher_-_D77_Low_Original.pdf
+Der Tod Oskars - D375 | Schubert, Franz | Medium | Original | Der_Tod_Oskars_-_D375_Medium_Original.pdf
+Der Tod und das Mädchen - D531 | Schubert, Franz | Medium | Original | Der_Tod_und_das_Mädchen_-_D531_Medium_Original.pdf
+Der Traum - D213 | Schubert, Franz | Medium | Original | Der_Traum_-_D213_Medium_Original.pdf
+Der Unglückliche - D713 | Schubert, Franz | Medium | Original | Der_Unglückliche_-_D713_Medium_Original.pdf
+Der Vater mit dem Kinde - D906 | Schubert, Franz | Medium | Original | Der_Vater_mit_dem_Kinde_-_D906_Medium_Original.pdf
+Der Vatermörder - D10 | Schubert, Franz | Medium | Original | Der_Vatermörder_-_D10_Medium_Original.pdf
+Der Wachtelschlag - D742 | Schubert, Franz | Medium | Original | Der_Wachtelschlag_-_D742_Medium_Original.pdf
+Der Wallensteiner Lanzknecht - D931 | Schubert, Franz | Medium | Original | Der_Wallensteiner_Lanzknecht_-_D931_Medium_Original.pdf
+Der Wanderer - D489 | Schubert, Franz | Medium | Original | Der_Wanderer_-_D489_Medium_Original.pdf
+Der Wanderer - D489 or 493 | Schubert, Franz | Medium | Original | Der_Wanderer_-_D489_or_493_Medium_Original.pdf
+Der Wanderer - D649 | Schubert, Franz | Medium | Original | Der_Wanderer_-_D649_Medium_Original.pdf
+Der Wanderer an den Mond - D870 | Schubert, Franz | Medium | Original | Der_Wanderer_an_den_Mond_-_D870_Medium_Original.pdf
+Der Weiberfreund - D271 | Schubert, Franz | Medium | Original | Der_Weiberfreund_-_D271_Medium_Original.pdf
+Der Winterabend - D938 | Schubert, Franz | Medium | Original | Der_Winterabend_-_D938_Medium_Original.pdf
+Der Zufriedene - D320 | Schubert, Franz | Medium | Original | Der_Zufriedene_-_D320_Medium_Original.pdf
+Der zürnende Barde - D707 | Schubert, Franz | Medium | Original | Der_zürnende_Barde_-_D707_Medium_Original.pdf
+Der zürnende Barde - D785 | Schubert, Franz | Low | Original | Der_zürnende_Barde_-_D785_Low_Original.pdf
+Der zürnenden Diana - D707 | Schubert, Franz | Medium | Original | Der_zürnenden_Diana_-_D707_Medium_Original.pdf
+Der Zwerg - D771 | Schubert, Franz | Medium | Original | Der_Zwerg_-_D771_Medium_Original.pdf
+Des Fischers Liebesglück - D933 | Schubert, Franz | Medium | Original | Des_Fischers_Liebesglück_-_D933_Medium_Original.pdf
+Des Mädchens Klage - D191 | Schubert, Franz | High | Original | Des_Mädchens_Klage_-_D191_High_Original.pdf
+Des Mädchens Klage - D389 | Schubert, Franz | Medium | Original | Des_Mädchens_Klage_-_D389_Medium_Original.pdf
+Des Mädchens Klage - D6 | Schubert, Franz | Medium | Original | Des_Mädchens_Klage_-_D6_Medium_Original.pdf
+Des Sängers Habe - D832 | Schubert, Franz | Medium | Original | Des_Sängers_Habe_-_D832_Medium_Original.pdf
+Die abgeblühte Linde - D514 | Schubert, Franz | Medium | Original | Die_abgeblühte_Linde_-_D514_Medium_Original.pdf
+Die Allmacht - D852 | Schubert, Franz | Medium | Original | Die_Allmacht_-_D852_Medium_Original.pdf
+Die Befreier Europas in Paris - D104 | Schubert, Franz | Low | Original | Die_Befreier_Europas_in_Paris_-_D104_Low_Original.pdf
+Die Berge - D634 | Schubert, Franz | Medium | Original | Die_Berge_-_D634_Medium_Original.pdf
+Die Betende - D102 | Schubert, Franz | Medium | Original | Die_Betende_-_D102_Medium_Original.pdf
+Die Blumensprache - D519 | Schubert, Franz | Medium | Original | Die_Blumensprache_-_D519_Medium_Original.pdf
+Die Bürgschaft - D246 | Schubert, Franz | Medium | Original | Die_Bürgschaft_-_D246_Medium_Original.pdf
+Die drei Sänger - D329 | Schubert, Franz | Medium | Original | Die_drei_Sänger_-_D329_Medium_Original.pdf
+Die Einsiedelei - D393 or 563 | Schubert, Franz | Medium | Original | Die_Einsiedelei_-_D393_or_563_Medium_Original.pdf
+Die Einsiedelei - D563 | Schubert, Franz | Medium | Original | Die_Einsiedelei_-_D563_Medium_Original.pdf
+Die erste Liebe - D182 | Schubert, Franz | Medium | Original | Die_erste_Liebe_-_D182_Medium_Original.pdf
+Die Erwartung - D159 | Schubert, Franz | Medium | Original | Die_Erwartung_-_D159_Medium_Original.pdf
+Die Forelle - D550 | Schubert, Franz | Medium | Original | Die_Forelle_-_D550_Medium_Original.pdf
+Die Fröhlichkeit - D262 | Schubert, Franz | Medium | Original | Die_Fröhlichkeit_-_D262_Medium_Original.pdf
+Die frühe Liebe - D430 | Schubert, Franz | Medium | Original | Die_frühe_Liebe_-_D430_Medium_Original.pdf
+Die frühen Gräber - D290 | Schubert, Franz | Medium | Original | Die_frühen_Gräber_-_D290_Medium_Original.pdf
+Die Gebüsche - D646 | Schubert, Franz | Medium | Original | Die_Gebüsche_-_D646_Medium_Original.pdf
+Die gefangenen Sänger - D712 | Schubert, Franz | Medium | Original | Die_gefangenen_Sänger_-_D712_Medium_Original.pdf
+Die Gestirne - D444 | Schubert, Franz | Medium | Original | Die_Gestirne_-_D444_Medium_Original.pdf
+Die Götter Griechenlands - D677 | Schubert, Franz | Medium | Original | Die_Götter_Griechenlands_-_D677_Medium_Original.pdf
+Die Herbstnacht - D404 | Schubert, Franz | Medium | Original | Die_Herbstnacht_-_D404_Medium_Original.pdf
+Die Hoffnung - D637 | Schubert, Franz | Medium | Original | Die_Hoffnung_-_D637_Medium_Original.pdf
+Die junge Nonne - D828 | Schubert, Franz | Medium | Original | Die_junge_Nonne_-_D828_Medium_Original.pdf
+Die Knabenzeit - D400 | Schubert, Franz | Medium | Original | Die_Knabenzeit_-_D400_Medium_Original.pdf
+Die Laube - D214 | Schubert, Franz | Medium | Original | Die_Laube_-_D214_Medium_Original.pdf
+Die Liebe - D522 | Schubert, Franz | Medium | Original | Die_Liebe_-_D522_Medium_Original.pdf
+Die Liebe [Klärchens Lied] - D210 | Schubert, Franz | Medium | Original | Die_Liebe_[Klärchens_Lied]_-_D210_Medium_Original.pdf
+Die Liebende schreibt - D673 | Schubert, Franz | Medium | Original | Die_Liebende_schreibt_-_D673_Medium_Original.pdf
+Die Liebesgötter - D446 | Schubert, Franz | Medium | Original | Die_Liebesgötter_-_D446_Medium_Original.pdf
+Die Macht der Augen - D902 | Schubert, Franz | Low | Original | Die_Macht_der_Augen_-_D902_Low_Original.pdf
+Die Macht der Liebe - D308 | Schubert, Franz | Medium | Original | Die_Macht_der_Liebe_-_D308_Medium_Original.pdf
+Die Mainacht - D194 | Schubert, Franz | Medium | Original | Die_Mainacht_-_D194_Medium_Original.pdf
+Die Männer sind mechant - D866 | Schubert, Franz | Medium | Original | Die_Männer_sind_mechant_-_D866_Medium_Original.pdf
+Die Mutter Erde - D788 | Schubert, Franz | Medium | Original | Die_Mutter_Erde_-_D788_Medium_Original.pdf
+Die Nacht - D358 | Schubert, Franz | Medium | Original | Die_Nacht_-_D358_Medium_Original.pdf
+Die Nacht - D534 | Schubert, Franz | Medium | Original | Die_Nacht_-_D534_Medium_Original.pdf
+Die Nonne - D208 | Schubert, Franz | Medium | Original | Die_Nonne_-_D208_Medium_Original.pdf
+Die Perle - D466 | Schubert, Franz | Medium | Original | Die_Perle_-_D466_Medium_Original.pdf
+Die Rose - D745 | Schubert, Franz | Medium | Original | Die_Rose_-_D745_Medium_Original.pdf
+Die Schatten - D50 | Schubert, Franz | Medium | Original | Die_Schatten_-_D50_Medium_Original.pdf
+Die schöne Müllerin - 00. Full Cycle - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_00._Full_Cycle_-_D795_High_Original.pdf
+Die schöne Müllerin - 01. Das Wandern - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_01._Das_Wandern_-_D795_High_Original.pdf
+Die schöne Müllerin - 02. Wohin? - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_02._Wohin_-_D795_High_Original.pdf
+Die schöne Müllerin - 03. Halt! - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_03._Halt!_-_D795_High_Original.pdf
+Die schöne Müllerin - 04. Danksagung an den Bach - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_04._Danksagung_an_den_Bach_-_D795_High_Original.pdf
+Die schöne Müllerin - 05. Am Feierabend - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_05._Am_Feierabend_-_D795_High_Original.pdf
+Die schöne Müllerin - 06. Der Neugierige - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_06._Der_Neugierige_-_D795_High_Original.pdf
+Die schöne Müllerin - 07. Ungeduld - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_07._Ungeduld_-_D795_High_Original.pdf
+Die schöne Müllerin - 08. Morgengruß - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_08._Morgengruß_-_D795_High_Original.pdf
+Die schöne Müllerin - 10. Tränenregen - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_10._Tränenregen_-_D795_High_Original.pdf
+Die schöne Müllerin - 11. Mein! - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_11._Mein!_-_D795_High_Original.pdf
+Die schöne Müllerin - 12. Pause - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_12._Pause_-_D795_High_Original.pdf
+Die schöne Müllerin - 13. Mid dem grünen Lautenbande - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_13._Mid_dem_grünen_Lautenbande_-_D795_High_Original.pdf
+Die schöne Müllerin - 14. Der Jäger - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_14._Der_Jäger_-_D795_High_Original.pdf
+Die schöne Müllerin - 15. Eifersucht und Stolz - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_15._Eifersucht_und_Stolz_-_D795_High_Original.pdf
+Die schöne Müllerin - 16. Die liebe Farbe - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_16._Die_liebe_Farbe_-_D795_High_Original.pdf
+Die schöne Müllerin - 17. Die böse Farbe - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_17._Die_böse_Farbe_-_D795_High_Original.pdf
+Die schöne Müllerin - 18. Trockne Blumen - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_18._Trockne_Blumen_-_D795_High_Original.pdf
+Die schöne Müllerin - 19. Der Müller und der Bach - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_19._Der_Müller_und_der_Bach_-_D795_High_Original.pdf
+Die schöne Müllerin - 20. Des Baches Wiegenlied - D795 | Schubert, Franz | High | Original | Die_schöne_Müllerin_-_20._Des_Baches_Wiegenlied_-_D795_High_Original.pdf
+Die Sommernacht - D289 | Schubert, Franz | Medium | Original | Die_Sommernacht_-_D289_Medium_Original.pdf
+Die Spinnerin - D247 | Schubert, Franz | Medium | Original | Die_Spinnerin_-_D247_Medium_Original.pdf
+Die Sterbende - D186 | Schubert, Franz | Medium | Original | Die_Sterbende_-_D186_Medium_Original.pdf
+Die Sterne - D176 | Schubert, Franz | Medium | Original | Die_Sterne_-_D176_Medium_Original.pdf
+Die Sterne - D313 | Schubert, Franz | Medium | Original | Die_Sterne_-_D313_Medium_Original.pdf
+Die Sterne - D684 | Schubert, Franz | Medium | Original | Die_Sterne_-_D684_Medium_Original.pdf
+Die Sterne - D939 | Schubert, Franz | Medium | Original | Die_Sterne_-_D939_Medium_Original.pdf
+Die Sternennächte - D670 | Schubert, Franz | Medium | Original | Die_Sternennächte_-_D670_Medium_Original.pdf
+Die Sternenwelten - D307 | Schubert, Franz | Medium | Original | Die_Sternenwelten_-_D307_Medium_Original.pdf
+Die Täuschung - D230 | Schubert, Franz | Medium | Original | Die_Täuschung_-_D230_Medium_Original.pdf
+Die Unterscheidung - D866 | Schubert, Franz | Medium | Original | Die_Unterscheidung_-_D866_Medium_Original.pdf
+Die verfehlte Stunde - D409 | Schubert, Franz | Medium | Original | Die_verfehlte_Stunde_-_D409_Medium_Original.pdf
+Die vier Weltalter - D391 | Schubert, Franz | Medium | Original | Die_vier_Weltalter_-_D391_Medium_Original.pdf
+Die Vögel - D691 | Schubert, Franz | Medium | Original | Die_Vögel_-_D691_Medium_Original.pdf
+Dithyrambe - D801 | Schubert, Franz | Low | Original | Dithyrambe_-_D801_Low_Original.pdf
+Don Gayseros - 3 songs - D93 | Schubert, Franz | Medium | Original | Don_Gayseros_-_3_songs_-_D93_Medium_Original.pdf
+Don Gayseros I ('Don Gayseros, wunderlicher') - D93 | Schubert, Franz | Medium | Original | Don_Gayseros_I_('Don_Gayseros_wunderlicher')_-_D93_Medium_Original.pdf
+Don Gayseros II ('Nächtens klang die süße Laute') - D93 | Schubert, Franz | Medium | Original | Don_Gayseros_II_('Nächtens_klang_die_süße_Laute')_-_D93_Medium_Original.pdf
+Don Gayseros III ('An dem jungen Morgenhimmel') - D93 | Schubert, Franz | Medium | Original | Don_Gayseros_III_('An_dem_jungen_Morgenhimmel')_-_D93_Medium_Original.pdf
+Drang in die Ferne - D770 | Schubert, Franz | Medium | Original | Drang_in_die_Ferne_-_D770_Medium_Original.pdf
+Du bist die Ruh - D776 | Schubert, Franz | Medium | Original | Du_bist_die_Ruh_-_D776_Medium_Original.pdf
+Du liebst mich nicht - D756 | Schubert, Franz | Medium | Original | Du_liebst_mich_nicht_-_D756_Medium_Original.pdf
+Edone - D445 | Schubert, Franz | Medium | Original | Edone_-_D445_Medium_Original.pdf
+Eine altschottische Ballade - D923 | Schubert, Franz | Medium | Original | Eine_altschottische_Ballade_-_D923_Medium_Original.pdf
+Einsamkeit - D620 | Schubert, Franz | Medium | Original | Einsamkeit_-_D620_Medium_Original.pdf
+Einsiedelei - D393 | Schubert, Franz | Medium | Original | Einsiedelei_-_D393_Medium_Original.pdf
+Ellens Gesang I - D837 | Schubert, Franz | Medium | Original | Ellens_Gesang_I_-_D837_Medium_Original.pdf
+Ellens Gesang II - D838 | Schubert, Franz | Medium | Original | Ellens_Gesang_II_-_D838_Medium_Original.pdf
+Elysium - D584 | Schubert, Franz | Medium | Original | Elysium_-_D584_Medium_Original.pdf
+Entzückung - D413 | Schubert, Franz | Medium | Original | Entzückung_-_D413_Medium_Original.pdf
+Entzückung an Laura - D390 | Schubert, Franz | Medium | Original | Entzückung_an_Laura_-_D390_Medium_Original.pdf
+Entzückung an Laura - D577 | Schubert, Franz | Medium | Original | Entzückung_an_Laura_-_D577_Medium_Original.pdf
+Epistel - Herrn Josef Spaun, Assessor in Linz - D749 | Schubert, Franz | Medium | Original | Epistel_-_Herrn_Josef_Spaun_Assessor_in_Linz_-_D749_Medium_Original.pdf
+Erinnerung - D101 | Schubert, Franz | Medium | Original | Erinnerung_-_D101_Medium_Original.pdf
+Erinnerung - D229 | Schubert, Franz | Medium | Original | Erinnerung_-_D229_Medium_Original.pdf
+Erinnerungen - D98 | Schubert, Franz | Medium | Original | Erinnerungen_-_D98_Medium_Original.pdf
+Erlafsee - D586 | Schubert, Franz | Medium | Original | Erlafsee_-_D586_Medium_Original.pdf
+Erlkönig - D328 | Schubert, Franz | High | Original | Erlkönig_-_D328_High_Original.pdf
+Erntelied - D434 | Schubert, Franz | Medium | Original | Erntelied_-_D434_Medium_Original.pdf
+Erster Verlust - D226 | Schubert, Franz | Medium | Original | Erster_Verlust_-_D226_Medium_Original.pdf
+Fahrt zum Hades - D526 | Schubert, Franz | Low | Original | Fahrt_zum_Hades_-_D526_Low_Original.pdf
+Fischerlied - D351 | Schubert, Franz | Medium | Original | Fischerlied_-_D351_Medium_Original.pdf
+Fischerlied - D562 | Schubert, Franz | Medium | Original | Fischerlied_-_D562_Medium_Original.pdf
+Fischerweise - D881 | Schubert, Franz | Medium | Original | Fischerweise_-_D881_Medium_Original.pdf
+Florio - D857 | Schubert, Franz | Medium | Original | Florio_-_D857_Medium_Original.pdf
+Fragment aus dem Aeschylus - D450 | Schubert, Franz | Medium | Original | Fragment_aus_dem_Aeschylus_-_D450_Medium_Original.pdf
+Freiwilliges Versinken - D700 | Schubert, Franz | Medium | Original | Freiwilliges_Versinken_-_D700_Medium_Original.pdf
+Freude der Kinderjahre - D455 | Schubert, Franz | Medium | Original | Freude_der_Kinderjahre_-_D455_Medium_Original.pdf
+Frohsinn - D520 | Schubert, Franz | Medium | Original | Frohsinn_-_D520_Medium_Original.pdf
+Frühlingsglaube - D686 | Schubert, Franz | Medium | Original | Frühlingsglaube_-_D686_Medium_Original.pdf
+Frühlingslied - D398 | Schubert, Franz | Medium | Original | Frühlingslied_-_D398_Medium_Original.pdf
+Frühlingslied - D919 | Schubert, Franz | Medium | Original | Frühlingslied_-_D919_Medium_Original.pdf
+Fülle der Liebe - D854 | Schubert, Franz | Medium | Original | Fülle_der_Liebe_-_D854_Medium_Original.pdf
+Furcht der Geliebten - D285 | Schubert, Franz | Medium | Original | Furcht_der_Geliebten_-_D285_Medium_Original.pdf
+Ganymed - D544 | Schubert, Franz | Medium | Original | Ganymed_-_D544_Medium_Original.pdf
+Gebet während der Schlacht - D171 | Schubert, Franz | Medium | Original | Gebet_während_der_Schlacht_-_D171_Medium_Original.pdf
+Geheimes - D719 | Schubert, Franz | Medium | Original | Geheimes_-_D719_Medium_Original.pdf
+Geheimniss - D491 | Schubert, Franz | Medium | Original | Geheimniss_-_D491_Medium_Original.pdf
+Geist der Liebe - D233 | Schubert, Franz | Medium | Original | Geist_der_Liebe_-_D233_Medium_Original.pdf
+Geist der Liebe - D414 | Schubert, Franz | Medium | Original | Geist_der_Liebe_-_D414_Medium_Original.pdf
+Geisternähe - D100 | Schubert, Franz | Medium | Original | Geisternähe_-_D100_Medium_Original.pdf
+Geistesgruss - D142 | Schubert, Franz | Medium | Original | Geistesgruss_-_D142_Medium_Original.pdf
+Genügsamkeit - D143 | Schubert, Franz | Medium | Original | Genügsamkeit_-_D143_Medium_Original.pdf
+Gesang der Geister über den Wassern - D484 | Schubert, Franz | Medium | Original | Gesang_der_Geister_über_den_Wassern_-_D484_Medium_Original.pdf
+Gesang der Norna - D831 | Schubert, Franz | Medium | Original | Gesang_der_Norna_-_D831_Medium_Original.pdf
+Gesang [An Silvia] - D891 | Schubert, Franz | Medium | Original | Gesang_[An_Silvia]_-_D891_Medium_Original.pdf
+Gesänge des Harfners - I. Wer sich der Einsamkeit - D478 | Schubert, Franz | Medium | Original | Gesänge_des_Harfners_-_I._Wer_sich_der_Einsamkeit_-_D478_Medium_Original.pdf
+Gesänge des Harfners - II. Wer nie sein Brot - D478 | Schubert, Franz | Medium | Original | Gesänge_des_Harfners_-_II._Wer_nie_sein_Brot_-_D478_Medium_Original.pdf
+Gesänge des Harfners - III. An die Türen - D478 | Schubert, Franz | Medium | Original | Gesänge_des_Harfners_-_III._An_die_Türen_-_D478_Medium_Original.pdf
+Glaube, Hoffnung und Liebe - D955 | Schubert, Franz | Medium | Original | Glaube_Hoffnung_und_Liebe_-_D955_Medium_Original.pdf
+Gondelfahrer - D808 | Schubert, Franz | Medium | Original | Gondelfahrer_-_D808_Medium_Original.pdf
+Gott im Fruhlinge - D448 | Schubert, Franz | Medium | Original | Gott_im_Fruhlinge_-_D448_Medium_Original.pdf
+Grablied - D218 | Schubert, Franz | Medium | Original | Grablied_-_D218_Medium_Original.pdf
+Grablied auf einen Soldaten - D454 | Schubert, Franz | Medium | Original | Grablied_auf_einen_Soldaten_-_D454_Medium_Original.pdf
+Grablied für die Mutter - D616 | Schubert, Franz | Medium | Original | Grablied_für_die_Mutter_-_D616_Medium_Original.pdf
+Greisengesang - D778 | Schubert, Franz | Medium | Original | Greisengesang_-_D778_Medium_Original.pdf
+Grenzen der Menschheit - D716 | Schubert, Franz | Low | Original | Grenzen_der_Menschheit_-_D716_Low_Original.pdf
+Gretchen am Spinnrade - D118 | Schubert, Franz | High | Original | Gretchen_am_Spinnrade_-_D118_High_Original.pdf
+Gretchens Bitte - D564 | Schubert, Franz | Medium | Original | Gretchens_Bitte_-_D564_Medium_Original.pdf
+Gruppe aus dem Tartarus - D583 | Schubert, Franz | Medium | Original | Gruppe_aus_dem_Tartarus_-_D583_Medium_Original.pdf
+Guarda, che bianca luna - D688 | Schubert, Franz | Medium | Original | Guarda_che_bianca_luna_-_D688_Medium_Original.pdf
+Hagars Klage - D5 | Schubert, Franz | Medium | Original | Hagars_Klage_-_D5_Medium_Original.pdf
+Hänflings Liebeswerbung - D552 | Schubert, Franz | Medium | Original | Hänflings_Liebeswerbung_-_D552_Medium_Original.pdf
+Harfenspieler - D325 | Schubert, Franz | Medium | Original | Harfenspieler_-_D325_Medium_Original.pdf
+Heidenröslein - D257 | Schubert, Franz | Medium | Original | Heidenröslein_-_D257_Medium_Original.pdf
+Heimliches Lieben - D922 | Schubert, Franz | Medium | Original | Heimliches_Lieben_-_D922_Medium_Original.pdf
+Hektors Abschied - D312 | Schubert, Franz | Medium | Original | Hektors_Abschied_-_D312_Medium_Original.pdf
+Heliopolis II - D754 | Schubert, Franz | Low | Original | Heliopolis_II_-_D754_Low_Original.pdf
+Herbst - D945 | Schubert, Franz | Medium | Original | Herbst_-_D945_Medium_Original.pdf
+Herbstlied - D502 | Schubert, Franz | Medium | Original | Herbstlied_-_D502_Medium_Original.pdf
+Hermann und Thusnelda - D322 | Schubert, Franz | Medium | Original | Hermann_und_Thusnelda_-_D322_Medium_Original.pdf
+Himmelsfunken - D651 | Schubert, Franz | Medium | Original | Himmelsfunken_-_D651_Medium_Original.pdf
+Hippolits Lied - D890 | Schubert, Franz | Medium | Original | Hippolits_Lied_-_D890_Medium_Original.pdf
+Hochzeit-Lied - D463 | Schubert, Franz | Medium | Original | Hochzeit-Lied_-_D463_Medium_Original.pdf
+Hoffnung - D251 | Schubert, Franz | Medium | Original | Hoffnung_-_D251_Medium_Original.pdf
+Hoffnung - D295 | Schubert, Franz | Medium | Original | Hoffnung_-_D295_Medium_Original.pdf
+Huldigung - D240 | Schubert, Franz | Medium | Original | Huldigung_-_D240_Medium_Original.pdf
+Hymne ('Wenige wissen das Geheimnis der Liebe') - D659 | Schubert, Franz | Medium | Original | Hymne_('Wenige_wissen_das_Geheimnis_der_Liebe')_-_D659_Medium_Original.pdf
+Hymne II ('Wenn ich ihn nur habe') - D660 | Schubert, Franz | Medium | Original | Hymne_II_('Wenn_ich_ihn_nur_habe')_-_D660_Medium_Original.pdf
+Hymne III ('Wenn alle untreu werden') - D661 | Schubert, Franz | Medium | Original | Hymne_III_('Wenn_alle_untreu_werden')_-_D661_Medium_Original.pdf
+Hymne IV ('Ich sag’ es jedem, daß er lebt') - D662 | Schubert, Franz | Medium | Original | Hymne_IV_('Ich_sag’_es_jedem_daß_er_lebt')_-_D662_Medium_Original.pdf
+Idens Nachtgesang - D227 | Schubert, Franz | Medium | Original | Idens_Nachtgesang_-_D227_Medium_Original.pdf
+Idens Schwanenlied - D317 | Schubert, Franz | Medium | Original | Idens_Schwanenlied_-_D317_Medium_Original.pdf
+Ihr Grab - D736 | Schubert, Franz | Medium | Original | Ihr_Grab_-_D736_Medium_Original.pdf
+Im Abendrot - D799 | Schubert, Franz | Medium | Original | Im_Abendrot_-_D799_Medium_Original.pdf
+Im Freien - D880 | Schubert, Franz | Medium | Original | Im_Freien_-_D880_Medium_Original.pdf
+Im Frühling - D882 | Schubert, Franz | Medium | Original | Im_Frühling_-_D882_Medium_Original.pdf
+Im Haine - D738 | Schubert, Franz | Medium | Original | Im_Haine_-_D738_Medium_Original.pdf
+Im Walde - D708 | Schubert, Franz | Medium | Original | Im_Walde_-_D708_Medium_Original.pdf
+Im walde - D834 | Schubert, Franz | Medium | Original | Im_walde_-_D834_Medium_Original.pdf
+In der Mitternacht - D464 | Schubert, Franz | Medium | Original | In_der_Mitternacht_-_D464_Medium_Original.pdf
+In's stille Land - D403 | Schubert, Franz | Medium | Original | In's_stille_Land_-_D403_Medium_Original.pdf
+Iphigenia - D573 | Schubert, Franz | Medium | Original | Iphigenia_-_D573_Medium_Original.pdf
+Irdisches Glück - D866 | Schubert, Franz | Medium | Original | Irdisches_Glück_-_D866_Medium_Original.pdf
+Jagdlied - D521 | Schubert, Franz | Medium | Original | Jagdlied_-_D521_Medium_Original.pdf
+Jägers Abendlied - D368 | Schubert, Franz | Medium | Original | Jägers_Abendlied_-_D368_Medium_Original.pdf
+Jägers Liebeslied - D909 | Schubert, Franz | Medium | Original | Jägers_Liebeslied_-_D909_Medium_Original.pdf
+Johanna Sebus - D728 | Schubert, Franz | Medium | Original | Johanna_Sebus_-_D728_Medium_Original.pdf
+Klage - D371 | Schubert, Franz | Medium | Original | Klage_-_D371_Medium_Original.pdf
+Klage - D415 | Schubert, Franz | Medium | Original | Klage_-_D415_Medium_Original.pdf
+Klage - D436 | Schubert, Franz | Medium | Original | Klage_-_D436_Medium_Original.pdf
+Klage der Ceres - D323 | Schubert, Franz | Medium | Original | Klage_der_Ceres_-_D323_Medium_Original.pdf
+Klaglied - D23 | Schubert, Franz | Medium | Original | Klaglied_-_D23_Medium_Original.pdf
+Kolmas Klage - D217 | Schubert, Franz | Medium | Original | Kolmas_Klage_-_D217_Medium_Original.pdf
+La pastorella al prato - D528 | Schubert, Franz | High | Original | La_pastorella_al_prato_-_D528_High_Original.pdf
+Labetrank der Liebe - D302 | Schubert, Franz | Medium | Original | Labetrank_der_Liebe_-_D302_Medium_Original.pdf
+Lachen und Weinen - D777 | Schubert, Franz | Medium | Original | Lachen_und_Weinen_-_D777_Medium_Original.pdf
+Lambertine - D301 | Schubert, Franz | Medium | Original | Lambertine_-_D301_Medium_Original.pdf
+Laura am Klavier - D388 | Schubert, Franz | Medium | Original | Laura_am_Klavier_-_D388_Medium_Original.pdf
+Lebenslied - D508 | Schubert, Franz | Medium | Original | Lebenslied_-_D508_Medium_Original.pdf
+Lebensmelodien - D395 | Schubert, Franz | Medium | Original | Lebensmelodien_-_D395_Medium_Original.pdf
+Lebensmuth - D883 | Schubert, Franz | Medium | Original | Lebensmuth_-_D883_Medium_Original.pdf
+Lebensmuth - D937 | Schubert, Franz | Medium | Original | Lebensmuth_-_D937_Medium_Original.pdf
+Leichenfantasie - D7 | Schubert, Franz | Medium | Original | Leichenfantasie_-_D7_Medium_Original.pdf
+Leiden der Trennung - D509 | Schubert, Franz | Medium | Original | Leiden_der_Trennung_-_D509_Medium_Original.pdf
+Liane - D298 | Schubert, Franz | Medium | Original | Liane_-_D298_Medium_Original.pdf
+Lieb Minna - D222 | Schubert, Franz | Medium | Original | Lieb_Minna_-_D222_Medium_Original.pdf
+Liebe schwärmt auf allen Wegen - D239 | Schubert, Franz | Medium | Original | Liebe_schwärmt_auf_allen_Wegen_-_D239_Medium_Original.pdf
+Liebeslauschen - D698 | Schubert, Franz | Medium | Original | Liebeslauschen_-_D698_Medium_Original.pdf
+Liebesrausch - D179 | Schubert, Franz | Medium | Original | Liebesrausch_-_D179_Medium_Original.pdf
+Liebeständelei - D206 | Schubert, Franz | Medium | Original | Liebeständelei_-_D206_Medium_Original.pdf
+Liebhaber in allen Gestalten - D558 | Schubert, Franz | Medium | Original | Liebhaber_in_allen_Gestalten_-_D558_Medium_Original.pdf
+Lied (Es ist so angenehm) - D284 | Schubert, Franz | Medium | Original | Lied_(Es_ist_so_angenehm)_-_D284_Medium_Original.pdf
+Lied (Ferne von der großen Stadt) - D483 | Schubert, Franz | Medium | Original | Lied_(Ferne_von_der_großen_Stadt)_-_D483_Medium_Original.pdf
+Lied (Mutter geht durch ihre Kammern) - D373 | Schubert, Franz | Medium | Original | Lied_(Mutter_geht_durch_ihre_Kammern)_-_D373_Medium_Original.pdf
+Lied aus der Ferne - D107 | Schubert, Franz | Medium | Original | Lied_aus_der_Ferne_-_D107_Medium_Original.pdf
+Lied der Anna Lyle - D830 | Schubert, Franz | Medium | Original | Lied_der_Anna_Lyle_-_D830_Medium_Original.pdf
+Lied der Liebe - D109 | Schubert, Franz | Medium | Original | Lied_der_Liebe_-_D109_Medium_Original.pdf
+Lied der Mignon ('Heiß mich nicht reden') - D877 | Schubert, Franz | Medium | Original | Lied_der_Mignon_('Heiß_mich_nicht_reden')_-_D877_Medium_Original.pdf
+Lied der Mignon ('Nur wer die Sehnsucht kennt') - D877 | Schubert, Franz | Medium | Original | Lied_der_Mignon_('Nur_wer_die_Sehnsucht_kennt')_-_D877_Medium_Original.pdf
+Lied der Mignon ('So laßt mich scheinen') - D877 | Schubert, Franz | Medium | Original | Lied_der_Mignon_('So_laßt_mich_scheinen')_-_D877_Medium_Original.pdf
+Lied des gefangenen Jägers - D843 | Schubert, Franz | Medium | Original | Lied_des_gefangenen_Jägers_-_D843_Medium_Original.pdf
+Lied eines Kindes - D596 | Schubert, Franz | Medium | Original | Lied_eines_Kindes_-_D596_Medium_Original.pdf
+Lied eines Kriegers - D822 | Schubert, Franz | Medium | Original | Lied_eines_Kriegers_-_D822_Medium_Original.pdf
+Lied eines Schiffers an die Dioskuren - D360 | Schubert, Franz | Medium | Original | Lied_eines_Schiffers_an_die_Dioskuren_-_D360_Medium_Original.pdf
+Lied in der Abwesenheit - D416 | Schubert, Franz | Medium | Original | Lied_in_der_Abwesenheit_-_D416_Medium_Original.pdf
+Liedesend' - D473 | Schubert, Franz | Medium | Original | Liedesend'_-_D473_Medium_Original.pdf
+Lilla an die Morgenröte - D273 | Schubert, Franz | Medium | Original | Lilla_an_die_Morgenröte_-_D273_Medium_Original.pdf
+Litanei - D343 | Schubert, Franz | Medium | Original | Litanei_-_D343_Medium_Original.pdf
+Lob der Tränen - D711 | Schubert, Franz | Medium | Original | Lob_der_Tränen_-_D711_Medium_Original.pdf
+Lob des Tokayers - D248 | Schubert, Franz | Medium | Original | Lob_des_Tokayers_-_D248_Medium_Original.pdf
+Lodas Gespenst - D150 | Schubert, Franz | Medium | Original | Lodas_Gespenst_-_D150_Medium_Original.pdf
+Lorma - D376 | Schubert, Franz | Medium | Original | Lorma_-_D376_Medium_Original.pdf
+Luisens Antwort - D319 | Schubert, Franz | Medium | Original | Luisens_Antwort_-_D319_Medium_Original.pdf
+Mahomets Gesang - D549 | Schubert, Franz | Medium | Original | Mahomets_Gesang_-_D549_Medium_Original.pdf
+Mahomets Gesang - D721 | Schubert, Franz | Low | Original | Mahomets_Gesang_-_D721_Low_Original.pdf
+Meeres Stille - D216 | Schubert, Franz | Medium | Original | Meeres_Stille_-_D216_Medium_Original.pdf
+Mein Gruß an den Mai - D305 | Schubert, Franz | Medium | Original | Mein_Gruß_an_den_Mai_-_D305_Medium_Original.pdf
+Memnon - D541 | Schubert, Franz | Medium | Original | Memnon_-_D541_Medium_Original.pdf
+Mignon - D321 | Schubert, Franz | Medium | Original | Mignon_-_D321_Medium_Original.pdf
+Mignon - D469 | Schubert, Franz | Medium | Original | Mignon_-_D469_Medium_Original.pdf
+Mignon I - D726 | Schubert, Franz | Medium | Original | Mignon_I_-_D726_Medium_Original.pdf
+Mignon II - D727 | Schubert, Franz | Medium | Original | Mignon_II_-_D727_Medium_Original.pdf
+Minnelied - D429 | Schubert, Franz | Medium | Original | Minnelied_-_D429_Medium_Original.pdf
+Minona - D152 | Schubert, Franz | Medium | Original | Minona_-_D152_Medium_Original.pdf
+Mio ben ricordati - D688 | Schubert, Franz | Medium | Original | Mio_ben_ricordati_-_D688_Medium_Original.pdf
+Misero pargoletto - D42 | Schubert, Franz | High | Original | Misero_pargoletto_-_D42_High_Original.pdf
+Morgenlied - D266 | Schubert, Franz | Medium | Original | Morgenlied_-_D266_Medium_Original.pdf
+Morgenlied - D381 | Schubert, Franz | Medium | Original | Morgenlied_-_D381_Medium_Original.pdf
+Morgenlied - D685 | Schubert, Franz | Medium | Original | Morgenlied_-_D685_Medium_Original.pdf
+Nach einem Gewitter - D561 | Schubert, Franz | Medium | Original | Nach_einem_Gewitter_-_D561_Medium_Original.pdf
+Nacht und Träume - D827 | Schubert, Franz | Medium | Original | Nacht_und_Träume_-_D827_Medium_Original.pdf
+Nachtgesang - D119 | Schubert, Franz | Medium | Original | Nachtgesang_-_D119_Medium_Original.pdf
+Nachtgesang - D314 | Schubert, Franz | Medium | Original | Nachtgesang_-_D314_Medium_Original.pdf
+Nachthymne - D687 | Schubert, Franz | Medium | Original | Nachthymne_-_D687_Medium_Original.pdf
+Nachtstück - D672 | Schubert, Franz | Medium | Original | Nachtstück_-_D672_Medium_Original.pdf
+Nachtviolen - D752 | Schubert, Franz | Medium | Original | Nachtviolen_-_D752_Medium_Original.pdf
+Nähe des Geliebten - D162 | Schubert, Franz | Medium | Original | Nähe_des_Geliebten_-_D162_Medium_Original.pdf
+Namenstagslied - D695 | Schubert, Franz | Medium | Original | Namenstagslied_-_D695_Medium_Original.pdf
+Naturgenuß - D188 | Schubert, Franz | Medium | Original | Naturgenuß_-_D188_Medium_Original.pdf
+Non t'accostar all' Urna - D688 | Schubert, Franz | Medium | Original | Non_t'accostar_all'_Urna_-_D688_Medium_Original.pdf
+Normans Gesang - D846 | Schubert, Franz | Medium | Original | Normans_Gesang_-_D846_Medium_Original.pdf
+Orest auf Tauris - D548 | Schubert, Franz | Medium | Original | Orest_auf_Tauris_-_D548_Medium_Original.pdf
+Orpheus - D474 | Schubert, Franz | Medium | Original | Orpheus_-_D474_Medium_Original.pdf
+Ossians Lied nach dem Falle Nathos - D278 | Schubert, Franz | Medium | Original | Ossians_Lied_nach_dem_Falle_Nathos_-_D278_Medium_Original.pdf
+Pax vobiscum - D551 | Schubert, Franz | Medium | Original | Pax_vobiscum_-_D551_Medium_Original.pdf
+Pensa che questo istante - D76 | Schubert, Franz | Low | Original | Pensa_che_questo_istante_-_D76_Low_Original.pdf
+Pflicht und Liebe - D467 | Schubert, Franz | Medium | Original | Pflicht_und_Liebe_-_D467_Medium_Original.pdf
+Pflügerlied - D392 | Schubert, Franz | Medium | Original | Pflügerlied_-_D392_Medium_Original.pdf
+Phidile - D500 | Schubert, Franz | Medium | Original | Phidile_-_D500_Medium_Original.pdf
+Philoktet - D540 | Schubert, Franz | Medium | Original | Philoktet_-_D540_Medium_Original.pdf
+Pilgerweise - D789 | Schubert, Franz | Medium | Original | Pilgerweise_-_D789_Medium_Original.pdf
+Prometheus - D674 | Schubert, Franz | Low | Original | Prometheus_-_D674_Low_Original.pdf
+Punschlied - D253 | Schubert, Franz | Medium | Original | Punschlied_-_D253_Medium_Original.pdf
+Rastlose Liebe - D138 | Schubert, Franz | Medium | Original | Rastlose_Liebe_-_D138_Medium_Original.pdf
+Ritter Toggenburg - D397 | Schubert, Franz | Medium | Original | Ritter_Toggenburg_-_D397_Medium_Original.pdf
+Romanze ('Ein Fräulein klagt'') - D114 | Schubert, Franz | Medium | Original | Romanze_('Ein_Fräulein_klagt'')_-_D114_Medium_Original.pdf
+Romanze ('In der Väter Hallen ruhte') - D144 | Schubert, Franz | Medium | Original | Romanze_('In_der_Väter_Hallen_ruhte')_-_D144_Medium_Original.pdf
+Romanze aus Rosamunde - D797 | Schubert, Franz | Medium | Original | Romanze_aus_Rosamunde_-_D797_Medium_Original.pdf
+Romanze des Richard Löwenherz - D907 | Schubert, Franz | Medium | Original | Romanze_des_Richard_Löwenherz_-_D907_Medium_Original.pdf
+Rückweg - D476 | Schubert, Franz | Medium | Original | Rückweg_-_D476_Medium_Original.pdf
+Sängers Morgenlied - D163 | Schubert, Franz | Medium | Original | Sängers_Morgenlied_-_D163_Medium_Original.pdf
+Sängers Morgenlied - D165 | Schubert, Franz | Medium | Original | Sängers_Morgenlied_-_D165_Medium_Original.pdf
+Scene aus Faust - D126 | Schubert, Franz | Medium | Original | Scene_aus_Faust_-_D126_Medium_Original.pdf
+Schäfers Klagelied - D121 | Schubert, Franz | Medium | Original | Schäfers_Klagelied_-_D121_Medium_Original.pdf
+Schatzgräbers Begehr - D761 | Schubert, Franz | Medium | Original | Schatzgräbers_Begehr_-_D761_Medium_Original.pdf
+Schiffers Scheidelied - D910 | Schubert, Franz | Medium | Original | Schiffers_Scheidelied_-_D910_Medium_Original.pdf
+Schlachtlied - D443 | Schubert, Franz | Medium | Original | Schlachtlied_-_D443_Medium_Original.pdf
+Schlaflied [Schlummerlied] - D527 | Schubert, Franz | Medium | Original | Schlaflied_[Schlummerlied]_-_D527_Medium_Original.pdf
+Schwanengesang - 00. Full Cycle - D957 | Schubert, Franz | High | Original | Schwanengesang_-_00._Full_Cycle_-_D957_High_Original.pdf
+Schwanengesang - 01. Liebesbotschaft - D957 | Schubert, Franz | High | Original | Schwanengesang_-_01._Liebesbotschaft_-_D957_High_Original.pdf
+Schwanengesang - 02. Kriegers Ahnung - D957 | Schubert, Franz | High | Original | Schwanengesang_-_02._Kriegers_Ahnung_-_D957_High_Original.pdf
+Schwanengesang - 03. Frühlingssehnsucht - D957 | Schubert, Franz | High | Original | Schwanengesang_-_03._Frühlingssehnsucht_-_D957_High_Original.pdf
+Schwanengesang - 04. Ständchen - D957 | Schubert, Franz | High | Original | Schwanengesang_-_04._Ständchen_-_D957_High_Original.pdf
+Schwanengesang - 05. Aufenthalt - D957 | Schubert, Franz | High | Original | Schwanengesang_-_05._Aufenthalt_-_D957_High_Original.pdf
+Schwanengesang - 06. In der Ferne - D957 | Schubert, Franz | High | Original | Schwanengesang_-_06._In_der_Ferne_-_D957_High_Original.pdf
+Schwanengesang - 07. Abschied - D957 | Schubert, Franz | High | Original | Schwanengesang_-_07._Abschied_-_D957_High_Original.pdf
+Schwanengesang - 08. Der Atlas - D957 | Schubert, Franz | High | Original | Schwanengesang_-_08._Der_Atlas_-_D957_High_Original.pdf
+Schwanengesang - 09. Ihr Bild - D957 | Schubert, Franz | High | Original | Schwanengesang_-_09._Ihr_Bild_-_D957_High_Original.pdf
+Schwanengesang - 10. Das Fischermädchen - D957 | Schubert, Franz | High | Original | Schwanengesang_-_10._Das_Fischermädchen_-_D957_High_Original.pdf
+Schwanengesang - 11. Die Stadt [fr] - D957 | Schubert, Franz | High | Original | Schwanengesang_-_11._Die_Stadt_[fr]_-_D957_High_Original.pdf
+Schwanengesang - 12. Am Meer - D957 | Schubert, Franz | High | Original | Schwanengesang_-_12._Am_Meer_-_D957_High_Original.pdf
+Schwanengesang - 13. Der Doppelgänger - D957 | Schubert, Franz | High | Original | Schwanengesang_-_13._Der_Doppelgänger_-_D957_High_Original.pdf
+Schwanengesang - 14. Die Taubenpost - D957 | Schubert, Franz | High | Original | Schwanengesang_-_14._Die_Taubenpost_-_D957_High_Original.pdf
+Schwanengesang - D744 | Schubert, Franz | Medium | Original | Schwanengesang_-_D744_Medium_Original.pdf
+Schwangesang - D318 | Schubert, Franz | Medium | Original | Schwangesang_-_D318_Medium_Original.pdf
+Schweizerlied - D559 | Schubert, Franz | Medium | Original | Schweizerlied_-_D559_Medium_Original.pdf
+Schwestergruß - D762 | Schubert, Franz | Medium | Original | Schwestergruß_-_D762_Medium_Original.pdf
+Sehnsucht - D123 | Schubert, Franz | Medium | Original | Sehnsucht_-_D123_Medium_Original.pdf
+Sehnsucht - D310 | Schubert, Franz | Medium | Original | Sehnsucht_-_D310_Medium_Original.pdf
+Sehnsucht - D359 | Schubert, Franz | Medium | Original | Sehnsucht_-_D359_Medium_Original.pdf
+Sehnsucht - D481 | Schubert, Franz | Medium | Original | Sehnsucht_-_D481_Medium_Original.pdf
+Sehnsucht - D516 | Schubert, Franz | Medium | Original | Sehnsucht_-_D516_Medium_Original.pdf
+Sehnsucht - D52 | Schubert, Franz | Low | Original | Sehnsucht_-_D52_Low_Original.pdf
+Sehnsucht - D636 | Schubert, Franz | Medium | Original | Sehnsucht_-_D636_Medium_Original.pdf
+Sehnsucht - D879 | Schubert, Franz | Medium | Original | Sehnsucht_-_D879_Medium_Original.pdf
+Sehnsucht der Liebe - D180 | Schubert, Franz | Medium | Original | Sehnsucht_der_Liebe_-_D180_Medium_Original.pdf
+Sei mir gegrüßt - D741 | Schubert, Franz | Medium | Original | Sei_mir_gegrüßt_-_D741_Medium_Original.pdf
+Selige Welt - D743 | Schubert, Franz | Medium | Original | Selige_Welt_-_D743_Medium_Original.pdf
+Seligkeit - D433 | Schubert, Franz | Medium | Original | Seligkeit_-_D433_Medium_Original.pdf
+Selma und Selmar - D286 | Schubert, Franz | Medium | Original | Selma_und_Selmar_-_D286_Medium_Original.pdf
+Seufzer - D198 | Schubert, Franz | Medium | Original | Seufzer_-_D198_Medium_Original.pdf
+Shilrik und Vinvela - D293 | Schubert, Franz | Medium | Original | Shilrik_und_Vinvela_-_D293_Medium_Original.pdf
+Skolie - D306 | Schubert, Franz | Medium | Original | Skolie_-_D306_Medium_Original.pdf
+Skolie - D507 | Schubert, Franz | Medium | Original | Skolie_-_D507_Medium_Original.pdf
+Son fra l'onde - D78 | Schubert, Franz | High | Original | Son_fra_l'onde_-_D78_High_Original.pdf
+Sonett ('Allein, nachdenklich, wie gelähmt vom Krampfe') - D629 | Schubert, Franz | Medium | Original | Sonett_('Allein_nachdenklich_wie_gelähmt_vom_Krampfe')_-_D629_Medium_Original.pdf
+Sonett ('Apollo, lebet noch dein hold Verlangen') - D628 | Schubert, Franz | Medium | Original | Sonett_('Apollo_lebet_noch_dein_hold_Verlangen')_-_D628_Medium_Original.pdf
+Sonett ('Nunmehr, da Himmel, Erde schweigt') - D630 | Schubert, Franz | Medium | Original | Sonett_('Nunmehr_da_Himmel_Erde_schweigt')_-_D630_Medium_Original.pdf
+Sprache der Liebe - D410 | Schubert, Franz | Medium | Original | Sprache_der_Liebe_-_D410_Medium_Original.pdf
+Ständchen (Horch, horch! die Lerch') - D889 | Schubert, Franz | Medium | Original | Ständchen_(Horch_horch!_die_Lerch')_-_D889_Medium_Original.pdf
+Stimme der Liebe (Abendgewölke) - D418 | Schubert, Franz | Medium | Original | Stimme_der_Liebe_(Abendgewölke)_-_D418_Medium_Original.pdf
+Stimme der Liebe (Meine Selinde) - D412 | Schubert, Franz | Medium | Original | Stimme_der_Liebe_(Meine_Selinde)_-_D412_Medium_Original.pdf
+Stimme der Liebe - D187 | Schubert, Franz | Medium | Original | Stimme_der_Liebe_-_D187_Medium_Original.pdf
+Stimme der Liebe - D419 | Schubert, Franz | Medium | Original | Stimme_der_Liebe_-_D419_Medium_Original.pdf
+Suleika I - D720 | Schubert, Franz | Medium | Original | Suleika_I_-_D720_Medium_Original.pdf
+Suleika II - D717 | Schubert, Franz | Medium | Original | Suleika_II_-_D717_Medium_Original.pdf
+Täglich zu singen - D533 | Schubert, Franz | Medium | Original | Täglich_zu_singen_-_D533_Medium_Original.pdf
+Thekla (eine Geisterstimme) - D595 | Schubert, Franz | Medium | Original | Thekla_(eine_Geisterstimme)_-_D595_Medium_Original.pdf
+Thekla (eine Geisterstimme) - D73 | Schubert, Franz | Medium | Original | Thekla_(eine_Geisterstimme)_-_D73_Medium_Original.pdf
+Tiefes Leid - D876 | Schubert, Franz | Medium | Original | Tiefes_Leid_-_D876_Medium_Original.pdf
+Tischlerlied - D274 | Schubert, Franz | Medium | Original | Tischlerlied_-_D274_Medium_Original.pdf
+Tischlied - D234 | Schubert, Franz | Medium | Original | Tischlied_-_D234_Medium_Original.pdf
+Todes-Musik - D758 | Schubert, Franz | Medium | Original | Todes-Musik_-_D758_Medium_Original.pdf
+Totengräber - D44 | Schubert, Franz | Low | Original | Totengräber_-_D44_Low_Original.pdf
+Totengräber-Weise - D869 | Schubert, Franz | Medium | Original | Totengräber-Weise_-_D869_Medium_Original.pdf
+Totengräbers Heimweh - D842 | Schubert, Franz | Medium | Original | Totengräbers_Heimweh_-_D842_Medium_Original.pdf
+Totenkranz für ein Kind - D275 | Schubert, Franz | Medium | Original | Totenkranz_für_ein_Kind_-_D275_Medium_Original.pdf
+Trauer der Liebe - D465 | Schubert, Franz | Medium | Original | Trauer_der_Liebe_-_D465_Medium_Original.pdf
+Trinklied - D148 | Schubert, Franz | Medium | Original | Trinklied_-_D148_Medium_Original.pdf
+Trinklied - D183 | Schubert, Franz | Medium | Original | Trinklied_-_D183_Medium_Original.pdf
+Trinklied - D888 | Schubert, Franz | Medium | Original | Trinklied_-_D888_Medium_Original.pdf
+Trost - D523 | Schubert, Franz | Medium | Original | Trost_-_D523_Medium_Original.pdf
+Trost - D671 | Schubert, Franz | Medium | Original | Trost_-_D671_Medium_Original.pdf
+Trost im Liede - D546 | Schubert, Franz | Medium | Original | Trost_im_Liede_-_D546_Medium_Original.pdf
+Trost im Liede - D546 | Schubert, Franz | Medium | Original | Trost_im_Liede_-_D546_Medium_Original.pdf
+Trost in Tränen - D120 | Schubert, Franz | Medium | Original | Trost_in_Tränen_-_D120_Medium_Original.pdf
+Trost. An Elisa - D97 | Schubert, Franz | Medium | Original | Trost._An_Elisa_-_D97_Medium_Original.pdf
+Über allen Zauber Liebe - D682 | Schubert, Franz | Medium | Original | Über_allen_Zauber_Liebe_-_D682_Medium_Original.pdf
+Über Wildemann - D884 | Schubert, Franz | Medium | Original | Über_Wildemann_-_D884_Medium_Original.pdf
+Um Mitternacht - D862 | Schubert, Franz | Medium | Original | Um_Mitternacht_-_D862_Medium_Original.pdf
+Uraniens Flucht - D554 | Schubert, Franz | Medium | Original | Uraniens_Flucht_-_D554_Medium_Original.pdf
+Vaterlandslied - D287 | Schubert, Franz | Medium | Original | Vaterlandslied_-_D287_Medium_Original.pdf
+Vedi quanto adoro - D510 | Schubert, Franz | High | Original | Vedi_quanto_adoro_-_D510_High_Original.pdf
+Vergebliche Liebe - D177 | Schubert, Franz | Medium | Original | Vergebliche_Liebe_-_D177_Medium_Original.pdf
+Vergißmeinnicht - D792 | Schubert, Franz | Medium | Original | Vergißmeinnicht_-_D792_Medium_Original.pdf
+Verklärung - D59 | Schubert, Franz | Medium | Original | Verklärung_-_D59_Medium_Original.pdf
+Versunken - D715 | Schubert, Franz | Medium | Original | Versunken_-_D715_Medium_Original.pdf
+Viola - D786 | Schubert, Franz | Medium | Original | Viola_-_D786_Medium_Original.pdf
+Vom Mitleiden Mariä - D632 | Schubert, Franz | Medium | Original | Vom_Mitleiden_Mariä_-_D632_Medium_Original.pdf
+Von Ida - D228 | Schubert, Franz | Medium | Original | Von_Ida_-_D228_Medium_Original.pdf
+Vor meiner Wiege - D927 | Schubert, Franz | Medium | Original | Vor_meiner_Wiege_-_D927_Medium_Original.pdf
+Wandrers Nachtlied - D224 | Schubert, Franz | Medium | Original | Wandrers_Nachtlied_-_D224_Medium_Original.pdf
+Wandrers Nachtlied - D768 | Schubert, Franz | Medium | Original | Wandrers_Nachtlied_-_D768_Medium_Original.pdf
+Wehmut - D772 | Schubert, Franz | Medium | Original | Wehmut_-_D772_Medium_Original.pdf
+Wer kauft Liebesgötter - D261 | Schubert, Franz | Medium | Original | Wer_kauft_Liebesgötter_-_D261_Medium_Original.pdf
+Wie Ulfru fischt - D525 | Schubert, Franz | Low | Original | Wie_Ulfru_fischt_-_D525_Low_Original.pdf
+Wiederschein - D639 | Schubert, Franz | Medium | Original | Wiederschein_-_D639_Medium_Original.pdf
+Wiedersehn - D855 | Schubert, Franz | Medium | Original | Wiedersehn_-_D855_Medium_Original.pdf
+Wiegenlied - D304 | Schubert, Franz | Medium | Original | Wiegenlied_-_D304_Medium_Original.pdf
+Wiegenlied - D498 | Schubert, Franz | Medium | Original | Wiegenlied_-_D498_Medium_Original.pdf
+Wiegenlied - D867 | Schubert, Franz | Medium | Original | Wiegenlied_-_D867_Medium_Original.pdf
+Willkommen und Abschied - D767 | Schubert, Franz | Medium | Original | Willkommen_und_Abschied_-_D767_Medium_Original.pdf
+Winterlied - D401 | Schubert, Franz | Medium | Original | Winterlied_-_D401_Medium_Original.pdf
+Winterreise - 00. Full Cycle - D911 | Schubert, Franz | High | Original | Winterreise_-_00._Full_Cycle_-_D911_High_Original.pdf
+Winterreise - 01. Gute Nacht - D911 | Schubert, Franz | High | Original | Winterreise_-_01._Gute_Nacht_-_D911_High_Original.pdf
+Winterreise - 02. Die Wetterfahne - D911 | Schubert, Franz | High | Original | Winterreise_-_02._Die_Wetterfahne_-_D911_High_Original.pdf
+Winterreise - 03. Gefrorne Tränen - D911 | Schubert, Franz | High | Original | Winterreise_-_03._Gefrorne_Tränen_-_D911_High_Original.pdf
+Winterreise - 04. Erstarrung - D911 | Schubert, Franz | High | Original | Winterreise_-_04._Erstarrung_-_D911_High_Original.pdf
+Winterreise - 05. Der Lindenbaum - D911 | Schubert, Franz | High | Original | Winterreise_-_05._Der_Lindenbaum_-_D911_High_Original.pdf
+Winterreise - 06. Wasserflut - D911 | Schubert, Franz | High | Original | Winterreise_-_06._Wasserflut_-_D911_High_Original.pdf
+Winterreise - 07. Auf dem Flusse - D911 | Schubert, Franz | High | Original | Winterreise_-_07._Auf_dem_Flusse_-_D911_High_Original.pdf
+Winterreise - 08. Rückblick - D911 | Schubert, Franz | High | Original | Winterreise_-_08._Rückblick_-_D911_High_Original.pdf
+Winterreise - 09. Irrlicht - D911 | Schubert, Franz | High | Original | Winterreise_-_09._Irrlicht_-_D911_High_Original.pdf
+Winterreise - 10. Rast - D911 | Schubert, Franz | High | Original | Winterreise_-_10._Rast_-_D911_High_Original.pdf
+Winterreise - 11. Frühlingstraum - D911 | Schubert, Franz | High | Original | Winterreise_-_11._Frühlingstraum_-_D911_High_Original.pdf
+Winterreise - 12. Einsamkeit - D911 | Schubert, Franz | High | Original | Winterreise_-_12._Einsamkeit_-_D911_High_Original.pdf
+Winterreise - 13. Die Post - D911 | Schubert, Franz | High | Original | Winterreise_-_13._Die_Post_-_D911_High_Original.pdf
+Winterreise - 14. Der greise Kopf - D911 | Schubert, Franz | High | Original | Winterreise_-_14._Der_greise_Kopf_-_D911_High_Original.pdf
+Winterreise - 15. Die Krähe - D911 | Schubert, Franz | High | Original | Winterreise_-_15._Die_Krähe_-_D911_High_Original.pdf
+Winterreise - 16. Letzte Hoffnung - D911 | Schubert, Franz | High | Original | Winterreise_-_16._Letzte_Hoffnung_-_D911_High_Original.pdf
+Winterreise - 17. Im Dorfe - D911 | Schubert, Franz | High | Original | Winterreise_-_17._Im_Dorfe_-_D911_High_Original.pdf
+Winterreise - 18. Der stürmische Morgen - D911 | Schubert, Franz | High | Original | Winterreise_-_18._Der_stürmische_Morgen_-_D911_High_Original.pdf
+Winterreise - 19. Täuschung - D911 | Schubert, Franz | High | Original | Winterreise_-_19._Täuschung_-_D911_High_Original.pdf
+Winterreise - 20. Der Wegweiser - D911 | Schubert, Franz | High | Original | Winterreise_-_20._Der_Wegweiser_-_D911_High_Original.pdf
+Winterreise - 21. Das Wirtshaus - D911 | Schubert, Franz | High | Original | Winterreise_-_21._Das_Wirtshaus_-_D911_High_Original.pdf
+Winterreise - 22. Mut - D911 | Schubert, Franz | High | Original | Winterreise_-_22._Mut_-_D911_High_Original.pdf
+Winterreise - 23. Die Nebensonnen - D911 | Schubert, Franz | High | Original | Winterreise_-_23._Die_Nebensonnen_-_D911_High_Original.pdf
+Winterreise - 24. Der Leiermann - D911 | Schubert, Franz | High | Original | Winterreise_-_24._Der_Leiermann_-_D911_High_Original.pdf
+Wonne der Wehmuth - D260 | Schubert, Franz | Medium | Original | Wonne_der_Wehmuth_-_D260_Medium_Original.pdf
+Zufriedenheit - D362 | Schubert, Franz | Medium | Original | Zufriedenheit_-_D362_Medium_Original.pdf
+Zufriedenheit - D501 | Schubert, Franz | Medium | Original | Zufriedenheit_-_D501_Medium_Original.pdf
+Zum Punsche - D492 | Schubert, Franz | Medium | Original | Zum_Punsche_-_D492_Medium_Original.pdf
+[Litanei] Am Tage Aller Seelen - D343 | Schubert, Franz | Medium | Original | [Litanei]_Am_Tage_Aller_Seelen_-_D343_Medium_Original.pdf
