@@ -1,4 +1,4 @@
-// 最后更新于 2025-12-26 11:31:12
+// 最后更新于 2025-12-26 11:30:09
 const musicData = [
     {
         "id": 3255,
@@ -46150,7 +46150,7 @@ const musicData = [
         "composer": "Franz Schubert/舒伯特",
         "work": "",
         "language": "德语",
-        "category": "乐谱书/曲集",
+        "category": "艺术歌曲",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "",
@@ -46214,7 +46214,7 @@ const musicData = [
         "composer": "Franz Schubert/舒伯特",
         "work": "",
         "language": "德语",
-        "category": "声乐套曲",
+        "category": "艺术歌曲",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "",
@@ -46230,7 +46230,7 @@ const musicData = [
         "composer": "Franz Schubert/舒伯特",
         "work": "",
         "language": "德语",
-        "category": "声乐套曲",
+        "category": "艺术歌曲",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "",
@@ -49040,21 +49040,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2025-12-26 11:31",
-        "type": "update",
-        "msg": "更新: Schwanengesang, D. 957/天鹅之歌"
-    },
-    {
-        "date": "2025-12-26 11:30",
-        "type": "update",
-        "msg": "更新: Winterreise, D. 911/冬之旅"
-    },
-    {
-        "date": "2025-12-26 11:30",
-        "type": "update",
-        "msg": "更新: Winterreise, D. 911/冬之旅"
-    },
-    {
         "date": "2025-12-26 11:30",
         "type": "update",
         "msg": "更新: Die schöne Müllerin/美丽的磨坊女"
@@ -50043,5 +50028,20 @@ const changeLog = [
         "date": "2025-12-21 20:03",
         "type": "add",
         "msg": "添加: Lied der Mignon ('So laßt mich scheinen') - D877"
+    },
+    {
+        "date": "2025-12-21 20:03",
+        "type": "add",
+        "msg": "添加: Lied der Mignon ('Nur wer die Sehnsucht kennt') - D877"
+    },
+    {
+        "date": "2025-12-21 20:03",
+        "type": "add",
+        "msg": "添加: Lied der Mignon ('Heiß mich nicht reden') - D877"
+    },
+    {
+        "date": "2025-12-21 20:03",
+        "type": "add",
+        "msg": "添加: Lied der Liebe - D109"
     }
 ];
