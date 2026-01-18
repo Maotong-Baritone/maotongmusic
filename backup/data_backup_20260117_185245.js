@@ -1,21 +1,5 @@
-// 最后更新于 2026-01-17 18:58:21
+// 最后更新于 2026-01-17 18:38:39
 const musicData = [
-    {
-        "id": 3256,
-        "title": "清教徒/I puritani",
-        "composer": "Vincenzo Bellini/贝利尼",
-        "work": "",
-        "language": "意大利语",
-        "category": "歌剧总谱",
-        "sub_category": "",
-        "voice_count": "",
-        "voice_types": "",
-        "tonality": "",
-        "description": "",
-        "filename": "歌剧总谱/1768701501132_pdf",
-        "date": "2026-01-17",
-        "has_lyrics": false
-    },
     {
         "id": 3255,
         "title": "[Litanei] Am Tage Aller Seelen - D343",
@@ -9742,6 +9726,22 @@ const musicData = [
         "description": "",
         "filename": "声乐作品/艺术歌曲/1766372490556_Abendbilder_-_D650_Medium_Original.pdf",
         "date": "2025-12-21",
+        "has_lyrics": false
+    },
+    {
+        "id": 2647,
+        "title": "I puritani/清教徒",
+        "composer": "Vincenzo Bellini/贝利尼",
+        "work": "",
+        "language": "意大利语",
+        "category": "歌剧总谱",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "",
+        "filename": "歌剧总谱/1766297279202_pdf",
+        "date": "2025-12-20",
         "has_lyrics": false
     },
     {
@@ -49040,16 +49040,6 @@ const musicData = [
 ];
 const changeLog = [
     {
-        "date": "2026-01-17 18:58",
-        "type": "add",
-        "msg": "添加: 清教徒/I puritani"
-    },
-    {
-        "date": "2026-01-17 18:52",
-        "type": "delete",
-        "msg": "删除: I puritani/清教徒"
-    },
-    {
         "date": "2026-01-17 18:38",
         "type": "update",
         "msg": "更新: O mon Dieu sur la terre/噢，大地上的上帝"
@@ -50043,5 +50033,15 @@ const changeLog = [
         "date": "2025-12-21 20:03",
         "type": "add",
         "msg": "添加: Liedesend' - D473"
+    },
+    {
+        "date": "2025-12-21 20:03",
+        "type": "add",
+        "msg": "添加: Lied in der Abwesenheit - D416"
+    },
+    {
+        "date": "2025-12-21 20:03",
+        "type": "add",
+        "msg": "添加: Lied eines Schiffers an die Dioskuren - D360"
     }
 ];

@@ -510,6 +510,11 @@ window.showLogModal = function() {
     modal.show();
 }
 
+window.showSponsorModal = function() {
+    const modal = new bootstrap.Modal(document.getElementById('sponsorModal'));
+    modal.show();
+}
+
 window.openLyricsReader = async function() {
     if (!currentLyricsId) return;
     

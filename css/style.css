@@ -211,3 +211,11 @@ footer {
     .responsive-col-left { height: 100% !important; overflow-y: auto !important; border-right: 1px solid #dee2e6 !important; border-bottom: none !important; }
     .responsive-col-right { height: 100% !important; }
 }
+
+/* 赞助二维码图片效果 */
+#sponsorModal img {
+    transition: transform 0.3s ease;
+}
+#sponsorModal img:hover {
+    transform: scale(1.05);
+}

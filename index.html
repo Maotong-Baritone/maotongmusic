@@ -42,6 +42,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showSponsorModal()">❤️ 赞助</button>
+                    </li>
+                    <li class="nav-item">
                         <a href="contact.html" class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start">👋 联系我</a>
                     </li>
                     <li class="nav-item">
@@ -277,6 +280,35 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sponsorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-0 bg-light justify-content-center position-relative">
+                    <h5 class="modal-title fw-bold font-serif text-primary">❤️ 支持本站</h5>
+                    <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 bg-white">
+                    <p class="text-muted mb-4 small">维护网站不易，您的支持是我最大的动力！<br>所有打赏将用于服务器维护与乐谱整理。</p>
+                    
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                         <div class="p-3 bg-light rounded-3 border" style="max-width: 260px;">
+                            <img src="img/wechat_pay.jpg" class="img-fluid rounded mb-2" alt="微信支付">
+                            <div class="small fw-bold text-success"><span class="fs-5 align-middle me-1">💬</span>微信支付</div>
+                         </div>
+                         <!-- 预留支付宝位置
+                         <div class="p-3 bg-light rounded-3 border" style="max-width: 260px;">
+                            <img src="img/alipay.jpg" class="img-fluid rounded mb-2" alt="支付宝">
+                            <div class="small fw-bold text-primary"><span class="fs-5 align-middle me-1">🟦</span>支付宝</div>
+                         </div>
+                         -->
+                    </div>
+                    
+                    <p class="small text-muted fst-italic mt-2 mb-0">感谢每一位热爱音乐的朋友！🌹</p>
                 </div>
             </div>
         </div>
