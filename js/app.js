@@ -183,6 +183,44 @@ function initStatsAndDropdowns() {
     document.querySelectorAll('.count-badge').forEach(badge => { const cat = badge.getAttribute('data-cat'); const count = musicData.filter(m => m.category === cat).length; badge.innerText = count; if(count === 0) badge.classList.add('opacity-25'); });
 }
 
+function renderRecent() {
+    const recentContainer = document.getElementById('recentList');
+    if (!recentContainer) return;
+
+    // Default: Sort by ID descending (newest first)
+    const recentItems = [...musicData].sort((a, b) => b.id - a.id).slice(0, 6);
+
+    let html = '';
+    recentItems.forEach(item => {
+        let badgeClass = getCategoryClass(item.category);
+        const isFav = favorites.has(item.id);
+        const favIcon = isFav ? '❤️' : '🤍';
+        const favClass = isFav ? 'text-danger' : 'text-muted';
+
+        html += `
+        <div class="col">
+            <div class="card h-100 shadow-sm hover-card border-0" onclick="openDetail(${item.id})" style="cursor: pointer; transition: transform 0.2s;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge ${badgeClass}">${item.category}</span>
+                        <small class="text-muted" style="font-size: 0.75rem;">${item.date || ''}</small>
+                    </div>
+                    <h6 class="card-title fw-bold text-dark mb-1 font-serif text-truncate" title="${item.title}">${item.title}</h6>
+                    <div class="text-secondary small mb-2 text-truncate" title="${item.composer}">${item.composer}</div>
+                    ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${item.work}">选自: ${item.work}</div>` : ''}
+                </div>
+                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" onclick="toggleFavorite(${item.id}, event)" title="收藏">${favIcon}</button>
+                    <span class="badge bg-light text-secondary border">${item.language || '-'}</span>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+
+    recentContainer.innerHTML = html;
+}
+
 function applyFilters() {
     filters.composer = document.getElementById('composerInput').value; 
     filters.language = document.getElementById('languageSelect').value;
@@ -335,4 +373,173 @@ window.resetFilters = () => {
     document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); applyFilters(); 
 };
 
-// ... (Rest of the file)
+function renderPaginationControls(pages) {
+    const ul = document.getElementById('paginationUl');
+    let html = '';
+    
+    // Previous Button
+    html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+        <a class="page-link border-0" href="#" onclick="changePage(${currentPage - 1}); return false;">&laquo;</a>
+    </li>`;
+
+    // Page Numbers (Smart display)
+    const maxVisible = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let endPage = Math.min(pages, startPage + maxVisible - 1);
+
+    if (endPage - startPage + 1 < maxVisible) {
+        startPage = Math.max(1, endPage - maxVisible + 1);
+    }
+
+    if (startPage > 1) {
+        html += `<li class="page-item"><a class="page-link border-0" href="#" onclick="changePage(1); return false;">1</a></li>`;
+        if (startPage > 2) html += `<li class="page-item disabled"><span class="page-link border-0">...</span></li>`;
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
+            <a class="page-link border-0 ${i === currentPage ? 'fw-bold shadow-sm' : ''}" href="#" onclick="changePage(${i}); return false;">${i}</a>
+        </li>`;
+    }
+
+    if (endPage < pages) {
+        if (endPage < pages - 1) html += `<li class="page-item disabled"><span class="page-link border-0">...</span></li>`;
+        html += `<li class="page-item"><a class="page-link border-0" href="#" onclick="changePage(${pages}); return false;">${pages}</a></li>`;
+    }
+
+    // Next Button
+    html += `<li class="page-item ${currentPage === pages ? 'disabled' : ''}">
+        <a class="page-link border-0" href="#" onclick="changePage(${currentPage + 1}); return false;">&raquo;</a>
+    </li>`;
+
+    ul.innerHTML = html;
+}
+
+window.changePage = function(page) {
+    if (page < 1) return;
+    currentPage = page;
+    applyFilters();
+    document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
+}
+
+window.openDetail = function(id) {
+    const item = musicData.find(m => m.id === id);
+    if (!item) return;
+
+    document.getElementById('mTitle').innerText = item.title;
+    document.getElementById('mComposer').innerText = item.composer;
+    document.getElementById('mWork').innerText = item.work || "";
+    document.getElementById('mLanguage').innerText = item.language || "-";
+    document.getElementById('mCategory').innerText = item.category;
+    document.getElementById('mSubCat').innerText = item.sub_category || "-";
+    document.getElementById('mVoice').innerText = item.voice_types || item.voice_count || "-";
+    document.getElementById('mTonality').innerText = item.tonality || "-";
+    document.getElementById('mDate').innerText = item.date || "-";
+
+    const descCard = document.getElementById('descCard');
+    if (item.description) {
+        document.getElementById('mDescription').innerText = item.description;
+        descCard.style.display = 'block';
+    } else {
+        descCard.style.display = 'none';
+    }
+
+    const dlBtn = document.getElementById('mDownload');
+    // Ensure filename is properly encoded
+    const encodedFilename = item.filename.split('/').map(part => encodeURIComponent(part)).join('/');
+    dlBtn.href = `scores/${encodedFilename}`; 
+
+    const preview = document.getElementById('mPreview');
+    const noPreview = document.getElementById('noPreview');
+    if (item.filename.toLowerCase().endsWith('.pdf')) {
+         preview.src = `scores/${encodedFilename}#toolbar=0&view=FitH`;
+         preview.style.display = 'block';
+         noPreview.style.display = 'none';
+    } else {
+         preview.style.display = 'none';
+         noPreview.style.display = 'flex';
+    }
+
+    currentLyricsId = item.id;
+    const lyricBtn = document.getElementById('btnReadLyrics');
+    if (item.has_lyrics) {
+        lyricBtn.style.display = 'block';
+    } else {
+        lyricBtn.style.display = 'none';
+    }
+
+    const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+    modal.show();
+}
+
+window.filterCategory = function(cat, btn) {
+    filters.category = cat;
+    currentPage = 1;
+    document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat'));
+    if (btn) btn.classList.add('active-cat');
+    document.getElementById('listTitle').innerText = cat === 'all' ? '📚 乐谱目录' : `📂 ${cat}`;
+    document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
+    applyFilters();
+}
+
+window.showLogModal = function() {
+    const modalBody = document.getElementById('logBody');
+    if (changeLog.length === 0) {
+        modalBody.innerHTML = '<p class="text-muted text-center">暂无更新记录。</p>';
+    } else {
+        let html = '<div class="list-group list-group-flush">';
+        changeLog.slice(0, 50).forEach(log => {
+            let icon = '🔧';
+            let color = 'text-muted';
+            if (log.type === 'add') { icon = '✨'; color = 'text-success'; }
+            else if (log.type === 'update') { icon = '📝'; color = 'text-primary'; }
+            
+            html += `
+            <div class="list-group-item px-0">
+                <div class="d-flex w-100 justify-content-between">
+                    <small class="${color} fw-bold">${icon} ${log.type.toUpperCase()}</small>
+                    <small class="text-muted">${log.date}</small>
+                </div>
+                <p class="mb-1 small">${log.msg}</p>
+            </div>`;
+        });
+        html += '</div>';
+        modalBody.innerHTML = html;
+    }
+    const modal = new bootstrap.Modal(document.getElementById('logModal'));
+    modal.show();
+}
+
+window.openLyricsReader = async function() {
+    if (!currentLyricsId) return;
+    
+    const transText = document.getElementById('readerTransText');
+    const origText = document.getElementById('readerOriginalText');
+    
+    transText.innerHTML = '<div class="text-center mt-5"><div class="spinner-border text-secondary"></div></div>';
+    origText.innerHTML = '<div class="text-center mt-5"><div class="spinner-border text-secondary"></div></div>';
+    
+    const modal = new bootstrap.Modal(document.getElementById('readerModal'));
+    modal.show();
+    
+    try {
+        const res = await fetch(`lyrics/${currentLyricsId}.json?v=${new Date().getTime()}`);
+        if (!res.ok) throw new Error("Lyrics not found");
+        const data = await res.json();
+        
+        document.getElementById('readerTitle').innerText = data.title || "歌词/剧本";
+        document.getElementById('readerComposer').innerText = data.composer || "";
+        
+        const formatText = (text) => {
+             if (!text) return "<span class='text-muted fst-italic'>（暂无内容）</span>";
+             return text.replace(/\\n/g, "<br>");
+        };
+
+        origText.innerHTML = `<div class="p-4" style="font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.6;">${formatText(data.original)}</div>`;
+        transText.innerHTML = `<div class="p-4" style="font-family: 'Noto Sans SC', sans-serif; font-size: 1.05rem; line-height: 1.8;">${formatText(data.translation)}</div>`;
+        
+    } catch (e) {
+        origText.innerHTML = `<div class="alert alert-warning m-4">无法加载原文: ${e.message}</div>`;
+        transText.innerHTML = `<div class="alert alert-warning m-4">无法加载译文</div>`;
+    }
+}
