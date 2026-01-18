@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #264653;
+    --accent-color: #2a9d8f;
+    --bg-color: #fdfbf7;
+    --card-bg: #ffffff;
+    --text-main: #2b2d42;
+}
+
+body { 
+    background-color: var(--bg-color); 
+    font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif; 
+    color: var(--text-main);
+    display: flex; flex-direction: column; min-height: 100vh; 
+}
+
+.font-serif { font-family: 'Playfair Display', 'Noto Serif SC', serif; }
+.container { flex: 1; }
+
+/* 导航栏 */
+.navbar {
+    background: rgba(38, 70, 83, 0.98) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(38, 70, 83, 0.95);
+        padding: 1rem;
+        border-radius: 0 0 12px 12px;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Hero 区域 */
+.hero-section {
+    background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
+    padding: 4rem 0 6rem 0;
+    margin-bottom: -4rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .hero-section { padding: 3rem 0 5rem 0; margin-bottom: -3rem; }
+    .display-4 { font-size: 2.5rem; }
+}
+.hero-section::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 20%),
+                      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 20%);
+    pointer-events: none;
+}
+
+/* 搜索框 */
+.search-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px; border-radius: 50px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    backdrop-filter: blur(5px);
+}
+
+/* 分类卡片 */
+.category-card {
+    border: none; border-radius: 16px; transition: all 0.3s ease;
+    height: 100%; background: var(--card-bg); 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 10px 20px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+.category-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+.cat-header { 
+    padding: 1.2rem; font-family: 'Noto Serif SC', serif; font-weight: 700; 
+    font-size: 1.1rem; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.list-group-item {
+    border: none; border-bottom: 1px solid #f0f0f0; padding: 0.8rem 1.2rem;
+    transition: background 0.2s; font-size: 0.95rem;
+}
+.list-group-item:hover { background-color: #f8f9fa; color: var(--primary-color); }
+.list-group-item.active-cat {
+    background-color: #eef4ed; color: #264653; font-weight: bold; border-left: 4px solid #2a9d8f;
+}
+
+.content-section { margin-top: 3rem; }
+
+.table-custom thead th {
+    border-top: none; border-bottom: 2px solid #e9ecef;
+    font-family: 'Noto Serif SC', serif; color: #6c757d; font-weight: 700;
+}
+.hover-row { transition: background 0.2s; border-radius: 8px; }
+.hover-row:hover { background-color: #fffcf5; cursor: pointer; }
+
+footer { 
+    background-color: #264653; color: #a8b2d1; padding: 4rem 0; margin-top: 5rem; font-family: 'Noto Serif SC', serif;
+}
+
+/* 标签颜色配置 */
+.badge-custom { font-weight: 500; border-radius: 4px; padding: 0.4em 0.6em; }
+.bg-opera { background-color: #d00000; color: white; }
+.bg-opera-ens { background-color: #6a040f; color: white; }
+.bg-oratorio { background-color: #7209b7; color: white; }
+.bg-artsong { background-color: #4895ef; color: white; }
+.bg-artsong-ens { background-color: #bde0fe; color: #264653; }
+.bg-musical { background-color: #f72585; color: white; }
+.bg-musical-ens { background-color: #560bad; color: white; }
+.bg-solo { background-color: #f48c06; color: white; }
+.bg-choral { background-color: #2a9d8f; color: white; }
+.bg-cycle { background-color: #0096c7; color: white; }
+.bg-book { background-color: #9d6b53; color: white; }
+.bg-inst-solo { background-color: #e9c46a; color: #333; }
+.bg-chamber { background-color: #606c38; color: white; }
+.bg-score-opera { background-color: #212529; color: #f8f9fa; }
+.bg-score-orch { background-color: #343a40; color: #f8f9fa; }
+.bg-score-con { background-color: #495057; color: white; }
+.bg-score-sac { background-color: #6c757d; color: white; }
+.bg-other { background-color: #e9ecef; color: #495057; }
+
+.btn-primary { background-color: #2a9d8f; border-color: #2a9d8f; }
+.btn-primary:hover { background-color: #21867a; border-color: #21867a; }
+.btn-outline-primary { color: #2a9d8f; border-color: #2a9d8f; }
+.btn-outline-primary:hover { background-color: #2a9d8f; border-color: #2a9d8f; color: white; }
+
+.reader-text-col { padding: 2rem; font-size: 1.05rem; line-height: 1.8; }
+.reader-original { background-color: #fff; border-right: 1px solid #eee; color: #333; font-family: 'Playfair Display', serif; }
+.reader-translation { background-color: #fafafa; color: #555; font-family: 'Noto Sans SC', sans-serif; }
+
+@media (max-width: 768px) {
+    .reader-original { border-right: none; border-bottom: 1px solid #eee; height: 50% !important; }
+    .reader-translation { height: 50% !important; }
+}
+
+/* 响应式 Modal CSS */
+.responsive-modal-content { height: auto !important; min-height: auto !important; overflow: visible !important; border-radius: 16px; }
+.responsive-modal-body { height: auto !important; }
+.responsive-row { height: auto !important; display: flex; flex-direction: column; }
+.responsive-col-left { height: auto !important; overflow: visible !important; border-right: none !important; border-bottom: 1px solid #dee2e6; }
+.responsive-col-right { height: 60vh !important; min-height: 400px; }
+
+@media (min-width: 992px) {
+    .responsive-modal-content { height: 90vh !important; overflow: hidden !important; }
+    .responsive-modal-body { height: 100% !important; }
+    .responsive-row { height: 100% !important; flex-direction: row; }
+    .responsive-col-left { height: 100% !important; overflow-y: auto !important; border-right: 1px solid #dee2e6 !important; border-bottom: none !important; }
+    .responsive-col-right { height: 100% !important; }
+}

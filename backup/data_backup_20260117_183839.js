@@ -1,4 +1,4 @@
-// 最后更新于 2026-01-17 18:38:39
+// 最后更新于 2026-01-17 18:38:07
 const musicData = [
     {
         "id": 3255,
@@ -15525,13 +15525,13 @@ const musicData = [
         "title": "O mon Dieu sur la terre/噢，大地上的上帝",
         "composer": "Gaetano Donizetti/多尼采蒂",
         "work": "Dom Sébastien, roi de Portugal/葡萄牙国王塞巴斯蒂安",
-        "language": "法语",
+        "language": "意大利语",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
         "voice_types": "Mezzo-soprano/次女高音",
         "tonality": "",
-        "description": "原文: O mon Dieu sur la terre\r\n出处: Dom Sébastien, roi de Portugal\r\nVoice: Mezzo-soprano",
+        "description": "原文: O mon Dieu sur la terre\n出处: Dom Sébastien, roi de Portugal\nVoice: Mezzo-soprano",
         "filename": "歌剧咏叹调/1766098293569_O_mon_Dieu_sur_la_terre.pdf",
         "date": "2025-12-18",
         "has_lyrics": false
@@ -49042,11 +49042,6 @@ const changeLog = [
     {
         "date": "2026-01-17 18:38",
         "type": "update",
-        "msg": "更新: O mon Dieu sur la terre/噢，大地上的上帝"
-    },
-    {
-        "date": "2026-01-17 18:38",
-        "type": "update",
         "msg": "更新: Sol adoré de la patrie/祖国敬爱的太阳"
     },
     {
@@ -50043,5 +50038,10 @@ const changeLog = [
         "date": "2025-12-21 20:03",
         "type": "add",
         "msg": "添加: Lied eines Schiffers an die Dioskuren - D360"
+    },
+    {
+        "date": "2025-12-21 20:03",
+        "type": "add",
+        "msg": "添加: Lied eines Kriegers - D822"
     }
 ];
