@@ -4,6 +4,20 @@
     --bg-color: #fdfbf7;
     --card-bg: #ffffff;
     --text-main: #2b2d42;
+    --text-muted: #6c757d;
+    --border-color: #e9ecef;
+    --navbar-bg: rgba(38, 70, 83, 0.98);
+}
+
+[data-theme="dark"] {
+    --primary-color: #48cae4;
+    --accent-color: #48cae4;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #e0e0e0;
+    --text-muted: #adb5bd;
+    --border-color: #2d2d2d;
+    --navbar-bg: rgba(20, 20, 20, 0.98);
 }
 
 body { 
@@ -11,6 +25,59 @@ body {
     font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif; 
     color: var(--text-main);
     display: flex; flex-direction: column; min-height: 100vh; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+[data-theme="dark"] .list-group-item {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border-color: var(--border-color);
+}
+[data-theme="dark"] .list-group-item:hover {
+    background-color: #2d2d2d;
+    color: var(--primary-color);
+}
+[data-theme="dark"] .modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+}
+[data-theme="dark"] .modal-header, 
+[data-theme="dark"] .modal-footer {
+    border-color: var(--border-color);
+}
+[data-theme="dark"] .bg-light {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+[data-theme="dark"] .table-custom thead th {
+    background-color: #2d2d2d;
+    color: #adb5bd;
+    border-color: var(--border-color);
+}
+[data-theme="dark"] .table-custom tbody tr:hover {
+    background-color: #2d2d2d;
+}
+[data-theme="dark"] .table {
+    color: var(--text-main);
+}
+[data-theme="dark"] .form-control, 
+[data-theme="dark"] .form-select {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+}
+[data-theme="dark"] .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+[data-theme="dark"] .bg-white {
+    background-color: var(--card-bg) !important;
+}
+[data-theme="dark"] .text-dark {
+    color: #e0e0e0 !important;
 }
 
 .font-serif { font-family: 'Playfair Display', 'Noto Serif SC', serif; }
@@ -18,13 +85,13 @@ body {
 
 /* 导航栏 */
 .navbar {
-    background: rgba(38, 70, 83, 0.98) !important;
+    background: var(--navbar-bg) !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 @media (max-width: 991px) {
     .navbar-collapse {
-        background: rgba(38, 70, 83, 0.95);
+        background: var(--navbar-bg);
         padding: 1rem;
         border-radius: 0 0 12px 12px;
         margin-top: 0.5rem;
