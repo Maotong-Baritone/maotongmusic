@@ -1,53 +1,5 @@
-// 最后更新于 2026-02-06 19:00:35
+// 最后更新于 2026-02-06 18:52:25
 const musicData = [
-    {
-        "id": 3326,
-        "title": "Riconosci in questo amplesso/在这拥抱中相认吧",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "六重唱",
-        "voice_types": "Soprano/Mezzo-Soprano/Tenor/Baritone/Bass-Bartione/Bass",
-        "tonality": "",
-        "description": "演唱声部： 六重唱（Sextet），包含以下角色：\r\n\r\nSusanna（苏珊娜）：女高音（Soprano）\r\n\r\nMarcellina（玛切利娜）：次女高音（Mezzo-soprano）\r\n\r\nDon Curzio（多恩·库尔齐奥，法官）：男高音（Tenor）\r\n\r\nIl Conte（伯爵）：男中音（Baritone）\r\n\r\nFigaro（费加罗）：男低音/男低中音（Bass/Bass-Baritone）\r\n\r\nBartolo（巴尔托洛）：男低音（Bass）",
-        "filename": "歌剧重唱/1770429635422_Sextet_Riconosci_in_questo_amplesso_LE_NOZZE_DI_FIGARO.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3325,
-        "title": "Via, resti servita/您先请，不用客气",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "次女高音（Mezzo-soprano）与 女高音（Soprano）\r\nMarcellina（玛切利娜）：次女高音（年长的女管家）。\r\nSusanna（苏珊娜）：女高音（伯爵夫人的女仆）。",
-        "filename": "歌剧重唱/1770429452852_Duet_Via_resti_servita_LE_NOZZE_DI_FIGARO.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3324,
-        "title": "Sì, fuggire: a noi non resta/是的，只有逃离",
-        "composer": "Vincenzo Bellini/贝利尼",
-        "work": "I Capuleti e i Montecchi/卡普莱特家族与蒙太奇家族",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "次女高音（Mezzo-soprano）与 女高音（Soprano）\r\nRomeo（罗密欧）：次女高音（这是一个裤装角色，由女性扮演男性）。\r\nGiulietta（朱丽叶）：女高音。\r\n这是第一幕中极其感人的一段二重唱。罗密欧潜入卡普莱特家，恳求朱丽叶跟他一起私奔，逃离即将到来的强迫婚姻（她父亲要把她嫁给提伯尔特）和家族仇恨。\r\n在这段歌词中，罗密欧急切地劝说（“Sì, fuggire: a noi non resta...” - 是的，除了逃跑我们已无路可走），而朱丽叶虽然深爱罗密欧，却因为对父亲的责任和家族荣誉而感到挣扎和犹豫。这段音乐展现了贝利尼典型的长线条旋律，非常考验歌唱家的气息控制和连贯性（Legato）。",
-        "filename": "歌剧重唱/1770429377002_Duet_Si_fuggire__a_noi_non_resta__I_CAPULETI_E_I_MONTECHI.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
     {
         "id": 3323,
         "title": "Cherry Duet/樱桃二重唱（Suzel, buon dì/苏泽尔，日安）",
@@ -70,7 +22,7 @@ const musicData = [
         "composer": "Wolfgang Amadeus Mozart/莫扎特",
         "work": "La clemenza di Tito, K.621/狄托的仁慈",
         "language": "意大利语",
-        "category": "歌剧重唱",
+        "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "二重唱",
         "voice_types": "Soprano/Mezzo-Soprano",
@@ -50159,26 +50111,6 @@ const musicData = [
     }
 ];
 const changeLog = [
-    {
-        "date": "2026-02-06 19:00",
-        "type": "add",
-        "msg": "添加: Riconosci in questo amplesso/在这拥抱中相认吧"
-    },
-    {
-        "date": "2026-02-06 18:57",
-        "type": "add",
-        "msg": "添加: Via, resti servita/您先请，不用客气"
-    },
-    {
-        "date": "2026-02-06 18:56",
-        "type": "add",
-        "msg": "添加: Sì, fuggire: a noi non resta/是的，只有逃离"
-    },
-    {
-        "date": "2026-02-06 18:52",
-        "type": "update",
-        "msg": "更新: Ah, perdona al primo affetto"
-    },
     {
         "date": "2026-02-06 18:52",
         "type": "add",

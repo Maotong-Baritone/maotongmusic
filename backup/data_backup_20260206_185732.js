@@ -1,37 +1,5 @@
-// 最后更新于 2026-02-06 19:00:35
+// 最后更新于 2026-02-06 18:56:17
 const musicData = [
-    {
-        "id": 3326,
-        "title": "Riconosci in questo amplesso/在这拥抱中相认吧",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "六重唱",
-        "voice_types": "Soprano/Mezzo-Soprano/Tenor/Baritone/Bass-Bartione/Bass",
-        "tonality": "",
-        "description": "演唱声部： 六重唱（Sextet），包含以下角色：\r\n\r\nSusanna（苏珊娜）：女高音（Soprano）\r\n\r\nMarcellina（玛切利娜）：次女高音（Mezzo-soprano）\r\n\r\nDon Curzio（多恩·库尔齐奥，法官）：男高音（Tenor）\r\n\r\nIl Conte（伯爵）：男中音（Baritone）\r\n\r\nFigaro（费加罗）：男低音/男低中音（Bass/Bass-Baritone）\r\n\r\nBartolo（巴尔托洛）：男低音（Bass）",
-        "filename": "歌剧重唱/1770429635422_Sextet_Riconosci_in_questo_amplesso_LE_NOZZE_DI_FIGARO.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3325,
-        "title": "Via, resti servita/您先请，不用客气",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "次女高音（Mezzo-soprano）与 女高音（Soprano）\r\nMarcellina（玛切利娜）：次女高音（年长的女管家）。\r\nSusanna（苏珊娜）：女高音（伯爵夫人的女仆）。",
-        "filename": "歌剧重唱/1770429452852_Duet_Via_resti_servita_LE_NOZZE_DI_FIGARO.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
     {
         "id": 3324,
         "title": "Sì, fuggire: a noi non resta/是的，只有逃离",
@@ -50159,16 +50127,6 @@ const musicData = [
     }
 ];
 const changeLog = [
-    {
-        "date": "2026-02-06 19:00",
-        "type": "add",
-        "msg": "添加: Riconosci in questo amplesso/在这拥抱中相认吧"
-    },
-    {
-        "date": "2026-02-06 18:57",
-        "type": "add",
-        "msg": "添加: Via, resti servita/您先请，不用客气"
-    },
     {
         "date": "2026-02-06 18:56",
         "type": "add",
