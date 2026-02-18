@@ -314,6 +314,8 @@ function renderPaginationTable(data) {
                 <p class="text-muted mb-4">您可以尝试点击下方按钮，去国际数据库搜索 "<strong>${searchVal}</strong>"：</p>
                 <div class="d-flex justify-content-center flex-wrap gap-3" style="max-width: 800px; margin: 0 auto;">
                     <a href="https://imslp.org/index.php?title=Special:Search&fulltext=Search&search=${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-dark rounded-pill px-4 shadow-sm">🎼 搜 IMSLP</a>
+                    <a href="https://www.google.com/search?q=site:kassiadatabase.com+${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-secondary rounded-pill px-4 shadow-sm">👩‍🎤 搜 Kassia</a>
+                    <a href="https://www.google.com/search?q=site:songhelix.chpc.utah.edu+${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-warning rounded-pill px-4 shadow-sm">🧬 搜 SongHelix</a>
                     <a href="https://www.google.com/search?q=site:opera-arias.com+${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-danger rounded-pill px-4 shadow-sm">🎭 搜 Opera-Arias</a>
                     <a href="https://www.google.com/search?q=site:theoperadatabase.com+${encodeURIComponent(searchVal)}+filetype:pdf" target="_blank" class="btn btn-outline-info rounded-pill px-4 shadow-sm">📂 搜 Opera Database</a>
                     <a href="https://www.oxfordsong.org/search?q=${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-success rounded-pill px-4 shadow-sm">📜 搜 Oxford Song</a>
