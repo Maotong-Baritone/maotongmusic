@@ -1,4 +1,4 @@
-// 最后更新于 2026-03-06 09:30:02
+// 最后更新于 2026-02-06 19:00:35
 const musicData = [
     {
         "id": 3326,
@@ -49899,7 +49899,7 @@ const musicData = [
         "composer": "Franz Schubert/舒伯特",
         "work": "",
         "language": "拉丁语",
-        "category": "宗教声乐作品总谱",
+        "category": "艺术歌曲",
         "voice_count": "",
         "voice_types": "",
         "tonality": "G大调",
@@ -50159,11 +50159,6 @@ const musicData = [
     }
 ];
 const changeLog = [
-    {
-        "date": "2026-03-06 09:30",
-        "type": "update",
-        "msg": "更新: Mass No. 2 in G major, D 167/G大调弥撒"
-    },
     {
         "date": "2026-02-06 19:00",
         "type": "add",
