@@ -1,4 +1,4 @@
-// 最后更新于 2026-07-15 09:15:35
+// 最后更新于 2026-07-15 09:13:18
 const musicData = [
     {
         "id": 3326,
@@ -661,7 +661,7 @@ const musicData = [
         "title": "Vot' uzhe gode proshel'/已经一年过去了",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -837,7 +837,7 @@ const musicData = [
         "title": "O, chto mne mat, chto mne otets!/母亲对我意味着什么，父亲对我意味着什么",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Kuznets Vakula (Vakula the Smith)",
-        "language": "俄语",
+        "language": "Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -853,7 +853,7 @@ const musicData = [
         "title": "O shto mne mat', shto mne otets'/母亲对我意味着什么，父亲对我意味着什么",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -869,7 +869,7 @@ const musicData = [
         "title": "Vot uzhe god preshyol i snova/一年已经过去，又是……",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Kuznets Vakula (Vakula the Smith)",
-        "language": "俄语",
+        "language": "Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -885,7 +885,7 @@ const musicData = [
         "title": "Prosti, nebesnoye sozdane/原谅我，上天的造物",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -965,7 +965,7 @@ const musicData = [
         "title": "Ja imeni jejo ne znayu (Herman's Arioso)/我不知道她的名字（赫尔曼的小咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -1029,7 +1029,7 @@ const musicData = [
         "title": "Poka ne nachalisya tantsy/在舞会开始前",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -1109,7 +1109,7 @@ const musicData = [
         "title": "Utzh polnoch blizitsya... Ach, istomilas ja gorem (Lisa's Scene and Arioso)/午夜已近……啊，我已忧伤憔悴（丽莎的场景与咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -26786,7 +26786,7 @@ const musicData = [
     },
     {
         "id": 1601,
-        "title": "Hai gia vinta la causa… Vedro mentr'io sospiro/你已赢得了诉讼",
+        "title": "Hai gia vinta la causa… Vedro mentr'io sospiro/你们已经赢了官司……难道让我眼睁睁看着你们得意",
         "composer": "Wolfgang Amadeus Mozart/莫扎特",
         "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
         "language": "意大利语",
@@ -46997,7 +46997,7 @@ const musicData = [
         "title": "Carmina Burana/布兰诗歌",
         "composer": "Carl Orff/奥尔夫",
         "work": "",
-        "language": "拉丁语",
+        "language": "拉丁语、中古高地德语、古普罗旺斯语",
         "category": "音乐会咏叹调/世俗康塔塔",
         "sub_category": "世俗康塔塔/清唱剧式康塔塔",
         "voice_count": "",
@@ -50062,9 +50062,7 @@ const musicData = [
         "tonality": "",
         "filename": "宗教声乐作品/Estuans_interius-.pdf",
         "date": "2025-12-13",
-        "has_lyrics": false,
-        "sub_category": "",
-        "description": ""
+        "has_lyrics": false
     },
     {
         "id": 8,
@@ -50161,61 +50159,6 @@ const musicData = [
     }
 ];
 const changeLog = [
-    {
-        "date": "2026-07-15 09:15",
-        "type": "update",
-        "msg": "更新: Carmina Burana/布兰诗歌"
-    },
-    {
-        "date": "2026-07-15 09:15",
-        "type": "update",
-        "msg": "更新: Estuans interius"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Poka ne nachalisya tantsy/在舞会开始前"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: O shto mne mat', shto mne otets'/母亲对我意味着什么，父亲对我意味着什么"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: O, chto mne mat, chto mne otets!/母亲对我意味着什么，父亲对我意味着什么"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Hai gia vinta la causa… Vedro mentr'io sospiro/你已赢得了诉讼"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Vot uzhe god preshyol i snova/一年已经过去，又是……"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Vot' uzhe gode proshel'/已经一年过去了"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Utzh polnoch blizitsya... Ach, istomilas ja gorem (Lisa's Scene and Arioso)/午夜已近……啊，我已忧伤憔悴（丽莎的场景与咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Ja imeni jejo ne znayu (Herman's Arioso)/我不知道她的名字（赫尔曼的小咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Prosti, nebesnoye sozdane/原谅我，上天的造物"
-    },
     {
         "date": "2026-07-15 09:13",
         "type": "update",

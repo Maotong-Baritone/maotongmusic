@@ -1,4 +1,4 @@
-// 最后更新于 2026-07-15 09:15:35
+// 最后更新于 2026-07-15 09:14:47
 const musicData = [
     {
         "id": 3326,
@@ -1029,7 +1029,7 @@ const musicData = [
         "title": "Poka ne nachalisya tantsy/在舞会开始前",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -46997,7 +46997,7 @@ const musicData = [
         "title": "Carmina Burana/布兰诗歌",
         "composer": "Carl Orff/奥尔夫",
         "work": "",
-        "language": "拉丁语",
+        "language": "拉丁语、中古高地德语、古普罗旺斯语",
         "category": "音乐会咏叹调/世俗康塔塔",
         "sub_category": "世俗康塔塔/清唱剧式康塔塔",
         "voice_count": "",
@@ -50062,9 +50062,7 @@ const musicData = [
         "tonality": "",
         "filename": "宗教声乐作品/Estuans_interius-.pdf",
         "date": "2025-12-13",
-        "has_lyrics": false,
-        "sub_category": "",
-        "description": ""
+        "has_lyrics": false
     },
     {
         "id": 8,
@@ -50161,21 +50159,6 @@ const musicData = [
     }
 ];
 const changeLog = [
-    {
-        "date": "2026-07-15 09:15",
-        "type": "update",
-        "msg": "更新: Carmina Burana/布兰诗歌"
-    },
-    {
-        "date": "2026-07-15 09:15",
-        "type": "update",
-        "msg": "更新: Estuans interius"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Poka ne nachalisya tantsy/在舞会开始前"
-    },
     {
         "date": "2026-07-15 09:14",
         "type": "update",
