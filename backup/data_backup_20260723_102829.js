@@ -1,21 +1,5 @@
-// 最后更新于 2026-07-23 10:28:29
+// 最后更新于 2026-07-15 09:15:35
 const musicData = [
-    {
-        "id": 3327,
-        "title": "春风你为何唤醒我/Pourquoi me reveiller",
-        "composer": "Jules Massenet/儒勒 马斯内",
-        "work": "Werther/维特",
-        "language": "法语",
-        "category": "歌剧咏叹调",
-        "sub_category": "",
-        "voice_count": "",
-        "voice_types": "Baritone/男中音",
-        "tonality": "男中版",
-        "description": "男中音版本春风你为何唤醒我",
-        "filename": "歌剧咏叹调/1784824109182_889060395-Pourquoi-Me-Reveiller.pdf",
-        "date": "2026-07-23",
-        "has_lyrics": false
-    },
     {
         "id": 3326,
         "title": "Riconosci in questo amplesso/在这拥抱中相认吧",
@@ -50177,11 +50161,6 @@ const musicData = [
     }
 ];
 const changeLog = [
-    {
-        "date": "2026-07-23 10:28",
-        "type": "add",
-        "msg": "添加: 春风你为何唤醒我/Pourquoi me reveiller"
-    },
     {
         "date": "2026-07-15 09:15",
         "type": "update",
