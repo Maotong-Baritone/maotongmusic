@@ -14,8 +14,9 @@ load_dotenv()
 
 # ===⚙️ 配置区域 ===
 SCORES_DIR = 'scores'
-LYRICS_DIR = 'lyrics'          # 歌词存放目录
-DATA_FILE = 'js/data.js'
+LYRICS_DIR = 'lyrics'
+DATA_FILE = 'data.json'      # 修改这里：指向根目录的 data.json
+LOGS_FILE = 'logs.json'      # 新增这里：指向根目录的 logs.json
 BACKUP_DIR = 'backup'
 ALLOWED_EXTENSIONS = {'pdf', 'midi', 'mp3', 'sib', 'musx'}
 
@@ -41,34 +42,41 @@ def login_required(f):
 def load_data_and_log():
     music_data = []
     change_log = []
+    
+    # 读取 data.json
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
-            content = f.read()
-        match_data = re.search(r'const musicData = (\[.*?\]);', content, re.DOTALL)
-        if match_data:
-            try: music_data = json.loads(match_data.group(1))
-            except json.JSONDecodeError as e: print(f"Error decoding musicData: {e}")
-        match_log = re.search(r'const changeLog = (\[.*?\]);', content, re.DOTALL)
-        if match_log:
-            try: change_log = json.loads(match_log.group(1))
-            except json.JSONDecodeError as e: print(f"Error decoding changeLog: {e}")
+            try:
+                music_data = json.load(f)
+            except json.JSONDecodeError as e:
+                print(f"Error decoding musicData: {e}")
+                
+    # 读取 logs.json
+    if os.path.exists(LOGS_FILE):
+        with open(LOGS_FILE, 'r', encoding='utf-8') as f:
+            try:
+                change_log = json.load(f)
+            except json.JSONDecodeError as e:
+                print(f"Error decoding changeLog: {e}")
+                
     return music_data, change_log
 
 def save_all(music_data, change_log):
+    # 备份机制
     if os.path.exists(DATA_FILE):
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        shutil.copy(DATA_FILE, os.path.join(BACKUP_DIR, f"data_backup_{timestamp}.js"))
+        shutil.copy(DATA_FILE, os.path.join(BACKUP_DIR, f"data_backup_{timestamp}.json"))
 
+    # 按照 ID 倒序排列乐谱
     music_data.sort(key=lambda x: x['id'], reverse=True)
-    json_music = json.dumps(music_data, indent=4, ensure_ascii=False)
-    json_log = json.dumps(change_log, indent=4, ensure_ascii=False)
     
-    js_content = f"// 最后更新于 {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-    js_content += f"const musicData = {json_music};\n"
-    js_content += f"const changeLog = {json_log};\n"
-    
+    # 写入纯 JSON 到 data.json
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
-        f.write(js_content)
+        json.dump(music_data, f, indent=4, ensure_ascii=False)
+        
+    # 写入纯 JSON 到 logs.json
+    with open(LOGS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(change_log, f, indent=4, ensure_ascii=False)
 
 def add_log(change_log, action_type, message):
     today = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")

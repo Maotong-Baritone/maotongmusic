@@ -1,8 +1,23 @@
-// 最后更新于 2026-07-23 10:28:29
-const musicData = [
+[
     {
-        "id": 3327,
-        "title": "春风你为何唤醒我/Pourquoi me reveiller",
+        "id": 3323,
+        "title": "七步诗",
+        "composer": "刘思军",
+        "work": "洛神",
+        "language": "中文",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "Tenor/男高音",
+        "tonality": "",
+        "description": "天津歌舞剧院原创歌剧《洛神》选段，男高音咏叹调",
+        "filename": "歌剧咏叹调/1786333982642_-.pdf",
+        "date": "2026-08-09",
+        "has_lyrics": false
+    },
+    {
+        "id": 3322,
+        "title": "Pourquoi me reveiller/春风你为何唤醒我",
         "composer": "Jules Massenet/儒勒 马斯内",
         "work": "Werther/维特",
         "language": "法语",
@@ -11,121 +26,9 @@ const musicData = [
         "voice_count": "",
         "voice_types": "Baritone/男中音",
         "tonality": "男中版",
-        "description": "男中音版本春风你为何唤醒我",
-        "filename": "歌剧咏叹调/1784824109182_Pourquoi-Me-Reveiller.pdf",
-        "date": "2026-07-23",
-        "has_lyrics": false
-    },
-    {
-        "id": 3326,
-        "title": "Riconosci in questo amplesso/在这拥抱中相认吧",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "六重唱",
-        "voice_types": "Soprano/Mezzo-Soprano/Tenor/Baritone/Bass-Bartione/Bass",
-        "tonality": "",
-        "description": "演唱声部： 六重唱（Sextet），包含以下角色：\r\n\r\nSusanna（苏珊娜）：女高音（Soprano）\r\n\r\nMarcellina（玛切利娜）：次女高音（Mezzo-soprano）\r\n\r\nDon Curzio（多恩·库尔齐奥，法官）：男高音（Tenor）\r\n\r\nIl Conte（伯爵）：男中音（Baritone）\r\n\r\nFigaro（费加罗）：男低音/男低中音（Bass/Bass-Baritone）\r\n\r\nBartolo（巴尔托洛）：男低音（Bass）",
-        "filename": "歌剧重唱/1770429635422_Sextet_Riconosci_in_questo_amplesso_LE_NOZZE_DI_FIGARO.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3325,
-        "title": "Via, resti servita/您先请，不用客气",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "次女高音（Mezzo-soprano）与 女高音（Soprano）\r\nMarcellina（玛切利娜）：次女高音（年长的女管家）。\r\nSusanna（苏珊娜）：女高音（伯爵夫人的女仆）。",
-        "filename": "歌剧重唱/1770429452852_Duet_Via_resti_servita_LE_NOZZE_DI_FIGARO.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3324,
-        "title": "Sì, fuggire: a noi non resta/是的，只有逃离",
-        "composer": "Vincenzo Bellini/贝利尼",
-        "work": "I Capuleti e i Montecchi/卡普莱特家族与蒙太奇家族",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "次女高音（Mezzo-soprano）与 女高音（Soprano）\r\nRomeo（罗密欧）：次女高音（这是一个裤装角色，由女性扮演男性）。\r\nGiulietta（朱丽叶）：女高音。\r\n这是第一幕中极其感人的一段二重唱。罗密欧潜入卡普莱特家，恳求朱丽叶跟他一起私奔，逃离即将到来的强迫婚姻（她父亲要把她嫁给提伯尔特）和家族仇恨。\r\n在这段歌词中，罗密欧急切地劝说（“Sì, fuggire: a noi non resta...” - 是的，除了逃跑我们已无路可走），而朱丽叶虽然深爱罗密欧，却因为对父亲的责任和家族荣誉而感到挣扎和犹豫。这段音乐展现了贝利尼典型的长线条旋律，非常考验歌唱家的气息控制和连贯性（Legato）。",
-        "filename": "歌剧重唱/1770429377002_Duet_Si_fuggire__a_noi_non_resta__I_CAPULETI_E_I_MONTECHI.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3323,
-        "title": "Cherry Duet/樱桃二重唱（Suzel, buon dì/苏泽尔，日安）",
-        "composer": "Pietro Mascagni/埃特罗·马斯卡尼",
-        "work": "L'amico Fritz/友人弗利兹",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Tenor/Soprano",
-        "tonality": "",
-        "description": "演唱声部： 女高音（Soprano）与 男高音（Tenor）\r\nSuzel（苏泽尔）：女高音，佃户的女儿。\r\nFritz（弗利兹）：男高音，富有的地主，也是苏泽尔父亲的房东。",
-        "filename": "歌剧重唱/1770429145172_Duet_Cherry_Duet_Lamico_Fritz.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3322,
-        "title": "Ah, perdona al primo affetto",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "La clemenza di Tito, K.621/狄托的仁慈",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "演唱声部： 次女高音（Mezzo-soprano）与 女高音（Soprano）\r\nAnnio（安尼奥）：次女高音（这是一个裤装角色/反串角色，即由女性扮演的男性角色）。\r\nServilia（塞尔维利亚）：女高音。",
-        "filename": "歌剧咏叹调/1770428983953_Duet_Ah_perdona_al_primo_affetto_LA_CLEMENZA_DI_TITO_.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3321,
-        "title": "Ah guarda sorella",
-        "composer": "Wolfgang Amadeus Mozart/莫扎特",
-        "work": "Così fan tutte, K.588/女人心",
-        "language": "意大利语",
-        "category": "歌剧重唱",
-        "sub_category": "",
-        "voice_count": "二重唱",
-        "voice_types": "Soprano/Mezzo-Soprano",
-        "tonality": "",
-        "description": "第一幕中的一首二重唱。\r\n演唱声部：女高音（Soprano）与 次女高音（Mezzo-soprano）\r\nFiordiligi（菲奥迪莉姬）：女高音\r\nDorabella（多拉贝拉）：次女高音",
-        "filename": "歌剧重唱/1770428850247_Duet_Ah_guarda_sorella_COSI_FAN_TUTTE.pdf",
-        "date": "2026-02-06",
-        "has_lyrics": false
-    },
-    {
-        "id": 3320,
-        "title": "All’afflitto è dolce il pianto/对于悲伤者，哭泣是甜蜜的",
-        "composer": "Gaetano Donizetti/多尼采蒂",
-        "work": "Roberto Devereux/罗伯托·德弗罗",
-        "language": "意大利语",
-        "category": "歌剧咏叹调",
-        "sub_category": "",
-        "voice_count": "",
-        "voice_types": "Mezzo-soprano/次女高音",
-        "tonality": "",
-        "description": "",
-        "filename": "歌剧咏叹调/1770428503488_Aria_Allafflitto_e_dolce_il_pianto_ROBERTO_DEVEREUX.pdf",
-        "date": "2026-02-06",
+        "description": "男中音版本春风你为何唤醒我，由作曲家本人改编的不同的旋律。",
+        "filename": "歌剧咏叹调/1786333879929_Pourquoi-Me-Reveiller.pdf",
+        "date": "2026-08-09",
         "has_lyrics": false
     },
     {
@@ -341,7 +244,7 @@ const musicData = [
         "title": "Chto nasha zhisnj/我们的生活是什么",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -437,7 +340,7 @@ const musicData = [
         "title": "Adièu, forêts/告别，森林",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Orleanskaya deva (The Maid of Orléans)",
-        "language": "法语",
+        "language": "French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -469,7 +372,7 @@ const musicData = [
         "title": "Ja vas lyublyu (Prince's Aria)/我爱你（王子的咏叹调/耶列茨基公爵的咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -677,7 +580,7 @@ const musicData = [
         "title": "Vot' uzhe gode proshel'/已经一年过去了",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -709,7 +612,7 @@ const musicData = [
         "title": "Baryshnyam vashego kruga (Governess's Aria)/你们圈子里的年轻女士们（女家庭教师的咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -725,7 +628,7 @@ const musicData = [
         "title": "Podrugi milyye (Pauline's Aria)/亲爱的伙伴们（波琳的咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -757,7 +660,7 @@ const musicData = [
         "title": "Yesli b milyye devitsy (Tomsky's Song)/如果可爱的少女们（汤姆斯基的歌曲）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -805,7 +708,7 @@ const musicData = [
         "title": "Ja lyublyu vas (Lensky's Arioso)/我爱你（连斯基的小咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Eugene Onegin",
-        "language": "俄语",
+        "language": "Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -821,7 +724,7 @@ const musicData = [
         "title": "Otkuda eti slezy, zachem one?/这些泪水从何而来，为了什么？",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -853,7 +756,7 @@ const musicData = [
         "title": "O, chto mne mat, chto mne otets!/母亲对我意味着什么，父亲对我意味着什么",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Kuznets Vakula (Vakula the Smith)",
-        "language": "俄语",
+        "language": "Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -869,7 +772,7 @@ const musicData = [
         "title": "O shto mne mat', shto mne otets'/母亲对我意味着什么，父亲对我意味着什么",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -885,7 +788,7 @@ const musicData = [
         "title": "Vot uzhe god preshyol i snova/一年已经过去，又是……",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Kuznets Vakula (Vakula the Smith)",
-        "language": "俄语",
+        "language": "Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -901,7 +804,7 @@ const musicData = [
         "title": "Prosti, nebesnoye sozdane/原谅我，上天的造物",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -917,7 +820,7 @@ const musicData = [
         "title": "Zhit'ye u nas i umirat' ne nado/我们的生活不需要死去",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Oprichnik",
-        "language": "俄语",
+        "language": "Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -981,7 +884,7 @@ const musicData = [
         "title": "Ja imeni jejo ne znayu (Herman's Arioso)/我不知道她的名字（赫尔曼的小咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -1045,7 +948,7 @@ const musicData = [
         "title": "Poka ne nachalisya tantsy/在舞会开始前",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Cherevichki (The Golden Slippers)",
-        "language": "俄语",
+        "language": "Russian    /  German",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -1061,7 +964,7 @@ const musicData = [
         "title": "Odnazhdy v Versale (Tomsky's Ballad)/曾在凡尔赛（汤姆斯基的叙事曲）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "French    /  Russian",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -1125,7 +1028,7 @@ const musicData = [
         "title": "Utzh polnoch blizitsya... Ach, istomilas ja gorem (Lisa's Scene and Arioso)/午夜已近……啊，我已忧伤憔悴（丽莎的场景与咏叹调）",
         "composer": "Pyotr Ilyich Tchaikovsky/柴可夫斯基",
         "work": "Pikovaya dama (The Queen of Spades)",
-        "language": "俄语",
+        "language": "Russian    /  French",
         "category": "歌剧咏叹调",
         "sub_category": "",
         "voice_count": "",
@@ -26802,7 +26705,7 @@ const musicData = [
     },
     {
         "id": 1601,
-        "title": "Hai gia vinta la causa… Vedro mentr'io sospiro/你已赢得了诉讼",
+        "title": "Hai gia vinta la causa… Vedro mentr'io sospiro/你们已经赢了官司……难道让我眼睁睁看着你们得意",
         "composer": "Wolfgang Amadeus Mozart/莫扎特",
         "work": "Le nozze di Figaro, K.492/费加罗的婚礼",
         "language": "意大利语",
@@ -47013,7 +46916,7 @@ const musicData = [
         "title": "Carmina Burana/布兰诗歌",
         "composer": "Carl Orff/奥尔夫",
         "work": "",
-        "language": "拉丁语",
+        "language": "拉丁语、中古高地德语、古普罗旺斯语",
         "category": "音乐会咏叹调/世俗康塔塔",
         "sub_category": "世俗康塔塔/清唱剧式康塔塔",
         "voice_count": "",
@@ -49915,7 +49818,7 @@ const musicData = [
         "composer": "Franz Schubert/舒伯特",
         "work": "",
         "language": "拉丁语",
-        "category": "宗教声乐作品总谱",
+        "category": "艺术歌曲",
         "voice_count": "",
         "voice_types": "",
         "tonality": "G大调",
@@ -50078,9 +49981,7 @@ const musicData = [
         "tonality": "",
         "filename": "宗教声乐作品/Estuans_interius-.pdf",
         "date": "2025-12-13",
-        "has_lyrics": false,
-        "sub_category": "",
-        "description": ""
+        "has_lyrics": false
     },
     {
         "id": 8,
@@ -50175,166 +50076,4 @@ const musicData = [
         "voice_types": "Baritone/男中音",
         "tonality": ""
     }
-];
-const changeLog = [
-    {
-        "date": "2026-07-23 10:28",
-        "type": "add",
-        "msg": "添加: 春风你为何唤醒我/Pourquoi me reveiller"
-    },
-    {
-        "date": "2026-07-15 09:15",
-        "type": "update",
-        "msg": "更新: Carmina Burana/布兰诗歌"
-    },
-    {
-        "date": "2026-07-15 09:15",
-        "type": "update",
-        "msg": "更新: Estuans interius"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Poka ne nachalisya tantsy/在舞会开始前"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: O shto mne mat', shto mne otets'/母亲对我意味着什么，父亲对我意味着什么"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: O, chto mne mat, chto mne otets!/母亲对我意味着什么，父亲对我意味着什么"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Hai gia vinta la causa… Vedro mentr'io sospiro/你已赢得了诉讼"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Vot uzhe god preshyol i snova/一年已经过去，又是……"
-    },
-    {
-        "date": "2026-07-15 09:14",
-        "type": "update",
-        "msg": "更新: Vot' uzhe gode proshel'/已经一年过去了"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Utzh polnoch blizitsya... Ach, istomilas ja gorem (Lisa's Scene and Arioso)/午夜已近……啊，我已忧伤憔悴（丽莎的场景与咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Ja imeni jejo ne znayu (Herman's Arioso)/我不知道她的名字（赫尔曼的小咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Prosti, nebesnoye sozdane/原谅我，上天的造物"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Otkuda eti slezy, zachem one?/这些泪水从何而来，为了什么？"
-    },
-    {
-        "date": "2026-07-15 09:13",
-        "type": "update",
-        "msg": "更新: Yesli b milyye devitsy (Tomsky's Song)/如果可爱的少女们（汤姆斯基的歌曲）"
-    },
-    {
-        "date": "2026-07-15 09:12",
-        "type": "update",
-        "msg": "更新: Podrugi milyye (Pauline's Aria)/亲爱的伙伴们（波琳的咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:12",
-        "type": "update",
-        "msg": "更新: Baryshnyam vashego kruga (Governess's Aria)/你们圈子里的年轻女士们（女家庭教师的咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:12",
-        "type": "update",
-        "msg": "更新: Ja lyublyu vas (Lensky's Arioso)/我爱你（连斯基的小咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:12",
-        "type": "update",
-        "msg": "更新: Ja vas lyublyu (Prince's Aria)/我爱你（王子的咏叹调/耶列茨基公爵的咏叹调）"
-    },
-    {
-        "date": "2026-07-15 09:12",
-        "type": "update",
-        "msg": "更新: Zhit'ye u nas i umirat' ne nado/我们的生活不需要死去"
-    },
-    {
-        "date": "2026-07-15 09:12",
-        "type": "update",
-        "msg": "更新: Chto nasha zhisnj/我们的生活是什么"
-    },
-    {
-        "date": "2026-07-15 09:11",
-        "type": "update",
-        "msg": "更新: Odnazhdy v Versale (Tomsky's Ballad)/曾在凡尔赛（汤姆斯基的叙事曲）"
-    },
-    {
-        "date": "2026-07-15 09:11",
-        "type": "update",
-        "msg": "更新: Adièu, forêts/告别，森林"
-    },
-    {
-        "date": "2026-03-06 09:30",
-        "type": "update",
-        "msg": "更新: Mass No. 2 in G major, D 167/G大调弥撒"
-    },
-    {
-        "date": "2026-02-06 19:00",
-        "type": "add",
-        "msg": "添加: Riconosci in questo amplesso/在这拥抱中相认吧"
-    },
-    {
-        "date": "2026-02-06 18:57",
-        "type": "add",
-        "msg": "添加: Via, resti servita/您先请，不用客气"
-    },
-    {
-        "date": "2026-02-06 18:56",
-        "type": "add",
-        "msg": "添加: Sì, fuggire: a noi non resta/是的，只有逃离"
-    },
-    {
-        "date": "2026-02-06 18:52",
-        "type": "update",
-        "msg": "更新: Ah, perdona al primo affetto"
-    },
-    {
-        "date": "2026-02-06 18:52",
-        "type": "add",
-        "msg": "添加: Cherry Duet/樱桃二重唱（Suzel, buon dì/苏泽尔，日安）"
-    },
-    {
-        "date": "2026-02-06 18:49",
-        "type": "add",
-        "msg": "添加: Ah, perdona al primo affetto"
-    },
-    {
-        "date": "2026-02-06 18:48",
-        "type": "update",
-        "msg": "更新: Ah guarda sorella"
-    },
-    {
-        "date": "2026-02-06 18:47",
-        "type": "add",
-        "msg": "添加: Ah guarda sorella"
-    },
-    {
-        "date": "2026-02-06 18:41",
-        "type": "add",
-        "msg": "添加: All’afflitto è dolce il pianto/对于悲伤者，哭泣是甜蜜的"
-    }
-];
+]
