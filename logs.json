@@ -1,5 +1,15 @@
 [
     {
+        "date": "2026-08-19 13:43",
+        "type": "add",
+        "msg": "添加: Dies Bildnis ist bezaubernd schön/这肖像多么迷人"
+    },
+    {
+        "date": "2026-08-19 13:42",
+        "type": "delete",
+        "msg": "删除: Dies Bildnis ist bezaubernd schön/这肖像多么迷人"
+    },
+    {
         "date": "2026-08-09 22:21",
         "type": "update",
         "msg": "更新: Carmina Burana/布兰诗歌"
@@ -498,15 +508,5 @@
         "date": "2025-12-21 20:04",
         "type": "add",
         "msg": "添加: Totengräbers Heimweh - D842"
-    },
-    {
-        "date": "2025-12-21 20:04",
-        "type": "add",
-        "msg": "添加: Totengräber-Weise - D869"
-    },
-    {
-        "date": "2025-12-21 20:04",
-        "type": "add",
-        "msg": "添加: Totengräber - D44"
     }
 ]
