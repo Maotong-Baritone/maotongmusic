@@ -7,7 +7,47 @@ let currentPage = 1;
 const itemsPerPage = 15;
 let currentLyricsId = null;
 let fuseInstance = null; // Fuse.js 实例
-let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+let favorites = loadStoredFavorites();
+
+function loadStoredFavorites() {
+    try {
+        const stored = JSON.parse(localStorage.getItem('favorites') || '[]');
+        return new Set(Array.isArray(stored) ? stored.map(String) : []);
+    } catch (error) {
+        console.warn('收藏数据已损坏，已自动重置。', error);
+        localStorage.removeItem('favorites');
+        return new Set();
+    }
+}
+
+function getStableId(item) {
+    return String(item.public_id || item.id);
+}
+
+function persistFavorites() {
+    localStorage.setItem('favorites', JSON.stringify([...favorites]));
+}
+
+function migrateLegacyFavorites() {
+    const migrated = new Set();
+    favorites.forEach(storedId => {
+        const directMatch = musicData.find(item => getStableId(item) === storedId);
+        const legacyMatch = musicData.find(item => String(item.id) === storedId);
+        const match = directMatch || legacyMatch;
+        if (match) migrated.add(getStableId(match));
+    });
+    favorites = migrated;
+    persistFavorites();
+}
+
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
 
 const composerAliases = {
     "Mozart": "莫扎特 Wolfgang Amadeus 沃尔夫冈 阿玛迪乌斯", "Dvořák": "Dvorak 德沃夏克 Antonin 安东宁",
@@ -17,6 +57,14 @@ const composerAliases = {
     "Fauré": "Faure 福雷 Gabriel", "Debussy": "德彪西 Claude", "Verdi": "威尔第 Giuseppe",
     "Puccini": "普契尼 Giacomo", "Wagner": "瓦格纳 Richard", "Mahler": "马勒 Gustav", "Strauss": "施特劳斯 Richard Johann"
 };
+
+function composerSearchText(composer) {
+    const normalizedComposer = normalizeStr(composer);
+    const aliases = Object.entries(composerAliases)
+        .filter(([name]) => normalizedComposer.includes(normalizeStr(name)))
+        .map(([, value]) => value);
+    return `${composer || ''} ${aliases.join(' ')}`.trim();
+}
 
 const categoryMap = { 
     '歌剧咏叹调': 'bg-opera', 
@@ -74,13 +122,14 @@ function updateThemeIcon(isDark) {
 
 window.toggleFavorite = function(id, event) {
     if (event) event.stopPropagation();
+    id = String(id);
     
     if (favorites.has(id)) {
         favorites.delete(id);
     } else {
         favorites.add(id);
     }
-    localStorage.setItem('favorites', JSON.stringify([...favorites]));
+    persistFavorites();
     
     // 如果当前正在查看收藏夹，移除后需要刷新列表
     if (filters.favoritesOnly) {
@@ -110,8 +159,8 @@ async function loadData() {
 
     try {
         const [dataRes, logRes] = await Promise.all([
-            fetch('data.json?v=' + new Date().getTime()),
-            fetch('logs.json?v=' + new Date().getTime())
+            fetch('data.json', { cache: 'no-cache' }),
+            fetch('logs.json', { cache: 'no-cache' })
         ]);
 
         if (!dataRes.ok) throw new Error("无法加载乐谱数据");
@@ -131,11 +180,7 @@ async function loadData() {
             };
             // 预处理数据：将别名加入到 composer 字段中以便搜索
             const searchableData = musicData.map(item => {
-                let extra = "";
-                if (composerAliases[item.composer]) {
-                    extra = composerAliases[item.composer];
-                }
-                return { ...item, _search_composer_alias: extra }; 
+                return { ...item, _search_composer_alias: composerSearchText(item.composer) };
             });
             // 更新 keys 以包含别名
             fuseOptions.keys.push({ name: '_search_composer_alias', weight: 0.3 });
@@ -147,17 +192,26 @@ async function loadData() {
             changeLog = await logRes.json();
         }
 
+        migrateLegacyFavorites();
         initStatsAndDropdowns(); 
         renderRecent(); 
         applyFilters();
 
     } catch (error) {
         console.error(error);
-        listSection.innerHTML = `<div class="alert alert-danger w-100 text-center">数据加载失败: ${error.message}<br>请检查 data.json 文件是否存在。</div>`;
+        listSection.innerHTML = `<div class="alert alert-danger w-100 text-center">数据加载失败: ${escapeHtml(error.message)}<br>请检查 data.json 文件是否存在。</div>`;
     }
 }
 
 function normalizeStr(str) { if (!str) return ""; return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+function compareByDateDesc(a, b) {
+    const dateCompare = String(b.date || '').localeCompare(String(a.date || ''));
+    return dateCompare || Number(b.id) - Number(a.id);
+}
+function compareByDateAsc(a, b) {
+    const dateCompare = String(a.date || '').localeCompare(String(b.date || ''));
+    return dateCompare || Number(a.id) - Number(b.id);
+}
 function performSearch() { const val = document.getElementById('searchInput').value; filters.search = val; if(val.length > 0) { document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); } applyFilters(); }
 
 function initStatsAndDropdowns() {
@@ -167,18 +221,16 @@ function initStatsAndDropdowns() {
     const voiceTypes = [...new Set(musicData.map(m => m.voice_types).filter(v => v))].sort();
     document.getElementById('statComposer').innerText = composers.length;
     
-    const composerDataList = document.getElementById('composerOptions'); 
-    composerDataList.innerHTML = ''; // 清空
-    composers.forEach(c => { composerDataList.innerHTML += `<option value="${c}">`; });
+    const composerDataList = document.getElementById('composerOptions');
+    composerDataList.replaceChildren(...composers.map(value => new Option('', value)));
     
     const langSelect = document.getElementById('languageSelect'); 
     // 保留第一个option
-    langSelect.innerHTML = '<option value="all">🌐 语言</option>';
-    languages.forEach(l => { langSelect.innerHTML += `<option value="${l}">${l}</option>`; });
+    langSelect.replaceChildren(new Option('🌐 语言', 'all'));
+    languages.forEach(value => langSelect.add(new Option(value, value)));
     
     const voiceDataList = document.getElementById('voiceOptions'); 
-    voiceDataList.innerHTML = '';
-    voiceTypes.forEach(v => { voiceDataList.innerHTML += `<option value="${v}">`; });
+    voiceDataList.replaceChildren(...voiceTypes.map(value => new Option('', value)));
     
     document.querySelectorAll('.count-badge').forEach(badge => { const cat = badge.getAttribute('data-cat'); const count = musicData.filter(m => m.category === cat).length; badge.innerText = count; if(count === 0) badge.classList.add('opacity-25'); });
 }
@@ -187,31 +239,31 @@ function renderRecent() {
     const recentContainer = document.getElementById('recentList');
     if (!recentContainer) return;
 
-    // Default: Sort by ID descending (newest first)
-    const recentItems = [...musicData].sort((a, b) => b.id - a.id).slice(0, 6);
+    const recentItems = [...musicData].sort(compareByDateDesc).slice(0, 6);
 
     let html = '';
     recentItems.forEach(item => {
         let badgeClass = getCategoryClass(item.category);
-        const isFav = favorites.has(item.id);
+        const stableId = getStableId(item);
+        const isFav = favorites.has(stableId);
         const favIcon = isFav ? '❤️' : '🤍';
         const favClass = isFav ? 'text-danger' : 'text-muted';
 
         html += `
         <div class="col">
-            <div class="card h-100 shadow-sm hover-card border-0" onclick="openDetail(${item.id})" style="cursor: pointer; transition: transform 0.2s;">
+            <div class="card h-100 shadow-sm hover-card border-0" onclick="openDetail('${stableId}')" style="cursor: pointer; transition: transform 0.2s;">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge ${badgeClass}">${item.category}</span>
-                        <small class="text-muted" style="font-size: 0.75rem;">${item.date || ''}</small>
+                        <span class="badge ${badgeClass}">${escapeHtml(item.category)}</span>
+                        <small class="text-muted" style="font-size: 0.75rem;">${escapeHtml(item.date || '')}</small>
                     </div>
-                    <h6 class="card-title fw-bold text-dark mb-1 font-serif text-truncate" title="${item.title}">${item.title}</h6>
-                    <div class="text-secondary small mb-2 text-truncate" title="${item.composer}">${item.composer}</div>
-                    ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${item.work}">选自: ${item.work}</div>` : ''}
+                    <h6 class="card-title fw-bold text-dark mb-1 font-serif text-truncate" title="${escapeHtml(item.title)}">${escapeHtml(item.title)}</h6>
+                    <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(item.composer)}">${escapeHtml(item.composer)}</div>
+                    ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${escapeHtml(item.work)}">选自: ${escapeHtml(item.work)}</div>` : ''}
                 </div>
                 <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" onclick="toggleFavorite(${item.id}, event)" title="收藏">${favIcon}</button>
-                    <span class="badge bg-light text-secondary border">${item.language || '-'}</span>
+                    <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" onclick="toggleFavorite('${stableId}', event)" title="收藏" aria-label="收藏 ${escapeHtml(item.title)}">${favIcon}</button>
+                    <span class="badge bg-light text-secondary border">${escapeHtml(item.language || '-')}</span>
                 </div>
             </div>
         </div>
@@ -231,7 +283,7 @@ function applyFilters() {
     
     // 0. 收藏夹过滤
     if (filters.favoritesOnly) {
-        result = result.filter(item => favorites.has(item.id));
+        result = result.filter(item => favorites.has(getStableId(item)));
     }
 
     // 1. 如果有搜索词，优先使用 Fuse.js 进行模糊搜索
@@ -240,7 +292,7 @@ function applyFilters() {
         result = fuseResults.map(r => r.item);
         // 如果同时在看收藏夹，需要取交集
         if (filters.favoritesOnly) {
-             result = result.filter(item => favorites.has(item.id));
+             result = result.filter(item => favorites.has(getStableId(item)));
         }
     } else if (filters.search) {
         // Fallback: 如果 Fuse 未加载，使用旧的简单搜索
@@ -250,8 +302,7 @@ function applyFilters() {
              const itemComposer = normalizeStr(item.composer); 
              const itemWork = normalizeStr(item.work); 
              const itemDesc = normalizeStr(item.description);
-             let composerKeywords = itemComposer; 
-             if (composerAliases[item.composer]) { composerKeywords += " " + normalizeStr(composerAliases[item.composer]); }
+             let composerKeywords = normalizeStr(composerSearchText(item.composer));
              const fullSearchableText = `${itemTitle} ${composerKeywords} ${itemWork} ${itemDesc}`;
              return fullSearchableText.includes(searchBase);
         });
@@ -262,8 +313,7 @@ function applyFilters() {
     const searchVoice = normalizeStr(filters.voice);
     
     result = result.filter(item => {
-        let composerKeywords = normalizeStr(item.composer); 
-        if (composerAliases[item.composer]) { composerKeywords += " " + normalizeStr(composerAliases[item.composer]); }
+        let composerKeywords = normalizeStr(composerSearchText(item.composer));
         const itemVoice = normalizeStr(item.voice_types);
 
         return (filters.category === 'all' || item.category === filters.category) && 
@@ -279,8 +329,8 @@ function applyFilters() {
     // 如果用户想看“最相关”，我们可以加一个 'relevance' 选项，目前暂不加。
     
     result.sort((a, b) => {
-        if (sortType === 'date_desc') return b.id - a.id; 
-        if (sortType === 'date_asc') return a.id - b.id;
+        if (sortType === 'date_desc') return compareByDateDesc(a, b);
+        if (sortType === 'date_asc') return compareByDateAsc(a, b);
         if (sortType === 'title_asc') return a.title.localeCompare(b.title); 
         if (sortType === 'composer_asc') return a.composer.localeCompare(b.composer); 
         return 0;
@@ -311,15 +361,15 @@ function renderPaginationTable(data) {
             noResult.innerHTML = `
                 <div class="fs-1 mb-3">🧐</div>
                 <h4 class="font-serif mb-3">本地暂无相关乐谱</h4>
-                <p class="text-muted mb-4">您可以尝试点击下方按钮，去国际数据库搜索 "<strong>${searchVal}</strong>"：</p>
+                <p class="text-muted mb-4">您可以尝试点击下方按钮，去国际数据库搜索 "<strong>${escapeHtml(searchVal)}</strong>"：</p>
                 <div class="d-flex justify-content-center flex-wrap gap-3" style="max-width: 800px; margin: 0 auto;">
-                    <a href="https://imslp.org/index.php?title=Special:Search&fulltext=Search&search=${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-dark rounded-pill px-4 shadow-sm">🎼 搜 IMSLP</a>
-                    <a href="https://www.google.com/search?q=site:kassiadatabase.com+${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-secondary rounded-pill px-4 shadow-sm">👩‍🎤 搜 Kassia</a>
-                    <a href="https://www.google.com/search?q=site:songhelix.chpc.utah.edu+${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-warning rounded-pill px-4 shadow-sm">🧬 搜 SongHelix</a>
-                    <a href="https://www.google.com/search?q=site:opera-arias.com+${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-danger rounded-pill px-4 shadow-sm">🎭 搜 Opera-Arias</a>
-                    <a href="https://www.google.com/search?q=site:theoperadatabase.com+${encodeURIComponent(searchVal)}+filetype:pdf" target="_blank" class="btn btn-outline-info rounded-pill px-4 shadow-sm">📂 搜 Opera Database</a>
-                    <a href="https://www.oxfordsong.org/search?q=${encodeURIComponent(searchVal)}" target="_blank" class="btn btn-outline-success rounded-pill px-4 shadow-sm">📜 搜 Oxford Song</a>
-                    <a href="https://www.google.com/search?q=${encodeURIComponent(searchVal)}+filetype:pdf" target="_blank" class="btn btn-outline-primary rounded-pill px-4 shadow-sm">🔍 搜 Google (PDF)</a>
+                    <a href="https://imslp.org/index.php?title=Special:Search&fulltext=Search&search=${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill px-4 shadow-sm">🎼 搜 IMSLP</a>
+                    <a href="https://www.google.com/search?q=site:kassiadatabase.com+${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-pill px-4 shadow-sm">👩‍🎤 搜 Kassia</a>
+                    <a href="https://www.google.com/search?q=site:songhelix.chpc.utah.edu+${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning rounded-pill px-4 shadow-sm">🧬 搜 SongHelix</a>
+                    <a href="https://www.google.com/search?q=site:opera-arias.com+${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger rounded-pill px-4 shadow-sm">🎭 搜 Opera-Arias</a>
+                    <a href="https://www.google.com/search?q=site:theoperadatabase.com+${encodeURIComponent(searchVal)}+filetype:pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info rounded-pill px-4 shadow-sm">📂 搜 Opera Database</a>
+                    <a href="https://www.oxfordsong.org/search?q=${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success rounded-pill px-4 shadow-sm">📜 搜 Oxford Song</a>
+                    <a href="https://www.google.com/search?q=${encodeURIComponent(searchVal)}+filetype:pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 shadow-sm">🔍 搜 Google (PDF)</a>
                 </div>
                 <p class="mt-4 small text-muted">💡 提示：使用作品原名搜索成功率更高</p>
             `;
@@ -337,29 +387,30 @@ function renderPaginationTable(data) {
     let html = '';
     pageData.forEach(item => {
         let badgeClass = getCategoryClass(item.category);
-        let tonalityBadge = item.tonality ? `<span class="badge bg-light text-dark border ms-2" style="font-size:0.7rem; opacity: 0.7;">${item.tonality}</span>` : '';
-        let voiceBadge = item.voice_types ? `<span class="badge bg-secondary ms-1" style="font-size:0.7rem; opacity: 0.8;">${item.voice_types}</span>` : '';
+        let tonalityBadge = item.tonality ? `<span class="badge bg-light text-dark border ms-2" style="font-size:0.7rem; opacity: 0.7;">${escapeHtml(item.tonality)}</span>` : '';
+        let voiceBadge = item.voice_types ? `<span class="badge bg-secondary ms-1" style="font-size:0.7rem; opacity: 0.8;">${escapeHtml(item.voice_types)}</span>` : '';
         let lyricIcon = item.has_lyrics ? `<span class="badge bg-info text-dark ms-1" style="font-size:0.6rem" title="包含歌词/剧本">📖</span>` : '';
-        let subBadge = item.sub_category ? `<span class="badge bg-light text-secondary border ms-1" style="font-size:0.7rem;">${item.sub_category}</span>` : '';
+        let subBadge = item.sub_category ? `<span class="badge bg-light text-secondary border ms-1" style="font-size:0.7rem;">${escapeHtml(item.sub_category)}</span>` : '';
         
         // Favorite Button Logic
-        const isFav = favorites.has(item.id);
+        const stableId = getStableId(item);
+        const isFav = favorites.has(stableId);
         const favIcon = isFav ? '❤️' : '🤍';
         const favClass = isFav ? 'text-danger' : 'text-muted';
 
-        html += `<tr onclick="openDetail(${item.id})" class="hover-row">
+        html += `<tr onclick="openDetail('${stableId}')" class="hover-row">
             <td class="ps-4">
                 <div class="d-flex align-items-center">
-                    <button id="fav-btn-${item.id}" class="btn btn-link p-0 me-3 fs-5 text-decoration-none ${favClass}" style="line-height:1;" onclick="toggleFavorite(${item.id}, event)" title="收藏">${favIcon}</button>
+                    <button id="fav-btn-${stableId}" class="btn btn-link p-0 me-3 fs-5 text-decoration-none ${favClass}" style="line-height:1;" onclick="toggleFavorite('${stableId}', event)" title="收藏" aria-label="收藏 ${escapeHtml(item.title)}">${favIcon}</button>
                     <div>
-                        <div class="fw-bold text-dark" style="font-family: 'Noto Sans SC', sans-serif;">${item.title} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
-                        ${item.work ? `<small class="text-muted fst-italic">选自: ${item.work}</small>` : ''}
+                        <div class="fw-bold text-dark" style="font-family: 'Noto Sans SC', sans-serif;">${escapeHtml(item.title)} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
+                        ${item.work ? `<small class="text-muted fst-italic">选自: ${escapeHtml(item.work)}</small>` : ''}
                     </div>
                 </div>
             </td>
-            <td><span class="fw-medium text-secondary">${item.composer}</span></td>
-            <td>${item.language ? `<span class="text-muted small">${item.language}</span>` : '-'}</td>
-            <td><span class="badge badge-custom ${badgeClass}">${item.category}</span>${subBadge}</td>
+            <td><span class="fw-medium text-secondary">${escapeHtml(item.composer)}</span></td>
+            <td>${item.language ? `<span class="text-muted small">${escapeHtml(item.language)}</span>` : '-'}</td>
+            <td><span class="badge badge-custom ${badgeClass}">${escapeHtml(item.category)}</span>${subBadge}</td>
             <td class="text-end pe-4"><button class="btn btn-sm btn-outline-primary rounded-pill px-3 shadow-sm">查看</button></td>
         </tr>`;
     });
@@ -425,7 +476,8 @@ window.changePage = function(page) {
 }
 
 window.openDetail = function(id) {
-    const item = musicData.find(m => m.id === id);
+    const stableId = String(id);
+    const item = musicData.find(m => getStableId(m) === stableId || String(m.id) === stableId);
     if (!item) return;
 
     document.getElementById('mTitle').innerText = item.title;
@@ -499,10 +551,10 @@ window.showLogModal = function() {
             html += `
             <div class="list-group-item px-0">
                 <div class="d-flex w-100 justify-content-between">
-                    <small class="${color} fw-bold">${icon} ${log.type.toUpperCase()}</small>
-                    <small class="text-muted">${log.date}</small>
+                    <small class="${color} fw-bold">${icon} ${escapeHtml(String(log.type || '').toUpperCase())}</small>
+                    <small class="text-muted">${escapeHtml(log.date)}</small>
                 </div>
-                <p class="mb-1 small">${log.msg}</p>
+                <p class="mb-1 small">${escapeHtml(log.msg)}</p>
             </div>`;
         });
         html += '</div>';
@@ -530,7 +582,7 @@ window.openLyricsReader = async function() {
     modal.show();
     
     try {
-        const res = await fetch(`lyrics/${currentLyricsId}.json?v=${new Date().getTime()}`);
+        const res = await fetch(`lyrics/${encodeURIComponent(currentLyricsId)}.json`, { cache: 'no-cache' });
         if (!res.ok) throw new Error("Lyrics not found");
         const data = await res.json();
         
@@ -539,14 +591,14 @@ window.openLyricsReader = async function() {
         
         const formatText = (text) => {
              if (!text) return "<span class='text-muted fst-italic'>（暂无内容）</span>";
-             return text.replace(/\\n/g, "<br>");
+             return escapeHtml(text).replace(/\r?\n/g, "<br>");
         };
 
         origText.innerHTML = `<div class="p-4" style="font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.6;">${formatText(data.original)}</div>`;
         transText.innerHTML = `<div class="p-4" style="font-family: 'Noto Sans SC', sans-serif; font-size: 1.05rem; line-height: 1.8;">${formatText(data.translation)}</div>`;
         
     } catch (e) {
-        origText.innerHTML = `<div class="alert alert-warning m-4">无法加载原文: ${e.message}</div>`;
+        origText.innerHTML = `<div class="alert alert-warning m-4">无法加载原文: ${escapeHtml(e.message)}</div>`;
         transText.innerHTML = `<div class="alert alert-warning m-4">无法加载译文</div>`;
     }
 }

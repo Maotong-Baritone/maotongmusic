@@ -31,16 +31,16 @@
                         </a>
                         <ul class="dropdown-menu shadow border-0" style="min-width: 200px;">
                             <li><h6 class="dropdown-header text-muted small fw-bold">乐谱总库</h6></li>
-                            <li><a class="dropdown-item" href="https://imslp.org/" target="_blank">🎼 IMSLP (海量乐谱)</a></li>
+                            <li><a class="dropdown-item" href="https://imslp.org/" target="_blank" rel="noopener noreferrer">🎼 IMSLP (海量乐谱)</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header text-muted small fw-bold">声乐/歌剧资料</h6></li>
-                            <li><a class="dropdown-item" href="https://www.oxfordsong.org/" target="_blank">📜 Oxford Song (免费IPA、大量艺术歌曲信息)</a></li>
-                            <li><a class="dropdown-item" href="https://songhelix.chpc.utah.edu/" target="_blank">🧬 SongHelix (艺术歌曲检索)</a></li>
-                            <li><a class="dropdown-item" href="https://www.kassiadatabase.com/" target="_blank">👩‍🎤 Kassia Database (女作曲家作品检索)</a></li>
-                            <li><a class="dropdown-item" href="https://www.opera-arias.com/" target="_blank">🎭 Opera-Arias (海量歌剧信息查询)</a></li>
-                            <li><a class="dropdown-item" href="https://www.operabase.com/" target="_blank">🌍 Operabase (全球范围演出信息)</a></li>
-                            <li><a class="dropdown-item" href="http://www.theoperadatabase.com/" target="_blank">📂 The Opera Database (大量咏叹调乐谱)</a></li>
-                            <li><a class="dropdown-item" href="https://www.yaptracker.com/" target="_blank">🔔 Yap Tracker (大量声乐歌剧面试、比赛信息)</a></li>
+                            <li><a class="dropdown-item" href="https://www.oxfordsong.org/" target="_blank" rel="noopener noreferrer">📜 Oxford Song (免费IPA、大量艺术歌曲信息)</a></li>
+                            <li><a class="dropdown-item" href="https://songhelix.chpc.utah.edu/" target="_blank" rel="noopener noreferrer">🧬 SongHelix (艺术歌曲检索)</a></li>
+                            <li><a class="dropdown-item" href="https://www.kassiadatabase.com/" target="_blank" rel="noopener noreferrer">👩‍🎤 Kassia Database (女作曲家作品检索)</a></li>
+                            <li><a class="dropdown-item" href="https://www.opera-arias.com/" target="_blank" rel="noopener noreferrer">🎭 Opera-Arias (海量歌剧信息查询)</a></li>
+                            <li><a class="dropdown-item" href="https://www.operabase.com/" target="_blank" rel="noopener noreferrer">🌍 Operabase (全球范围演出信息)</a></li>
+                            <li><a class="dropdown-item" href="http://www.theoperadatabase.com/" target="_blank" rel="noopener noreferrer">📂 The Opera Database (大量咏叹调乐谱)</a></li>
+                            <li><a class="dropdown-item" href="https://www.yaptracker.com/" target="_blank" rel="noopener noreferrer">🔔 Yap Tracker (大量声乐歌剧面试、比赛信息)</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -53,7 +53,7 @@
                         <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showLogModal()">🔔 动态</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3" id="themeToggleBtn" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3" id="themeToggleBtn" onclick="toggleTheme()" title="切换深色模式" aria-label="切换深色模式">🌙</button>
                     </li>
                     <li class="nav-item d-none d-lg-block">
                         <span class="badge bg-warning text-dark ms-2">v0.4重构版</span>
@@ -71,7 +71,7 @@
                 <div class="col-md-8 col-lg-6">
                     <div class="input-group input-group-lg search-container">
                         <span class="input-group-text bg-transparent border-0 ps-3 text-muted">🔍</span>
-                        <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="搜曲名、作曲家、目录内容..." style="box-shadow: none;">
+                        <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="搜曲名、作曲家、目录内容..." aria-label="搜索乐谱" style="box-shadow: none;">
                         <button class="btn btn-primary rounded-pill px-4 fw-bold" style="background-color:#2a9d8f; border:none;" type="button" onclick="performSearch()">搜索</button>
                     </div>
                     
@@ -250,7 +250,7 @@
                             <div class="mt-4 pt-3 border-top text-center text-muted small">仅供学习交流，请于下载后24小时内删除。</div>
                         </div>
                         <div class="col-lg-9 col-12 bg-secondary position-relative responsive-col-right">
-                            <iframe id="mPreview" src="" width="100%" height="100%" style="border:none;"></iframe>
+                            <iframe id="mPreview" src="" width="100%" height="100%" title="乐谱 PDF 预览" style="border:none;"></iframe>
                             <div id="noPreview" class="d-flex flex-column align-items-center justify-content-center h-100 text-white" style="display:none;"><div class="fs-1 mb-3">📄</div><p class="fs-5">暂无预览</p></div>
                         </div>
                     </div>
