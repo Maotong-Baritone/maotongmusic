@@ -223,6 +223,24 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual(restored_data, [original_item])
         self.assertEqual(restored_log, original_log)
 
+    def test_launcher_reuses_healthy_existing_admin_instance(self):
+        with (
+            mock.patch.object(self.admin, "admin_port_is_open", return_value=True),
+            mock.patch.object(self.admin, "existing_admin_is_healthy", return_value=True),
+            mock.patch.object(self.admin, "AUTO_OPEN_BROWSER", True),
+            mock.patch.object(self.admin, "open_admin_browser") as open_browser,
+        ):
+            self.admin.run_local_admin()
+        open_browser.assert_called_once_with(f"http://127.0.0.1:{self.admin.ADMIN_PORT}/login")
+
+    def test_launcher_rejects_port_used_by_another_service(self):
+        with (
+            mock.patch.object(self.admin, "admin_port_is_open", return_value=True),
+            mock.patch.object(self.admin, "existing_admin_is_healthy", return_value=False),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "ADMIN_PORT"):
+                self.admin.run_local_admin()
+
     def test_edit_restores_old_lyrics_when_catalog_save_fails(self):
         item = self.sample_item(20)
         self.seed_item_files(item)
@@ -268,6 +286,204 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(html.count('href="/edit/'), 50)
         self.assertIn("共 123 条 · 第 2 / 3 页", html)
+
+    def test_dashboard_and_duplicate_review_use_normalized_metadata(self):
+        first = self.sample_item(201, has_lyrics=False)
+        second = self.sample_item(202, has_lyrics=False)
+        first["title"] = "Ave Maria"
+        first["composer"] = "Charles Gounod"
+        second["title"] = "  AVE   MARIA  "
+        second["composer"] = "CHARLES GOUNOD"
+        for item in (first, second):
+            self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps([first, second], ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog([first, second])
+        self.login()
+
+        dashboard = self.client.get("/dashboard")
+        dashboard_html = dashboard.get_data(as_text=True)
+        self.assertEqual(dashboard.status_code, 200)
+        self.assertIn("资料健康", dashboard_html)
+        self.assertIn("疑似重复组", dashboard_html)
+        self.assertIn("正常", dashboard_html)
+
+        duplicate_page = self.client.get("/duplicates")
+        duplicate_html = duplicate_page.get_data(as_text=True)
+        self.assertEqual(duplicate_page.status_code, 200)
+        self.assertEqual(duplicate_html.count('class="duplicate-group'), 1)
+        self.assertIn("Ave Maria", duplicate_html)
+        self.assertIn("AVE   MARIA", duplicate_html)
+        self.assertIn('data-src="/scores/201/file"', duplicate_html)
+        self.assertIn('href="/scores/202/file"', duplicate_html)
+        self.assertIn('action="/delete/201"', duplicate_html)
+        self.assertEqual(duplicate_html.count('name="next" value="/duplicates"'), 2)
+
+    def test_catalog_pdf_preview_requires_login_and_serves_pdf(self):
+        item = self.sample_item(601, has_lyrics=False)
+        self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps([item], ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog([item])
+
+        anonymous = self.client.get("/scores/601/file")
+        self.assertEqual(anonymous.status_code, 302)
+        self.assertIn("/login?next=", anonymous.headers["Location"])
+
+        self.login()
+        preview = self.client.get("/scores/601/file")
+        self.assertEqual(preview.status_code, 200)
+        self.assertEqual(preview.mimetype, "application/pdf")
+        self.assertTrue(preview.data.startswith(b"%PDF-"))
+        self.assertIn("inline", preview.headers.get("Content-Disposition", ""))
+        preview.close()
+        self.assertEqual(self.client.get("/scores/999999/file").status_code, 404)
+
+        item["filename"] = "../outside.pdf"
+        (self.temp_root / "data.json").write_text(
+            json.dumps([item], ensure_ascii=False), encoding="utf-8"
+        )
+        self.assertEqual(self.client.get("/scores/601/file").status_code, 404)
+
+    def test_duplicate_review_can_delete_to_trash_and_return_to_review(self):
+        first = self.sample_item(701)
+        second = self.sample_item(702)
+        first["title"] = second["title"] = "可删除重复乐谱"
+        first["composer"] = second["composer"] = "重复作曲家"
+        for item in (first, second):
+            self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps([first, second], ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog([first, second])
+        self.login()
+
+        deleted = self.client.post(
+            "/delete/701",
+            data={"_csrf_token": self.csrf_token(), "next": "/duplicates"},
+        )
+        self.assertEqual(deleted.status_code, 302)
+        self.assertEqual(deleted.headers["Location"], "/duplicates")
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual([item["id"] for item in saved], [702])
+        self.assertFalse((self.temp_root / "scores" / Path(first["filename"])).exists())
+        self.assertTrue((self.temp_root / "scores" / Path(second["filename"])).is_file())
+        entries = self.admin.load_deleted_entries()
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["item"]["id"], 701)
+
+        refreshed = self.client.get("/duplicates").get_data(as_text=True)
+        self.assertIn("未发现同曲名且同作曲家的记录", refreshed)
+
+    def test_duplicate_review_delete_rolls_back_files_when_save_fails(self):
+        items = [self.sample_item(item_id) for item_id in (801, 802)]
+        for item in items:
+            item["title"] = "回滚测试乐谱"
+            item["composer"] = "回滚测试作曲家"
+            self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps(items, ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog(items)
+        self.login()
+
+        with mock.patch.object(self.admin, "save_all", side_effect=OSError("模拟删除保存失败")):
+            with self.assertRaises(OSError):
+                self.client.post(
+                    "/delete/801",
+                    data={"_csrf_token": self.csrf_token(), "next": "/duplicates"},
+                )
+
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual([item["id"] for item in saved], [801, 802])
+        self.assertTrue((self.temp_root / "scores" / Path(items[0]["filename"])).is_file())
+        self.assertTrue((self.temp_root / "lyrics" / "801.json").is_file())
+        self.assertEqual(self.admin.load_deleted_entries(), [])
+
+    def test_batch_update_changes_language_without_moving_files(self):
+        items = [self.sample_item(item_id, has_lyrics=False) for item_id in (301, 302)]
+        for item in items:
+            self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps(items, ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog(items)
+        original_paths = [self.temp_root / "scores" / Path(item["filename"]) for item in items]
+        self.login()
+
+        response = self.client.post(
+            "/batch-update",
+            data={
+                "_csrf_token": self.csrf_token(),
+                "item_ids": ["301", "302"],
+                "batch_action": "set_language",
+                "target_language": "德语",
+                "next": "/manage?page=1",
+            },
+        )
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual({item["language"] for item in saved}, {"德语"})
+        self.assertTrue(all(path.is_file() for path in original_paths))
+
+    def test_batch_category_move_updates_files_and_catalog(self):
+        items = [self.sample_item(item_id, has_lyrics=False) for item_id in (401, 402)]
+        for item in items:
+            self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps(items, ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog(items)
+        original_paths = [self.temp_root / "scores" / Path(item["filename"]) for item in items]
+        self.login()
+
+        response = self.client.post(
+            "/batch-update",
+            data={
+                "_csrf_token": self.csrf_token(),
+                "item_ids": ["401", "402"],
+                "batch_action": "set_category",
+                "target_category": "其他",
+                "next": "/manage?page=1",
+            },
+        )
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual({item["category"] for item in saved}, {"其他"})
+        self.assertTrue(all(item["filename"].startswith("其他/") for item in saved))
+        self.assertTrue(all(not path.exists() for path in original_paths))
+        self.assertTrue(all((self.temp_root / "scores" / Path(item["filename"])).is_file() for item in saved))
+
+    def test_batch_category_move_rolls_back_files_when_save_fails(self):
+        items = [self.sample_item(item_id, has_lyrics=False) for item_id in (501, 502)]
+        for item in items:
+            self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps(items, ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog(items)
+        original_paths = [self.temp_root / "scores" / Path(item["filename"]) for item in items]
+        self.login()
+
+        with mock.patch.object(self.admin, "save_all", side_effect=OSError("模拟批量保存失败")):
+            with self.assertRaises(OSError):
+                self.client.post(
+                    "/batch-update",
+                    data={
+                        "_csrf_token": self.csrf_token(),
+                        "item_ids": ["501", "502"],
+                        "batch_action": "set_category",
+                        "target_category": "其他",
+                        "next": "/manage?page=1",
+                    },
+                )
+
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual({item["category"] for item in saved}, {"艺术歌曲"})
+        self.assertTrue(all(path.is_file() for path in original_paths))
+        self.assertFalse((self.temp_root / "scores" / "其他").exists())
 
     def test_deleted_score_can_be_restored_from_trash(self):
         item = self.sample_item(30)

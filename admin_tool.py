@@ -7,7 +7,9 @@ import secrets
 import shutil
 import threading
 import time
+import unicodedata
 import uuid
+from collections import Counter
 from email.utils import parseaddr
 from functools import wraps
 from pathlib import Path, PurePosixPath
@@ -61,11 +63,22 @@ ALLOWED_CATEGORIES = {
     '器乐独奏', '室内乐', '歌剧总谱', '管弦乐/交响曲', '协奏曲总谱',
     '宗教声乐作品总谱', '其他'
 }
+CANONICAL_LANGUAGES = {
+    '意大利语', '德语', '法语', '英语', '俄语', '拉丁语', '捷克语', '汉语',
+    '俄语/法语', '俄语/德语', '法语/俄语', '无歌词',
+}
 
 ADMIN_USER = os.environ.get('ADMIN_USER', 'admin')
 ADMIN_PASS = os.environ.get('ADMIN_PASS')
 if not ADMIN_PASS:
     raise RuntimeError('缺少 ADMIN_PASS。请先在 .env 中设置后台密码。')
+try:
+    ADMIN_PORT = int(os.environ.get('ADMIN_PORT', '5000'))
+    if not 1 <= ADMIN_PORT <= 65535:
+        raise ValueError
+except ValueError:
+    ADMIN_PORT = 5000
+AUTO_OPEN_BROWSER = os.environ.get('AUTO_OPEN_BROWSER', '1').strip().lower() in {'1', 'true', 'yes', 'on'}
 
 app = Flask(__name__)
 app.config.update(
@@ -97,6 +110,11 @@ def protect_post_requests():
         expected = session.get('_csrf_token', '')
         if not expected or not secrets.compare_digest(submitted, expected):
             abort(400, description='表单已过期，请刷新页面后重试。')
+
+
+@app.route('/health')
+def health():
+    return {'status': 'ok'}
 
 
 def safe_next_url(target):
@@ -414,6 +432,90 @@ def load_deleted_entries():
         })
     return entries
 
+
+def normalize_catalog_text(value):
+    normalized = unicodedata.normalize('NFKC', str(value or '')).casefold()
+    return ' '.join(normalized.split())
+
+
+def duplicate_catalog_groups(items):
+    groups = {}
+    for item in items:
+        key = (
+            normalize_catalog_text(item.get('title')),
+            normalize_catalog_text(item.get('composer')),
+        )
+        if not all(key):
+            continue
+        groups.setdefault(key, []).append(item)
+    duplicates = [group for group in groups.values() if len(group) > 1]
+    duplicates.sort(
+        key=lambda group: (-len(group), normalize_catalog_text(group[0].get('composer')), normalize_catalog_text(group[0].get('title')))
+    )
+    return duplicates
+
+
+def format_file_size(size):
+    size = float(size)
+    for unit in ('B', 'KB', 'MB', 'GB', 'TB'):
+        if size < 1024 or unit == 'TB':
+            return f'{size:.1f} {unit}' if unit != 'B' else f'{int(size)} B'
+        size /= 1024
+
+
+def catalog_dashboard_snapshot(items, change_log):
+    referenced_files = set()
+    missing_files = []
+    invalid_paths = []
+    for item in items:
+        filename = str(item.get('filename', ''))
+        referenced_files.add(PurePosixPath(filename).as_posix())
+        try:
+            path = score_file_path(filename)
+        except ValueError:
+            invalid_paths.append(item)
+            continue
+        if not path.is_file():
+            missing_files.append(item)
+
+    actual_paths = [path for path in Path(SCORES_DIR).rglob('*') if path.is_file()]
+    actual_files = {path.relative_to(SCORES_DIR).as_posix() for path in actual_paths}
+    total_bytes = sum(path.stat().st_size for path in actual_paths)
+    backups = sorted(
+        (
+            path for path in Path(BACKUP_DIR).glob('data_backup_*.json')
+            if AUTOMATIC_BACKUP_PATTERN.fullmatch(path.name)
+        ),
+        key=lambda path: path.name,
+        reverse=True,
+    )
+    duplicates = duplicate_catalog_groups(items)
+    category_counts = [
+        {'name': name, 'count': count}
+        for name, count in Counter(str(item.get('category', '')) for item in items).most_common()
+    ]
+    deleted_entries = load_deleted_entries()
+    counts = submission_counts()
+    return {
+        'total_items': len(items),
+        'actual_files': len(actual_files),
+        'missing_files': len(missing_files),
+        'invalid_paths': len(invalid_paths),
+        'orphan_files': len(actual_files - referenced_files),
+        'storage_size': format_file_size(total_bytes),
+        'lyrics_files': len(list(Path(LYRICS_DIR).glob('*.json'))),
+        'missing_work': sum(1 for item in items if not str(item.get('work', '')).strip()),
+        'missing_description': sum(1 for item in items if not str(item.get('description', '')).strip()),
+        'duplicate_groups': len(duplicates),
+        'automatic_backups': len(backups),
+        'latest_backup': backups[0].name if backups else '尚无',
+        'deleted_count': len(deleted_entries),
+        'pending_count': counts['pending'],
+        'category_counts': category_counts,
+        'recent_logs': change_log[:8],
+        'healthy': not missing_files and not invalid_paths and not (actual_files - referenced_files),
+    }
+
 # --- HTML Templates ---
 # 建议：为防止暴力破解，可以引入 flask-limiter 库对 /login 路由进行速率限制
 LOGIN_HTML = """
@@ -561,6 +663,7 @@ SUBMISSION_ADMIN_HTML = """
         {% for category, message in messages %}<div class="alert {{ 'alert-danger' if category == 'error' else 'alert-success' }}">{{ message }}</div>{% endfor %}
     {% endwith %}
     <ul class="nav nav-tabs mb-4">
+        <li class="nav-item"><a class="nav-link" href="/dashboard">📊 仪表盘</a></li>
         <li class="nav-item"><a class="nav-link" href="/">📤 上传发布</a></li>
         <li class="nav-item"><a class="nav-link" href="/manage">📋 公开乐谱</a></li>
         <li class="nav-item"><a class="nav-link active" href="/submissions">🛡️ 投稿审核 {% if counts.pending %}<span class="badge bg-danger">{{ counts.pending }}</span>{% endif %}</a></li>
@@ -707,7 +810,23 @@ HTML_TEMPLATE = """
     <meta charset="utf-8">
     <title>后台管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>body { background-color: #f8f9fa; padding: 20px; }</style>
+    <style>
+        body { background-color:#f8f9fa; padding:20px; }
+        .stat-value { font-size:1.8rem; font-weight:700; }
+        .compact-table td,.compact-table th { padding:.55rem; }
+        .batch-toolbar { background:#eef4ff; }
+        .duplicate-group>summary { cursor:pointer; padding:1rem; font-weight:600; list-style:none; }
+        .duplicate-group>summary::-webkit-details-marker { display:none; }
+        .duplicate-group[open]>summary { background:#eef4ff; }
+        .duplicate-comparison { background:#f4f7fb; }
+        .duplicate-score-card { min-width:0; }
+        .duplicate-metadata { margin-bottom:0; }
+        .duplicate-metadata dt { color:#6c757d; font-weight:500; }
+        .duplicate-metadata dd { margin-bottom:.35rem; overflow-wrap:anywhere; }
+        .duplicate-pdf-panel { margin-top:1rem; }
+        .duplicate-pdf-frame { width:100%; height:560px; border:1px solid #ced4da; border-radius:.5rem; background:white; }
+        @media (max-width:767.98px) { .duplicate-pdf-frame { height:68vh; min-height:420px; } }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -716,12 +835,109 @@ HTML_TEMPLATE = """
         {% if messages %}<div class="alert alert-success">{{ messages[0] }}</div>{% endif %}
     {% endwith %}
     <ul class="nav nav-tabs mb-4">
+        <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'dashboard' else '' }}" href="/dashboard">📊 仪表盘</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'upload' else '' }}" href="/">📤 上传</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'manage' else '' }}" href="/manage">📋 管理</a></li>
+        <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'duplicates' else '' }}" href="/duplicates">🔎 重复检查</a></li>
         <li class="nav-item"><a class="nav-link" href="/submissions">🛡️ 投稿审核 {% set queue_count = pending_count|default(0, true) %}{% if queue_count %}<span class="badge bg-danger">{{ queue_count }}</span>{% endif %}</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'trash' else '' }}" href="/trash">♻️ 回收站 {% set recycle_count = deleted_count|default(0, true) %}{% if recycle_count %}<span class="badge bg-secondary">{{ recycle_count }}</span>{% endif %}</a></li>
         <li class="nav-item ms-auto"><a class="nav-link" href="/submit" target="_blank">查看投稿页 ↗</a></li>
     </ul>
+
+    {% if active_tab == 'dashboard' %}
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-body"><div class="text-muted small">公开乐谱</div><div class="stat-value">{{ stats.total_items }}</div><div class="small text-muted">PDF {{ stats.actual_files }} 份 · {{ stats.storage_size }}</div></div></div></div>
+        <div class="col-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-body"><div class="text-muted small">待办</div><div class="stat-value">{{ stats.pending_count }}</div><div class="small text-muted">待审核投稿</div></div></div></div>
+        <div class="col-6 col-lg-3"><a class="text-decoration-none text-reset" href="/duplicates"><div class="card h-100 shadow-sm"><div class="card-body"><div class="text-muted small">疑似重复组</div><div class="stat-value">{{ stats.duplicate_groups }}</div><div class="small text-primary">打开检查 →</div></div></div></a></div>
+        <div class="col-6 col-lg-3"><a class="text-decoration-none text-reset" href="/trash"><div class="card h-100 shadow-sm"><div class="card-body"><div class="text-muted small">回收站</div><div class="stat-value">{{ stats.deleted_count }}</div><div class="small text-primary">查看可恢复项 →</div></div></div></a></div>
+    </div>
+    <div class="row g-3">
+        <div class="col-lg-7">
+            <div class="card shadow-sm mb-3">
+                <div class="card-header bg-white d-flex justify-content-between"><strong>资料健康</strong><span class="badge {{ 'bg-success' if stats.healthy else 'bg-danger' }}">{{ '正常' if stats.healthy else '需处理' }}</span></div>
+                <div class="card-body"><div class="row text-center g-3">
+                    <div class="col-4"><div class="fw-bold fs-4">{{ stats.missing_files + stats.invalid_paths }}</div><small class="text-muted">缺失/非法 PDF</small></div>
+                    <div class="col-4"><div class="fw-bold fs-4">{{ stats.orphan_files }}</div><small class="text-muted">未引用文件</small></div>
+                    <div class="col-4"><div class="fw-bold fs-4">{{ stats.lyrics_files }}</div><small class="text-muted">歌词文件</small></div>
+                    <div class="col-6"><div class="fw-bold fs-4">{{ stats.missing_work }}</div><small class="text-muted">未填所属作品</small></div>
+                    <div class="col-6"><div class="fw-bold fs-4">{{ stats.missing_description }}</div><small class="text-muted">未填简介</small></div>
+                </div></div>
+            </div>
+            <div class="card shadow-sm"><div class="card-header bg-white"><strong>分类分布</strong></div><div class="table-responsive"><table class="table compact-table mb-0"><tbody>{% for category in stats.category_counts %}<tr><td>{{ category.name }}</td><td class="text-end fw-bold">{{ category.count }}</td></tr>{% endfor %}</tbody></table></div></div>
+        </div>
+        <div class="col-lg-5">
+            <div class="card shadow-sm mb-3"><div class="card-header bg-white"><strong>备份状态</strong></div><div class="card-body"><div>自动备份：<strong>{{ stats.automatic_backups }}</strong> 份</div><div class="small text-muted text-break mt-1">最新：{{ stats.latest_backup }}</div></div></div>
+            <div class="card shadow-sm"><div class="card-header bg-white"><strong>最近操作</strong></div><ul class="list-group list-group-flush">{% for log in stats.recent_logs %}<li class="list-group-item"><div>{{ log.msg }}</div><small class="text-muted">{{ log.date }}</small></li>{% else %}<li class="list-group-item text-muted">暂无记录</li>{% endfor %}</ul></div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if active_tab == 'duplicates' %}
+    <div class="card shadow">
+        <div class="card-header bg-white"><strong>疑似重复乐谱</strong><div class="small text-muted mt-1">按规范化后的“曲名 + 作曲家”分组。可以同时展开多份 PDF 对照；删除会移入回收站，可随时恢复。</div></div>
+        <div id="duplicate-groups">
+        {% for group in duplicate_groups %}
+            <details class="duplicate-group border-bottom" {{ 'open' if loop.first }}>
+                <summary>{{ group[0].title }} · {{ group[0].composer }} <span class="badge bg-secondary ms-2">{{ group|length }}</span></summary>
+                <div class="duplicate-comparison p-3">
+                    <div class="row g-3">
+                    {% for item in group %}
+                        <div class="col-12 col-xl-6">
+                            <article class="card duplicate-score-card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-2 mb-3">
+                                        <div><span class="badge bg-light text-dark border me-1">ID {{ item.id }}</span><strong>{{ item.title }}</strong></div>
+                                        <span class="badge bg-light text-dark border">{{ item.category }}</span>
+                                    </div>
+                                    <dl class="row duplicate-metadata small">
+                                        <dt class="col-4">作曲家</dt><dd class="col-8">{{ item.composer or '—' }}</dd>
+                                        <dt class="col-4">所属作品</dt><dd class="col-8">{{ item.work or '—' }}</dd>
+                                        <dt class="col-4">调性</dt><dd class="col-8">{{ item.tonality or '—' }}</dd>
+                                        <dt class="col-4">语言</dt><dd class="col-8">{{ item.language or '—' }}</dd>
+                                    </dl>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <button class="btn btn-sm btn-primary duplicate-preview-toggle" type="button" data-preview-target="duplicate-pdf-{{ item.id }}" aria-controls="duplicate-pdf-{{ item.id }}" aria-expanded="false">预览 PDF</button>
+                                        <a class="btn btn-sm btn-outline-primary" href="{{ url_for('catalog_score_file', item_id=item.id) }}" target="_blank" rel="noopener">新窗口打开</a>
+                                        <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('edit', item_id=item.id) }}">编辑资料</a>
+                                        <form method="post" action="{{ url_for('delete', item_id=item.id) }}" class="d-inline-flex m-0" onsubmit="return confirm('确定将这条乐谱移入回收站吗？删除后可在回收站恢复。')">
+                                            <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                                            <input type="hidden" name="next" value="{{ url_for('duplicates') }}">
+                                            <button class="btn btn-sm btn-outline-danger" type="submit">删除</button>
+                                        </form>
+                                    </div>
+                                    <div class="duplicate-pdf-panel" id="duplicate-pdf-{{ item.id }}" hidden>
+                                        <iframe class="duplicate-pdf-frame" title="{{ item.title }} PDF 预览" data-src="{{ url_for('catalog_score_file', item_id=item.id) }}" loading="lazy"></iframe>
+                                        <div class="small text-muted mt-2">如果浏览器无法内嵌显示，请使用“新窗口打开”。</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </details>
+        {% else %}<div class="p-5 text-center text-muted">未发现同曲名且同作曲家的记录。</div>{% endfor %}
+        </div>
+    </div>
+    <script>
+    (() => {
+        document.querySelectorAll('.duplicate-preview-toggle').forEach((button) => {
+            button.addEventListener('click', () => {
+                const panel = document.getElementById(button.dataset.previewTarget);
+                if (!panel) return;
+                const shouldOpen = panel.hidden;
+                panel.hidden = !shouldOpen;
+                button.setAttribute('aria-expanded', String(shouldOpen));
+                button.textContent = shouldOpen ? '收起 PDF' : '预览 PDF';
+                if (shouldOpen) {
+                    const frame = panel.querySelector('iframe[data-src]');
+                    if (frame && !frame.getAttribute('src')) frame.setAttribute('src', frame.dataset.src);
+                }
+            });
+        });
+    })();
+    </script>
+    {% endif %}
 
     {% if active_tab == 'upload' %}
     <div class="card shadow"><div class="card-body">
@@ -783,11 +999,23 @@ HTML_TEMPLATE = """
                 · <a class="{{ 'fw-bold' if per_page == 100 }}" href="{{ url_for('manage', keyword=keyword, composer=composer_filter, category=category_filter, per_page=100, page=1) }}">100</a>
             </span>
         </div>
+        <form id="batch-form" method="post" action="/batch-update" class="batch-toolbar border-bottom p-3">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="next" value="{{ request.full_path }}">
+            <div class="d-flex flex-wrap align-items-center gap-2">
+                <strong class="me-2">已选 <span id="selected-count">0</span> 条</strong>
+                <select class="form-select form-select-sm" style="width:auto" name="target_category" aria-label="批量目标分类"><option value="">选择目标分类</option>{% for category in categories %}<option value="{{ category }}">{{ category }}</option>{% endfor %}</select>
+                <button class="btn btn-sm btn-outline-primary" name="batch_action" value="set_category" type="submit">修改分类</button>
+                <select class="form-select form-select-sm ms-md-3" style="width:auto" name="target_language" aria-label="批量目标语言"><option value="">选择目标语言</option>{% for language in languages %}<option value="{{ language }}">{{ language }}</option>{% endfor %}</select>
+                <button class="btn btn-sm btn-outline-primary" name="batch_action" value="set_language" type="submit">修改语言</button>
+            </div>
+        </form>
         
         <div class="table-responsive">
             <table class="table table-striped table-hover mb-0 align-middle">
                 <thead class="table-light">
                     <tr>
+                        <th style="width:42px"><input class="form-check-input" id="select-page" type="checkbox" aria-label="选择本页全部乐谱"></th>
                         <th>曲名</th>
                         <th>作曲家</th>
                         <th>分类/体裁</th>
@@ -797,6 +1025,7 @@ HTML_TEMPLATE = """
                 <tbody>
                     {% for item in items %}
                     <tr>
+                        <td><input class="form-check-input item-selector" type="checkbox" name="item_ids" value="{{ item.id }}" form="batch-form" aria-label="选择 {{ item.title }}"></td>
                         <td class="fw-bold">
                             {{ item.title }} 
                             {% if item.has_lyrics %}<span class="badge bg-info text-dark" style="font-size:0.6rem">词</span>{% endif %}
@@ -815,7 +1044,7 @@ HTML_TEMPLATE = """
                         </td>
                     </tr>
                     {% else %}
-                    <tr><td colspan="4" class="text-center p-5 text-muted">没有找到符合条件的乐谱<br><small>请尝试调整筛选条件</small></td></tr>
+                    <tr><td colspan="5" class="text-center p-5 text-muted">没有找到符合条件的乐谱<br><small>请尝试调整筛选条件</small></td></tr>
                     {% endfor %}
                 </tbody>
             </table>
@@ -832,6 +1061,16 @@ HTML_TEMPLATE = """
         </div>
         {% endif %}
     </div>
+    <script>
+    (() => {
+        const toggle = document.getElementById('select-page');
+        const items = Array.from(document.querySelectorAll('.item-selector'));
+        const count = document.getElementById('selected-count');
+        const refresh = () => { count.textContent = items.filter(item => item.checked).length; };
+        if (toggle) toggle.addEventListener('change', () => { items.forEach(item => { item.checked = toggle.checked; }); refresh(); });
+        items.forEach(item => item.addEventListener('change', refresh));
+    })();
+    </script>
     {% endif %}
 
     {% if active_tab == 'trash' %}
@@ -874,7 +1113,7 @@ def login():
     if request.method == 'POST':
         if request.form['username'] == ADMIN_USER and request.form['password'] == ADMIN_PASS:
             session['logged_in'] = True
-            return redirect(safe_next_url(request.args.get('next')) or url_for('index'))
+            return redirect(safe_next_url(request.args.get('next')) or url_for('dashboard'))
         flash('用户名或密码不正确')
     return render_template_string(LOGIN_HTML)
 
@@ -887,6 +1126,59 @@ def logout():
 @app.errorhandler(413)
 def upload_too_large(_error):
     return f'上传内容过大。投稿 PDF 上限为 {SUBMISSION_MAX_MB} MB。', 413
+
+
+@app.route('/dashboard')
+@login_required
+def dashboard():
+    data, change_log = load_data_and_log()
+    stats = catalog_dashboard_snapshot(data, change_log)
+    return render_template_string(
+        HTML_TEMPLATE,
+        active_tab='dashboard', stats=stats,
+        pending_count=stats['pending_count'],
+        deleted_count=stats['deleted_count'],
+    )
+
+
+@app.route('/duplicates')
+@login_required
+def duplicates():
+    data, _ = load_data_and_log()
+    groups = duplicate_catalog_groups(data)
+    return render_template_string(
+        HTML_TEMPLATE,
+        active_tab='duplicates', duplicate_groups=groups,
+        pending_count=submission_counts()['pending'],
+        deleted_count=len(load_deleted_entries()),
+    )
+
+
+@app.route('/scores/<int:item_id>/file')
+@login_required
+def catalog_score_file(item_id):
+    data, _ = load_data_and_log()
+    item = next((entry for entry in data if entry.get('id') == item_id), None)
+    if not item:
+        abort(404)
+
+    try:
+        file_path = score_file_path(item.get('filename', ''))
+    except (TypeError, ValueError):
+        abort(404)
+    if not file_path.is_file():
+        abort(404)
+
+    download_name = clean_original_filename(str(item.get('title') or f'score-{item_id}'))
+    if not download_name.lower().endswith('.pdf'):
+        download_name += '.pdf'
+    return send_file(
+        file_path,
+        mimetype='application/pdf',
+        as_attachment=False,
+        download_name=download_name,
+        conditional=True,
+    )
 
 
 @app.route('/submit', methods=['GET', 'POST'])
@@ -1223,9 +1515,111 @@ def manage():
         keyword=keyword, composer_filter=composer_filter, category_filter=category_filter,
         page=page, per_page=per_page, total_items=total_items,
         total_pages=total_pages, page_numbers=page_numbers,
+        categories=sorted(ALLOWED_CATEGORIES), languages=sorted(CANONICAL_LANGUAGES),
         pending_count=submission_counts()['pending'],
         deleted_count=len(load_deleted_entries()),
     )
+
+
+@app.route('/batch-update', methods=['POST'])
+@login_required
+@catalog_write_locked
+def batch_update():
+    raw_ids = request.form.getlist('item_ids')
+    if not raw_ids:
+        flash('请先选择要修改的乐谱。')
+        return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+    if len(raw_ids) > 100:
+        abort(400, description='一次最多批量修改 100 条乐谱')
+    try:
+        item_ids = {int(value) for value in raw_ids}
+    except ValueError:
+        abort(400, description='乐谱 ID 无效')
+    if len(item_ids) != len(raw_ids):
+        abort(400, description='批量选择中存在重复 ID')
+
+    data, change_log = load_data_and_log()
+    selected = [item for item in data if int(item.get('id', -1)) in item_ids]
+    if len(selected) != len(item_ids):
+        abort(400, description='部分乐谱已不存在，请刷新后重试')
+
+    action = request.form.get('batch_action', '')
+    if action == 'set_language':
+        target_language = request.form.get('target_language', '').strip()
+        if target_language not in CANONICAL_LANGUAGES:
+            flash('请选择有效的目标语言。')
+            return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+        changed = [item for item in selected if item.get('language') != target_language]
+        if not changed:
+            flash('所选乐谱已经使用该语言，无需修改。')
+            return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+        for item in changed:
+            item['language'] = target_language
+        add_log(change_log, 'batch_update', f"批量修改语言为 {target_language}: {len(changed)} 条")
+        save_all(data, change_log)
+        flash(f'已将 {len(changed)} 条乐谱的语言修改为 {target_language}。')
+    elif action == 'set_category':
+        target_category = request.form.get('target_category', '').strip()
+        if target_category not in ALLOWED_CATEGORIES:
+            flash('请选择有效的目标分类。')
+            return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+        changed = [item for item in selected if item.get('category') != target_category]
+        if not changed:
+            flash('所选乐谱已经属于该分类，无需修改。')
+            return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+
+        move_plan = []
+        planned_targets = set()
+        for item in changed:
+            source = score_file_path(item['filename'])
+            if not source.is_file():
+                flash(f"乐谱 PDF 不存在，已取消整批修改：{item['title']}")
+                return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+            target = (Path(SCORES_DIR) / target_category / source.name).resolve()
+            if target.exists() or target in planned_targets:
+                flash(f"目标分类中已存在同名 PDF，已取消整批修改：{item['title']}")
+                return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+            planned_targets.add(target)
+            move_plan.append((item, source, target, item['category'], item['filename']))
+
+        moved_files = []
+        created_dirs = []
+        try:
+            for item, source, target, _old_category, _old_filename in move_plan:
+                if not target.parent.exists():
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    created_dirs.append(target.parent)
+                source.replace(target)
+                moved_files.append((source, target))
+                item['category'] = target_category
+                item['filename'] = f"{target_category}/{target.name}"
+            add_log(change_log, 'batch_update', f"批量修改分类为 {target_category}: {len(changed)} 条")
+            save_all(data, change_log)
+        except Exception:
+            for source, target in reversed(moved_files):
+                if target.exists():
+                    source.parent.mkdir(parents=True, exist_ok=True)
+                    target.replace(source)
+            for item, _source, _target, old_category, old_filename in move_plan:
+                item['category'] = old_category
+                item['filename'] = old_filename
+            for directory in reversed(created_dirs):
+                scores_root = Path(SCORES_DIR).resolve()
+                current = directory
+                while current != scores_root and scores_root in current.parents:
+                    try:
+                        current.rmdir()
+                    except OSError:
+                        break
+                    current = current.parent
+            raise
+        flash(f'已将 {len(changed)} 条乐谱移入分类“{target_category}”。')
+    else:
+        abort(400, description='未知批量操作')
+
+    return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
+
+
 @app.route('/edit/<int:item_id>', methods=['GET', 'POST'])
 @login_required
 @catalog_write_locked
@@ -1374,7 +1768,7 @@ def delete(item_id):
     if item:
         data = [i for i in data if i['id'] != item_id]
         timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S_%f')
-        deleted_dir = Path(BACKUP_DIR) / 'deleted' / f"{timestamp}_{item.get('public_id', item_id)}"
+        deleted_dir = deleted_entry_path(f"{timestamp}_{item_id}")
         deleted_dir.mkdir(parents=True, exist_ok=False)
         moved_files = []
         manifest_path = deleted_dir / 'manifest.json'
@@ -1410,6 +1804,61 @@ def delete(item_id):
         flash(f"已移入回收站：{item['title']}")
     return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
 
-if __name__ == '__main__':
+def admin_port_is_open():
+    import socket
+
+    try:
+        with socket.create_connection(('127.0.0.1', ADMIN_PORT), timeout=0.5):
+            return True
+    except OSError:
+        return False
+
+
+def existing_admin_is_healthy():
+    from urllib.request import urlopen
+
+    try:
+        with urlopen(f'http://127.0.0.1:{ADMIN_PORT}/health', timeout=1) as response:
+            payload = json.loads(response.read().decode('utf-8'))
+            return response.status == 200 and payload.get('status') == 'ok'
+    except (OSError, ValueError, json.JSONDecodeError):
+        return False
+
+
+def open_admin_browser(login_url):
+    try:
+        import webbrowser
+        webbrowser.open_new_tab(login_url)
+    except Exception as error:
+        print(f'无法自动打开浏览器：{error}')
+
+
+def run_local_admin():
+    """Run one local admin instance and optionally open its login page."""
+    login_url = f'http://127.0.0.1:{ADMIN_PORT}/login'
+    if admin_port_is_open():
+        if existing_admin_is_healthy():
+            print(f'检测到后台已在运行：{login_url}')
+            if AUTO_OPEN_BROWSER:
+                open_admin_browser(login_url)
+            return
+        raise RuntimeError(
+            f'端口 {ADMIN_PORT} 已被其他程序占用。'
+            '请关闭占用端口的程序，或在 .env 中修改 ADMIN_PORT。'
+        )
+
+    from waitress import serve
+
+    print('Maotong 后台已启动')
+    print(f'管理地址：{login_url}')
+    print('按 Ctrl+C 停止服务。')
+    if AUTO_OPEN_BROWSER:
+        timer = threading.Timer(0.8, open_admin_browser, args=(login_url,))
+        timer.daemon = True
+        timer.start()
     # 管理工具仅供本机使用；不要直接监听 0.0.0.0 或暴露到公网。
-    app.run(host='127.0.0.1', port=5000, debug=False)
+    serve(app, host='127.0.0.1', port=ADMIN_PORT, threads=4)
+
+
+if __name__ == '__main__':
+    run_local_admin()
