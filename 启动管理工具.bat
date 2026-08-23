@@ -1,4 +1,8 @@
 @echo off
 cd /d "%~dp0"
-python admin_tool.py
+if exist ".venv\Scripts\python.exe" (
+    ".venv\Scripts\python.exe" admin_tool.py
+) else (
+    python admin_tool.py
+)
 pause

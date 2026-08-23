@@ -1,5 +1,22 @@
 [
     {
+        "id": 1787515892608,
+        "public_id": "4642e5d5-bbc6-424f-8ffd-01c0c65a9f8a",
+        "title": "Venezia/威尼斯",
+        "composer": "Reynaldo Hahn/哈恩",
+        "work": "",
+        "language": "法语",
+        "category": "声乐套曲",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "",
+        "tonality": "",
+        "description": "Sopra l'acqua indormenzada\r\nLa Barcheta\r\nL'avertimento\r\nLa Biondina in Gondoleta\r\nChe peca!\r\nLa Primavera\r\n歌词主要使用威尼斯方言",
+        "filename": "声乐套曲/4642e5d5-bbc6-424f-8ffd-01c0c65a9f8a.pdf",
+        "date": "2026-08-23",
+        "has_lyrics": false
+    },
+    {
         "title": "Dein ist mein ganzes Herz/你是我的一切",
         "composer": "Franz Lehár/弗朗茨·莱哈尔",
         "work": "Das Land des Lächelns/微笑王国",

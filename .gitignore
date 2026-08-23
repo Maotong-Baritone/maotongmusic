@@ -1,7 +1,11 @@
 .env
+.venv/
 __pycache__/
 *.py[cod]
 tmp/
+submissions.db
+submissions.db-*
+private_uploads/
 backup/data_backup_[0-9]*.json
 backup/data_backup_phase*.json
 backup/deleted/
