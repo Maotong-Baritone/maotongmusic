@@ -1,7 +1,8 @@
-translate_arias.py
 .env
 __pycache__/
 *.py[cod]
 tmp/
+backup/data_backup_[0-9]*.json
 backup/data_backup_phase*.json
+backup/deleted/
 backup/orphans/

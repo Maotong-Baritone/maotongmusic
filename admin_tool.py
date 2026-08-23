@@ -22,6 +22,14 @@ LYRICS_DIR = 'lyrics'
 DATA_FILE = 'data.json'      # 修改这里：指向根目录的 data.json
 LOGS_FILE = 'logs.json'      # 新增这里：指向根目录的 logs.json
 BACKUP_DIR = 'backup'
+try:
+    BACKUP_KEEP_COUNT = max(1, int(os.environ.get('BACKUP_KEEP_COUNT', '10')))
+except ValueError:
+    BACKUP_KEEP_COUNT = 10
+
+AUTOMATIC_BACKUP_PATTERN = re.compile(
+    r'^data_backup_\d{8}_\d{6}(?:_\d{6})?\.json$'
+)
 ALLOWED_EXTENSIONS = {'pdf'}
 ALLOWED_CATEGORIES = {
     '歌剧咏叹调', '歌剧重唱', '宗教声乐作品', '艺术歌曲', '音乐剧选段',
@@ -116,11 +124,27 @@ def load_data_and_log():
                 
     return music_data, change_log
 
+
+def prune_automatic_backups():
+    """只保留最近的自动数据备份，不影响阶段备份和删除回收站。"""
+    backup_root = Path(BACKUP_DIR)
+    automatic_backups = sorted(
+        (
+            path for path in backup_root.iterdir()
+            if path.is_file() and AUTOMATIC_BACKUP_PATTERN.fullmatch(path.name)
+        ),
+        key=lambda path: path.name,
+        reverse=True,
+    )
+    for old_backup in automatic_backups[BACKUP_KEEP_COUNT:]:
+        old_backup.unlink()
+
 def save_all(music_data, change_log):
     # 备份机制
     if os.path.exists(DATA_FILE):
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-        shutil.copy(DATA_FILE, os.path.join(BACKUP_DIR, f"data_backup_{timestamp}.json"))
+        shutil.copy2(DATA_FILE, os.path.join(BACKUP_DIR, f"data_backup_{timestamp}.json"))
+        prune_automatic_backups()
 
     # 按照 ID 倒序排列乐谱
     music_data.sort(key=lambda x: x['id'], reverse=True)
