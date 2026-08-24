@@ -46,6 +46,7 @@ DOWNLOAD_GAP_REPORT_FILE = IMPORT_DIR / "anonymous_download_gaps.md"
 BACKUP_FILE = IMPORT_DIR / "data_before_hahn_import.json"
 BROWSER_SCRAPE_FILE = IMPORT_DIR / "browser_scrape.json"
 CHINESE_METADATA_BACKUP_FILE = IMPORT_DIR / "data_before_chinese_instrumentation.json"
+CONCISE_METADATA_BACKUP_FILE = IMPORT_DIR / "data_before_concise_instrumentation.json"
 
 CATEGORY_URL = "https://imslp.org/wiki/Category:Hahn,_Reynaldo"
 COMPOSER = "Reynaldo Hahn/哈恩"
@@ -442,6 +443,83 @@ def translate_instrumentation(value: str) -> str:
     return result.strip("、；")
 
 
+def concise_instrumentation(value: str) -> str:
+    """Reduce IMSLP's full instrumentation to the library's usual label style."""
+    translated = translate_instrumentation(value)
+    if not translated:
+        return ""
+
+    solo_match = re.match(r"^独奏：([^；]+)；管弦乐队(?:：.*)?$", translated)
+    if solo_match:
+        return f"{solo_match.group(1)}独奏"
+
+    exact = {
+        "钢琴": "钢琴独奏",
+        "双钢琴（第1–12首）；声乐、钢琴（第13首）": "双钢琴／声乐与钢琴",
+    }
+    return exact.get(translated, translated)
+
+
+def concise_file_label(description: str, *, allow_bare_instrument: bool = False) -> str:
+    """Return a short score/part label, without orchestration or tuning details."""
+    source = clean(description)
+    if not source or source == "下载这个文件":
+        return ""
+    lowered = source.casefold()
+
+    if "complete score and parts" in lowered:
+        return "总谱及分谱"
+    if "piano conductor" in lowered:
+        return "指挥用钢琴谱"
+
+    labels = []
+    if "piano score" in lowered:
+        labels.append("钢琴谱")
+    if "vocal score" in lowered:
+        labels.append("声乐谱")
+
+    part_requested = "part" in lowered or (
+        allow_bare_instrument
+        and not any(
+            marker in lowered
+            for marker in ("score", "conductor", "cover", "act ", "introduction", "title page")
+        )
+    )
+    if part_requested:
+        instruments = (
+            (r"flute\s*/\s*piccolo|flute.*piccolo", "长笛／短笛"),
+            (r"violins?\s+ii\b", "第二小提琴"),
+            (r"violins?\s+i\b", "第一小提琴"),
+            (r"double bass|\bbasses\b", "低音提琴"),
+            (r"harpsichord", "羽管键琴"),
+            (r"percussion", "打击乐"),
+            (r"timpani", "定音鼓"),
+            (r"clarinet", "单簧管"),
+            (r"bassoon", "巴松"),
+            (r"trombone", "长号"),
+            (r"trumpet", "小号"),
+            (r"cornet", "短号"),
+            (r"piccolo", "短笛"),
+            (r"flute", "长笛"),
+            (r"oboe", "双簧管"),
+            (r"horn", "圆号"),
+            (r"violin", "小提琴"),
+            (r"viola", "中提琴"),
+            (r"cello", "大提琴"),
+            (r"piano", "钢琴"),
+        )
+        for pattern, label in instruments:
+            if re.search(pattern, lowered):
+                part_label = f"{label}分谱"
+                if part_label not in labels:
+                    labels.append(part_label)
+                break
+
+    if "complete score" in lowered and labels:
+        labels.insert(0, "总谱")
+    return "／".join(labels)
+
+
 SUBCATEGORY_RULES = (
     ("comic operas", "喜歌剧"),
     ("operas comiques", "喜歌剧"),
@@ -551,19 +629,29 @@ def category_for(work: dict, score_file: dict) -> str:
 
 
 def voice_types_for(work: dict, score_file: dict) -> str:
-    instrumentation = translate_instrumentation(work.get("instrumentation", ""))
+    instrumentation = concise_instrumentation(work.get("instrumentation", ""))
     description = clean(score_file.get("description_en") or score_file.get("description"))
-    if description == "下载这个文件":
-        description = ""
-    else:
-        description = translate_instrumentation(description)
     section = score_file.get("section", "")
     if section == "tabScore2":
-        return f"{description}（分谱）" if description else "器乐分谱"
-    if section == "tabArrTrans":
-        return f"{instrumentation}（改编版：{description}）" if description else f"{instrumentation}（改编版）"
+        return concise_file_label(description, allow_bare_instrument=True) or "器乐分谱"
     if section == "tabScore3":
-        return f"{instrumentation}（声乐谱）" if instrumentation else "声乐谱"
+        return "声乐谱"
+
+    variant = concise_file_label(
+        description,
+        allow_bare_instrument=(
+            section == "tabArrTrans"
+            or ("、" in instrumentation and "complete score" not in description.casefold())
+        ),
+    )
+    if variant and (
+        section == "tabArrTrans"
+        or "part" in description.casefold()
+        or "piano score" in description.casefold()
+    ):
+        return variant
+    if section == "tabArrTrans":
+        return instrumentation or "改编版"
     return instrumentation
 
 
@@ -962,22 +1050,35 @@ def write_catalog_preserving_format(value: list[dict]) -> None:
 
 
 def normalize_hahn_catalog_metadata() -> tuple[int, int, int]:
-    """Translate Hahn instrumentation and remove explicit no-lyrics labels."""
+    """Apply concise Hahn score labels and remove explicit no-lyrics labels."""
     data = load_json(DATA_FILE, [])
+    manifest = load_json(MANIFEST_FILE, {"works": []})
+    manifest_files = {
+        score_file.get("imslp_id"): (work, score_file)
+        for work in manifest.get("works", [])
+        for score_file in work.get("files", [])
+        if score_file.get("imslp_id")
+    }
     changed_records = 0
     changed_instrumentation = 0
     cleared_languages = 0
     if not CHINESE_METADATA_BACKUP_FILE.exists():
         shutil.copy2(DATA_FILE, CHINESE_METADATA_BACKUP_FILE)
+    if not CONCISE_METADATA_BACKUP_FILE.exists():
+        shutil.copy2(DATA_FILE, CONCISE_METADATA_BACKUP_FILE)
     for item in data:
         if clean(item.get("composer")) != COMPOSER:
             continue
         changed = False
-        translated = translate_instrumentation(item.get("voice_types", ""))
-        if item.get("voice_types", "") != translated:
-            item["voice_types"] = translated
-            changed_instrumentation += 1
-            changed = True
+        match = re.search(r"IMSLP\s*#(\d+)", clean(item.get("description")))
+        manifest_entry = manifest_files.get(match.group(1)) if match else None
+        if manifest_entry:
+            work, score_file = manifest_entry
+            concise = voice_types_for(work, score_file)
+            if item.get("voice_types", "") != concise:
+                item["voice_types"] = concise
+                changed_instrumentation += 1
+                changed = True
         if item.get("language") == "无歌词":
             item["language"] = ""
             cleared_languages += 1
