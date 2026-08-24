@@ -89,6 +89,12 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+@media (min-width: 992px) {
+    .navbar .navbar-brand,
+    .navbar .nav-link { white-space: nowrap; }
+    .navbar .navbar-nav { gap: 0.25rem !important; }
+    .navbar .nav-link { padding-left: 0.65rem !important; padding-right: 0.65rem !important; }
+}
 @media (max-width: 991px) {
     .navbar-collapse {
         background: var(--navbar-bg);
@@ -96,6 +102,67 @@ body {
         border-radius: 0 0 12px 12px;
         margin-top: 0.5rem;
     }
+}
+
+/* 首页使用须知提示条 */
+.site-notice-bar {
+    background: #f4d88a;
+    border-bottom: 1px solid rgba(88, 67, 16, 0.16);
+    color: #4d3d12;
+}
+.site-notice-button {
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.55rem 0;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    line-height: 1.45;
+    text-align: left;
+}
+.site-notice-title {
+    flex: 0 0 auto;
+    font-weight: 700;
+}
+.site-notice-copy { opacity: 0.88; }
+.site-notice-cta {
+    flex: 0 0 auto;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.site-notice-button:hover .site-notice-cta,
+.site-notice-button:focus-visible .site-notice-cta { color: #8a4d0f; }
+.site-notice-button:focus-visible {
+    outline: 3px solid rgba(38, 70, 83, 0.35);
+    outline-offset: -3px;
+    border-radius: 8px;
+}
+[data-theme="dark"] .site-notice-bar {
+    background: #5a481d;
+    border-bottom-color: rgba(255,255,255,0.08);
+    color: #fff2c4;
+}
+
+@media (max-width: 767px) {
+    .site-notice-button {
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 0.15rem 0.55rem;
+        padding: 0.65rem 0;
+        font-size: 0.86rem;
+    }
+    .site-notice-copy {
+        order: 3;
+        flex-basis: 100%;
+        padding-left: 1.55rem;
+    }
+    .site-notice-cta { margin-left: auto; }
 }
 
 /* Hero 区域 */
@@ -209,6 +276,21 @@ footer {
 .responsive-col-left { height: auto !important; overflow: visible !important; border-right: none !important; border-bottom: 1px solid #dee2e6; }
 .responsive-col-right { height: 60vh !important; min-height: 400px; }
 
+.download-notice {
+    padding: 0.85rem 0.95rem;
+    background: #f7f3e8;
+    border: 1px solid #eadfbf;
+    border-radius: 12px;
+    color: #746539;
+    font-size: 0.75rem;
+    line-height: 1.55;
+}
+[data-theme="dark"] .download-notice {
+    background: #29261d;
+    border-color: #4b432c;
+    color: #d5c89d;
+}
+
 @media (min-width: 992px) {
     .responsive-modal-content { height: 90vh !important; overflow: hidden !important; }
     .responsive-modal-body { height: 100% !important; }
@@ -223,4 +305,63 @@ footer {
 }
 #sponsorModal img:hover {
     transform: scale(1.05);
+}
+
+/* 使用须知弹窗 */
+.usage-notice-modal {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.usage-notice-header {
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(38, 70, 83, 0.1), rgba(42, 157, 143, 0.16));
+}
+.usage-notice-kicker {
+    color: var(--accent-color);
+    letter-spacing: 0.08em;
+}
+.usage-notice-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+.usage-notice-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(42, 157, 143, 0.12);
+    border-radius: 14px;
+    font-size: 1.35rem;
+}
+.usage-notice-item p { line-height: 1.85; }
+.usage-notice-footer { justify-content: space-between; }
+[data-theme="dark"] .usage-notice-header {
+    background: linear-gradient(135deg, rgba(72, 202, 228, 0.12), rgba(42, 157, 143, 0.08));
+}
+[data-theme="dark"] .usage-notice-icon { background: rgba(72, 202, 228, 0.12); }
+[data-theme="dark"] .usage-notice-modal .text-muted { color: var(--text-muted) !important; }
+
+@media (max-width: 575px) {
+    .usage-notice-header { padding: 1.25rem; }
+    .usage-notice-item {
+        grid-template-columns: 40px 1fr;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .usage-notice-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+    }
+    .usage-notice-item p { font-size: 0.9rem; line-height: 1.7; }
+    .usage-notice-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+    }
+    .usage-notice-footer .btn { width: 100%; }
 }

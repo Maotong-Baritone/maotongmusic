@@ -372,13 +372,20 @@ function renderPaginationTable(data) {
                     <a href="https://www.oxfordsong.org/search?q=${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success rounded-pill px-4 shadow-sm">📜 搜 Oxford Song</a>
                     <a href="https://www.google.com/search?q=${encodeURIComponent(searchVal)}+filetype:pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 shadow-sm">🔍 搜 Google (PDF)</a>
                 </div>
-                <p class="mt-4 small text-muted">💡 提示：使用作品原名搜索成功率更高</p>
+                <p class="mt-4 small text-muted mb-3">💡 提示：使用作品原名搜索成功率更高</p>
+                <div class="border-top pt-4 mt-4">
+                    <p class="mb-3">站内暂未收录的乐谱，可能尚未整理上传，也可能暂不具备公开分享条件。</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <a href="contact.html" class="btn btn-primary rounded-pill px-4">💬 联系我求谱</a>
+                        <button type="button" class="btn btn-link text-secondary" onclick="showUsageNotice()">了解收录与版权说明</button>
+                    </div>
+                </div>
             `;
         } else {
              if (filters.favoritesOnly) {
                  noResult.innerHTML = '<div class="fs-1 mb-3">❤️</div><h4 class="font-serif">您的收藏夹为空</h4><p>在列表中点击心形图标即可收藏。</p>';
              } else {
-                 noResult.innerHTML = '<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>请尝试调整筛选条件。</p>';
+                 noResult.innerHTML = '<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。请先调整筛选条件，或联系我告知需要的作品。</p><div class="d-flex justify-content-center flex-wrap gap-2"><button class="btn btn-outline-secondary rounded-pill px-4" onclick="resetFilters()">🔄 重置筛选</button><a href="contact.html" class="btn btn-primary rounded-pill px-4">💬 联系我求谱</a></div>';
              }
         }
         return; 
@@ -567,6 +574,11 @@ window.showLogModal = function() {
 
 window.showSponsorModal = function() {
     const modal = new bootstrap.Modal(document.getElementById('sponsorModal'));
+    modal.show();
+}
+
+window.showUsageNotice = function() {
+    const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('usageNoticeModal'));
     modal.show();
 }
 

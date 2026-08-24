@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20260823b" rel="stylesheet">
+    <link href="css/style.css?v=20260824a" rel="stylesheet">
 </head>
 <body>
 
@@ -47,6 +47,9 @@
                         <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showSponsorModal()">❤️ 赞助</button>
                     </li>
                     <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showUsageNotice()">📌 使用须知</button>
+                    </li>
+                    <li class="nav-item">
                         <a href="contact.html" class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start">👋 联系我</a>
                     </li>
                     <li class="nav-item">
@@ -62,6 +65,16 @@
             </div>
         </div>
     </nav>
+
+    <div class="site-notice-bar" role="region" aria-label="网站使用须知">
+        <div class="container">
+            <button type="button" class="site-notice-button" onclick="showUsageNotice()" aria-haspopup="dialog" aria-controls="usageNoticeModal">
+                <span class="site-notice-title">📌 使用须知</span>
+                <span class="site-notice-copy">文件托管于 GitHub，国内下载偶有波动；未找到乐谱可联系我反馈。</span>
+                <span class="site-notice-cta">查看详情 <span aria-hidden="true">→</span></span>
+            </button>
+        </div>
+    </div>
 
     <div class="hero-section">
         <div class="container position-relative" style="z-index: 2;">
@@ -203,7 +216,7 @@
                         </div>
                     </div>
                     <nav aria-label="Page navigation" class="mt-5" id="paginationNav"><ul class="pagination justify-content-center" id="paginationUl"></ul></nav>
-                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>请尝试调整筛选条件。</p></div>
+                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。</p><a href="contact.html" class="btn btn-outline-primary rounded-pill px-4">💬 联系我求谱</a></div>
                 </div>
             </div>
         </div>
@@ -248,7 +261,10 @@
                             </button>
 
                             <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" style="background-color:#2a9d8f; border:none;" download>⬇️ 下载 PDF</a>
-                            <div class="mt-4 pt-3 border-top text-center text-muted small">仅供学习交流，请于下载后24小时内删除。</div>
+                            <div class="download-notice mt-3" role="note">
+                                <p class="mb-2">🌐 文件托管于 GitHub，国内下载偶有波动；若下载失败，请稍后重试或更换网络。</p>
+                                <p class="mb-0">仅供学习与研究，请勿商用或未经许可再次传播。</p>
+                            </div>
                         </div>
                         <div class="col-lg-9 col-12 bg-secondary position-relative responsive-col-right">
                             <iframe id="mPreview" src="" width="100%" height="100%" title="乐谱 PDF 预览" style="border:none;"></iframe>
@@ -317,10 +333,53 @@
         </div>
     </div>
 
+    <div class="modal fade" id="usageNoticeModal" tabindex="-1" aria-labelledby="usageNoticeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content usage-notice-modal border-0 shadow-lg">
+                <div class="modal-header usage-notice-header border-0">
+                    <div>
+                        <div class="small fw-bold text-uppercase usage-notice-kicker mb-1">Before you download</div>
+                        <h5 class="modal-title fw-bold font-serif mb-0" id="usageNoticeTitle">📌 使用与版权说明</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <section class="usage-notice-item">
+                        <div class="usage-notice-icon" aria-hidden="true">🌐</div>
+                        <div>
+                            <h6 class="fw-bold mb-2">下载说明</h6>
+                            <p class="mb-0 text-muted">本站文件托管于 GitHub。受网络环境影响，部分国内用户可能遇到下载速度较慢、连接不稳定或下载失败的情况。如遇问题，建议稍后重试或更换网络。</p>
+                        </div>
+                    </section>
+
+                    <section class="usage-notice-item">
+                        <div class="usage-notice-icon" aria-hidden="true">🔎</div>
+                        <div>
+                            <h6 class="fw-bold mb-2">找不到需要的乐谱？</h6>
+                            <p class="mb-0 text-muted">如果站内暂时没有你需要的乐谱，可能是尚未整理或上传。欢迎通过站内“联系我”私信，建议附上作品名、作曲家和所需版本。后续如能找到来源可靠、版权状态允许公开分享的版本，我会陆续补充更新。</p>
+                        </div>
+                    </section>
+
+                    <section class="usage-notice-item mb-0">
+                        <div class="usage-notice-icon" aria-hidden="true">⚖️</div>
+                        <div>
+                            <h6 class="fw-bold mb-2">版权说明</h6>
+                            <p class="mb-0 text-muted">部分近现代及新作品仍受版权保护，因此暂时无法上传或提供下载，敬请理解。本站资料仅供个人学习与研究使用，请勿商用或未经许可再次传播。</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer usage-notice-footer border-0 px-4 px-md-5 pb-4 pt-0">
+                    <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4">💬 联系我求谱</a>
+                    <button type="button" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">我知道了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">最近动态</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script src="js/app.js?v=20260823b"></script>
+    <script src="js/app.js?v=20260824a"></script>
 </body>
 </html>
