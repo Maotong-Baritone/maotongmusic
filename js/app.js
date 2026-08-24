@@ -81,6 +81,7 @@ const categoryMap = {
     '乐谱书': 'bg-book', 
     '乐谱书/曲集': 'bg-book',
     '器乐独奏': 'bg-inst-solo', 
+    '器乐分谱': 'bg-inst-parts',
     '室内乐': 'bg-chamber', 
     '歌剧总谱': 'bg-score-opera', 
     '管弦乐/交响曲': 'bg-score-orch', 

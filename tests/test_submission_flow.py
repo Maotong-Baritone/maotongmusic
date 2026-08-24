@@ -274,6 +274,26 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual(by_title["第二首"]["tonality"], "D major")
         self.assertEqual(by_title["第二首"]["voice_types"], "Soprano, Orchestra")
 
+    def test_instrumental_parts_category_is_available_and_can_be_published(self):
+        self.assertIn("器乐分谱", self.admin.ALLOWED_CATEGORIES)
+        self.assertIn("器乐分谱", self.client.get("/submit").get_data(as_text=True))
+        self.login()
+        for url in ("/", "/batch-upload", "/manage"):
+            response = self.client.get(url)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("器乐分谱", response.get_data(as_text=True))
+
+        response = self.post_batch(
+            [(b"%PDF-1.4\ninstrumental part\n", "violin-part.pdf")],
+            titles=["小提琴分谱"],
+            category="器乐分谱",
+        )
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual(saved[0]["category"], "器乐分谱")
+        self.assertTrue(saved[0]["filename"].startswith("器乐分谱/"))
+        self.assertTrue((self.temp_root / "scores" / Path(saved[0]["filename"])).is_file())
+
     def test_batch_upload_rejects_mismatched_or_missing_per_file_composer(self):
         self.login()
         mismatched = self.post_batch(

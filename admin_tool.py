@@ -74,7 +74,7 @@ ALLOWED_EXTENSIONS = {'pdf'}
 ALLOWED_CATEGORIES = {
     '歌剧咏叹调', '歌剧重唱', '宗教声乐作品', '艺术歌曲', '音乐剧选段',
     '合唱作品', '音乐会咏叹调/世俗康塔塔', '声乐套曲', '乐谱书/曲集',
-    '器乐独奏', '室内乐', '歌剧总谱', '管弦乐/交响曲', '协奏曲总谱',
+    '器乐独奏', '器乐分谱', '室内乐', '歌剧总谱', '管弦乐/交响曲', '协奏曲总谱',
     '宗教声乐作品总谱', '其他'
 }
 CANONICAL_LANGUAGES = {
@@ -879,7 +879,7 @@ CATEGORY_SELECT_HTML = """
     <option value="音乐会咏叹调/世俗康塔塔" {{ 'selected' if current == '音乐会咏叹调/世俗康塔塔' }}>音乐会咏叹调/世俗康塔塔</option>
 </optgroup>
 <optgroup label="📚 曲集"><option value="声乐套曲" {{ 'selected' if current == '声乐套曲' }}>声乐套曲</option><option value="乐谱书/曲集" {{ 'selected' if current == '乐谱书/曲集' }}>乐谱书/曲集</option></optgroup>
-<optgroup label="🎻 器乐"><option value="器乐独奏" {{ 'selected' if current == '器乐独奏' }}>器乐独奏</option><option value="室内乐" {{ 'selected' if current == '室内乐' }}>室内乐</option></optgroup>
+<optgroup label="🎻 器乐"><option value="器乐独奏" {{ 'selected' if current == '器乐独奏' }}>器乐独奏</option><option value="器乐分谱" {{ 'selected' if current == '器乐分谱' }}>器乐分谱</option><option value="室内乐" {{ 'selected' if current == '室内乐' }}>室内乐</option></optgroup>
 <optgroup label="🎼 总谱"><option value="歌剧总谱" {{ 'selected' if current == '歌剧总谱' }}>歌剧总谱</option><option value="管弦乐/交响曲" {{ 'selected' if current == '管弦乐/交响曲' }}>管弦乐/交响曲</option><option value="协奏曲总谱" {{ 'selected' if current == '协奏曲总谱' }}>协奏曲总谱</option><option value="宗教声乐作品总谱" {{ 'selected' if current == '宗教声乐作品总谱' }}>宗教声乐总谱</option></optgroup>
 <option value="其他" {{ 'selected' if current == '其他' }}>其他</option>
 </select></div>
@@ -1350,6 +1350,7 @@ HTML_TEMPLATE = """
                         <option value="声乐套曲" {{ 'selected' if category_filter == '声乐套曲' }}>声乐套曲</option>
                         <option value="乐谱书/曲集" {{ 'selected' if category_filter == '乐谱书/曲集' }}>乐谱书/曲集</option>
                         <option value="器乐独奏" {{ 'selected' if category_filter == '器乐独奏' }}>器乐独奏</option>
+                        <option value="器乐分谱" {{ 'selected' if category_filter == '器乐分谱' }}>器乐分谱</option>
                         <option value="室内乐" {{ 'selected' if category_filter == '室内乐' }}>室内乐</option>
                         <option value="歌剧总谱" {{ 'selected' if category_filter == '歌剧总谱' }}>歌剧总谱</option>
                         <option value="管弦乐/交响曲" {{ 'selected' if category_filter == '管弦乐/交响曲' }}>管弦乐/交响曲</option>

@@ -176,6 +176,11 @@ footer {
 .bg-cycle { background-color: #0096c7; color: white; }
 .bg-book { background-color: #9d6b53; color: white; }
 .bg-inst-solo { background-color: #e9c46a; color: #333; }
+.bg-inst-parts {
+    background-color: #f4a261 !important;
+    color: #212529 !important;
+    border: 1px solid #d97706;
+}
 .bg-chamber { background-color: #606c38; color: white; }
 .bg-score-opera { background-color: #212529; color: #f8f9fa; }
 .bg-score-orch { background-color: #343a40; color: #f8f9fa; }
