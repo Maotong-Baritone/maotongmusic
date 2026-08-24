@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20260824a" rel="stylesheet">
+    <link href="css/style.css?v=20260824c" rel="stylesheet">
 </head>
 <body>
 
@@ -166,7 +166,7 @@
     </div>
 
     <div class="container content-section" id="mainContentArea">
-        <div class="card shadow-sm border-0 mb-4" style="background: white; border-radius: 12px;">
+        <div class="card filter-panel shadow-sm border-0 mb-4">
             <div class="card-body py-3">
                 <div class="row align-items-center g-3">
                     <div class="col-md-auto fw-bold text-secondary d-none d-md-block">🌪️ 筛选:</div>
@@ -190,8 +190,12 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-auto ms-auto d-grid d-md-block">
-                         <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 w-100" onclick="resetFilters()">🔄 重置</button>
+                         <button class="btn btn-sm btn-outline-secondary filter-reset-button rounded-pill px-3 w-100" id="filterResetBtn" type="button" onclick="handleFilterReset()" disabled>暂无筛选</button>
                     </div>
+                </div>
+                <div class="active-filters-bar mt-3 pt-3 border-top" id="activeFiltersBar" aria-live="polite" hidden>
+                    <span class="active-filters-label">🔎 当前搜索范围：</span>
+                    <div class="active-filters-list" id="activeFiltersList"></div>
                 </div>
             </div>
         </div>
@@ -237,7 +241,7 @@
                     <div class="row h-100 g-0 responsive-row">
                         <div class="col-lg-3 col-12 p-4 bg-white responsive-col-left">
                             <span class="badge bg-primary mb-3" id="mCategory" style="background-color: #264653 !important;"></span>
-                            <h3 id="mTitle" class="mb-2 fw-bold text-dark font-serif"></h3>
+                            <h3 id="mTitle" class="score-title mb-2 fw-bold text-dark"></h3>
                             <p class="mb-4 text-muted fst-italic"><span id="mWork" class="fs-6">-</span></p>
                             <div class="card mb-4 border-0 bg-light rounded-3 p-3">
                                 <ul class="list-unstyled mb-0 small gap-2 d-flex flex-column">
@@ -380,6 +384,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script src="js/app.js?v=20260824a"></script>
+    <script src="js/app.js?v=20260824c"></script>
 </body>
 </html>

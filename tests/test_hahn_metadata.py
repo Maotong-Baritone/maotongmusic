@@ -3,6 +3,7 @@ import unittest
 from tools.import_hahn_imslp import (
     concise_file_label,
     concise_instrumentation,
+    subcategory_for,
     voice_types_for,
 )
 
@@ -42,6 +43,17 @@ class HahnMetadataLabelTest(unittest.TestCase):
         violin_part = {"section": "tabArrTrans", "description_en": "Violin Part"}
         self.assertEqual(voice_types_for(work, piano_score), "钢琴谱")
         self.assertEqual(voice_types_for(work, violin_part), "小提琴分谱")
+
+    def test_art_song_does_not_repeat_its_category_as_subcategory(self):
+        self.assertEqual(
+            subcategory_for({"genre_categories": "Songs"}, "艺术歌曲"),
+            "",
+        )
+
+    def test_chanson_label_is_hidden_only_when_art_song_is_already_shown(self):
+        work = {"genre_categories": "Chansons"}
+        self.assertEqual(subcategory_for(work, "艺术歌曲"), "")
+        self.assertEqual(subcategory_for(work, "声乐套曲"), "香颂")
 
 
 if __name__ == "__main__":

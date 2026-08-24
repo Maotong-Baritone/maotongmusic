@@ -47,6 +47,7 @@ BACKUP_FILE = IMPORT_DIR / "data_before_hahn_import.json"
 BROWSER_SCRAPE_FILE = IMPORT_DIR / "browser_scrape.json"
 CHINESE_METADATA_BACKUP_FILE = IMPORT_DIR / "data_before_chinese_instrumentation.json"
 CONCISE_METADATA_BACKUP_FILE = IMPORT_DIR / "data_before_concise_instrumentation.json"
+SUBCATEGORY_METADATA_BACKUP_FILE = IMPORT_DIR / "data_before_redundant_subcategories.json"
 
 CATEGORY_URL = "https://imslp.org/wiki/Category:Hahn,_Reynaldo"
 COMPOSER = "Reynaldo Hahn/哈恩"
@@ -559,10 +560,12 @@ SUBCATEGORY_RULES = (
 )
 
 
-def subcategory_for(work: dict) -> str:
+def subcategory_for(work: dict, category: str = "") -> str:
     genres = work.get("genre_categories", "").casefold()
     for marker, label in SUBCATEGORY_RULES:
         if marker in genres:
+            if category == "艺术歌曲" and label in {"艺术歌曲", "香颂"}:
+                return ""
             return label
     return ""
 
@@ -750,7 +753,9 @@ def build_manifest(session: IMSLPSession) -> dict:
             score_file["eligible"] = eligible
             score_file["skip_reason"] = reason
             score_file["category"] = category_for(work, score_file)
-            score_file["sub_category"] = subcategory_for(work)
+            score_file["sub_category"] = subcategory_for(
+                work, score_file["category"]
+            )
             score_file["tonality"] = translate_key(work.get("key", ""))
             score_file["language_cn"] = language_for(work)
             score_file["voice_types"] = voice_types_for(work, score_file)
@@ -834,6 +839,10 @@ def apply_manifest_defaults(manifest: dict) -> int:
             voice_types = voice_types_for(work, score_file)
             if score_file.get("voice_types") != voice_types:
                 score_file["voice_types"] = voice_types
+                updated += 1
+            sub_category = subcategory_for(work, score_file.get("category", ""))
+            if score_file.get("sub_category", "") != sub_category:
+                score_file["sub_category"] = sub_category
                 updated += 1
     return updated
 
@@ -1049,10 +1058,10 @@ def write_catalog_preserving_format(value: list[dict]) -> None:
     replace_with_retry(temporary, DATA_FILE)
 
 
-def normalize_hahn_catalog_metadata() -> tuple[int, int, int]:
+def normalize_hahn_catalog_metadata(manifest: dict | None = None) -> tuple[int, int, int]:
     """Apply concise Hahn score labels and remove explicit no-lyrics labels."""
     data = load_json(DATA_FILE, [])
-    manifest = load_json(MANIFEST_FILE, {"works": []})
+    manifest = manifest or load_json(MANIFEST_FILE, {"works": []})
     manifest_files = {
         score_file.get("imslp_id"): (work, score_file)
         for work in manifest.get("works", [])
@@ -1088,6 +1097,24 @@ def normalize_hahn_catalog_metadata() -> tuple[int, int, int]:
     if changed_records:
         write_catalog_preserving_format(data)
     return changed_records, changed_instrumentation, cleared_languages
+
+
+def remove_redundant_subcategories() -> int:
+    """Remove art-song subcategories that merely repeat the main category."""
+    data = load_json(DATA_FILE, [])
+    if not SUBCATEGORY_METADATA_BACKUP_FILE.exists():
+        shutil.copy2(DATA_FILE, SUBCATEGORY_METADATA_BACKUP_FILE)
+    updated = 0
+    for item in data:
+        if (
+            clean(item.get("category")) == "艺术歌曲"
+            and clean(item.get("sub_category")) in {"艺术歌曲", "香颂"}
+        ):
+            item["sub_category"] = ""
+            updated += 1
+    if updated:
+        write_catalog_preserving_format(data)
+    return updated
 
 
 def restore_catalog_format_from_backup() -> int:
@@ -1281,6 +1308,11 @@ def parse_args() -> argparse.Namespace:
         help="把全部 Hahn 记录的声部／乐器改为中文，并清除“无歌词”标记",
     )
     parser.add_argument(
+        "--remove-redundant-subcategories",
+        action="store_true",
+        help="清除与“艺术歌曲”主分类重复的“艺术歌曲”或“香颂”二级分类",
+    )
+    parser.add_argument(
         "--restore-catalog-format",
         action="store_true",
         help="从导入前备份恢复 data.json 原格式，并重新插入新增记录",
@@ -1320,12 +1352,15 @@ def main() -> int:
         if synced:
             print(f"metadata_synced={synced}", flush=True)
     if args.normalize_hahn_metadata:
-        records, instrumentation, languages = normalize_hahn_catalog_metadata()
+        records, instrumentation, languages = normalize_hahn_catalog_metadata(manifest)
         print(
             "hahn_metadata_normalized="
             f"records:{records},instrumentation:{instrumentation},languages:{languages}",
             flush=True,
         )
+    if args.remove_redundant_subcategories:
+        count = remove_redundant_subcategories()
+        print(f"redundant_subcategories_removed={count}", flush=True)
     if args.restore_catalog_format:
         count = restore_catalog_format_from_backup()
         print(f"format_restored_with_additions={count}", flush=True)

@@ -213,7 +213,7 @@ function compareByDateAsc(a, b) {
     const dateCompare = String(a.date || '').localeCompare(String(b.date || ''));
     return dateCompare || Number(a.id) - Number(b.id);
 }
-function performSearch() { const val = document.getElementById('searchInput').value; filters.search = val; if(val.length > 0) { document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); } applyFilters(); }
+function performSearch() { const val = document.getElementById('searchInput').value.trim(); filters.search = val; if(val.length > 0) { document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); } applyFilters(); }
 
 function initStatsAndDropdowns() {
     document.getElementById('statTotal').innerText = musicData.length;
@@ -258,7 +258,7 @@ function renderRecent() {
                         <span class="badge ${badgeClass}">${escapeHtml(item.category)}</span>
                         <small class="text-muted" style="font-size: 0.75rem;">${escapeHtml(item.date || '')}</small>
                     </div>
-                    <h6 class="card-title fw-bold text-dark mb-1 font-serif text-truncate" title="${escapeHtml(item.title)}">${escapeHtml(item.title)}</h6>
+                    <h6 class="score-title card-title fw-bold text-dark mb-1 text-truncate" title="${escapeHtml(item.title)}">${escapeHtml(item.title)}</h6>
                     <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(item.composer)}">${escapeHtml(item.composer)}</div>
                     ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${escapeHtml(item.work)}">选自: ${escapeHtml(item.work)}</div>` : ''}
                 </div>
@@ -272,6 +272,98 @@ function renderRecent() {
     });
 
     recentContainer.innerHTML = html;
+}
+
+function getActiveFilterDescriptors() {
+    const activeFilters = [];
+    if (filters.favoritesOnly) activeFilters.push({ key: 'favorites', label: '仅看收藏' });
+    if (filters.category !== 'all') activeFilters.push({ key: 'category', label: `分类：${filters.category}` });
+    if (filters.composer.trim()) activeFilters.push({ key: 'composer', label: `作曲家：${filters.composer.trim()}` });
+    if (filters.language !== 'all') activeFilters.push({ key: 'language', label: `语言：${filters.language}` });
+    if (filters.voice.trim()) activeFilters.push({ key: 'voice', label: `编制：${filters.voice.trim()}` });
+    return activeFilters;
+}
+
+function renderActiveFilters() {
+    const activeFilters = getActiveFilterDescriptors();
+    const bar = document.getElementById('activeFiltersBar');
+    const list = document.getElementById('activeFiltersList');
+    const resetButton = document.getElementById('filterResetBtn');
+
+    bar.hidden = activeFilters.length === 0;
+    list.innerHTML = activeFilters.map(filter => `
+        <button type="button" class="active-filter-chip" onclick="removeActiveFilter('${filter.key}')" aria-label="移除${escapeHtml(filter.label)}筛选">
+            <span>${escapeHtml(filter.label)}</span><span class="filter-chip-remove" aria-hidden="true">×</span>
+        </button>
+    `).join('');
+
+    if (activeFilters.length > 0) {
+        resetButton.disabled = false;
+        resetButton.classList.add('is-active');
+        resetButton.innerText = `清除筛选（${activeFilters.length}）`;
+    } else if (filters.search) {
+        resetButton.disabled = false;
+        resetButton.classList.remove('is-active');
+        resetButton.innerText = '清除搜索';
+    } else {
+        resetButton.disabled = true;
+        resetButton.classList.remove('is-active');
+        resetButton.innerText = '暂无筛选';
+    }
+}
+
+function updateListTitle() {
+    const listTitle = document.getElementById('listTitle');
+    if (filters.favoritesOnly) {
+        listTitle.innerText = '❤️ 我的收藏';
+    } else if (filters.search) {
+        listTitle.innerText = `🔍 “${filters.search}” 的搜索结果`;
+    } else if (filters.category !== 'all') {
+        listTitle.innerText = `📂 ${filters.category}`;
+    } else {
+        listTitle.innerText = '📚 乐谱目录';
+    }
+}
+
+function clearNonSearchFilters() {
+    filters.category = 'all';
+    filters.composer = '';
+    filters.language = 'all';
+    filters.voice = '';
+    filters.favoritesOnly = false;
+    currentPage = 1;
+
+    document.getElementById('composerInput').value = '';
+    document.getElementById('languageSelect').value = 'all';
+    document.getElementById('voiceInput').value = '';
+    document.querySelectorAll('.category-group button').forEach(button => button.classList.remove('active-cat'));
+}
+
+window.clearFiltersAndRetry = function() {
+    clearNonSearchFilters();
+    applyFilters();
+    document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+window.handleFilterReset = function() {
+    if (getActiveFilterDescriptors().length > 0) {
+        clearFiltersAndRetry();
+    } else {
+        resetFilters();
+    }
+}
+
+window.removeActiveFilter = function(key) {
+    if (key === 'favorites') filters.favoritesOnly = false;
+    if (key === 'category') {
+        filters.category = 'all';
+        document.querySelectorAll('.category-group button').forEach(button => button.classList.remove('active-cat'));
+    }
+    if (key === 'composer') document.getElementById('composerInput').value = '';
+    if (key === 'language') document.getElementById('languageSelect').value = 'all';
+    if (key === 'voice') document.getElementById('voiceInput').value = '';
+    currentPage = 1;
+    applyFilters();
 }
 
 function applyFilters() {
@@ -337,6 +429,8 @@ function applyFilters() {
         return 0;
     });
 
+    renderActiveFilters();
+    updateListTitle();
     renderPaginationTable(result);
     document.getElementById('recentSection').style.display = (filters.search || filters.favoritesOnly || filters.composer || filters.language !== 'all' || filters.voice || filters.category !== 'all') ? 'none' : 'block';
 }
@@ -358,11 +452,22 @@ function renderPaginationTable(data) {
         noResult.style.display = 'block'; 
         
         const searchVal = document.getElementById('searchInput').value.trim();
+        const activeFilters = getActiveFilterDescriptors();
+        const activeFilterChips = activeFilters.map(filter => `<span class="active-filter-chip is-static">${escapeHtml(filter.label)}</span>`).join('');
         if (searchVal) {
             noResult.innerHTML = `
                 <div class="fs-1 mb-3">🧐</div>
-                <h4 class="font-serif mb-3">本地暂无相关乐谱</h4>
-                <p class="text-muted mb-4">您可以尝试点击下方按钮，去国际数据库搜索 "<strong>${escapeHtml(searchVal)}</strong>"：</p>
+                <h4 class="font-serif mb-3">${activeFilters.length > 0 ? `当前筛选下没有找到“${escapeHtml(searchVal)}”` : '本地暂无相关乐谱'}</h4>
+                ${activeFilters.length > 0 ? `
+                    <div class="no-result-filter-alert">
+                        <p class="fw-bold mb-2">搜索仍受到以下 ${activeFilters.length} 个条件限制：</p>
+                        <div class="active-filters-list mb-3">${activeFilterChips}</div>
+                        <p class="small mb-3">清除这些条件后会保留当前关键词并立即重新搜索，无需再次输入。</p>
+                        <button type="button" class="btn btn-warning rounded-pill px-4 fw-bold" onclick="clearFiltersAndRetry()">清除筛选并重新搜索</button>
+                    </div>
+                    <div class="no-result-divider"><span>清除后仍未找到？</span></div>
+                ` : '<p class="text-muted mb-4">当前没有其他筛选条件，可以尝试前往以下数据库继续查找：</p>'}
+                <p class="text-muted mb-4">您也可以去国际数据库搜索 "<strong>${escapeHtml(searchVal)}</strong>"：</p>
                 <div class="d-flex justify-content-center flex-wrap gap-3" style="max-width: 800px; margin: 0 auto;">
                     <a href="https://imslp.org/index.php?title=Special:Search&fulltext=Search&search=${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill px-4 shadow-sm">🎼 搜 IMSLP</a>
                     <a href="https://www.google.com/search?q=site:kassiadatabase.com+${encodeURIComponent(searchVal)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-pill px-4 shadow-sm">👩‍🎤 搜 Kassia</a>
@@ -383,9 +488,11 @@ function renderPaginationTable(data) {
             `;
         } else {
              if (filters.favoritesOnly) {
-                 noResult.innerHTML = '<div class="fs-1 mb-3">❤️</div><h4 class="font-serif">您的收藏夹为空</h4><p>在列表中点击心形图标即可收藏。</p>';
+                 noResult.innerHTML = '<div class="fs-1 mb-3">❤️</div><h4 class="font-serif">您的收藏夹为空</h4><p>当前启用了“仅看收藏”。在列表中点击心形图标即可收藏，或返回查看完整乐谱目录。</p><button type="button" class="btn btn-primary rounded-pill px-4" onclick="clearFiltersAndRetry()">查看完整乐谱目录</button>';
+             } else if (activeFilters.length > 0) {
+                 noResult.innerHTML = `<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">当前筛选下没有找到乐谱</h4><div class="no-result-filter-alert"><p class="fw-bold mb-2">仍在生效：</p><div class="active-filters-list mb-3">${activeFilterChips}</div><button type="button" class="btn btn-warning rounded-pill px-4 fw-bold" onclick="clearFiltersAndRetry()">清除全部筛选</button></div>`;
              } else {
-                 noResult.innerHTML = '<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。请先调整筛选条件，或联系我告知需要的作品。</p><div class="d-flex justify-content-center flex-wrap gap-2"><button class="btn btn-outline-secondary rounded-pill px-4" onclick="resetFilters()">🔄 重置筛选</button><a href="contact.html" class="btn btn-primary rounded-pill px-4">💬 联系我求谱</a></div>';
+                 noResult.innerHTML = '<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。</p><a href="contact.html" class="btn btn-primary rounded-pill px-4">💬 联系我求谱</a>';
              }
         }
         return; 
@@ -398,7 +505,9 @@ function renderPaginationTable(data) {
         let tonalityBadge = item.tonality ? `<span class="badge bg-light text-dark border ms-2" style="font-size:0.7rem; opacity: 0.7;">${escapeHtml(item.tonality)}</span>` : '';
         let voiceBadge = item.voice_types ? `<span class="badge bg-secondary ms-1" style="font-size:0.7rem; opacity: 0.8;">${escapeHtml(item.voice_types)}</span>` : '';
         let lyricIcon = item.has_lyrics ? `<span class="badge bg-info text-dark ms-1" style="font-size:0.6rem" title="包含歌词/剧本">📖</span>` : '';
-        let subBadge = item.sub_category ? `<span class="badge bg-light text-secondary border ms-1" style="font-size:0.7rem;">${escapeHtml(item.sub_category)}</span>` : '';
+        const redundantSubcategory = item.sub_category === item.category
+            || (item.category === '艺术歌曲' && item.sub_category === '香颂');
+        let subBadge = item.sub_category && !redundantSubcategory ? `<span class="badge bg-light text-secondary border ms-1" style="font-size:0.7rem;">${escapeHtml(item.sub_category)}</span>` : '';
         
         // Favorite Button Logic
         const stableId = getStableId(item);
@@ -411,7 +520,7 @@ function renderPaginationTable(data) {
                 <div class="d-flex align-items-center">
                     <button id="fav-btn-${stableId}" class="btn btn-link p-0 me-3 fs-5 text-decoration-none ${favClass}" style="line-height:1;" onclick="toggleFavorite('${stableId}', event)" title="收藏" aria-label="收藏 ${escapeHtml(item.title)}">${favIcon}</button>
                     <div>
-                        <div class="fw-bold text-dark" style="font-family: 'Noto Sans SC', sans-serif;">${escapeHtml(item.title)} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
+                        <div class="score-title fw-bold text-dark">${escapeHtml(item.title)} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
                         ${item.work ? `<small class="text-muted fst-italic">选自: ${escapeHtml(item.work)}</small>` : ''}
                     </div>
                 </div>
@@ -430,7 +539,6 @@ window.resetFilters = () => {
     document.getElementById('searchInput').value = ''; document.getElementById('composerInput').value = ''; 
     document.getElementById('languageSelect').value = 'all'; document.getElementById('voiceInput').value = ''; 
     document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat')); 
-    document.getElementById('listTitle').innerText = '📚 乐谱目录'; 
     document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); applyFilters(); 
 };
 
@@ -539,7 +647,6 @@ window.filterCategory = function(cat, btn) {
     currentPage = 1;
     document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat'));
     if (btn) btn.classList.add('active-cat');
-    document.getElementById('listTitle').innerText = cat === 'all' ? '📚 乐谱目录' : `📂 ${cat}`;
     document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
     applyFilters();
 }
