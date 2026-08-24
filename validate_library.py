@@ -48,7 +48,15 @@ CANONICAL_LANGUAGES = {
     "俄语/法语",
     "俄语/德语",
     "法语/俄语",
-    "无歌词",
+    "法语/英语",
+    "法语/拉丁语",
+}
+LANGUAGE_OPTIONAL_CATEGORIES = {
+    "器乐独奏",
+    "器乐分谱",
+    "室内乐",
+    "管弦乐/交响曲",
+    "协奏曲总谱",
 }
 
 
@@ -113,8 +121,14 @@ def main() -> int:
             errors.append(f"{label} 使用未知分类: {category!r}")
 
         language = str(item.get("language", "")).strip()
+        language_is_optional = (
+            category in LANGUAGE_OPTIONAL_CATEGORIES
+            or str(item.get("sub_category", "")).strip() == "练声曲"
+            or "vocalise" in str(item.get("title", "")).casefold()
+        )
         if not language:
-            warnings.append(f"{label} 未填写语言")
+            if not language_is_optional:
+                warnings.append(f"{label} 未填写语言")
         elif language not in CANONICAL_LANGUAGES:
             warnings.append(f"{label} 使用未规范语言: {language!r}")
 
