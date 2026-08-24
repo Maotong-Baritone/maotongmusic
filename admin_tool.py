@@ -535,24 +535,75 @@ def format_file_size(size):
         size /= 1024
 
 
-def catalog_dashboard_snapshot(items, change_log):
+def normalized_catalog_filename(filename):
+    return PurePosixPath(str(filename or '').replace('\\', '/')).as_posix()
+
+
+def catalog_health_report(items):
     referenced_files = set()
     missing_files = []
     invalid_paths = []
     for item in items:
         filename = str(item.get('filename', ''))
-        referenced_files.add(PurePosixPath(filename).as_posix())
+        normalized_filename = normalized_catalog_filename(filename)
         try:
             path = score_file_path(filename)
-        except ValueError:
-            invalid_paths.append(item)
+        except (TypeError, ValueError):
+            invalid_paths.append({
+                'item': item,
+                'filename': normalized_filename,
+                'reason': '记录的 PDF 路径不合法',
+                'possible_matches': [],
+            })
             continue
+        referenced_files.add(normalized_filename.casefold())
         if not path.is_file():
-            missing_files.append(item)
+            missing_files.append({
+                'item': item,
+                'filename': normalized_filename,
+                'reason': '记录指向的 PDF 不存在',
+                'possible_matches': [],
+            })
 
     actual_paths = [path for path in Path(SCORES_DIR).rglob('*') if path.is_file()]
-    actual_files = {path.relative_to(SCORES_DIR).as_posix() for path in actual_paths}
-    total_bytes = sum(path.stat().st_size for path in actual_paths)
+    actual_files = {
+        path.relative_to(SCORES_DIR).as_posix(): path
+        for path in actual_paths
+    }
+    orphan_filenames = sorted(
+        filename for filename in actual_files
+        if normalized_catalog_filename(filename).casefold() not in referenced_files
+    )
+    orphan_files = [
+        {
+            'filename': filename,
+            'size': format_file_size(actual_files[filename].stat().st_size),
+        }
+        for filename in orphan_filenames
+    ]
+    orphans_by_basename = {}
+    for orphan in orphan_files:
+        basename = PurePosixPath(orphan['filename']).name.casefold()
+        orphans_by_basename.setdefault(basename, []).append(orphan['filename'])
+    for issue in missing_files:
+        basename = PurePosixPath(issue['filename']).name.casefold()
+        issue['possible_matches'] = orphans_by_basename.get(basename, [])
+
+    return {
+        'missing_files': missing_files,
+        'invalid_paths': invalid_paths,
+        'file_issues': missing_files + invalid_paths,
+        'orphan_files': orphan_files,
+        'actual_files': len(actual_files),
+        'total_bytes': sum(path.stat().st_size for path in actual_paths),
+        'missing_work': sum(1 for item in items if not str(item.get('work', '')).strip()),
+        'missing_description': sum(1 for item in items if not str(item.get('description', '')).strip()),
+        'healthy': not missing_files and not invalid_paths and not orphan_files,
+    }
+
+
+def catalog_dashboard_snapshot(items, change_log):
+    health = catalog_health_report(items)
     backups = sorted(
         (
             path for path in Path(BACKUP_DIR).glob('data_backup_*.json')
@@ -570,14 +621,14 @@ def catalog_dashboard_snapshot(items, change_log):
     counts = submission_counts()
     return {
         'total_items': len(items),
-        'actual_files': len(actual_files),
-        'missing_files': len(missing_files),
-        'invalid_paths': len(invalid_paths),
-        'orphan_files': len(actual_files - referenced_files),
-        'storage_size': format_file_size(total_bytes),
+        'actual_files': health['actual_files'],
+        'missing_files': len(health['missing_files']),
+        'invalid_paths': len(health['invalid_paths']),
+        'orphan_files': len(health['orphan_files']),
+        'storage_size': format_file_size(health['total_bytes']),
         'lyrics_files': len(list(Path(LYRICS_DIR).glob('*.json'))),
-        'missing_work': sum(1 for item in items if not str(item.get('work', '')).strip()),
-        'missing_description': sum(1 for item in items if not str(item.get('description', '')).strip()),
+        'missing_work': health['missing_work'],
+        'missing_description': health['missing_description'],
         'duplicate_groups': len(duplicates),
         'automatic_backups': len(backups),
         'latest_backup': backups[0].name if backups else '尚无',
@@ -585,7 +636,7 @@ def catalog_dashboard_snapshot(items, change_log):
         'pending_count': counts['pending'],
         'category_counts': category_counts,
         'recent_logs': change_log[:8],
-        'healthy': not missing_files and not invalid_paths and not (actual_files - referenced_files),
+        'healthy': health['healthy'],
     }
 
 # --- HTML Templates ---
@@ -899,6 +950,12 @@ HTML_TEMPLATE = """
         .duplicate-pdf-panel { margin-top:1rem; }
         .duplicate-pdf-frame { width:100%; height:560px; border:1px solid #ced4da; border-radius:.5rem; background:white; }
         .batch-file-name { max-width:34rem; overflow-wrap:anywhere; }
+        .batch-review-item { background:#fff; }
+        .batch-review-item+.batch-review-item { margin-top:1rem; }
+        .batch-review-heading { background:#f8f9fa; }
+        .health-stat-link { display:block; padding:.6rem; border-radius:.5rem; color:inherit; text-decoration:none; }
+        .health-stat-link:hover,.health-stat-link:focus-visible { background:#eef4ff; color:inherit; }
+        .health-path { white-space:normal; overflow-wrap:anywhere; }
         @media (max-width:767.98px) { .duplicate-pdf-frame { height:68vh; min-height:420px; } }
     </style>
 </head>
@@ -913,6 +970,7 @@ HTML_TEMPLATE = """
     {% endwith %}
     <ul class="nav nav-tabs mb-4 flex-wrap">
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'dashboard' else '' }}" href="/dashboard">📊 仪表盘</a></li>
+        <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'health' else '' }}" href="/catalog-health">🩺 资料健康</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'upload' else '' }}" href="/">📤 上传</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'batch_upload' else '' }}" href="/batch-upload">📚 批量上传</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'manage' else '' }}" href="/manage">📋 管理</a></li>
@@ -932,13 +990,13 @@ HTML_TEMPLATE = """
     <div class="row g-3">
         <div class="col-lg-7">
             <div class="card shadow-sm mb-3">
-                <div class="card-header bg-white d-flex justify-content-between"><strong>资料健康</strong><span class="badge {{ 'bg-success' if stats.healthy else 'bg-danger' }}">{{ '正常' if stats.healthy else '需处理' }}</span></div>
+                <div class="card-header bg-white d-flex justify-content-between"><strong>资料健康</strong><a class="badge text-decoration-none {{ 'bg-success' if stats.healthy else 'bg-danger' }}" href="{{ url_for('catalog_health') }}">{{ '正常' if stats.healthy else '需处理' }}</a></div>
                 <div class="card-body"><div class="row text-center g-3">
-                    <div class="col-4"><div class="fw-bold fs-4">{{ stats.missing_files + stats.invalid_paths }}</div><small class="text-muted">缺失/非法 PDF</small></div>
-                    <div class="col-4"><div class="fw-bold fs-4">{{ stats.orphan_files }}</div><small class="text-muted">未引用文件</small></div>
+                    <div class="col-4"><a class="health-stat-link" href="{{ url_for('catalog_health', issue='pdf') }}"><div class="fw-bold fs-4">{{ stats.missing_files + stats.invalid_paths }}</div><small class="text-muted">缺失/非法 PDF</small><div class="small text-primary mt-1">查看明细</div></a></div>
+                    <div class="col-4"><a class="health-stat-link" href="{{ url_for('catalog_health', issue='orphan') }}"><div class="fw-bold fs-4">{{ stats.orphan_files }}</div><small class="text-muted">未引用文件</small><div class="small text-primary mt-1">查看明细</div></a></div>
                     <div class="col-4"><div class="fw-bold fs-4">{{ stats.lyrics_files }}</div><small class="text-muted">歌词文件</small></div>
-                    <div class="col-6"><div class="fw-bold fs-4">{{ stats.missing_work }}</div><small class="text-muted">未填所属作品</small></div>
-                    <div class="col-6"><div class="fw-bold fs-4">{{ stats.missing_description }}</div><small class="text-muted">未填简介</small></div>
+                    <div class="col-6"><a class="health-stat-link" href="{{ url_for('catalog_health', issue='missing_work') }}"><div class="fw-bold fs-4">{{ stats.missing_work }}</div><small class="text-muted">未填所属作品</small><div class="small text-primary mt-1">查看明细</div></a></div>
+                    <div class="col-6"><a class="health-stat-link" href="{{ url_for('catalog_health', issue='missing_description') }}"><div class="fw-bold fs-4">{{ stats.missing_description }}</div><small class="text-muted">未填简介</small><div class="small text-primary mt-1">查看明细</div></a></div>
                 </div></div>
             </div>
             <div class="card shadow-sm"><div class="card-header bg-white"><strong>分类分布</strong></div><div class="table-responsive"><table class="table compact-table mb-0"><tbody>{% for category in stats.category_counts %}<tr><td>{{ category.name }}</td><td class="text-end fw-bold">{{ category.count }}</td></tr>{% endfor %}</tbody></table></div></div>
@@ -946,6 +1004,56 @@ HTML_TEMPLATE = """
         <div class="col-lg-5">
             <div class="card shadow-sm mb-3"><div class="card-header bg-white"><strong>备份状态</strong></div><div class="card-body"><div>自动备份：<strong>{{ stats.automatic_backups }}</strong> 份</div><div class="small text-muted text-break mt-1">最新：{{ stats.latest_backup }}</div></div></div>
             <div class="card shadow-sm"><div class="card-header bg-white"><strong>最近操作</strong></div><ul class="list-group list-group-flush">{% for log in stats.recent_logs %}<li class="list-group-item"><div>{{ log.msg }}</div><small class="text-muted">{{ log.date }}</small></li>{% else %}<li class="list-group-item text-muted">暂无记录</li>{% endfor %}</ul></div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if active_tab == 'health' %}
+    <div class="card shadow">
+        <div class="card-header bg-white d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div><strong>资料健康明细</strong><div class="small text-muted mt-1">这里只显示目录相对路径，不会自动移动或删除文件。</div></div>
+            <span class="badge {{ 'bg-success' if health.healthy else 'bg-danger' }}">{{ 'PDF 目录正常' if health.healthy else 'PDF 目录需处理' }}</span>
+        </div>
+        <div class="card-body border-bottom">
+            <div class="nav nav-pills gap-2 flex-wrap" aria-label="资料问题类型">
+                <a class="nav-link {{ 'active' if health_issue == 'pdf' }}" href="{{ url_for('catalog_health', issue='pdf') }}">缺失/非法 PDF <span class="badge bg-light text-dark ms-1">{{ health.file_issues|length }}</span></a>
+                <a class="nav-link {{ 'active' if health_issue == 'orphan' }}" href="{{ url_for('catalog_health', issue='orphan') }}">未引用文件 <span class="badge bg-light text-dark ms-1">{{ health.orphan_files|length }}</span></a>
+                <a class="nav-link {{ 'active' if health_issue == 'missing_work' }}" href="{{ url_for('catalog_health', issue='missing_work') }}">未填所属作品 <span class="badge bg-light text-dark ms-1">{{ health.missing_work }}</span></a>
+                <a class="nav-link {{ 'active' if health_issue == 'missing_description' }}" href="{{ url_for('catalog_health', issue='missing_description') }}">未填简介 <span class="badge bg-light text-dark ms-1">{{ health.missing_description }}</span></a>
+            </div>
+        </div>
+
+        {% if health_issue == 'pdf' %}
+        <div class="table-responsive"><table class="table table-hover align-middle mb-0">
+            <thead class="table-light"><tr><th>问题</th><th>乐谱资料</th><th>记录路径</th><th>操作</th></tr></thead>
+            <tbody>{% for problem in health_items %}
+                <tr>
+                    <td><span class="badge bg-danger">{{ problem.reason }}</span></td>
+                    <td><strong>{{ problem.item.title }}</strong><div class="small text-muted">ID {{ problem.item.id }} · {{ problem.item.composer or '未填作曲家' }}</div></td>
+                    <td><code class="health-path">scores/{{ problem.filename }}</code>{% if problem.possible_matches %}<div class="small text-warning-emphasis mt-2">发现同名的未引用文件，可能放错目录：</div>{% for match in problem.possible_matches %}<code class="health-path d-block">scores/{{ match }}</code>{% endfor %}{% endif %}</td>
+                    <td><a class="btn btn-sm btn-outline-primary" href="{{ url_for('edit', item_id=problem.item.id) }}">编辑资料</a></td>
+                </tr>
+            {% else %}<tr><td colspan="4" class="text-center p-5 text-muted">没有缺失或非法的 PDF 记录。</td></tr>{% endfor %}</tbody>
+        </table></div>
+        {% elif health_issue == 'orphan' %}
+        <div class="alert alert-warning rounded-0 border-start-0 border-end-0 mb-0">未引用文件可能只是放错目录，请先与“缺失/非法 PDF”中的同名提示核对，不要直接删除。</div>
+        <div class="table-responsive"><table class="table table-hover align-middle mb-0">
+            <thead class="table-light"><tr><th>实际文件路径</th><th>大小</th></tr></thead>
+            <tbody>{% for orphan in health_items %}<tr><td><code class="health-path">scores/{{ orphan.filename }}</code></td><td>{{ orphan.size }}</td></tr>{% else %}<tr><td colspan="2" class="text-center p-5 text-muted">没有未引用的文件。</td></tr>{% endfor %}</tbody>
+        </table></div>
+        {% else %}
+        <div class="table-responsive"><table class="table table-hover align-middle mb-0">
+            <thead class="table-light"><tr><th>曲名</th><th>作曲家</th><th>分类</th><th>缺少内容</th><th>操作</th></tr></thead>
+            <tbody>{% for item in health_items %}<tr><td><strong>{{ item.title }}</strong><div class="small text-muted">ID {{ item.id }}</div></td><td>{{ item.composer or '—' }}</td><td>{{ item.category or '—' }}</td><td><span class="badge bg-warning text-dark">{{ health_issue_label }}</span></td><td><a class="btn btn-sm btn-outline-primary" href="{{ url_for('edit', item_id=item.id) }}">补充资料</a></td></tr>{% else %}<tr><td colspan="5" class="text-center p-5 text-muted">没有此类资料问题。</td></tr>{% endfor %}</tbody>
+        </table></div>
+        {% endif %}
+
+        <div class="card-footer bg-white d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <span class="small text-muted">共 {{ health_total_items }} 条 · 第 {{ page }} / {{ total_pages }} 页</span>
+            <div class="d-flex align-items-center gap-3">
+                <span class="small">每页：<a class="{{ 'fw-bold' if per_page == 50 }}" href="{{ url_for('catalog_health', issue=health_issue, per_page=50, page=1) }}">50</a> · <a class="{{ 'fw-bold' if per_page == 100 }}" href="{{ url_for('catalog_health', issue=health_issue, per_page=100, page=1) }}">100</a></span>
+                {% if total_pages > 1 %}<nav aria-label="健康问题分页"><ul class="pagination pagination-sm mb-0"><li class="page-item {{ 'disabled' if page == 1 }}"><a class="page-link" href="{{ url_for('catalog_health', issue=health_issue, per_page=per_page, page=page-1) }}">上一页</a></li><li class="page-item disabled"><span class="page-link">{{ page }}/{{ total_pages }}</span></li><li class="page-item {{ 'disabled' if page == total_pages }}"><a class="page-link" href="{{ url_for('catalog_health', issue=health_issue, per_page=per_page, page=page+1) }}">下一页</a></li></ul></nav>{% endif %}
+            </div>
         </div>
     </div>
     {% endif %}
@@ -1033,17 +1141,18 @@ HTML_TEMPLATE = """
     <div class="card shadow">
         <div class="card-header bg-white">
             <strong>批量上传乐谱</strong>
-            <div class="small text-muted mt-1">公共资料会应用到本批全部 PDF；选择文件后，可逐份检查和修改曲名。任意一份校验或保存失败时，整批都不会发布。</div>
+            <div class="small text-muted mt-1">先填写批量默认资料，再逐份确认曲名、作曲家、所属作品、调性和编制。任意一份校验或保存失败时，整批都不会发布。</div>
         </div>
         <div class="card-body">
             <form id="batch-upload-form" method="post" enctype="multipart/form-data" action="{{ url_for('batch_upload') }}">
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
                 <fieldset class="mb-4">
-                    <legend class="h5 mb-3">1. 填写公共资料</legend>
+                    <legend class="h5 mb-1">1. 填写批量默认资料</legend>
+                    <div class="small text-muted mb-3">同一批大多相同的内容只需填一次；选择 PDF 后，仍可在每份乐谱中单独覆盖。</div>
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <label class="form-label" for="batch-composer">作曲家 *</label>
-                            <input class="form-control" id="batch-composer" name="composer" maxlength="200" value="{{ form.get('composer', '') if form else '' }}" required>
+                            <label class="form-label" for="batch-composer">作曲家（默认值）</label>
+                            <input class="form-control" id="batch-composer" name="composer" maxlength="200" value="{{ form.get('composer', '') if form else '' }}" placeholder="同一位作曲家时填写">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label" for="batch-category">分类 *</label>
@@ -1053,7 +1162,7 @@ HTML_TEMPLATE = """
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label" for="batch-work">所属作品</label>
+                            <label class="form-label" for="batch-work">所属作品（默认值）</label>
                             <input class="form-control" id="batch-work" name="work" maxlength="200" value="{{ form.get('work', '') if form else '' }}">
                         </div>
                         <div class="col-md-6">
@@ -1063,12 +1172,12 @@ HTML_TEMPLATE = """
                         </div>
                     </div>
                     <details class="mt-3">
-                        <summary class="text-primary">填写更多公共资料（可选）</summary>
+                        <summary class="text-primary">填写更多默认资料（可选）</summary>
                         <div class="row g-3 mt-1">
                             <div class="col-md-4"><label class="form-label" for="batch-sub-category">体裁/子分类</label><input class="form-control" id="batch-sub-category" name="sub_category" maxlength="120" value="{{ form.get('sub_category', '') if form else '' }}"></div>
-                            <div class="col-md-4"><label class="form-label" for="batch-voice-types">编制（声部/乐器）</label><input class="form-control" id="batch-voice-types" name="voice_types" maxlength="150" value="{{ form.get('voice_types', '') if form else '' }}"></div>
+                            <div class="col-md-4"><label class="form-label" for="batch-voice-types">编制（默认值）</label><input class="form-control" id="batch-voice-types" name="voice_types" maxlength="150" value="{{ form.get('voice_types', '') if form else '' }}"></div>
                             <div class="col-md-4"><label class="form-label" for="batch-voice-count">数量/类型补充</label><input class="form-control" id="batch-voice-count" name="voice_count" maxlength="100" value="{{ form.get('voice_count', '') if form else '' }}"></div>
-                            <div class="col-md-4"><label class="form-label" for="batch-tonality">调性</label><input class="form-control" id="batch-tonality" name="tonality" maxlength="80" value="{{ form.get('tonality', '') if form else '' }}"></div>
+                            <div class="col-md-4"><label class="form-label" for="batch-tonality">调性（默认值）</label><input class="form-control" id="batch-tonality" name="tonality" maxlength="80" value="{{ form.get('tonality', '') if form else '' }}"></div>
                             <div class="col-md-8"><label class="form-label" for="batch-description">简介</label><textarea class="form-control" id="batch-description" name="description" maxlength="2000" rows="2">{{ form.get('description', '') if form else '' }}</textarea></div>
                         </div>
                     </details>
@@ -1083,13 +1192,14 @@ HTML_TEMPLATE = """
                 </fieldset>
 
                 <fieldset class="mb-4" id="batch-review" hidden>
-                    <legend class="h5 mb-3">3. 检查每份曲名</legend>
-                    <div class="table-responsive border rounded">
-                        <table class="table align-middle mb-0">
-                            <thead class="table-light"><tr><th style="width:52px">#</th><th>原文件名</th><th style="min-width:280px">网站曲名 *</th></tr></thead>
-                            <tbody id="batch-file-list"></tbody>
-                        </table>
+                    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                        <div>
+                            <legend class="h5 mb-1">3. 逐份确认资料</legend>
+                            <div class="small text-muted">每份乐谱都可以使用不同资料；作曲家为必填项。</div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm" id="batch-apply-defaults" type="button">将默认资料应用到全部</button>
                     </div>
+                    <div id="batch-file-list"></div>
                 </fieldset>
 
                 <button class="btn btn-success w-100" id="batch-submit" type="submit" disabled>选择 PDF 后发布</button>
@@ -1105,12 +1215,36 @@ HTML_TEMPLATE = """
         const summary = document.getElementById('batch-file-summary');
         const errorBox = document.getElementById('batch-client-error');
         const submit = document.getElementById('batch-submit');
+        const applyDefaults = document.getElementById('batch-apply-defaults');
         const maxFiles = {{ batch_max_files }};
         const maxBytes = {{ batch_max_bytes }};
         const formatSize = (bytes) => bytes < 1024 * 1024
             ? `${(bytes / 1024).toFixed(1)} KB`
             : `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
         const defaultTitle = (name) => (name.replace(/\\.pdf$/i, '').replace(/[_\\s]+/g, ' ').replace(/^[.\\s_-]+|[.\\s_-]+$/g, '') || '未命名乐谱').slice(0, 200);
+        const defaultFields = () => ({
+            item_composers: document.getElementById('batch-composer').value,
+            item_works: document.getElementById('batch-work').value,
+            item_tonalities: document.getElementById('batch-tonality').value,
+            item_voice_types: document.getElementById('batch-voice-types').value,
+        });
+        const appendField = (container, fileName, labelText, name, value, maxLength, required = false, columnClass = 'col-md-6') => {
+            const wrapper = document.createElement('div');
+            wrapper.className = columnClass;
+            const label = document.createElement('label');
+            label.className = 'form-label small mb-1';
+            label.textContent = labelText;
+            const field = document.createElement('input');
+            field.className = 'form-control form-control-sm';
+            field.name = name;
+            field.value = value;
+            field.maxLength = maxLength;
+            field.required = required;
+            field.setAttribute('aria-label', `${fileName} 的${labelText.replace(' *', '')}`);
+            wrapper.append(label, field);
+            container.append(wrapper);
+            return field;
+        };
 
         input.addEventListener('change', () => {
             const files = Array.from(input.files || []);
@@ -1122,40 +1256,64 @@ HTML_TEMPLATE = """
             else if (invalidFile) error = `${invalidFile.name} 不是 PDF 文件。`;
 
             list.replaceChildren();
+            const defaults = defaultFields();
             files.forEach((file, index) => {
-                const row = document.createElement('tr');
-                const numberCell = document.createElement('td');
-                numberCell.textContent = String(index + 1);
-                const fileCell = document.createElement('td');
+                const item = document.createElement('section');
+                item.className = 'batch-review-item border rounded overflow-hidden';
+                item.dataset.batchItem = '1';
+                const heading = document.createElement('div');
+                heading.className = 'batch-review-heading d-flex flex-wrap justify-content-between align-items-center gap-2 px-3 py-2 border-bottom';
+                const fileInfo = document.createElement('div');
                 const fileName = document.createElement('div');
                 fileName.className = 'batch-file-name fw-semibold';
-                fileName.textContent = file.name;
+                fileName.textContent = `${index + 1}. ${file.name}`;
                 const fileSize = document.createElement('small');
                 fileSize.className = 'text-muted';
                 fileSize.textContent = formatSize(file.size);
-                fileCell.append(fileName, fileSize);
-                const titleCell = document.createElement('td');
-                const title = document.createElement('input');
-                title.className = 'form-control';
-                title.name = 'titles';
-                title.value = defaultTitle(file.name);
-                title.maxLength = 200;
-                title.required = true;
-                title.setAttribute('aria-label', `${file.name} 的网站曲名`);
-                titleCell.append(title);
-                row.append(numberCell, fileCell, titleCell);
-                list.append(row);
+                fileInfo.append(fileName, fileSize);
+                heading.append(fileInfo);
+                if (index > 0) {
+                    const copyPrevious = document.createElement('button');
+                    copyPrevious.className = 'btn btn-outline-secondary btn-sm';
+                    copyPrevious.type = 'button';
+                    copyPrevious.textContent = '复制上一份资料';
+                    copyPrevious.addEventListener('click', () => {
+                        const previous = list.querySelectorAll('[data-batch-item]')[index - 1];
+                        ['item_composers', 'item_works', 'item_tonalities', 'item_voice_types'].forEach((name) => {
+                            item.querySelector(`[name="${name}"]`).value = previous.querySelector(`[name="${name}"]`).value;
+                        });
+                    });
+                    heading.append(copyPrevious);
+                }
+                const fields = document.createElement('div');
+                fields.className = 'row g-3 p-3 pt-2';
+                appendField(fields, file.name, '网站曲名 *', 'titles', defaultTitle(file.name), 200, true, 'col-lg-6');
+                appendField(fields, file.name, '作曲家 *', 'item_composers', defaults.item_composers, 200, true, 'col-lg-6');
+                appendField(fields, file.name, '所属作品', 'item_works', defaults.item_works, 200, false, 'col-lg-5');
+                appendField(fields, file.name, '调性', 'item_tonalities', defaults.item_tonalities, 80, false, 'col-lg-3 col-md-6');
+                appendField(fields, file.name, '编制（声部/乐器）', 'item_voice_types', defaults.item_voice_types, 150, false, 'col-lg-4 col-md-6');
+                item.append(heading, fields);
+                list.append(item);
             });
 
             review.hidden = files.length === 0;
             summary.textContent = files.length
-                ? `已选择 ${files.length} 份，共 ${formatSize(totalBytes)}。请检查下方曲名。`
+                ? `已选择 ${files.length} 份，共 ${formatSize(totalBytes)}。请检查下方逐份资料。`
                 : '尚未选择文件';
             errorBox.textContent = error;
             errorBox.hidden = !error;
             submit.disabled = files.length === 0 || Boolean(error);
             submit.textContent = files.length && !error ? `一次发布 ${files.length} 份乐谱` : '选择 PDF 后发布';
             if (error) errorBox.focus();
+        });
+
+        applyDefaults.addEventListener('click', () => {
+            const defaults = defaultFields();
+            list.querySelectorAll('[data-batch-item]').forEach((item) => {
+                Object.entries(defaults).forEach(([name, value]) => {
+                    item.querySelector(`[name="${name}"]`).value = value;
+                });
+            });
         });
 
         form.addEventListener('submit', () => {
@@ -1362,6 +1520,60 @@ def dashboard():
         active_tab='dashboard', stats=stats,
         pending_count=stats['pending_count'],
         deleted_count=stats['deleted_count'],
+    )
+
+
+@app.route('/catalog-health')
+@login_required
+def catalog_health():
+    issue = request.args.get('issue', 'pdf')
+    issue_labels = {
+        'pdf': '缺失/非法 PDF',
+        'orphan': '未引用文件',
+        'missing_work': '未填所属作品',
+        'missing_description': '未填简介',
+    }
+    if issue not in issue_labels:
+        abort(400, description='未知的资料问题类型')
+    try:
+        page = max(1, int(request.args.get('page', '1')))
+    except ValueError:
+        page = 1
+    try:
+        per_page = int(request.args.get('per_page', '50'))
+    except ValueError:
+        per_page = 50
+    if per_page not in {50, 100}:
+        per_page = 50
+
+    data, _ = load_data_and_log()
+    health = catalog_health_report(data)
+    if issue == 'pdf':
+        issue_items = health['file_issues']
+    elif issue == 'orphan':
+        issue_items = health['orphan_files']
+    elif issue == 'missing_work':
+        issue_items = [item for item in data if not str(item.get('work', '')).strip()]
+    else:
+        issue_items = [item for item in data if not str(item.get('description', '')).strip()]
+
+    total_items = len(issue_items)
+    total_pages = max(1, (total_items + per_page - 1) // per_page)
+    page = min(page, total_pages)
+    start = (page - 1) * per_page
+    return render_template_string(
+        HTML_TEMPLATE,
+        active_tab='health',
+        health=health,
+        health_issue=issue,
+        health_issue_label=issue_labels[issue],
+        health_items=issue_items[start:start + per_page],
+        health_total_items=total_items,
+        page=page,
+        per_page=per_page,
+        total_pages=total_pages,
+        pending_count=submission_counts()['pending'],
+        deleted_count=len(load_deleted_entries()),
     )
 
 
@@ -1639,7 +1851,7 @@ def batch_upload():
     published_paths = []
     if request.method == 'POST':
         try:
-            composer = form_text('composer', '作曲家', 200, required=True)
+            composer = form_text('composer', '默认作曲家', 200)
             category = form_text('category', '分类', 100, required=True)
             if category not in ALLOWED_CATEGORIES:
                 raise ValueError('请选择有效的乐谱分类')
@@ -1673,6 +1885,24 @@ def batch_upload():
                     raise ValueError(f'{original_name} 不是 PDF 文件')
                 supplied_title = raw_titles[index - 1] if raw_titles else title_from_pdf_filename(original_name)
                 titles.append(validated_text(supplied_title, f'第 {index} 份乐谱的曲名', 200, required=True))
+
+            per_item_specs = (
+                ('item_composers', '作曲家', 200, common_fields['composer'], True),
+                ('item_works', '所属作品', 200, common_fields['work'], False),
+                ('item_tonalities', '调性', 80, common_fields['tonality'], False),
+                ('item_voice_types', '编制', 150, common_fields['voice_types'], False),
+            )
+            per_item_values = {}
+            for field_name, label, max_length, fallback, required in per_item_specs:
+                values = request.form.getlist(field_name)
+                if values and len(values) != len(uploads):
+                    raise ValueError(f'文件与{label}列表不一致，请重新选择 PDF 后再试')
+                if not values:
+                    values = [fallback] * len(uploads)
+                per_item_values[field_name] = [
+                    validated_text(value, f'第 {index} 份乐谱的{label}', max_length, required=required)
+                    for index, value in enumerate(values, start=1)
+                ]
 
             music_data, change_log = load_data_and_log()
             new_id = max([int(item['id']) for item in music_data] + [0, int(time.time() * 1000)]) + 1
@@ -1710,6 +1940,10 @@ def batch_upload():
                         'public_id': public_id,
                         'title': title,
                         **common_fields,
+                        'composer': per_item_values['item_composers'][index],
+                        'work': per_item_values['item_works'][index],
+                        'tonality': per_item_values['item_tonalities'][index],
+                        'voice_types': per_item_values['item_voice_types'][index],
                         'filename': catalog_filename,
                         'date': datetime.date.today().isoformat(),
                         'has_lyrics': False,
@@ -2015,10 +2249,12 @@ def edit(item_id):
         old_path = score_file_path(item['filename'])
         new_path = old_path
         old_filename = item['filename']
+        new_filename = old_filename
         lyric_path = Path(LYRICS_DIR) / f"{item_id}.json"
         previous_lyrics = lyric_path.read_bytes() if lyric_path.exists() else None
         if category != item['category']:
-            new_path = (Path(SCORES_DIR) / category / old_path.name).resolve()
+            new_filename = f"{category}/{old_path.name}"
+            new_path = score_file_path(new_filename)
             new_path.parent.mkdir(parents=True, exist_ok=True)
             if new_path.exists():
                 abort(409, description='目标分类中已存在同名文件')
@@ -2032,7 +2268,7 @@ def edit(item_id):
             "voice_count": request.form.get('voice_count', '').strip(),
             "voice_types": request.form.get('voice_types', '').strip(), "tonality": request.form.get('tonality', '').strip(),
             "description": request.form.get('description', '').strip(),
-            "filename": f"{category}/{new_path.name}"
+            "filename": new_filename,
         })
         has_lyrics = save_lyrics(item_id, request.form.get('lyrics_og', ''), request.form.get('lyrics_cn', ''))
         item['has_lyrics'] = has_lyrics

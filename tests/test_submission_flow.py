@@ -178,6 +178,12 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertIn('name="files"', html)
         self.assertIn("multiple", html)
         self.assertIn("整批都不会发布", html)
+        self.assertIn("逐份确认资料", html)
+        self.assertIn("将默认资料应用到全部", html)
+        self.assertIn("item_composers", html)
+        self.assertIn("item_works", html)
+        self.assertIn("item_tonalities", html)
+        self.assertIn("item_voice_types", html)
 
     def test_single_admin_upload_keeps_its_original_size_limit(self):
         self.login()
@@ -241,6 +247,53 @@ class SubmissionFlowTest(unittest.TestCase):
             second_pdf,
         )
         self.assertEqual(list((self.temp_root / "backup").rglob("*.part")), [])
+
+    def test_batch_upload_saves_per_file_composer_work_tonality_and_instrumentation(self):
+        self.login()
+        response = self.post_batch(
+            [
+                (b"%PDF-1.4\nfirst metadata score\n", "first.pdf"),
+                (b"%PDF-1.4\nsecond metadata score\n", "second.pdf"),
+            ],
+            titles=["第一首", "第二首"],
+            item_composers=["舒伯特", "莫扎特"],
+            item_works=["冬之旅", "费加罗的婚礼"],
+            item_tonalities=["d minor", "D major"],
+            item_voice_types=["Tenor, Piano", "Soprano, Orchestra"],
+        )
+
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        by_title = {item["title"]: item for item in saved}
+        self.assertEqual(by_title["第一首"]["composer"], "舒伯特")
+        self.assertEqual(by_title["第一首"]["work"], "冬之旅")
+        self.assertEqual(by_title["第一首"]["tonality"], "d minor")
+        self.assertEqual(by_title["第一首"]["voice_types"], "Tenor, Piano")
+        self.assertEqual(by_title["第二首"]["composer"], "莫扎特")
+        self.assertEqual(by_title["第二首"]["work"], "费加罗的婚礼")
+        self.assertEqual(by_title["第二首"]["tonality"], "D major")
+        self.assertEqual(by_title["第二首"]["voice_types"], "Soprano, Orchestra")
+
+    def test_batch_upload_rejects_mismatched_or_missing_per_file_composer(self):
+        self.login()
+        mismatched = self.post_batch(
+            [(b"%PDF-first", "first.pdf"), (b"%PDF-second", "second.pdf")],
+            titles=["第一首", "第二首"],
+            item_composers=["只有一项"],
+        )
+        self.assertEqual(mismatched.status_code, 200)
+        self.assertIn("文件与作曲家列表不一致", mismatched.get_data(as_text=True))
+
+        missing = self.post_batch(
+            [(b"%PDF-first", "first.pdf"), (b"%PDF-second", "second.pdf")],
+            titles=["第一首", "第二首"],
+            composer="",
+            item_composers=["舒伯特", "   "],
+        )
+        self.assertEqual(missing.status_code, 200)
+        self.assertIn("请填写第 2 份乐谱的作曲家", missing.get_data(as_text=True))
+        self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
 
     def test_batch_upload_derives_titles_from_pdf_filenames(self):
         self.login()
@@ -541,6 +594,172 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertIn('href="/scores/202/file"', duplicate_html)
         self.assertIn('action="/delete/201"', duplicate_html)
         self.assertEqual(duplicate_html.count('name="next" value="/duplicates"'), 2)
+
+    def test_catalog_health_requires_login_and_keeps_launcher_health_public(self):
+        launcher_health = self.client.get("/health")
+        self.assertEqual(launcher_health.status_code, 200)
+        self.assertEqual(launcher_health.get_json(), {"status": "ok"})
+
+        anonymous = self.client.get("/catalog-health")
+        self.assertEqual(anonymous.status_code, 302)
+        self.assertIn("/login?next=", anonymous.headers["Location"])
+
+        self.login()
+        page = self.client.get("/catalog-health")
+        self.assertEqual(page.status_code, 200)
+        self.assertIn("资料健康明细", page.get_data(as_text=True))
+
+    def test_catalog_health_lists_exact_file_problems_and_escapes_output(self):
+        normal = self.sample_item(1001, has_lyrics=False)
+        missing = self.sample_item(1002, has_lyrics=False)
+        invalid = self.sample_item(1003, has_lyrics=False)
+        normal["title"] = "正常乐谱"
+        missing["title"] = '<script>alert("x")</script>'
+        missing["filename"] = "艺术歌曲/missing-score.pdf"
+        invalid["title"] = "非法路径乐谱"
+        invalid["filename"] = "../outside.pdf"
+        self.seed_item_files(normal)
+        orphan_path = self.temp_root / "scores" / "其他" / "missing-score.pdf"
+        orphan_path.parent.mkdir(parents=True, exist_ok=True)
+        orphan_path.write_bytes(b"%PDF-orphan")
+        (self.temp_root / "data.json").write_text(
+            json.dumps([normal, missing, invalid], ensure_ascii=False), encoding="utf-8"
+        )
+        self.login()
+
+        pdf_page = self.client.get("/catalog-health?issue=pdf")
+        html = pdf_page.get_data(as_text=True)
+        self.assertEqual(pdf_page.status_code, 200)
+        self.assertIn("记录指向的 PDF 不存在", html)
+        self.assertIn("记录的 PDF 路径不合法", html)
+        self.assertIn("scores/艺术歌曲/missing-score.pdf", html)
+        self.assertIn("scores/其他/missing-score.pdf", html)
+        self.assertIn("scores/../outside.pdf", html)
+        self.assertIn("&lt;script&gt;alert", html)
+        self.assertNotIn('<script>alert("x")</script>', html)
+        self.assertNotIn("正常乐谱", html)
+        self.assertNotIn(str(self.temp_root), html)
+
+        orphan_page = self.client.get("/catalog-health?issue=orphan")
+        orphan_html = orphan_page.get_data(as_text=True)
+        self.assertEqual(orphan_page.status_code, 200)
+        self.assertIn("scores/其他/missing-score.pdf", orphan_html)
+        self.assertNotIn(str(self.temp_root), orphan_html)
+
+    def test_catalog_health_normalizes_windows_case_and_separators(self):
+        case_item = self.sample_item(1004, has_lyrics=False)
+        slash_item = self.sample_item(1005, has_lyrics=False)
+        case_item["filename"] = "艺术歌曲/casename.pdf"
+        slash_item["filename"] = "艺术歌曲\\backslash.pdf"
+        case_path = self.temp_root / "scores" / "艺术歌曲" / "CaseName.PDF"
+        slash_path = self.temp_root / "scores" / "艺术歌曲" / "backslash.pdf"
+        case_path.parent.mkdir(parents=True, exist_ok=True)
+        case_path.write_bytes(b"%PDF-case")
+        slash_path.write_bytes(b"%PDF-slash")
+
+        report = self.admin.catalog_health_report([case_item, slash_item])
+        self.assertTrue(report["healthy"])
+        self.assertEqual(report["file_issues"], [])
+        self.assertEqual(report["orphan_files"], [])
+
+    def test_dashboard_health_counts_link_to_matching_details(self):
+        missing = self.sample_item(1101, has_lyrics=False)
+        missing["work"] = ""
+        missing["description"] = ""
+        missing["filename"] = "艺术歌曲/missing-dashboard.pdf"
+        orphan = self.temp_root / "scores" / "其他" / "orphan-dashboard.pdf"
+        orphan.parent.mkdir(parents=True, exist_ok=True)
+        orphan.write_bytes(b"%PDF-orphan")
+        (self.temp_root / "data.json").write_text(
+            json.dumps([missing], ensure_ascii=False), encoding="utf-8"
+        )
+        self.login()
+
+        dashboard = self.client.get("/dashboard")
+        html = dashboard.get_data(as_text=True)
+        self.assertEqual(dashboard.status_code, 200)
+        for issue in ("pdf", "orphan", "missing_work", "missing_description"):
+            self.assertIn(f'/catalog-health?issue={issue}', html)
+        self.assertIn("需处理", html)
+
+    def test_catalog_health_metadata_filters_whitespace_and_paginates(self):
+        both_missing = self.sample_item(1201, has_lyrics=False)
+        work_only = self.sample_item(1202, has_lyrics=False)
+        description_only = self.sample_item(1203, has_lyrics=False)
+        complete = self.sample_item(1204, has_lyrics=False)
+        both_missing["title"] = "两项都缺"
+        both_missing["work"] = ""
+        both_missing["description"] = " "
+        work_only["title"] = "只缺作品"
+        work_only["work"] = "   "
+        description_only["title"] = "只缺简介"
+        description_only["description"] = "\t"
+        items = [both_missing, work_only, description_only, complete]
+        (self.temp_root / "data.json").write_text(
+            json.dumps(items, ensure_ascii=False), encoding="utf-8"
+        )
+        self.login()
+
+        work_page = self.client.get("/catalog-health?issue=missing_work")
+        work_html = work_page.get_data(as_text=True)
+        self.assertIn("两项都缺", work_html)
+        self.assertIn("只缺作品", work_html)
+        self.assertNotIn("只缺简介", work_html)
+        self.assertNotIn("测试乐谱 1204", work_html)
+
+        description_page = self.client.get("/catalog-health?issue=missing_description")
+        description_html = description_page.get_data(as_text=True)
+        self.assertIn("两项都缺", description_html)
+        self.assertIn("只缺简介", description_html)
+        self.assertNotIn("只缺作品", description_html)
+        self.assertNotIn("测试乐谱 1204", description_html)
+
+        many_items = [self.sample_item(item_id, has_lyrics=False) for item_id in range(1300, 1423)]
+        for item in many_items:
+            item["work"] = ""
+        (self.temp_root / "data.json").write_text(
+            json.dumps(many_items, ensure_ascii=False), encoding="utf-8"
+        )
+        page_two = self.client.get("/catalog-health?issue=missing_work&page=2&per_page=50")
+        page_two_html = page_two.get_data(as_text=True)
+        self.assertEqual(page_two_html.count('href="/edit/'), 50)
+        self.assertIn("共 123 条 · 第 2 / 3 页", page_two_html)
+
+    def test_edit_same_category_preserves_legacy_nested_filename(self):
+        item = self.sample_item(1501, has_lyrics=False)
+        item["filename"] = f"声乐作品/艺术歌曲/{item['public_id']}.pdf"
+        self.seed_item_files(item)
+        original_path = self.temp_root / "scores" / Path(item["filename"])
+        direct_path = self.temp_root / "scores" / "艺术歌曲" / original_path.name
+        (self.temp_root / "data.json").write_text(
+            json.dumps([item], ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog([item])
+        self.login()
+
+        response = self.client.post(
+            "/edit/1501",
+            data={
+                "_csrf_token": self.csrf_token(),
+                "title": item["title"],
+                "composer": item["composer"],
+                "work": item["work"],
+                "language": item["language"],
+                "category": item["category"],
+                "sub_category": item["sub_category"],
+                "voice_count": item["voice_count"],
+                "voice_types": item["voice_types"],
+                "tonality": item["tonality"],
+                "description": item["description"],
+                "lyrics_og": "",
+                "lyrics_cn": "",
+            },
+        )
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual(saved[0]["filename"], item["filename"])
+        self.assertTrue(original_path.is_file())
+        self.assertFalse(direct_path.exists())
 
     def test_catalog_pdf_preview_requires_login_and_serves_pdf(self):
         item = self.sample_item(601, has_lyrics=False)
