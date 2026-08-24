@@ -85,6 +85,29 @@ class SubmissionFlowTest(unittest.TestCase):
             content_type="multipart/form-data",
         )
 
+    def post_batch(self, files, *, titles=None, **overrides):
+        data = {
+            "_csrf_token": self.csrf_token(),
+            "composer": "批量测试作曲家",
+            "work": "批量测试作品",
+            "language": "德语",
+            "category": "艺术歌曲",
+            "sub_category": "艺术歌曲",
+            "voice_count": "独唱",
+            "voice_types": "Voice, Piano",
+            "tonality": "C major",
+            "description": "批量上传测试资料",
+            "files": [(io.BytesIO(content), filename) for content, filename in files],
+        }
+        if titles is not None:
+            data["titles"] = titles
+        data.update(overrides)
+        return self.client.post(
+            "/batch-upload",
+            data=data,
+            content_type="multipart/form-data",
+        )
+
     def login(self):
         response = self.client.post(
             "/login",
@@ -126,6 +149,205 @@ class SubmissionFlowTest(unittest.TestCase):
                 json.dumps({"id": item["id"], "original": "old", "translation": "旧译文"}, ensure_ascii=False),
                 encoding="utf-8",
             )
+
+    def test_batch_upload_page_requires_login_and_explains_atomic_import(self):
+        anonymous = self.client.get("/batch-upload")
+        self.assertEqual(anonymous.status_code, 302)
+        self.assertIn("/login?next=", anonymous.headers["Location"])
+
+        with self.client.session_transaction() as session:
+            session["_csrf_token"] = "anonymous-token"
+        anonymous_post = self.client.post(
+            "/batch-upload",
+            data={
+                "_csrf_token": "anonymous-token",
+                "composer": "未登录",
+                "category": "艺术歌曲",
+                "files": (io.BytesIO(b"%PDF-anonymous"), "anonymous.pdf"),
+            },
+            content_type="multipart/form-data",
+        )
+        self.assertEqual(anonymous_post.status_code, 302)
+        self.assertIn("/login?next=", anonymous_post.headers["Location"])
+
+        self.login()
+        response = self.client.get("/batch-upload")
+        html = response.get_data(as_text=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("批量上传乐谱", html)
+        self.assertIn('name="files"', html)
+        self.assertIn("multiple", html)
+        self.assertIn("整批都不会发布", html)
+
+    def test_single_admin_upload_keeps_its_original_size_limit(self):
+        self.login()
+        oversized_pdf = b"%PDF-oversized"
+        with (
+            mock.patch.object(self.admin, "ADMIN_UPLOAD_MAX_BYTES", 1),
+            mock.patch.object(self.admin, "UPLOAD_FORM_OVERHEAD_BYTES", 0),
+        ):
+            response = self.client.post(
+                "/",
+                data={
+                    "_csrf_token": self.csrf_token(),
+                    "title": "超大单份文件",
+                    "composer": "测试作曲家",
+                    "category": "艺术歌曲",
+                    "file": (io.BytesIO(oversized_pdf), "oversized.pdf"),
+                },
+                content_type="multipart/form-data",
+            )
+        self.assertEqual(response.status_code, 413)
+        self.assertIn("单份后台上传不能超过", response.get_data(as_text=True))
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+
+    def test_login_has_a_small_independent_request_limit(self):
+        with mock.patch.object(self.admin, "LOGIN_MAX_BYTES", 1):
+            response = self.client.post(
+                "/login",
+                data={"username": "admin", "password": "test-password", "_csrf_token": "token"},
+            )
+        self.assertEqual(response.status_code, 413)
+        self.assertIn("登录请求内容过大", response.get_data(as_text=True))
+
+    def test_batch_upload_publishes_multiple_pdfs_atomically(self):
+        first_pdf = b"%PDF-1.4\nfirst batch score\n%%EOF\n"
+        second_pdf = b"%PDF-1.4\nsecond batch score\n%%EOF\n"
+        self.login()
+
+        response = self.post_batch(
+            [(first_pdf, "first.pdf"), (second_pdf, "second.pdf")],
+            titles=["第一首批量乐谱", "第二首批量乐谱"],
+            category="乐谱书/曲集",
+        )
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.headers["Location"], "/manage")
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(saved), 2)
+        by_title = {item["title"]: item for item in saved}
+        self.assertEqual(set(by_title), {"第一首批量乐谱", "第二首批量乐谱"})
+        self.assertEqual({item["composer"] for item in saved}, {"批量测试作曲家"})
+        self.assertEqual({item["category"] for item in saved}, {"乐谱书/曲集"})
+        self.assertEqual(len({item["id"] for item in saved}), 2)
+        self.assertEqual(len({item["public_id"] for item in saved}), 2)
+        self.assertTrue(all(not item["has_lyrics"] for item in saved))
+        self.assertEqual(
+            (self.temp_root / "scores" / Path(by_title["第一首批量乐谱"]["filename"])).read_bytes(),
+            first_pdf,
+        )
+        self.assertEqual(
+            (self.temp_root / "scores" / Path(by_title["第二首批量乐谱"]["filename"])).read_bytes(),
+            second_pdf,
+        )
+        self.assertEqual(list((self.temp_root / "backup").rglob("*.part")), [])
+
+    def test_batch_upload_derives_titles_from_pdf_filenames(self):
+        self.login()
+        response = self.post_batch([
+            (b"%PDF-1.4\nfirst\n", "An_die_Musik.pdf"),
+            (b"%PDF-1.4\nsecond\n", "中文曲名.PDF"),
+        ])
+
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual({item["title"] for item in saved}, {"An die Musik", "中文曲名"})
+
+    def test_batch_upload_rejects_invalid_or_duplicate_pdf_without_partial_changes(self):
+        self.login()
+        invalid = self.post_batch(
+            [(b"%PDF-1.4\nvalid\n", "valid.pdf"), (b"not a pdf", "broken.pdf")],
+            titles=["有效文件", "伪装文件"],
+        )
+        self.assertEqual(invalid.status_code, 200)
+        self.assertIn("不是有效 PDF", invalid.get_data(as_text=True))
+        self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+        self.assertEqual(list((self.temp_root / "backup").rglob("*.pdf")), [])
+
+        same_pdf = b"%PDF-1.4\nidentical\n"
+        duplicate = self.post_batch(
+            [(same_pdf, "one.pdf"), (same_pdf, "two.pdf")],
+            titles=["第一份", "第二份"],
+        )
+        self.assertEqual(duplicate.status_code, 200)
+        self.assertIn("内容完全相同", duplicate.get_data(as_text=True))
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+
+    def test_batch_upload_enforces_count_and_total_size_limits(self):
+        self.login()
+        with mock.patch.object(self.admin, "BATCH_UPLOAD_MAX_FILES", 1):
+            too_many = self.post_batch(
+                [(b"%PDF-one", "one.pdf"), (b"%PDF-two", "two.pdf")],
+                titles=["一", "二"],
+            )
+        self.assertEqual(too_many.status_code, 200)
+        self.assertIn("一次最多上传 1 份", too_many.get_data(as_text=True))
+
+        with mock.patch.object(self.admin, "BATCH_UPLOAD_MAX_BYTES", 10):
+            too_large = self.post_batch(
+                [(b"%PDF-one", "one.pdf"), (b"%PDF-two", "two.pdf")],
+                titles=["一", "二"],
+            )
+        self.assertEqual(too_large.status_code, 200)
+        self.assertIn("总大小不能超过", too_large.get_data(as_text=True))
+        self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+
+    def test_batch_upload_rolls_back_all_files_when_catalog_save_fails(self):
+        existing = self.sample_item(900, has_lyrics=False)
+        self.seed_item_files(existing)
+        original_data = json.dumps([existing], ensure_ascii=False)
+        (self.temp_root / "data.json").write_text(original_data, encoding="utf-8")
+        self.admin.sync_catalog([existing])
+        self.login()
+
+        with mock.patch.object(self.admin, "save_all", side_effect=OSError("模拟批量保存失败")):
+            with self.assertRaises(OSError):
+                self.post_batch(
+                    [(b"%PDF-new-one", "one.pdf"), (b"%PDF-new-two", "two.pdf")],
+                    titles=["新增一", "新增二"],
+                    category="其他",
+                )
+
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual(saved, [existing])
+        score_files = list((self.temp_root / "scores").rglob("*.pdf"))
+        self.assertEqual(score_files, [self.temp_root / "scores" / Path(existing["filename"])])
+        self.assertEqual(list((self.temp_root / "backup").rglob("*.pdf")), [])
+
+    def test_batch_upload_rolls_back_files_and_json_when_database_sync_fails(self):
+        existing = self.sample_item(901, has_lyrics=False)
+        self.seed_item_files(existing)
+        original_log = [{"date": "2026-08-23 09:00", "type": "add", "msg": "原记录"}]
+        (self.temp_root / "data.json").write_text(
+            json.dumps([existing], ensure_ascii=False), encoding="utf-8"
+        )
+        (self.temp_root / "logs.json").write_text(
+            json.dumps(original_log, ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog([existing])
+        self.login()
+
+        with mock.patch.object(
+            self.admin,
+            "sync_catalog",
+            side_effect=[OSError("模拟数据库同步失败"), None],
+        ):
+            with self.assertRaises(OSError):
+                self.post_batch(
+                    [(b"%PDF-new-one", "one.pdf"), (b"%PDF-new-two", "two.pdf")],
+                    titles=["新增一", "新增二"],
+                    category="其他",
+                )
+
+        saved_data = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        saved_log = json.loads((self.temp_root / "logs.json").read_text(encoding="utf-8"))
+        self.assertEqual(saved_data, [existing])
+        self.assertEqual(saved_log, original_log)
+        score_files = list((self.temp_root / "scores").rglob("*.pdf"))
+        self.assertEqual(score_files, [self.temp_root / "scores" / Path(existing["filename"])])
+        self.assertEqual(list((self.temp_root / "backup").rglob("*.pdf")), [])
 
     def test_complete_submission_review_flow(self):
         response = self.post_submission()

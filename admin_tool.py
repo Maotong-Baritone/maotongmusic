@@ -51,6 +51,20 @@ try:
 except ValueError:
     SUBMISSION_MAX_MB = 50
 SUBMISSION_MAX_BYTES = SUBMISSION_MAX_MB * 1024 * 1024
+ADMIN_UPLOAD_MAX_MB = 100
+ADMIN_UPLOAD_MAX_BYTES = ADMIN_UPLOAD_MAX_MB * 1024 * 1024
+UPLOAD_FORM_OVERHEAD_BYTES = 1024 * 1024
+LOGIN_MAX_BYTES = 64 * 1024
+DEFAULT_FORM_MAX_BYTES = 2 * 1024 * 1024
+try:
+    BATCH_UPLOAD_MAX_FILES = min(100, max(1, int(os.environ.get('BATCH_UPLOAD_MAX_FILES', '30'))))
+except ValueError:
+    BATCH_UPLOAD_MAX_FILES = 30
+try:
+    BATCH_UPLOAD_MAX_MB = min(900, max(10, int(os.environ.get('BATCH_UPLOAD_MAX_MB', '500'))))
+except ValueError:
+    BATCH_UPLOAD_MAX_MB = 500
+BATCH_UPLOAD_MAX_BYTES = BATCH_UPLOAD_MAX_MB * 1024 * 1024
 
 AUTOMATIC_BACKUP_PATTERN = re.compile(
     r'^data_backup_\d{8}_\d{6}(?:_\d{6})?\.json$'
@@ -83,7 +97,11 @@ AUTO_OPEN_BROWSER = os.environ.get('AUTO_OPEN_BROWSER', '1').strip().lower() in 
 app = Flask(__name__)
 app.config.update(
     SECRET_KEY=os.environ.get('FLASK_SECRET_KEY') or secrets.token_hex(32),
-    MAX_CONTENT_LENGTH=max(100 * 1024 * 1024, SUBMISSION_MAX_BYTES + 1024 * 1024),
+    MAX_CONTENT_LENGTH=max(
+        100 * 1024 * 1024,
+        SUBMISSION_MAX_BYTES + 1024 * 1024,
+        BATCH_UPLOAD_MAX_BYTES + 5 * 1024 * 1024,
+    ),
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE='Lax',
 )
@@ -106,6 +124,19 @@ app.jinja_env.globals['csrf_token'] = csrf_token
 @app.before_request
 def protect_post_requests():
     if request.method == 'POST':
+        if request.endpoint not in {'login', 'submit_score'} and 'logged_in' not in session:
+            return redirect(url_for('login', next=request.full_path))
+
+        size_limits = {
+            'login': LOGIN_MAX_BYTES,
+            'submit_score': SUBMISSION_MAX_BYTES + UPLOAD_FORM_OVERHEAD_BYTES,
+            'index': ADMIN_UPLOAD_MAX_BYTES + UPLOAD_FORM_OVERHEAD_BYTES,
+            'batch_upload': BATCH_UPLOAD_MAX_BYTES + 5 * UPLOAD_FORM_OVERHEAD_BYTES,
+        }
+        size_limit = size_limits.get(request.endpoint, DEFAULT_FORM_MAX_BYTES)
+        if size_limit and request.content_length and request.content_length > size_limit:
+            abort(413)
+
         submitted = request.form.get('_csrf_token', '')
         expected = session.get('_csrf_token', '')
         if not expected or not secrets.compare_digest(submitted, expected):
@@ -153,13 +184,17 @@ def clean_original_filename(filename):
     return leaf[:255] or 'score.pdf'
 
 
-def form_text(name, label, max_length, required=False):
-    value = request.form.get(name, '').strip()
+def validated_text(value, label, max_length, required=False):
+    value = str(value or '').strip()
     if required and not value:
         raise ValueError(f'请填写{label}')
     if len(value) > max_length:
         raise ValueError(f'{label}不能超过 {max_length} 个字符')
     return value
+
+
+def form_text(name, label, max_length, required=False):
+    return validated_text(request.form.get(name, ''), label, max_length, required)
 
 
 def valid_email(value):
@@ -374,6 +409,43 @@ def is_pdf_upload(file):
     header = file.stream.read(5)
     file.stream.seek(0)
     return header == b'%PDF-'
+
+
+def title_from_pdf_filename(filename):
+    """Turn a local PDF filename into an editable default catalog title."""
+    cleaned = clean_original_filename(filename)
+    stem = cleaned[:-4] if cleaned.lower().endswith('.pdf') else Path(cleaned).stem
+    title = re.sub(r'[_\s]+', ' ', stem).strip(' .-_')
+    return title[:200] or '未命名乐谱'
+
+
+def stage_batch_pdf(upload, staging_path, remaining_bytes):
+    """Validate and stream one batch PDF without publishing it yet."""
+    digest = hashlib.sha256()
+    total = 0
+    try:
+        with staging_path.open('xb') as target:
+            while True:
+                chunk = upload.stream.read(1024 * 1024)
+                if not chunk:
+                    break
+                total += len(chunk)
+                if total > remaining_bytes:
+                    raise ValueError(f'批量上传总大小不能超过 {BATCH_UPLOAD_MAX_MB} MB')
+                digest.update(chunk)
+                target.write(chunk)
+        if total < 5:
+            raise ValueError(f'{clean_original_filename(upload.filename)} 文件为空或不完整')
+        with staging_path.open('rb') as source:
+            if source.read(5) != b'%PDF-':
+                raise ValueError(f'{clean_original_filename(upload.filename)} 不是有效 PDF')
+        return digest.hexdigest(), total
+    except Exception:
+        try:
+            staging_path.unlink(missing_ok=True)
+        except OSError as cleanup_error:
+            app.logger.error('无法清理批量上传暂存文件 %s: %s', staging_path, cleanup_error)
+        raise
 
 # --- 歌词处理函数 ---
 def save_lyrics(item_id, original, translation):
@@ -808,6 +880,7 @@ HTML_TEMPLATE = """
 <html lang="zh">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>后台管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -825,18 +898,23 @@ HTML_TEMPLATE = """
         .duplicate-metadata dd { margin-bottom:.35rem; overflow-wrap:anywhere; }
         .duplicate-pdf-panel { margin-top:1rem; }
         .duplicate-pdf-frame { width:100%; height:560px; border:1px solid #ced4da; border-radius:.5rem; background:white; }
+        .batch-file-name { max-width:34rem; overflow-wrap:anywhere; }
         @media (max-width:767.98px) { .duplicate-pdf-frame { height:68vh; min-height:420px; } }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="d-flex justify-content-between mb-4"><h2>🎹 后台管理</h2><form method="post" action="/logout"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><button class="btn btn-outline-danger btn-sm">退出</button></form></div>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}<div class="alert alert-success">{{ messages[0] }}</div>{% endif %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            {% set alert_type = 'danger' if category in ('error', 'danger') else ('warning' if category == 'warning' else 'success') %}
+            <div class="alert alert-{{ alert_type }}" role="alert">{{ message }}</div>
+        {% endfor %}
     {% endwith %}
-    <ul class="nav nav-tabs mb-4">
+    <ul class="nav nav-tabs mb-4 flex-wrap">
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'dashboard' else '' }}" href="/dashboard">📊 仪表盘</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'upload' else '' }}" href="/">📤 上传</a></li>
+        <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'batch_upload' else '' }}" href="/batch-upload">📚 批量上传</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'manage' else '' }}" href="/manage">📋 管理</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'duplicates' else '' }}" href="/duplicates">🔎 重复检查</a></li>
         <li class="nav-item"><a class="nav-link" href="/submissions">🛡️ 投稿审核 {% set queue_count = pending_count|default(0, true) %}{% if queue_count %}<span class="badge bg-danger">{{ queue_count }}</span>{% endif %}</a></li>
@@ -949,6 +1027,144 @@ HTML_TEMPLATE = """
             <button type="submit" class="btn btn-success w-100">保存并发布</button>
         </form>
     </div></div>
+    {% endif %}
+
+    {% if active_tab == 'batch_upload' %}
+    <div class="card shadow">
+        <div class="card-header bg-white">
+            <strong>批量上传乐谱</strong>
+            <div class="small text-muted mt-1">公共资料会应用到本批全部 PDF；选择文件后，可逐份检查和修改曲名。任意一份校验或保存失败时，整批都不会发布。</div>
+        </div>
+        <div class="card-body">
+            <form id="batch-upload-form" method="post" enctype="multipart/form-data" action="{{ url_for('batch_upload') }}">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                <fieldset class="mb-4">
+                    <legend class="h5 mb-3">1. 填写公共资料</legend>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="batch-composer">作曲家 *</label>
+                            <input class="form-control" id="batch-composer" name="composer" maxlength="200" value="{{ form.get('composer', '') if form else '' }}" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="batch-category">分类 *</label>
+                            <select class="form-select" id="batch-category" name="category" required>
+                                <option value="">请选择分类</option>
+                                {% for category in categories %}<option value="{{ category }}" {{ 'selected' if form and form.get('category') == category }}>{{ category }}</option>{% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="batch-work">所属作品</label>
+                            <input class="form-control" id="batch-work" name="work" maxlength="200" value="{{ form.get('work', '') if form else '' }}">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="batch-language">语言</label>
+                            <input class="form-control" id="batch-language" name="language" maxlength="100" list="batch-language-options" value="{{ form.get('language', '') if form else '' }}">
+                            <datalist id="batch-language-options">{% for language in languages %}<option value="{{ language }}">{% endfor %}</datalist>
+                        </div>
+                    </div>
+                    <details class="mt-3">
+                        <summary class="text-primary">填写更多公共资料（可选）</summary>
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-4"><label class="form-label" for="batch-sub-category">体裁/子分类</label><input class="form-control" id="batch-sub-category" name="sub_category" maxlength="120" value="{{ form.get('sub_category', '') if form else '' }}"></div>
+                            <div class="col-md-4"><label class="form-label" for="batch-voice-types">编制（声部/乐器）</label><input class="form-control" id="batch-voice-types" name="voice_types" maxlength="150" value="{{ form.get('voice_types', '') if form else '' }}"></div>
+                            <div class="col-md-4"><label class="form-label" for="batch-voice-count">数量/类型补充</label><input class="form-control" id="batch-voice-count" name="voice_count" maxlength="100" value="{{ form.get('voice_count', '') if form else '' }}"></div>
+                            <div class="col-md-4"><label class="form-label" for="batch-tonality">调性</label><input class="form-control" id="batch-tonality" name="tonality" maxlength="80" value="{{ form.get('tonality', '') if form else '' }}"></div>
+                            <div class="col-md-8"><label class="form-label" for="batch-description">简介</label><textarea class="form-control" id="batch-description" name="description" maxlength="2000" rows="2">{{ form.get('description', '') if form else '' }}</textarea></div>
+                        </div>
+                    </details>
+                </fieldset>
+
+                <fieldset class="mb-4">
+                    <legend class="h5 mb-3">2. 选择 PDF</legend>
+                    <input class="form-control" id="batch-files" type="file" name="files" accept="application/pdf,.pdf" multiple required aria-describedby="batch-files-help batch-file-summary">
+                    <div class="form-text" id="batch-files-help">每批最多 {{ batch_max_files }} 份，总大小不超过 {{ batch_max_mb }} MB。批量页不填写歌词，发布后仍可单独编辑补充。</div>
+                    <div class="small fw-semibold mt-2" id="batch-file-summary" role="status" aria-live="polite">尚未选择文件</div>
+                    <div class="alert alert-danger mt-3 mb-0" id="batch-client-error" role="alert" tabindex="-1" hidden></div>
+                </fieldset>
+
+                <fieldset class="mb-4" id="batch-review" hidden>
+                    <legend class="h5 mb-3">3. 检查每份曲名</legend>
+                    <div class="table-responsive border rounded">
+                        <table class="table align-middle mb-0">
+                            <thead class="table-light"><tr><th style="width:52px">#</th><th>原文件名</th><th style="min-width:280px">网站曲名 *</th></tr></thead>
+                            <tbody id="batch-file-list"></tbody>
+                        </table>
+                    </div>
+                </fieldset>
+
+                <button class="btn btn-success w-100" id="batch-submit" type="submit" disabled>选择 PDF 后发布</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    (() => {
+        const form = document.getElementById('batch-upload-form');
+        const input = document.getElementById('batch-files');
+        const review = document.getElementById('batch-review');
+        const list = document.getElementById('batch-file-list');
+        const summary = document.getElementById('batch-file-summary');
+        const errorBox = document.getElementById('batch-client-error');
+        const submit = document.getElementById('batch-submit');
+        const maxFiles = {{ batch_max_files }};
+        const maxBytes = {{ batch_max_bytes }};
+        const formatSize = (bytes) => bytes < 1024 * 1024
+            ? `${(bytes / 1024).toFixed(1)} KB`
+            : `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+        const defaultTitle = (name) => (name.replace(/\\.pdf$/i, '').replace(/[_\\s]+/g, ' ').replace(/^[.\\s_-]+|[.\\s_-]+$/g, '') || '未命名乐谱').slice(0, 200);
+
+        input.addEventListener('change', () => {
+            const files = Array.from(input.files || []);
+            const totalBytes = files.reduce((total, file) => total + file.size, 0);
+            const invalidFile = files.find((file) => !file.name.toLowerCase().endsWith('.pdf'));
+            let error = '';
+            if (files.length > maxFiles) error = `一次最多选择 ${maxFiles} 份 PDF。`;
+            else if (totalBytes > maxBytes) error = `本批文件共 ${formatSize(totalBytes)}，超过总大小限制。`;
+            else if (invalidFile) error = `${invalidFile.name} 不是 PDF 文件。`;
+
+            list.replaceChildren();
+            files.forEach((file, index) => {
+                const row = document.createElement('tr');
+                const numberCell = document.createElement('td');
+                numberCell.textContent = String(index + 1);
+                const fileCell = document.createElement('td');
+                const fileName = document.createElement('div');
+                fileName.className = 'batch-file-name fw-semibold';
+                fileName.textContent = file.name;
+                const fileSize = document.createElement('small');
+                fileSize.className = 'text-muted';
+                fileSize.textContent = formatSize(file.size);
+                fileCell.append(fileName, fileSize);
+                const titleCell = document.createElement('td');
+                const title = document.createElement('input');
+                title.className = 'form-control';
+                title.name = 'titles';
+                title.value = defaultTitle(file.name);
+                title.maxLength = 200;
+                title.required = true;
+                title.setAttribute('aria-label', `${file.name} 的网站曲名`);
+                titleCell.append(title);
+                row.append(numberCell, fileCell, titleCell);
+                list.append(row);
+            });
+
+            review.hidden = files.length === 0;
+            summary.textContent = files.length
+                ? `已选择 ${files.length} 份，共 ${formatSize(totalBytes)}。请检查下方曲名。`
+                : '尚未选择文件';
+            errorBox.textContent = error;
+            errorBox.hidden = !error;
+            submit.disabled = files.length === 0 || Boolean(error);
+            submit.textContent = files.length && !error ? `一次发布 ${files.length} 份乐谱` : '选择 PDF 后发布';
+            if (error) errorBox.focus();
+        });
+
+        form.addEventListener('submit', () => {
+            const count = input.files ? input.files.length : 0;
+            submit.disabled = true;
+            submit.textContent = `正在上传 ${count} 份，请稍候…`;
+        });
+    })();
+    </script>
     {% endif %}
 
 {% if active_tab == 'manage' %}
@@ -1125,7 +1341,15 @@ def logout():
 
 @app.errorhandler(413)
 def upload_too_large(_error):
-    return f'上传内容过大。投稿 PDF 上限为 {SUBMISSION_MAX_MB} MB。', 413
+    if request.path == '/batch-upload':
+        return f'批量上传内容过大，总大小上限为 {BATCH_UPLOAD_MAX_MB} MB。', 413
+    if request.path == '/':
+        return f'单份后台上传不能超过 {ADMIN_UPLOAD_MAX_MB} MB。', 413
+    if request.path == '/submit':
+        return f'上传内容过大。投稿 PDF 上限为 {SUBMISSION_MAX_MB} MB。', 413
+    if request.path == '/login':
+        return '登录请求内容过大，请刷新页面后重试。', 413
+    return '请求内容过大，请减少填写内容后重试。', 413
 
 
 @app.route('/dashboard')
@@ -1405,6 +1629,161 @@ def restore_submission(submission_id):
     else:
         flash(f'投稿 #{submission_id} 已恢复为待审核。', 'success')
     return redirect(url_for('review_submission', submission_id=submission_id))
+
+
+@app.route('/batch-upload', methods=['GET', 'POST'])
+@login_required
+@catalog_write_locked
+def batch_upload():
+    staging_dir = None
+    published_paths = []
+    if request.method == 'POST':
+        try:
+            composer = form_text('composer', '作曲家', 200, required=True)
+            category = form_text('category', '分类', 100, required=True)
+            if category not in ALLOWED_CATEGORIES:
+                raise ValueError('请选择有效的乐谱分类')
+
+            common_fields = {
+                'composer': composer,
+                'work': form_text('work', '所属作品', 200),
+                'language': form_text('language', '语言', 100),
+                'category': category,
+                'sub_category': form_text('sub_category', '体裁或子分类', 120),
+                'voice_count': form_text('voice_count', '数量或类型补充', 100),
+                'voice_types': form_text('voice_types', '声部或乐器', 150),
+                'tonality': form_text('tonality', '调性', 80),
+                'description': form_text('description', '简介', 2000),
+            }
+
+            uploads = [upload for upload in request.files.getlist('files') if upload and upload.filename]
+            if not uploads:
+                raise ValueError('请至少选择一份 PDF')
+            if len(uploads) > BATCH_UPLOAD_MAX_FILES:
+                raise ValueError(f'一次最多上传 {BATCH_UPLOAD_MAX_FILES} 份 PDF')
+
+            raw_titles = request.form.getlist('titles')
+            if raw_titles and len(raw_titles) != len(uploads):
+                raise ValueError('文件与曲名列表不一致，请重新选择 PDF 后再试')
+
+            titles = []
+            for index, upload in enumerate(uploads, start=1):
+                original_name = clean_original_filename(upload.filename)
+                if not allowed_file(original_name):
+                    raise ValueError(f'{original_name} 不是 PDF 文件')
+                supplied_title = raw_titles[index - 1] if raw_titles else title_from_pdf_filename(original_name)
+                titles.append(validated_text(supplied_title, f'第 {index} 份乐谱的曲名', 200, required=True))
+
+            music_data, change_log = load_data_and_log()
+            new_id = max([int(item['id']) for item in music_data] + [0, int(time.time() * 1000)]) + 1
+            staging_dir = Path(BACKUP_DIR) / 'batch_uploads' / uuid.uuid4().hex
+            staging_dir.mkdir(parents=True, exist_ok=False)
+
+            prepared = []
+            seen_hashes = {}
+            total_bytes = 0
+            for index, (upload, title) in enumerate(zip(uploads, titles)):
+                original_name = clean_original_filename(upload.filename)
+                public_id = str(uuid.uuid4())
+                staging_path = staging_dir / f'{public_id}.pdf'
+                sha256, file_size = stage_batch_pdf(
+                    upload,
+                    staging_path,
+                    BATCH_UPLOAD_MAX_BYTES - total_bytes,
+                )
+                if sha256 in seen_hashes:
+                    raise ValueError(
+                        f'{original_name} 与 {seen_hashes[sha256]} 内容完全相同，请移除重复文件后再上传'
+                    )
+                seen_hashes[sha256] = original_name
+                total_bytes += file_size
+
+                catalog_filename = f'{category}/{public_id}.pdf'
+                target_path = score_file_path(catalog_filename)
+                if target_path.exists():
+                    abort(409, description='公开乐谱目录中已存在同名文件')
+                prepared.append({
+                    'staging_path': staging_path,
+                    'target_path': target_path,
+                    'item': {
+                        'id': new_id + index,
+                        'public_id': public_id,
+                        'title': title,
+                        **common_fields,
+                        'filename': catalog_filename,
+                        'date': datetime.date.today().isoformat(),
+                        'has_lyrics': False,
+                    },
+                })
+
+            existing_keys = {
+                (normalize_catalog_text(item.get('title')), normalize_catalog_text(item.get('composer')))
+                for item in music_data
+            }
+            possible_duplicates = 0
+            for entry in prepared:
+                item = entry['item']
+                key = (normalize_catalog_text(item['title']), normalize_catalog_text(item['composer']))
+                if key in existing_keys:
+                    possible_duplicates += 1
+                existing_keys.add(key)
+
+                target_path = entry['target_path']
+                target_path.parent.mkdir(parents=True, exist_ok=True)
+                entry['staging_path'].replace(target_path)
+                published_paths.append(target_path)
+
+            new_items = [entry['item'] for entry in prepared]
+            music_data.extend(new_items)
+            title_preview = '、'.join(item['title'] for item in new_items[:3])
+            if len(new_items) > 3:
+                title_preview += '等'
+            add_log(change_log, 'batch_add', f'批量添加 {len(new_items)} 份乐谱：{title_preview}')
+            save_all(music_data, change_log)
+        except Exception as error:
+            rollback_errors = []
+            for path in reversed(published_paths):
+                try:
+                    path.unlink(missing_ok=True)
+                except OSError as rollback_error:
+                    rollback_errors.append(f'{path.name}: {rollback_error}')
+            if rollback_errors:
+                raise RuntimeError('批量上传失败，且文件回滚未完整完成：' + '; '.join(rollback_errors)) from error
+            if isinstance(error, ValueError):
+                flash(str(error), 'error')
+            else:
+                raise
+        else:
+            flash(f'已成功批量发布 {len(prepared)} 份乐谱。', 'success')
+            if possible_duplicates:
+                flash(f'其中 {possible_duplicates} 份与目录中的“曲名 + 作曲家”相同，请到重复检查页面核对。', 'warning')
+            return redirect(url_for('manage'))
+        finally:
+            if staging_dir and staging_dir.exists():
+                for path in staging_dir.iterdir():
+                    if path.is_file():
+                        try:
+                            path.unlink(missing_ok=True)
+                        except OSError as cleanup_error:
+                            app.logger.error('无法清理批量上传暂存文件 %s: %s', path, cleanup_error)
+                try:
+                    staging_dir.rmdir()
+                    staging_dir.parent.rmdir()
+                except OSError:
+                    pass
+
+    return render_template_string(
+        HTML_TEMPLATE,
+        active_tab='batch_upload',
+        form=request.form,
+        categories=sorted(ALLOWED_CATEGORIES),
+        languages=sorted(CANONICAL_LANGUAGES),
+        batch_max_files=BATCH_UPLOAD_MAX_FILES,
+        batch_max_mb=BATCH_UPLOAD_MAX_MB,
+        batch_max_bytes=BATCH_UPLOAD_MAX_BYTES,
+        pending_count=submission_counts()['pending'],
+        deleted_count=len(load_deleted_entries()),
+    )
 
 @app.route('/', methods=['GET', 'POST'])
 @login_required
