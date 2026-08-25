@@ -1,0 +1,7 @@
+{
+  "scoreStorage": {
+    "baseUrl": "",
+    "objectPrefix": "scores",
+    "keyStrategy": "catalog_filename"
+  }
+}

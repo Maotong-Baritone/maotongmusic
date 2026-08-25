@@ -6,8 +6,71 @@ let sortType = 'date_desc';
 let currentPage = 1;
 const itemsPerPage = 15;
 let currentLyricsId = null;
+let currentPdfUrl = '';
+let currentDetailId = null;
 let fuseInstance = null; // Fuse.js 实例
 let favorites = loadStoredFavorites();
+const BASE_PAGE_TITLE = document.title;
+let detailHistoryChangeInProgress = false;
+const DEFAULT_SCORE_STORAGE = Object.freeze({
+    baseUrl: '',
+    objectPrefix: 'scores',
+    keyStrategy: 'catalog_filename'
+});
+let scoreStorage = { ...DEFAULT_SCORE_STORAGE };
+
+function normalizeStoragePath(value) {
+    const parts = String(value || '').replace(/\\/g, '/').split('/').filter(Boolean);
+    if (!parts.length || parts.some(part => part === '.' || part === '..')) return '';
+    return parts.join('/');
+}
+
+function configureScoreStorage(config) {
+    const candidate = config && typeof config === 'object' ? config : {};
+    const keyStrategy = ['catalog_filename', 'public_id_sharded'].includes(candidate.keyStrategy)
+        ? candidate.keyStrategy
+        : DEFAULT_SCORE_STORAGE.keyStrategy;
+    const objectPrefix = normalizeStoragePath(candidate.objectPrefix) || DEFAULT_SCORE_STORAGE.objectPrefix;
+    const baseUrl = String(candidate.baseUrl || '').trim().replace(/\/+$/, '');
+    if (baseUrl && /^[a-z][a-z\d+.-]*:/i.test(baseUrl) && !/^https?:/i.test(baseUrl)) {
+        throw new Error('乐谱存储 baseUrl 只允许 HTTP(S) 地址或相对路径');
+    }
+    scoreStorage = { baseUrl, objectPrefix, keyStrategy };
+}
+
+async function loadSiteConfig() {
+    try {
+        const response = await fetch('site-config.json', { cache: 'no-cache' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const config = await response.json();
+        configureScoreStorage(config.scoreStorage);
+    } catch (error) {
+        scoreStorage = { ...DEFAULT_SCORE_STORAGE };
+        console.warn('站点存储配置加载失败，已使用本地 scores/ 目录。', error);
+    }
+}
+
+function scoreStorageKeyFor(item) {
+    const explicitKey = normalizeStoragePath(item.storage_key);
+    if (explicitKey) return explicitKey;
+
+    if (scoreStorage.keyStrategy === 'public_id_sharded') {
+        const publicId = String(item.public_id || '').toLowerCase();
+        if (/^[0-9a-f-]{36}$/.test(publicId)) {
+            return `${scoreStorage.objectPrefix}/${publicId.slice(0, 2)}/${publicId}.pdf`;
+        }
+    }
+
+    const filename = normalizeStoragePath(item.filename);
+    return filename ? `${scoreStorage.objectPrefix}/${filename}` : '';
+}
+
+function buildScoreUrl(item) {
+    const storageKey = scoreStorageKeyFor(item);
+    if (!storageKey) return '';
+    const encodedKey = storageKey.split('/').map(part => encodeURIComponent(part)).join('/');
+    return scoreStorage.baseUrl ? `${scoreStorage.baseUrl}/${encodedKey}` : encodedKey;
+}
 
 function loadStoredFavorites() {
     try {
@@ -93,8 +156,9 @@ const categoryMap = {
 // 初始化
 window.addEventListener('load', () => {
     initTheme(); // 初始化主题
+    initDetailNavigation();
     loadData();
-    document.getElementById('searchInput').addEventListener('keypress', (e) => { if(e.key === 'Enter') performSearch(); });
+    document.getElementById('searchInput').addEventListener('keydown', (e) => { if(e.key === 'Enter') performSearch(); });
 });
 
 function initTheme() {
@@ -118,7 +182,29 @@ window.toggleTheme = function() {
 
 function updateThemeIcon(isDark) {
     const btn = document.getElementById('themeToggleBtn');
-    if (btn) btn.innerHTML = isDark ? '☀️' : '🌙';
+    if (btn) {
+        btn.innerHTML = isDark ? '☀️' : '🌙';
+        const label = isDark ? '切换到浅色模式' : '切换到深色模式';
+        btn.setAttribute('aria-label', label);
+        btn.title = label;
+    }
+}
+
+function updateFavoriteButtons(id) {
+    const isFavorite = favorites.has(id);
+    document.querySelectorAll('[data-favorite-id]').forEach(button => {
+        if (button.dataset.favoriteId !== id) return;
+        const icon = button.querySelector('[data-favorite-icon]');
+        const copy = button.querySelector('[data-favorite-copy]');
+        if (icon) icon.textContent = isFavorite ? '❤️' : '🤍';
+        if (copy) copy.textContent = isFavorite ? '已收藏' : '收藏';
+        button.classList.toggle('text-danger', isFavorite);
+        button.classList.toggle('text-muted', !isFavorite);
+        button.setAttribute('aria-pressed', String(isFavorite));
+        const title = button.dataset.favoriteTitle || '这份乐谱';
+        button.setAttribute('aria-label', `${isFavorite ? '取消收藏' : '收藏'} ${title}`);
+        button.title = isFavorite ? '取消收藏' : '收藏';
+    });
 }
 
 window.toggleFavorite = function(id, event) {
@@ -136,13 +222,8 @@ window.toggleFavorite = function(id, event) {
     if (filters.favoritesOnly) {
         applyFilters();
     } else {
-        // 否则只更新按钮状态（避免整页重绘）
-        const btn = document.getElementById(`fav-btn-${id}`);
-        if (btn) {
-            btn.innerHTML = favorites.has(id) ? '❤️' : '🤍';
-            btn.classList.toggle('text-danger', favorites.has(id));
-            btn.classList.toggle('text-muted', !favorites.has(id));
-        }
+        // 否则只更新同一乐谱的所有按钮状态（避免整页重绘）
+        updateFavoriteButtons(id);
     }
 }
 
@@ -161,7 +242,8 @@ async function loadData() {
     try {
         const [dataRes, logRes] = await Promise.all([
             fetch('data.json', { cache: 'no-cache' }),
-            fetch('logs.json', { cache: 'no-cache' })
+            fetch('logs.json', { cache: 'no-cache' }),
+            loadSiteConfig()
         ]);
 
         if (!dataRes.ok) throw new Error("无法加载乐谱数据");
@@ -197,6 +279,7 @@ async function loadData() {
         initStatsAndDropdowns(); 
         renderRecent(); 
         applyFilters();
+        openDetailFromUrl();
 
     } catch (error) {
         console.error(error);
@@ -252,21 +335,21 @@ function renderRecent() {
 
         html += `
         <div class="col">
-            <div class="card h-100 shadow-sm hover-card border-0" onclick="openDetail('${stableId}')" style="cursor: pointer; transition: transform 0.2s;">
+            <article class="card h-100 shadow-sm hover-card border-0">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-start mb-2">
                         <span class="badge ${badgeClass}">${escapeHtml(item.category)}</span>
                         <small class="text-muted" style="font-size: 0.75rem;">${escapeHtml(item.date || '')}</small>
                     </div>
-                    <h6 class="score-title card-title fw-bold text-dark mb-1 text-truncate" title="${escapeHtml(item.title)}">${escapeHtml(item.title)}</h6>
+                    <h6 class="card-title mb-1 text-truncate" title="${escapeHtml(item.title)}"><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h6>
                     <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(item.composer)}">${escapeHtml(item.composer)}</div>
                     ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${escapeHtml(item.work)}">选自: ${escapeHtml(item.work)}</div>` : ''}
                 </div>
                 <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" onclick="toggleFavorite('${stableId}', event)" title="收藏" aria-label="收藏 ${escapeHtml(item.title)}">${favIcon}</button>
-                    <span class="badge bg-light text-secondary border">${escapeHtml(item.language || '-')}</span>
+                    <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span></button>
+                    <div class="d-flex align-items-center gap-2"><span class="badge bg-light text-secondary border">${escapeHtml(item.language || '-')}</span><button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" onclick="openDetail('${stableId}')">查看详情</button></div>
                 </div>
-            </div>
+            </article>
         </div>
         `;
     });
@@ -442,12 +525,14 @@ function renderPaginationTable(data) {
     if (currentPage > pages) currentPage = pages || 1; if (currentPage < 1) currentPage = 1;
     const start = (currentPage - 1) * itemsPerPage; const pageData = data.slice(start, start + itemsPerPage);
     const tbody = document.getElementById('mainTableBody'); document.getElementById('filteredCount').innerText = total + ' 首乐谱';
+    const mobileList = document.getElementById('mobileScoreList');
     
     const noResult = document.getElementById('noResult');
     const nav = document.getElementById('paginationNav');
     
     if (total === 0) { 
-        tbody.innerHTML = ''; 
+        tbody.innerHTML = '';
+        mobileList.innerHTML = '';
         nav.style.display = 'none'; 
         noResult.style.display = 'block'; 
         
@@ -500,6 +585,7 @@ function renderPaginationTable(data) {
     noResult.style.display = 'none'; nav.style.display = 'block';
 
     let html = '';
+    let mobileHtml = '';
     pageData.forEach(item => {
         let badgeClass = getCategoryClass(item.category);
         let tonalityBadge = item.tonality ? `<span class="badge bg-light text-dark border ms-2" style="font-size:0.7rem; opacity: 0.7;">${escapeHtml(item.tonality)}</span>` : '';
@@ -515,12 +601,12 @@ function renderPaginationTable(data) {
         const favIcon = isFav ? '❤️' : '🤍';
         const favClass = isFav ? 'text-danger' : 'text-muted';
 
-        html += `<tr onclick="openDetail('${stableId}')" class="hover-row">
+        html += `<tr class="hover-row">
             <td class="ps-4">
                 <div class="d-flex align-items-center">
-                    <button id="fav-btn-${stableId}" class="btn btn-link p-0 me-3 fs-5 text-decoration-none ${favClass}" style="line-height:1;" onclick="toggleFavorite('${stableId}', event)" title="收藏" aria-label="收藏 ${escapeHtml(item.title)}">${favIcon}</button>
+                    <button class="btn btn-link p-0 me-3 fs-5 text-decoration-none ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" style="line-height:1;" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span></button>
                     <div>
-                        <div class="score-title fw-bold text-dark">${escapeHtml(item.title)} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
+                        <div><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button> ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
                         ${item.work ? `<small class="text-muted fst-italic">选自: ${escapeHtml(item.work)}</small>` : ''}
                     </div>
                 </div>
@@ -528,10 +614,28 @@ function renderPaginationTable(data) {
             <td><span class="fw-medium text-secondary">${escapeHtml(item.composer)}</span></td>
             <td>${item.language ? `<span class="text-muted small">${escapeHtml(item.language)}</span>` : '-'}</td>
             <td><span class="badge badge-custom ${badgeClass}">${escapeHtml(item.category)}</span>${subBadge}</td>
-            <td class="text-end pe-4"><button class="btn btn-sm btn-outline-primary rounded-pill px-3 shadow-sm">查看</button></td>
+            <td class="text-end pe-4"><button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3 shadow-sm" onclick="openDetail('${stableId}')" aria-label="查看 ${escapeHtml(item.title)} 的详情">查看</button></td>
         </tr>`;
+
+        mobileHtml += `
+            <article class="mobile-score-card">
+                <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                    <span class="badge badge-custom ${badgeClass}">${escapeHtml(item.category)}</span>
+                    <small class="text-muted text-nowrap">${escapeHtml(item.date || '')}</small>
+                </div>
+                <h3 class="h6 mb-2"><button type="button" class="score-title score-title-button fw-bold text-dark text-start" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h3>
+                <p class="small text-secondary fw-medium mb-1">${escapeHtml(item.composer)}</p>
+                ${item.work ? `<p class="small text-muted fst-italic mb-2">选自: ${escapeHtml(item.work)}</p>` : ''}
+                <div class="d-flex flex-wrap gap-1 mb-3">${tonalityBadge}${voiceBadge}${lyricIcon}${subBadge}${item.language ? `<span class="badge bg-light text-secondary border">${escapeHtml(item.language)}</span>` : ''}</div>
+                <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                    <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span><span class="ms-1" data-favorite-copy>${isFav ? '已收藏' : '收藏'}</span></button>
+                    <button type="button" class="btn btn-sm btn-primary rounded-pill px-3" onclick="openDetail('${stableId}')">查看详情</button>
+                </div>
+            </article>`;
     });
-    tbody.innerHTML = html; renderPaginationControls(pages);
+    tbody.innerHTML = html;
+    mobileList.innerHTML = mobileHtml;
+    renderPaginationControls(pages);
 }
 
 window.resetFilters = () => { 
@@ -548,7 +652,7 @@ function renderPaginationControls(pages) {
     
     // Previous Button
     html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-        <a class="page-link border-0" href="#" onclick="changePage(${currentPage - 1}); return false;">&laquo;</a>
+        <button type="button" class="page-link border-0" onclick="changePage(${currentPage - 1})" aria-label="上一页" ${currentPage === 1 ? 'disabled' : ''}>&laquo;</button>
     </li>`;
 
     // Page Numbers (Smart display)
@@ -561,24 +665,24 @@ function renderPaginationControls(pages) {
     }
 
     if (startPage > 1) {
-        html += `<li class="page-item"><a class="page-link border-0" href="#" onclick="changePage(1); return false;">1</a></li>`;
+        html += `<li class="page-item"><button type="button" class="page-link border-0" onclick="changePage(1)" aria-label="第 1 页">1</button></li>`;
         if (startPage > 2) html += `<li class="page-item disabled"><span class="page-link border-0">...</span></li>`;
     }
 
     for (let i = startPage; i <= endPage; i++) {
         html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
-            <a class="page-link border-0 ${i === currentPage ? 'fw-bold shadow-sm' : ''}" href="#" onclick="changePage(${i}); return false;">${i}</a>
+            <button type="button" class="page-link border-0 ${i === currentPage ? 'fw-bold shadow-sm' : ''}" onclick="changePage(${i})" aria-label="第 ${i} 页" ${i === currentPage ? 'aria-current="page"' : ''}>${i}</button>
         </li>`;
     }
 
     if (endPage < pages) {
         if (endPage < pages - 1) html += `<li class="page-item disabled"><span class="page-link border-0">...</span></li>`;
-        html += `<li class="page-item"><a class="page-link border-0" href="#" onclick="changePage(${pages}); return false;">${pages}</a></li>`;
+        html += `<li class="page-item"><button type="button" class="page-link border-0" onclick="changePage(${pages})" aria-label="第 ${pages} 页">${pages}</button></li>`;
     }
 
     // Next Button
     html += `<li class="page-item ${currentPage === pages ? 'disabled' : ''}">
-        <a class="page-link border-0" href="#" onclick="changePage(${currentPage + 1}); return false;">&raquo;</a>
+        <button type="button" class="page-link border-0" onclick="changePage(${currentPage + 1})" aria-label="下一页" ${currentPage === pages ? 'disabled' : ''}>&raquo;</button>
     </li>`;
 
     ul.innerHTML = html;
@@ -591,10 +695,101 @@ window.changePage = function(page) {
     document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
 }
 
-window.openDetail = function(id) {
+function detailUrlFor(id) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('score', id);
+    return url;
+}
+
+function clearPdfPreview() {
+    const preview = document.getElementById('mPreview');
+    const placeholder = document.getElementById('previewPlaceholder');
+    try {
+        preview.contentWindow.location.replace('about:blank');
+    } catch (error) {
+        preview.src = 'about:blank';
+    }
+    delete preview.dataset.loadedUrl;
+    preview.style.display = 'none';
+    placeholder.style.display = 'flex';
+}
+
+function initDetailNavigation() {
+    const modalElement = document.getElementById('detailModal');
+    modalElement.addEventListener('hidden.bs.modal', () => {
+        clearPdfPreview();
+        currentPdfUrl = '';
+        currentDetailId = null;
+        currentLyricsId = null;
+        document.title = BASE_PAGE_TITLE;
+
+        if (detailHistoryChangeInProgress) {
+            detailHistoryChangeInProgress = false;
+            return;
+        }
+
+        const url = new URL(window.location.href);
+        if (url.searchParams.has('score')) {
+            url.searchParams.delete('score');
+            window.history.replaceState(null, '', url);
+        }
+    });
+
+    window.addEventListener('popstate', () => {
+        if (!musicData.length) return;
+        const scoreId = new URL(window.location.href).searchParams.get('score');
+        const isOpen = modalElement.classList.contains('show');
+        if (scoreId) {
+            openDetail(scoreId, { syncUrl: false });
+        } else if (isOpen) {
+            detailHistoryChangeInProgress = true;
+            bootstrap.Modal.getOrCreateInstance(modalElement).hide();
+        }
+    });
+}
+
+function openDetailFromUrl() {
+    const scoreId = new URL(window.location.href).searchParams.get('score');
+    if (scoreId) openDetail(scoreId, { syncUrl: false });
+}
+
+window.loadPdfPreview = function() {
+    if (!currentPdfUrl) return;
+    const preview = document.getElementById('mPreview');
+    try {
+        preview.contentWindow.location.replace(currentPdfUrl);
+    } catch (error) {
+        preview.src = currentPdfUrl;
+    }
+    preview.dataset.loadedUrl = currentPdfUrl;
+    preview.style.display = 'block';
+    document.getElementById('previewPlaceholder').style.display = 'none';
+}
+
+window.copyDetailLink = async function() {
+    if (!currentDetailId) return;
+    const button = document.getElementById('btnShareDetail');
+    const detailUrl = detailUrlFor(currentDetailId).toString();
+    try {
+        await navigator.clipboard.writeText(detailUrl);
+        button.textContent = '✅ 链接已复制';
+    } catch (error) {
+        console.warn('无法复制详情链接。', error);
+        button.textContent = '请从地址栏复制链接';
+    }
+    window.setTimeout(() => { button.textContent = '🔗 复制详情链接'; }, 1800);
+}
+
+window.openDetail = function(id, { syncUrl = true } = {}) {
     const stableId = String(id);
     const item = musicData.find(m => getStableId(m) === stableId || String(m.id) === stableId);
     if (!item) return;
+
+    currentDetailId = getStableId(item);
+    if (syncUrl) {
+        window.history.pushState({ scoreId: currentDetailId }, '', detailUrlFor(currentDetailId));
+    }
+    document.title = `${item.title} | ${BASE_PAGE_TITLE}`;
 
     document.getElementById('mTitle').innerText = item.title;
     document.getElementById('mComposer').innerText = item.composer;
@@ -615,19 +810,27 @@ window.openDetail = function(id) {
     }
 
     const dlBtn = document.getElementById('mDownload');
-    // Ensure filename is properly encoded
-    const encodedFilename = item.filename.split('/').map(part => encodeURIComponent(part)).join('/');
-    dlBtn.href = `scores/${encodedFilename}`; 
+    const filename = String(item.filename || '');
+    const pdfUrl = buildScoreUrl(item);
+    dlBtn.href = pdfUrl;
+    dlBtn.download = `${item.title || 'score'}.pdf`;
+    document.getElementById('mOpenPdf').href = pdfUrl;
+    document.getElementById('btnShareDetail').textContent = '🔗 复制详情链接';
 
-    const preview = document.getElementById('mPreview');
-    const noPreview = document.getElementById('noPreview');
-    if (item.filename.toLowerCase().endsWith('.pdf')) {
-         preview.src = `scores/${encodedFilename}#toolbar=0&view=FitH`;
-         preview.style.display = 'block';
-         noPreview.style.display = 'none';
+    const previewStatus = document.getElementById('previewStatus');
+    const previewHelp = document.getElementById('previewHelp');
+    const previewActions = document.getElementById('previewActions');
+    clearPdfPreview();
+    if (filename.toLowerCase().endsWith('.pdf')) {
+         currentPdfUrl = `${pdfUrl}#toolbar=0&view=FitH`;
+         previewStatus.innerText = 'PDF 预览尚未加载';
+         previewHelp.innerText = '为节省流量，只有点击按钮后才会载入乐谱。';
+         previewActions.style.display = 'flex';
     } else {
-         preview.style.display = 'none';
-         noPreview.style.display = 'flex';
+         currentPdfUrl = '';
+         previewStatus.innerText = '暂无可用预览';
+         previewHelp.innerText = '这份资料目前不能在浏览器中预览。';
+         previewActions.style.display = 'none';
     }
 
     currentLyricsId = item.id;
@@ -638,7 +841,7 @@ window.openDetail = function(id) {
         lyricBtn.style.display = 'none';
     }
 
-    const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+    const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('detailModal'));
     modal.show();
 }
 

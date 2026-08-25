@@ -6,6 +6,8 @@
 
 - `index.html`、`contact.html`、`css/`、`js/app.js`：网站页面与样式。
 - `data.json`、`logs.json`：乐谱资料与更新记录。
+- `site-config.json`：公开站点配置，包括乐谱存储地址与对象键策略。
+- `storage-manifest.json`：PDF 迁移清单（对象键、文件大小和 SHA-256）。
 - `scores/`：PDF 乐谱文件。
 - `lyrics/`：歌词与译文数据。
 - `img/`：网站图片。
@@ -58,6 +60,24 @@ python validate_library.py --strict
 ```
 
 检查通过后，再提交并推送到 Git。
+
+## 对象存储迁移准备
+
+网站现在通过 `site-config.json` 统一生成 PDF 地址。默认配置仍读取本地 `scores/`，无需对象存储账号，现有网站行为不变。单条目录记录如包含 `storage_key` 会优先使用该键；否则按全局 `keyStrategy` 生成。
+
+扫描全部目录记录和 PDF、计算文件大小与 SHA-256，并生成确定性的迁移清单：
+
+```powershell
+.\.venv\Scripts\python.exe tools\build_storage_manifest.py
+```
+
+确认现有清单与当前文件完全一致（该命令只检查，不写文件）：
+
+```powershell
+.\.venv\Scripts\python.exe tools\build_storage_manifest.py --check
+```
+
+清单采用 `scores/<public_id 前两位>/<public_id>.pdf` 作为稳定对象键，与乐谱分类和本地文件名无关，并汇总内容重复的 PDF 数量。将来批量上传并核对哈希后，只需把 `site-config.json` 中的 `baseUrl` 改为对象存储或 CDN 的 HTTPS 根地址，并将 `keyStrategy` 改为 `public_id_sharded`。访问密钥只应保存在本地环境变量中，不得写入站点配置或提交到 Git。
 
 ## 备份策略
 

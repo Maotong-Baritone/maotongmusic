@@ -356,7 +356,49 @@ button.active-filter-chip:focus-visible {
     font-family: 'Noto Serif SC', serif; color: #6c757d; font-weight: 700;
 }
 .hover-row { transition: background 0.2s; border-radius: 8px; }
-.hover-row:hover { background-color: #fffcf5; cursor: pointer; }
+.hover-row:hover { background-color: #fffcf5; }
+
+.score-title-button {
+    display: inline;
+    max-width: 100%;
+    padding: 0;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    text-align: inherit;
+    line-height: inherit;
+}
+.score-title-button:hover { color: var(--accent-color) !important; text-decoration: underline; text-underline-offset: 3px; }
+.score-title-button:focus-visible,
+.mobile-score-card .btn:focus-visible {
+    outline: 3px solid rgba(42, 157, 143, 0.35);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.mobile-score-list {
+    display: grid;
+    gap: 0.9rem;
+}
+.mobile-score-card {
+    width: 100%;
+    min-width: 0;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.045);
+}
+.mobile-score-card .score-title-button,
+.mobile-score-card p { overflow-wrap: anywhere; }
+.mobile-score-card .score-title-button { width: 100%; }
+.mobile-score-card .badge {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+[data-theme="dark"] .mobile-score-card { box-shadow: none; }
 
 footer { 
     background-color: #264653; color: #a8b2d1; padding: 4rem 0; margin-top: 5rem; font-family: 'Noto Serif SC', serif;
@@ -408,6 +450,10 @@ footer {
 .responsive-row { height: auto !important; display: flex; flex-direction: column; }
 .responsive-col-left { height: auto !important; overflow: visible !important; border-right: none !important; border-bottom: 1px solid #dee2e6; }
 .responsive-col-right { height: 60vh !important; min-height: 400px; }
+.preview-placeholder {
+    display: flex;
+    background: linear-gradient(145deg, #56646b, #2f3b40);
+}
 
 .download-notice {
     padding: 0.85rem 0.95rem;

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20260824c" rel="stylesheet">
+    <link href="css/style.css?v=20260824h" rel="stylesheet">
 </head>
 <body>
 
@@ -171,17 +171,21 @@
                 <div class="row align-items-center g-3">
                     <div class="col-md-auto fw-bold text-secondary d-none d-md-block">🌪️ 筛选:</div>
                     <div class="col-6 col-md-2">
+                        <label class="visually-hidden" for="composerInput">按作曲家筛选</label>
                         <input class="form-control form-control-sm border-0 bg-light" list="composerOptions" id="composerInput" placeholder="👤 作曲家" oninput="applyFilters()">
                         <datalist id="composerOptions"></datalist>
                     </div>
                     <div class="col-6 col-md-2">
+                        <label class="visually-hidden" for="voiceInput">按声部或乐器筛选</label>
                         <input class="form-control form-control-sm border-0 bg-light" list="voiceOptions" id="voiceInput" placeholder="🎻 编制" oninput="applyFilters()">
                         <datalist id="voiceOptions"></datalist>
                     </div>
                     <div class="col-6 col-md-2">
+                        <label class="visually-hidden" for="languageSelect">按语言筛选</label>
                         <select id="languageSelect" class="form-select form-select-sm border-0 bg-light" onchange="applyFilters()"><option value="all">🌐 语言</option></select>
                     </div>
                     <div class="col-6 col-md-3 border-start ps-4">
+                        <label class="visually-hidden" for="sortSelect">乐谱排序方式</label>
                         <select id="sortSelect" class="form-select form-select-sm fw-bold text-primary border-0" onchange="applyFilters()">
                             <option value="date_desc">📅 时间 (新)</option>
                             <option value="date_asc">📅 时间 (旧)</option>
@@ -211,7 +215,7 @@
                         <h4 id="listTitle" class="fw-bold font-serif display-6" style="font-size: 1.5rem;">📚 乐谱目录</h4>
                         <span class="badge rounded-pill" style="background-color: #e9c46a; color: #333;" id="filteredCount">0 首乐谱</span>
                     </div>
-                    <div class="card shadow-sm border-0" style="border-radius: 12px; overflow: hidden;">
+                    <div class="card shadow-sm border-0 d-none d-md-block" style="border-radius: 12px; overflow: hidden;">
                         <div class="table-responsive">
                             <table class="table table-hover align-middle mb-0 table-custom">
                                 <thead class="bg-light"><tr><th width="40%" class="ps-4 py-3">标题 / 作品出处</th><th width="20%">作曲家</th><th width="10%">语言</th><th width="15%">分类</th><th class="text-end pe-4">操作</th></tr></thead>
@@ -219,7 +223,8 @@
                             </table>
                         </div>
                     </div>
-                    <nav aria-label="Page navigation" class="mt-5" id="paginationNav"><ul class="pagination justify-content-center" id="paginationUl"></ul></nav>
+                    <div class="mobile-score-list d-md-none" id="mobileScoreList" aria-live="polite"></div>
+                    <nav aria-label="乐谱目录分页" class="mt-5" id="paginationNav"><ul class="pagination justify-content-center" id="paginationUl"></ul></nav>
                     <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。</p><a href="contact.html" class="btn btn-outline-primary rounded-pill px-4">💬 联系我求谱</a></div>
                 </div>
             </div>
@@ -230,12 +235,12 @@
         <div class="container text-center"><h4 class="text-white mb-3 font-serif">征集网站名字中</h4><p class="mb-4 text-white-50 small">"分享音乐 · 传承艺术"</p><div class="d-inline-block border-top border-secondary pt-4 mt-2"><p class="small text-muted mb-0">&copy; 2025-2026 Yu Maotong. All Rights Reserved.<br><span style="font-size: 0.8em; opacity: 0.5;">仅供学习使用，请勿商用</span></p></div></div>
     </footer>
 
-    <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content responsive-modal-content">
                 <div class="modal-header border-0 bg-light">
-                    <h5 class="modal-title fw-bold font-serif">乐谱详情</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-bold font-serif" id="detailModalTitle">乐谱详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭乐谱详情"></button>
                 </div>
                 <div class="modal-body p-0 responsive-modal-body">
                     <div class="row h-100 g-0 responsive-row">
@@ -265,14 +270,23 @@
                             </button>
 
                             <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" style="background-color:#2a9d8f; border:none;" download>⬇️ 下载 PDF</a>
+                            <button id="btnShareDetail" type="button" class="btn btn-outline-secondary w-100 py-2 mt-2 rounded-pill" onclick="copyDetailLink()">🔗 复制详情链接</button>
                             <div class="download-notice mt-3" role="note">
                                 <p class="mb-2">🌐 文件托管于 GitHub，国内下载偶有波动；若下载失败，请稍后重试或更换网络。</p>
                                 <p class="mb-0">仅供学习与研究，请勿商用或未经许可再次传播。</p>
                             </div>
                         </div>
                         <div class="col-lg-9 col-12 bg-secondary position-relative responsive-col-right">
-                            <iframe id="mPreview" src="" width="100%" height="100%" title="乐谱 PDF 预览" style="border:none;"></iframe>
-                            <div id="noPreview" class="d-flex flex-column align-items-center justify-content-center h-100 text-white" style="display:none;"><div class="fs-1 mb-3">📄</div><p class="fs-5">暂无预览</p></div>
+                            <iframe id="mPreview" src="about:blank" width="100%" height="100%" title="乐谱 PDF 预览" style="border:none; display:none;"></iframe>
+                            <div id="previewPlaceholder" class="preview-placeholder flex-column align-items-center justify-content-center h-100 text-white text-center p-4">
+                                <div class="fs-1 mb-3" aria-hidden="true">📄</div>
+                                <p class="fs-5 fw-bold mb-2" id="previewStatus">PDF 预览尚未加载</p>
+                                <p class="small text-white-50 mb-4" id="previewHelp">为节省流量，只有点击按钮后才会载入乐谱。</p>
+                                <div class="d-flex flex-wrap justify-content-center gap-2" id="previewActions">
+                                    <button type="button" class="btn btn-light rounded-pill px-4" id="btnLoadPreview" onclick="loadPdfPreview()">👁️ 加载预览</button>
+                                    <a class="btn btn-outline-light rounded-pill px-4" id="mOpenPdf" href="#" target="_blank" rel="noopener noreferrer">新窗口打开</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -288,7 +302,7 @@
                          <h5 class="modal-title fw-bold font-serif me-3" id="readerTitle">剧本阅读器</h5>
                          <span class="badge bg-secondary" id="readerComposer"></span>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭歌词阅读器"></button>
                 </div>
                 <div class="modal-body p-0" style="background-color: #fcfcfc;">
                     <div class="container h-100">
@@ -313,7 +327,7 @@
             <div class="modal-content text-center border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
                 <div class="modal-header border-0 bg-light justify-content-center position-relative">
                     <h5 class="modal-title fw-bold font-serif text-primary">❤️ 支持本站</h5>
-                    <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="关闭赞助窗口"></button>
                 </div>
                 <div class="modal-body p-4 bg-white">
                     <p class="text-muted mb-4 small">维护网站不易，您的支持是我最大的动力！<br>所有打赏将用于服务器维护与乐谱整理。</p>
@@ -380,10 +394,10 @@
         </div>
     </div>
 
-    <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">最近动态</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
+    <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">最近动态</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭最近动态"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script src="js/app.js?v=20260824c"></script>
+    <script src="js/app.js?v=20260824h"></script>
 </body>
 </html>
