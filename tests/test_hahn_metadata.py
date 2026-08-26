@@ -1,8 +1,10 @@
 import unittest
 
 from tools.import_hahn_imslp import (
+    category_for,
     concise_file_label,
     concise_instrumentation,
+    language_for,
     subcategory_for,
     voice_types_for,
 )
@@ -43,6 +45,37 @@ class HahnMetadataLabelTest(unittest.TestCase):
         violin_part = {"section": "tabArrTrans", "description_en": "Violin Part"}
         self.assertEqual(voice_types_for(work, piano_score), "钢琴谱")
         self.assertEqual(voice_types_for(work, violin_part), "小提琴分谱")
+
+    def test_orchestral_part_in_arrangement_tab_uses_parts_category(self):
+        work = {
+            "work_title": "La fête chez Thérèse",
+            "genre_categories": "Ballets; For orchestra",
+            "instrumentation": "Orchestra",
+        }
+        score_file = {"section": "tabArrTrans", "description_en": "Oboe"}
+        self.assertEqual(category_for(work, score_file), "器乐分谱")
+
+    def test_orchestral_complete_score_in_arrangement_tab_stays_orchestral(self):
+        work = {
+            "work_title": "La fête chez Thérèse",
+            "genre_categories": "Ballets; For orchestra",
+            "instrumentation": "Orchestra",
+        }
+        score_file = {
+            "section": "tabArrTrans",
+            "description_en": "Complete Score",
+        }
+        self.assertEqual(category_for(work, score_file), "管弦乐/交响曲")
+
+    def test_french_english_hahn_work_uses_french_only(self):
+        self.assertEqual(language_for({"language": "French and English"}), "法语")
+
+    def test_french_latin_hahn_work_keeps_supported_bilingual_label(self):
+        work = {"genre_categories": "French language; Latin language"}
+        self.assertEqual(language_for(work), "法语/拉丁语")
+
+    def test_latin_only_hahn_work_keeps_latin_label(self):
+        self.assertEqual(language_for({"language": "Latin"}), "拉丁语")
 
     def test_art_song_does_not_repeat_its_category_as_subcategory(self):
         self.assertEqual(

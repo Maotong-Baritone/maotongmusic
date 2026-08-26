@@ -889,6 +889,11 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual({item["language"] for item in saved}, {"德语"})
         self.assertTrue(all(path.is_file() for path in original_paths))
 
+    def test_deprecated_compound_languages_are_not_admin_options(self):
+        self.assertIn("法语/拉丁语", self.admin.CANONICAL_LANGUAGES)
+        for language in ("俄语/法语", "俄语/德语", "法语/俄语", "法语/英语"):
+            self.assertNotIn(language, self.admin.CANONICAL_LANGUAGES)
+
     def test_batch_category_move_updates_files_and_catalog(self):
         items = [self.sample_item(item_id, has_lyrics=False) for item_id in (401, 402)]
         for item in items:

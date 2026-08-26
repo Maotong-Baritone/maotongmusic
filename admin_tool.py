@@ -79,7 +79,7 @@ ALLOWED_CATEGORIES = {
 }
 CANONICAL_LANGUAGES = {
     '意大利语', '德语', '法语', '英语', '俄语', '拉丁语', '捷克语', '汉语',
-    '俄语/法语', '俄语/德语', '法语/俄语', '法语/英语', '法语/拉丁语',
+    '法语/拉丁语',
 }
 
 ADMIN_USER = os.environ.get('ADMIN_USER', 'admin')

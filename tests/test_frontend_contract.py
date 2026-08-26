@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -14,6 +15,7 @@ class FrontendContractTest(unittest.TestCase):
         cls.app_js = (ROOT / "js" / "app.js").read_text(encoding="utf-8")
         cls.styles = (ROOT / "css" / "style.css").read_text(encoding="utf-8")
         cls.site_config = (ROOT / "site-config.json").read_text(encoding="utf-8")
+        cls.catalog = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
 
     def test_pdf_preview_is_explicit_and_starts_blank(self):
         self.assertIn('id="mPreview" src="about:blank"', self.index_html)
@@ -43,6 +45,22 @@ class FrontendContractTest(unittest.TestCase):
         self.assertIn("const pdfUrl = buildScoreUrl(item)", self.app_js)
         self.assertNotIn("const pdfUrl = `scores/${encodedFilename}`", self.app_js)
         self.assertIn('"keyStrategy": "catalog_filename"', self.site_config)
+
+    def test_no_lyrics_is_not_offered_as_a_language_filter(self):
+        self.assertIn("l && l !== '无歌词'", self.app_js)
+
+    def test_catalog_uses_only_supported_language_labels(self):
+        deprecated = {"无歌词", "俄语/法语", "俄语/德语", "法语/俄语", "法语/英语"}
+        self.assertFalse(deprecated & {item.get("language", "") for item in self.catalog})
+        multilingual = [
+            (item.get("composer"), item.get("title"), item.get("language"))
+            for item in self.catalog
+            if "/" in item.get("language", "")
+        ]
+        self.assertEqual(
+            multilingual,
+            [("Reynaldo Hahn/哈恩", "La pastorale de Noël", "法语/拉丁语")],
+        )
 
 
 if __name__ == "__main__":

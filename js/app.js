@@ -301,7 +301,7 @@ function performSearch() { const val = document.getElementById('searchInput').va
 function initStatsAndDropdowns() {
     document.getElementById('statTotal').innerText = musicData.length;
     const composers = [...new Set(musicData.map(m => m.composer).filter(c => c))].sort((a, b) => a.localeCompare(b));
-    const languages = [...new Set(musicData.map(m => m.language).filter(l => l))].sort();
+    const languages = [...new Set(musicData.map(m => m.language).filter(l => l && l !== '无歌词'))].sort();
     const voiceTypes = [...new Set(musicData.map(m => m.voice_types).filter(v => v))].sort();
     document.getElementById('statComposer').innerText = composers.length;
     

@@ -45,10 +45,6 @@ CANONICAL_LANGUAGES = {
     "拉丁语",
     "捷克语",
     "汉语",
-    "俄语/法语",
-    "俄语/德语",
-    "法语/俄语",
-    "法语/英语",
     "法语/拉丁语",
 }
 LANGUAGE_OPTIONAL_CATEGORIES = {

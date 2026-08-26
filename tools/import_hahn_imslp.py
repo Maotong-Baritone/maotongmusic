@@ -312,7 +312,7 @@ def translate_key(value: str) -> str:
 
 def language_for(work: dict) -> str:
     blob = f"{work.get('language', '')}; {work.get('genre_categories', '')}".casefold()
-    labels = []
+    detected = set()
     for source, target in (
         ("french", "法语"),
         ("latin", "拉丁语"),
@@ -321,8 +321,13 @@ def language_for(work: dict) -> str:
         ("german", "德语"),
     ):
         if source in blob:
-            labels.append(target)
-    return "/".join(labels)
+            detected.add(target)
+    if {"法语", "拉丁语"}.issubset(detected):
+        return "法语/拉丁语"
+    for preferred in ("法语", "拉丁语", "英语", "意大利语", "德语"):
+        if preferred in detected:
+            return preferred
+    return ""
 
 
 def translate_instrumentation(value: str) -> str:
@@ -589,6 +594,18 @@ def is_vocal_collection(work: dict) -> bool:
     )
 
 
+def is_individual_instrumental_part(score_file: dict) -> bool:
+    """Recognize a single orchestral part even outside IMSLP's parts tab."""
+    section = score_file.get("section", "")
+    if section == "tabScore2":
+        return True
+    file_label = concise_file_label(
+        score_file.get("description_en") or score_file.get("description", ""),
+        allow_bare_instrument=section == "tabArrTrans",
+    )
+    return section == "tabArrTrans" and "分谱" in file_label and "总谱" not in file_label
+
+
 def category_for(work: dict, score_file: dict) -> str:
     genres = work.get("genre_categories", "").casefold()
     instrumentation = work.get("instrumentation", "").casefold()
@@ -617,8 +634,12 @@ def category_for(work: dict, score_file: dict) -> str:
     if "arias" in genres and "voice" in instrumentation:
         return "音乐会咏叹调/世俗康塔塔"
     if any(marker in genres for marker in ("ballets", "incidental music", "pantomimes")):
+        if is_individual_instrumental_part(score_file):
+            return "器乐分谱"
         return "管弦乐/交响曲"
     if "for orchestra" in genres or "orchestra" in instrumentation:
+        if is_individual_instrumental_part(score_file):
+            return "器乐分谱"
         return "管弦乐/交响曲"
     if any(marker in genres for marker in ("quartets", "quintets", "sonatas")):
         return "室内乐" if any(marker in blob for marker in ("violin", "cello", "viola", "flute", "clarinet")) else "器乐独奏"
@@ -833,8 +854,9 @@ def apply_manifest_defaults(manifest: dict) -> int:
     updated = 0
     for work in manifest.get("works", []):
         for score_file in work.get("files", []):
-            if score_file.get("language_cn") == "无歌词":
-                score_file["language_cn"] = ""
+            language = language_for(work)
+            if score_file.get("language_cn", "") != language:
+                score_file["language_cn"] = language
                 updated += 1
             voice_types = voice_types_for(work, score_file)
             if score_file.get("voice_types") != voice_types:
@@ -1056,6 +1078,93 @@ def write_catalog_preserving_format(value: list[dict]) -> None:
     temporary = DATA_FILE.with_suffix(DATA_FILE.suffix + ".tmp")
     temporary.write_bytes(rendered.encode("utf-8"))
     replace_with_retry(temporary, DATA_FILE)
+
+
+def normalize_hahn_catalog_categories(manifest: dict) -> tuple[int, int, int]:
+    """Reclassify imported Hahn PDFs and keep catalog and paths in sync."""
+    data = load_json(DATA_FILE, [])
+    catalog_by_public_id = {
+        clean(item.get("public_id")): item
+        for item in data
+        if clean(item.get("composer")) == COMPOSER and clean(item.get("public_id"))
+    }
+    planned_moves: list[tuple[Path, Path]] = []
+    changed_manifest_files = 0
+    changed_catalog_records = 0
+
+    for work in manifest.get("works", []):
+        for score_file in work.get("files", []):
+            expected_category = category_for(work, score_file)
+            expected_subcategory = subcategory_for(work, expected_category)
+            original_category = clean(score_file.get("category"))
+            original_relative = Path(clean(score_file.get("local_filename")).replace("\\", "/"))
+            if (
+                not original_relative.parts
+                or original_relative.is_absolute()
+                or ".." in original_relative.parts
+            ):
+                raise RuntimeError(
+                    f"IMSLP #{score_file.get('imslp_id', '')} 的本地路径不安全："
+                    f"{score_file.get('local_filename', '')}"
+                )
+
+            item = catalog_by_public_id.get(clean(score_file.get("public_id")))
+            catalog_category = clean(item.get("category")) if item else ""
+            if not (
+                expected_category == "器乐分谱"
+                and "管弦乐/交响曲"
+                in {original_category, original_relative.parts[0], catalog_category}
+            ):
+                continue
+
+            desired_relative = Path(expected_category) / original_relative.name
+            changed_manifest_files += 1
+
+            source = SCORES_DIR / original_relative
+            target = SCORES_DIR / desired_relative
+            if source != target:
+                if source.is_file():
+                    if target.exists():
+                        raise RuntimeError(f"目标文件已存在，拒绝覆盖：{target}")
+                    planned_moves.append((source, target))
+                elif not target.is_file() and score_file.get("status") == "downloaded":
+                    raise RuntimeError(f"已下载的乐谱文件不存在：{source}")
+
+            score_file["category"] = expected_category
+            score_file["sub_category"] = expected_subcategory
+            score_file["local_filename"] = desired_relative.as_posix()
+
+            if not item:
+                continue
+            changed = False
+            if item.get("category") != expected_category:
+                item["category"] = expected_category
+                changed = True
+            if item.get("sub_category", "") != expected_subcategory:
+                item["sub_category"] = expected_subcategory
+                changed = True
+            if clean(item.get("filename")).replace("\\", "/") != desired_relative.as_posix():
+                item["filename"] = desired_relative.as_posix()
+                changed = True
+            if changed:
+                changed_catalog_records += 1
+
+    moved: list[tuple[Path, Path]] = []
+    try:
+        for source, target in planned_moves:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            source.replace(target)
+            moved.append((source, target))
+        if changed_catalog_records:
+            write_catalog_preserving_format(data)
+    except Exception:
+        for source, target in reversed(moved):
+            if target.exists() and not source.exists():
+                source.parent.mkdir(parents=True, exist_ok=True)
+                target.replace(source)
+        raise
+
+    return changed_catalog_records, changed_manifest_files, len(moved)
 
 
 def normalize_hahn_catalog_metadata(manifest: dict | None = None) -> tuple[int, int, int]:
@@ -1308,6 +1417,11 @@ def parse_args() -> argparse.Namespace:
         help="把全部 Hahn 记录的声部／乐器改为中文，并清除“无歌词”标记",
     )
     parser.add_argument(
+        "--normalize-hahn-categories",
+        action="store_true",
+        help="修正误入“管弦乐/交响曲”的 Hahn 器乐分谱，并同步移动本地文件",
+    )
+    parser.add_argument(
         "--remove-redundant-subcategories",
         action="store_true",
         help="清除与“艺术歌曲”主分类重复的“艺术歌曲”或“香颂”二级分类",
@@ -1356,6 +1470,13 @@ def main() -> int:
         print(
             "hahn_metadata_normalized="
             f"records:{records},instrumentation:{instrumentation},languages:{languages}",
+            flush=True,
+        )
+    if args.normalize_hahn_categories:
+        records, manifest_files, moved_files = normalize_hahn_catalog_categories(manifest)
+        print(
+            "hahn_categories_normalized="
+            f"records:{records},manifest_files:{manifest_files},moved_files:{moved_files}",
             flush=True,
         )
     if args.remove_redundant_subcategories:
