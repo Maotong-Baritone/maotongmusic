@@ -44,7 +44,8 @@ class FrontendContractTest(unittest.TestCase):
         self.assertIn("function buildScoreUrl(item)", self.app_js)
         self.assertIn("const pdfUrl = buildScoreUrl(item)", self.app_js)
         self.assertNotIn("const pdfUrl = `scores/${encodedFilename}`", self.app_js)
-        self.assertIn('"keyStrategy": "catalog_filename"', self.site_config)
+        self.assertIn('"keyStrategy": "public_id_sharded"', self.site_config)
+        self.assertIn('"baseUrl": "https://', self.site_config)
 
     def test_no_lyrics_is_not_offered_as_a_language_filter(self):
         self.assertIn("l && l !== '无歌词'", self.app_js)

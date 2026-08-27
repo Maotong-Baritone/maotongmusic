@@ -1,7 +1,7 @@
 {
   "scoreStorage": {
-    "baseUrl": "",
+    "baseUrl": "https://pub-5fad57ef1d954e1b8080a3345c8f6628.r2.dev",
     "objectPrefix": "scores",
-    "keyStrategy": "catalog_filename"
+    "keyStrategy": "public_id_sharded"
   }
 }

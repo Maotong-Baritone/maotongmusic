@@ -79,6 +79,53 @@ python validate_library.py --strict
 
 清单采用 `scores/<public_id 前两位>/<public_id>.pdf` 作为稳定对象键，与乐谱分类和本地文件名无关，并汇总内容重复的 PDF 数量。将来批量上传并核对哈希后，只需把 `site-config.json` 中的 `baseUrl` 改为对象存储或 CDN 的 HTTPS 根地址，并将 `keyStrategy` 改为 `public_id_sharded`。访问密钥只应保存在本地环境变量中，不得写入站点配置或提交到 Git。
 
+### 安全演练同步
+
+`sync_object_storage.py` 默认只预演，不会写入目标，也永远不会删除目标中的文件。先用本地目录模拟对象存储，并只检查清单前 3 项：
+
+```powershell
+.\.venv\Scripts\python.exe tools\sync_object_storage.py --local-dir tmp\object-storage-smoke --limit 3
+```
+
+确认计划后，显式加入 `--execute` 才会真正复制。复制完成后重复运行时，大小和 SHA-256 均一致的文件会自动跳过：
+
+```powershell
+.\.venv\Scripts\python.exe tools\sync_object_storage.py --local-dir tmp\object-storage-smoke --limit 3 --execute
+```
+
+### 同步到 S3 兼容对象存储
+
+当前首选 Cloudflare R2。建议先在 R2 创建 `maotongmusic-scores` 存储桶，再创建仅限该桶的 **Object Read & Write** API Token。Secret Access Key 只显示一次，请直接保存在本机 `.env`，不要粘贴到聊天、`site-config.json` 或 Git：
+
+```dotenv
+SCORE_STORAGE_BUCKET=maotongmusic-scores
+SCORE_STORAGE_R2_ACCOUNT_ID=<Cloudflare Account ID>
+SCORE_STORAGE_REGION=auto
+SCORE_STORAGE_ACCESS_KEY_ID=
+SCORE_STORAGE_SECRET_ACCESS_KEY=
+```
+
+R2 的 API endpoint 会由 Account ID 自动生成为 `https://<ACCOUNT_ID>.r2.cloudflarestorage.com`。如将来迁移到其他 S3 兼容服务，可不填 `SCORE_STORAGE_R2_ACCOUNT_ID`，改填 `SCORE_STORAGE_ENDPOINT_URL` 和对应区域。
+
+先执行只读预演。该步骤会检查远端对象，但不会上传或覆盖：
+
+```powershell
+.\.venv\Scripts\python.exe tools\sync_object_storage.py --limit 3
+```
+
+小规模预演无误后先上传 3 份并校验。全量同步默认使用 8 个并发任务，可通过 `--workers` 调整：
+
+```powershell
+.\.venv\Scripts\python.exe tools\sync_object_storage.py --limit 3 --execute
+.\.venv\Scripts\python.exe tools\sync_object_storage.py --execute --workers 8
+```
+
+同步可安全地中断和重跑。远端对象只有在文件大小及上传时记录的 SHA-256 元数据均一致时才会被跳过；不一致的对象会在 `--execute` 模式下重新上传。工具不会执行远端删除。
+
+首次测试可临时启用 R2 的 `r2.dev` Public Development URL；它有速率限制，只用于抽查。正式上线应给存储桶连接自有子域名（例如 `scores.example.com`），这样才能使用 Cloudflare 缓存和访问控制。
+
+全量同步成功并通过网页抽查之前，不要修改 `site-config.json`，也不要删除本地或 Git 中的 PDF。确认 R2 公开 HTTPS 域名可用后，再将 `baseUrl` 设为该域名，并将 `keyStrategy` 改为 `public_id_sharded`。切换后一段时间仍保留本地 PDF，确认线上稳定后再单独处理 Git 中的历史文件。
+
 ## 备份策略
 
 后台每次保存前会自动备份 `data.json`，默认只保留最近 10 份，可在 `.env` 中通过 `BACKUP_KEEP_COUNT` 调整。阶段备份、删除回收站和待确认文件不会被自动清理。
