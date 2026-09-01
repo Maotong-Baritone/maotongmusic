@@ -122,7 +122,7 @@ R2 的 API endpoint 会由 Account ID 自动生成为 `https://<ACCOUNT_ID>.r2.c
 
 同步可安全地中断和重跑。远端对象只有在文件大小及上传时记录的 SHA-256 元数据均一致时才会被跳过；不一致的对象会在 `--execute` 模式下重新上传。工具不会执行远端删除。
 
-首次测试可临时启用 R2 的 `r2.dev` Public Development URL；它有速率限制，只用于抽查。正式上线应给存储桶连接自有子域名（例如 `scores.example.com`），这样才能使用 Cloudflare 缓存和访问控制。
+首次测试可临时启用 R2 的 `r2.dev` Public Development URL；它有速率限制，只用于抽查。本站正式下载域名为 `https://scores.maotong.me`，已连接到 `maotongmusic-scores` 存储桶，可使用 Cloudflare 缓存和访问控制。
 
 全量同步成功并通过网页抽查之前，不要修改 `site-config.json`，也不要删除本地或 Git 中的 PDF。确认 R2 公开 HTTPS 域名可用后，再将 `baseUrl` 设为该域名，并将 `keyStrategy` 改为 `public_id_sharded`。切换后一段时间仍保留本地 PDF，确认线上稳定后再单独处理 Git 中的历史文件。
 
