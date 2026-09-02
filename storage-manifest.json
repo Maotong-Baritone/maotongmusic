@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3410,
-  "unique_content_count": 3391,
+  "entry_count": 3418,
+  "unique_content_count": 3399,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4236992102,
+  "total_size": 4241727467,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -469,6 +469,13 @@
       "storage_key": "scores/04/0454c024-c54a-5bd8-bf29-f0a9c9e565c6.pdf",
       "file_size": 133227,
       "sha256": "4c541f1255ac4843858a2323cc7035ac5236cd5e30b0cc14c4c52658193725cf"
+    },
+    {
+      "public_id": "0459ba65-b8b4-469f-9fe1-d7ded951e8c8",
+      "source_path": "scores/器乐独奏/0459ba65-b8b4-469f-9fe1-d7ded951e8c8.pdf",
+      "storage_key": "scores/04/0459ba65-b8b4-469f-9fe1-d7ded951e8c8.pdf",
+      "file_size": 258258,
+      "sha256": "72249eae2b1810fdcbf1037b9a072a8fdb4dcc8b5ebce792b9223347efbdfcfe"
     },
     {
       "public_id": "046408d1-ad2e-51f2-b78a-4d2d392c07c0",
@@ -6118,6 +6125,13 @@
       "storage_key": "scores/41/41da3541-bc51-5087-803a-47c7ccb0aa25.pdf",
       "file_size": 396860,
       "sha256": "70126cf7cbdcfbb19557f38816682538360dbd5a66908d6ab36afae5b06ee987"
+    },
+    {
+      "public_id": "41db966d-35fa-4b76-8e73-04ddc821f119",
+      "source_path": "scores/器乐独奏/41db966d-35fa-4b76-8e73-04ddc821f119.pdf",
+      "storage_key": "scores/41/41db966d-35fa-4b76-8e73-04ddc821f119.pdf",
+      "file_size": 174613,
+      "sha256": "516b81075940301cacdea0da96d8418bbdb545e781b0691292c204de13ca3206"
     },
     {
       "public_id": "41ec34db-8dae-58c5-8f83-070d167353e3",
@@ -13155,6 +13169,13 @@
       "sha256": "0b6d1879106c13ecbc34e4d04059c4d89fcd77402142ddc89aeef475f5b97cc7"
     },
     {
+      "public_id": "8e711fc9-74ff-4bb3-9be6-a84d17df4ca3",
+      "source_path": "scores/器乐独奏/8e711fc9-74ff-4bb3-9be6-a84d17df4ca3.pdf",
+      "storage_key": "scores/8e/8e711fc9-74ff-4bb3-9be6-a84d17df4ca3.pdf",
+      "file_size": 86289,
+      "sha256": "7d287dd776f8eac26b6fe927ba1266492754fb8c1a349bca0168758c28d48c9e"
+    },
+    {
       "public_id": "8e74a0e3-88c3-4d32-9f5a-375d581fc9bf",
       "source_path": "scores/器乐独奏/8e74a0e3-88c3-4d32-9f5a-375d581fc9bf.pdf",
       "storage_key": "scores/8e/8e74a0e3-88c3-4d32-9f5a-375d581fc9bf.pdf",
@@ -13965,6 +13986,13 @@
       "storage_key": "scores/97/97135451-ebcd-5144-addb-57d7b36210e7.pdf",
       "file_size": 1877813,
       "sha256": "1f09e64514822b63eb351be37bc74dcc9f7232d38236bdba60c33a044c5389b2"
+    },
+    {
+      "public_id": "97143564-953c-4fb3-bbc1-c3afe5846c3c",
+      "source_path": "scores/器乐独奏/97143564-953c-4fb3-bbc1-c3afe5846c3c.pdf",
+      "storage_key": "scores/97/97143564-953c-4fb3-bbc1-c3afe5846c3c.pdf",
+      "file_size": 224782,
+      "sha256": "fd0289112273c0eb98da81c9b922947f8531dbe8c3d95230ca5db4e46a0b1ec9"
     },
     {
       "public_id": "971de0bd-5f37-5344-9d49-d1b5d293d769",
@@ -20386,6 +20414,13 @@
       "sha256": "80a99db3cc673d169ab72e84a5e181270e9c8a49ce43fa2b8f427d6f6acff38b"
     },
     {
+      "public_id": "d95f0cbd-bb35-436c-a5de-3217daf8f058",
+      "source_path": "scores/器乐独奏/d95f0cbd-bb35-436c-a5de-3217daf8f058.pdf",
+      "storage_key": "scores/d9/d95f0cbd-bb35-436c-a5de-3217daf8f058.pdf",
+      "file_size": 3510942,
+      "sha256": "f83950e63a85740b2fde2eea6a9817ae008c0c11faca0a4277c087f4f2ae4c48"
+    },
+    {
       "public_id": "d9672eb7-2c7e-51aa-92bd-b448581d038d",
       "source_path": "scores/艺术歌曲/Herr_Oluf_Loewe.pdf",
       "storage_key": "scores/d9/d9672eb7-2c7e-51aa-92bd-b448581d038d.pdf",
@@ -20685,6 +20720,13 @@
       "storage_key": "scores/dc/dc2135dc-b798-57ad-bfb3-84ed024251bc.pdf",
       "file_size": 213761,
       "sha256": "ac25f907f2835c078d2306346abba0e62cd9a1e9d8de9b2802a9ee2782bdb749"
+    },
+    {
+      "public_id": "dc28edc0-6bc5-4ac4-a46d-e520e8c510ba",
+      "source_path": "scores/器乐独奏/dc28edc0-6bc5-4ac4-a46d-e520e8c510ba.pdf",
+      "storage_key": "scores/dc/dc28edc0-6bc5-4ac4-a46d-e520e8c510ba.pdf",
+      "file_size": 135001,
+      "sha256": "489ae480396da593aeb281caee1e4b8112f45b3b9fe0f6224e8e54c4c81d6e8c"
     },
     {
       "public_id": "dc3548d4-0574-597b-a70c-f2c3def5896a",
@@ -21520,6 +21562,13 @@
       "sha256": "7b15578cc7bba0788ed77d512803d42dbb3bab9f79a1f8b07b9a2477cb10713e"
     },
     {
+      "public_id": "e572eabe-b87f-4f00-a2f5-634ea90c1676",
+      "source_path": "scores/器乐独奏/e572eabe-b87f-4f00-a2f5-634ea90c1676.pdf",
+      "storage_key": "scores/e5/e572eabe-b87f-4f00-a2f5-634ea90c1676.pdf",
+      "file_size": 196592,
+      "sha256": "474bfbe48e84ad334c38b006b51291829a4482d1a40d18260cef5bc07fe2f843"
+    },
+    {
       "public_id": "e575832f-85bb-5bd3-81b9-cda10c602125",
       "source_path": "scores/歌剧咏叹调/1765773684.pdf",
       "storage_key": "scores/e5/e575832f-85bb-5bd3-81b9-cda10c602125.pdf",
@@ -22071,6 +22120,13 @@
       "storage_key": "scores/eb/ebd876c9-ebc9-4561-98ef-95c5f43afc33.pdf",
       "file_size": 508902,
       "sha256": "3a26ba72302ee0b1f2887feecd20bfb4ca3af53ad59a0986f61272783fa1c561"
+    },
+    {
+      "public_id": "ebea79ce-fca4-4b8d-a7b7-80244a8e645b",
+      "source_path": "scores/器乐独奏/ebea79ce-fca4-4b8d-a7b7-80244a8e645b.pdf",
+      "storage_key": "scores/eb/ebea79ce-fca4-4b8d-a7b7-80244a8e645b.pdf",
+      "file_size": 148888,
+      "sha256": "036896547f46937de7e495da55435b781e1beacf8fdaa7931088ca5c4ff1baa0"
     },
     {
       "public_id": "ec1bcaac-8440-5ee3-ad98-9975e03e2a2b",

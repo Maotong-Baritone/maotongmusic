@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-09-02 15:38",
+        "type": "add",
+        "msg": "新增勃拉姆斯《7 Fantasien, Op.116》乐谱 8 份：7 首独立单曲谱＋1 份完整原始扫描版；已核对单曲标题、调性与钢琴独奏编制。",
+        "batch_id": "brahms-op116-reviewed-eight-20260902",
+        "count": 8
+    },
+    {
         "date": "2026-08-24 02:16",
         "type": "update",
         "msg": "更新: Soir d'orage"
