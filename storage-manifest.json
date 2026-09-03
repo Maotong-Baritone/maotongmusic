@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3449,
-  "unique_content_count": 3430,
+  "entry_count": 3454,
+  "unique_content_count": 3435,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4298704950,
+  "total_size": 4310140095,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -882,6 +882,13 @@
       "storage_key": "scores/09/090f127d-b79d-54ea-8fd2-8901adb80f6e.pdf",
       "file_size": 234380,
       "sha256": "04445ad3a00066076629687f9ded0074b4396c6ed7a879c7b71cfc13c86361a5"
+    },
+    {
+      "public_id": "0933611b-3856-4cf4-afdd-007506fea8be",
+      "source_path": "scores/器乐独奏/0933611b-3856-4cf4-afdd-007506fea8be.pdf",
+      "storage_key": "scores/09/0933611b-3856-4cf4-afdd-007506fea8be.pdf",
+      "file_size": 8553784,
+      "sha256": "483ca9f3705413915985cc3b826cb60271be968bf145aea94001d8568fedcea6"
     },
     {
       "public_id": "09341e46-8177-5f68-ba01-f5023d7b27a6",
@@ -2331,6 +2338,13 @@
       "storage_key": "scores/17/177e0e08-c847-528e-a1e5-38de296aadee.pdf",
       "file_size": 970302,
       "sha256": "7736a0ea0e38c3241c196b052c1476213778782c1632499517987f71a086826f"
+    },
+    {
+      "public_id": "1780708a-df65-460e-842c-002a4719adbe",
+      "source_path": "scores/器乐独奏/1780708a-df65-460e-842c-002a4719adbe.pdf",
+      "storage_key": "scores/17/1780708a-df65-460e-842c-002a4719adbe.pdf",
+      "file_size": 718153,
+      "sha256": "6134e5efce0b0a96604d2cb3689b21232d901ce98228eee1535c2f0ebfd2218b"
     },
     {
       "public_id": "17dec87c-c6f2-5063-84f1-a8844a2e1912",
@@ -8575,6 +8589,13 @@
       "storage_key": "scores/5c/5c7e3753-2991-5f72-bbaf-06a0c5ab5b92.pdf",
       "file_size": 639855,
       "sha256": "8874bac970a3a7a1e6a23c3b4e5ca82fccfbb1687c3c81d056838d4467450b18"
+    },
+    {
+      "public_id": "5c8f1b3b-467b-4c48-8fba-ca5a6dd8e308",
+      "source_path": "scores/器乐独奏/5c8f1b3b-467b-4c48-8fba-ca5a6dd8e308.pdf",
+      "storage_key": "scores/5c/5c8f1b3b-467b-4c48-8fba-ca5a6dd8e308.pdf",
+      "file_size": 518944,
+      "sha256": "8b559d08f97bea6e6f1f22486f8bc0141b40dd81a2f42eec54ef9e3329137006"
     },
     {
       "public_id": "5c9e9d2f-0acf-413d-897b-c87b349e7bfb",
@@ -16214,6 +16235,13 @@
       "sha256": "235a854b21fbe2c34d3bfe4fa67aa92a40f9591af61b25c84eddbcf89e51947d"
     },
     {
+      "public_id": "acfcde0c-a39d-4055-a39d-e580438edfc9",
+      "source_path": "scores/器乐独奏/acfcde0c-a39d-4055-a39d-e580438edfc9.pdf",
+      "storage_key": "scores/ac/acfcde0c-a39d-4055-a39d-e580438edfc9.pdf",
+      "file_size": 1474186,
+      "sha256": "590a6113fbf2c6acbc33b883f7aef0e3cb6b9c3722dae184bf6815933d19fd7b"
+    },
+    {
       "public_id": "ad07292a-3de3-5e41-a145-396cdf638b5a",
       "source_path": "scores/声乐作品/艺术歌曲/1766372652133_Willkommen_und_Abschied_-_D767_Medium_Original.pdf",
       "storage_key": "scores/ad/ad07292a-3de3-5e41-a145-396cdf638b5a.pdf",
@@ -18725,6 +18753,13 @@
       "storage_key": "scores/c5/c5db7347-0a5a-461b-850a-3293f59701ee.pdf",
       "file_size": 295301,
       "sha256": "94ade7882b087d09a6c6808d22a1d8caee60b5b809a064b4315900bf4d4afec3"
+    },
+    {
+      "public_id": "c5e5a7f2-26ae-4bf3-a00d-205d35ad513c",
+      "source_path": "scores/器乐独奏/c5e5a7f2-26ae-4bf3-a00d-205d35ad513c.pdf",
+      "storage_key": "scores/c5/c5e5a7f2-26ae-4bf3-a00d-205d35ad513c.pdf",
+      "file_size": 170078,
+      "sha256": "82061643693c63c64ee7f80b64de4ff41dcec5c256631ff64f8e051cbe5e7d00"
     },
     {
       "public_id": "c61a7795-6373-5e16-8dd0-6bf819478205",
