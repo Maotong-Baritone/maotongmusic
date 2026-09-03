@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3454,
-  "unique_content_count": 3435,
+  "entry_count": 3456,
+  "unique_content_count": 3437,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4310140095,
+  "total_size": 4314922459,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -14401,6 +14401,13 @@
       "sha256": "bdf7c229252e4332acde5f0db9a51af19f26369c67324f2129c144c59db4b902"
     },
     {
+      "public_id": "99e359f0-17d7-4b42-b3d7-a855c593f62f",
+      "source_path": "scores/器乐独奏/99e359f0-17d7-4b42-b3d7-a855c593f62f.pdf",
+      "storage_key": "scores/99/99e359f0-17d7-4b42-b3d7-a855c593f62f.pdf",
+      "file_size": 2491047,
+      "sha256": "e351f3ff71d6df0a7f2206be6753f66a1e96d6b66427b6574750576f2b8119db"
+    },
+    {
       "public_id": "99ff1a45-7bc2-586b-ab22-c1fbf9466804",
       "source_path": "scores/歌剧咏叹调/1766093636095_Kennst_du_das_Leid...O_war_dein_Herz.pdf",
       "storage_key": "scores/99/99ff1a45-7bc2-586b-ab22-c1fbf9466804.pdf",
@@ -24094,6 +24101,13 @@
       "storage_key": "scores/fe/fe9fda3f-9c7a-5fcb-8035-6533b7b8432b.pdf",
       "file_size": 1480518,
       "sha256": "e86e7a91a4340122608061208c9c2a15992778843dd6622c9cf24f433c322531"
+    },
+    {
+      "public_id": "fec9b34a-abec-476a-89ba-d2caf04636e8",
+      "source_path": "scores/器乐独奏/fec9b34a-abec-476a-89ba-d2caf04636e8.pdf",
+      "storage_key": "scores/fe/fec9b34a-abec-476a-89ba-d2caf04636e8.pdf",
+      "file_size": 2291317,
+      "sha256": "16edea1c0501669bab03bbd14eacd4b930ad71aeb9686214a2c115282b2e71af"
     },
     {
       "public_id": "feecb6ff-4c84-5447-90f0-fdb81241e61e",
