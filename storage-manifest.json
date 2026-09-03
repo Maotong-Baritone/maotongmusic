@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3439,
-  "unique_content_count": 3420,
+  "entry_count": 3443,
+  "unique_content_count": 3424,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4269213913,
+  "total_size": 4285901762,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -9011,6 +9011,13 @@
       "sha256": "3384fdf9705b98bc780ff0524f35ba7e3bc7bdbdb731bb63582896e45e61c6e0"
     },
     {
+      "public_id": "60604d2d-ec30-4c36-a31c-6c9961609fb1",
+      "source_path": "scores/器乐独奏/60604d2d-ec30-4c36-a31c-6c9961609fb1.pdf",
+      "storage_key": "scores/60/60604d2d-ec30-4c36-a31c-6c9961609fb1.pdf",
+      "file_size": 5804602,
+      "sha256": "08e3148643d9ede35d605b9026bad18411b2fbc6662acc8dbc25c30089f106cc"
+    },
+    {
       "public_id": "60621499-312d-50ec-ba4b-27b046bf463f",
       "source_path": "scores/歌剧咏叹调/Per_me_giunto-Don_Carlo.pdf",
       "storage_key": "scores/60/60621499-312d-50ec-ba4b-27b046bf463f.pdf",
@@ -10922,6 +10929,13 @@
       "sha256": "41a41b50fab20a86d7a751c4382657bc40e8b1f5547124e4b1e5324fdf3f0786"
     },
     {
+      "public_id": "745567b2-587b-4daa-b840-f163254e2058",
+      "source_path": "scores/器乐独奏/745567b2-587b-4daa-b840-f163254e2058.pdf",
+      "storage_key": "scores/74/745567b2-587b-4daa-b840-f163254e2058.pdf",
+      "file_size": 4710511,
+      "sha256": "3d0a9c47c741785755b1ab5b403a37c1cd8e9f9b7d8394fe3ae11fdec8b05be3"
+    },
+    {
       "public_id": "7473bf63-be66-5cf4-aea1-9cea0ee19ec0",
       "source_path": "scores/歌剧咏叹调/1766007758071_Sol_la_brama_di_vendetta_puo_dar_pace.pdf",
       "storage_key": "scores/74/7473bf63-be66-5cf4-aea1-9cea0ee19ec0.pdf",
@@ -12299,6 +12313,13 @@
       "storage_key": "scores/85/852f9c28-bdd5-54bf-94c6-c6256ea1fb75.pdf",
       "file_size": 985543,
       "sha256": "73df0dc66e3e471842b7729bdc2bfbf7aa7dfc7c3d626f5dc9460ecdbd91867f"
+    },
+    {
+      "public_id": "85647c58-949e-4388-819a-c78c1839ad64",
+      "source_path": "scores/器乐独奏/85647c58-949e-4388-819a-c78c1839ad64.pdf",
+      "storage_key": "scores/85/85647c58-949e-4388-819a-c78c1839ad64.pdf",
+      "file_size": 2415543,
+      "sha256": "01191d6474d9ee7a91f95ee516f59b7f2a0f6b8c463b820e253fc58b41a7ebf5"
     },
     {
       "public_id": "8566fc05-08a0-5777-8fcc-95772d2943dc",
@@ -14623,6 +14644,13 @@
       "storage_key": "scores/9c/9c92ca59-c320-5ee4-b314-a24ad6e7fac0.pdf",
       "file_size": 1228677,
       "sha256": "f9b2dd96b9a0db9167d67d8a58d251cc4db56d62010ec3de9136a9a0ca53c996"
+    },
+    {
+      "public_id": "9c996323-8160-4996-9976-d00cc87854ef",
+      "source_path": "scores/器乐独奏/9c996323-8160-4996-9976-d00cc87854ef.pdf",
+      "storage_key": "scores/9c/9c996323-8160-4996-9976-d00cc87854ef.pdf",
+      "file_size": 3757193,
+      "sha256": "9ddd5c7812bd8bdfcec427655dfa0f4a7454a66b05ca72275c7815cd0539e9db"
     },
     {
       "public_id": "9ca08df0-143e-5891-87be-86dd6352a169",
