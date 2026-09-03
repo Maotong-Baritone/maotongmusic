@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3443,
-  "unique_content_count": 3424,
+  "entry_count": 3449,
+  "unique_content_count": 3430,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4285901762,
+  "total_size": 4298704950,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -973,6 +973,13 @@
       "storage_key": "scores/0a/0a731057-a0ea-4ce9-bfe6-88a179d442fb.pdf",
       "file_size": 1305258,
       "sha256": "d78e0b2b5a7865751a9d7cb8945817383619d847abdbfab4abf888961bf4abf2"
+    },
+    {
+      "public_id": "0a9b0c21-95db-43cc-8213-3cb8a1b61569",
+      "source_path": "scores/器乐独奏/0a9b0c21-95db-43cc-8213-3cb8a1b61569.pdf",
+      "storage_key": "scores/0a/0a9b0c21-95db-43cc-8213-3cb8a1b61569.pdf",
+      "file_size": 2391541,
+      "sha256": "6508f4aca677f067b78034698dfd1435c76ea656106bd1fb7dbd9650256e2ad6"
     },
     {
       "public_id": "0a9c18cb-d35b-56cc-8929-83309119af4a",
@@ -9305,6 +9312,13 @@
       "sha256": "419d1c021ea8b906e769136e5547352177953ac58c307479408ec2693e7cd775"
     },
     {
+      "public_id": "639fb2ef-b0ec-494a-8e3b-6a62825698ee",
+      "source_path": "scores/器乐独奏/639fb2ef-b0ec-494a-8e3b-6a62825698ee.pdf",
+      "storage_key": "scores/63/639fb2ef-b0ec-494a-8e3b-6a62825698ee.pdf",
+      "file_size": 2555395,
+      "sha256": "75984902ecca772c25491d3f0175d72a044eeaf3e31f72c0c8453a06110babf9"
+    },
+    {
       "public_id": "63ba747b-cd10-5703-b3dc-fdec1bab7a33",
       "source_path": "scores/歌剧咏叹调/1766098397466_All_udir_che_il_mio_tesor.pdf",
       "storage_key": "scores/63/63ba747b-cd10-5703-b3dc-fdec1bab7a33.pdf",
@@ -11592,6 +11606,13 @@
       "storage_key": "scores/7c/7c2e8292-7ee6-542c-aa9c-fdda969681c2.pdf",
       "file_size": 974810,
       "sha256": "05abaa52935275cc372dee913301bc9f3a0897bcded5b7fcacfea23c61fe6e24"
+    },
+    {
+      "public_id": "7c3b63d6-8f48-4190-9c12-d859567ff3cf",
+      "source_path": "scores/器乐独奏/7c3b63d6-8f48-4190-9c12-d859567ff3cf.pdf",
+      "storage_key": "scores/7c/7c3b63d6-8f48-4190-9c12-d859567ff3cf.pdf",
+      "file_size": 2488932,
+      "sha256": "48831eb36c5e2d9923d1486f1273e2e5d469d29dd73b831aee5b4755ca0d48d0"
     },
     {
       "public_id": "7c411011-52a7-540e-b8d3-da77a5106e2c",
@@ -20197,6 +20218,13 @@
       "sha256": "06dfaed0ed21769061a84f6ba5a5b90f100f3b5832faa4d37d0a5d71d0acdbc9"
     },
     {
+      "public_id": "d601da7e-4246-4a42-aa9c-bf4943afd879",
+      "source_path": "scores/器乐独奏/d601da7e-4246-4a42-aa9c-bf4943afd879.pdf",
+      "storage_key": "scores/d6/d601da7e-4246-4a42-aa9c-bf4943afd879.pdf",
+      "file_size": 2377418,
+      "sha256": "3f49f3922c3a334694309a5a3344e6643dcc04a53af737eea6af5f8bb4b05013"
+    },
+    {
       "public_id": "d6059522-5ddc-5e1d-bf6d-fb728c7cfca0",
       "source_path": "scores/歌剧咏叹调/1766007804920_Perche_viva_il_caro_sposo.pdf",
       "storage_key": "scores/d6/d6059522-5ddc-5e1d-bf6d-fb728c7cfca0.pdf",
@@ -21219,6 +21247,13 @@
       "sha256": "b9819e7f2c6c1c24da5f92cf4346e5743432e932f30e4f7a528a6e533bf8b7aa"
     },
     {
+      "public_id": "e0117bae-977f-4acd-8fc7-5c1c838c8079",
+      "source_path": "scores/器乐独奏/e0117bae-977f-4acd-8fc7-5c1c838c8079.pdf",
+      "storage_key": "scores/e0/e0117bae-977f-4acd-8fc7-5c1c838c8079.pdf",
+      "file_size": 1293149,
+      "sha256": "6b0920e670c0548b35789c5c52ea85561f11c665796d656ceddc81c186079a9b"
+    },
+    {
       "public_id": "e0162b87-e71a-5a7a-8602-fdcf1fa2a6ee",
       "source_path": "scores/器乐独奏/1765983815.pdf",
       "storage_key": "scores/e0/e0162b87-e71a-5a7a-8602-fdcf1fa2a6ee.pdf",
@@ -21938,6 +21973,13 @@
       "storage_key": "scores/e8/e85528f7-7329-5fdc-ae54-9669f05970db.pdf",
       "file_size": 331989,
       "sha256": "bb2882af1f3bfc9f8102e323276afc0de6d4cb4ef937ce304f533ef6eb4876af"
+    },
+    {
+      "public_id": "e8679d5c-5e9a-43cd-9c32-27143d7b1272",
+      "source_path": "scores/器乐独奏/e8679d5c-5e9a-43cd-9c32-27143d7b1272.pdf",
+      "storage_key": "scores/e8/e8679d5c-5e9a-43cd-9c32-27143d7b1272.pdf",
+      "file_size": 1696753,
+      "sha256": "70f0c37b692cd1ba2ac916b3260422880416ec985ffa8b6b4818c070eddd2f0f"
     },
     {
       "public_id": "e8a32f10-dc33-4d9e-bc30-4130c3a0b7c4",
