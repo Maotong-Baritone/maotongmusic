@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3428,
-  "unique_content_count": 3409,
+  "entry_count": 3439,
+  "unique_content_count": 3420,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4251443363,
+  "total_size": 4269213913,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -583,6 +583,13 @@
       "sha256": "1899b4323c0c6dd2fd1e846bfbff576b51ac4748657d83fe002a3a8ef17dc22e"
     },
     {
+      "public_id": "05f3a433-d922-4f49-b290-0de9abeee0d7",
+      "source_path": "scores/器乐独奏/05f3a433-d922-4f49-b290-0de9abeee0d7.pdf",
+      "storage_key": "scores/05/05f3a433-d922-4f49-b290-0de9abeee0d7.pdf",
+      "file_size": 357356,
+      "sha256": "a25fbae968d8424019b8986dcf3ce299d1259b6c59ccea2601a0f536b6fbdd9f"
+    },
+    {
       "public_id": "05f855aa-2ede-5c8a-8298-1c7b8099465c",
       "source_path": "scores/声乐作品/艺术歌曲/1766372495391_Alles_um_Liebe_-_D241_Medium_Original.pdf",
       "storage_key": "scores/05/05f855aa-2ede-5c8a-8298-1c7b8099465c.pdf",
@@ -840,6 +847,13 @@
       "storage_key": "scores/08/08b15b31-40a4-5c95-aec2-34d2164c9b5d.pdf",
       "file_size": 420034,
       "sha256": "b2ea804fdfedf87c6cdece3809c3a8ab5a89ee767c41ce9396c34088641a9318"
+    },
+    {
+      "public_id": "08bfdfc0-808e-439c-b5f3-2c1c2d13a59c",
+      "source_path": "scores/器乐独奏/08bfdfc0-808e-439c-b5f3-2c1c2d13a59c.pdf",
+      "storage_key": "scores/08/08bfdfc0-808e-439c-b5f3-2c1c2d13a59c.pdf",
+      "file_size": 9831670,
+      "sha256": "148d0e884a1f459c5cef80acb1a6a288875dbfa05c26ad0494863145417fde7e"
     },
     {
       "public_id": "08c48b29-2f65-5134-b318-1b60e28241b4",
@@ -2683,6 +2697,13 @@
       "sha256": "9ddc387a298ca9826ac8f0faa643c1e3ab1a4d588aa551a6a622ee8034df490b"
     },
     {
+      "public_id": "1b38589f-d1b6-4759-9ced-feef1a5fd621",
+      "source_path": "scores/器乐独奏/1b38589f-d1b6-4759-9ced-feef1a5fd621.pdf",
+      "storage_key": "scores/1b/1b38589f-d1b6-4759-9ced-feef1a5fd621.pdf",
+      "file_size": 151924,
+      "sha256": "657a46ce4a3e060dc67bbf51ca7da56993723664229fe0796a82b1dfa277498f"
+    },
+    {
       "public_id": "1b3d7a30-63ae-594a-8acb-73fa1a70962b",
       "source_path": "scores/歌剧咏叹调/1765776304.pdf",
       "storage_key": "scores/1b/1b3d7a30-63ae-594a-8acb-73fa1a70962b.pdf",
@@ -2968,6 +2989,13 @@
       "storage_key": "scores/1e/1eff24c4-8149-5ddc-9110-295569992d7e.pdf",
       "file_size": 1046490,
       "sha256": "fc5290014e2a48008dea1d4b838b7df25ad02f415373dfc0f3a4131c76265b57"
+    },
+    {
+      "public_id": "1f0b2c9a-d16a-41fe-baa8-b9de188a5b6e",
+      "source_path": "scores/器乐独奏/1f0b2c9a-d16a-41fe-baa8-b9de188a5b6e.pdf",
+      "storage_key": "scores/1f/1f0b2c9a-d16a-41fe-baa8-b9de188a5b6e.pdf",
+      "file_size": 217940,
+      "sha256": "e60388a76f375bf8012b7d12ec3f0f2860a5bbb99e51e7eea22e81d539089a9c"
     },
     {
       "public_id": "1f0cfe69-0553-5599-9b7e-838aebe73bc0",
@@ -6188,6 +6216,13 @@
       "storage_key": "scores/42/4261efb0-7209-5a5b-9659-ae0e74304302.pdf",
       "file_size": 653429,
       "sha256": "64c944ac92adba0cdcc486c3e240960f0b75fcd82a63bd38dffa00456681d5a9"
+    },
+    {
+      "public_id": "426fc9e5-d766-4e5c-a73a-bef839c3df60",
+      "source_path": "scores/器乐独奏/426fc9e5-d766-4e5c-a73a-bef839c3df60.pdf",
+      "storage_key": "scores/42/426fc9e5-d766-4e5c-a73a-bef839c3df60.pdf",
+      "file_size": 272103,
+      "sha256": "9db8f1cc667485113309425afa9f0f9575121960fb6fcdcf29a6a7c5102843ba"
     },
     {
       "public_id": "4273b14e-b7aa-5de8-9487-4ae1a9a24157",
@@ -10754,6 +10789,13 @@
       "sha256": "9e3539bd81e7244adb6f59bf5bccec905004273ef39e3930032ddc30cd7f1574"
     },
     {
+      "public_id": "72f40145-4702-4e88-9659-c0975ed16917",
+      "source_path": "scores/器乐独奏/72f40145-4702-4e88-9659-c0975ed16917.pdf",
+      "storage_key": "scores/72/72f40145-4702-4e88-9659-c0975ed16917.pdf",
+      "file_size": 510966,
+      "sha256": "1bf789dc410bbd1092447a27906030056ada3d3e5bc14e1e13acda75bea7d071"
+    },
+    {
       "public_id": "73014678-7998-51fe-8efe-3473281bbd3d",
       "source_path": "scores/歌剧咏叹调/1766012392375_Batti_batti_o_bel_Masetto.pdf",
       "storage_key": "scores/73/73014678-7998-51fe-8efe-3473281bbd3d.pdf",
@@ -12035,6 +12077,13 @@
       "sha256": "c0a1e4fe0e0965e3598c1d9ece45d470f87152f9abbf6bc1b1579dcdcec4e2d1"
     },
     {
+      "public_id": "8280c3b0-e8ca-4e07-bfcd-2077d6f53f59",
+      "source_path": "scores/器乐独奏/8280c3b0-e8ca-4e07-bfcd-2077d6f53f59.pdf",
+      "storage_key": "scores/82/8280c3b0-e8ca-4e07-bfcd-2077d6f53f59.pdf",
+      "file_size": 2866340,
+      "sha256": "15db27db66fbf9c279cb67cd6f818f162f0f48e766825c8c987a084658d9ba1b"
+    },
+    {
       "public_id": "82e7ae95-3162-46d1-82a8-dcd17c6918dc",
       "source_path": "scores/器乐分谱/82e7ae95-3162-46d1-82a8-dcd17c6918dc.pdf",
       "storage_key": "scores/82/82e7ae95-3162-46d1-82a8-dcd17c6918dc.pdf",
@@ -12616,6 +12665,13 @@
       "sha256": "78d5dc4001c2b7d66b5b8dd6d9d3e944391cbec7c34d644189fcf1285032de62"
     },
     {
+      "public_id": "88dc3d8b-9970-40e1-a24e-9b88807864cc",
+      "source_path": "scores/器乐独奏/88dc3d8b-9970-40e1-a24e-9b88807864cc.pdf",
+      "storage_key": "scores/88/88dc3d8b-9970-40e1-a24e-9b88807864cc.pdf",
+      "file_size": 336353,
+      "sha256": "11f81c26caca14dcfb86f01063850924678920d80fbf2aeb74492327bc65d302"
+    },
+    {
       "public_id": "88debfae-19f8-5c67-84b6-3a6a4eeb1b27",
       "source_path": "scores/声乐作品/艺术歌曲/1766372588227_Hermann_und_Thusnelda_-_D322_Medium_Original.pdf",
       "storage_key": "scores/88/88debfae-19f8-5c67-84b6-3a6a4eeb1b27.pdf",
@@ -13118,6 +13174,13 @@
       "storage_key": "scores/8d/8d8ad9d6-1220-552d-9569-b0e15ecd46da.pdf",
       "file_size": 256241,
       "sha256": "c741bc2e39bcf72e2095b3bb81e8be4a3fd15fb5942b8c60a07b04d5c8a9439c"
+    },
+    {
+      "public_id": "8d8fc40f-fa07-49f1-8788-1a6a64a7000a",
+      "source_path": "scores/器乐独奏/8d8fc40f-fa07-49f1-8788-1a6a64a7000a.pdf",
+      "storage_key": "scores/8d/8d8fc40f-fa07-49f1-8788-1a6a64a7000a.pdf",
+      "file_size": 339215,
+      "sha256": "913d440c6e7f5b77a34c051f3e3f1ddf29164264e263451e058d9e0f4d8702b0"
     },
     {
       "public_id": "8dad8203-ad68-537e-aafa-ab679af8a4fc",
@@ -18678,6 +18741,13 @@
       "sha256": "f90068299fa43c373282bd2ffd51a3ffa32d4ebf5d8e8afc7a97cf68a723de41"
     },
     {
+      "public_id": "c66bd2cc-4399-480e-b3ad-0c83c5a5a290",
+      "source_path": "scores/器乐独奏/c66bd2cc-4399-480e-b3ad-0c83c5a5a290.pdf",
+      "storage_key": "scores/c6/c66bd2cc-4399-480e-b3ad-0c83c5a5a290.pdf",
+      "file_size": 376936,
+      "sha256": "a44e0887055342a431e84f9fae63c17953d22ce4cc8023a1e3254eb15e59d1ef"
+    },
+    {
       "public_id": "c680385b-55e5-5987-a332-adfa03591412",
       "source_path": "scores/歌剧咏叹调/1766007745183_Cieca_notte_infidi_sguardi_spoglie_infauste.pdf",
       "storage_key": "scores/c6/c680385b-55e5-5987-a332-adfa03591412.pdf",
@@ -22750,6 +22820,13 @@
       "storage_key": "scores/f0/f0961e50-076e-51f8-b68c-567e261c994c.pdf",
       "file_size": 576349,
       "sha256": "44420944240617a0330ac4c715cc69675bc295df8b404e3eda68746f94fe58a7"
+    },
+    {
+      "public_id": "f0ad0116-1b1b-4f79-b076-1bc4464f822d",
+      "source_path": "scores/器乐独奏/f0ad0116-1b1b-4f79-b076-1bc4464f822d.pdf",
+      "storage_key": "scores/f0/f0ad0116-1b1b-4f79-b076-1bc4464f822d.pdf",
+      "file_size": 2509747,
+      "sha256": "1ad36e825b60a2506a25ee453e2b627379c725e0864162ba62a6eb701b3ab46a"
     },
     {
       "public_id": "f0e2d8b4-9f81-5e74-aba6-1ec60054f950",
