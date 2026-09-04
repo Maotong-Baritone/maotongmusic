@@ -1,5 +1,28 @@
 [
     {
+        "id": 1787535215301,
+        "public_id": "959b4872-5398-4027-a687-cd009991a6f9",
+        "title": "3 Duets, Op. 20",
+        "work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #97824；作品页：https://imslp.org/wiki/3_Duets%2C_Op.20_%28Brahms%2C_Johannes%29；版本：Complete Score (scan)；版权：Public Domain；出版信息：Sämtliche Werke, Band 22 Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 132.；编者：Eusebius Mandyczewski (1857-1929)；谱面核对：完整三首，跨多调，整套调性留空。目录：No. 1 Weg der Liebe（1. Teil）, Allegro：PDF第1页；No. 2 Weg der Liebe（2. Teil）, Poco Adagio molto espressivo：PDF第9页；No. 3 Die Meere, Andante：PDF第13页。PDF与本卷印刷页均为1–16，第16页完整结束；编制为女高音、女低音二重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件可能损失细小内容，故未重复收录。原PDF字节未改。",
+        "filename": "艺术歌曲/959b4872-5398-4027-a687-cd009991a6f9.pdf",
+        "date": "2026-09-04",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-three-duets-op20-one-20260904",
+        "source_imslp_id": "97824",
+        "storage_key": "scores/95/959b4872-5398-4027-a687-cd009991a6f9.pdf",
+        "storage_sha256": "9889f8734d4d4361f3240939da7ef0b0df4cb7f94d94f18d957cffe8060223f8",
+        "storage_size": 1825526,
+        "storage_synced_at": "2026-09-04T20:47:41+00:00"
+    },
+    {
         "id": 1787535215300,
         "public_id": "df399d07-b2cd-440c-b6d9-c5a00e2c2ec0",
         "title": "5 Studies, Anh. 1a/1",
