@@ -108,13 +108,13 @@
 9. 比对线上 JSON，检查列表/搜索、单曲或册号标题、调性、中文标记、详情、预览/下载和首页动态；完成后才在本批 `publication.json` 设置 `website_status=verified_live`。
 10. 更新续传交接并报告实际新增数量。失败或等待时保存准确断点，不宣称完成，不盲目重新上传整个批次。
 
-## 5. 当前进度快照（2026-09-03）
+## 5. 当前进度快照（2026-09-04）
 
-本节依据实际目录和八份批次回执更新；接手时继续核对是否已有新批次。
+本节依据实际目录和九份批次回执更新；接手时继续核对是否已有新批次。
 
 - 网站：[猫瞳音乐乐谱库](https://maotong.me/maotongmusic/)，PDF仍使用 `https://scores.maotong.me`。
-- 本地正式目录 3,461 条；勃拉姆斯本轮批准 51 份，线上回执确认 51 份。最近一批状态 `verified_live`。
-- 预审161个作品页、3,486个去重候选；待审 2,295、排除 1,138、暂缓 2、批准 51。待审数包含重复版本，不等于待上传文件数。
+- 本地正式目录 3,465 条；勃拉姆斯本轮批准 55 份，线上回执确认 55 份。最近一批状态 `verified_live`。
+- 预审161个作品页、3,486个去重候选；待审 2,291、排除 1,138、暂缓 2、批准 55。待审数包含重复版本，不等于待上传文件数。
 - 原始submissions.db保留1条原投稿；旧目录、旧动态、旧存储记录及原投稿均已与批次备份核对。
 - 哈恩已有此前成果，不从头重发，不编造累计数量。
 
@@ -128,16 +128,17 @@
 | WoO 4、5、6 与 Opp.18b、39 | 5 | [verified_live](imports/johannes_brahms/staging/woo4-6-op18b-39/publication.json) |
 | WoO 5 No.2、Op.39 No.15 | 2 | [verified_live](imports/johannes_brahms/staging/woo5-op39-singles/publication.json) |
 | 管风琴 WoO 7–10、Op.122 | 5 | [verified_live](imports/johannes_brahms/staging/organ-woo7-10-op122/publication.json) |
+| 5 Studies, Anh.1a/1 | 4 | [verified_live](imports/johannes_brahms/staging/studies-anh1a1/publication.json) |
 
-最近第八批新增5份、共57页管风琴原始PDF；Op.122十一首目录、WoO7/9/10段落起始页均已据全部谱面记录，保留Op.122末尾原有空白与出版目录。此前第六批5份/79页及第七批2份/5页另有回执；Op.18b印刷页59–64、Op.39普通独奏版及No.15实际降A大调的说明保留。Op.116另3份完整版本仍仅暂存。
+最近第九批新增4份、共97页《5 Studies, Anh.1a/1》原始PDF；完整谱五首PDF起始页为9、14、28、32、36，第1、2首为双手钢琴，第5首仅左手。此前管风琴批次5份/57页另有回执；Op.116另3份完整版本仍仅暂存。
 
-最近提交 `35a2cb11eba91b327e29d09acc41f9c1385f409a`，Pages run `33829914625`。最近批次线上时间以回执为准。21项发布、暂存、报告及编制边界隔离测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
+最近提交 `1285fabb695225355eccf8920cd9e8a58910e489`，Pages run `33913034087`。最近批次线上时间以回执为准。22项发布、暂存、报告及编制边界隔离测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
 
 ### 断点与下一步
 
 当前受支持CUA浏览器可以可靠读取URL及正常等待后的可见下载链接，先前旧工具的识别问题已通过正常受支持流程解决。作者归属存疑的Anh.IV/2两份候选已暂缓，未下载或发布。
 
-下一轮可核查5 Studies, Anh.1a/1的完整谱及有用独立单曲；旧清单“钢琴左手”编制和长标题需逐份审谱核实，尚未下载或批准；详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
+下一轮可核查 `3 Duets, Op.20` 的完整原版，从#22891与同版scan/filter #97824/#97825中只选一份；先做现有艺术歌曲类别的有界发布扩展和隔离测试。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
 
 ## 6. 新任务接手与现有自动化
 

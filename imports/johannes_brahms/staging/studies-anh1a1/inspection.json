@@ -1,0 +1,163 @@
+{
+  "label": "5 Studies, Anh.1a/1",
+  "checked_on": "2026-09-04",
+  "recorded_at": "2026-09-04T19:45:19+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "57515",
+    "454876",
+    "454879",
+    "64516"
+  ],
+  "source_notes": "实时IMSLP作品页确认作曲者Johannes Brahms，作品号Anh.1a/1；本批四个文件号均明确Public Domain。完整谱选Breitkopf全集第15卷Mandyczewski编校版，不重复收录同版重新处理件；另选首版第1、2首及第5首左手恰空独立谱。每份均通过正常匿名15秒等待后读取可见下载链接。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部97页并逐页打开查看题名、调号、指法/手别、页序、封面、空白、出版目录及完整结尾。",
+  "rendering_note": "全部97页已逐页查看。完整谱含8页前置材料及41页五首乐谱；三份单曲的封面、空白、数字化说明和出版目录均属原文件，未删除或重排。",
+  "metadata_changes": [
+    {
+      "imslp_id": "57515",
+      "before": {
+        "proposed_title": "5 Studies, Anh. 1a/1",
+        "proposed_work": "",
+        "voice_types": "钢琴左手",
+        "tonality": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "5 Studies, Anh. 1a/1",
+        "proposed_work": "",
+        "voice_types": "钢琴独奏",
+        "tonality": "",
+        "review_notes": "2026-09-04 全页核对：全部49页逐页查看；PDF第1页卷册题名，第2页空白，第3–5页校订报告，第6页空白，第7页目录，第8页空白，第9–49页为五首完整乐谱。五首起始于PDF第9、14、28、32、36页，对应本卷印刷页1、6、20、24、28；末页为印刷页41，结尾完整。第1–4首使用双手钢琴谱写，第5首题名明确标注仅左手。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-studies-metadata-20260904_194519_821531"
+    },
+    {
+      "imslp_id": "454876",
+      "before": {
+        "proposed_title": "No. 1 Etude nach Fr. Chopin. Poco Prestoafter No. 2 of the Etudes, Op. 25, by Chopin, Anh. 1a/1",
+        "proposed_work": "5 Studies, Anh. 1a/1",
+        "voice_types": "钢琴左手",
+        "tonality": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "No. 1 Etude nach Fr. Chopin. Poco presto, Anh. 1a/1",
+        "proposed_work": "5 Studies, Anh. 1a/1",
+        "voice_types": "钢琴独奏",
+        "tonality": "f小调",
+        "review_notes": "2026-09-04 全页核对：全部12页逐页查看；第1页封面，第2页空白，第3页总题名，第4–9页为完整Etude nach Fr. Chopin，Poco presto，四降调号并以f小调终止；谱面为双手钢琴。第10页数字化说明，第11–12页空白，均保留。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-studies-metadata-20260904_194519_821531"
+    },
+    {
+      "imslp_id": "454879",
+      "before": {
+        "proposed_title": "No. 2 Rondo nach C. M. von Weber. Prestoafter the finale from the Piano Sonata No. 1, Op. 24, by Weber, Anh. 1a/1",
+        "proposed_work": "5 Studies, Anh. 1a/1",
+        "voice_types": "钢琴左手",
+        "tonality": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "No. 2 Rondo nach C. M. von Weber. Presto, Anh. 1a/1",
+        "proposed_work": "5 Studies, Anh. 1a/1",
+        "voice_types": "钢琴独奏",
+        "tonality": "C大调",
+        "review_notes": "2026-09-04 全页核对：全部20页逐页查看；第1页封面，第2页出版目录，第3页总题名，第4–17页为完整Rondo nach C. M. von Weber，Presto，无调号并以C大调终止；谱面为双手钢琴。第18页空白，第19–20页出版目录。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-studies-metadata-20260904_194519_821531"
+    },
+    {
+      "imslp_id": "64516",
+      "before": {
+        "proposed_title": "No. 5 Chaconne von J. S. Bacharrangement of the Chaconne from Violin Partita No. 2 in D minor, BWV 1004 by Bach, Anh. 1a/1",
+        "proposed_work": "5 Studies, Anh. 1a/1",
+        "voice_types": "钢琴左手",
+        "tonality": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "No. 5 Chaconne von J. S. Bach, Anh. 1a/1",
+        "proposed_work": "5 Studies, Anh.1a/1",
+        "voice_types": "钢琴左手",
+        "tonality": "d小调",
+        "review_notes": "2026-09-04 全页核对：全部16页逐页查看；第1页总题名，第2–15页为完整Chaconne von J. S. Bach，题名明确Für die linke Hand allein bearbeitet；一降调号并以d小调终止。第16页为出版目录，保留。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-studies-metadata-20260904_194519_821531"
+    }
+  ],
+  "alert": "旧清单将整套都标为钢琴左手；谱面证实第1–4首为双手钢琴，只有第5首明确标注仅左手，已逐份修正。",
+  "files": {
+    "57515": {
+      "pages": 49,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        9,
+        14,
+        28,
+        32,
+        36
+      ],
+      "titles": [
+        "No. 1 Etude nach Fr. Chopin. Poco presto",
+        "No. 2 Rondo nach C. M. von Weber. Presto",
+        "No. 3 Presto nach J. S. Bach (Erste Bearbeitung)",
+        "No. 4 Presto nach J. S. Bach (Zweite Bearbeitung)",
+        "No. 5 Chaconne von J. S. Bach"
+      ],
+      "notes": "全部49页逐页查看；PDF第1页卷册题名，第2页空白，第3–5页校订报告，第6页空白，第7页目录，第8页空白，第9–49页为五首完整乐谱。五首起始于PDF第9、14、28、32、36页，对应本卷印刷页1、6、20、24、28；末页为印刷页41，结尾完整。第1–4首使用双手钢琴谱写，第5首题名明确标注仅左手。",
+      "publication_note": "完整五首，跨多调，整套调性留空。目录：No. 1 Etude nach Fr. Chopin. Poco presto：PDF第9页；No. 2 Rondo nach C. M. von Weber. Presto：PDF第14页；No. 3 Presto nach J. S. Bach（Erste Bearbeitung）：PDF第28页；No. 4 Presto nach J. S. Bach（Zweite Bearbeitung）：PDF第32页；No. 5 Chaconne von J. S. Bach（Für die linke Hand allein）：PDF第36页。PDF第1页为全集第15卷题名，第2、6、8页为空白，第3–5页为校订报告，第7页为目录；乐谱PDF第9–49页对应本卷印刷页1–41，版号J.B.68–72。第1–4首为双手钢琴，第5首为钢琴左手，故整套按钢琴独奏归类。原PDF字节未改。"
+    },
+    "454876": {
+      "pages": 12,
+      "key": "f小调",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        4
+      ],
+      "notes": "全部12页逐页查看；第1页封面，第2页空白，第3页总题名，第4–9页为完整Etude nach Fr. Chopin，Poco presto，四降调号并以f小调终止；谱面为双手钢琴。第10页数字化说明，第11–12页空白，均保留。",
+      "publication_note": "No.1独立首版扫描，双手钢琴，f小调；改写自肖邦Etudes, Op.25 No.2。乐谱从PDF第4页开始至第9页完整结束；PDF第1页封面、第2页空白、第3页总题名、第10页数字化说明、第11–12页空白均为来源原文件内容。原PDF字节未改。"
+    },
+    "454879": {
+      "pages": 20,
+      "key": "C大调",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        4
+      ],
+      "notes": "全部20页逐页查看；第1页封面，第2页出版目录，第3页总题名，第4–17页为完整Rondo nach C. M. von Weber，Presto，无调号并以C大调终止；谱面为双手钢琴。第18页空白，第19–20页出版目录。",
+      "publication_note": "No.2独立首版扫描，双手钢琴，C大调；改写自韦伯Piano Sonata No.1, Op.24终乐章。乐谱从PDF第4页开始至第17页完整结束；PDF第1、3页为封面/总题名，第2、19–20页为出版目录，第18页空白，均保留。原PDF字节未改。"
+    },
+    "64516": {
+      "pages": 16,
+      "key": "d小调",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        2
+      ],
+      "notes": "全部16页逐页查看；第1页总题名，第2–15页为完整Chaconne von J. S. Bach，题名明确Für die linke Hand allein bearbeitet；一降调号并以d小调终止。第16页为出版目录，保留。",
+      "publication_note": "No.5独立首版再版扫描，钢琴左手，d小调；改编自巴赫Violin Partita No.2 in D minor, BWV 1004中的Chaconne。乐谱从PDF第2页开始至第15页完整结束；第1页总题名及第16页出版目录均保留。题名页与谱面明确标注仅左手。原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-04T19:46:19+00:00",
+  "approved_publication_ids": [
+    "57515",
+    "454876",
+    "454879",
+    "64516"
+  ]
+}

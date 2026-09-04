@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-04T19:59:58+00:00",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "1285fabb695225355eccf8920cd9e8a58910e489",
+  "github_actions_run_id": 33913034087,
+  "catalog_total": 3465,
+  "verified_titles": [
+    "5 Studies, Anh. 1a/1",
+    "No. 1 Etude nach Fr. Chopin. Poco presto, Anh. 1a/1",
+    "No. 2 Rondo nach C. M. von Weber. Presto, Anh. 1a/1",
+    "No. 5 Chaconne von J. S. Bach, Anh. 1a/1"
+  ],
+  "download_public_ids": [
+    "df399d07-b2cd-440c-b6d9-c5a00e2c2ec0",
+    "6a54dbca-4cfc-4c08-8593-179021767340",
+    "e6b4c97c-c588-47cb-9970-bd90b46e1b26",
+    "25c372f2-633a-4b01-a6fc-d6dfc78ea1c9"
+  ],
+  "preview_public_id": "df399d07-b2cd-440c-b6d9-c5a00e2c2ec0",
+  "preview_loaded": true,
+  "homepage_log_verified": true,
+  "notes": "正式网站总藏量3465；最新上传及目录首四条均为本批。完整谱显示钢琴独奏、练习曲、空器乐语言，详情列出五首PDF起始页9/14/28/32/36及第1–4首双手、第5首左手说明；No.1显示f小调/钢琴独奏并链接6a54dbca，No.2显示C大调/钢琴独奏并链接e6b4c97c，No.5显示d小调/钢琴左手并链接25c372f2。完整谱下载链接为df399d07；点击加载预览后mPreview为block，data-loaded-url指向该R2 PDF并含#toolbar=0&view=FitH。首页动态首条为本批新增4份，前八批动态保留；线上data.json与logs.json已同本地精确比对。"
+}

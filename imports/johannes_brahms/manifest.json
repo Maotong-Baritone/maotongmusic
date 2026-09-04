@@ -121275,13 +121275,13 @@
           "movement_number": null,
           "category": "器乐独奏",
           "sub_category": "练习曲",
-          "voice_types": "钢琴左手",
+          "voice_types": "钢琴独奏",
           "tonality": "",
           "language_cn": "",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：全部49页逐页查看；PDF第1页卷册题名，第2页空白，第3–5页校订报告，第6页空白，第7页目录，第8页空白，第9–49页为五首完整乐谱。五首起始于PDF第9、14、28、32、36页，对应本卷印刷页1、6、20、24、28；末页为印刷页41，结尾完整。第1–4首使用双手钢琴谱写，第5首题名明确标注仅左手。",
+          "review_edited": true,
           "public_id": "df399d07-b2cd-440c-b6d9-c5a00e2c2ec0",
           "source_references": [
             {
@@ -121289,7 +121289,10 @@
               "source_url": "https://imslp.org/wiki/5_Studies%2C_Anh.1a/1_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T19:46:19+00:00",
+          "publication_batch_id": "brahms-studies-anh1a1-four-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "1046961",
@@ -121397,19 +121400,19 @@
           "editor": "First edition",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 1 Etude nach Fr. Chopin. Poco Prestoafter No. 2 of the Etudes, Op. 25, by Chopin, Anh. 1a/1",
+          "proposed_title": "No. 1 Etude nach Fr. Chopin. Poco presto, Anh. 1a/1",
           "proposed_work": "5 Studies, Anh. 1a/1",
           "title_scope": "individual_movement",
           "movement_number": 1,
           "category": "器乐独奏",
           "sub_category": "练习曲",
-          "voice_types": "钢琴左手",
-          "tonality": "",
+          "voice_types": "钢琴独奏",
+          "tonality": "f小调",
           "language_cn": "",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：全部12页逐页查看；第1页封面，第2页空白，第3页总题名，第4–9页为完整Etude nach Fr. Chopin，Poco presto，四降调号并以f小调终止；谱面为双手钢琴。第10页数字化说明，第11–12页空白，均保留。",
+          "review_edited": true,
           "public_id": "6a54dbca-4cfc-4c08-8593-179021767340",
           "source_references": [
             {
@@ -121417,7 +121420,10 @@
               "source_url": "https://imslp.org/wiki/5_Studies%2C_Anh.1a/1_%28Brahms%2C_Johannes%29",
               "description": "1. Etude nach Fr. Chopin"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T19:46:19+00:00",
+          "publication_batch_id": "brahms-studies-anh1a1-four-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "454879",
@@ -121439,19 +121445,19 @@
           "editor": "First edition",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Rondo nach C. M. von Weber. Prestoafter the finale from the Piano Sonata No. 1, Op. 24, by Weber, Anh. 1a/1",
+          "proposed_title": "No. 2 Rondo nach C. M. von Weber. Presto, Anh. 1a/1",
           "proposed_work": "5 Studies, Anh. 1a/1",
           "title_scope": "individual_movement",
           "movement_number": 2,
           "category": "器乐独奏",
           "sub_category": "练习曲",
-          "voice_types": "钢琴左手",
-          "tonality": "",
+          "voice_types": "钢琴独奏",
+          "tonality": "C大调",
           "language_cn": "",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：全部20页逐页查看；第1页封面，第2页出版目录，第3页总题名，第4–17页为完整Rondo nach C. M. von Weber，Presto，无调号并以C大调终止；谱面为双手钢琴。第18页空白，第19–20页出版目录。",
+          "review_edited": true,
           "public_id": "e6b4c97c-c588-47cb-9970-bd90b46e1b26",
           "source_references": [
             {
@@ -121459,7 +121465,10 @@
               "source_url": "https://imslp.org/wiki/5_Studies%2C_Anh.1a/1_%28Brahms%2C_Johannes%29",
               "description": "2. Rondo nach C. M. von Weber"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T19:46:19+00:00",
+          "publication_batch_id": "brahms-studies-anh1a1-four-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "949730",
@@ -121523,19 +121532,19 @@
           "editor": "First edition (reissue)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 5 Chaconne von J. S. Bacharrangement of the Chaconne from Violin Partita No. 2 in D minor, BWV 1004 by Bach, Anh. 1a/1",
-          "proposed_work": "5 Studies, Anh. 1a/1",
+          "proposed_title": "No. 5 Chaconne von J. S. Bach, Anh. 1a/1",
+          "proposed_work": "5 Studies, Anh.1a/1",
           "title_scope": "individual_movement",
           "movement_number": 5,
           "category": "器乐独奏",
           "sub_category": "练习曲",
           "voice_types": "钢琴左手",
-          "tonality": "",
+          "tonality": "d小调",
           "language_cn": "",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：全部16页逐页查看；第1页总题名，第2–15页为完整Chaconne von J. S. Bach，题名明确Für die linke Hand allein bearbeitet；一降调号并以d小调终止。第16页为出版目录，保留。",
+          "review_edited": true,
           "public_id": "25c372f2-633a-4b01-a6fc-d6dfc78ea1c9",
           "source_references": [
             {
@@ -121543,7 +121552,10 @@
               "source_url": "https://imslp.org/wiki/5_Studies%2C_Anh.1a/1_%28Brahms%2C_Johannes%29",
               "description": "5. Chaconne von J. S. Bach"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T19:46:19+00:00",
+          "publication_batch_id": "brahms-studies-anh1a1-four-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "591319",
