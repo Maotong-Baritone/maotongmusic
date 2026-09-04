@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3461,
-  "unique_content_count": 3442,
+  "entry_count": 3465,
+  "unique_content_count": 3446,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4321048115,
+  "total_size": 4332789288,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -3514,6 +3514,13 @@
       "storage_key": "scores/25/25b67efe-99d1-5a13-a6d6-5ce5dd4c2bd7.pdf",
       "file_size": 1228217,
       "sha256": "6ef89c18b9cfdcf54bc7c156b3d2a6c289960038f1014f076ac238a8d6a6cca8"
+    },
+    {
+      "public_id": "25c372f2-633a-4b01-a6fc-d6dfc78ea1c9",
+      "source_path": "scores/器乐独奏/25c372f2-633a-4b01-a6fc-d6dfc78ea1c9.pdf",
+      "storage_key": "scores/25/25c372f2-633a-4b01-a6fc-d6dfc78ea1c9.pdf",
+      "file_size": 2070346,
+      "sha256": "e0983f9bfe58eac435830742014f390ef8e10fc1c0b32574bea39b4d1f93d250"
     },
     {
       "public_id": "25c48106-1b08-42f5-949e-7508a7cc3bf7",
@@ -10031,6 +10038,13 @@
       "storage_key": "scores/6a/6a43b7d7-469b-51a3-8720-e6666e034ad3.pdf",
       "file_size": 466917,
       "sha256": "0f379590bdb1bea493a627f020397809d5ddb4d8f24122ef056cbf0bcab7ba6c"
+    },
+    {
+      "public_id": "6a54dbca-4cfc-4c08-8593-179021767340",
+      "source_path": "scores/器乐独奏/6a54dbca-4cfc-4c08-8593-179021767340.pdf",
+      "storage_key": "scores/6a/6a54dbca-4cfc-4c08-8593-179021767340.pdf",
+      "file_size": 1101761,
+      "sha256": "c3578910f2d36110f6bfaad4ac9b120482ddb267fca93b2ddca5945544d2ab67"
     },
     {
       "public_id": "6a5e93b1-a58a-5f47-92a2-049b6570b67d",
@@ -21268,6 +21282,13 @@
       "sha256": "83c4ef1e675cbeb8e1453ebcac4f7a3e27d6a4832f348a41ee551bd476634256"
     },
     {
+      "public_id": "df399d07-b2cd-440c-b6d9-c5a00e2c2ec0",
+      "source_path": "scores/器乐独奏/df399d07-b2cd-440c-b6d9-c5a00e2c2ec0.pdf",
+      "storage_key": "scores/df/df399d07-b2cd-440c-b6d9-c5a00e2c2ec0.pdf",
+      "file_size": 5876847,
+      "sha256": "fb6ae275ac12c2baa3870b03b718f9779fa8277f0fb275bbb80d6613c43427bb"
+    },
+    {
       "public_id": "df3b5c56-4cd5-53e1-8cee-443cecf3dbf5",
       "source_path": "scores/歌剧咏叹调/1766098683771_Il_dolce_suono_mi_colpi_di_sua_voce.pdf",
       "storage_key": "scores/df/df3b5c56-4cd5-53e1-8cee-443cecf3dbf5.pdf",
@@ -21910,6 +21931,13 @@
       "storage_key": "scores/e6/e6ad4537-fb5e-5517-b761-1998de24f2ad.pdf",
       "file_size": 77568,
       "sha256": "d2ac2dcf35edc4a2efb91f578593f7eb74ef8c3eb878fc2ca88264aa5476cc88"
+    },
+    {
+      "public_id": "e6b4c97c-c588-47cb-9970-bd90b46e1b26",
+      "source_path": "scores/器乐独奏/e6b4c97c-c588-47cb-9970-bd90b46e1b26.pdf",
+      "storage_key": "scores/e6/e6b4c97c-c588-47cb-9970-bd90b46e1b26.pdf",
+      "file_size": 2692219,
+      "sha256": "805a12b23e4411f92ccd368e1639dd36b39a5577cb0360d98cf496399dd8fd43"
     },
     {
       "public_id": "e6bddda3-590e-5590-8e01-fa04bbc7d3d8",
