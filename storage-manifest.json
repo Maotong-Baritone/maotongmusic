@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3466,
-  "unique_content_count": 3447,
+  "entry_count": 3468,
+  "unique_content_count": 3449,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4334614814,
+  "total_size": 4363027299,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -16529,6 +16529,13 @@
       "sha256": "8beaac69643104756b61ddfbeb291d8349af2b2d1e99cb1fe7feafd4b99a598b"
     },
     {
+      "public_id": "af9d630a-0eb3-423d-9cec-c017da7cd36d",
+      "source_path": "scores/艺术歌曲/af9d630a-0eb3-423d-9cec-c017da7cd36d.pdf",
+      "storage_key": "scores/af/af9d630a-0eb3-423d-9cec-c017da7cd36d.pdf",
+      "file_size": 2600781,
+      "sha256": "f17983e2ade69fdd3cb87e7b3d165b0e48d52d36d37b22fd856be47c5ac42338"
+    },
+    {
       "public_id": "af9fe49c-9c01-5618-b529-c444f2978d1a",
       "source_path": "scores/歌剧咏叹调/1766007787081_Se_non_ti_sai_spiegar_lagnati_sol_di_te.pdf",
       "storage_key": "scores/af/af9fe49c-9c01-5618-b529-c444f2978d1a.pdf",
@@ -23492,6 +23499,13 @@
       "storage_key": "scores/f7/f7021b6b-05e6-51c4-b901-f4259f5a99db.pdf",
       "file_size": 2167298,
       "sha256": "ebc59dd3668b530059178c73971cccb148118e5a85d10215739b831db2ad529d"
+    },
+    {
+      "public_id": "f713f40d-61de-4447-89f0-ac3410273ecb",
+      "source_path": "scores/艺术歌曲/f713f40d-61de-4447-89f0-ac3410273ecb.pdf",
+      "storage_key": "scores/f7/f713f40d-61de-4447-89f0-ac3410273ecb.pdf",
+      "file_size": 25811704,
+      "sha256": "80d0a131c2640f6a1131f5e8053e9bdcddb64e507c37b02991a4e9428c222d1b"
     },
     {
       "public_id": "f71d8785-5c75-5cd5-a000-5c09206b3afb",
