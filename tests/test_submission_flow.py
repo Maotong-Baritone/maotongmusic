@@ -32,6 +32,8 @@ class SubmissionFlowTest(unittest.TestCase):
         os.environ["SUBMISSIONS_DB"] = str(cls.temp_root / "submissions.db")
         os.environ["PENDING_UPLOAD_DIR"] = str(cls.temp_root / "private_uploads")
         os.environ["SUBMISSION_MAX_MB"] = "2"
+        # Unit tests must never use credentials from the developer's real .env.
+        os.environ["SCORE_STORAGE_AUTO_SYNC"] = "0"
 
         cls.original_cwd = Path.cwd()
         os.chdir(cls.temp_root)
@@ -39,7 +41,7 @@ class SubmissionFlowTest(unittest.TestCase):
         cls.admin.app.config.update(TESTING=True)
 
     def setUp(self):
-        for folder_name in ("scores", "lyrics", "backup", "private_uploads"):
+        for folder_name in ("scores", "lyrics", "backup", "private_uploads", "imports"):
             shutil.rmtree(self.temp_root / folder_name, ignore_errors=True)
             (self.temp_root / folder_name).mkdir(parents=True, exist_ok=True)
         (self.temp_root / "data.json").write_text("[]\n", encoding="utf-8")
@@ -49,6 +51,44 @@ class SubmissionFlowTest(unittest.TestCase):
         self.admin.init_database()
         self.admin.sync_catalog([])
         self.client = self.admin.app.test_client()
+
+    def seed_brahms_review_manifest(self):
+        manifest_path = self.temp_root / "imports" / "johannes_brahms" / "manifest.json"
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        manifest = {
+            "composer": "Johannes Brahms/勃拉姆斯",
+            "generated_at": "2026-09-01T12:00:00+00:00",
+            "works": [{
+                "display_work_title": "7 Fantasien, Op. 116",
+                "catalogue_number": "Op. 116",
+                "movements_text": "7 pieces: 1. Capriccio. Presto energico (D minor)",
+                "source_url": "https://imslp.org/wiki/7_Fantasien",
+                "files": [{
+                    "imslp_id": "1524",
+                    "proposed_title": "No. 1 Capriccio. Presto energico, Op. 116",
+                    "proposed_work": "7 Fantasien, Op. 116",
+                    "title_scope": "individual_movement",
+                    "category": "器乐独奏",
+                    "sub_category": "幻想曲",
+                    "voice_types": "钢琴独奏",
+                    "tonality": "d小调",
+                    "decision": "pending",
+                    "eligible": True,
+                    "warnings": [],
+                    "review_notes": "",
+                    "description_en": "1. Capriccio",
+                    "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/1524",
+                    "copyright": "Public Domain",
+                    "original_filename": "Brahms-Op116-1.pdf",
+                    "publisher": "Test publisher",
+                }],
+            }],
+        }
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        return manifest_path
 
     @classmethod
     def tearDownClass(cls):
@@ -108,6 +148,19 @@ class SubmissionFlowTest(unittest.TestCase):
             content_type="multipart/form-data",
         )
 
+    def post_single(self, content=b"%PDF-1.4\nsingle score\n%%EOF\n"):
+        return self.client.post(
+            "/",
+            data={
+                "_csrf_token": self.csrf_token(),
+                "title": "单份自动同步测试",
+                "composer": "测试作曲家",
+                "category": "艺术歌曲",
+                "file": (io.BytesIO(content), "single.pdf"),
+            },
+            content_type="multipart/form-data",
+        )
+
     def login(self):
         response = self.client.post(
             "/login",
@@ -118,6 +171,23 @@ class SubmissionFlowTest(unittest.TestCase):
             },
         )
         self.assertEqual(response.status_code, 302)
+
+    def successful_storage_publish(self, item_paths, *, force=False):
+        entries = []
+        for item, path, sha256 in item_paths:
+            entry = self.admin.manifest_entry_for(
+                path,
+                public_id=item["public_id"],
+                catalog_filename=item["filename"],
+                sha256=sha256,
+            )
+            self.admin.apply_storage_metadata(item, entry)
+            entries.append(entry)
+        return self.admin.PublishResult(
+            enabled=True,
+            entries=tuple(entries),
+            detail=f"R2 已校验 0 份，新上传 {len(entries)} 份",
+        )
 
     def sample_item(self, item_id=1, *, has_lyrics=True):
         public_id = str(uuid.uuid4())
@@ -185,6 +255,158 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertIn("item_tonalities", html)
         self.assertIn("item_voice_types", html)
 
+    def test_brahms_review_edits_staging_manifest_only(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        data_before = (self.temp_root / "data.json").read_bytes()
+        logs_before = (self.temp_root / "logs.json").read_bytes()
+
+        anonymous = self.client.get("/import-review/brahms")
+        self.assertEqual(anonymous.status_code, 302)
+        self.login()
+        page = self.client.get("/import-review/brahms")
+        html = page.get_data(as_text=True)
+        self.assertEqual(page.status_code, 200)
+        self.assertIn("勃拉姆斯导入预审", html)
+        self.assertIn("No. 1 Capriccio. Presto energico, Op. 116", html)
+        self.assertIn("本页不执行下载或发布", html)
+
+        response = self.client.post(
+            "/import-review/brahms/1524",
+            data={
+                "_csrf_token": self.csrf_token(),
+                "proposed_title": "No. 1 Capriccio, Op. 116",
+                "proposed_work": "7 Fantasien, Op. 116",
+                "decision": "approved",
+                "category": "器乐独奏",
+                "sub_category": "随想曲",
+                "voice_types": "钢琴独奏",
+                "tonality": "d小调",
+                "review_notes": "标题已人工确认",
+            },
+        )
+        self.assertEqual(response.status_code, 302)
+        updated = json.loads(manifest_path.read_text(encoding="utf-8"))
+        item = updated["works"][0]["files"][0]
+        self.assertEqual(item["proposed_title"], "No. 1 Capriccio, Op. 116")
+        self.assertEqual(item["decision"], "approved")
+        self.assertTrue(item["review_edited"])
+        self.assertEqual((self.temp_root / "data.json").read_bytes(), data_before)
+        self.assertEqual((self.temp_root / "logs.json").read_bytes(), logs_before)
+
+    def test_brahms_review_rejects_invalid_or_unprotected_updates(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        self.login()
+        before = manifest_path.read_bytes()
+        self.assertEqual(self.client.post('/import-review/brahms/1524', data={'decision': 'approved'}).status_code, 400)
+        response = self.client.post('/import-review/brahms/1524', data={
+            '_csrf_token': self.csrf_token(), 'decision': 'approved', 'category': '器乐独奏', 'proposed_title': '',
+        })
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(manifest_path.read_bytes(), before)
+
+    def test_brahms_batch_skips_ineligible_files_and_only_updates_review(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        item = manifest['works'][0]['files'][0]
+        manifest['works'][0]['files'].append(item | {'imslp_id': '999', 'eligible': False, 'decision': 'excluded'})
+        manifest_path.write_text(json.dumps(manifest), encoding='utf-8')
+        data_before = (self.temp_root / 'data.json').read_bytes()
+        logs_before = (self.temp_root / 'logs.json').read_bytes()
+        self.login()
+        response = self.client.post('/import-review/brahms/batch', data={
+            '_csrf_token': self.csrf_token(), 'decision': 'approved', 'imslp_ids': ['1524', '999'],
+        })
+        self.assertEqual(response.status_code, 302)
+        files = json.loads(manifest_path.read_text(encoding='utf-8'))['works'][0]['files']
+        self.assertEqual([f['decision'] for f in files], ['approved', 'excluded'])
+        self.assertEqual((self.temp_root / 'data.json').read_bytes(), data_before)
+        self.assertEqual((self.temp_root / 'logs.json').read_bytes(), logs_before)
+
+    def test_brahms_review_scope_search_and_source_safety(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        manifest['works'][0]['files'][0]['warnings'] = ['分类待确认']
+        manifest['works'][0]['source_url'] = 'javascript:alert(1)'
+        manifest_path.write_text(json.dumps(manifest), encoding='utf-8')
+        self.login()
+        page = self.client.get('/import-review/brahms?scope=individual_movement&keyword=分类待确认')
+        self.assertIn('No. 1 Capriccio', page.get_data(as_text=True))
+        self.assertNotIn('javascript:alert', page.get_data(as_text=True))
+        empty = self.client.get('/import-review/brahms?scope=selection')
+        self.assertIn('没有符合当前筛选条件', empty.get_data(as_text=True))
+
+    def test_brahms_style_confirmation_does_not_approve_any_files(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        self.login()
+        before = json.loads(manifest_path.read_text(encoding='utf-8'))
+        samples = self.admin.brahms_views.sample_rows(self.admin.brahms_views.rows_for(before))
+        response = self.client.post('/import-review/brahms/style', data={
+            '_csrf_token': self.csrf_token(), 'signature': self.admin.brahms_views.style_signature(samples),
+        })
+        self.assertEqual(response.status_code, 302)
+        after = json.loads(manifest_path.read_text(encoding='utf-8'))
+        self.assertEqual(before['works'], after['works'])
+        self.assertIn('style_confirmation', after['review_workflow'])
+        self.assertIn('这组样例风格已确认', self.client.get('/import-review/brahms').get_data(as_text=True))
+
+    def test_brahms_group_edits_are_scoped_and_reject_stale_forms(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        item = manifest['works'][0]['files'][0]
+        manifest['works'][0]['files'].extend([dict(item, imslp_id='1525'), dict(item, imslp_id='1526', tonality='C大调')])
+        manifest_path.write_text(json.dumps(manifest), encoding='utf-8')
+        groups = self.admin.brahms_views.grouped_works(self.admin.brahms_views.rows_for(manifest))[0]['pieces'][0]['groups']
+        group = next(g for g in groups if len(g['rows']) == 2)
+        self.login()
+        payload = {field: item.get(field, '') for field in self.admin.brahms_views.EDIT_FIELDS}
+        payload.update(_csrf_token=self.csrf_token(), signature=group['signature'], confirm_group='1',
+                       imslp_ids=['1524', '1525'], proposed_title='No. 1 Capriccio, Op. 116')
+        data_before = (self.temp_root / 'data.json').read_bytes()
+        logs_before = (self.temp_root / 'logs.json').read_bytes()
+        response = self.client.post('/import-review/brahms/group/' + group['key'], data=payload)
+        self.assertEqual(response.status_code, 302)
+        items = json.loads(manifest_path.read_text(encoding='utf-8'))['works'][0]['files']
+        self.assertEqual(items[0]['proposed_title'], payload['proposed_title'])
+        self.assertEqual(items[1]['proposed_title'], payload['proposed_title'])
+        self.assertEqual(items[2]['proposed_title'], item['proposed_title'])
+        self.assertTrue(all(f['decision'] == 'pending' for f in items))
+        self.assertEqual(self.client.post('/import-review/brahms/group/' + group['key'], data=payload).status_code, 409)
+        self.assertEqual((self.temp_root / 'data.json').read_bytes(), data_before)
+        self.assertEqual((self.temp_root / 'logs.json').read_bytes(), logs_before)
+
+    def test_brahms_defer_issue_is_reversible_and_preserves_other_records(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        item = manifest['works'][0]['files'][0]
+        item['warnings'] = ['许可版本需核对']
+        manifest['works'][0]['files'].append(dict(item, imslp_id='999', decision='approved'))
+        manifest_path.write_text(json.dumps(manifest), encoding='utf-8')
+        rows = self.admin.brahms_views.filter_rows(self.admin.brahms_views.rows_for(manifest), decision='pending')
+        group = self.admin.brahms_views.issue_groups(rows)[0]
+        self.login()
+        response = self.client.post('/import-review/brahms/issue/rights/defer', data={
+            '_csrf_token': self.csrf_token(), 'signature': group['signature'],
+        })
+        self.assertEqual(response.status_code, 302)
+        items = json.loads(manifest_path.read_text(encoding='utf-8'))['works'][0]['files']
+        self.assertEqual([f['decision'] for f in items], ['deferred', 'approved'])
+        response = self.client.post('/import-review/brahms/batch', data={
+            '_csrf_token': self.csrf_token(), 'decision': 'pending', 'imslp_ids': ['1524'],
+        })
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(json.loads(manifest_path.read_text(encoding='utf-8'))['works'][0]['files'][0]['decision'], 'pending')
+
+    def test_brahms_overview_views_render_and_exact_file_filter(self):
+        manifest_path = self.seed_brahms_review_manifest()
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        self.login()
+        work_key = self.admin.brahms_views.work_key(manifest['works'][0])
+        for url in ('?view=samples', '?view=works', '?view=works&work=' + work_key, '?view=issues', '?view=files&file=1524'):
+            response = self.client.get('/import-review/brahms' + url)
+            self.assertEqual(response.status_code, 200, url)
+            self.assertIn('本页不执行下载或发布', response.get_data(as_text=True))
+        self.assertIn('没有符合当前筛选条件', self.client.get('/import-review/brahms?view=files&file=524').get_data(as_text=True))
+
     def test_single_admin_upload_keeps_its_original_size_limit(self):
         self.login()
         oversized_pdf = b"%PDF-oversized"
@@ -205,6 +427,39 @@ class SubmissionFlowTest(unittest.TestCase):
             )
         self.assertEqual(response.status_code, 413)
         self.assertIn("单份后台上传不能超过", response.get_data(as_text=True))
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+
+    def test_single_upload_records_verified_storage_metadata(self):
+        self.login()
+        with (
+            mock.patch.object(
+                self.admin,
+                "publish_catalog_items_to_storage",
+                side_effect=self.successful_storage_publish,
+            ),
+            mock.patch.object(self.admin, "update_manifest_after_publish"),
+        ):
+            response = self.post_single()
+
+        self.assertEqual(response.status_code, 302)
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(saved), 1)
+        self.assertTrue(saved[0]["storage_key"].endswith(f'/{saved[0]["public_id"]}.pdf'))
+        self.assertEqual(len(saved[0]["storage_sha256"]), 64)
+        self.assertGreater(saved[0]["storage_size"], 0)
+        self.assertIn("+00:00", saved[0]["storage_synced_at"])
+
+    def test_single_upload_does_not_publish_when_r2_fails(self):
+        self.login()
+        with mock.patch.object(
+            self.admin,
+            "publish_catalog_items_to_storage",
+            side_effect=self.admin.StoragePublishError("模拟 R2 失败"),
+        ):
+            response = self.post_single()
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
         self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
 
     def test_login_has_a_small_independent_request_limit(self):
@@ -367,6 +622,23 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
         self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
 
+    def test_batch_upload_rolls_back_when_r2_fails(self):
+        self.login()
+        with mock.patch.object(
+            self.admin,
+            "publish_catalog_items_to_storage",
+            side_effect=self.admin.StoragePublishError("模拟批量 R2 失败"),
+        ):
+            response = self.post_batch(
+                [(b"%PDF-one", "one.pdf"), (b"%PDF-two", "two.pdf")],
+                titles=["一", "二"],
+            )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("模拟批量 R2 失败", response.get_data(as_text=True))
+        self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+
     def test_batch_upload_rolls_back_all_files_when_catalog_save_fails(self):
         existing = self.sample_item(900, has_lyrics=False)
         self.seed_item_files(existing)
@@ -493,6 +765,58 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual(approved_preview.status_code, 200)
         self.assertEqual(approved_preview.mimetype, "application/pdf")
         approved_preview.close()
+
+    def test_submission_approval_stays_pending_when_r2_fails(self):
+        submitted = self.post_submission()
+        self.assertEqual(submitted.status_code, 302)
+        submission = self.admin.list_submissions("pending")[0]
+        private_file = self.admin.pending_file_path(submission["stored_filename"])
+        self.login()
+
+        with mock.patch.object(
+            self.admin,
+            "publish_catalog_items_to_storage",
+            side_effect=self.admin.StoragePublishError("模拟投稿 R2 失败"),
+        ):
+            response = self.client.post(
+                f'/submissions/{submission["id"]}/approve',
+                data={"_csrf_token": self.csrf_token(), "review_note": "尝试通过"},
+            )
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(self.admin.get_submission(submission["id"])["status"], "pending")
+        self.assertTrue(private_file.is_file())
+        self.assertEqual(json.loads((self.temp_root / "data.json").read_text(encoding="utf-8")), [])
+        self.assertEqual(list((self.temp_root / "scores").rglob("*.pdf")), [])
+
+    def test_manage_can_retry_one_score_storage_sync(self):
+        item = self.sample_item(77, has_lyrics=False)
+        self.seed_item_files(item)
+        (self.temp_root / "data.json").write_text(
+            json.dumps([item], ensure_ascii=False), encoding="utf-8"
+        )
+        self.admin.sync_catalog([item])
+        self.login()
+
+        with (
+            mock.patch.object(
+                self.admin,
+                "publish_catalog_items_to_storage",
+                side_effect=self.successful_storage_publish,
+            ) as publish,
+            mock.patch.object(self.admin, "update_manifest_after_publish"),
+        ):
+            response = self.client.post(
+                f'/storage/sync/{item["id"]}',
+                data={"_csrf_token": self.csrf_token(), "next": "/manage"},
+            )
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.headers["Location"], "/manage")
+        self.assertTrue(publish.call_args.kwargs["force"])
+        saved = json.loads((self.temp_root / "data.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(saved[0]["storage_sha256"]), 64)
+        self.assertTrue(saved[0]["storage_key"].startswith("scores/"))
 
     def test_save_all_restores_json_when_database_sync_fails(self):
         original_item = self.sample_item(10, has_lyrics=False)

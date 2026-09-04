@@ -1,0 +1,78 @@
+{
+  "label": "WoO 5 第2首手稿、Op.39 第15首",
+  "checked_on": "2026-09-03",
+  "recorded_at": "2026-09-03T23:55:52+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "107644",
+    "649836"
+  ],
+  "source_notes": "实时浏览器核对两份来源均标Public Domain；#107644为1855年2月亲笔手稿，#649836在Composer钢琴改编栏、Henry S. Sawyer编校、McKinley 1920版。均逐份经正常匿名15秒等待后读取实际可见下载链接。作者存疑的Anh.IV/2另行暂缓，未混入本批。",
+  "method": "原PDF保留字节；pypdf逐页解析，Poppler渲染全部5页并逐页打开查看题名、编制、调性、页序、结尾和边缘，校验SHA256。",
+  "rendering_note": "全部5页已查看：手稿1页；圆舞曲封面1页、正文2页、末页广告1页。原有纸张裂痕、页边和馆藏标记保留，谱面可读。",
+  "metadata_changes": [
+    {
+      "imslp_id": "107644",
+      "before": {
+        "proposed_title": "No. 2 Sarabande in B minor, WoO 5",
+        "tonality": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "No. 2 Sarabande, WoO 5（手稿）",
+        "tonality": "b小调",
+        "review_notes": "2026-09-03 全部谱页核对：实时来源为1855年2月亲笔手稿；单页谱面题名Sarabande，完整终止，结合两升调号、起止和已核对的全集第2首确认b小调。",
+        "review_edited": true
+      },
+      "basis": "实时来源为1855年2月亲笔手稿；单页谱面题名Sarabande，完整终止，结合两升调号、起止和已核对的全集第2首确认b小调。",
+      "backup_directory": "backup\\import_publications\\brahms-singles-metadata-20260903_175552_542859"
+    },
+    {
+      "imslp_id": "649836",
+      "before": {
+        "proposed_title": "No. 15 Waltz. (A major)*, Op. 39",
+        "tonality": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "No. 15 Waltz. Valse moderato, Op. 39",
+        "tonality": "降A大调",
+        "review_notes": "2026-09-03 全部谱页核对：PDF封面列Waltz in Ab、正文题名Waltz in A-Flat，四降调号和完整结尾一致；IMSLP上级标题A major及候选标题星号不适用于这份PDF。",
+        "review_edited": true
+      },
+      "basis": "PDF封面列Waltz in Ab、正文题名Waltz in A-Flat，四降调号和完整结尾一致；IMSLP上级标题A major及候选标题星号不适用于这份PDF。",
+      "backup_directory": "backup\\import_publications\\brahms-singles-metadata-20260903_175552_542859"
+    }
+  ],
+  "alert": "#649836来源上级标题A major与实际PDF不符，已按封面、正文A-Flat题名和四降调号修正为降A大调；不得按来源分类猜调性。",
+  "files": {
+    "107644": {
+      "pages": 1,
+      "key": "b小调",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "notes": "整页手稿已查看；Sarabande题名、钢琴双谱表、b小调，四行正文完整终止，结尾旁有Febr.55日期；下部空白谱表及馆藏标记保留。",
+      "publication_note": "WoO 5 第2首，b小调，钢琴独奏；1855年2月亲笔手稿，完整正文位于PDF第1页。保留纸张、笔迹、空白谱表与馆藏标记。来源注明与WoO 4装订，但本PDF仅含这首萨拉班德舞曲，不是两首全套；原PDF字节未改。"
+    },
+    "649836": {
+      "pages": 4,
+      "key": "降A大调",
+      "number": 15,
+      "movement_start_pdf_pages": [
+        2
+      ],
+      "notes": "全部4页已查看。封面New Concert Gems / Series 2列2192 Waltz in Ab Op.39 No.15；正文标题Waltz in A-Flat，Valse moderato、四降调号，Henry S. Sawyer编校，页2–3完整结束，版号2192-2；第4页为出版广告。",
+      "publication_note": "Op.39 第15首，实际为降A大调钢琴独奏，速度Valse moderato；Henry S. Sawyer编校的McKinley版，版号2192-2。PDF第1页为原版封面，第2–3页为完整乐谱（印刷页2–3），第4页为原版出版广告。封面与正文都标Waltz in A-Flat/Ab，谱面为四降；IMSLP上级栏目A major误标不适用于此文件，本站依据谱面填写降A大调。原扫描边缘裂痕不妨碍阅读；所有原页与字节保留。"
+    }
+  },
+  "approved_at": "2026-09-03T23:56:23+00:00",
+  "approved_publication_ids": [
+    "107644",
+    "649836"
+  ]
+}

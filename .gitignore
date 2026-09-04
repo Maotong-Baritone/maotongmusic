@@ -11,3 +11,4 @@ backup/data_backup_phase*.json
 backup/deleted/
 backup/orphans/
 backup/batch_uploads/
+backup/import_publications/

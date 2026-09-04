@@ -1,0 +1,148 @@
+{
+  "label": "Op.10、76、79",
+  "checked_on": "2026-09-02",
+  "proposal_only": false,
+  "publication_approved": true,
+  "authorization": "用户要求离开期间继续上传其他勃拉姆斯作品，按已确认规则进行。本批仅11份；未解决疑点、特殊许可及重复版本不自动批准。定时续跑未获安全检查批准，此批在当前任务内处理。",
+  "proposed_first_publication_ids": [
+    "84162",
+    "16646",
+    "16647",
+    "16648",
+    "16649",
+    "1033090",
+    "110908",
+    "110909",
+    "84690",
+    "16650",
+    "16651"
+  ],
+  "method": "11份原始PDF共113页全部渲染，查看各文件全页总览、各曲起始页及必要末页，核对调号、编号、速度语、编制和页序，并与来源作品目录及版本信息交叉核对；不是逐音校勘。原文件保持下载字节不变。",
+  "source_notes": "Op.10和Op.79采用Mandyczewski全集原始扫描及同版单曲。Op.76采用Mandyczewski版的International Music Company再版完整扫描#1033090（来源页注明再版，封面No.1239），加Moszkowski编订的1914年Ditson单曲#110908、#110909。#84325文件名含filter，未选入。",
+  "rendering_note": "旧单曲PDF有Poppler字体回退警告；两份Ditson PDF的pypdf解析提示跳过无效交叉引用条目。所有页内容可解析并成功渲染，#110909还在浏览器正常显示六页。未修复或改写原文件。",
+  "alert": "Op.10第一首长题辞移至简介，补齐d小调；Op.79两首补齐b小调与g小调。Op.76完整扫描含封面和一页留白，音乐完整；不同编订版保留各自出处。",
+  "metadata_changes": {
+    "16646": {
+      "before_title": "No. 1 Ballade. Andante (D minor) [after the Scottish ballad \"Edward\"], Op. 10",
+      "after_title": "No. 1 Ballade. Andante, Op. 10",
+      "before_key": "",
+      "after_key": "d小调"
+    },
+    "16650": {
+      "before_key": "",
+      "after_key": "b小调"
+    },
+    "16651": {
+      "before_key": "",
+      "after_key": "g小调"
+    }
+  },
+  "files": {
+    "84162": {
+      "pages": 20,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        4,
+        10,
+        14
+      ],
+      "notes": "完整四首，印刷页13-32，版号J.B.60，各曲起止与单曲对应。",
+      "publication_note": "完整四首，PDF起始页：No.1 Andante（d小调）第1页；No.2 Andante（D大调）第4页；No.3 Intermezzo. Allegro（b小调）第10页；No.4 Andante con moto（B大调）第14页。实际版号J.B.60，来源出版信息中的右花括号是文字错误。"
+    },
+    "16646": {
+      "pages": 3,
+      "key": "d小调",
+      "number": 1,
+      "notes": "第一首Andante，d小调，三页完整；题辞移至简介，不当作歌词。",
+      "publication_note": "第一首d小调，题辞源自赫尔德《各民族之声》中的苏格兰叙事诗Edward；钢琴独奏，没有歌词声部。"
+    },
+    "16647": {
+      "pages": 6,
+      "key": "D大调",
+      "number": 2,
+      "notes": "第二首Andante，D大调，六页完整，编号及谱面相符。"
+    },
+    "16648": {
+      "pages": 4,
+      "key": "b小调",
+      "number": 3,
+      "notes": "第三首Intermezzo. Allegro，b小调，四页完整，编号及谱面相符。"
+    },
+    "16649": {
+      "pages": 7,
+      "key": "B大调",
+      "number": 4,
+      "notes": "第四首Andante con moto，B大调，七页完整，编号及谱面相符。"
+    },
+    "1033090": {
+      "pages": 30,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        3,
+        7,
+        12,
+        14,
+        17,
+        22,
+        25,
+        27
+      ],
+      "notes": "IMC再版No.1239；封面一页、空白一页、音乐28页，八首完整。第六首标题未重复编号，顺序与目录对应。",
+      "publication_note": "International Music Company再版，封面No.1239；第1页封面、第2页留白，原样保留。八首目录及PDF起始页：No.1 Capriccio. Un poco agitato（升f小调）第3页；No.2 Capriccio. Allegretto non troppo（b小调）第7页；No.3 Intermezzo. Grazioso（降A大调）第12页；No.4 Intermezzo. Allegretto grazioso（降B大调）第14页；No.5 Capriccio. Agitato, ma non troppo presto（升c小调）第17页；No.6 Intermezzo. Andante con moto（A大调）第22页；No.7 Intermezzo. Moderato semplice（a小调）第25页；No.8 Capriccio. Grazioso ed un poco vivace（C大调）第27页。"
+    },
+    "110908": {
+      "pages": 5,
+      "key": "升f小调",
+      "number": 1,
+      "notes": "Moszkowski编订版，No.1 Capriccio，升f小调，印刷页138-142，五页完整；旧交叉引用警告保留，页面渲染正常。",
+      "publication_note": "Moszkowski编订的Ditson版，印刷页138-142；与所收完整IMC再版的编订来源分别保留。"
+    },
+    "110909": {
+      "pages": 6,
+      "key": "b小调",
+      "number": 2,
+      "notes": "Moszkowski编订版，No.2 Capriccio，b小调，印刷页143-148，六页完整，浏览器显示正常。正常来源处理器直接跳转到公开PDF，没有绕过等待或许可。",
+      "publication_note": "Moszkowski编订的Ditson版，印刷页143-148；与所收完整IMC再版的编订来源分别保留。"
+    },
+    "84690": {
+      "pages": 16,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        10
+      ],
+      "notes": "完整两首，印刷页89-104，版号J.B.63，第一首b小调、第二首g小调。",
+      "publication_note": "PDF起始页：No.1 Rhapsody. Agitato（b小调）第1页；No.2 Rhapsody. Molto passionato, ma non troppo allegro（g小调）第10页。本文件版号J.B.63；来源提到的GDR再版信息针对另两个文件#63974-75，不是本文件。"
+    },
+    "16650": {
+      "pages": 9,
+      "key": "b小调",
+      "number": 1,
+      "notes": "题名Rhapsody in B Minor，Agitato，九页完整，与完整谱对应；补齐原清单缺失的b小调。"
+    },
+    "16651": {
+      "pages": 7,
+      "key": "g小调",
+      "number": 2,
+      "notes": "题名Rhapsody in G Minor，Molto passionato, ma non troppo allegro，七页完整；补齐原清单缺失的g小调。"
+    }
+  },
+  "approved_at": "2026-09-03T04:45:32+00:00",
+  "approved_publication_ids": [
+    "84162",
+    "16646",
+    "16647",
+    "16648",
+    "16649",
+    "1033090",
+    "110908",
+    "110909",
+    "84690",
+    "16650",
+    "16651"
+  ]
+}

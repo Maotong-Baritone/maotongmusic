@@ -1,0 +1,73 @@
+{
+  "batch_id": "brahms-organ-woo7-10-op122-five-20260903",
+  "approved_ids": [
+    "120918",
+    "120931",
+    "120916",
+    "120862",
+    "120904"
+  ],
+  "approved_count": 5,
+  "storage_verified_count": 5,
+  "local_catalog_count": 5,
+  "website_published_count": 5,
+  "catalog_updated_at": "2026-09-04T02:31:14+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-organ-woo7-10-op122-five-20260903-20260903_203107_385385",
+  "files": [
+    {
+      "imslp_id": "120918",
+      "public_id": "2086125d-528a-44a9-897a-3e66b88fead6",
+      "filename": "器乐独奏/2086125d-528a-44a9-897a-3e66b88fead6.pdf",
+      "storage_key": "scores/20/2086125d-528a-44a9-897a-3e66b88fead6.pdf",
+      "sha256": "ee3eaa425663dc7e07539ef00c8aef9835804f5d952b80428bf3868898af627b"
+    },
+    {
+      "imslp_id": "120931",
+      "public_id": "265a4581-d021-4643-9241-74d705c9d065",
+      "filename": "器乐独奏/265a4581-d021-4643-9241-74d705c9d065.pdf",
+      "storage_key": "scores/26/265a4581-d021-4643-9241-74d705c9d065.pdf",
+      "sha256": "7729a931334de84f9be580b86ec8fafb4de80f371ed1df45a92ffd5661b1ddb6"
+    },
+    {
+      "imslp_id": "120916",
+      "public_id": "539dd3ef-59a9-4013-8d10-e8a856e28c65",
+      "filename": "器乐独奏/539dd3ef-59a9-4013-8d10-e8a856e28c65.pdf",
+      "storage_key": "scores/53/539dd3ef-59a9-4013-8d10-e8a856e28c65.pdf",
+      "sha256": "244a08b236af98d8df6cb4d1bf7613b3f56d394e0ff33b5777430c36e8dbe44b"
+    },
+    {
+      "imslp_id": "120862",
+      "public_id": "10765d8c-9b75-4928-8247-ecc6aa023a6a",
+      "filename": "器乐独奏/10765d8c-9b75-4928-8247-ecc6aa023a6a.pdf",
+      "storage_key": "scores/10/10765d8c-9b75-4928-8247-ecc6aa023a6a.pdf",
+      "sha256": "ddacf66da97c7334aee607275dc99f9440eb71715848fd836dc01f6628a6268b"
+    },
+    {
+      "imslp_id": "120904",
+      "public_id": "a9cae128-c262-4ca4-818b-b535ca54f6ed",
+      "filename": "器乐独奏/a9cae128-c262-4ca4-818b-b535ca54f6ed.pdf",
+      "storage_key": "scores/a9/a9cae128-c262-4ca4-818b-b535ca54f6ed.pdf",
+      "sha256": "0feabf17ca5236a7fa33daf58188ee57ca23eb065255cec1afacf2d8f8e5bcbe"
+    }
+  ],
+  "git_commit": "35a2cb11eba91b327e29d09acc41f9c1385f409a",
+  "github_actions_run_id": 33829914625,
+  "website_verified_at": "2026-09-04T02:40:53+00:00",
+  "browser_verified_at": "2026-09-04T02:43:19+00:00",
+  "browser_verification": "正式网站总藏量3461，最新上传和目录显示本批5份，逐份打开详情核对作品号、中文管风琴独奏、类别与非重复子分类、空器乐语言及调性（WoO7 a小调、WoO8降a小调、WoO9 a小调、WoO10 g小调；Op.122整套留空）。五份实际R2下载链接分别与本批public_id吻合。Op.122完整十一首标题和实际PDF页码、原有空白及出版目录说明可见；点击加载预览后mPreview显示block，data-loaded-url为本批265a4581-d021-4643-9241-74d705c9d065.pdf，含PDF查看参数。WoO9第3页中部赋格、WoO10第6页赋格及原版组内2.编号说明显示正确。首页最近动态首条独立记录新增管风琴5份，之前7批动态保留。线上data.json、logs.json已与本地精确比对一致。",
+  "validation": {
+    "unit_tests_passed": 21,
+    "strict_library_check": "3461 entries and PDFs, 0 errors, 0 warnings",
+    "storage_manifest_check": "3461 files, exact match",
+    "existing_3456_catalog_records_unchanged": true,
+    "existing_homepage_logs_unchanged": true,
+    "existing_storage_records_unchanged": true,
+    "other_review_rows_unchanged_at_publication": true,
+    "original_submissions_unchanged": true,
+    "original_submissions_count": 1,
+    "public_download_sha256_matches": 5,
+    "git_committed_pdf_sha256_matches": 5
+  }
+}

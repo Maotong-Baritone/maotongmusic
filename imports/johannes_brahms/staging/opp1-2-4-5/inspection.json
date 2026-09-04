@@ -1,0 +1,73 @@
+{
+  "label": "Op.1、2、4、5",
+  "checked_on": "2026-09-02",
+  "proposal_only": false,
+  "publication_approved": true,
+  "authorization": "用户已表示离开期间继续上传其余勃拉姆斯作品，依照既定规则检查后可发布。本批仅四份明确公有领域的原作钢琴完整扫描；未自动批准其他版本或候选。当前活动任务内处理，没有启用定时自动化。",
+  "proposed_first_publication_ids": [
+    "107601",
+    "107614",
+    "84139",
+    "107616"
+  ],
+  "method": "四份原始PDF共116页全部渲染并查看总览，逐一核对各乐章起始页、调号、编号、速度语、编制、页序、必要末页及前置校订报告署名日期；并对照实时IMSLP作品页的目录、出版信息和Public Domain标注。这是文件与目录核对，不是逐音校勘，PDF保持原始字节。",
+  "source_notes": "选用Mandyczewski编订的Breitkopf全集原始扫描。Op.1与Op.4的封面印Wiesbaden，属于全集再印；前置校订报告署名仍为Mandyczewski，分别注明1927年秋、1927年春。来源页的其他处理版本、现代编订版和版权附注版本未纳入。当前三个奏鸣曲原作钢琴文件列表均未见独立单乐章PDF，不自动拆分原始文件。",
+  "rendering_note": "所有116页可解析并渲染，无页面缺失；Op.1保留前12页封面、报告、目录及留白，Op.4保留前6页同类材料。正文页码与PDF页码不同，详情明确实际PDF起始页。",
+  "alert": "第一奏鸣曲正文从PDF第13页开始，Op.4谐谑曲正文从第7页开始。第二奏鸣曲第三乐章从PDF第13页中部开始，和上一乐章结尾在同一页，详情已注明。",
+  "files": {
+    "107601": {
+      "pages": 40,
+      "key": "C大调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        13,
+        23,
+        26,
+        32
+      ],
+      "notes": "第一奏鸣曲C大调，J.B.50，音乐印刷页1-28完整。前12页含全集封面、Mandyczewski校订报告（1927年秋）、目录与留白。四乐章起始页及终页均已核对。",
+      "publication_note": "封面印Breitkopf & Härtel, Wiesbaden；保留Mandyczewski署名的1927年校订报告、全集目录及留白。正文为印刷页1-28，PDF第13-40页。乐章及PDF起始页：I. Allegro，第13页；II. Andante (Nach einem altdeutschen Minneliede)，第23页；III. Scherzo. Allegro molto e con fuoco — Più mosso，第26页；IV. Finale. Allegro con fuoco，第32页。第二乐章附民歌引句文字，作品仍为钢琴独奏，不另标声乐或歌词语言。"
+    },
+    "107614": {
+      "pages": 26,
+      "key": "升f小调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        9,
+        13,
+        17
+      ],
+      "notes": "第二奏鸣曲升f小调，J.B.51，四乐章完整，保留原谱双重页码。第三乐章在PDF第13页中部接续前乐章末尾；终曲引子第17页、快板主体第18页。",
+      "publication_note": "原谱页码同时标出本曲1-26页与全集29-54页。乐章及PDF起始页：I. Allegro non troppo, ma energico，第1页；II. Andante con espressione，第9页；III. Scherzo. Allegro — Trio. Poco più moderato，第13页中部（同页上方是第二乐章结尾）；IV. Finale. Introduzione. Sostenuto，第17页，Allegro non troppo e rubato主体从第18页开始。来源页提到的Dover再版与手写小节号是另一文件#44861的说明，不是本文件。"
+    },
+    "84139": {
+      "pages": 18,
+      "key": "降e小调",
+      "number": null,
+      "notes": "谐谑曲Op.4降e小调，J.B.59，正文印刷页1-12完整，PDF第7-18页。前6页为全集封面、1927年春Mandyczewski校订报告、目录及留白。两段Trio及结尾均已核对。",
+      "publication_note": "封面印Breitkopf & Härtel, Wiesbaden；前6页含全集封面、Mandyczewski署名的1927年校订报告、目录及留白，原样保留。正文从PDF第7页开始，速度语Rasch und feurig；Trio I从第10页开始，Trio II (Molto espressivo)从第12页开始。两段Trio是同一首谐谑曲内的段落，不作为独立作品上传。"
+    },
+    "107616": {
+      "pages": 32,
+      "key": "f小调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        8,
+        15,
+        20,
+        22
+      ],
+      "notes": "第三奏鸣曲f小调，J.B.52，五乐章完整，印刷页1-32/全集55-86。第二乐章诗句是题辞，非另设演唱声部。第四乐章保留副标题Rückblick，五个起始页与终页已核对。",
+      "publication_note": "原谱双重页码为本曲1-32页与全集55-86页。乐章及PDF起始页：I. Allegro maestoso，第1页；II. Andante espressivo，第8页；III. Scherzo. Allegro energico — Trio，第15页；IV. Intermezzo (Rückblick). Andante molto，第20页；V. Finale. Allegro moderato ma rubato，第22页。第二乐章Sternau诗句为题辞，仍按钢琴独奏整理，歌词语言留空。"
+    }
+  },
+  "approved_at": "2026-09-03T05:03:03+00:00",
+  "approved_publication_ids": [
+    "107601",
+    "107614",
+    "84139",
+    "107616"
+  ]
+}

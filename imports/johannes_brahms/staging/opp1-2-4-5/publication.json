@@ -1,0 +1,62 @@
+{
+  "batch_id": "brahms-opp1-2-4-5-four-20260902",
+  "approved_ids": [
+    "107601",
+    "107614",
+    "84139",
+    "107616"
+  ],
+  "approved_count": 4,
+  "storage_verified_count": 4,
+  "local_catalog_count": 4,
+  "website_published_count": 4,
+  "catalog_updated_at": "2026-09-03T05:03:03+00:00",
+  "website_status": "verified_live",
+  "website_verified_at": "2026-09-03T05:15:10+00:00",
+  "github_deployment_id": 6237375412,
+  "browser_verification": "网站总藏量3443，本批四份标题、Op.号、中文调性、钢琴独奏和器乐分类可见；器乐歌词语言留空。第二奏鸣曲详情准确显示第三乐章在PDF第13页中部开始，及终曲引子/主体的不同起始页，下载URL与回执一致。Rückblick检索结果可见第三奏鸣曲。最近动态显示本批4份及此前11、10、8份记录。线上data.json与logs.json已和本地精确比对一致；同一轮已打开Op.76在线预览，正常显示原谱。",
+  "git_commit": "2fba066538fe75232135654b0db6a2860248fbf9",
+  "github_actions_run_id": 33717403902,
+  "validation": {
+    "unit_tests_passed": 132,
+    "strict_library_check": "3443 entries and PDFs, 0 errors, 0 warnings",
+    "storage_manifest_check": "3443 files, exact match",
+    "existing_3439_catalog_records_unchanged": true,
+    "existing_homepage_logs_unchanged": true,
+    "original_submissions_unchanged": true,
+    "public_download_sha256_matches": 4,
+    "git_committed_pdf_sha256_matches": 4
+  },
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-opp1-2-4-5-four-20260902-20260902_230256_825299",
+  "files": [
+    {
+      "imslp_id": "107601",
+      "public_id": "60604d2d-ec30-4c36-a31c-6c9961609fb1",
+      "filename": "器乐独奏/60604d2d-ec30-4c36-a31c-6c9961609fb1.pdf",
+      "storage_key": "scores/60/60604d2d-ec30-4c36-a31c-6c9961609fb1.pdf",
+      "sha256": "08e3148643d9ede35d605b9026bad18411b2fbc6662acc8dbc25c30089f106cc"
+    },
+    {
+      "imslp_id": "107614",
+      "public_id": "9c996323-8160-4996-9976-d00cc87854ef",
+      "filename": "器乐独奏/9c996323-8160-4996-9976-d00cc87854ef.pdf",
+      "storage_key": "scores/9c/9c996323-8160-4996-9976-d00cc87854ef.pdf",
+      "sha256": "9ddd5c7812bd8bdfcec427655dfa0f4a7454a66b05ca72275c7815cd0539e9db"
+    },
+    {
+      "imslp_id": "84139",
+      "public_id": "85647c58-949e-4388-819a-c78c1839ad64",
+      "filename": "器乐独奏/85647c58-949e-4388-819a-c78c1839ad64.pdf",
+      "storage_key": "scores/85/85647c58-949e-4388-819a-c78c1839ad64.pdf",
+      "sha256": "01191d6474d9ee7a91f95ee516f59b7f2a0f6b8c463b820e253fc58b41a7ebf5"
+    },
+    {
+      "imslp_id": "107616",
+      "public_id": "745567b2-587b-4daa-b840-f163254e2058",
+      "filename": "器乐独奏/745567b2-587b-4daa-b840-f163254e2058.pdf",
+      "storage_key": "scores/74/745567b2-587b-4daa-b840-f163254e2058.pdf",
+      "sha256": "3d0a9c47c741785755b1ab5b403a37c1cd8e9f9b7d8394fe3ae11fdec8b05be3"
+    }
+  ]
+}

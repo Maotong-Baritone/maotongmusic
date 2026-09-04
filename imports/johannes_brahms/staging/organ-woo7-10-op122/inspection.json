@@ -1,0 +1,194 @@
+{
+  "label": "管风琴 WoO 7–10 与 Op.122",
+  "checked_on": "2026-09-03",
+  "recorded_at": "2026-09-04T02:30:34+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "120918",
+    "120931",
+    "120916",
+    "120862",
+    "120904"
+  ],
+  "source_notes": "逐个打开实时IMSLP作品页，核对本批5个文件号均为原作管风琴编制、Breitkopf全集第16卷、Mandyczewski编校、明确Public Domain；每份通过正常匿名15秒等待后读取可见下载链接。WoO7–10优先完整scan，不重复收入同版filter或低分辨率扫描。Op.122选完整J.B.88版本；另列的现代特殊许可单曲不混入本批。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部57页并逐页打开查看标题、调号、曲号、编制、页序、边缘及完整结尾。",
+  "rendering_note": "全部57页已逐页查看。Op.122为28页完整音乐、1页原有空白和1页全集出版目录；WoO9赋格与前奏曲结尾同页开始；WoO10起页编号2.属于原版两首组内编号，文件完整。",
+  "metadata_changes": [
+    {
+      "imslp_id": "120918",
+      "before": {
+        "original_filename": "PV-Brahms Werke Band 16 Breitkopf JB 87 WoO 7.jpg",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "original_filename": "IMSLP120918-PMLP52926-Brahms_Werke_Band_16_Breitkopf_JB_87_WoO_7_scan.pdf",
+        "review_notes": "2026-09-03 全页核对：6页逐页查看，题名Choralvorspiel und Fuge über O Traurigkeit, o Herzeleid für die Orgel，J.B.87。无调号、起止及导音支持a小调。前奏曲Poco Adagio始于PDF第1页；Fuge Adagio始于第3页，终页完整。",
+        "review_edited": true
+      },
+      "basis": "实时作品页文件号、正常放行的实际PDF链接及全部谱面；纠正旧清单误取预览JPG为原文件名的问题。",
+      "backup_directory": "backup\\import_publications\\brahms-organ-metadata-20260903_203034_254493"
+    },
+    {
+      "imslp_id": "120931",
+      "before": {
+        "original_filename": "PMLP10554-Brahms Werke Band 16 Breitkopf JB 88 Op 122 filter.pdf",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "original_filename": "IMSLP120931-PMLP10554-Brahms_Werke_Band_16_Breitkopf_JB_88_Op_122_filter.pdf",
+        "review_notes": "2026-09-03 全页核对：全部30页逐页查看；Elf Choralvorspiele für die Orgel，Op.122，J.B.88。十一首完整；PDF第1–28页为乐谱，印刷页2–29（全集28–55），第29页原有空白、第30页全集出版目录，全部保留。圣咏文字为管风琴主题提示。",
+        "review_edited": true
+      },
+      "basis": "实时作品页文件号、正常放行的实际PDF链接及全部谱面；纠正旧清单误取预览JPG为原文件名的问题。",
+      "backup_directory": "backup\\import_publications\\brahms-organ-metadata-20260903_203034_254493"
+    },
+    {
+      "imslp_id": "120916",
+      "before": {
+        "original_filename": "PV-Brahms Werke Band 16 Breitkopf JB 86 WoO 8.jpg",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "original_filename": "IMSLP120916-PMLP52928-Brahms_Werke_Band_16_Breitkopf_JB_86_WoO_8_scan.pdf",
+        "review_notes": "2026-09-03 全页核对：全部5页逐页查看；Fuge für die Orgel (As-moll)，Langsam，七降调号，J.B.86。印刷页1–5，括号内17–21。中段转调后回归，完整终止，无缺页。",
+        "review_edited": true
+      },
+      "basis": "实时作品页文件号、正常放行的实际PDF链接及全部谱面；纠正旧清单误取预览JPG为原文件名的问题。",
+      "backup_directory": "backup\\import_publications\\brahms-organ-metadata-20260903_203034_254493"
+    },
+    {
+      "imslp_id": "120862",
+      "before": {
+        "original_filename": "PV-Brahms Werke Band 16 Breitkopf JB 85 WoO 9.jpg",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "original_filename": "IMSLP120862-PMLP57146-Brahms_Werke_Band_16_Breitkopf_JB_85_WoO_9_scan.pdf",
+        "review_notes": "2026-09-03 全页核对：全部6页逐页查看；Zwei Praeludien und Fugen für die Orgel中的第1首，WoO9，a小调。前奏曲Allegro从PDF第1页开始；赋格在PDF第3页中部、前奏曲结尾下方开始。印刷1–6，J.B.85，首版1927。",
+        "review_edited": true
+      },
+      "basis": "实时作品页文件号、正常放行的实际PDF链接及全部谱面；纠正旧清单误取预览JPG为原文件名的问题。",
+      "backup_directory": "backup\\import_publications\\brahms-organ-metadata-20260903_203034_254493"
+    },
+    {
+      "imslp_id": "120904",
+      "before": {
+        "original_filename": "PV-Brahms Werke Band 16 Breitkopf JB 85 WoO 10.jpg",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "original_filename": "IMSLP120904-PMLP58894-Brahms_Werke_Band_16_Breitkopf_JB_85_WoO_10_scan.pdf",
+        "review_notes": "2026-09-03 全页核对：全部10页逐页查看；原版两首前奏曲与赋格中的第2首WoO10，起页2.、Allegro di molto，两降调号及起止支持g小调。前奏曲第1–5页，Fuge Tempo giusto第6页起，至第10页完整终止。印刷7–16，J.B.85。",
+        "review_edited": true
+      },
+      "basis": "实时作品页文件号、正常放行的实际PDF链接及全部谱面；纠正旧清单误取预览JPG为原文件名的问题。",
+      "backup_directory": "backup\\import_publications\\brahms-organ-metadata-20260903_203034_254493"
+    }
+  ],
+  "alert": "Op.122来源为filter版本，原有空白页和出版目录均保留；WoO9/10按独立WoO编号收录，详情解释原版1./2.编号与实际PDF页码。",
+  "files": {
+    "120918": {
+      "pages": 6,
+      "key": "a小调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        3
+      ],
+      "notes": "6页逐页查看，题名Choralvorspiel und Fuge über O Traurigkeit, o Herzeleid für die Orgel，J.B.87。无调号、起止及导音支持a小调。前奏曲Poco Adagio始于PDF第1页；Fuge Adagio始于第3页，终页完整。",
+      "publication_note": "管风琴独奏，a小调；完整众赞歌前奏曲与赋格。前奏曲 Poco Adagio：PDF第1页；赋格 Adagio：PDF第3页。PDF第1–6页对应印刷页2–7，括号内全集页码22–27，版号J.B.87。谱面附圣咏文字作为旋律提示，未另设演唱声部。来源为scan扫描版；下载后原PDF字节未改。"
+    },
+    "120931": {
+      "pages": 30,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        7,
+        9,
+        11,
+        13,
+        15,
+        16,
+        19,
+        21,
+        23,
+        27
+      ],
+      "titles": [
+        "Mein Jesu, der du mich",
+        "Herzliebster Jesu",
+        "O Welt, ich muß dich lassen",
+        "Herzlich tut mich erfreuen",
+        "Schmücke dich, o liebe Seele",
+        "O wie selig seid ihr doch, ihr Frommen",
+        "O Gott, du frommer Gott",
+        "Es ist ein Ros’ entsprungen",
+        "Herzlich tut mich verlangen",
+        "Herzlich tut mich verlangen",
+        "O Welt, ich muß dich lassen"
+      ],
+      "movement_keys": [
+        "e小调",
+        "g小调",
+        "F大调",
+        "D大调",
+        "E大调",
+        "d小调",
+        "a小调",
+        "F大调",
+        "a小调",
+        "a小调",
+        "F大调"
+      ],
+      "notes": "全部30页逐页查看；Elf Choralvorspiele für die Orgel，Op.122，J.B.88。十一首完整；PDF第1–28页为乐谱，印刷页2–29（全集28–55），第29页原有空白、第30页全集出版目录，全部保留。圣咏文字为管风琴主题提示。",
+      "publication_note": "管风琴独奏，完整十一首；跨多调，整套调性留空。曲目目录：No. 1 Mein Jesu, der du mich（e小调）：PDF第1页；No. 2 Herzliebster Jesu（g小调）：PDF第7页；No. 3 O Welt, ich muß dich lassen（F大调）：PDF第9页；No. 4 Herzlich tut mich erfreuen（D大调）：PDF第11页；No. 5 Schmücke dich, o liebe Seele（E大调）：PDF第13页；No. 6 O wie selig seid ihr doch, ihr Frommen（d小调）：PDF第15页；No. 7 O Gott, du frommer Gott（a小调）：PDF第16页；No. 8 Es ist ein Ros’ entsprungen（F大调）：PDF第19页；No. 9 Herzlich tut mich verlangen（a小调）：PDF第21页；No. 10 Herzlich tut mich verlangen（a小调）：PDF第23页；No. 11 O Welt, ich muß dich lassen（F大调）：PDF第27页。第3/11首同题、第9/10首同题，分别按实际曲号区分。PDF第1–28页为乐谱，对应印刷页2–29，括号内全集页码28–55；第29页为空白，第30页为原版全集出版目录，均保留。部分曲子使用双谱表、手键盘标记与踏板提示，圣咏文字用于标示主题，不是另附声乐声部。版号J.B.88；来源文件名含filter，属于来源方处理的扫描，下载后原字节未改。"
+    },
+    "120916": {
+      "pages": 5,
+      "key": "降a小调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "notes": "全部5页逐页查看；Fuge für die Orgel (As-moll)，Langsam，七降调号，J.B.86。印刷页1–5，括号内17–21。中段转调后回归，完整终止，无缺页。",
+      "publication_note": "管风琴独奏，降a小调；完整赋格，速度Langsam，正文从PDF第1页至第5页。谱面明确As-moll、七降调号，与当前版本一致；中段转调不改变本曲总体调性。印刷页1–5，括号内全集页码17–21，版号J.B.86。来源为scan扫描版；下载后原PDF字节未改。"
+    },
+    "120862": {
+      "pages": 6,
+      "key": "a小调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        3
+      ],
+      "notes": "全部6页逐页查看；Zwei Praeludien und Fugen für die Orgel中的第1首，WoO9，a小调。前奏曲Allegro从PDF第1页开始；赋格在PDF第3页中部、前奏曲结尾下方开始。印刷1–6，J.B.85，首版1927。",
+      "publication_note": "管风琴独奏，a小调；本文件完整收录WoO 9，是原版Zwei Praeludien und Fugen中的第1首，不包含WoO 10。前奏曲 Allegro：PDF第1页；赋格 Fuge：PDF第3页中部，与前奏曲结尾同页。正文及印刷页均为1–6，版号J.B.85，谱面注明Erste Ausgabe 1927。两段及结尾完整；来源为scan扫描版，原PDF字节未改。"
+    },
+    "120904": {
+      "pages": 10,
+      "key": "g小调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        6
+      ],
+      "notes": "全部10页逐页查看；原版两首前奏曲与赋格中的第2首WoO10，起页2.、Allegro di molto，两降调号及起止支持g小调。前奏曲第1–5页，Fuge Tempo giusto第6页起，至第10页完整终止。印刷7–16，J.B.85。",
+      "publication_note": "管风琴独奏，g小调；本文件完整收录WoO 10，是原版Zwei Praeludien und Fugen中的第2首，起页所印2.是原版组内编号，不代表缺少本曲第1乐章。前奏曲 Allegro di molto：PDF第1页；赋格 Tempo giusto：PDF第6页。PDF第1–10页对应印刷页7–16，版号J.B.85；前奏曲及赋格均完整。来源为scan扫描版，下载后原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-04T02:31:14+00:00",
+  "approved_publication_ids": [
+    "120918",
+    "120931",
+    "120916",
+    "120862",
+    "120904"
+  ]
+}

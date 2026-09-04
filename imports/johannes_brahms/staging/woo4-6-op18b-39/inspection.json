@@ -1,0 +1,153 @@
+{
+  "label": "WoO 4、5、6 与 Op.18b、39",
+  "checked_on": "2026-09-03",
+  "recorded_at": "2026-09-03T19:11:44+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "57520",
+    "103886",
+    "103888",
+    "84174",
+    "57514"
+  ],
+  "source_notes": "逐页打开实时 IMSLP 作品页，核对本批5个文件号的编者、版号、页数及明确 Public Domain 标记；使用受支持的 Codex 浏览器，逐份等待匿名15秒倒计时后读取可见放行链接。没有使用隐藏链接、登录、验证码或付费旁路。Op.39 来源为 Composer 钢琴独奏改编栏。Op.18b 的 IMC 重印 #1046977 与 WoO 6 的 IMC 重印 #396929 均未重复下载或发布：各优先选用完整清晰的 Breitkopf 版扫描。",
+  "method": "pypdf 逐页解析内容流和页面结构；Poppler 将全部79页渲染为 PNG，逐页视觉检查标题、编制、调号、曲号、页序、边缘及结尾；核对每份原文件 SHA256。完整曲集保留原文件并在详情注明实际PDF起始页。",
+  "rendering_note": "全部79页以80 dpi渲染并逐页查看，5份均完整可读。页码索引为PDF页面序号，与印刷页码另列。WoO 6 原印刷的 etc./simile 与预备练习不是截断，不补写或重排。",
+  "metadata_changes": [
+    {
+      "imslp_id": "84174",
+      "field": "proposed_title",
+      "before": "16 Waltzes, Op. 39",
+      "after": "16 Waltzes, Op. 39（钢琴独奏版）",
+      "basis": "IMSLP Composer栏，PDF题名 für Pianoforte、J.B.61及第13–16首调性",
+      "backup_directory": "backup\\import_publications\\op39-version-title-20260903_131145_047165"
+    }
+  ],
+  "alert": "Op.18b 来源页印刷页码58–64有误，实际为59–64；WoO 5、Op.18b、Op.39来源文件名含filter，下载后未改变原字节。Op.39为普通钢琴独奏版。",
+  "files": {
+    "57520": {
+      "pages": 4,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        3
+      ],
+      "notes": "4页均已查看；Zwei Giguen für Pianoforte，J.B.75，印刷53–56（另标1–4）；两首分别为a小调、b小调，终止完整。",
+      "publication_note": "钢琴独奏；完整两首。曲目目录：No. 1 Gigue（a小调）从PDF第1页开始；No. 2 Gigue（b小调）从PDF第3页开始。实际印刷页码53–56，另标1–4，版号J.B.75。保留来源PDF原字节。"
+    },
+    "103886": {
+      "pages": 2,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        2
+      ],
+      "notes": "2页均已查看；Zwei Sarabanden für Pianoforte，J.B.76；No.1为a小调，No.2为b小调，实际印刷57–58（另标1–2），两首完整。",
+      "publication_note": "钢琴独奏；完整两首。No. 1 Sarabande（a小调）：PDF第1页；No. 2 Sarabande（b小调）：PDF第2页。印刷页码57–58，另标1–2，版号J.B.76。来源文件名含filter，系来源方处理的扫描；下载后未改动字节。"
+    },
+    "103888": {
+      "pages": 6,
+      "key": "d小调",
+      "number": null,
+      "movement_start_pdf_pages": [],
+      "notes": "全部6页已查看；Thema mit Variationen für Pianoforte，d小调，J.B.77，题献Clara Schumann；实际印刷59–64（另标1–6），末页终止完整；连续排版未印独立变奏编号。",
+      "publication_note": "由勃拉姆斯本人据弦乐六重奏Op.18第二乐章改编的钢琴独奏曲；d小调，正文从PDF第1页开始，至第6页完整结束，原谱连续排版，未印独立变奏编号。题献Clara Schumann，版号J.B.77。来源页记pp.58–64，实际印刷页码为59–64，另标1–6，未缺页。来源文件名含filter，下载后原字节未改。"
+    },
+    "84174": {
+      "pages": 14,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        6,
+        7,
+        8,
+        8,
+        9,
+        10,
+        11,
+        11,
+        13,
+        14
+      ],
+      "notes": "全部14页已查看；Walzer für Pianoforte，Op.39，J.B.61，印刷33–46（另标1–14）；普通独奏版，保留全部16首，含同页开始；末四首调性与当前PDF相符。",
+      "publication_note": "作曲家本人改编的普通钢琴独奏版，含完整16首；版号J.B.61，印刷页码33–46，另标1–14。曲目目录：No. 1（B大调）：PDF第1页；No. 2（E大调）：PDF第2页；No. 3（升g小调）：PDF第2页；No. 4（e小调）：PDF第3页；No. 5（E大调）：PDF第4页；No. 6（升C大调）：PDF第4页；No. 7（升c小调）：PDF第6页；No. 8（降B大调）：PDF第7页；No. 9（d小调）：PDF第8页；No. 10（G大调）：PDF第8页；No. 11（b小调）：PDF第9页；No. 12（E大调）：PDF第10页；No. 13（B大调）：PDF第11页；No. 14（升g小调）：PDF第11页；No. 15（降A大调）：PDF第13页；No. 16（升c小调）：PDF第14页。第13–16首调性据本PDF核实，不能照搬四手联弹版本。来源文件名含filter，下载后未改动字节。"
+    },
+    "57514": {
+      "pages": 53,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        16,
+        16,
+        17,
+        18,
+        19,
+        19,
+        19,
+        21,
+        22,
+        22,
+        23,
+        25,
+        27,
+        29,
+        29,
+        30,
+        30,
+        31,
+        33,
+        34,
+        36,
+        38,
+        39,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        48,
+        49,
+        49,
+        51,
+        51,
+        53,
+        53
+      ],
+      "notes": "全部53页已查看；51 Übungen für Pianoforte，J.B.84，印刷126–178（另标2–54）；第1至51号及字母分项、预备练习保留，末页包含50、51号；练习跨多调，整套不填写单一调性。",
+      "publication_note": "钢琴独奏，完整51首练习及原有字母分项、预备练习；版号J.B.84，实际印刷126–178，另标2–54，与PDF第1–53页不同。以下为各主编号首次出现的PDF页码（字母分项可延续到后页）：No. 1：PDF第1页；No. 2：PDF第5页；No. 3：PDF第6页；No. 4：PDF第7页；No. 5：PDF第8页；No. 6：PDF第9页；No. 7：PDF第10页；No. 8：PDF第11页；No. 9：PDF第12页；No. 10：PDF第13页；No. 11：PDF第14页；No. 12：PDF第15页；No. 13：PDF第16页；No. 14：PDF第16页；No. 15：PDF第16页；No. 16：PDF第17页；No. 17：PDF第18页；No. 18：PDF第19页；No. 19：PDF第19页；No. 20：PDF第19页；No. 21：PDF第21页；No. 22：PDF第22页；No. 23：PDF第22页；No. 24：PDF第23页；No. 25：PDF第25页；No. 26：PDF第27页；No. 27：PDF第29页；No. 28：PDF第29页；No. 29：PDF第30页；No. 30：PDF第30页；No. 31：PDF第31页；No. 32：PDF第33页；No. 33：PDF第34页；No. 34：PDF第36页；No. 35：PDF第38页；No. 36：PDF第39页；No. 37：PDF第39页；No. 38：PDF第40页；No. 39：PDF第41页；No. 40：PDF第42页；No. 41：PDF第43页；No. 42：PDF第45页；No. 43：PDF第46页；No. 44：PDF第47页；No. 45：PDF第48页；No. 46：PDF第49页；No. 47：PDF第49页；No. 48：PDF第51页；No. 49：PDF第51页；No. 50：PDF第53页；No. 51：PDF第53页。例如1a/1b/1c分别始于PDF第1/2/3页，1d–1f同在第4页；50、51同在末页。原印刷的etc.、simile和往返练习说明全部保留。各练习跨多调，整套不强填单一调性；原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-03T19:12:28+00:00",
+  "approved_publication_ids": [
+    "57520",
+    "103886",
+    "103888",
+    "84174",
+    "57514"
+  ]
+}

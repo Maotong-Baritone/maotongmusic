@@ -1,0 +1,90 @@
+{
+  "label": "钢琴变奏曲 Op.9、21、24、35",
+  "checked_on": "2026-09-03",
+  "proposal_only": false,
+  "publication_approved": true,
+  "authorization": "用户已审核并认可既有批次格式，随后明确要求继续上传其他勃拉姆斯作品。",
+  "proposed_first_publication_ids": [
+    "107618",
+    "107692",
+    "107694",
+    "107697",
+    "107699",
+    "107701"
+  ],
+  "method": "逐份核对 IMSLP 当前作品页的文件编号、页数、编者、出版信息与 Public Domain 标记；通过正常匿名 15 秒等待页取得公开下载链接。下载后核对 PDF 结构、页数与 SHA256，并检查标题、调性、钢琴独奏编制、变奏编号连续性和末页终止线。",
+  "source_notes": "本批只取 Mandyczewski 编订的 Breitkopf & Härtel 版本。在提供 scan / filter 双版本的条目中选择 scan；Op.24 选用来源标为 Complete Score 的 #107697，其文件名含 filter，按来源文件原样保留并在详情中说明。未选低分辨率副本、版权带地区附注的版本或第三方改编。Op.35 的两份来源明确标为 Heft I 与 Heft II，因此分别作为 Book I、Book II 发布，并保留整部作品名作为所属作品。",
+  "rendering_note": "6 份 PDF 的全部 93 页均以 80 DPI 渲染并制作总览；另以原始清晰度检查每份首尾页、Op.24 赋格起始页以及 Op.35 两册的首尾。原始 PDF 未拆分、未重排、未改写。",
+  "alert": "Op.35 Book II 的 PDF 共 17 页，其中第 1–16 页为乐谱，第 17 页是《Johannes Brahms’ Sämtliche Werke》卷目广告；该页属于来源原始扫描，予以保留并在详情中说明。",
+  "metadata_changes": {
+    "107699": {
+      "before_title": "Variations on a Theme by Paganini, Op. 35",
+      "after_title": "Variations on a Theme by Paganini, Op. 35, Book I",
+      "before_work": "",
+      "after_work": "Variations on a Theme by Paganini, Op. 35",
+      "before_scope": "whole_work",
+      "after_scope": "selection"
+    },
+    "107701": {
+      "before_title": "Variations on a Theme by Paganini, Op. 35",
+      "after_title": "Variations on a Theme by Paganini, Op. 35, Book II",
+      "before_work": "",
+      "after_work": "Variations on a Theme by Paganini, Op. 35",
+      "before_scope": "whole_work",
+      "after_scope": "selection"
+    }
+  },
+  "files": {
+    "107618": {
+      "pages": 16,
+      "key": "升f小调",
+      "number": null,
+      "notes": "首标题为舒曼主题变奏曲 Op.9；主题后 Var.1–16 连续，末页 Var.16 完整结束。",
+      "publication_note": "原书页码 87–102；含主题及 16 个变奏。"
+    },
+    "107692": {
+      "pages": 12,
+      "key": "D大调",
+      "number": null,
+      "notes": "首标题为原创主题变奏曲 Op.21 No.1；主题及 Var.1–11 连续，末页完整终止。",
+      "publication_note": "原书页码 103–114；含主题及 11 个变奏。"
+    },
+    "107694": {
+      "pages": 10,
+      "key": "D大调",
+      "number": null,
+      "notes": "首标题为匈牙利歌曲主题变奏曲 Op.21 No.2；变奏编号连续，末页 Tempo I più animato 完整终止。",
+      "publication_note": "原书页码 115–124；原始扫描完整。"
+    },
+    "107697": {
+      "pages": 22,
+      "key": "降B大调",
+      "number": null,
+      "notes": "首标题为亨德尔主题变奏曲与赋格 Op.24；Aria、Var.1–25 后于 PDF 第 16 页进入 Fuga，末页完整终止。",
+      "publication_note": "原书页码 125–146；含主题、25 个变奏及赋格（赋格从 PDF 第 16 页起）。来源文件名带 filter，按来源 PDF 原样保留，未再次处理。"
+    },
+    "107699": {
+      "pages": 16,
+      "key": "a小调",
+      "number": null,
+      "notes": "谱首明确印有 I. 与 Op.35 Heft 1；主题、Var.1–14 及结尾段连续，末页完整终止。",
+      "publication_note": "Op.35 第一册（Heft 1）；原书页码 147–162。"
+    },
+    "107701": {
+      "pages": 17,
+      "key": "a小调",
+      "number": null,
+      "notes": "谱首明确印有 II. 与 Op.35 Heft 2；第 1–16 页乐谱完整结束，第 17 页为原版卷目广告。",
+      "publication_note": "Op.35 第二册（Heft 2）；乐谱为 PDF 第 1–16 页，第 17 页是原扫描所附卷目广告。"
+    }
+  },
+  "approved_at": "2026-09-03T17:30:06+00:00",
+  "approved_publication_ids": [
+    "107618",
+    "107692",
+    "107694",
+    "107697",
+    "107699",
+    "107701"
+  ]
+}

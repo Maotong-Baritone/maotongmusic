@@ -2,6 +2,10 @@
 
 这是一个静态乐谱分享网站，并附带仅供本机使用的后台管理工具。
 
+## 乐谱整理与新聊天交接
+
+继续 IMSLP 乐谱整理、审核或批量上传前，请先阅读 [乐谱整理规则与续传交接](README_乐谱整理与续传.md)。其中记录了用户确认的标题/作品号、单乐章、中文声部、分类去重、审核与首页更新规则，以及当前进度和新聊天提示词。勃拉姆斯的最新执行断点另见 [续传交接](imports/johannes_brahms/CONTINUATION.md)。
+
 ## 文件夹说明
 
 - `index.html`、`contact.html`、`css/`、`js/app.js`：网站页面与样式。
@@ -123,6 +127,8 @@ R2 的 API endpoint 会由 Account ID 自动生成为 `https://<ACCOUNT_ID>.r2.c
 同步可安全地中断和重跑。远端对象只有在文件大小及上传时记录的 SHA-256 元数据均一致时才会被跳过；不一致的对象会在 `--execute` 模式下重新上传。工具不会执行远端删除。
 
 首次测试可临时启用 R2 的 `r2.dev` Public Development URL；它有速率限制，只用于抽查。本站正式下载域名为 `https://scores.maotong.me`，已连接到 `maotongmusic-scores` 存储桶，可使用 Cloudflare 缓存和访问控制。
+
+后台发布新 PDF 时会在检测到完整 R2 凭据后自动同步：先按 `public_id_sharded` 规则上传对象，再通过文件大小和 SHA-256 元数据校验，校验成功后才写入公开目录。管理页的 R2 状态列可以手动重新校验或重试单份文件。将 `SCORE_STORAGE_AUTO_SYNC=0` 可临时恢复为仅保存本地文件；设为 `1` 时若配置不完整，发布会停止并显示错误。
 
 全量同步成功并通过网页抽查之前，不要修改 `site-config.json`，也不要删除本地或 Git 中的 PDF。确认 R2 公开 HTTPS 域名可用后，再将 `baseUrl` 设为该域名，并将 `keyStrategy` 改为 `public_id_sharded`。切换后一段时间仍保留本地 PDF，确认线上稳定后再单独处理 Git 中的历史文件。
 

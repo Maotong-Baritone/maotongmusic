@@ -1,0 +1,50 @@
+{
+  "batch_id": "brahms-woo5-op39-singles-two-20260903",
+  "approved_ids": [
+    "107644",
+    "649836"
+  ],
+  "approved_count": 2,
+  "storage_verified_count": 2,
+  "local_catalog_count": 2,
+  "website_published_count": 2,
+  "catalog_updated_at": "2026-09-03T23:56:23+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-woo5-op39-singles-two-20260903-20260903_175618_185477",
+  "files": [
+    {
+      "imslp_id": "107644",
+      "public_id": "99e359f0-17d7-4b42-b3d7-a855c593f62f",
+      "filename": "器乐独奏/99e359f0-17d7-4b42-b3d7-a855c593f62f.pdf",
+      "storage_key": "scores/99/99e359f0-17d7-4b42-b3d7-a855c593f62f.pdf",
+      "sha256": "e351f3ff71d6df0a7f2206be6753f66a1e96d6b66427b6574750576f2b8119db"
+    },
+    {
+      "imslp_id": "649836",
+      "public_id": "fec9b34a-abec-476a-89ba-d2caf04636e8",
+      "filename": "器乐独奏/fec9b34a-abec-476a-89ba-d2caf04636e8.pdf",
+      "storage_key": "scores/fe/fec9b34a-abec-476a-89ba-d2caf04636e8.pdf",
+      "sha256": "16edea1c0501669bab03bbd14eacd4b930ad71aeb9686214a2c115282b2e71af"
+    }
+  ],
+  "git_commit": "421e985ee6199ef65aa7981342eab70e380cad0b",
+  "github_actions_run_id": 33819849355,
+  "website_verified_at": "2026-09-04T00:08:49+00:00",
+  "browser_verified_at": "2026-09-04T00:10:59+00:00",
+  "browser_verification": "正式网站总藏量3456；两份单曲分别保留独立标题及所属作品，萨拉班德手稿b小调、圆舞曲降A大调，中文钢琴独奏、类别及空器乐语言正确。两份详情和R2下载地址均核对一致，圆舞曲详情说明来源A major误标、PDF第2–3页正文和封面广告。点击预览后iframe的data-loaded-url为本批圆舞曲公开PDF并显示block。首页动态分别显示本批新增2份和前批新增5份。线上data.json、logs.json与本地精确一致。",
+  "validation": {
+    "unit_tests_passed": 21,
+    "unit_test_note": "发布、暂存、报告及新增编制边界测试，均使用隔离存储/数据库；报告单曲跳转编号已生成并核对No.2和No.15。",
+    "strict_library_check": "3456 entries and PDFs, 0 errors, 0 warnings",
+    "storage_manifest_check": "3456 files, exact match",
+    "existing_3454_catalog_records_unchanged": true,
+    "existing_homepage_logs_unchanged": true,
+    "existing_storage_records_unchanged": true,
+    "other_review_rows_unchanged_at_publication": true,
+    "original_submissions_unchanged": true,
+    "original_submissions_count": 1,
+    "public_download_sha256_matches": 2,
+    "git_committed_pdf_sha256_matches": 2
+  }
+}

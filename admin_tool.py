@@ -15,11 +15,23 @@ from functools import wraps
 from pathlib import Path, PurePosixPath
 from urllib.parse import urlsplit
 
-from flask import Flask, abort, render_template_string, request, redirect, url_for, flash, session, send_file
+from flask import Flask, abort, render_template, render_template_string, request, redirect, url_for, flash, session, send_file
 from dotenv import load_dotenv
+import brahms_review as brahms_views
 
 # 加载 .env 文件中的环境变量
 load_dotenv()
+
+from score_storage import (  # noqa: E402
+    PublishResult,
+    StoragePublishError,
+    apply_storage_metadata,
+    auto_sync_enabled,
+    manifest_entry_for,
+    manifest_public_ids,
+    publish_entries,
+    update_manifest_entries,
+)
 
 from submission_store import (  # noqa: E402
     create_submission,
@@ -41,6 +53,10 @@ LYRICS_DIR = 'lyrics'
 DATA_FILE = 'data.json'      # 修改这里：指向根目录的 data.json
 LOGS_FILE = 'logs.json'      # 新增这里：指向根目录的 logs.json
 BACKUP_DIR = 'backup'
+BRAHMS_REVIEW_FILE = Path(os.environ.get(
+    'BRAHMS_REVIEW_FILE',
+    'imports/johannes_brahms/manifest.json',
+))
 PENDING_UPLOAD_DIR = Path(os.environ.get('PENDING_UPLOAD_DIR', 'private_uploads'))
 try:
     BACKUP_KEEP_COUNT = max(1, int(os.environ.get('BACKUP_KEEP_COUNT', '10')))
@@ -70,6 +86,7 @@ AUTOMATIC_BACKUP_PATTERN = re.compile(
     r'^data_backup_\d{8}_\d{6}(?:_\d{6})?\.json$'
 )
 CATALOG_LOCK = threading.RLock()
+BRAHMS_REVIEW_LOCK = threading.RLock()
 ALLOWED_EXTENSIONS = {'pdf'}
 ALLOWED_CATEGORIES = {
     '歌剧咏叹调', '歌剧重唱', '宗教声乐作品', '艺术歌曲', '音乐剧选段',
@@ -81,6 +98,7 @@ CANONICAL_LANGUAGES = {
     '意大利语', '德语', '法语', '英语', '俄语', '拉丁语', '捷克语', '汉语',
     '法语/拉丁语',
 }
+BRAHMS_REVIEW_DECISIONS = set(brahms_views.DECISION_LABELS)
 
 ADMIN_USER = os.environ.get('ADMIN_USER', 'admin')
 ADMIN_PASS = os.environ.get('ADMIN_PASS')
@@ -176,6 +194,45 @@ def pending_file_path(filename):
     if root != candidate.parent:
         raise ValueError('投稿文件路径越界')
     return candidate
+
+
+def publish_catalog_items_to_storage(item_paths, *, force=False):
+    """Upload local PDFs and attach verified storage metadata to catalog items."""
+    entries = [
+        manifest_entry_for(
+            path,
+            public_id=item['public_id'],
+            catalog_filename=item['filename'],
+            sha256=sha256,
+        )
+        for item, path, sha256 in item_paths
+    ]
+    result = publish_entries(entries, force=force)
+    if result.enabled:
+        for (item, _path, _sha256), entry in zip(item_paths, result.entries):
+            apply_storage_metadata(item, entry)
+    return result
+
+
+def update_manifest_after_publish(result):
+    """Keep the audit manifest current without invalidating a successful publish."""
+    if not result.enabled or not result.entries:
+        return
+    try:
+        update_manifest_entries(result.entries)
+    except (OSError, StoragePublishError) as error:
+        app.logger.error('R2 已发布，但 storage-manifest.json 更新失败：%s', error)
+        flash('PDF 已同步到 R2，但存储清单更新失败；请稍后重新生成清单。', 'warning')
+
+
+def storage_status_for_item(item, migrated_public_ids):
+    if item.get('storage_key') and item.get('storage_sha256') and item.get('storage_synced_at'):
+        return {'code': 'verified', 'label': 'R2 已校验', 'class': 'success'}
+    if str(item.get('public_id', '')) in migrated_public_ids:
+        return {'code': 'manifest', 'label': 'R2 已同步', 'class': 'success'}
+    if auto_sync_enabled():
+        return {'code': 'pending', 'label': '等待同步', 'class': 'warning'}
+    return {'code': 'disabled', 'label': '仅本地', 'class': 'secondary'}
 
 
 def clean_original_filename(filename):
@@ -276,6 +333,51 @@ def write_json_atomic(path, value, *, indent=None):
     except Exception:
         temp_path.unlink(missing_ok=True)
         raise
+
+
+def load_brahms_review_manifest():
+    """Load the isolated Brahms staging manifest without touching the catalog."""
+    with BRAHMS_REVIEW_LOCK:
+        if not BRAHMS_REVIEW_FILE.is_file():
+            return None
+        try:
+            with BRAHMS_REVIEW_FILE.open('r', encoding='utf-8') as handle:
+                manifest = json.load(handle)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(f'勃拉姆斯审核清单已损坏，已停止写入: {exc}') from exc
+        if not isinstance(manifest, dict) or not isinstance(manifest.get('works', []), list):
+            raise RuntimeError('勃拉姆斯审核清单格式无效')
+        return manifest
+
+
+def brahms_review_rows(manifest):
+    rows = []
+    for work in (manifest or {}).get('works', []):
+        for score_file in work.get('files', []):
+            rows.append({'work': work, 'score_file': score_file})
+    return rows
+
+
+def find_brahms_review_file(manifest, imslp_id):
+    imslp_id = str(imslp_id)
+    for work in manifest.get('works', []):
+        for score_file in work.get('files', []):
+            if str(score_file.get('imslp_id', '')) == imslp_id:
+                return work, score_file
+    return None, None
+
+
+def brahms_review_text(name, label, max_length, required=False):
+    try:
+        return form_text(name, label, max_length, required)
+    except ValueError as exc:
+        abort(400, description=str(exc))
+
+
+def brahms_source_url(value):
+    """Only link to the known source; imported metadata cannot supply scripts."""
+    parsed = urlsplit(str(value or ''))
+    return value if parsed.scheme == 'https' and parsed.hostname == 'imslp.org' else ''
 
 
 def restore_file_bytes(path, previous_content):
@@ -973,12 +1075,23 @@ HTML_TEMPLATE = """
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'health' else '' }}" href="/catalog-health">🩺 资料健康</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'upload' else '' }}" href="/">📤 上传</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'batch_upload' else '' }}" href="/batch-upload">📚 批量上传</a></li>
+        <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'brahms_review' else '' }}" href="/import-review/brahms">🧾 勃拉姆斯预审</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'manage' else '' }}" href="/manage">📋 管理</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'duplicates' else '' }}" href="/duplicates">🔎 重复检查</a></li>
         <li class="nav-item"><a class="nav-link" href="/submissions">🛡️ 投稿审核 {% set queue_count = pending_count|default(0, true) %}{% if queue_count %}<span class="badge bg-danger">{{ queue_count }}</span>{% endif %}</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'trash' else '' }}" href="/trash">♻️ 回收站 {% set recycle_count = deleted_count|default(0, true) %}{% if recycle_count %}<span class="badge bg-secondary">{{ recycle_count }}</span>{% endif %}</a></li>
         <li class="nav-item ms-auto"><a class="nav-link" href="/submit" target="_blank">查看投稿页 ↗</a></li>
     </ul>
+
+    {% if storage_auto_sync is defined %}
+    <div class="alert {{ 'alert-success' if storage_auto_sync else 'alert-warning' }} py-2" role="status">
+        {% if storage_auto_sync %}
+        ☁️ R2 自动同步已启用：新 PDF 只有在上传并校验成功后才会写入公开目录。
+        {% else %}
+        ⚠️ R2 自动同步未启用：新 PDF 目前只会保存在本地，请勿在同步前发布线上目录。
+        {% endif %}
+    </div>
+    {% endif %}
 
     {% if active_tab == 'dashboard' %}
     <div class="row g-3 mb-4">
@@ -1394,6 +1507,7 @@ HTML_TEMPLATE = """
                         <th>曲名</th>
                         <th>作曲家</th>
                         <th>分类/体裁</th>
+                        <th>R2</th>
                         <th>操作</th>
                     </tr>
                 </thead>
@@ -1414,12 +1528,16 @@ HTML_TEMPLATE = """
                             {% endif %}
                         </td>
                         <td>
+                            <span class="badge bg-{{ item.storage_status.class }}">{{ item.storage_status.label }}</span>
+                        </td>
+                        <td>
                             <a href="/edit/{{ item.id }}" class="btn btn-sm btn-outline-primary">✏️</a> 
+                            <form method="post" action="{{ url_for('sync_score_storage', item_id=item.id) }}" class="d-inline"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="next" value="{{ request.full_path }}"><button class="btn btn-sm btn-outline-success" type="submit" aria-label="校验或重新同步 {{ item.title }} 到 R2">☁️</button></form>
                             <form method="post" action="/delete/{{ item.id }}" class="d-inline" onsubmit="return confirm('确定将这条乐谱移入回收站吗？之后可以恢复。')"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="next" value="{{ request.full_path }}"><button class="btn btn-sm btn-outline-danger" type="submit" aria-label="删除 {{ item.title }}">🗑️</button></form>
                         </td>
                     </tr>
                     {% else %}
-                    <tr><td colspan="5" class="text-center p-5 text-muted">没有找到符合条件的乐谱<br><small>请尝试调整筛选条件</small></td></tr>
+                    <tr><td colspan="6" class="text-center p-5 text-muted">没有找到符合条件的乐谱<br><small>请尝试调整筛选条件</small></td></tr>
                     {% endfor %}
                 </tbody>
             </table>
@@ -1483,6 +1601,150 @@ HTML_TEMPLATE = """
 </div></body></html>
 """
 
+
+BRAHMS_REVIEW_TEMPLATE = """
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>勃拉姆斯导入预审</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background:#f8f9fa; }
+        .review-card { scroll-margin-top:1rem; }
+        .review-source { overflow-wrap:anywhere; }
+        .review-warning { white-space:normal; text-align:left; }
+        .review-title { min-width:0; }
+        .review-meta dt { color:#6c757d; font-weight:500; }
+        .review-meta dd { overflow-wrap:anywhere; }
+    </style>
+</head>
+<body>
+<main class="container py-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <div><h2 class="mb-1">🧾 勃拉姆斯导入预审</h2><div class="text-muted">这里只保存审核意见，不下载 PDF，也不会修改正式目录、data.json 或 logs.json。</div><a href="{{ url_for('brahms_import_review', view='samples') }}">← 规则样例</a> · <a href="{{ url_for('brahms_import_review', view='works') }}">按作品查看</a> · <a href="{{ url_for('brahms_import_review', view='issues') }}">集中处理疑点</a></div>
+        <div class="d-flex gap-2"><a class="btn btn-outline-secondary" href="{{ url_for('dashboard') }}">返回后台</a><form method="post" action="/logout"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><button class="btn btn-outline-danger">退出</button></form></div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            {% set alert_type = 'danger' if category in ('error', 'danger') else ('warning' if category == 'warning' else 'success') %}
+            <div class="alert alert-{{ alert_type }}" role="alert">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    {% if not manifest %}
+        <div class="alert alert-info">尚未生成勃拉姆斯元数据清单。请先运行只抓取元数据的导入命令。</div>
+    {% else %}
+        <div class="row g-3 mb-4">
+            <div class="col-6 col-lg"><div class="card h-100"><div class="card-body"><div class="text-muted small">作品页</div><div class="fs-3 fw-bold">{{ stats.works }}</div></div></div></div>
+            <div class="col-6 col-lg"><div class="card h-100"><div class="card-body"><div class="text-muted small">PDF 候选</div><div class="fs-3 fw-bold">{{ stats.total }}</div></div></div></div>
+            <div class="col-6 col-lg"><div class="card h-100 border-warning"><div class="card-body"><div class="text-muted small">待审核</div><div class="fs-3 fw-bold text-warning-emphasis">{{ stats.pending }}</div></div></div></div>
+            <div class="col-6 col-lg"><div class="card h-100 border-success"><div class="card-body"><div class="text-muted small">已批准</div><div class="fs-3 fw-bold text-success">{{ stats.approved }}</div></div></div></div>
+            <div class="col-6 col-lg"><div class="card h-100"><div class="card-body"><div class="text-muted small">已排除</div><div class="fs-3 fw-bold text-secondary">{{ stats.excluded }}</div></div></div></div>
+            <div class="col-6 col-lg"><div class="card h-100 border-danger"><div class="card-body"><div class="text-muted small">有警告</div><div class="fs-3 fw-bold text-danger">{{ stats.warning }}</div></div></div></div>
+        </div>
+
+        <div class="alert alert-light border small d-flex flex-wrap justify-content-between gap-2">
+            <span>清单生成时间：{{ manifest.generated_at|default('')|replace('T', ' ') }}</span>
+            <span><strong>本页不执行下载或发布</strong></span>
+        </div>
+        <p class="small text-muted">本页只审核元数据；隔离试下载与谱面核对结果另行记录。版权依据 IMSLP 页面标注，批准不代表已完成发布许可核验。正式发布时才同步首页更新记录。</p>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <form class="row g-2 align-items-end" method="get">
+                    <input type="hidden" name="view" value="files">
+                    <div class="col-lg-4"><label class="form-label small">搜索</label><input class="form-control" type="search" name="keyword" value="{{ keyword }}" placeholder="标题、作品号、IMSLP号、警告内容"></div>
+                    <div class="col-md-3 col-lg-2"><label class="form-label small">审核状态</label><select class="form-select" name="decision"><option value="all">全部</option>{% for value, label in [('pending','待审核'),('approved','已批准'),('deferred','暂缓'),('excluded','已排除')] %}<option value="{{ value }}" {{ 'selected' if decision == value }}>{{ label }}</option>{% endfor %}</select></div>
+                    <div class="col-md-3 col-lg-2"><label class="form-label small">分类</label><select class="form-select" name="category"><option value="all">全部</option>{% for value in categories %}<option value="{{ value }}" {{ 'selected' if category == value }}>{{ value }}</option>{% endfor %}</select></div>
+                    <div class="col-md-3 col-lg-2"><label class="form-label small">警告</label><select class="form-select" name="warning"><option value="all">全部</option><option value="yes" {{ 'selected' if warning == 'yes' }}>仅有警告</option><option value="no" {{ 'selected' if warning == 'no' }}>仅无警告</option></select></div>
+                    <div class="col-md-3 col-lg-2 d-flex gap-2"><button class="btn btn-primary flex-grow-1">筛选</button><a class="btn btn-outline-secondary" href="{{ url_for('brahms_import_review') }}">重置</a></div>
+                    <input type="hidden" name="per_page" value="{{ per_page }}">
+                    <div class="col-md-4"><label class="form-label small">谱面范围</label><select class="form-select" name="scope"><option value="all">全部</option>{% for value, label in [('individual_movement','单乐章 / 单首'),('selection','多首选段'),('whole_work','整部 / 未识别选段')] %}<option value="{{ value }}" {{ 'selected' if scope == value }}>{{ label }}</option>{% endfor %}</select></div>
+                </form>
+            </div>
+        </div>
+
+        <form id="brahms-batch-form" method="post" action="{{ url_for('batch_update_brahms_review') }}" class="card card-body mb-3 bg-primary-subtle border-primary-subtle">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="next" value="{{ request.full_path }}">
+            <div class="d-flex flex-wrap align-items-center gap-2">
+                <label class="form-check me-2"><input class="form-check-input" id="select-review-page" type="checkbox"> <span class="form-check-label">选择本页</span></label>
+                <strong>已选 <span id="review-selected-count">0</span> 条</strong>
+                <select class="form-select form-select-sm ms-md-3" name="decision" style="width:auto" required><option value="">批量设置状态</option><option value="pending">待审核</option><option value="approved">批准</option><option value="deferred">暂缓</option><option value="excluded">排除</option></select>
+                <button class="btn btn-sm btn-primary" type="submit">应用到所选项目</button>
+                <span class="small text-muted">批量操作仅保存状态；字段修改请逐条保存。版权检查未通过的项目不能批准。</span>
+            </div>
+        </form>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3 small text-muted">
+            <span>筛选后 {{ filtered_total }} 条 · 第 {{ page }} / {{ total_pages }} 页</span>
+            <span>每页：<a class="{{ 'fw-bold' if per_page == 20 }}" href="{{ page_url(1, 20) }}">20</a> · <a class="{{ 'fw-bold' if per_page == 50 }}" href="{{ page_url(1, 50) }}">50</a> · <a class="{{ 'fw-bold' if per_page == 100 }}" href="{{ page_url(1, 100) }}">100</a></span>
+        </div>
+
+        {% for row in rows %}
+        {% set item = row.score_file %}{% set work = row.work %}
+        <article class="card shadow-sm mb-3 review-card" id="imslp-{{ item.imslp_id }}">
+            <div class="card-header bg-white d-flex align-items-start gap-3">
+                <input class="form-check-input mt-1 review-selector" type="checkbox" name="imslp_ids" value="{{ item.imslp_id }}" form="brahms-batch-form" aria-label="选择 IMSLP {{ item.imslp_id }}">
+                <div class="review-title flex-grow-1">
+                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <strong>{{ item.proposed_title }}</strong>
+                        {% if item.decision == 'approved' %}<span class="badge bg-success">已批准</span>{% elif item.decision == 'excluded' %}<span class="badge bg-secondary">已排除</span>{% elif item.decision == 'deferred' %}<span class="badge bg-secondary">暂缓</span>{% else %}<span class="badge bg-warning text-dark">待审核</span>{% endif %}
+                        {% if item.title_scope == 'individual_movement' %}<span class="badge bg-info text-dark">单乐章</span>{% elif item.title_scope == 'selection' %}<span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle">多首选段</span>{% else %}<span class="badge bg-light text-dark border">整部/未识别选段</span>{% endif %}
+                        <span class="badge bg-light text-dark border">{{ item.category }}</span>
+                    </div>
+                    <div class="small text-muted mt-1">IMSLP #{{ item.imslp_id }} · {{ item.description_en or item.description or '无文件说明' }}</div>
+                </div>
+            </div>
+            <div class="card-body">
+                {% if item.warnings %}<div class="mb-3">{% for message in item.warnings %}<span class="badge bg-danger-subtle text-danger-emphasis border border-danger-subtle review-warning me-1 mb-1">{{ message }}</span>{% endfor %}</div>{% endif %}
+                <form method="post" action="{{ url_for('update_brahms_review', imslp_id=item.imslp_id) }}">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="next" value="{{ request.full_path }}#imslp-{{ item.imslp_id }}">
+                    <div class="row g-3">
+                        <div class="col-lg-6"><label class="form-label small fw-semibold">最终标题 *</label><input class="form-control" name="proposed_title" maxlength="200" required value="{{ item.proposed_title }}"></div>
+                        <div class="col-lg-6"><label class="form-label small fw-semibold">所属作品</label><input class="form-control" name="proposed_work" maxlength="200" value="{{ item.proposed_work }}" placeholder="完整总谱留空；单乐章填写总作品标题"></div>
+                        <div class="col-md-4"><label class="form-label small fw-semibold">审核状态</label><select class="form-select" name="decision">{% for value, label in [('pending','待审核'),('approved','批准'),('deferred','暂缓'),('excluded','排除')] %}<option value="{{ value }}" {{ 'selected' if item.decision == value }}>{{ label }}</option>{% endfor %}</select></div>
+                        <div class="col-md-4"><label class="form-label small fw-semibold">一级分类</label><select class="form-select" name="category">{% for value in categories %}<option value="{{ value }}" {{ 'selected' if item.category == value }}>{{ value }}</option>{% endfor %}</select></div>
+                        <div class="col-md-4"><label class="form-label small fw-semibold">子分类</label><input class="form-control" name="sub_category" maxlength="80" value="{{ item.sub_category }}"></div>
+                        <div class="col-md-6"><label class="form-label small fw-semibold">编制（中文简写）</label><input class="form-control" name="voice_types" maxlength="150" value="{{ item.voice_types }}"></div>
+                        <div class="col-md-3"><label class="form-label small fw-semibold">调性</label><input class="form-control" name="tonality" maxlength="80" value="{{ item.tonality }}"></div>
+                        <div class="col-md-3"><label class="form-label small fw-semibold">作品号</label><input class="form-control" value="{{ work.catalogue_number }}" disabled></div>
+                        <div class="col-md-6"><label class="form-label small fw-semibold">歌词语言（器乐留空）</label><input class="form-control" name="language_cn" maxlength="80" value="{{ item.language_cn|default('') }}"></div>
+                        <div class="col-12"><label class="form-label small fw-semibold">审核备注</label><textarea class="form-control" name="review_notes" rows="2" maxlength="1000">{{ item.review_notes }}</textarea></div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3">
+                        <div class="small review-source"><a href="{{ source_url(work.source_url) }}" target="_blank" rel="noopener noreferrer">打开作品页 ↗</a> · <a href="{{ source_url(item.handler_url) }}" target="_blank" rel="noopener noreferrer">打开 IMSLP 文件页 ↗</a> · 版权：{{ item.copyright or '未识别' }}{% if item.arranger %} · 改编：{{ item.arranger }}{% endif %}</div>
+                        <button class="btn btn-outline-primary" type="submit">保存这一条</button>
+                    </div>
+                </form>
+                <details class="mt-3 small"><summary class="text-muted">查看抓取原文</summary><dl class="row review-meta mt-2 mb-0"><dt class="col-sm-2">作品页标题</dt><dd class="col-sm-10">{{ work.display_work_title }}</dd><dt class="col-sm-2">乐章列表</dt><dd class="col-sm-10">{{ work.movements_text or '无' }}</dd><dt class="col-sm-2">原文件名</dt><dd class="col-sm-10">{{ item.original_filename or '未提供' }}</dd><dt class="col-sm-2">出版信息</dt><dd class="col-sm-10">{{ item.publisher or '未提供' }}</dd></dl></details>
+            </div>
+        </article>
+        {% else %}
+            <div class="alert alert-light border text-center text-muted py-5">没有符合当前筛选条件的项目。</div>
+        {% endfor %}
+
+        {% if total_pages > 1 %}<nav aria-label="审核分页"><ul class="pagination justify-content-center flex-wrap"><li class="page-item {{ 'disabled' if page == 1 }}"><a class="page-link" href="{{ page_url(page - 1, per_page) }}">上一页</a></li>{% for number in page_numbers %}<li class="page-item {{ 'active' if number == page }}"><a class="page-link" href="{{ page_url(number, per_page) }}">{{ number }}</a></li>{% endfor %}<li class="page-item {{ 'disabled' if page == total_pages }}"><a class="page-link" href="{{ page_url(page + 1, per_page) }}">下一页</a></li></ul></nav>{% endif %}
+    {% endif %}
+</main>
+<script>
+(() => {
+    const toggle = document.getElementById('select-review-page');
+    const items = Array.from(document.querySelectorAll('.review-selector'));
+    const count = document.getElementById('review-selected-count');
+    const refresh = () => { if (count) count.textContent = items.filter(item => item.checked).length; };
+    if (toggle) toggle.addEventListener('change', () => { items.forEach(item => { item.checked = toggle.checked; }); refresh(); });
+    items.forEach(item => item.addEventListener('change', refresh));
+})();
+</script>
+</body>
+</html>
+"""
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -1496,6 +1758,304 @@ def login():
 def logout():
     session.pop('logged_in', None)
     return redirect(url_for('login'))
+
+
+@app.route('/import-review/brahms')
+@login_required
+def brahms_import_review():
+    manifest = load_brahms_review_manifest()
+    if manifest is None:
+        return render_template_string(BRAHMS_REVIEW_TEMPLATE, manifest=None)
+
+    # Old bookmarked filters retain the detailed view; new entry opens samples.
+    legacy_filters = any(key in request.args for key in ('keyword', 'scope', 'warning', 'page'))
+    view = request.args.get('view', 'files' if legacy_filters else 'samples')
+    if view in {'samples', 'works', 'issues'}:
+        return brahms_review_overview(manifest, view)
+
+    all_rows = brahms_review_rows(manifest)
+    decision = request.args.get('decision', 'all')
+    if decision not in BRAHMS_REVIEW_DECISIONS | {'all'}:
+        decision = 'all'
+    category = request.args.get('category', 'all')
+    if category not in ALLOWED_CATEGORIES | {'all'}:
+        category = 'all'
+    warning = request.args.get('warning', 'all')
+    if warning not in {'all', 'yes', 'no'}:
+        warning = 'all'
+    scope = request.args.get('scope', 'all')
+    if scope not in {'all', 'individual_movement', 'selection', 'whole_work'}:
+        scope = 'all'
+    keyword = request.args.get('keyword', '').strip()[:200]
+    keyword_normalized = normalize_catalog_text(keyword)
+    exact_file = request.args.get('file', '').strip()
+
+    def matches(row):
+        item = row['score_file']
+        work = row['work']
+        if exact_file and str(item.get('imslp_id')) != exact_file:
+            return False
+        if decision != 'all' and item.get('decision', 'pending') != decision:
+            return False
+        if category != 'all' and item.get('category') != category:
+            return False
+        if scope != 'all' and item.get('title_scope') != scope:
+            return False
+        has_warning = bool(item.get('warnings'))
+        if warning == 'yes' and not has_warning:
+            return False
+        if warning == 'no' and has_warning:
+            return False
+        if keyword_normalized:
+            search_blob = normalize_catalog_text(' '.join(str(value or '') for value in (
+                item.get('proposed_title'), item.get('proposed_work'),
+                work.get('display_work_title'), work.get('catalogue_number'),
+                item.get('imslp_id'), item.get('description_en'),
+                item.get('description'), item.get('original_filename'),
+                item.get('review_notes'), ' '.join(item.get('warnings', [])),
+            )))
+            if keyword_normalized not in search_blob:
+                return False
+        return True
+
+    filtered_rows = [row for row in all_rows if matches(row)]
+    filtered_rows.sort(key=lambda row: (
+        normalize_catalog_text(row['score_file'].get('proposed_title')),
+        int(row['score_file'].get('imslp_id') or 0),
+    ))
+    try:
+        per_page = int(request.args.get('per_page', '20'))
+    except ValueError:
+        per_page = 20
+    if per_page not in {20, 50, 100}:
+        per_page = 20
+    try:
+        page = max(1, int(request.args.get('page', '1')))
+    except ValueError:
+        page = 1
+    filtered_total = len(filtered_rows)
+    total_pages = max(1, (filtered_total + per_page - 1) // per_page)
+    page = min(page, total_pages)
+    start = (page - 1) * per_page
+    rows = filtered_rows[start:start + per_page]
+    page_numbers = list(range(max(1, page - 2), min(total_pages, page + 2) + 1))
+    decisions = Counter(row['score_file'].get('decision', 'pending') for row in all_rows)
+    stats = {
+        'works': len(manifest.get('works', [])),
+        'total': len(all_rows),
+        'pending': decisions.get('pending', 0),
+        'approved': decisions.get('approved', 0),
+        'excluded': decisions.get('excluded', 0),
+        'warning': sum(bool(row['score_file'].get('warnings')) for row in all_rows),
+    }
+
+    def page_url(page_number, per_page_override):
+        return url_for(
+            'brahms_import_review', view='files', file=exact_file, keyword=keyword, decision=decision,
+            category=category, warning=warning, scope=scope,
+            page=max(1, min(int(page_number), total_pages)),
+            per_page=per_page_override,
+        )
+
+    return render_template_string(
+        BRAHMS_REVIEW_TEMPLATE, manifest=manifest, rows=rows, stats=stats,
+        keyword=keyword, decision=decision, category=category, warning=warning, scope=scope,
+        categories=sorted(ALLOWED_CATEGORIES), filtered_total=filtered_total,
+        page=page, per_page=per_page, total_pages=total_pages,
+        page_numbers=page_numbers, page_url=page_url, source_url=brahms_source_url,
+        exact_file=exact_file,
+    )
+
+
+def brahms_review_overview(manifest, view):
+    all_rows = brahms_views.rows_for(manifest)
+    counts = Counter(r['score_file'].get('decision', 'pending') for r in all_rows)
+    decision = request.args.get('decision', 'pending' if view == 'issues' else 'active')
+    if decision not in BRAHMS_REVIEW_DECISIONS | {'all', 'active'}:
+        decision = 'active'
+    keyword = request.args.get('keyword', '').strip()[:200]
+    filtered = brahms_views.filter_rows(all_rows, decision=decision, keyword=keyword)
+    works = brahms_views.grouped_works(filtered) if view == 'works' else []
+    work_key = request.args.get('work', '')
+    selected_work = next((w for w in works if w['key'] == work_key), None)
+    if work_key and view == 'works' and selected_work is None:
+        abort(404, description='该作品不存在或不符合当前筛选条件')
+    issues = brahms_views.issue_groups(filtered) if view == 'issues' else []
+    selected_issue = next((g for g in issues if g['key'] == request.args.get('issue')), None)
+    if selected_issue is None and issues:
+        selected_issue = issues[0]
+    samples = brahms_views.sample_rows(all_rows)
+    signature = brahms_views.style_signature(samples)
+    confirmed = manifest.get('review_workflow', {}).get('style_confirmation', {})
+    stats = dict(counts, works=len(manifest.get('works', [])), pending_issues=sum(
+        bool(r['score_file'].get('warnings')) and r['score_file'].get('decision') == 'pending' for r in all_rows
+    ))
+    for status in BRAHMS_REVIEW_DECISIONS:
+        stats.setdefault(status, 0)
+    return render_template(
+        'brahms_review.html', view=view, manifest=manifest, stats=stats,
+        decision=decision, keyword=keyword, works=works, selected_work=selected_work,
+        issues=issues, selected_issue=selected_issue, samples=samples,
+        style_signature=signature, style_confirmed=confirmed.get('signature') == signature,
+        decision_labels=brahms_views.DECISION_LABELS, categories=sorted(ALLOWED_CATEGORIES),
+        source_url=brahms_source_url,
+        scope_labels={'whole_work': '整部 / 范围待确认', 'individual_movement': '单乐章 / 单首', 'selection': '多首选段'},
+        edit_fields=[('proposed_title', '最终标题', 200), ('proposed_work', '所属作品', 200),
+                     ('category', '分类', 80), ('sub_category', '子分类', 80),
+                     ('voice_types', '中文编制 / 几重唱', 150), ('tonality', '调性', 80),
+                     ('language_cn', '歌词语言（器乐留空）', 80)],
+    )
+
+
+@app.route('/import-review/brahms/style', methods=['POST'])
+@login_required
+def confirm_brahms_style():
+    with BRAHMS_REVIEW_LOCK:
+        manifest = load_brahms_review_manifest()
+        if manifest is None:
+            abort(404)
+        samples = brahms_views.sample_rows(brahms_views.rows_for(manifest))
+        signature = brahms_views.style_signature(samples)
+        if not samples or request.form.get('signature') != signature:
+            abort(409, description='样例已变化，请刷新页面重新确认')
+        manifest.setdefault('review_workflow', {})['style_confirmation'] = {
+            'signature': signature, 'version': brahms_views.STYLE_VERSION,
+            'confirmed_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            'sample_ids': [r['score_file']['imslp_id'] for r in samples],
+        }
+        write_json_atomic(BRAHMS_REVIEW_FILE, manifest, indent=2)
+    flash('已记录这组整理风格的确认；没有批准、下载或发布任何文件。')
+    return redirect(url_for('brahms_import_review', view='samples'))
+
+
+@app.route('/import-review/brahms/group/<group_key>', methods=['POST'])
+@login_required
+def update_brahms_group(group_key):
+    if request.form.get('confirm_group') != '1':
+        abort(400, description='请确认共同信息的适用范围')
+    with BRAHMS_REVIEW_LOCK:
+        manifest = load_brahms_review_manifest()
+        if manifest is None:
+            abort(404)
+        group = brahms_views.find_group(manifest, group_key)
+        if group is None:
+            abort(409, description='分组已变化，请刷新后重新编辑')
+        ids = set(request.form.getlist('imslp_ids'))
+        rows = [r for r in group['rows'] if str(r['score_file']['imslp_id']) in ids]
+        if not rows or len(rows) != len(ids) or request.form.get('signature') != brahms_views.row_signature(rows):
+            abort(409, description='文件范围或审核内容已变化，请刷新页面')
+        updates = {
+            'proposed_title': brahms_review_text('proposed_title', '最终标题', 200, required=True),
+            'proposed_work': brahms_review_text('proposed_work', '所属作品', 200),
+            'category': brahms_review_text('category', '分类', 80, required=True),
+            'sub_category': brahms_review_text('sub_category', '子分类', 80),
+            'voice_types': brahms_review_text('voice_types', '编制', 150),
+            'tonality': brahms_review_text('tonality', '调性', 80),
+            'language_cn': brahms_review_text('language_cn', '歌词语言', 80),
+        }
+        if updates['category'] not in ALLOWED_CATEGORIES:
+            abort(400, description='无效分类')
+        if updates['sub_category'] == updates['category']:
+            updates['sub_category'] = ''
+        for row in rows:
+            row['score_file'].update(updates, review_edited=True,
+                reviewed_at=datetime.datetime.now(datetime.timezone.utc).isoformat())
+        write_json_atomic(BRAHMS_REVIEW_FILE, manifest, indent=2)
+    flash(f'已更新这 {len(rows)} 个版本的共同信息，审核状态没有改变。')
+    return redirect(safe_next_url(request.form.get('next')) or url_for('brahms_import_review', view='works'))
+
+
+@app.route('/import-review/brahms/issue/<issue_key>/defer', methods=['POST'])
+@login_required
+def defer_brahms_issue(issue_key):
+    with BRAHMS_REVIEW_LOCK:
+        manifest = load_brahms_review_manifest()
+        if manifest is None:
+            abort(404)
+        groups = brahms_views.issue_groups(brahms_views.filter_rows(brahms_views.rows_for(manifest), decision='pending'))
+        group = next((g for g in groups if g['key'] == issue_key), None)
+        if group is None or request.form.get('signature') != group['signature']:
+            abort(409, description='该组待审核文件已变化，请刷新页面')
+        for row in group['pending']:
+            row['score_file'].update(decision='deferred', review_edited=True,
+                reviewed_at=datetime.datetime.now(datetime.timezone.utc).isoformat())
+        write_json_atomic(BRAHMS_REVIEW_FILE, manifest, indent=2)
+    flash(f"已暂缓 {len(group['pending'])} 个文件；未删除文件，可在暂缓列表恢复待审核。")
+    return redirect(url_for('brahms_import_review', view='issues', decision='pending'))
+
+
+@app.route('/import-review/brahms/<imslp_id>', methods=['POST'])
+@login_required
+def update_brahms_review(imslp_id):
+    with BRAHMS_REVIEW_LOCK:
+        manifest = load_brahms_review_manifest()
+        if manifest is None:
+            abort(404, description='尚未生成勃拉姆斯审核清单')
+        _work, item = find_brahms_review_file(manifest, imslp_id)
+        if item is None:
+            abort(404, description='审核项目不存在')
+        decision = brahms_review_text('decision', '审核状态', 20, required=True)
+        if decision not in BRAHMS_REVIEW_DECISIONS:
+            abort(400, description='无效审核状态')
+        if decision == 'approved' and not item.get('eligible'):
+            abort(400, description='当前版权状态不适合匿名下载，不能批准')
+        category = brahms_review_text('category', '一级分类', 80, required=True)
+        if category not in ALLOWED_CATEGORIES:
+            abort(400, description='无效分类')
+        item.update({
+            'proposed_title': brahms_review_text('proposed_title', '最终标题', 200, required=True),
+            'proposed_work': brahms_review_text('proposed_work', '所属作品', 200),
+            'decision': decision,
+            'category': category,
+            'sub_category': brahms_review_text('sub_category', '子分类', 80),
+            'voice_types': brahms_review_text('voice_types', '编制', 150),
+            'tonality': brahms_review_text('tonality', '调性', 80),
+            'language_cn': brahms_review_text('language_cn', '歌词语言', 80),
+            'review_notes': brahms_review_text('review_notes', '审核备注', 1000),
+            'review_edited': True,
+            'reviewed_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        })
+        write_json_atomic(BRAHMS_REVIEW_FILE, manifest, indent=2)
+    flash(f"已保存 IMSLP #{imslp_id}：{item['proposed_title']}")
+    return redirect(safe_next_url(request.form.get('next')) or url_for('brahms_import_review'))
+
+
+@app.route('/import-review/brahms/batch', methods=['POST'])
+@login_required
+def batch_update_brahms_review():
+    selected = list(dict.fromkeys(request.form.getlist('imslp_ids')))
+    if not selected:
+        flash('请至少选择一条审核项目。', 'warning')
+        return redirect(safe_next_url(request.form.get('next')) or url_for('brahms_import_review'))
+    decision = brahms_review_text('decision', '审核状态', 20, required=True)
+    if decision not in BRAHMS_REVIEW_DECISIONS:
+        abort(400, description='无效审核状态')
+    changed = 0
+    skipped = 0
+    selected_set = set(selected)
+    with BRAHMS_REVIEW_LOCK:
+        manifest = load_brahms_review_manifest()
+        if manifest is None:
+            abort(404, description='尚未生成勃拉姆斯审核清单')
+        for row in brahms_review_rows(manifest):
+            item = row['score_file']
+            if str(item.get('imslp_id', '')) not in selected_set:
+                continue
+            if decision == 'approved' and not item.get('eligible'):
+                skipped += 1
+                continue
+            item['decision'] = decision
+            item['review_edited'] = True
+            item['reviewed_at'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            changed += 1
+        if changed:
+            write_json_atomic(BRAHMS_REVIEW_FILE, manifest, indent=2)
+    label = brahms_views.DECISION_LABELS[decision]
+    message = f'已将 {changed} 条审核项目设为“{label}”。'
+    if skipped:
+        message += f' 另有 {skipped} 条因版权状态不适合匿名下载而跳过。'
+    flash(message, 'warning' if skipped else 'success')
+    return redirect(safe_next_url(request.form.get('next')) or url_for('brahms_import_review'))
 
 
 @app.errorhandler(413)
@@ -1776,6 +2336,7 @@ def approve_submission(submission_id):
 
     has_lyrics = False
     data_saved = False
+    storage_result = PublishResult(enabled=False)
     try:
         shutil.move(str(source_path), str(target_path))
         has_lyrics = save_lyrics(
@@ -1800,12 +2361,15 @@ def approve_submission(submission_id):
             'date': datetime.date.today().isoformat(),
             'has_lyrics': has_lyrics,
         }
+        storage_result = publish_catalog_items_to_storage(
+            [(item, target_path, submission.get('sha256'))]
+        )
         music_data.append(item)
         add_log(change_log, 'add', f"审核通过投稿 #{submission_id}: {item['title']}")
         save_all(music_data, change_log)
         data_saved = True
         mark_approved(submission_id, new_id, item['filename'], review_note)
-    except Exception:
+    except Exception as error:
         if data_saved:
             save_all(original_data, original_log)
         lyric_path = Path(LYRICS_DIR) / f'{new_id}.json'
@@ -1813,9 +2377,18 @@ def approve_submission(submission_id):
             lyric_path.unlink()
         if target_path.exists() and not source_path.exists():
             shutil.move(str(target_path), str(source_path))
+        if isinstance(error, StoragePublishError):
+            flash(str(error) + '；投稿仍保持待审核状态。', 'error')
+            return redirect(url_for('review_submission', submission_id=submission_id))
         raise
 
-    flash(f"投稿 #{submission_id} 已通过并发布。", 'success')
+    update_manifest_after_publish(storage_result)
+    message = f"投稿 #{submission_id} 已通过并发布。"
+    if storage_result.enabled:
+        message += f" {storage_result.detail}。"
+    else:
+        flash(storage_result.detail, 'warning')
+    flash(message, 'success')
     return redirect(url_for('review_submission', submission_id=submission_id))
 
 
@@ -1850,6 +2423,7 @@ def restore_submission(submission_id):
 def batch_upload():
     staging_dir = None
     published_paths = []
+    storage_result = PublishResult(enabled=False)
     if request.method == 'POST':
         try:
             composer = form_text('composer', '默认作曲家', 200)
@@ -1936,6 +2510,7 @@ def batch_upload():
                 prepared.append({
                     'staging_path': staging_path,
                     'target_path': target_path,
+                    'sha256': sha256,
                     'item': {
                         'id': new_id + index,
                         'public_id': public_id,
@@ -1969,6 +2544,12 @@ def batch_upload():
                 published_paths.append(target_path)
 
             new_items = [entry['item'] for entry in prepared]
+            storage_result = publish_catalog_items_to_storage(
+                [
+                    (entry['item'], entry['target_path'], entry['sha256'])
+                    for entry in prepared
+                ]
+            )
             music_data.extend(new_items)
             title_preview = '、'.join(item['title'] for item in new_items[:3])
             if len(new_items) > 3:
@@ -1984,12 +2565,18 @@ def batch_upload():
                     rollback_errors.append(f'{path.name}: {rollback_error}')
             if rollback_errors:
                 raise RuntimeError('批量上传失败，且文件回滚未完整完成：' + '; '.join(rollback_errors)) from error
-            if isinstance(error, ValueError):
+            if isinstance(error, (ValueError, StoragePublishError)):
                 flash(str(error), 'error')
             else:
                 raise
         else:
-            flash(f'已成功批量发布 {len(prepared)} 份乐谱。', 'success')
+            update_manifest_after_publish(storage_result)
+            message = f'已成功批量发布 {len(prepared)} 份乐谱。'
+            if storage_result.enabled:
+                message += f' {storage_result.detail}。'
+            else:
+                flash(storage_result.detail, 'warning')
+            flash(message, 'success')
             if possible_duplicates:
                 flash(f'其中 {possible_duplicates} 份与目录中的“曲名 + 作曲家”相同，请到重复检查页面核对。', 'warning')
             return redirect(url_for('manage'))
@@ -2016,6 +2603,7 @@ def batch_upload():
         batch_max_files=BATCH_UPLOAD_MAX_FILES,
         batch_max_mb=BATCH_UPLOAD_MAX_MB,
         batch_max_bytes=BATCH_UPLOAD_MAX_BYTES,
+        storage_auto_sync=auto_sync_enabled(),
         pending_count=submission_counts()['pending'],
         deleted_count=len(load_deleted_entries()),
     )
@@ -2062,22 +2650,33 @@ def index():
             "date": datetime.date.today().strftime("%Y-%m-%d"),
             "has_lyrics": has_lyrics
         }
-        music_data.append(item)
-        add_log(change_log, 'add', f"添加: {item['title']}")
+        storage_result = PublishResult(enabled=False)
         try:
+            storage_result = publish_catalog_items_to_storage([(item, target_path, None)])
+            music_data.append(item)
+            add_log(change_log, 'add', f"添加: {item['title']}")
             save_all(music_data, change_log)
-        except Exception:
+        except Exception as error:
             if target_path.exists():
                 target_path.unlink()
             lyric_path = Path(LYRICS_DIR) / f"{new_id}.json"
             if lyric_path.exists():
                 lyric_path.unlink()
+            if isinstance(error, StoragePublishError):
+                flash(str(error) + '；没有写入公开目录。', 'error')
+                return redirect(url_for('index'))
             raise
-        flash('成功')
+        update_manifest_after_publish(storage_result)
+        if storage_result.enabled:
+            flash(f'发布成功；{storage_result.detail}。', 'success')
+        else:
+            flash('本地保存成功。', 'success')
+            flash(storage_result.detail, 'warning')
         return redirect(url_for('index'))
     return render_template_string(
         HTML_TEMPLATE.replace("{% include 'category_select.html' %}", CATEGORY_SELECT_HTML),
         active_tab='upload', item=None, lyrics=None,
+        storage_auto_sync=auto_sync_enabled(),
         pending_count=submission_counts()['pending'],
         deleted_count=len(load_deleted_entries()),
     )
@@ -2121,7 +2720,10 @@ def manage():
     total_pages = max(1, (total_items + per_page - 1) // per_page)
     page = min(page, total_pages)
     start = (page - 1) * per_page
-    items = data[start:start + per_page]
+    migrated_public_ids = manifest_public_ids()
+    items = [dict(item) for item in data[start:start + per_page]]
+    for item in items:
+        item['storage_status'] = storage_status_for_item(item, migrated_public_ids)
     page_numbers = list(range(max(1, page - 2), min(total_pages, page + 2) + 1))
 
     return render_template_string(
@@ -2130,9 +2732,36 @@ def manage():
         page=page, per_page=per_page, total_items=total_items,
         total_pages=total_pages, page_numbers=page_numbers,
         categories=sorted(ALLOWED_CATEGORIES), languages=sorted(CANONICAL_LANGUAGES),
+        storage_auto_sync=auto_sync_enabled(),
         pending_count=submission_counts()['pending'],
         deleted_count=len(load_deleted_entries()),
     )
+
+
+@app.route('/storage/sync/<int:item_id>', methods=['POST'])
+@login_required
+@catalog_write_locked
+def sync_score_storage(item_id):
+    music_data, change_log = load_data_and_log()
+    item = next((candidate for candidate in music_data if int(candidate['id']) == item_id), None)
+    if not item:
+        abort(404)
+
+    try:
+        source_path = score_file_path(item['filename'])
+        result = publish_catalog_items_to_storage(
+            [(item, source_path, None)],
+            force=True,
+        )
+        add_log(change_log, 'storage_sync', f"R2 校验/同步: {item['title']}")
+        save_all(music_data, change_log)
+        update_manifest_after_publish(result)
+    except (OSError, ValueError, StoragePublishError) as error:
+        flash(f'R2 同步失败：{error}', 'error')
+    else:
+        flash(f'{item["title"]}：{result.detail}。', 'success')
+
+    return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
 
 
 @app.route('/batch-update', methods=['POST'])

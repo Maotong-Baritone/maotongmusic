@@ -1,0 +1,187 @@
+{
+  "observed_at": "2026-09-03T23:53:43+00:00",
+  "method": "Supported browser visible IMSLP work page; no source downloads",
+  "backup_directory": "backup\\import_publications\\brahms-authorship-hold-20260903_175343_233157",
+  "changes": [
+    {
+      "imslp_id": "57516",
+      "source_url": "https://imslp.org/wiki/Study_for_the_Left_Hand%2C_Anh.4/2_%28Brahms%2C_Johannes%29",
+      "before": {
+        "imslp_id": "57516",
+        "description": "完整乐谱",
+        "description_en": "Complete Score",
+        "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/57516",
+        "original_filename": "PMLP06550-Brahms Schubert Impromptu BrGA.pdf",
+        "file_info": "*#57516 - 1.06MB, 9 页 - 0.0/10 2 4 6 8 10 (-) - V/V*/V - 2465×⇩ - Hobbypianist",
+        "section": "tabScore1",
+        "heading_context": {
+          "h3": "Scores",
+          "h4": "",
+          "h5": "",
+          "h6": ""
+        },
+        "copyright": "Public Domain",
+        "publisher": "Sämtliche Werke, Band 15: Studien und Bearbeitungen für Klavier Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 74.",
+        "arranger": "",
+        "editor": "Eusebius Mandyczewski (1857–1929)",
+        "eligible": true,
+        "skip_reason": "",
+        "proposed_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+        "proposed_work": "",
+        "title_scope": "whole_work",
+        "movement_number": null,
+        "category": "器乐独奏",
+        "sub_category": "练习曲",
+        "voice_types": "钢琴独奏",
+        "tonality": "降E大调",
+        "language_cn": "",
+        "warnings": [],
+        "decision": "pending",
+        "review_notes": "",
+        "review_edited": false,
+        "public_id": "1e5fb20a-e729-4bb6-aac3-b1744fa6fc57",
+        "source_references": [
+          {
+            "work_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+            "source_url": "https://imslp.org/wiki/Study_for_the_Left_Hand%2C_Anh.4/2_%28Brahms%2C_Johannes%29",
+            "description": "完整乐谱"
+          }
+        ]
+      },
+      "after": {
+        "imslp_id": "57516",
+        "description": "完整乐谱",
+        "description_en": "Complete Score",
+        "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/57516",
+        "original_filename": "PMLP06550-Brahms Schubert Impromptu BrGA.pdf",
+        "file_info": "*#57516 - 1.06MB, 9 页 - 0.0/10 2 4 6 8 10 (-) - V/V*/V - 2465×⇩ - Hobbypianist",
+        "section": "tabScore1",
+        "heading_context": {
+          "h3": "Scores",
+          "h4": "",
+          "h5": "",
+          "h6": ""
+        },
+        "copyright": "Public Domain",
+        "publisher": "Sämtliche Werke, Band 15: Studien und Bearbeitungen für Klavier Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 74.",
+        "arranger": "",
+        "editor": "Eusebius Mandyczewski (1857–1929)",
+        "eligible": true,
+        "skip_reason": "",
+        "proposed_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+        "proposed_work": "",
+        "title_scope": "whole_work",
+        "movement_number": null,
+        "category": "器乐独奏",
+        "sub_category": "练习曲",
+        "voice_types": "钢琴独奏",
+        "tonality": "降E大调",
+        "language_cn": "",
+        "warnings": [
+          "作者归属存疑：IMSLP作品页明确提示 Brahms authorship doubtful"
+        ],
+        "decision": "deferred",
+        "review_notes": "2026-09-03 通过受支持浏览器实时核对：作品页 Authorship Note 明确指出勃拉姆斯作者归属存疑；额外信息说明真实性受到质疑。两份候选暂缓，未下载或发布；后续不可仅凭文件级 Public Domain 和钢琴独奏标签自动批准。",
+        "review_edited": true,
+        "public_id": "1e5fb20a-e729-4bb6-aac3-b1744fa6fc57",
+        "source_references": [
+          {
+            "work_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+            "source_url": "https://imslp.org/wiki/Study_for_the_Left_Hand%2C_Anh.4/2_%28Brahms%2C_Johannes%29",
+            "description": "完整乐谱"
+          }
+        ]
+      }
+    },
+    {
+      "imslp_id": "1046970",
+      "source_url": "https://imslp.org/wiki/Study_for_the_Left_Hand%2C_Anh.4/2_%28Brahms%2C_Johannes%29",
+      "before": {
+        "imslp_id": "1046970",
+        "description": "完整乐谱",
+        "description_en": "Complete Score",
+        "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/1046970",
+        "original_filename": "PMLP6550-brahms piano works vol.3 3.pdf",
+        "file_info": "*#1046970 - 0.92MB, 9 页 - 0.0/10 2 4 6 8 10 (-) - V/V/V - 8×⇩ - Feduol",
+        "section": "tabScore1",
+        "heading_context": {
+          "h3": "Scores",
+          "h4": "",
+          "h5": "",
+          "h6": ""
+        },
+        "copyright": "Public Domain",
+        "publisher": "Sämtliche Werke, Band 15: Studien und Bearbeitungen für Klavier Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 74.",
+        "arranger": "",
+        "editor": "Eusebius Mandyczewski (1857–1929)",
+        "eligible": true,
+        "skip_reason": "",
+        "proposed_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+        "proposed_work": "",
+        "title_scope": "whole_work",
+        "movement_number": null,
+        "category": "器乐独奏",
+        "sub_category": "练习曲",
+        "voice_types": "钢琴独奏",
+        "tonality": "降E大调",
+        "language_cn": "",
+        "warnings": [],
+        "decision": "pending",
+        "review_notes": "",
+        "review_edited": false,
+        "public_id": "8fbde3eb-fe32-4432-bfb0-19954e6aa2a2",
+        "source_references": [
+          {
+            "work_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+            "source_url": "https://imslp.org/wiki/Study_for_the_Left_Hand%2C_Anh.4/2_%28Brahms%2C_Johannes%29",
+            "description": "完整乐谱"
+          }
+        ]
+      },
+      "after": {
+        "imslp_id": "1046970",
+        "description": "完整乐谱",
+        "description_en": "Complete Score",
+        "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/1046970",
+        "original_filename": "PMLP6550-brahms piano works vol.3 3.pdf",
+        "file_info": "*#1046970 - 0.92MB, 9 页 - 0.0/10 2 4 6 8 10 (-) - V/V/V - 8×⇩ - Feduol",
+        "section": "tabScore1",
+        "heading_context": {
+          "h3": "Scores",
+          "h4": "",
+          "h5": "",
+          "h6": ""
+        },
+        "copyright": "Public Domain",
+        "publisher": "Sämtliche Werke, Band 15: Studien und Bearbeitungen für Klavier Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 74.",
+        "arranger": "",
+        "editor": "Eusebius Mandyczewski (1857–1929)",
+        "eligible": true,
+        "skip_reason": "",
+        "proposed_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+        "proposed_work": "",
+        "title_scope": "whole_work",
+        "movement_number": null,
+        "category": "器乐独奏",
+        "sub_category": "练习曲",
+        "voice_types": "钢琴独奏",
+        "tonality": "降E大调",
+        "language_cn": "",
+        "warnings": [
+          "作者归属存疑：IMSLP作品页明确提示 Brahms authorship doubtful"
+        ],
+        "decision": "deferred",
+        "review_notes": "2026-09-03 通过受支持浏览器实时核对：作品页 Authorship Note 明确指出勃拉姆斯作者归属存疑；额外信息说明真实性受到质疑。两份候选暂缓，未下载或发布；后续不可仅凭文件级 Public Domain 和钢琴独奏标签自动批准。",
+        "review_edited": true,
+        "public_id": "8fbde3eb-fe32-4432-bfb0-19954e6aa2a2",
+        "source_references": [
+          {
+            "work_title": "Study for the Left Hand, Anh. 4/2, Anh. IV/2",
+            "source_url": "https://imslp.org/wiki/Study_for_the_Left_Hand%2C_Anh.4/2_%28Brahms%2C_Johannes%29",
+            "description": "完整乐谱"
+          }
+        ]
+      }
+    }
+  ]
+}

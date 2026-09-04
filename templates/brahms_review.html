@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>勃拉姆斯导入预审</title>
+  <style>
+    :root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#243247;background:#f5f7fb;line-height:1.5}
+    *{box-sizing:border-box}body{margin:0}main{max-width:1240px;margin:auto;padding:28px 24px 60px}
+    h1{font-size:26px;margin:0 0 5px}h2{font-size:20px;margin:0 0 10px}h3{font-size:16px;margin:0}
+    a{color:#305cbe;text-decoration:none}a:hover{text-decoration:underline}button,input,select{font:inherit}
+    button,.button{display:inline-block;border:1px solid #c7d2e3;background:white;border-radius:7px;padding:7px 12px;color:#244e9c;cursor:pointer;font-size:14px}
+    button:hover,.button:hover{background:#eff4fe;text-decoration:none}.primary{background:#315dbc;color:white;border-color:#315dbc}.primary:hover{background:#244b9e}
+    .muted{color:#65738a;font-size:13px}.header,.toolbar,.between{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+    .header{margin-bottom:20px}.notice{padding:12px 16px;background:#eaf1fd;border:1px solid #d2dff7;border-radius:9px;font-size:14px;margin:14px 0}
+    .notice.success{background:#eaf7f0;border-color:#c7e6d5}.notice.warning{background:#fff7e7;border-color:#efdcaa}
+    .stats{display:flex;gap:22px;flex-wrap:wrap;margin:15px 0}.stats strong{font-size:22px;margin-right:5px}.stats span{font-size:13px;color:#65738a}
+    nav{display:flex;gap:8px;border-bottom:1px solid #dce3ee;margin:22px 0 20px;flex-wrap:wrap}nav a{padding:11px 15px;color:#5b687c;border-bottom:3px solid transparent}nav a.active{border-color:#315dbc;color:#254b9a;font-weight:600}
+    .card{background:white;border:1px solid #dce3ee;border-radius:10px;padding:18px;margin:12px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid .card{margin:0}
+    .pill{display:inline-block;padding:2px 8px;background:#eff3fa;color:#4b5c78;border-radius:5px;font-size:12px;margin:2px}.pill.warn{background:#fff0d7;color:#78531c}.pill.approved{background:#e4f3e9;color:#286841}.pill.deferred{background:#eeebfa;color:#605182}
+    .sample-title{font-size:17px;margin:13px 0 8px;overflow-wrap:anywhere}.sample-meta{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}.sample-footer{margin-top:14px;padding-top:10px;border-top:1px solid #edf0f5;font-size:13px;display:flex;justify-content:space-between;gap:12px}
+    .rule-list{display:flex;gap:20px;flex-wrap:wrap;margin:10px 0;font-size:14px}.rule-list span{max-width:360px}
+    input,select{border:1px solid #c7d2e3;border-radius:6px;padding:7px 9px;max-width:100%;background:#fff}input[type=text],input[type=search]{width:100%}
+    label{font-size:13px;display:block;color:#56647a;margin:7px 0 3px}.filters{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.filters .search{flex:1;min-width:220px}
+    .table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;color:#67758a;font-size:12px;font-weight:500;background:#f8fafc}td,th{padding:11px 10px;border-bottom:1px solid #e8edf4;vertical-align:top}td.title{min-width:260px;overflow-wrap:anywhere}.nowrap{white-space:nowrap}
+    details{border:1px solid #e0e6ef;border-radius:8px;background:#fff;margin:10px 0}summary{padding:12px 14px;cursor:pointer;font-weight:500;overflow-wrap:anywhere}details[open]>summary{border-bottom:1px solid #e8edf4}.detail-body{padding:12px 14px}.versions{background:#fafbfd}.edit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}.span2{grid-column:1/-1}
+    .issues{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px}.issue-nav a{display:block;border:1px solid #dce3ee;border-radius:9px;padding:13px;background:white;margin-bottom:10px}.issue-nav a.active{border-color:#7399e5;background:#edf3ff}.empty{padding:40px;text-align:center;color:#6b788c}
+    .danger-text{color:#895c24}.check-label{display:flex;gap:8px;align-items:start;margin:12px 0}.check-label input{margin-top:4px}.versions td.title{width:60%;max-width:550px}.versions td:nth-child(2){min-width:200px;width:27%}.publisher-preview{overflow-wrap:anywhere}
+    @media(max-width:760px){main{padding:18px 14px 40px}.grid,.issues,.edit-grid{grid-template-columns:1fr}.span2{grid-column:auto}.stats{gap:12px}nav a{padding:10px 8px}.issue-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.issue-nav a{margin:0}.header h1{font-size:23px}}
+  </style>
+</head>
+<body><main>
+  <header class="header"><div><h1>勃拉姆斯导入预审</h1><div class="muted">先确认整理风格，再看作品与例外；不必逐页检查所有 PDF。</div></div><a class="button" href="{{ url_for('dashboard') }}">返回后台</a></header>
+  {% for category, message in get_flashed_messages(with_categories=true) %}<div class="notice {{ 'warning' if category == 'warning' else 'success' }}" role="alert">{{ message }}</div>{% endfor %}
+  <div class="stats"><div><strong>{{ stats.works }}</strong><span>作品页</span></div><div><strong>{{ stats.pending }}</strong><span>待审核</span></div><div><strong>{{ stats.approved }}</strong><span>已批准</span></div><div><strong>{{ stats.deferred }}</strong><span>暂缓</span></div><div><strong>{{ stats.excluded }}</strong><span>已排除</span></div><div><strong>{{ stats.pending_issues }}</strong><span>待审核中有疑点</span></div></div>
+  <div class="notice">仅保存预审意见 · <strong>本页不执行下载或发布</strong>。样例确认不等于批准全部文件；隔离试下载与谱面核对结果另行记录，正式发布时才同步首页更新记录。</div>
+  <nav aria-label="预审方式">{% for key, label in [('samples','① 规则样例'),('works','② 按作品查看'),('issues','③ 集中处理疑点'),('files','逐文件编辑')] %}<a class="{{ 'active' if view == key }}" href="{{ url_for('brahms_import_review', view=key) }}">{{ label }}</a>{% endfor %}</nav>
+
+  {% if view == 'samples' %}
+  <section class="card"><div class="between"><h2>先看 {{ samples|length }} 条代表样例</h2>{% if style_confirmed %}<span class="pill approved">这组样例风格已确认</span>{% else %}<span class="pill warn">待你确认整理风格</span>{% endif %}</div>
+    <div class="rule-list"><span>作品名保留 Op. / WoO 等编号；单乐章单独命名。</span><span>编制用中文简写；艺术歌曲重唱仍归艺术歌曲，标记几重唱。</span><span>不同调性、不同声部及改编版分别保留，不按同名删除。</span></div>
+    <p class="muted">样例用于确认命名与标记风格。需要调整可以进入单条编辑；涉及整类规则的变化也可以直接告诉我。</p>
+    <form method="post" action="{{ url_for('confirm_brahms_style') }}"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="signature" value="{{ style_signature }}"><button class="primary">确认这组整理风格（不批准文件）</button></form>
+  </section>
+  <div class="grid">{% for row in samples %}{% set item = row.score_file %}<article class="card sample-card">
+    <div class="between"><span class="muted">{{ '%02d'|format(loop.index) }} / {{ row.sample_reason }}</span><span class="pill {{ item.decision }}">{{ decision_labels.get(item.decision, '待审核') }}</span></div>
+    <h3 class="sample-title">{{ item.proposed_title }}</h3>
+    {% if item.proposed_work %}<div class="muted">所属作品：{{ item.proposed_work }}</div>{% endif %}
+    <div class="sample-meta"><span class="pill">{{ item.category }}</span>{% if item.sub_category and item.sub_category != item.category %}<span class="pill">{{ item.sub_category }}</span>{% endif %}{% if item.voice_types %}<span class="pill">{{ item.voice_types }}</span>{% endif %}{% if item.tonality %}<span class="pill">{{ item.tonality }}</span>{% endif %}{% if item.language_cn %}<span class="pill">{{ item.language_cn }}</span>{% endif %}</div>
+    {% if item.warnings %}<div class="muted danger-text">{{ item.warnings|join('；') }}</div>{% endif %}
+    <footer class="sample-footer"><span class="muted">IMSLP #{{ item.imslp_id }}</span><span><a href="{{ url_for('brahms_import_review', view='works', work=row.work_key) }}">查看所属作品</a> · <a href="{{ url_for('brahms_import_review', view='files', file=item.imslp_id) }}">调整这一条</a></span></footer>
+  </article>{% else %}<div class="empty">暂无可展示的样例。</div>{% endfor %}</div>
+
+  {% elif view == 'works' %}
+  <form class="card filters" method="get"><input type="hidden" name="view" value="works"><div class="search"><label for="work-search">查找作品、乐章或编制</label><input id="work-search" type="search" name="keyword" value="{{ keyword }}" placeholder="例如 Op. 116、二重唱、小提琴"></div><div><label for="work-decision">审核状态</label><select id="work-decision" name="decision"><option value="active" {{ 'selected' if decision == 'active' }}>全部未排除</option><option value="all" {{ 'selected' if decision == 'all' }}>全部状态</option>{% for value,label in decision_labels.items() %}<option value="{{ value }}" {{ 'selected' if decision == value }}>{{ label }}</option>{% endfor %}</select></div><button class="primary">查找</button></form>
+  {% if selected_work %}<div class="between"><div><h2>{{ selected_work.work.display_work_title }}</h2><div class="muted">{{ selected_work.rows|length }} 份文件 · {{ selected_work.pieces|length }} 个作品 / 乐章分组。分组只改变展示，不删除或合并 PDF。</div></div><a href="{{ url_for('brahms_import_review', view='works') }}">← 全部作品</a></div>
+  {% for piece in selected_work.pieces %}<details class="piece-group"><summary>{{ piece.title }} <span class="pill">{{ scope_labels.get(piece.scope, '整部作品') }}</span><span class="pill">{{ piece.count }} 份文件</span></summary><div class="detail-body">
+    {% for group in piece.groups %}{% set item = group.item %}<details class="versions"><summary>{{ item.voice_types or '编制待确认' }}{% if item.tonality %} · {{ item.tonality }}{% endif %} · {{ item.category }} <span class="pill">{{ group.rows|length }} 个版本</span><div class="muted">{{ item.description_en or item.description or '文件说明待确认' }}</div></summary><div class="detail-body">
+      <div class="table-wrap"><table><thead><tr><th>文件与版本说明</th><th>状态 / 疑点</th><th>操作</th></tr></thead><tbody>{% for row in group.rows %}{% set f = row.score_file %}<tr><td class="title">#{{ f.imslp_id }} · {{ f.description_en or f.description }}<div class="muted publisher-preview">{{ (f.publisher or '出版信息未提供')|truncate(150) }}</div>{% if f.arranger %}<div class="muted">改编：{{ f.arranger }}</div>{% endif %}</td><td><span class="pill {{ f.decision }}">{{ decision_labels.get(f.decision, '待审核') }}</span>{% if f.warnings %}<div class="muted danger-text">{{ f.warnings|join('；') }}</div>{% endif %}</td><td class="nowrap"><a href="{{ url_for('brahms_import_review', view='files', file=f.imslp_id) }}">单独编辑</a><br><a href="{{ source_url(row.work.source_url) }}" target="_blank" rel="noopener noreferrer">来源页 ↗</a></td></tr>{% endfor %}</tbody></table></div>
+      <details><summary>统一修改这 {{ group.rows|length }} 个版本的共同信息</summary><div class="detail-body"><p class="muted">仅作用于上表文件，不跨乐章、编制或调性。不会改变批准状态；请勿把版本专属信息应用到其他版本。</p>
+        <form method="post" action="{{ url_for('update_brahms_group', group_key=group.key) }}"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="signature" value="{{ group.signature }}"><input type="hidden" name="next" value="{{ request.full_path }}">{% for row in group.rows %}<input type="hidden" name="imslp_ids" value="{{ row.score_file.imslp_id }}">{% endfor %}
+          <div class="edit-grid">{% for field,label,maxlength in edit_fields %}<div class="{{ 'span2' if field in ('proposed_title','proposed_work') }}"><label for="{{ group.key }}-{{ field }}">{{ label }}</label>{% if field == 'category' %}<select id="{{ group.key }}-{{ field }}" name="{{ field }}">{% for value in categories %}<option {{ 'selected' if item.category == value }}>{{ value }}</option>{% endfor %}</select>{% else %}<input type="text" id="{{ group.key }}-{{ field }}" name="{{ field }}" value="{{ item.get(field, '') }}" maxlength="{{ maxlength }}" {{ 'required' if field == 'proposed_title' }}>{% endif %}</div>{% endfor %}</div>
+          <label class="check-label"><input type="checkbox" name="confirm_group" value="1" required>我确认将以上共同信息应用到上表 {{ group.rows|length }} 个文件。</label><button class="primary">保存本组共同信息</button>
+        </form>
+      </div></details>
+    </div></details>{% endfor %}
+  </div></details>{% endfor %}
+  {% else %}<div class="between"><h2>按作品浏览</h2><span class="muted">{{ works|length }} 个作品 · 先选作品，再展开乐章与版本</span></div><div class="card table-wrap"><table><thead><tr><th>作品</th><th>文件</th><th>待审核</th><th>暂缓</th><th>有疑点</th></tr></thead><tbody>{% for work in works %}<tr><td class="title"><a href="{{ url_for('brahms_import_review', view='works', work=work.key, decision=decision) }}">{{ work.work.display_work_title }}</a></td><td>{{ work.rows|length }}</td><td>{{ work.decisions.get('pending',0) }}</td><td>{{ work.decisions.get('deferred',0) }}</td><td>{{ work.warning_count }}</td></tr>{% else %}<tr><td colspan="5" class="empty">没有符合当前筛选条件的作品。</td></tr>{% endfor %}</tbody></table></div>{% endif %}
+
+  {% elif view == 'issues' %}
+  <div class="between"><div><h2>集中处理疑点</h2><p class="muted">按问题类型处理；同一文件可能出现于多组，计数不能相加。已批准文件默认不再显示。</p></div><form method="get"><input type="hidden" name="view" value="issues"><label for="issue-decision">查看状态</label><select id="issue-decision" name="decision">{% for value,label in [('pending','待审核'),('deferred','暂缓'),('active','全部未排除'),('all','全部状态')] %}<option value="{{ value }}" {{ 'selected' if decision == value }}>{{ label }}</option>{% endfor %}</select> <button>切换</button></form></div>
+  <div class="issues"><aside class="issue-nav">{% for group in issues %}<a class="{{ 'active' if selected_issue and group.key == selected_issue.key }}" href="{{ url_for('brahms_import_review',view='issues',issue=group.key,decision=decision) }}"><strong>{{ group.label }}</strong><span class="pill">{{ group.rows|length }}</span><div class="muted">{{ group.help }}</div></a>{% endfor %}</aside><section>
+    {% if selected_issue %}<div class="card"><h3>{{ selected_issue.label }} · {{ selected_issue.rows|length }} 份文件</h3><p class="muted">{{ selected_issue.help }}</p>
+      {% if selected_issue.pending %}<form method="post" action="{{ url_for('defer_brahms_issue', issue_key=selected_issue.key) }}"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="signature" value="{{ selected_issue.signature }}"><input type="hidden" name="next" value="{{ request.full_path }}"><button>暂缓本组 {{ selected_issue.pending|length }} 个待审核文件</button><span class="muted">只改为“暂缓”，不删除，可随时恢复待审核。</span></form>{% endif %}
+    </div><div class="card table-wrap"><table><thead><tr><th>作品 / 文件</th><th>疑点</th><th>操作</th></tr></thead><tbody>{% for row in selected_issue.rows %}{% set item = row.score_file %}<tr><td class="title">{{ item.proposed_title }}<div class="muted">#{{ item.imslp_id }} · {{ item.voice_types }}{% if item.tonality %} · {{ item.tonality }}{% endif %}</div><span class="pill {{ item.decision }}">{{ decision_labels.get(item.decision,'待审核') }}</span></td><td class="muted danger-text">{{ item.warnings|join('；') }}</td><td class="nowrap"><a href="{{ url_for('brahms_import_review',view='files',file=item.imslp_id) }}">核对 / 编辑</a></td></tr>{% endfor %}</tbody></table></div>{% else %}<div class="card empty">当前状态没有待处理疑点。</div>{% endif %}
+  </section></div>
+  {% endif %}
+</main></body></html>

@@ -1,0 +1,74 @@
+{
+  "batch_id": "brahms-woo4-6-op18b-39-five-20260903",
+  "approved_ids": [
+    "57520",
+    "103886",
+    "103888",
+    "84174",
+    "57514"
+  ],
+  "approved_count": 5,
+  "storage_verified_count": 5,
+  "local_catalog_count": 5,
+  "website_published_count": 5,
+  "catalog_updated_at": "2026-09-03T19:12:28+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-woo4-6-op18b-39-five-20260903-20260903_131219_493947",
+  "files": [
+    {
+      "imslp_id": "57520",
+      "public_id": "5c8f1b3b-467b-4c48-8fba-ca5a6dd8e308",
+      "filename": "器乐独奏/5c8f1b3b-467b-4c48-8fba-ca5a6dd8e308.pdf",
+      "storage_key": "scores/5c/5c8f1b3b-467b-4c48-8fba-ca5a6dd8e308.pdf",
+      "sha256": "8b559d08f97bea6e6f1f22486f8bc0141b40dd81a2f42eec54ef9e3329137006"
+    },
+    {
+      "imslp_id": "103886",
+      "public_id": "c5e5a7f2-26ae-4bf3-a00d-205d35ad513c",
+      "filename": "器乐独奏/c5e5a7f2-26ae-4bf3-a00d-205d35ad513c.pdf",
+      "storage_key": "scores/c5/c5e5a7f2-26ae-4bf3-a00d-205d35ad513c.pdf",
+      "sha256": "82061643693c63c64ee7f80b64de4ff41dcec5c256631ff64f8e051cbe5e7d00"
+    },
+    {
+      "imslp_id": "103888",
+      "public_id": "1780708a-df65-460e-842c-002a4719adbe",
+      "filename": "器乐独奏/1780708a-df65-460e-842c-002a4719adbe.pdf",
+      "storage_key": "scores/17/1780708a-df65-460e-842c-002a4719adbe.pdf",
+      "sha256": "6134e5efce0b0a96604d2cb3689b21232d901ce98228eee1535c2f0ebfd2218b"
+    },
+    {
+      "imslp_id": "84174",
+      "public_id": "acfcde0c-a39d-4055-a39d-e580438edfc9",
+      "filename": "器乐独奏/acfcde0c-a39d-4055-a39d-e580438edfc9.pdf",
+      "storage_key": "scores/ac/acfcde0c-a39d-4055-a39d-e580438edfc9.pdf",
+      "sha256": "590a6113fbf2c6acbc33b883f7aef0e3cb6b9c3722dae184bf6815933d19fd7b"
+    },
+    {
+      "imslp_id": "57514",
+      "public_id": "0933611b-3856-4cf4-afdd-007506fea8be",
+      "filename": "器乐独奏/0933611b-3856-4cf4-afdd-007506fea8be.pdf",
+      "storage_key": "scores/09/0933611b-3856-4cf4-afdd-007506fea8be.pdf",
+      "sha256": "483ca9f3705413915985cc3b826cb60271be968bf145aea94001d8568fedcea6"
+    }
+  ],
+  "website_verified_at": "2026-09-03T23:49:55+00:00",
+  "browser_verified_at": "2026-09-03T23:52:39+00:00",
+  "git_commit": "9f3fbeb5111f052223c7e2255f9496919e208d3d",
+  "github_actions_run_id": 33818667588,
+  "browser_verification": "正式网站总藏量3454；五份新谱均在最新上传及目录显示，编号、中文钢琴独奏、体裁和器乐空语言正确。Op.39详情明确普通钢琴独奏版、16首各自调性及PDF起始页；下载链接与回执一致。点击加载预览后，iframe显示为block且data-loaded-url为该R2 PDF。页面以contentWindow.location.replace导航，src属性仍为about:blank。首页动态显示本批新增5份及全部作品。线上data.json和logs.json与本地精确一致。",
+  "validation": {
+    "unit_tests_passed": 19,
+    "unit_test_note": "tests.test_brahms_publication、tests.test_brahms_staging、tests.test_brahms_report，隔离数据库与存储测试。",
+    "strict_library_check": "3454 entries and PDFs, 0 errors, 0 warnings",
+    "storage_manifest_check": "3454 files, exact match",
+    "existing_3449_catalog_records_unchanged": true,
+    "existing_homepage_logs_unchanged": true,
+    "existing_storage_records_unchanged": true,
+    "other_review_rows_unchanged_at_publication": true,
+    "original_submissions_unchanged": true,
+    "original_submissions_count": 1,
+    "public_download_sha256_matches": 5,
+    "git_committed_pdf_sha256_matches": 5
+  }
+}
