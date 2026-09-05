@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3472,
-  "unique_content_count": 3453,
+  "entry_count": 3473,
+  "unique_content_count": 3454,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4374334958,
+  "total_size": 4378378707,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -11445,6 +11445,13 @@
       "storage_key": "scores/79/79584b53-7462-5697-8cb0-a235701f49ab.pdf",
       "file_size": 235190,
       "sha256": "8aec630f92d2ac38a42ecc471a57910b1ce5b995a3559a484c55cf1fe8662f40"
+    },
+    {
+      "public_id": "795faf14-268b-43ac-9fbb-5c1d552a1a46",
+      "source_path": "scores/艺术歌曲/795faf14-268b-43ac-9fbb-5c1d552a1a46.pdf",
+      "storage_key": "scores/79/795faf14-268b-43ac-9fbb-5c1d552a1a46.pdf",
+      "file_size": 4043749,
+      "sha256": "bc69fb01c75e828f9e94af126074513cb00a799fc343cd9ea263761f459a2a06"
     },
     {
       "public_id": "7965b50d-47bd-50f3-8983-2c747c8a3ea7",
