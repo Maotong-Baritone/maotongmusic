@@ -1,5 +1,28 @@
 [
     {
+        "id": 1787535215306,
+        "public_id": "2f687bb7-c592-4015-940a-d404f0da9638",
+        "title": "4 Ballades and Romances, Op. 75",
+        "work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #97833；作品页：https://imslp.org/wiki/4_Ballades_and_Romances%2C_Op.75_%28Brahms%2C_Johannes%29；版本：Complete Score (scan)；版权：Public Domain；出版信息：Sämtliche Werke, Band 22 Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 136.；编者：Eusebius Mandyczewski (1857-1929)；谱面核对：完整四首，跨多调，整套调性留空。目录：No. 1 Edward, Allegro（f小调；女低音、男高音、钢琴）：PDF第1页；No. 2 Guter Rat, Lebhaft und lustig / Allegretto giocoso（E大调；女高音、女低音、钢琴）：PDF第13页；No. 3 So lass uns wandern!, Andante grazioso e molto espressivo（D大调；女高音、男高音、钢琴）：PDF第18页；No. 4 Walpurgisnacht, Presto（a小调；两位女高音、钢琴）：PDF第23页。PDF页1–28对应作品印刷页1–28，括号内79–106为全集卷册页码，第28页完整结束；歌词为德语。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#97834可能损失细小内容，首版完整谱#23105与本完整谱内容重复，故均未重复收录；第三方钢琴改编#661023保持排除。原PDF字节未改。",
+        "filename": "艺术歌曲/2f687bb7-c592-4015-940a-d404f0da9638.pdf",
+        "date": "2026-09-04",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-four-ballades-romances-op75-one-20260904",
+        "source_imslp_id": "97833",
+        "storage_key": "scores/2f/2f687bb7-c592-4015-940a-d404f0da9638.pdf",
+        "storage_sha256": "67dac9a1d5828a9bfbc0e63a7290ce7aaabc923a9b80a3be1169ce591f0e7ca4",
+        "storage_size": 3531425,
+        "storage_synced_at": "2026-09-05T02:47:31+00:00"
+    },
+    {
         "id": 1787535215305,
         "public_id": "cfcd81a9-0bf6-468a-9d37-d512185a498e",
         "title": "5 Duets, Op. 66",
