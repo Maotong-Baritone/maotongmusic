@@ -1,5 +1,28 @@
 [
     {
+        "id": 1787535215307,
+        "public_id": "124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa",
+        "title": "3 Quartets, Op. 31",
+        "work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "四重唱、钢琴",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #104116；作品页：https://imslp.org/wiki/3_Quartets%2C_Op.31_%28Brahms%2C_Johannes%29；版本：Complete Score (scan)；版权：Public Domain；出版信息：Sämtliche Werke, Band 20:Mehrstimmige Gesänge mit Klavier oder Orgel Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 102.；编者：Eusebius Mandyczewski (1857-1929)；谱面核对：完整三首，跨多调，整套调性留空。目录：No. 1 Wechsellied zum Tanze, Tempo di Menuetto con moto（降E大调）：PDF第1页；No. 2 Neckereien, Allegretto con grazia（E大调）：PDF第9页；No. 3 Der Gang zum Liebchen, Con moto e grazioso（降B大调）：PDF第16页。PDF页1–18对应作品印刷页1–18，括号内17–34为全集卷册页码，第18页完整结束；编制为女高音、女低音、男高音、男低音四重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第20卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#104117可能损失细小内容，首版#22973和Soldan版#627548与本完整谱内容重复，故均未重复收录；第三方男声合唱改编#878609保持排除。原PDF字节未改。",
+        "filename": "艺术歌曲/124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa.pdf",
+        "date": "2026-09-05",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-three-quartets-op31-one-20260905",
+        "source_imslp_id": "104116",
+        "storage_key": "scores/12/124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa.pdf",
+        "storage_sha256": "fbc9f1fbe07306cee505c10c6c8f6931cffedc5f6061498ae8be249c28de389d",
+        "storage_size": 2965252,
+        "storage_synced_at": "2026-09-05T19:53:20+00:00"
+    },
+    {
         "id": 1787535215306,
         "public_id": "2f687bb7-c592-4015-940a-d404f0da9638",
         "title": "4 Ballades and Romances, Op. 75",
