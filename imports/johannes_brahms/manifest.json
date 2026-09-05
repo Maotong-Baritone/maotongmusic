@@ -91822,11 +91822,11 @@
           "sub_category": "",
           "voice_types": "四重唱、钢琴",
           "tonality": "",
-          "language_cn": "英语",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-05 全页核对：18页均为连续完整乐谱，无封面或空白页；三首分别从PDF第1、9、16页开始，第18页完整结束。PDF页1–18对应该作品印刷页1–18，页眉括号内17–34为全集卷册页码。题名及谱表明确为Sopran、Alt、Tenor、Baß、Pianoforte，歌词为德语。",
+          "review_edited": true,
           "public_id": "124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa",
           "source_references": [
             {
@@ -91834,7 +91834,10 @@
               "source_url": "https://imslp.org/wiki/3_Quartets%2C_Op.31_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-05T19:53:20+00:00",
+          "publication_batch_id": "brahms-three-quartets-op31-one-20260905",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "104117",
@@ -92073,9 +92076,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "795faf14-268b-43ac-9fbb-5c1d552a1a46",
           "source_references": [
             {
@@ -92083,7 +92086,10 @@
               "source_url": "https://imslp.org/wiki/3_Quartets%2C_Op.64_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-05T20:18:38+00:00",
+          "publication_batch_id": "brahms-three-quartets-op64-one-20260905",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "104768",

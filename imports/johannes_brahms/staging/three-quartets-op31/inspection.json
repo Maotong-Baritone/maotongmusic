@@ -1,0 +1,65 @@
+{
+  "label": "3 Quartets, Op.31",
+  "checked_on": "2026-09-05",
+  "recorded_at": "2026-09-05T19:53:00+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "104116"
+  ],
+  "source_notes": "实时IMSLP作品页确认作品号Op.31、三首目录、德语、原作编制soprano/alto/tenor/bass/piano及Public Domain；在首版#22973、Soldan版#627548、同版原始扫描#104116与滤色件#104117中选用#104116原始600dpi扫描，未重复收录其他完整版本。第三方男声合唱改编#878609保持排除。下载链接来自正常匿名12秒等待页。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部18页，并查看全页接触表、三首起始页和末页原图。",
+  "rendering_note": "2026-09-05 全页核对：18页均为连续完整乐谱，无封面或空白页；三首分别从PDF第1、9、16页开始，第18页完整结束。PDF页1–18对应该作品印刷页1–18，页眉括号内17–34为全集卷册页码。题名及谱表明确为Sopran、Alt、Tenor、Baß、Pianoforte，歌词为德语。",
+  "metadata_changes": [
+    {
+      "imslp_id": "104116",
+      "before": {
+        "proposed_title": "3 Quartets, Op. 31",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "四重唱、钢琴",
+        "tonality": "",
+        "language_cn": "英语",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "3 Quartets, Op. 31",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "四重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "2026-09-05 全页核对：18页均为连续完整乐谱，无封面或空白页；三首分别从PDF第1、9、16页开始，第18页完整结束。PDF页1–18对应该作品印刷页1–18，页眉括号内17–34为全集卷册页码。题名及谱表明确为Sopran、Alt、Tenor、Baß、Pianoforte，歌词为德语。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-op31-metadata-20260905_135236_967129"
+    }
+  ],
+  "files": {
+    "104116": {
+      "pages": 18,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        9,
+        16
+      ],
+      "titles": [
+        "No. 1 Wechsellied zum Tanze. Tempo di Menuetto con moto",
+        "No. 2 Neckereien. Allegretto con grazia",
+        "No. 3 Der Gang zum Liebchen. Con moto e grazioso"
+      ],
+      "notes": "2026-09-05 全页核对：18页均为连续完整乐谱，无封面或空白页；三首分别从PDF第1、9、16页开始，第18页完整结束。PDF页1–18对应该作品印刷页1–18，页眉括号内17–34为全集卷册页码。题名及谱表明确为Sopran、Alt、Tenor、Baß、Pianoforte，歌词为德语。",
+      "publication_note": "完整三首，跨多调，整套调性留空。目录：No. 1 Wechsellied zum Tanze, Tempo di Menuetto con moto（降E大调）：PDF第1页；No. 2 Neckereien, Allegretto con grazia（E大调）：PDF第9页；No. 3 Der Gang zum Liebchen, Con moto e grazioso（降B大调）：PDF第16页。PDF页1–18对应作品印刷页1–18，括号内17–34为全集卷册页码，第18页完整结束；编制为女高音、女低音、男高音、男低音四重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第20卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#104117可能损失细小内容，首版#22973和Soldan版#627548与本完整谱内容重复，故均未重复收录；第三方男声合唱改编#878609保持排除。原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-05T19:53:20+00:00",
+  "approved_publication_ids": [
+    "104116"
+  ]
+}

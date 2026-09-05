@@ -1,0 +1,44 @@
+{
+  "batch_id": "brahms-three-quartets-op31-one-20260905",
+  "approved_ids": [
+    "104116"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-05T19:53:20+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "0d38e8c5cc286b26d4ca3b152cc797f8ba2a1809",
+  "github_actions_run_id": 33988528612,
+  "website_verified_at": "2026-09-05T20:03:36.1422040Z",
+  "browser_verified_at": "2026-09-05T20:03:36.1422040Z",
+  "browser_verification": "线上目录总数3472，艺术歌曲669；最新条目为3 Quartets, Op.31，德语、四重唱与钢琴，详情包含三首从PDF第1、9、16页开始及完整声部说明。预览与下载均指向公开R2文件，浏览器已显示原谱首页；首页最新动态同步显示本批新增1份。",
+  "validation": {
+    "unit_tests_passed": 28,
+    "strict_catalog_entries": 3472,
+    "strict_pdf_files": 3472,
+    "strict_errors": 0,
+    "strict_warnings": 0,
+    "storage_manifest_entries": 3472,
+    "storage_manifest_exact": true,
+    "existing_3471_catalog_unchanged": true,
+    "existing_3471_storage_unchanged": true,
+    "other_review_rows_unchanged": true,
+    "submissions_db_rows": 1,
+    "submissions_db_unchanged": true,
+    "public_hash_matches": 1,
+    "git_committed_pdf_hash_matches": 1
+  },
+  "backup_directory": "backup\\import_publications\\brahms-three-quartets-op31-one-20260905-20260905_135316_750796",
+  "files": [
+    {
+      "imslp_id": "104116",
+      "public_id": "124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa",
+      "filename": "艺术歌曲/124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa.pdf",
+      "storage_key": "scores/12/124ce0b9-5b70-4d6f-87e1-b68cfbd6c8fa.pdf",
+      "sha256": "fbc9f1fbe07306cee505c10c6c8f6931cffedc5f6061498ae8be249c28de389d"
+    }
+  ]
+}
