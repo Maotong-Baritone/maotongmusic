@@ -1,5 +1,28 @@
 [
     {
+        "id": 1787535215305,
+        "public_id": "cfcd81a9-0bf6-468a-9d37-d512185a498e",
+        "title": "5 Duets, Op. 66",
+        "work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #97831；作品页：https://imslp.org/wiki/5_Duets%2C_Op.66_%28Brahms%2C_Johannes%29；版本：Complete Score (scan)；版权：Public Domain；出版信息：Sämtliche Werke, Band 22 Leipzig: Breitkopf & Härtel, 1926-27. Plate J.B. 135.；编者：Eusebius Mandyczewski (1857-1929)；谱面核对：完整五首，跨多调，整套调性留空。目录：No. 1 Klänge (Nr.1), Andante：PDF第1页；No. 2 Klänge (Nr.2), Andante：PDF第4页；No. 3 Am Strande, Ruhig：PDF第7页；No. 4 Jägerlied, Lebhaft：PDF第11页；No. 5 Hüt du dich!, Lebhaft, heimlich und schalkhaft：PDF第14页。PDF页1–20对应作品印刷页1–20，括号内59–78为全集卷册页码，第20页完整结束；编制为女高音、女低音二重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#97832可能损失细小内容，首版完整谱#23095与本完整谱内容重复，故均未重复收录。原PDF字节未改。",
+        "filename": "艺术歌曲/cfcd81a9-0bf6-468a-9d37-d512185a498e.pdf",
+        "date": "2026-09-04",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-five-duets-op66-one-20260904",
+        "source_imslp_id": "97831",
+        "storage_key": "scores/cf/cfcd81a9-0bf6-468a-9d37-d512185a498e.pdf",
+        "storage_sha256": "50ff4ab920add13c1f3624d9495495a382ef6121447fdfe211aed74d52be88f1",
+        "storage_size": 2380633,
+        "storage_synced_at": "2026-09-05T02:19:36+00:00"
+    },
+    {
         "id": 1787535215304,
         "public_id": "baa363ef-ba3d-452c-8792-a5272b10eba1",
         "title": "4 Duets, Op. 61",
