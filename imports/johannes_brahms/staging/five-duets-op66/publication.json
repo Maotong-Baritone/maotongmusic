@@ -1,0 +1,44 @@
+{
+  "batch_id": "brahms-five-duets-op66-one-20260904",
+  "approved_ids": [
+    "97831"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-05T02:19:36+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "1479062d23eb5e2d16a693b58bdcb3aeb26b7c61",
+  "github_actions_run_id": 33938818433,
+  "website_verified_at": "2026-09-05T02:31:51+00:00",
+  "browser_verified_at": "2026-09-05T02:31:51+00:00",
+  "browser_verification": "线上目录总数3470，艺术歌曲667；最新条目为5 Duets, Op.66，德语、二重唱与钢琴，详情包含五首从PDF第1、4、7、11、14页开始的目录。预览与下载均指向公开R2文件，浏览器已显示原谱首页；首页最新动态同步显示本批新增1份。",
+  "backup_directory": "backup\\import_publications\\brahms-five-duets-op66-one-20260904-20260904_201933_632959",
+  "validation": {
+    "unit_tests_passed": 27,
+    "strict_catalog_entries": 3470,
+    "strict_catalog_pdfs": 3470,
+    "strict_errors": 0,
+    "strict_warnings": 0,
+    "storage_manifest_entries": 3470,
+    "storage_manifest_exact": true,
+    "existing_3469_catalog_entries_unchanged": true,
+    "existing_3469_storage_entries_unchanged": true,
+    "other_review_rows_unchanged": true,
+    "submissions_db_rows": 1,
+    "submissions_db_unchanged": true,
+    "public_hash_matches": 1,
+    "git_committed_pdf_hash_matches": 1
+  },
+  "files": [
+    {
+      "imslp_id": "97831",
+      "public_id": "cfcd81a9-0bf6-468a-9d37-d512185a498e",
+      "filename": "艺术歌曲/cfcd81a9-0bf6-468a-9d37-d512185a498e.pdf",
+      "storage_key": "scores/cf/cfcd81a9-0bf6-468a-9d37-d512185a498e.pdf",
+      "sha256": "50ff4ab920add13c1f3624d9495495a382ef6121447fdfe211aed74d52be88f1"
+    }
+  ]
+}

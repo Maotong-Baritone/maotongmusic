@@ -7,6 +7,7 @@ import io
 import tempfile
 import unittest
 import uuid
+from dataclasses import replace
 from pathlib import Path
 from unittest import mock
 
@@ -115,6 +116,23 @@ class BrahmsPublicationTests(unittest.TestCase):
         self.assertEqual(plan['planned'][0]['item']['voice_types'],'管风琴独奏')
         self.assertEqual(plan['planned'][0]['item']['category'],'器乐独奏')
         self.assertTrue(plan['planned'][0]['item']['filename'].startswith('器乐独奏/'))
+
+    def test_art_song_category_path_and_lyrics_require_explicit_batch_scope(self):
+        source = self.review['works'][0]['files'][0]
+        source.update(category='艺术歌曲', voice_types='二重唱、钢琴', language_cn='德语')
+        self.write(pub.REVIEW_REL,self.review)
+        trial = pub.read_json(self.stage/'manifest.json')
+        trial['files'][0].update(category='艺术歌曲', voice_types='二重唱、钢琴', language='德语')
+        self.write(pub.STAGE_REL/'manifest.json',trial)
+        batch = replace(pub.OP116_BATCH,ids=pub.IDS[:1],
+                        allowed_categories=('艺术歌曲',),
+                        allowed_voice_types=('二重唱、钢琴',))
+        self.write(pub.STAGE_REL/'inspection.json',{'proposed_first_publication_ids':list(batch.ids)})
+        item = pub.prepare(self.root,batch=batch)['planned'][0]['item']
+        self.assertEqual(item['category'],'艺术歌曲')
+        self.assertEqual(item['language'],'德语')
+        self.assertFalse(item['has_lyrics'])
+        self.assertTrue(item['filename'].startswith('艺术歌曲/'))
 
     def test_publish_preserves_old_records_adds_one_log_and_is_idempotent(self):
         pub.publish(self.root,verify_public=False)

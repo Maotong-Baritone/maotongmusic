@@ -1,0 +1,67 @@
+{
+  "label": "4 Duets, Op.61",
+  "checked_on": "2026-09-04",
+  "recorded_at": "2026-09-05T01:48:33+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "97829"
+  ],
+  "source_notes": "实时IMSLP作品页确认作品号Op.61、原作编制soprano/alto/piano、四首目录、德语及Public Domain；在首版、同版原始扫描与滤色文件中选用#97829原始600dpi扫描，未重复收录首版#23080和滤色件#97830。IMSLP说明滤色处理可能损失过小细节；下载链接来自正常匿名15秒等待页。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部20页，并查看全页接触表、四首起始页和末页。",
+  "rendering_note": "2026-09-04 全页核对：20页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、6、9、12页开始，第20页完整结束。PDF页1–20对应该作品印刷页1–20，页眉括号内39–58为全集卷册页码。题名及谱表明确为Sopran、Alt、Pianoforte，歌词为德语。",
+  "metadata_changes": [
+    {
+      "imslp_id": "97829",
+      "before": {
+        "proposed_title": "4 Duets, Op. 61",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "4 Duets, Op. 61",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "2026-09-04 全页核对：20页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、6、9、12页开始，第20页完整结束。PDF页1–20对应该作品印刷页1–20，页眉括号内39–58为全集卷册页码。题名及谱表明确为Sopran、Alt、Pianoforte，歌词为德语。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-op61-metadata-20260905_014833_297444"
+    }
+  ],
+  "files": {
+    "97829": {
+      "pages": 20,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        6,
+        9,
+        12
+      ],
+      "titles": [
+        "No. 1 Die Schwestern. Allegretto",
+        "No. 2 Klosterfräulein. Andante",
+        "No. 3 Phänomen. Poco Andante",
+        "No. 4 Die Boten der Liebe. Vivace"
+      ],
+      "notes": "2026-09-04 全页核对：20页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、6、9、12页开始，第20页完整结束。PDF页1–20对应该作品印刷页1–20，页眉括号内39–58为全集卷册页码。题名及谱表明确为Sopran、Alt、Pianoforte，歌词为德语。",
+      "publication_note": "完整四首，跨多调，整套调性留空。目录：No. 1 Die Schwestern, Allegretto：PDF第1页；No. 2 Klosterfräulein, Andante：PDF第6页；No. 3 Phänomen, Poco Andante：PDF第9页；No. 4 Die Boten der Liebe, Vivace：PDF第12页。PDF页1–20对应作品印刷页1–20，括号内39–58为全集卷册页码，第20页完整结束；编制为女高音、女低音二重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#97830可能损失细小内容，首版完整谱#23080与本完整谱内容重复，故均未重复收录。原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-05T01:49:01+00:00",
+  "approved_publication_ids": [
+    "97829"
+  ]
+}

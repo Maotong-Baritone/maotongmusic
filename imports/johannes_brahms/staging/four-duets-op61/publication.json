@@ -1,0 +1,44 @@
+{
+  "batch_id": "brahms-four-duets-op61-one-20260904",
+  "approved_ids": [
+    "97829"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-05T01:49:01+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "bbeb2e6bc09c683596639f9f1dc4f18044c472a0",
+  "github_actions_run_id": 33937332314,
+  "website_verified_at": "2026-09-05T01:58:29+00:00",
+  "browser_verified_at": "2026-09-05T01:58:29+00:00",
+  "browser_verification": "线上目录总数3469，艺术歌曲666；最新条目为4 Duets, Op.61，德语、二重唱与钢琴，详情包含四首从PDF第1、6、9、12页开始的目录。预览与下载均指向公开R2文件，浏览器已显示原谱首页；首页最新动态同步显示本批新增1份。",
+  "backup_directory": "backup\\import_publications\\brahms-four-duets-op61-one-20260904-20260904_194857_041577",
+  "validation": {
+    "unit_tests_passed": 26,
+    "strict_catalog_entries": 3469,
+    "strict_catalog_pdfs": 3469,
+    "strict_errors": 0,
+    "strict_warnings": 0,
+    "storage_manifest_entries": 3469,
+    "storage_manifest_exact": true,
+    "existing_3468_catalog_entries_unchanged": true,
+    "existing_3468_storage_entries_unchanged": true,
+    "other_review_rows_unchanged": true,
+    "submissions_db_rows": 1,
+    "submissions_db_unchanged": true,
+    "public_hash_matches": 1,
+    "git_committed_pdf_hash_matches": 1
+  },
+  "files": [
+    {
+      "imslp_id": "97829",
+      "public_id": "baa363ef-ba3d-452c-8792-a5272b10eba1",
+      "filename": "艺术歌曲/baa363ef-ba3d-452c-8792-a5272b10eba1.pdf",
+      "storage_key": "scores/ba/baa363ef-ba3d-452c-8792-a5272b10eba1.pdf",
+      "sha256": "2c6434d865617d57685f045b736137e78424330d38766896ccd49b6eacbba2ae"
+    }
+  ]
+}

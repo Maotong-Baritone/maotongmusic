@@ -1,0 +1,109 @@
+{
+  "label": "4 Duets, Op.28",
+  "checked_on": "2026-09-04",
+  "recorded_at": "2026-09-04T21:23:28+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "97827",
+    "851926"
+  ],
+  "source_notes": "实时IMSLP作品页确认作品号Op.28、原作编制alto/baritone/piano、四首目录、德语及Public Domain；完整谱选用#97827原始600dpi扫描，未重复收录同版滤色件#97828和另一份完整首版#22948；另收录第2首独立首版#851926。下载链接均来自正常匿名15秒等待页。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部29页，并查看全页接触表、各曲起始页、封面和末页。",
+  "rendering_note": "2026-09-04 全页核对：22页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、7、13、17页开始，第22页完整结束。PDF页1–22对应该作品印刷页1–22，页眉括号内17–38为全集卷册页码。题名及谱表明确为Alt、Bariton、Pianoforte，歌词为德语。2026-09-04 全页核对：共7页；PDF第1页为C. A. Spina装饰性总封面并列出Op.28四首，第2–7页为第2首Vor der Tür完整乐谱，第7页完整终止。封面明确编制为Alt、Bariton与Pianoforte，正文为德语歌词；原谱未标出可安全录入的调性，故调性留空。",
+  "metadata_changes": [
+    {
+      "imslp_id": "97827",
+      "before": {
+        "proposed_title": "4 Duets, Op. 28",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "4 Duets, Op. 28",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "2026-09-04 全页核对：22页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、7、13、17页开始，第22页完整结束。PDF页1–22对应该作品印刷页1–22，页眉括号内17–38为全集卷册页码。题名及谱表明确为Alt、Bariton、Pianoforte，歌词为德语。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-op28-metadata-20260904_212328_094266"
+    },
+    {
+      "imslp_id": "851926",
+      "before": {
+        "proposed_title": "No. 2 Vor der Tür. Vivace, Op. 28",
+        "proposed_work": "4 Duets, Op. 28",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "No. 2 Vor der Tür. Vivace, Op. 28",
+        "proposed_work": "4 Duets, Op. 28",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "2026-09-04 全页核对：共7页；PDF第1页为C. A. Spina装饰性总封面并列出Op.28四首，第2–7页为第2首Vor der Tür完整乐谱，第7页完整终止。封面明确编制为Alt、Bariton与Pianoforte，正文为德语歌词；原谱未标出可安全录入的调性，故调性留空。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-op28-metadata-20260904_212328_094266"
+    }
+  ],
+  "files": {
+    "97827": {
+      "pages": 22,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        7,
+        13,
+        17
+      ],
+      "titles": [
+        "No. 1 Die Nonne und der Ritter. Andante",
+        "No. 2 Vor der Tür. Vivace",
+        "No. 3 Es rauschet das Wasser. In sanfter Bewegung",
+        "No. 4 Der Jäger und sein Liebchen. Allegro"
+      ],
+      "notes": "2026-09-04 全页核对：22页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、7、13、17页开始，第22页完整结束。PDF页1–22对应该作品印刷页1–22，页眉括号内17–38为全集卷册页码。题名及谱表明确为Alt、Bariton、Pianoforte，歌词为德语。",
+      "publication_note": "完整四首，跨多调，整套调性留空。目录：No. 1 Die Nonne und der Ritter, Andante：PDF第1页；No. 2 Vor der Tür, Vivace：PDF第7页；No. 3 Es rauschet das Wasser, In sanfter Bewegung：PDF第13页；No. 4 Der Jäger und sein Liebchen, Allegro：PDF第17页。PDF页1–22对应作品印刷页1–22，括号内17–38为全集卷册页码，第22页完整结束；编制为女低音、男中音二重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#97828可能损失细小内容，首版完整谱#22948与本完整谱内容重复，故均未重复收录。原PDF字节未改。"
+    },
+    "851926": {
+      "pages": 7,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        2
+      ],
+      "titles": [
+        "No. 2 Vor der Tür. Vivace"
+      ],
+      "notes": "2026-09-04 全页核对：共7页；PDF第1页为C. A. Spina装饰性总封面并列出Op.28四首，第2–7页为第2首Vor der Tür完整乐谱，第7页完整终止。封面明确编制为Alt、Bariton与Pianoforte，正文为德语歌词；原谱未标出可安全录入的调性，故调性留空。",
+      "publication_note": "第2首Vor der Tür独立首版谱。PDF第1页为C. A. Spina装饰性总封面并列出Op.28四首，第2–7页为完整乐谱并在第7页终止；编制为女低音、男中音二重唱与钢琴，德语歌词。来源为C. A. Spina约1860年版，版号C.S.17.959；原谱未标出可安全录入的调性，故调性留空。原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-04T21:24:55+00:00",
+  "approved_publication_ids": [
+    "97827",
+    "851926"
+  ]
+}

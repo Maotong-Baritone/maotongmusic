@@ -6850,9 +6850,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：28页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、13、18、23页开始，第28页完整结束。PDF页1–28对应该作品印刷页1–28，页眉括号内79–106为全集卷册页码。四首声部分别为女低音与男高音、女高音与女低音、女高音与男高音、两位女高音，均配钢琴；歌词为德语。",
+          "review_edited": true,
           "public_id": "2f687bb7-c592-4015-940a-d404f0da9638",
           "source_references": [
             {
@@ -6860,7 +6860,10 @@
               "source_url": "https://imslp.org/wiki/4_Ballades_and_Romances%2C_Op.75_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-05T02:47:31+00:00",
+          "publication_batch_id": "brahms-four-ballades-romances-op75-one-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "97834",
@@ -23484,11 +23487,11 @@
           "sub_category": "",
           "voice_types": "二重唱、钢琴",
           "tonality": "",
-          "language_cn": "",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：16页均为连续完整乐谱，PDF页码与印刷页码1–16一致；第1首 Weg der Liebe（1. Teil）从PDF第1页开始，第2首 Weg der Liebe（2. Teil）从第9页开始，第3首 Die Meere 从第13页开始并在第16页完整结束。题名与每页谱表明确为Sopran、Alt、Pianoforte，歌词为德语；第3首虽标“Nach dem Italienischen”，谱面歌词仍为德语。",
+          "review_edited": true,
           "public_id": "959b4872-5398-4027-a687-cd009991a6f9",
           "source_references": [
             {
@@ -23496,7 +23499,10 @@
               "source_url": "https://imslp.org/wiki/3_Duets%2C_Op.20_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T20:47:41+00:00",
+          "publication_batch_id": "brahms-three-duets-op20-one-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "97825",
@@ -23700,9 +23706,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：22页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、7、13、17页开始，第22页完整结束。PDF页1–22对应该作品印刷页1–22，页眉括号内17–38为全集卷册页码。题名及谱表明确为Alt、Bariton、Pianoforte，歌词为德语。",
+          "review_edited": true,
           "public_id": "af9d630a-0eb3-423d-9cec-c017da7cd36d",
           "source_references": [
             {
@@ -23710,7 +23716,10 @@
               "source_url": "https://imslp.org/wiki/4_Duets%2C_Op.28_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T21:24:55+00:00",
+          "publication_batch_id": "brahms-four-duets-op28-two-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "97828",
@@ -23784,9 +23793,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：共7页；PDF第1页为C. A. Spina装饰性总封面并列出Op.28四首，第2–7页为第2首Vor der Tür完整乐谱，第7页完整终止。封面明确编制为Alt、Bariton与Pianoforte，正文为德语歌词；原谱未标出可安全录入的调性，故调性留空。",
+          "review_edited": true,
           "public_id": "f713f40d-61de-4447-89f0-ac3410273ecb",
           "source_references": [
             {
@@ -23794,7 +23803,10 @@
               "source_url": "https://imslp.org/wiki/4_Duets%2C_Op.28_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱"
             }
-          ]
+          ],
+          "published_at": "2026-09-04T21:24:55+00:00",
+          "publication_batch_id": "brahms-four-duets-op28-two-20260904",
+          "publication_status": "catalog_and_storage_published"
         }
       ]
     },
@@ -23911,9 +23923,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：20页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、6、9、12页开始，第20页完整结束。PDF页1–20对应该作品印刷页1–20，页眉括号内39–58为全集卷册页码。题名及谱表明确为Sopran、Alt、Pianoforte，歌词为德语。",
+          "review_edited": true,
           "public_id": "baa363ef-ba3d-452c-8792-a5272b10eba1",
           "source_references": [
             {
@@ -23921,7 +23933,10 @@
               "source_url": "https://imslp.org/wiki/4_Duets%2C_Op.61_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-05T01:49:01+00:00",
+          "publication_batch_id": "brahms-four-duets-op61-one-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "97830",
@@ -24086,9 +24101,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
-          "review_notes": "",
-          "review_edited": false,
+          "decision": "approved",
+          "review_notes": "2026-09-04 全页核对：20页均为连续完整乐谱，无封面或空白页；五首分别从PDF第1、4、7、11、14页开始，第20页完整结束。PDF页1–20对应该作品印刷页1–20，页眉括号内59–78为全集卷册页码。题名及谱表明确为Sopran、Alt、Pianoforte，歌词为德语。",
+          "review_edited": true,
           "public_id": "cfcd81a9-0bf6-468a-9d37-d512185a498e",
           "source_references": [
             {
@@ -24096,7 +24111,10 @@
               "source_url": "https://imslp.org/wiki/5_Duets%2C_Op.66_%28Brahms%2C_Johannes%29",
               "description": "完整乐谱 (扫描)"
             }
-          ]
+          ],
+          "published_at": "2026-09-05T02:19:36+00:00",
+          "publication_batch_id": "brahms-five-duets-op66-one-20260904",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "97832",

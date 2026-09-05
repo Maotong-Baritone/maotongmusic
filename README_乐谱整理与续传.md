@@ -110,11 +110,11 @@
 
 ## 5. 当前进度快照（2026-09-04）
 
-本节依据实际目录和九份批次回执更新；接手时继续核对是否已有新批次。
+本节依据实际目录和十三份批次回执更新；接手时继续核对是否已有新批次。
 
 - 网站：[猫瞳音乐乐谱库](https://maotong.me/maotongmusic/)，PDF仍使用 `https://scores.maotong.me`。
-- 本地正式目录 3,465 条；勃拉姆斯本轮批准 55 份，线上回执确认 55 份。最近一批状态 `verified_live`。
-- 预审161个作品页、3,486个去重候选；待审 2,291、排除 1,138、暂缓 2、批准 55。待审数包含重复版本，不等于待上传文件数。
+- 本地正式目录 3,470 条；勃拉姆斯本轮批准 60 份，线上回执确认 60 份。最近一批状态 `verified_live`。
+- 预审161个作品页、3,486个去重候选；待审 2,286、排除 1,138、暂缓 2、批准 60。待审数包含重复版本，不等于待上传文件数。
 - 原始submissions.db保留1条原投稿；旧目录、旧动态、旧存储记录及原投稿均已与批次备份核对。
 - 哈恩已有此前成果，不从头重发，不编造累计数量。
 
@@ -129,23 +129,27 @@
 | WoO 5 No.2、Op.39 No.15 | 2 | [verified_live](imports/johannes_brahms/staging/woo5-op39-singles/publication.json) |
 | 管风琴 WoO 7–10、Op.122 | 5 | [verified_live](imports/johannes_brahms/staging/organ-woo7-10-op122/publication.json) |
 | 5 Studies, Anh.1a/1 | 4 | [verified_live](imports/johannes_brahms/staging/studies-anh1a1/publication.json) |
+| 3 Duets, Op.20 | 1 | [verified_live](imports/johannes_brahms/staging/three-duets-op20/publication.json) |
+| 4 Duets, Op.28 | 2 | [verified_live](imports/johannes_brahms/staging/four-duets-op28/publication.json) |
+| 4 Duets, Op.61 | 1 | [verified_live](imports/johannes_brahms/staging/four-duets-op61/publication.json) |
+| 5 Duets, Op.66 | 1 | [verified_live](imports/johannes_brahms/staging/five-duets-op66/publication.json) |
 
-最近第九批新增4份、共97页《5 Studies, Anh.1a/1》原始PDF；完整谱五首PDF起始页为9、14、28、32、36，第1、2首为双手钢琴，第5首仅左手。此前管风琴批次5份/57页另有回执；Op.116另3份完整版本仍仅暂存。
+最近第十三批新增1份、共20页《5 Duets, Op.66》原始PDF；五首PDF起始页为1、4、7、11、14，标记德语及二重唱、钢琴，选用未滤色600dpi扫描。此前第十二批《4 Duets, Op.61》1份/20页另有回执；Op.116另3份完整版本仍仅暂存。
 
-最近提交 `1285fabb695225355eccf8920cd9e8a58910e489`，Pages run `33913034087`。最近批次线上时间以回执为准。22项发布、暂存、报告及编制边界隔离测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
+最近提交 `1479062d23eb5e2d16a693b58bdcb3aeb26b7c61`，Pages run `33938818433`。最近批次线上时间以回执为准。27项发布、暂存、报告及类别/编制边界隔离测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
 
 ### 断点与下一步
 
 当前受支持CUA浏览器可以可靠读取URL及正常等待后的可见下载链接，先前旧工具的识别问题已通过正常受支持流程解决。作者归属存疑的Anh.IV/2两份候选已暂缓，未下载或发布。
 
-下一轮可核查 `3 Duets, Op.20` 的完整原版，从#22891与同版scan/filter #97824/#97825中只选一份；先做现有艺术歌曲类别的有界发布扩展和隔离测试。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
+下一轮可核查 `4 Ballades and Romances, Op.75` 的完整谱，从#23105与同版scan/filter #97833/#97834中只选一份；优先检查未滤色#97833并核对四首实际PDF起始页和各曲声部组合。艺术歌曲类别必须继续使用显式类别和编制白名单。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
 
 ## 6. 新任务接手与现有自动化
 
-- 当前任务用户已明确回复“同意”，授权恢复每小时下载、上传、更新目录数据库并发布网站，全部合格作品完成并验证后停止。应用正式工具于2026-09-04 01:20:48 UTC成功恢复原计划为ACTIVE，之前的审批阻塞已解决。详见 [审批解决记录](imports/johannes_brahms/automation-resume-block-20260903.json) 和 [用户授权记录](imports/johannes_brahms/automation-consent-record.json)。授权时累计46份已上线，此后按最新批次回执继续，无需重复询问同一授权。
-- 现有每小时计划“勃拉姆斯乐谱逐批续传”，ID `automation`，已从原任务迁移到本任务 `01a068a2-4df2-7162-9c46-577b73d96e20`；当前保存状态 `ACTIVE`，以实时工具查询为准。
+- 当前任务用户已明确回复“同意”，并在2026-09-04要求将间隔缩短为每10分钟；授权自动下载、上传、更新目录数据库并发布网站，全部合格作品完成并验证后停止。之前的审批阻塞已解决。详见 [审批解决记录](imports/johannes_brahms/automation-resume-block-20260903.json) 和 [用户授权记录](imports/johannes_brahms/automation-consent-record.json)。授权时累计46份已上线，此后按最新批次回执继续，无需重复询问同一授权。
+- 现有每10分钟计划“勃拉姆斯乐谱逐批续传”，ID `automation`，已从原任务迁移到本任务 `01a068a2-4df2-7162-9c46-577b73d96e20`；当前保存状态 `ACTIVE`，以实时工具查询为准。
 - 主动发布期间暂停以避免并发，交接完成后恢复同一计划。不要创建重复计划或替换为后台循环/系统定时器。
-- 用户已授权每小时处理一批常规合格文件。全部完成且线上验证通过后停用；只剩必须由用户决定的例外则暂停并报告。
+- 用户已授权每10分钟检查并处理下一批常规合格文件。全部完成且线上验证通过后停用；只剩必须由用户决定的例外则暂停并报告。
 - 无变化保持安静；新增批次上线、失败/需要用户操作、全部完成时通知。
 - 本地任务依赖电脑开机、联网、应用运行且不睡眠。
 
@@ -166,8 +170,8 @@
 
 实现注意：
 
-- `tools/publish_brahms_op116.py` 已参数化 `PublicationBatch`，但默认仍为首批 8 份，且目前仅支持器乐独奏；不要盲跑默认脚本来发布新批次。
-- `tools/brahms_late_piano_batch.py` 的来源检查要求批次显式允许的编制、无警告、明确 Public Domain 和 eligible。默认仅钢琴独奏；管风琴批次明确限定管风琴独奏，下载与发布均检查，21项隔离测试通过。其他新类型仍须有界适配并测试，不能删除限制来强行上传声乐、室内乐或总谱。
+- `tools/publish_brahms_op116.py` 已参数化 `PublicationBatch`，但默认仍为首批 8 份，默认类别仅器乐独奏；不要盲跑默认脚本来发布新批次。
+- `tools/brahms_late_piano_batch.py` 的来源检查要求批次显式允许的类别与编制、无警告、明确 Public Domain 和 eligible。默认仅器乐独奏/钢琴独奏；管风琴和艺术歌曲批次均用具体白名单限定，下载与发布都检查，27项相关隔离测试通过。其他新类型仍须有界适配并测试，不能删除限制来强行上传声乐、室内乐或总谱。
 - 后续批次封装分别在 `tools/brahms_piano_continuation.py`、`tools/brahms_early_piano_batch.py`、`tools/brahms_variations_batch.py`；复用前核对文件号和批次范围，不重复执行已完成批次。
 - `tools/render_brahms_late_piano.py`、`tools/report_brahms_late_piano.py` 用于渲染和报告，报告需区分完整作品、单曲、选段/分册。
 - 通用存储同步工具的执行模式可能覆盖不同内容对象，不可用未经预览的全量同步代替本批有限发布。

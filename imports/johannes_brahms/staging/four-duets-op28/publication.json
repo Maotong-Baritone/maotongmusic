@@ -1,0 +1,49 @@
+{
+  "batch_id": "brahms-four-duets-op28-two-20260904",
+  "approved_ids": [
+    "97827",
+    "851926"
+  ],
+  "approved_count": 2,
+  "storage_verified_count": 2,
+  "local_catalog_count": 2,
+  "website_published_count": 2,
+  "catalog_updated_at": "2026-09-04T21:24:55+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-four-duets-op28-two-20260904-20260904_152448_459421",
+  "files": [
+    {
+      "imslp_id": "97827",
+      "public_id": "af9d630a-0eb3-423d-9cec-c017da7cd36d",
+      "filename": "艺术歌曲/af9d630a-0eb3-423d-9cec-c017da7cd36d.pdf",
+      "storage_key": "scores/af/af9d630a-0eb3-423d-9cec-c017da7cd36d.pdf",
+      "sha256": "f17983e2ade69fdd3cb87e7b3d165b0e48d52d36d37b22fd856be47c5ac42338"
+    },
+    {
+      "imslp_id": "851926",
+      "public_id": "f713f40d-61de-4447-89f0-ac3410273ecb",
+      "filename": "艺术歌曲/f713f40d-61de-4447-89f0-ac3410273ecb.pdf",
+      "storage_key": "scores/f7/f713f40d-61de-4447-89f0-ac3410273ecb.pdf",
+      "sha256": "80d0a131c2640f6a1131f5e8053e9bdcddb64e507c37b02991a4e9428c222d1b"
+    }
+  ],
+  "git_commit": "bcdc434829dabf1809eb279450d7330043507ac2",
+  "github_actions_run_id": 33921114518,
+  "website_verified_at": "2026-09-05T01:34:35+00:00",
+  "browser_verified_at": "2026-09-05T01:34:35+00:00",
+  "browser_verification": "正式网站总藏量3468，艺术歌曲665；最新上传及目录首两条为4 Duets, Op. 28和No. 2 Vor der Tür. Vivace, Op. 28，均显示德语、二重唱、钢琴和艺术歌曲，独立谱另列所属作品。完整谱详情列出四首起始页1/7/13/17、完整22页、Breitkopf-Mandyczewski未滤色扫描及IMSLP #97827来源；下载与新窗口链接指向R2对象af9d630a，点击加载预览后内嵌PDF成功显示第1页Vier Duette题名与Alt/Bariton/Pianoforte谱表。首页动态首条为本批新增2份；线上data.json与Git提交、logs.json与本地均逐字节一致，两份公开PDF大小及SHA256一致。",
+  "validation": {
+    "unit_tests_passed": 25,
+    "strict_library_check": "3468 entries and PDFs, 0 errors, 0 warnings",
+    "storage_manifest_check": "3468 files, exact match",
+    "existing_3466_catalog_records_unchanged": true,
+    "existing_homepage_logs_unchanged": true,
+    "existing_storage_records_unchanged": true,
+    "other_review_rows_unchanged_at_publication": true,
+    "original_submissions_unchanged": true,
+    "original_submissions_count": 1,
+    "public_download_sha256_matches": 2,
+    "git_committed_pdf_sha256_matches": 2
+  }
+}

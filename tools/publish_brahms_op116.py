@@ -44,6 +44,7 @@ class PublicationBatch:
     work_titles: tuple[str, ...]
     log_message: str
     allowed_voice_types: tuple[str, ...] = ('钢琴独奏',)
+    allowed_categories: tuple[str, ...] = ('器乐独奏',)
 
 
 OP116_BATCH = PublicationBatch(
@@ -123,8 +124,8 @@ def prepare(root=ROOT, *, batch=OP116_BATCH):
             raise ValueError(f'Rights changed: #{file_id}')
         if source['decision'] not in ('pending','approved'):
             raise ValueError(f'Review decision excludes #{file_id}')
-        if staged['category'] != '器乐独奏':
-            raise ValueError('This publisher is limited to reviewed solo-instrument scores')
+        if staged['category'] not in batch.allowed_categories:
+            raise ValueError('Category outside the explicitly bounded batch')
         if staged['voice_types'] not in batch.allowed_voice_types:
             raise ValueError('Instrumentation outside the explicitly bounded batch')
         if staged['visual_check'] not in ('checked_with_notes','matched_title_key_and_instrumentation'):
@@ -150,7 +151,7 @@ def prepare(root=ROOT, *, batch=OP116_BATCH):
                 raise ValueError(f'Existing public identifier conflicts: #{file_id}')
         elif file_id in imslp_ids or staged['sha256'] in hashes:
             raise ValueError(f'Existing source/content duplicate needs review: #{file_id}')
-        filename = f'器乐独奏/{pid}.pdf'
+        filename = f"{staged['category']}/{pid}.pdf"
         target = root/'scores'/filename
         if target.exists() and (not existing or digest(target.read_bytes()) != staged['sha256']):
             raise ValueError(f'Refusing to overwrite local score: #{file_id}')

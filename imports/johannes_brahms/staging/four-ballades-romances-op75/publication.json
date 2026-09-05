@@ -1,0 +1,23 @@
+{
+  "batch_id": "brahms-four-ballades-romances-op75-one-20260904",
+  "approved_ids": [
+    "97833"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 0,
+  "catalog_updated_at": "2026-09-05T02:47:31+00:00",
+  "website_status": "awaiting_deployment",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-four-ballades-romances-op75-one-20260904-20260904_204727_949251",
+  "files": [
+    {
+      "imslp_id": "97833",
+      "public_id": "2f687bb7-c592-4015-940a-d404f0da9638",
+      "filename": "艺术歌曲/2f687bb7-c592-4015-940a-d404f0da9638.pdf",
+      "storage_key": "scores/2f/2f687bb7-c592-4015-940a-d404f0da9638.pdf",
+      "sha256": "67dac9a1d5828a9bfbc0e63a7290ce7aaabc923a9b80a3be1169ce591f0e7ca4"
+    }
+  ]
+}

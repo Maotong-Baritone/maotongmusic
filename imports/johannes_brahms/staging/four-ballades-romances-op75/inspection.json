@@ -1,0 +1,67 @@
+{
+  "label": "4 Ballades and Romances, Op.75",
+  "checked_on": "2026-09-04",
+  "recorded_at": "2026-09-05T02:46:59+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "97833"
+  ],
+  "source_notes": "实时IMSLP作品页确认作品号Op.75、四首目录、各曲二重唱声部组合、德语及Public Domain；在首版、同版原始扫描与滤色文件中选用#97833原始600dpi扫描，未重复收录首版#23105和滤色件#97834。第三方钢琴改编#661023保持排除。IMSLP说明滤色处理可能损失过小细节；下载链接来自正常匿名15秒等待页。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以120dpi渲染全部28页，并查看全页接触表、四首起始页和末页。",
+  "rendering_note": "2026-09-04 全页核对：28页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、13、18、23页开始，第28页完整结束。PDF页1–28对应该作品印刷页1–28，页眉括号内79–106为全集卷册页码。四首声部分别为女低音与男高音、女高音与女低音、女高音与男高音、两位女高音，均配钢琴；歌词为德语。",
+  "metadata_changes": [
+    {
+      "imslp_id": "97833",
+      "before": {
+        "proposed_title": "4 Ballades and Romances, Op. 75",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "4 Ballades and Romances, Op. 75",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "2026-09-04 全页核对：28页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、13、18、23页开始，第28页完整结束。PDF页1–28对应该作品印刷页1–28，页眉括号内79–106为全集卷册页码。四首声部分别为女低音与男高音、女高音与女低音、女高音与男高音、两位女高音，均配钢琴；歌词为德语。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-op75-metadata-20260905_024659_450543"
+    }
+  ],
+  "files": {
+    "97833": {
+      "pages": 28,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        13,
+        18,
+        23
+      ],
+      "titles": [
+        "No. 1 Edward. Allegro",
+        "No. 2 Guter Rat. Lebhaft und lustig / Allegretto giocoso",
+        "No. 3 So lass uns wandern! Andante grazioso e molto espressivo",
+        "No. 4 Walpurgisnacht. Presto"
+      ],
+      "notes": "2026-09-04 全页核对：28页均为连续完整乐谱，无封面或空白页；四首分别从PDF第1、13、18、23页开始，第28页完整结束。PDF页1–28对应该作品印刷页1–28，页眉括号内79–106为全集卷册页码。四首声部分别为女低音与男高音、女高音与女低音、女高音与男高音、两位女高音，均配钢琴；歌词为德语。",
+      "publication_note": "完整四首，跨多调，整套调性留空。目录：No. 1 Edward, Allegro（f小调；女低音、男高音、钢琴）：PDF第1页；No. 2 Guter Rat, Lebhaft und lustig / Allegretto giocoso（E大调；女高音、女低音、钢琴）：PDF第13页；No. 3 So lass uns wandern!, Andante grazioso e molto espressivo（D大调；女高音、男高音、钢琴）：PDF第18页；No. 4 Walpurgisnacht, Presto（a小调；两位女高音、钢琴）：PDF第23页。PDF页1–28对应作品印刷页1–28，括号内79–106为全集卷册页码，第28页完整结束；歌词为德语。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件#97834可能损失细小内容，首版完整谱#23105与本完整谱内容重复，故均未重复收录；第三方钢琴改编#661023保持排除。原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-05T02:47:31+00:00",
+  "approved_publication_ids": [
+    "97833"
+  ]
+}

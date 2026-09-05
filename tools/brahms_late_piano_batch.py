@@ -43,7 +43,7 @@ def source_record(file_id, root=ROOT, *, batch=BATCH):
         raise ValueError('Source ID must identify exactly one approved-scope work')
     work, file = matches[0]
     if (file['copyright'] != 'Public Domain' or file['decision'] not in ('pending','approved')
-            or file.get('warnings') or file['category'] != '器乐独奏'
+            or file.get('warnings') or file['category'] not in batch.allowed_categories
             or file['voice_types'] not in batch.allowed_voice_types or not file.get('eligible')):
         raise ValueError('Review, rights, or instrumentation needs individual attention')
     return work, file

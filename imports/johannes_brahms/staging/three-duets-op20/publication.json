@@ -1,0 +1,41 @@
+{
+  "batch_id": "brahms-three-duets-op20-one-20260904",
+  "approved_ids": [
+    "97824"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-04T20:47:41+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-three-duets-op20-one-20260904-20260904_144739_113134",
+  "files": [
+    {
+      "imslp_id": "97824",
+      "public_id": "959b4872-5398-4027-a687-cd009991a6f9",
+      "filename": "艺术歌曲/959b4872-5398-4027-a687-cd009991a6f9.pdf",
+      "storage_key": "scores/95/959b4872-5398-4027-a687-cd009991a6f9.pdf",
+      "sha256": "9889f8734d4d4361f3240939da7ef0b0df4cb7f94d94f18d957cffe8060223f8"
+    }
+  ],
+  "git_commit": "fd615467e314771b21fa04816f2dbb5016b4bec8",
+  "github_actions_run_id": 33918332277,
+  "website_verified_at": "2026-09-04T21:01:50+00:00",
+  "browser_verified_at": "2026-09-04T21:01:50+00:00",
+  "browser_verification": "正式网站总藏量3466，艺术歌曲663；最新上传及目录首条为3 Duets, Op. 20，显示德语、二重唱、钢琴和艺术歌曲。详情列出三首起始页1/9/13、完整16页、Breitkopf-Mandyczewski未滤色扫描及IMSLP #97824来源。下载与新窗口链接均指向R2对象959b4872；点击加载预览后，内嵌PDF成功显示第1页题名与Sopran/Alt/Pianoforte谱表。首页动态首条为本批新增1份；线上data.json与logs.json同本地精确比对，公开PDF大小及SHA256一致。",
+  "validation": {
+    "unit_tests_passed": 24,
+    "strict_library_check": "3466 entries and PDFs, 0 errors, 0 warnings",
+    "storage_manifest_check": "3466 files, exact match",
+    "existing_3465_catalog_records_unchanged": true,
+    "existing_homepage_logs_unchanged": true,
+    "existing_storage_records_unchanged": true,
+    "other_review_rows_unchanged_at_publication": true,
+    "original_submissions_unchanged": true,
+    "original_submissions_count": 1,
+    "public_download_sha256_matches": 1,
+    "git_committed_pdf_sha256_matches": 1
+  }
+}

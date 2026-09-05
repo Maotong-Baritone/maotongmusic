@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-04T21:01:50+00:00",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "fd615467e314771b21fa04816f2dbb5016b4bec8",
+  "github_actions_run_id": 33918332277,
+  "catalog_total": 3466,
+  "verified_titles": [
+    "3 Duets, Op. 20"
+  ],
+  "download_public_ids": [
+    "959b4872-5398-4027-a687-cd009991a6f9"
+  ],
+  "preview_public_id": "959b4872-5398-4027-a687-cd009991a6f9",
+  "preview_loaded": true,
+  "homepage_log_verified": true,
+  "notes": "正式网站总藏量3466，艺术歌曲663；最新上传及目录首条为3 Duets, Op. 20，显示德语、二重唱、钢琴和艺术歌曲。详情列出三首起始页1/9/13、完整16页、Breitkopf-Mandyczewski未滤色扫描及IMSLP #97824来源。下载与新窗口链接均指向R2对象959b4872；点击加载预览后，内嵌PDF成功显示第1页题名与Sopran/Alt/Pianoforte谱表。首页动态首条为本批新增1份；线上data.json与logs.json同本地精确比对，公开PDF大小及SHA256一致。"
+}

@@ -1,0 +1,65 @@
+{
+  "label": "3 Duets, Op.20",
+  "checked_on": "2026-09-04",
+  "recorded_at": "2026-09-04T20:45:52+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "97824"
+  ],
+  "source_notes": "实时IMSLP作品页确认作品号Op.20、原作编制soprano/alto/piano、三首目录和Public Domain；在同版扫描与滤色文件中选用#97824原始600dpi扫描，未收录滤色重复件#97825，因来源说明滤色处理可能丢失细小内容。下载链接来自正常匿名15秒等待页。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部16页，并查看全页接触表及三首起始页和末页。",
+  "rendering_note": "2026-09-04 全页核对：16页均为连续完整乐谱，PDF页码与印刷页码1–16一致；第1首 Weg der Liebe（1. Teil）从PDF第1页开始，第2首 Weg der Liebe（2. Teil）从第9页开始，第3首 Die Meere 从第13页开始并在第16页完整结束。题名与每页谱表明确为Sopran、Alt、Pianoforte，歌词为德语；第3首虽标“Nach dem Italienischen”，谱面歌词仍为德语。",
+  "metadata_changes": [
+    {
+      "imslp_id": "97824",
+      "before": {
+        "proposed_title": "3 Duets, Op. 20",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "",
+        "review_notes": "",
+        "review_edited": false
+      },
+      "after": {
+        "proposed_title": "3 Duets, Op. 20",
+        "proposed_work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "二重唱、钢琴",
+        "tonality": "",
+        "language_cn": "德语",
+        "review_notes": "2026-09-04 全页核对：16页均为连续完整乐谱，PDF页码与印刷页码1–16一致；第1首 Weg der Liebe（1. Teil）从PDF第1页开始，第2首 Weg der Liebe（2. Teil）从第9页开始，第3首 Die Meere 从第13页开始并在第16页完整结束。题名与每页谱表明确为Sopran、Alt、Pianoforte，歌词为德语；第3首虽标“Nach dem Italienischen”，谱面歌词仍为德语。",
+        "review_edited": true
+      },
+      "basis": "实时IMSLP作品页、正常匿名等待后显示的原PDF，以及全部页面视觉核对。",
+      "backup_directory": "backup\\import_publications\\brahms-op20-metadata-20260904_204552_476229"
+    }
+  ],
+  "files": {
+    "97824": {
+      "pages": 16,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        9,
+        13
+      ],
+      "titles": [
+        "No. 1 Weg der Liebe (1. Teil). Allegro",
+        "No. 2 Weg der Liebe (2. Teil). Poco Adagio molto espressivo",
+        "No. 3 Die Meere. Andante"
+      ],
+      "notes": "2026-09-04 全页核对：16页均为连续完整乐谱，PDF页码与印刷页码1–16一致；第1首 Weg der Liebe（1. Teil）从PDF第1页开始，第2首 Weg der Liebe（2. Teil）从第9页开始，第3首 Die Meere 从第13页开始并在第16页完整结束。题名与每页谱表明确为Sopran、Alt、Pianoforte，歌词为德语；第3首虽标“Nach dem Italienischen”，谱面歌词仍为德语。",
+      "publication_note": "完整三首，跨多调，整套调性留空。目录：No. 1 Weg der Liebe（1. Teil）, Allegro：PDF第1页；No. 2 Weg der Liebe（2. Teil）, Poco Adagio molto espressivo：PDF第9页；No. 3 Die Meere, Andante：PDF第13页。PDF与本卷印刷页均为1–16，第16页完整结束；编制为女高音、女低音二重唱与钢琴，德语歌词。来源为Breitkopf & Härtel勃拉姆斯全集第22卷、Mandyczewski编校的600dpi未滤色扫描；同版滤色文件可能损失细小内容，故未重复收录。原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-04T20:47:41+00:00",
+  "approved_publication_ids": [
+    "97824"
+  ]
+}
