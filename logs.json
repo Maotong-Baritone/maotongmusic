@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-09-06 12:54",
+        "type": "add",
+        "msg": "新增勃拉姆斯《8 Lieder and Romances, Op. 14》乐谱 9 份：首版完整谱 1 份及低声部独立单曲谱 8 份；均保留原始 PDF，并核对德语歌词、声乐与钢琴编制及各文件实际范围。",
+        "batch_id": "brahms-op14-complete-and-low-voice-nine-20260906",
+        "count": 9
+    },
+    {
         "date": "2026-09-05 14:18",
         "type": "add",
         "msg": "新增勃拉姆斯《3 Quartets, Op. 64》完整乐谱 1 份：三首德语四重唱与钢琴作品，附各曲实际 PDF 起始页。",

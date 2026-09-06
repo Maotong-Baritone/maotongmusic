@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3473,
-  "unique_content_count": 3454,
+  "entry_count": 3482,
+  "unique_content_count": 3463,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4378378707,
+  "total_size": 4386067035,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1325,6 +1325,13 @@
       "sha256": "e89d85a0a82587ba33e7f11716ab2ac87019d1c93fb9892e6ee05979992ccaf8"
     },
     {
+      "public_id": "0dfc7646-1bbd-4e1d-85a6-c708199f7278",
+      "source_path": "scores/艺术歌曲/0dfc7646-1bbd-4e1d-85a6-c708199f7278.pdf",
+      "storage_key": "scores/0d/0dfc7646-1bbd-4e1d-85a6-c708199f7278.pdf",
+      "file_size": 274913,
+      "sha256": "9348a16acab9ec2b05fb21175877c8253674e54aac7546a4719e68d39c1d2eb9"
+    },
+    {
       "public_id": "0e0fc3c3-9556-5a9f-a72e-843cb43f766f",
       "source_path": "scores/歌剧咏叹调/1766007732067_Tuo_ben_el_trono_io_non.pdf",
       "storage_key": "scores/0e/0e0fc3c3-9556-5a9f-a72e-843cb43f766f.pdf",
@@ -2450,6 +2457,13 @@
       "storage_key": "scores/18/185e290b-b01d-576f-971f-72889d98e306.pdf",
       "file_size": 211651,
       "sha256": "a0d3fd9d20539768e336c8ff485ef8f92cba2b3b34b8eb9835c189e8888c1ecf"
+    },
+    {
+      "public_id": "186ca065-85fc-4686-8f2c-b150cb3262f3",
+      "source_path": "scores/艺术歌曲/186ca065-85fc-4686-8f2c-b150cb3262f3.pdf",
+      "storage_key": "scores/18/186ca065-85fc-4686-8f2c-b150cb3262f3.pdf",
+      "file_size": 266571,
+      "sha256": "bdeccc673247980b7980831599d68f81b06ca04fa79a88fa3a65fa06b28cdf43"
     },
     {
       "public_id": "1881c7d2-d349-5202-b668-288131c104b7",
@@ -9508,6 +9522,13 @@
       "sha256": "9a75847eab817c0ded03bb3d68621daef2fba5676d3b08eaa61701dd47dcf458"
     },
     {
+      "public_id": "6523de0a-2c22-48d2-b875-73b4f4f18296",
+      "source_path": "scores/艺术歌曲/6523de0a-2c22-48d2-b875-73b4f4f18296.pdf",
+      "storage_key": "scores/65/6523de0a-2c22-48d2-b875-73b4f4f18296.pdf",
+      "file_size": 166828,
+      "sha256": "57e98e5cc2abfd5f3fb2c2901b72e3162dcd6b6b1b4336d36d5f1afa5a9eeffd"
+    },
+    {
       "public_id": "65437e0a-4126-589e-948b-4f5b0267f5a2",
       "source_path": "scores/歌剧咏叹调/1766012387473_O_wie_will_ich_triumphieren.pdf",
       "storage_key": "scores/65/65437e0a-4126-589e-948b-4f5b0267f5a2.pdf",
@@ -13883,6 +13904,13 @@
       "sha256": "d29898cdeb1c3b24ada57f98eeb3ec33d18efc4b58dcc105d7a2bf86b161ae67"
     },
     {
+      "public_id": "93e25340-b030-4733-93eb-52cf3d44a132",
+      "source_path": "scores/艺术歌曲/93e25340-b030-4733-93eb-52cf3d44a132.pdf",
+      "storage_key": "scores/93/93e25340-b030-4733-93eb-52cf3d44a132.pdf",
+      "file_size": 108062,
+      "sha256": "c0da5d42bea3d91b386df02de12367a9a6722cc1425e28f4ffbb1afd388a781f"
+    },
+    {
       "public_id": "93f53e20-a022-50ed-87ea-48056ef9b32e",
       "source_path": "scores/歌剧咏叹调/1766093620431_Vissi_darte.pdf",
       "storage_key": "scores/93/93f53e20-a022-50ed-87ea-48056ef9b32e.pdf",
@@ -18174,6 +18202,13 @@
       "sha256": "67f0c9972fefc42eddda31fcf80a08f633524baf6992180e0cf77f1746698791"
     },
     {
+      "public_id": "bf9a97d6-cdd3-42e0-a769-c75c91b46e0a",
+      "source_path": "scores/艺术歌曲/bf9a97d6-cdd3-42e0-a769-c75c91b46e0a.pdf",
+      "storage_key": "scores/bf/bf9a97d6-cdd3-42e0-a769-c75c91b46e0a.pdf",
+      "file_size": 106720,
+      "sha256": "b83fb116031da56b610b3add000e3d712ad35d14aa508799a5faabb215d952ec"
+    },
+    {
       "public_id": "bf9dbca9-5637-5b0e-9662-8ab174f862eb",
       "source_path": "scores/歌剧咏叹调/1766007753938_No_quella_belta_non_amo_che_lamor_mio_sprezzo.pdf",
       "storage_key": "scores/bf/bf9dbca9-5637-5b0e-9662-8ab174f862eb.pdf",
@@ -19565,6 +19600,13 @@
       "storage_key": "scores/cd/cd0456fa-d058-5c86-a7c7-bf7a0c0bcd5a.pdf",
       "file_size": 634527,
       "sha256": "818b2abcaf2725e2ddafca2d1cab49dc9ba565c02082938ceb6d89f911e8bfc3"
+    },
+    {
+      "public_id": "cd051c20-bf8a-4f01-b1a6-d29bcb0cba54",
+      "source_path": "scores/艺术歌曲/cd051c20-bf8a-4f01-b1a6-d29bcb0cba54.pdf",
+      "storage_key": "scores/cd/cd051c20-bf8a-4f01-b1a6-d29bcb0cba54.pdf",
+      "file_size": 279023,
+      "sha256": "bc1fe097edaab1d764a83939397db23271b3c5208fbdbfe2878a9f8acfd8f8f1"
     },
     {
       "public_id": "cd09bc8e-71eb-596e-8170-92effeae48ed",
@@ -22262,6 +22304,13 @@
       "sha256": "04c0e07f54c0713af66cbc374df7b3bb3c86fd8252ec6e051bab097929b8514d"
     },
     {
+      "public_id": "e9e2845e-c51d-4b23-80c8-ec495296255b",
+      "source_path": "scores/艺术歌曲/e9e2845e-c51d-4b23-80c8-ec495296255b.pdf",
+      "storage_key": "scores/e9/e9e2845e-c51d-4b23-80c8-ec495296255b.pdf",
+      "file_size": 5779198,
+      "sha256": "f99cf67afdef6b125ff261f146fc13db03ed3bf5a0635aa654179141fd01ad9a"
+    },
+    {
       "public_id": "e9e95ce2-9000-5d8d-908c-82c1e1c3afb7",
       "source_path": "scores/歌剧咏叹调/1765771793.pdf",
       "storage_key": "scores/e9/e9e95ce2-9000-5d8d-908c-82c1e1c3afb7.pdf",
@@ -23095,6 +23144,13 @@
       "sha256": "753fe5aed42b76c59ba8368c6ed043cb3515fdeb609a3874b9a129a18bec34a0"
     },
     {
+      "public_id": "f1625a83-8408-4e4b-a443-dff40f7d15e5",
+      "source_path": "scores/艺术歌曲/f1625a83-8408-4e4b-a443-dff40f7d15e5.pdf",
+      "storage_key": "scores/f1/f1625a83-8408-4e4b-a443-dff40f7d15e5.pdf",
+      "file_size": 437742,
+      "sha256": "c12034f0d5b4a629948c7f50aab85507ef4c98378df6e4c283960e3dd548cbe2"
+    },
+    {
       "public_id": "f169942c-2786-5f27-80c6-8404c73724d1",
       "source_path": "scores/歌剧咏叹调/1766007823584_Amor_da_guerra_e_pace.pdf",
       "storage_key": "scores/f1/f169942c-2786-5f27-80c6-8404c73724d1.pdf",
@@ -23275,6 +23331,13 @@
       "storage_key": "scores/f3/f3db50a2-9475-5482-958a-ae0cad357f68.pdf",
       "file_size": 666411,
       "sha256": "80f3e902092be9de78ffc979993aed7c193e5cf2b1ad9c3a251f5c476a1e20a7"
+    },
+    {
+      "public_id": "f3fdca32-8439-4a71-b4dd-eec0a805fc09",
+      "source_path": "scores/艺术歌曲/f3fdca32-8439-4a71-b4dd-eec0a805fc09.pdf",
+      "storage_key": "scores/f3/f3fdca32-8439-4a71-b4dd-eec0a805fc09.pdf",
+      "file_size": 269271,
+      "sha256": "e01e73bbc56196c11a71ad9fdbbb80567594d90befd013da85e71a0898ce8d22"
     },
     {
       "public_id": "f4073c23-7075-57c7-bf4a-3b48f5d015a7",
