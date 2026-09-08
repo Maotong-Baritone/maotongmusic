@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3482,
-  "unique_content_count": 3463,
+  "entry_count": 3491,
+  "unique_content_count": 3472,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4386067035,
+  "total_size": 4390188633,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -91,6 +91,13 @@
       "storage_key": "scores/00/00da98b8-9d62-5ecc-995e-2d036b8726ee.pdf",
       "file_size": 143620,
       "sha256": "c39b215491d6232e647b45a907bc1f58c9dd25e45be680629be01f52269a8262"
+    },
+    {
+      "public_id": "00dd348c-46db-472a-a324-15b2286a7759",
+      "source_path": "scores/艺术歌曲/00dd348c-46db-472a-a324-15b2286a7759.pdf",
+      "storage_key": "scores/00/00dd348c-46db-472a-a324-15b2286a7759.pdf",
+      "file_size": 448306,
+      "sha256": "bd559a366023dd223893d1fdb218fe22bee7909d6fc230e5d228f4826e957e42"
     },
     {
       "public_id": "00e130ef-268f-5848-8130-57661a3400f2",
@@ -3845,6 +3852,13 @@
       "sha256": "7736d6ddd5a42563f47863238320118db1f60ed65b3ab9f83c5f3ae2e1e46301"
     },
     {
+      "public_id": "2846ba6b-ddc3-4773-a5a6-77f2245a4e49",
+      "source_path": "scores/艺术歌曲/2846ba6b-ddc3-4773-a5a6-77f2245a4e49.pdf",
+      "storage_key": "scores/28/2846ba6b-ddc3-4773-a5a6-77f2245a4e49.pdf",
+      "file_size": 881448,
+      "sha256": "fb6ad2f1b360f9c1c6eb2f7ee2da6d50ca2753377395b71e535548d5f5f8e699"
+    },
+    {
       "public_id": "285288cd-0b20-5f8e-9f3a-8231d41a3954",
       "source_path": "scores/声乐作品/艺术歌曲/1766372590434_Hymne_II_Wenn_ich_ihn_nur_habe_-_D660_Medium_Original.pdf",
       "storage_key": "scores/28/285288cd-0b20-5f8e-9f3a-8231d41a3954.pdf",
@@ -4468,6 +4482,13 @@
       "sha256": "67dac9a1d5828a9bfbc0e63a7290ce7aaabc923a9b80a3be1169ce591f0e7ca4"
     },
     {
+      "public_id": "2f886692-4054-46c1-a5f6-2011b1a9b35c",
+      "source_path": "scores/艺术歌曲/2f886692-4054-46c1-a5f6-2011b1a9b35c.pdf",
+      "storage_key": "scores/2f/2f886692-4054-46c1-a5f6-2011b1a9b35c.pdf",
+      "file_size": 370399,
+      "sha256": "ed94fff0f8483cc11fafe039a9a4c1686cf9213a2cc9abaa3ccf8c6e3144d96c"
+    },
+    {
       "public_id": "2f8c7d3c-e28a-5413-9e31-fc0e6fae147f",
       "source_path": "scores/歌剧咏叹调/1766007754336_Lasciami_Tu_sei_fedele_Vattene.pdf",
       "storage_key": "scores/2f/2f8c7d3c-e28a-5413-9e31-fc0e6fae147f.pdf",
@@ -4697,6 +4718,13 @@
       "storage_key": "scores/32/3281d1ce-51e1-5075-83ec-b97f4204493b.pdf",
       "file_size": 765238,
       "sha256": "c969e162d0f33208e4d6683d3fb6bad46f6715f390383d8e210e6d875cb3fea2"
+    },
+    {
+      "public_id": "32a0fbac-f5d0-4982-8cf8-acc0e5fc9471",
+      "source_path": "scores/艺术歌曲/32a0fbac-f5d0-4982-8cf8-acc0e5fc9471.pdf",
+      "storage_key": "scores/32/32a0fbac-f5d0-4982-8cf8-acc0e5fc9471.pdf",
+      "file_size": 349055,
+      "sha256": "a2002cdfdda8e912935ad56a67d56488e4cc3831f69daef7352b0774565bc9a5"
     },
     {
       "public_id": "32ada382-b319-5934-a6fd-fb44366c8456",
@@ -10395,6 +10423,13 @@
       "storage_key": "scores/6d/6d17a6af-b4a4-5908-ad1a-e10a9fa4b640.pdf",
       "file_size": 846861,
       "sha256": "c2e98e7617289efe6d009cd67e1d57260e4776da02093c584926c12f768f75aa"
+    },
+    {
+      "public_id": "6d196fcb-1b4f-4f29-aa54-01a5a9125c53",
+      "source_path": "scores/艺术歌曲/6d196fcb-1b4f-4f29-aa54-01a5a9125c53.pdf",
+      "storage_key": "scores/6d/6d196fcb-1b4f-4f29-aa54-01a5a9125c53.pdf",
+      "file_size": 372449,
+      "sha256": "0bf3d331fe6a426e3d7b15cc3569fd235e4898226764ca3f19577e50e81e14f2"
     },
     {
       "public_id": "6d395284-c26b-5f75-bd73-12eae80b1e13",
@@ -17460,6 +17495,13 @@
       "sha256": "1fdbffc685d2334d787a46c8d8debd4277322ede09538ac011029b90bc8ce05e"
     },
     {
+      "public_id": "b8260c7c-fd38-484a-8a51-dac627efedc2",
+      "source_path": "scores/艺术歌曲/b8260c7c-fd38-484a-8a51-dac627efedc2.pdf",
+      "storage_key": "scores/b8/b8260c7c-fd38-484a-8a51-dac627efedc2.pdf",
+      "file_size": 441813,
+      "sha256": "511a1fc6fe582ae7714d16aaf9a80f2a8ee549713401d12711a254e842116b2f"
+    },
+    {
       "public_id": "b83a4ddf-2975-5056-8e6e-887ab7d39a44",
       "source_path": "scores/歌剧咏叹调/1766007780887_Non_potra_dirmi_ingrata_no_perche_restai_piagata.pdf",
       "storage_key": "scores/b8/b83a4ddf-2975-5056-8e6e-887ab7d39a44.pdf",
@@ -19096,6 +19138,13 @@
       "storage_key": "scores/c7/c78cc37c-6983-5435-b9d4-4b1126e3b5fe.pdf",
       "file_size": 245886,
       "sha256": "ad2436fa883a780c701ff4ce25fe90d2ac56c0345cf19291ca740b0501f7ffca"
+    },
+    {
+      "public_id": "c79391ff-6826-4f79-aac2-4632ccb63cde",
+      "source_path": "scores/艺术歌曲/c79391ff-6826-4f79-aac2-4632ccb63cde.pdf",
+      "storage_key": "scores/c7/c79391ff-6826-4f79-aac2-4632ccb63cde.pdf",
+      "file_size": 317804,
+      "sha256": "68a285acd65131fd604c35167e4e0cc40318fa0a602320d92ded3dbd6dd4a026"
     },
     {
       "public_id": "c796e3c5-00ac-50b0-af5e-89a7a977890b",
@@ -20827,6 +20876,13 @@
       "sha256": "8e7d16525b54949ff52329f720ca57fae04d7402d7d0d4df2428f1db789ea3bc"
     },
     {
+      "public_id": "d9ff9653-fbd7-4268-a8f3-78efe181b039",
+      "source_path": "scores/艺术歌曲/d9ff9653-fbd7-4268-a8f3-78efe181b039.pdf",
+      "storage_key": "scores/d9/d9ff9653-fbd7-4268-a8f3-78efe181b039.pdf",
+      "file_size": 778295,
+      "sha256": "84c7709904182d5d1980b853ac240a847164b8f965af15cee7a7fb3cb108c2d8"
+    },
+    {
       "public_id": "da148cc3-1dd0-5c8e-9fd8-e8d7ddfb6054",
       "source_path": "scores/歌剧咏叹调/1766007750594_Gentle_airs_melodious_strains.pdf",
       "storage_key": "scores/da/da148cc3-1dd0-5c8e-9fd8-e8d7ddfb6054.pdf",
@@ -21336,6 +21392,13 @@
       "storage_key": "scores/de/dea24723-e440-58ec-b655-f410b2eade94.pdf",
       "file_size": 1175473,
       "sha256": "6fc3b30abc504975d224ae88af9db4590555136b0bfbd347a51fa71a1888c9e5"
+    },
+    {
+      "public_id": "ded51b79-e822-4e7b-a25a-886e48a762e3",
+      "source_path": "scores/艺术歌曲/ded51b79-e822-4e7b-a25a-886e48a762e3.pdf",
+      "storage_key": "scores/de/ded51b79-e822-4e7b-a25a-886e48a762e3.pdf",
+      "file_size": 162029,
+      "sha256": "9888767bacf5c9bcf49183ca3e0bd4189126cc1b9e8315ee69dd66aa7102cb47"
     },
     {
       "public_id": "dee61af7-c385-55b1-b0f5-5e2cbc8dbc11",
