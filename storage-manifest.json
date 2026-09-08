@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3499,
-  "unique_content_count": 3480,
+  "entry_count": 3507,
+  "unique_content_count": 3488,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4394490617,
+  "total_size": 4398539049,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -224,6 +224,13 @@
       "storage_key": "scores/01/01b873aa-e0d0-5238-9098-a502752c870f.pdf",
       "file_size": 393858,
       "sha256": "25b00c7b1b821d319e1f62fdf4ba1086bd83c719bb8f6788f5943c805b86de8c"
+    },
+    {
+      "public_id": "01d5a550-830e-40f1-b4e5-87c478f6fb29",
+      "source_path": "scores/艺术歌曲/01d5a550-830e-40f1-b4e5-87c478f6fb29.pdf",
+      "storage_key": "scores/01/01d5a550-830e-40f1-b4e5-87c478f6fb29.pdf",
+      "file_size": 1027619,
+      "sha256": "1ae0b72b785aa77dc0d1089ebe44a2f3b723c07fe79c210c45258343ca1c65ef"
     },
     {
       "public_id": "023614cd-2b87-565c-bb73-27376f0ab291",
@@ -6883,6 +6890,13 @@
       "sha256": "71f3bcd21c9fd04805ffaf15b6a8ea3aa8396d5e4ebd3cc03f6123915c503ffb"
     },
     {
+      "public_id": "4876bee4-1523-42a8-bc93-6feec995765e",
+      "source_path": "scores/艺术歌曲/4876bee4-1523-42a8-bc93-6feec995765e.pdf",
+      "storage_key": "scores/48/4876bee4-1523-42a8-bc93-6feec995765e.pdf",
+      "file_size": 440539,
+      "sha256": "ab3627445be3176f75d9f799246713669316bb029e46f1f87a51ca5d17d4fd36"
+    },
+    {
       "public_id": "48778fde-5ecd-5542-924e-a717ef900fc5",
       "source_path": "scores/声乐作品/艺术歌曲/1766372498107_Am_Strome_-_D539_Medium_Original.pdf",
       "storage_key": "scores/48/48778fde-5ecd-5542-924e-a717ef900fc5.pdf",
@@ -12266,6 +12280,13 @@
       "sha256": "5a8baa1055d6bf039d083c6a3b9aaa6fefa685af73128a63ce83ba1acf4720ff"
     },
     {
+      "public_id": "825e1bb1-5648-4766-80a5-3feaf6328931",
+      "source_path": "scores/艺术歌曲/825e1bb1-5648-4766-80a5-3feaf6328931.pdf",
+      "storage_key": "scores/82/825e1bb1-5648-4766-80a5-3feaf6328931.pdf",
+      "file_size": 505996,
+      "sha256": "12cda3100e6a8ab498941294b74497d220cf0d4b9a48a2a7b1d495d8483fb8a9"
+    },
+    {
       "public_id": "82677d56-3ca0-5d66-8437-928c98bf35a5",
       "source_path": "scores/歌剧咏叹调/1766007742240_Dolce_vita_del_mio_petto.pdf",
       "storage_key": "scores/82/82677d56-3ca0-5d66-8437-928c98bf35a5.pdf",
@@ -12285,6 +12306,13 @@
       "storage_key": "scores/82/8280c3b0-e8ca-4e07-bfcd-2077d6f53f59.pdf",
       "file_size": 2866340,
       "sha256": "15db27db66fbf9c279cb67cd6f818f162f0f48e766825c8c987a084658d9ba1b"
+    },
+    {
+      "public_id": "828eec9f-6986-43df-9f48-a07e958efc77",
+      "source_path": "scores/艺术歌曲/828eec9f-6986-43df-9f48-a07e958efc77.pdf",
+      "storage_key": "scores/82/828eec9f-6986-43df-9f48-a07e958efc77.pdf",
+      "file_size": 454991,
+      "sha256": "d1f3bb3c4eb6aa2f66158369d35f0ffd8c0c9734ffff0d96e75ab695f2d99fd1"
     },
     {
       "public_id": "82e7ae95-3162-46d1-82a8-dcd17c6918dc",
@@ -12355,6 +12383,13 @@
       "storage_key": "scores/83/834b72ec-19c3-5675-b7b1-b2f77c17b273.pdf",
       "file_size": 547173,
       "sha256": "78256fceb2f7183c9a958494b8f06a109905d07663b4ecd01eff13cbadaa7d11"
+    },
+    {
+      "public_id": "835592df-0e53-48ac-b751-3160808fd13f",
+      "source_path": "scores/艺术歌曲/835592df-0e53-48ac-b751-3160808fd13f.pdf",
+      "storage_key": "scores/83/835592df-0e53-48ac-b751-3160808fd13f.pdf",
+      "file_size": 275958,
+      "sha256": "2b4aba24180912fbcc9c1155b186b335372a2eee6ef3fbb6f0ef9dc740c4b942"
     },
     {
       "public_id": "83ac9324-974c-59e8-a7fb-845e997283af",
@@ -14219,6 +14254,13 @@
       "sha256": "f0a88f73709af878fd25f3ed65a9609992146ae1de8f59e9fa4bfba24ce3004a"
     },
     {
+      "public_id": "963ab236-3e49-4b88-9a57-9100fd83fb7d",
+      "source_path": "scores/艺术歌曲/963ab236-3e49-4b88-9a57-9100fd83fb7d.pdf",
+      "storage_key": "scores/96/963ab236-3e49-4b88-9a57-9100fd83fb7d.pdf",
+      "file_size": 556148,
+      "sha256": "6ae03c592d0988fc77fdcf73bee097e14d4763c76e68dbfb3130173214c299da"
+    },
+    {
       "public_id": "963e7f7a-8b45-547d-a9ca-3d126c2af0be",
       "source_path": "scores/歌剧咏叹调/1766007741054_O_rendetemi_il_mio_bene.pdf",
       "storage_key": "scores/96/963e7f7a-8b45-547d-a9ca-3d126c2af0be.pdf",
@@ -14420,6 +14462,13 @@
       "storage_key": "scores/98/9874247b-69ef-5dfb-9160-ca46987063b9.pdf",
       "file_size": 280813,
       "sha256": "60a254e6b5be2762fe217267d87cf184e0d998a89008b2c0a893423b54eae856"
+    },
+    {
+      "public_id": "989a14f7-1c48-4c1d-8e6f-ad7f32bb6563",
+      "source_path": "scores/艺术歌曲/989a14f7-1c48-4c1d-8e6f-ad7f32bb6563.pdf",
+      "storage_key": "scores/98/989a14f7-1c48-4c1d-8e6f-ad7f32bb6563.pdf",
+      "file_size": 318947,
+      "sha256": "7ff017486bb16abe47fa3deb4ae174528e339bdb3d14497f53e83c2d10a405ae"
     },
     {
       "public_id": "98b2aa4a-6c8d-5355-85ed-8f5181db34f2",
@@ -16016,6 +16065,13 @@
       "storage_key": "scores/a9/a9af45b2-e2fe-5fe4-8a66-0775d8a9530d.pdf",
       "file_size": 366145,
       "sha256": "5f4dd6ee8670d0a7f45cb5b37e797ad5f1935505adde9520dc675d588adb9283"
+    },
+    {
+      "public_id": "a9bb2218-56cd-4e56-93c5-6defdd239a96",
+      "source_path": "scores/艺术歌曲/a9bb2218-56cd-4e56-93c5-6defdd239a96.pdf",
+      "storage_key": "scores/a9/a9bb2218-56cd-4e56-93c5-6defdd239a96.pdf",
+      "file_size": 468234,
+      "sha256": "1f510309567383a6f6ce82bd02c17cc154c027fed6331ce6291853dad3113871"
     },
     {
       "public_id": "a9c07893-309c-58be-b1fd-6db4fc1dccd1",
