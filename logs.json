@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-09-07 19:18",
+        "type": "add",
+        "msg": "新增勃拉姆斯《8 Lieder and Songs, Op. 57》高声部Peters独立单曲谱8份；标题、速度、德语及高声部与钢琴编制均已核对。",
+        "batch_id": "brahms-op57-high-voice-eight-20260907",
+        "count": 8
+    },
+    {
         "date": "2026-09-07 18:39",
         "type": "add",
         "msg": "新增勃拉姆斯《9 Lieder and Songs, Op. 32》高声部Peters独立单曲谱9份；均保留原始PDF，并逐页核对曲名、速度、德语歌词及高声部与钢琴编制。",

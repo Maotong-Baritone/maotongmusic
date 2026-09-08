@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3491,
-  "unique_content_count": 3472,
+  "entry_count": 3499,
+  "unique_content_count": 3480,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4390188633,
+  "total_size": 4394490617,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -6428,6 +6428,13 @@
       "sha256": "116edc5f667d18d1613158139513ec804ecf079695c43d2c9c267d02914480a7"
     },
     {
+      "public_id": "43d0b90d-97e2-462c-82a3-ba2f6b979bc0",
+      "source_path": "scores/艺术歌曲/43d0b90d-97e2-462c-82a3-ba2f6b979bc0.pdf",
+      "storage_key": "scores/43/43d0b90d-97e2-462c-82a3-ba2f6b979bc0.pdf",
+      "file_size": 756370,
+      "sha256": "9b45cc83c6d4b49edddb138cd1ffd191d377d6d38f32de11829e80808835befb"
+    },
+    {
       "public_id": "43d8048e-57f3-56fb-a639-48aaac10b018",
       "source_path": "scores/声乐作品/艺术歌曲/1766372626683_Schwanengesang_-_05._Aufenthalt_-_D957_High_Original.pdf",
       "storage_key": "scores/43/43d8048e-57f3-56fb-a639-48aaac10b018.pdf",
@@ -8521,6 +8528,13 @@
       "sha256": "b45cb3306e55623d3d8dcfeaa23c13d3d034b72c47414e3fd29f6762f4a73ab6"
     },
     {
+      "public_id": "5ae42394-542c-42d0-b576-dc7ecd04b0b5",
+      "source_path": "scores/艺术歌曲/5ae42394-542c-42d0-b576-dc7ecd04b0b5.pdf",
+      "storage_key": "scores/5a/5ae42394-542c-42d0-b576-dc7ecd04b0b5.pdf",
+      "file_size": 634799,
+      "sha256": "1d54f2ca691757557027e81ec8bc5b86eb455f1839aa846ff62876d815fffb66"
+    },
+    {
       "public_id": "5b0689a1-44b8-56c7-ab85-8de599547e1b",
       "source_path": "scores/声乐作品/艺术歌曲/1766372518083_Das_Finden_-_D219_Medium_Original.pdf",
       "storage_key": "scores/5b/5b0689a1-44b8-56c7-ab85-8de599547e1b.pdf",
@@ -9548,6 +9562,13 @@
       "storage_key": "scores/65/6513dc36-5884-50e9-936f-9fcb8a99d96b.pdf",
       "file_size": 622231,
       "sha256": "9a75847eab817c0ded03bb3d68621daef2fba5676d3b08eaa61701dd47dcf458"
+    },
+    {
+      "public_id": "6522e67a-f59f-46fb-9ef6-aa7d536c190d",
+      "source_path": "scores/艺术歌曲/6522e67a-f59f-46fb-9ef6-aa7d536c190d.pdf",
+      "storage_key": "scores/65/6522e67a-f59f-46fb-9ef6-aa7d536c190d.pdf",
+      "file_size": 347200,
+      "sha256": "9969c999758ca87088a82ca03a2fcd46a1ce9d58446e76bb2a2ece301da1533e"
     },
     {
       "public_id": "6523de0a-2c22-48d2-b875-73b4f4f18296",
@@ -11382,6 +11403,13 @@
       "storage_key": "scores/78/783898a9-ff18-5f68-a350-b38ff6dad228.pdf",
       "file_size": 442089,
       "sha256": "82f3b89655749a729ccb8bac205815ed905d3553e43ae87bcf3c168b1ebc892d"
+    },
+    {
+      "public_id": "7844535c-54ab-40c9-bf9f-54ca47275b5f",
+      "source_path": "scores/艺术歌曲/7844535c-54ab-40c9-bf9f-54ca47275b5f.pdf",
+      "storage_key": "scores/78/7844535c-54ab-40c9-bf9f-54ca47275b5f.pdf",
+      "file_size": 632362,
+      "sha256": "b2adabaf698000f8322d16658295c2b9f4162a7153a0dc1c82b020828afe49ed"
     },
     {
       "public_id": "78581253-c0ad-5072-aa45-fdad3d8ea85a",
@@ -17488,6 +17516,13 @@
       "sha256": "8997f7e5c3ad5d0ba6aed905c37529925aa3759e8fb9028b522bfdd64315ac1f"
     },
     {
+      "public_id": "b81b923c-5568-4374-af2a-51eb2b80bc69",
+      "source_path": "scores/艺术歌曲/b81b923c-5568-4374-af2a-51eb2b80bc69.pdf",
+      "storage_key": "scores/b8/b81b923c-5568-4374-af2a-51eb2b80bc69.pdf",
+      "file_size": 284335,
+      "sha256": "16adb987ff6cad8bad511c45cf34e3462986f792a19935173e55f818e551907f"
+    },
+    {
       "public_id": "b8255399-a144-5e96-be26-aeef139e285a",
       "source_path": "scores/歌剧咏叹调/1766007821133_Fra_lombre_e_glorrori_farfalla_confusa.pdf",
       "storage_key": "scores/b8/b8255399-a144-5e96-be26-aeef139e285a.pdf",
@@ -23270,6 +23305,13 @@
       "sha256": "58134d437777933af72786c672516d50b3853a23312c1fbb1afe0829f191b83b"
     },
     {
+      "public_id": "f22f6fe8-29d5-4300-8ca6-abc46487b84e",
+      "source_path": "scores/艺术歌曲/f22f6fe8-29d5-4300-8ca6-abc46487b84e.pdf",
+      "storage_key": "scores/f2/f22f6fe8-29d5-4300-8ca6-abc46487b84e.pdf",
+      "file_size": 836015,
+      "sha256": "cb47bf3ade02a30a4cfa863c718161297c8c608454280d6376a37f7e878d1dc8"
+    },
+    {
       "public_id": "f254aba1-c031-5003-b610-55b014aa9cd0",
       "source_path": "scores/歌剧咏叹调/1766007729726_Col_raggio_placido_della_speranza.pdf",
       "storage_key": "scores/f2/f254aba1-c031-5003-b610-55b014aa9cd0.pdf",
@@ -23354,6 +23396,13 @@
       "sha256": "5111db320b579ba4cb61928deb338161df26cdcb86c1ed89105378cff9ce0047"
     },
     {
+      "public_id": "f3628fed-33d1-46e2-b55d-0b26c2d7857a",
+      "source_path": "scores/艺术歌曲/f3628fed-33d1-46e2-b55d-0b26c2d7857a.pdf",
+      "storage_key": "scores/f3/f3628fed-33d1-46e2-b55d-0b26c2d7857a.pdf",
+      "file_size": 468622,
+      "sha256": "734e842b9dd52658d9a9a1d482a43d19c41be2b3c9fecca7ff2b5583e89b4b37"
+    },
+    {
       "public_id": "f38fffea-e482-5212-a3b0-9208d42bfbd5",
       "source_path": "scores/声乐作品/艺术歌曲/1766372587342_Heliopolis_II_-_D754_Low_Original.pdf",
       "storage_key": "scores/f3/f38fffea-e482-5212-a3b0-9208d42bfbd5.pdf",
@@ -23373,6 +23422,13 @@
       "storage_key": "scores/f3/f3a1d9f0-41fe-5fd3-b87d-6825d9b8e13b.pdf",
       "file_size": 2083147,
       "sha256": "130d12c502140ded7a9c35724f6d88e190ee6f82a1d7b1038e59cd593a7d92a1"
+    },
+    {
+      "public_id": "f3a23e63-14d5-4c63-ad2c-29c361dcc74a",
+      "source_path": "scores/艺术歌曲/f3a23e63-14d5-4c63-ad2c-29c361dcc74a.pdf",
+      "storage_key": "scores/f3/f3a23e63-14d5-4c63-ad2c-29c361dcc74a.pdf",
+      "file_size": 342281,
+      "sha256": "d8ba0f11ad2c460093eabca278f995e33c3a8b1ba7188c9193f4cf21a264bcfd"
     },
     {
       "public_id": "f3c02fcf-470b-4280-8202-2e9fb4eb4279",
