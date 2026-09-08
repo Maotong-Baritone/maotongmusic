@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3515,
-  "unique_content_count": 3496,
+  "entry_count": 3524,
+  "unique_content_count": 3505,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4401389136,
+  "total_size": 4405488844,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1036,6 +1036,13 @@
       "storage_key": "scores/0a/0afa050c-2551-536b-abe1-02f04457cce6.pdf",
       "file_size": 1011814,
       "sha256": "5ea2df079fa1eb943864f738df0e462bc521aa3e025a3b96111822acf49b4eb5"
+    },
+    {
+      "public_id": "0afd4c6d-5872-4b1a-8a1d-98bdf82c85d3",
+      "source_path": "scores/艺术歌曲/0afd4c6d-5872-4b1a-8a1d-98bdf82c85d3.pdf",
+      "storage_key": "scores/0a/0afd4c6d-5872-4b1a-8a1d-98bdf82c85d3.pdf",
+      "file_size": 426692,
+      "sha256": "6b11e52f4ff72508e4420fc4bc984228693ec5d7ebef99c584cae6570d445d62"
     },
     {
       "public_id": "0b2b94c9-213e-529f-8a06-e824229c8bef",
@@ -3852,6 +3859,13 @@
       "sha256": "6e1206490254d96da40ffee5fc1bfbd8eae083175b03eac2d288bb90db613aa6"
     },
     {
+      "public_id": "27d65c44-f37b-46b3-b0b1-068817f62d94",
+      "source_path": "scores/艺术歌曲/27d65c44-f37b-46b3-b0b1-068817f62d94.pdf",
+      "storage_key": "scores/27/27d65c44-f37b-46b3-b0b1-068817f62d94.pdf",
+      "file_size": 756412,
+      "sha256": "847db3ae194317c59a6083a5fe459287e3afd4d2ef23e3ba19c7d7f0af0e9dd5"
+    },
+    {
       "public_id": "27e5aba8-e68c-5b2b-a067-e1f1403c0357",
       "source_path": "scores/歌剧咏叹调/1766097867337_Non_piu_mesta.pdf",
       "storage_key": "scores/27/27e5aba8-e68c-5b2b-a067-e1f1403c0357.pdf",
@@ -6258,6 +6272,13 @@
       "storage_key": "scores/41/419cd378-1dab-507d-85f6-9eb69845352b.pdf",
       "file_size": 123394,
       "sha256": "497ee67dd5c816ea4b85dcddc7778a9a8734c3a6e0423712562334ab67c4d2a7"
+    },
+    {
+      "public_id": "41ad160a-1d24-4ccb-91da-c3ce9efd9544",
+      "source_path": "scores/艺术歌曲/41ad160a-1d24-4ccb-91da-c3ce9efd9544.pdf",
+      "storage_key": "scores/41/41ad160a-1d24-4ccb-91da-c3ce9efd9544.pdf",
+      "file_size": 391478,
+      "sha256": "6b5993f3cbcf6e6fc813dfcd94b75435e13d329db3e74f842420b138468ab45a"
     },
     {
       "public_id": "41c173b3-9ebb-563d-88d6-cdbfe02b6f15",
@@ -10782,6 +10803,13 @@
       "sha256": "054292987c94efff55bf042dc701a4d4c14078e3caeda0a38850870a81f3572b"
     },
     {
+      "public_id": "7016c16c-5fbe-42c4-b9bd-0eb873b1c3df",
+      "source_path": "scores/艺术歌曲/7016c16c-5fbe-42c4-b9bd-0eb873b1c3df.pdf",
+      "storage_key": "scores/70/7016c16c-5fbe-42c4-b9bd-0eb873b1c3df.pdf",
+      "file_size": 362925,
+      "sha256": "7c631763c9e14044d4702c5cf830c4b2c99a49f74da0c900bbf04afa7272d04e"
+    },
+    {
       "public_id": "703754e3-a490-558d-9b28-b3e6804e1450",
       "source_path": "scores/歌剧咏叹调/1766012417513_Mein_Stolz_soll_deinen_Stolz_zerbrechen.pdf",
       "storage_key": "scores/70/703754e3-a490-558d-9b28-b3e6804e1450.pdf",
@@ -12453,6 +12481,13 @@
       "storage_key": "scores/84/8426e558-da0d-5b0c-8a8a-0fb76d822eee.pdf",
       "file_size": 3462166,
       "sha256": "712debc14684abd4fc05ebee51ebe8a0b75676a24890090146b92fe36ae77b82"
+    },
+    {
+      "public_id": "8432a53f-cb03-476e-b07c-ff23eeb425ac",
+      "source_path": "scores/艺术歌曲/8432a53f-cb03-476e-b07c-ff23eeb425ac.pdf",
+      "storage_key": "scores/84/8432a53f-cb03-476e-b07c-ff23eeb425ac.pdf",
+      "file_size": 364864,
+      "sha256": "684f6cedf3c19f34ce03db1732530f381a2fb2f4117b178d4f7181063a2b1263"
     },
     {
       "public_id": "843f9459-e11e-44cf-907a-0754042fed63",
@@ -20925,6 +20960,13 @@
       "sha256": "c2a72f36ecadb2bb647625d8b321428a89cb3604e4caa0ec4a395eee6761e148"
     },
     {
+      "public_id": "d8ed09ce-b697-4201-86a6-b1f68dec1bca",
+      "source_path": "scores/艺术歌曲/d8ed09ce-b697-4201-86a6-b1f68dec1bca.pdf",
+      "storage_key": "scores/d8/d8ed09ce-b697-4201-86a6-b1f68dec1bca.pdf",
+      "file_size": 465713,
+      "sha256": "970255453dac7d939b37ae0f4649a141e681fb244de21161d680549424e29c02"
+    },
+    {
       "public_id": "d8f9be86-2355-5787-bc1e-46bbfba981a8",
       "source_path": "scores/歌剧咏叹调/1766098794563_Odo_il_suon_di_chi_sprezza_i_perigli.pdf",
       "storage_key": "scores/d8/d8f9be86-2355-5787-bc1e-46bbfba981a8.pdf",
@@ -21282,6 +21324,13 @@
       "sha256": "ac25f907f2835c078d2306346abba0e62cd9a1e9d8de9b2802a9ee2782bdb749"
     },
     {
+      "public_id": "dc2395b4-78a3-46d5-b04a-708ca8371b5c",
+      "source_path": "scores/艺术歌曲/dc2395b4-78a3-46d5-b04a-708ca8371b5c.pdf",
+      "storage_key": "scores/dc/dc2395b4-78a3-46d5-b04a-708ca8371b5c.pdf",
+      "file_size": 546627,
+      "sha256": "3eb5b610fddf9f6d7f0b282d55827838fb7c305409b72138576ccfa0ad14519a"
+    },
+    {
       "public_id": "dc28edc0-6bc5-4ac4-a46d-e520e8c510ba",
       "source_path": "scores/器乐独奏/dc28edc0-6bc5-4ac4-a46d-e520e8c510ba.pdf",
       "storage_key": "scores/dc/dc28edc0-6bc5-4ac4-a46d-e520e8c510ba.pdf",
@@ -21392,6 +21441,13 @@
       "storage_key": "scores/dd/dd7a8738-0756-57ba-a49d-8f1e698e430d.pdf",
       "file_size": 601705,
       "sha256": "0870cca65d7238b14b2799f316a91a3e438b9b9d569de92888675eaa33f23ef6"
+    },
+    {
+      "public_id": "dd7ceeab-42cc-482e-b21e-862afad41108",
+      "source_path": "scores/艺术歌曲/dd7ceeab-42cc-482e-b21e-862afad41108.pdf",
+      "storage_key": "scores/dd/dd7ceeab-42cc-482e-b21e-862afad41108.pdf",
+      "file_size": 395401,
+      "sha256": "e5e84ef9797300a7ed85128e5a9710e5b4ec49d57fb32d44db8a90a21b04f67f"
     },
     {
       "public_id": "dd8cbd60-1a35-5689-b405-e6ecb9bdb3a3",
@@ -24080,6 +24136,13 @@
       "storage_key": "scores/fa/fadcb97d-d0bf-5969-bd8c-b1b3d8f6dca0.pdf",
       "file_size": 198228,
       "sha256": "76068fa2704ed9ac26c86a5235217c3c1469d399e4b5becd2604fc7c72410fa6"
+    },
+    {
+      "public_id": "fafe82c7-b521-4fbd-bdc5-954954ba4927",
+      "source_path": "scores/艺术歌曲/fafe82c7-b521-4fbd-bdc5-954954ba4927.pdf",
+      "storage_key": "scores/fa/fafe82c7-b521-4fbd-bdc5-954954ba4927.pdf",
+      "file_size": 389596,
+      "sha256": "4c061dc6a9849c1d079cb577da4e42904db69da75efcadff30a1dd739c0a00ef"
     },
     {
       "public_id": "fb018d50-45e0-538b-a8db-3950665377d3",
