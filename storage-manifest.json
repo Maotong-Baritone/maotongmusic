@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3507,
-  "unique_content_count": 3488,
+  "entry_count": 3515,
+  "unique_content_count": 3496,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4398539049,
+  "total_size": 4401389136,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2480,6 +2480,13 @@
       "sha256": "bdeccc673247980b7980831599d68f81b06ca04fa79a88fa3a65fa06b28cdf43"
     },
     {
+      "public_id": "18702484-f0c6-432a-8800-e5cc6bcae2d8",
+      "source_path": "scores/艺术歌曲/18702484-f0c6-432a-8800-e5cc6bcae2d8.pdf",
+      "storage_key": "scores/18/18702484-f0c6-432a-8800-e5cc6bcae2d8.pdf",
+      "file_size": 173791,
+      "sha256": "bd5dae73e34c2ea0af84a438cc9d7b99170417e01fae8fc17686c3a1c2d662f7"
+    },
+    {
       "public_id": "1881c7d2-d349-5202-b668-288131c104b7",
       "source_path": "scores/歌剧咏叹调/1766007830109_Quanto_cha_me_sian_care.pdf",
       "storage_key": "scores/18/1881c7d2-d349-5202-b668-288131c104b7.pdf",
@@ -2625,6 +2632,13 @@
       "storage_key": "scores/19/19cd670f-fe48-501b-9a10-c0a90b5ee2b1.pdf",
       "file_size": 976704,
       "sha256": "34813abb54d5e6df18fc764418c7085854f706f4f73b10bcd5dc5a2b961f4169"
+    },
+    {
+      "public_id": "19db9710-fd58-4598-a8c9-7aacf4c80217",
+      "source_path": "scores/艺术歌曲/19db9710-fd58-4598-a8c9-7aacf4c80217.pdf",
+      "storage_key": "scores/19/19db9710-fd58-4598-a8c9-7aacf4c80217.pdf",
+      "file_size": 358385,
+      "sha256": "7b2b5303355b3d648ae54f88277363c2f12a10017aef9677647c8e57a2ea3564"
     },
     {
       "public_id": "19eb64fc-0b72-510a-98a3-1d1bcea36c41",
@@ -6428,6 +6442,13 @@
       "sha256": "8b9ec421e9434027fee9f50210bc894e95b0270e96c641fc78eba083ef8067c2"
     },
     {
+      "public_id": "43be20aa-61a9-4f89-977d-e1a8b4f939ee",
+      "source_path": "scores/艺术歌曲/43be20aa-61a9-4f89-977d-e1a8b4f939ee.pdf",
+      "storage_key": "scores/43/43be20aa-61a9-4f89-977d-e1a8b4f939ee.pdf",
+      "file_size": 208290,
+      "sha256": "e0b3d0edd86d5190d05779007352e96d0ac339f08e52d222f69771ef453ca3a4"
+    },
+    {
       "public_id": "43bec2ce-ce19-5a2f-b5b8-9e1b8ef5239c",
       "source_path": "scores/歌剧咏叹调/1766007825848_Se_non_mi_vuole_amar.pdf",
       "storage_key": "scores/43/43bec2ce-ce19-5a2f-b5b8-9e1b8ef5239c.pdf",
@@ -7525,6 +7546,13 @@
       "storage_key": "scores/4f/4f0bc1a8-fd96-5bb4-8430-da600263fa48.pdf",
       "file_size": 615047,
       "sha256": "70d6b268d68eac3b5179ff661a49a267d7d2e72cd34d90d73ba701e96a4b5771"
+    },
+    {
+      "public_id": "4f108222-926a-4ab2-b4d1-1da5c92957c1",
+      "source_path": "scores/艺术歌曲/4f108222-926a-4ab2-b4d1-1da5c92957c1.pdf",
+      "storage_key": "scores/4f/4f108222-926a-4ab2-b4d1-1da5c92957c1.pdf",
+      "file_size": 289841,
+      "sha256": "dc3ed61b3c9dbee660aa25f70e16ce282c2ef6b19c8a6a060225f3645f7080ea"
     },
     {
       "public_id": "4f3e6ddc-e86c-474c-bec4-fd5b4bf8b0ba",
@@ -13211,6 +13239,13 @@
       "sha256": "2ffe441569b4111c98cd48bce7b79fd8d945a7f2efbe164ab2f0aa610269ea40"
     },
     {
+      "public_id": "8c0df88c-42f3-46a3-a236-70193c13a8d8",
+      "source_path": "scores/艺术歌曲/8c0df88c-42f3-46a3-a236-70193c13a8d8.pdf",
+      "storage_key": "scores/8c/8c0df88c-42f3-46a3-a236-70193c13a8d8.pdf",
+      "file_size": 336030,
+      "sha256": "819610ddc4b90f9a11d38ee952ea2b49ea1e712926b447c394faddfeb25d93b7"
+    },
+    {
       "public_id": "8c1fe624-c930-55d9-bc0b-67fa4c6ad4d7",
       "source_path": "scores/歌剧咏叹调/1766012386603_Per_pieta_ben_mio_perdona.pdf",
       "storage_key": "scores/8c/8c1fe624-c930-55d9-bc0b-67fa4c6ad4d7.pdf",
@@ -16515,6 +16550,13 @@
       "sha256": "308bc87d6e95775a88bb84e2f2cd5ad3041f9867a30538247779c75440de57bc"
     },
     {
+      "public_id": "ada60a65-c4cb-4e5f-ac5b-dc545270e5ed",
+      "source_path": "scores/艺术歌曲/ada60a65-c4cb-4e5f-ac5b-dc545270e5ed.pdf",
+      "storage_key": "scores/ad/ada60a65-c4cb-4e5f-ac5b-dc545270e5ed.pdf",
+      "file_size": 784871,
+      "sha256": "8525fbf07fbbeb3819d77a0f89526a54670ba9937be4e20c02d6ff26d09abb3d"
+    },
+    {
       "public_id": "ada79b37-190e-5297-9082-8771de0ec373",
       "source_path": "scores/歌剧咏叹调/1766007771316_Ritorna_adesso_Amor_con_la_speranza_in_sen.pdf",
       "storage_key": "scores/ad/ada79b37-190e-5297-9082-8771de0ec373.pdf",
@@ -19028,6 +19070,13 @@
       "sha256": "82061643693c63c64ee7f80b64de4ff41dcec5c256631ff64f8e051cbe5e7d00"
     },
     {
+      "public_id": "c610de55-ddc5-4af9-af15-b434dd72ae5d",
+      "source_path": "scores/艺术歌曲/c610de55-ddc5-4af9-af15-b434dd72ae5d.pdf",
+      "storage_key": "scores/c6/c610de55-ddc5-4af9-af15-b434dd72ae5d.pdf",
+      "file_size": 385666,
+      "sha256": "5cccf5a1368b2431dbf67024f6af7285fd43269b311f23996a1169cc0249d00c"
+    },
+    {
       "public_id": "c61a7795-6373-5e16-8dd0-6bf819478205",
       "source_path": "scores/歌剧咏叹调/1766098114264_Sognava_contenti.pdf",
       "storage_key": "scores/c6/c61a7795-6373-5e16-8dd0-6bf819478205.pdf",
@@ -19460,6 +19509,13 @@
       "storage_key": "scores/c9/c9c89af1-9f4d-5e2f-8bda-13a2ccb79c2f.pdf",
       "file_size": 343068,
       "sha256": "00dc8038df3f660eb39bb3719917da05e8e6b4ed61d9ebb26936a5343c3c61c6"
+    },
+    {
+      "public_id": "c9ce66ab-567b-4025-874d-ffa99c9909d7",
+      "source_path": "scores/艺术歌曲/c9ce66ab-567b-4025-874d-ffa99c9909d7.pdf",
+      "storage_key": "scores/c9/c9ce66ab-567b-4025-874d-ffa99c9909d7.pdf",
+      "file_size": 313213,
+      "sha256": "006625c910629417663dcc124ab2bbfdfe17344c878a2c8285bef2ce8ad44716"
     },
     {
       "public_id": "c9debe06-7098-5a57-ac8b-5988482e23ca",
