@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3533,
-  "unique_content_count": 3514,
+  "entry_count": 3542,
+  "unique_content_count": 3523,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4408840454,
+  "total_size": 4411629749,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -4461,6 +4461,13 @@
       "sha256": "4a51272edbe70b995060f29406450c4646403657fa5b35e96cde9d318cbf5eb5"
     },
     {
+      "public_id": "2ec4cd7a-65e1-48a9-ad7c-833f50b6f217",
+      "source_path": "scores/艺术歌曲/2ec4cd7a-65e1-48a9-ad7c-833f50b6f217.pdf",
+      "storage_key": "scores/2e/2ec4cd7a-65e1-48a9-ad7c-833f50b6f217.pdf",
+      "file_size": 427232,
+      "sha256": "d6dc127f1abf6251446bad00f42d1ea0de196ce7c0f812cd089120c751e493fe"
+    },
+    {
       "public_id": "2edb3578-222c-5ddc-a081-629f484c1013",
       "source_path": "scores/歌剧咏叹调/1765920317.pdf",
       "storage_key": "scores/2e/2edb3578-222c-5ddc-a081-629f484c1013.pdf",
@@ -6652,6 +6659,13 @@
       "sha256": "f3c26fe743331d18b536619dbc34bde1792ec0e32103aa93cbced65a5a2acb1d"
     },
     {
+      "public_id": "455d680e-27a7-46d8-b643-a92712772e99",
+      "source_path": "scores/艺术歌曲/455d680e-27a7-46d8-b643-a92712772e99.pdf",
+      "storage_key": "scores/45/455d680e-27a7-46d8-b643-a92712772e99.pdf",
+      "file_size": 344956,
+      "sha256": "379eeddb291f4315510ae27abb6dd893798eac81ce15979d9ae8a9bd91263c0a"
+    },
+    {
       "public_id": "45701e00-bca3-503f-a93e-a7226a4cb028",
       "source_path": "scores/歌剧咏叹调/1766098056191_Minacci_pur_disprezzo_quel_tuo_furor.pdf",
       "storage_key": "scores/45/45701e00-bca3-503f-a93e-a7226a4cb028.pdf",
@@ -7399,6 +7413,13 @@
       "storage_key": "scores/4c/4ca7568c-13d3-5b76-9606-f123d850f071.pdf",
       "file_size": 446737,
       "sha256": "c52bc26d42ae75d3e2c3c0464431d091a1fe09dee099cb2f120ee1d6fc3022d4"
+    },
+    {
+      "public_id": "4cb54b25-9042-4982-96de-ad6b022aec66",
+      "source_path": "scores/艺术歌曲/4cb54b25-9042-4982-96de-ad6b022aec66.pdf",
+      "storage_key": "scores/4c/4cb54b25-9042-4982-96de-ad6b022aec66.pdf",
+      "file_size": 278704,
+      "sha256": "e931e20c81f3272b74cc7317d1dfb91303419c82fe173fea84b61af31cef1fd0"
     },
     {
       "public_id": "4cc29045-d123-5314-99f7-a021034e60d0",
@@ -9851,6 +9872,13 @@
       "sha256": "7e740c12da232934825d8b5b23350059343ef1c3f99a86f89f2048faaf280f90"
     },
     {
+      "public_id": "66844873-99d1-4f86-890d-c0838278d3a5",
+      "source_path": "scores/艺术歌曲/66844873-99d1-4f86-890d-c0838278d3a5.pdf",
+      "storage_key": "scores/66/66844873-99d1-4f86-890d-c0838278d3a5.pdf",
+      "file_size": 410278,
+      "sha256": "6bac301f3636d3bc3a4c1e258acc58d4444c67e77725ae62c9476673a1159fdc"
+    },
+    {
       "public_id": "66c25c84-2e35-5cbf-b82a-d4d70eb44ae6",
       "source_path": "scores/歌剧咏叹调/1766007799154_Sovra_balze_scoscesi_e_pungenti.pdf",
       "storage_key": "scores/66/66c25c84-2e35-5cbf-b82a-d4d70eb44ae6.pdf",
@@ -11424,6 +11452,13 @@
       "storage_key": "scores/77/77709e6f-d9dd-5421-b649-e4f1e89eb57b.pdf",
       "file_size": 2415395,
       "sha256": "ac7fadd11ba4b36fb7e5429c692a5f063fd6819f177585fc3856fad189b0523b"
+    },
+    {
+      "public_id": "778f982b-4310-4312-9605-c41e8f598017",
+      "source_path": "scores/艺术歌曲/778f982b-4310-4312-9605-c41e8f598017.pdf",
+      "storage_key": "scores/77/778f982b-4310-4312-9605-c41e8f598017.pdf",
+      "file_size": 213159,
+      "sha256": "034b8bfafb175eeadea2a5106c464ad735c2c147a241c31379d00c92ac046706"
     },
     {
       "public_id": "779e4a8c-99df-5d11-bd01-3ba5377ef6e6",
@@ -13279,6 +13314,13 @@
       "storage_key": "scores/8b/8b94373c-08ef-4581-b632-8390ec742a2d.pdf",
       "file_size": 5584898,
       "sha256": "272564c90af8f0c0e2f7ed3922b77a8e4eb9cbab229e7e915b2679bedd2830f1"
+    },
+    {
+      "public_id": "8b98de6d-c81f-4f30-8dc5-1dd2ef7c2d82",
+      "source_path": "scores/艺术歌曲/8b98de6d-c81f-4f30-8dc5-1dd2ef7c2d82.pdf",
+      "storage_key": "scores/8b/8b98de6d-c81f-4f30-8dc5-1dd2ef7c2d82.pdf",
+      "file_size": 207138,
+      "sha256": "4e56b17136f11788ead7390b52d8c3d85711320a4cdb850960c8e2d610a926d8"
     },
     {
       "public_id": "8b9a87be-9db8-5cea-b859-9062aa608581",
@@ -17537,6 +17579,13 @@
       "sha256": "d2cd3efdd856b301e120f772e2e015fe8354360a0992c361c398bdd73fbbbb08"
     },
     {
+      "public_id": "b65469ea-c6d2-44a8-9bd6-3c7b28121f57",
+      "source_path": "scores/艺术歌曲/b65469ea-c6d2-44a8-9bd6-3c7b28121f57.pdf",
+      "storage_key": "scores/b6/b65469ea-c6d2-44a8-9bd6-3c7b28121f57.pdf",
+      "file_size": 192174,
+      "sha256": "ad881f603f7d8e8866d3917fa396fa9adb0aa6cccf263a87b96113eb48308e3b"
+    },
+    {
       "public_id": "b66631fc-604e-5c5b-8c83-7cf3f1a6771b",
       "source_path": "scores/歌剧咏叹调/1766007782895_Diresti_poi_cosi_O_pur_mossa_a_pieta.pdf",
       "storage_key": "scores/b6/b66631fc-604e-5c5b-8c83-7cf3f1a6771b.pdf",
@@ -19763,6 +19812,13 @@
       "sha256": "addc3fa26e7bd1a078c66f9b61ad8400ce183df3743afb8333f39e11f2bd9a5f"
     },
     {
+      "public_id": "cb8572e7-c509-49ee-aec0-1846e39b7973",
+      "source_path": "scores/艺术歌曲/cb8572e7-c509-49ee-aec0-1846e39b7973.pdf",
+      "storage_key": "scores/cb/cb8572e7-c509-49ee-aec0-1846e39b7973.pdf",
+      "file_size": 420759,
+      "sha256": "60cd654c95ed2b329fa925d2252b93e83653d7bcbb87df19fe2bdc5abba401f0"
+    },
+    {
       "public_id": "cbb2bb4d-1bbc-5465-bb0d-9a0019d36801",
       "source_path": "scores/歌剧咏叹调/1766093538701_Chella_mi_creda_libero.pdf",
       "storage_key": "scores/cb/cbb2bb4d-1bbc-5465-bb0d-9a0019d36801.pdf",
@@ -21721,6 +21777,13 @@
       "storage_key": "scores/df/df69559b-6902-5695-a36f-228c20023b91.pdf",
       "file_size": 89412,
       "sha256": "e54212cb1a0b7587bdeb2b7c4fb7682f5bc83f3a952acc119dc6ec87e77c6b5c"
+    },
+    {
+      "public_id": "df87bf8a-b316-4ef8-ab96-59753176980d",
+      "source_path": "scores/艺术歌曲/df87bf8a-b316-4ef8-ab96-59753176980d.pdf",
+      "storage_key": "scores/df/df87bf8a-b316-4ef8-ab96-59753176980d.pdf",
+      "file_size": 294895,
+      "sha256": "e4e5610cdfc01c6f416670b0609906aa91134d68cf63ba8da8ec17dc105dad79"
     },
     {
       "public_id": "df9332f5-9014-47ca-b8b2-589ac541a12b",
