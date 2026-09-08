@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3524,
-  "unique_content_count": 3505,
+  "entry_count": 3533,
+  "unique_content_count": 3514,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4405488844,
+  "total_size": 4408840454,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2303,6 +2303,13 @@
       "storage_key": "scores/16/16745e37-5a69-5c6a-a543-ebfb3d7c4148.pdf",
       "file_size": 2152487,
       "sha256": "6ec8a59e954524b196c6da94f7dff7f0d3e4e06863bc2f4a15b59af6e8ed088c"
+    },
+    {
+      "public_id": "1685079a-5c74-4046-aa34-a3e39b890b35",
+      "source_path": "scores/艺术歌曲/1685079a-5c74-4046-aa34-a3e39b890b35.pdf",
+      "storage_key": "scores/16/1685079a-5c74-4046-aa34-a3e39b890b35.pdf",
+      "file_size": 646656,
+      "sha256": "82021e78c5da18d7e244d638d27ffbb9b22f43411822d531df23f6dfd11ee7f5"
     },
     {
       "public_id": "1686c36e-ee58-5a46-83be-71643ec43246",
@@ -5889,6 +5896,13 @@
       "sha256": "9d3f6279138f7b13b533d61bfef96f8f6e640902993139c4826c24c3e0f6c61a"
     },
     {
+      "public_id": "3df2df56-1e2f-4248-a34c-8e82ee460558",
+      "source_path": "scores/艺术歌曲/3df2df56-1e2f-4248-a34c-8e82ee460558.pdf",
+      "storage_key": "scores/3d/3df2df56-1e2f-4248-a34c-8e82ee460558.pdf",
+      "file_size": 183415,
+      "sha256": "4c6c1e2601c591e8d20f738f479371eefca20294f1c7cdc5993ef78fbb2c15ee"
+    },
+    {
       "public_id": "3dfa3247-2b35-597f-b4e8-9b826c56507b",
       "source_path": "scores/歌剧咏叹调/1766097752910_Dal_soggiorno_degli_estinti.pdf",
       "storage_key": "scores/3d/3dfa3247-2b35-597f-b4e8-9b826c56507b.pdf",
@@ -7408,6 +7422,13 @@
       "sha256": "8dc4bcf7378ed8fcbabdea37b09f3c108899cee8f8e97a1f8c78e19537c33faa"
     },
     {
+      "public_id": "4d190d90-f666-4c4e-8c0c-c4ed2f469857",
+      "source_path": "scores/艺术歌曲/4d190d90-f666-4c4e-8c0c-c4ed2f469857.pdf",
+      "storage_key": "scores/4d/4d190d90-f666-4c4e-8c0c-c4ed2f469857.pdf",
+      "file_size": 333873,
+      "sha256": "92e8643727eb3c85f88b83ab4cff4db134120d9f69eda50d0b715e6e4aafa270"
+    },
+    {
       "public_id": "4d3eb40d-2c57-555c-9074-fe9e8d70cb26",
       "source_path": "scores/歌剧咏叹调/1766294164906_Je_nai_jamais_cheri_la_vie.pdf",
       "storage_key": "scores/4d/4d3eb40d-2c57-555c-9074-fe9e8d70cb26.pdf",
@@ -8477,6 +8498,13 @@
       "storage_key": "scores/59/59be42bc-66a6-5845-845b-e360fda6073d.pdf",
       "file_size": 234259,
       "sha256": "541816c4cf70047af1f4e1527f943277d7258a4c7aab7a3b5f41f8ae84eb6a0c"
+    },
+    {
+      "public_id": "59daf0c4-0034-4a64-98a1-e6fb7bb739e1",
+      "source_path": "scores/艺术歌曲/59daf0c4-0034-4a64-98a1-e6fb7bb739e1.pdf",
+      "storage_key": "scores/59/59daf0c4-0034-4a64-98a1-e6fb7bb739e1.pdf",
+      "file_size": 314554,
+      "sha256": "3a084baa418266a69fab4226bb89feb97e0d682cbbe52053638ab488f327891b"
     },
     {
       "public_id": "59e2f22c-3852-57b1-88fc-c5e1b235ee95",
@@ -12593,6 +12621,13 @@
       "storage_key": "scores/85/8513ab13-cb0a-5200-97b9-7c10ca3483ed.pdf",
       "file_size": 451375,
       "sha256": "afe59ab7a3426185d062bc4169311c1969c49103a7d265b48d099d770281553d"
+    },
+    {
+      "public_id": "852b26da-2ec8-42b2-bd8d-8f4434a07987",
+      "source_path": "scores/艺术歌曲/852b26da-2ec8-42b2-bd8d-8f4434a07987.pdf",
+      "storage_key": "scores/85/852b26da-2ec8-42b2-bd8d-8f4434a07987.pdf",
+      "file_size": 274349,
+      "sha256": "96bcb85847fee26edf43c8c6e7451a936b84090fbaaa5e19ce4f3c6bcf141d46"
     },
     {
       "public_id": "852f9c28-bdd5-54bf-94c6-c6256ea1fb75",
@@ -17075,6 +17110,13 @@
       "sha256": "785604cdb18861a0f4045a05b383a827f4248d648a5d65cb5296641d383931af"
     },
     {
+      "public_id": "b20d672d-eb7b-409f-b397-b157e0e7a602",
+      "source_path": "scores/艺术歌曲/b20d672d-eb7b-409f-b397-b157e0e7a602.pdf",
+      "storage_key": "scores/b2/b20d672d-eb7b-409f-b397-b157e0e7a602.pdf",
+      "file_size": 457323,
+      "sha256": "0b753f958ae65830cc94a262eafbaaaff889f00614bcb5fd42310906fdb10ad9"
+    },
+    {
       "public_id": "b22c77ea-b693-56d1-bf65-6acb62d605c8",
       "source_path": "scores/歌剧咏叹调/1766098610035_No_non_e_vero.pdf",
       "storage_key": "scores/b2/b22c77ea-b693-56d1-bf65-6acb62d605c8.pdf",
@@ -18235,6 +18277,13 @@
       "storage_key": "scores/be/be39075b-4171-575b-af63-d8bb68f5a797.pdf",
       "file_size": 331995,
       "sha256": "7d7cfed8d9e3973d906617c595a8d8f7b64149260f0c329a0fec3be0421f19cd"
+    },
+    {
+      "public_id": "be493072-f8f6-43ef-a011-7c5c2a9c3e1f",
+      "source_path": "scores/艺术歌曲/be493072-f8f6-43ef-a011-7c5c2a9c3e1f.pdf",
+      "storage_key": "scores/be/be493072-f8f6-43ef-a011-7c5c2a9c3e1f.pdf",
+      "file_size": 664127,
+      "sha256": "01fe2218002c70817e0143cd3f8a0bb95e27a1d6f0dda73abb54afec0cd85afc"
     },
     {
       "public_id": "be5a6cca-d687-5fb6-9c81-3a6ef8a8a5da",
@@ -22563,6 +22612,13 @@
       "sha256": "4f189a89f24fe8693a2a319b42d50e56c05f246ceb45d9bf751fc9f77c1e576b"
     },
     {
+      "public_id": "e9d0232b-514e-4bd7-bfdb-b91cc09d3e98",
+      "source_path": "scores/艺术歌曲/e9d0232b-514e-4bd7-bfdb-b91cc09d3e98.pdf",
+      "storage_key": "scores/e9/e9d0232b-514e-4bd7-bfdb-b91cc09d3e98.pdf",
+      "file_size": 297239,
+      "sha256": "a023373370ebe08e593133711d74e10bd01035f759a1840ab8218a8703d76c4a"
+    },
+    {
       "public_id": "e9d2cb4a-7202-5039-852a-b557e6b2489d",
       "source_path": "scores/歌剧咏叹调/1766007735605_No_piu_soffrir_non_voglio.pdf",
       "storage_key": "scores/e9/e9d2cb4a-7202-5039-852a-b557e6b2489d.pdf",
@@ -23079,6 +23135,13 @@
       "storage_key": "scores/ee/ee8e2bb7-dd5c-5b02-a35c-94ee7c4575c0.pdf",
       "file_size": 758564,
       "sha256": "e3fbefe0da8b9ea57aaec32807062eb38486b721351977088cad72b79d6998bf"
+    },
+    {
+      "public_id": "eeac011c-110e-450d-992b-c637d00ecb8f",
+      "source_path": "scores/艺术歌曲/eeac011c-110e-450d-992b-c637d00ecb8f.pdf",
+      "storage_key": "scores/ee/eeac011c-110e-450d-992b-c637d00ecb8f.pdf",
+      "file_size": 180074,
+      "sha256": "284316cf6c101cba4e0c2273d08761c57eca547ee179228b7e2b845271862ede"
     },
     {
       "public_id": "eeb558ff-b30f-5112-80c0-cbba15cf1c87",
