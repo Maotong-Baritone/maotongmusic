@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3553,
-  "unique_content_count": 3534,
+  "entry_count": 3562,
+  "unique_content_count": 3543,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4414524954,
+  "total_size": 4418870372,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -6841,6 +6841,13 @@
       "sha256": "11e5bd3ae4d74c88e92c4f1340810d744908234ac85b5a1e8bd287692e2da60f"
     },
     {
+      "public_id": "47091e8c-6de1-4780-8b51-ea017d8d3b4b",
+      "source_path": "scores/艺术歌曲/47091e8c-6de1-4780-8b51-ea017d8d3b4b.pdf",
+      "storage_key": "scores/47/47091e8c-6de1-4780-8b51-ea017d8d3b4b.pdf",
+      "file_size": 189787,
+      "sha256": "6c9532ff79154cf93879199a20b26f38ef30a24c914b90facd1b8428837d25ef"
+    },
+    {
       "public_id": "472ac742-8c4c-5817-a673-5038fd9584fb",
       "source_path": "scores/歌剧咏叹调/1766007731629_Bella_pur_nel_mio_diletto.pdf",
       "storage_key": "scores/47/472ac742-8c4c-5817-a673-5038fd9584fb.pdf",
@@ -7987,6 +7994,13 @@
       "storage_key": "scores/53/535098a6-e0db-45ae-b177-1c69a944bdf4.pdf",
       "file_size": 1105563,
       "sha256": "8ed0732464a0eeddab3c7ea2bf675242814745bc3c2efce7d7f83866a0a74f87"
+    },
+    {
+      "public_id": "535c3b7a-e210-4a7b-b221-6d4158c171ca",
+      "source_path": "scores/艺术歌曲/535c3b7a-e210-4a7b-b221-6d4158c171ca.pdf",
+      "storage_key": "scores/53/535c3b7a-e210-4a7b-b221-6d4158c171ca.pdf",
+      "file_size": 860199,
+      "sha256": "24d4eb0b5139eac85854f143a19f9f2eff6297b99a1a7c2d687aeed51dc3b92e"
     },
     {
       "public_id": "5364dcd2-b784-5891-bd3e-183ceace9c58",
@@ -11202,6 +11216,13 @@
       "sha256": "253560b0d5a66dc62983504b60699d53628eca450853b75bb6f57fde9464f91c"
     },
     {
+      "public_id": "73a5efb5-5065-430a-89d9-84e7208057d9",
+      "source_path": "scores/艺术歌曲/73a5efb5-5065-430a-89d9-84e7208057d9.pdf",
+      "storage_key": "scores/73/73a5efb5-5065-430a-89d9-84e7208057d9.pdf",
+      "file_size": 196751,
+      "sha256": "31d9580a6a573bfe011f212c2a3200751a164d27630e5fb06f1cfccefa8d5d83"
+    },
+    {
       "public_id": "73cde5a1-2407-5817-8c69-593d9a360906",
       "source_path": "scores/歌剧咏叹调/1766294192770_Sans_votre_brusque_retraite.pdf",
       "storage_key": "scores/73/73cde5a1-2407-5817-8c69-593d9a360906.pdf",
@@ -12740,6 +12761,13 @@
       "storage_key": "scores/85/858d4a29-4299-536b-8cd9-9a2149f76c50.pdf",
       "file_size": 1836772,
       "sha256": "45fcc76fdfb760ae169986ac11495105abe000cf8084dc0992d9d7de099b7b2b"
+    },
+    {
+      "public_id": "85aba14a-fd83-4fba-a0b2-2190c8301004",
+      "source_path": "scores/艺术歌曲/85aba14a-fd83-4fba-a0b2-2190c8301004.pdf",
+      "storage_key": "scores/85/85aba14a-fd83-4fba-a0b2-2190c8301004.pdf",
+      "file_size": 362786,
+      "sha256": "66d6872b30bc8917bc96a06092cbd854466c2a2d77d3d315c853446916899d69"
     },
     {
       "public_id": "85ac6563-cc8b-57ef-8d33-f5e141f73e40",
@@ -17285,6 +17313,13 @@
       "sha256": "83dbd521d4bd88541f185ac3b59e770f73f3e5c918cc2a10c9f0ab7664360677"
     },
     {
+      "public_id": "b306f3ac-48d2-44b9-896a-08b974cf28b3",
+      "source_path": "scores/艺术歌曲/b306f3ac-48d2-44b9-896a-08b974cf28b3.pdf",
+      "storage_key": "scores/b3/b306f3ac-48d2-44b9-896a-08b974cf28b3.pdf",
+      "file_size": 415757,
+      "sha256": "05eab8a3b4ac8a41e55e6455c0a27f682cc28c09329fda3c6d08e45ffb79558d"
+    },
+    {
       "public_id": "b30b1f72-8ef9-5c5e-9fd8-dc9aa42064f3",
       "source_path": "scores/歌剧咏叹调/1766012387177_Da_schlagt_des_Abschieds_Stunde.pdf",
       "storage_key": "scores/b3/b30b1f72-8ef9-5c5e-9fd8-dc9aa42064f3.pdf",
@@ -18333,6 +18368,13 @@
       "storage_key": "scores/bd/bdde8236-9ccc-54e2-b282-39d5395c0e22.pdf",
       "file_size": 382934,
       "sha256": "04c0f7662807179c3e3d5313e803049c9f7ab7dfc9ef3c3525f5d06d9a517a0f"
+    },
+    {
+      "public_id": "bdf8813e-f990-4414-9225-8ec4b18402da",
+      "source_path": "scores/艺术歌曲/bdf8813e-f990-4414-9225-8ec4b18402da.pdf",
+      "storage_key": "scores/bd/bdf8813e-f990-4414-9225-8ec4b18402da.pdf",
+      "file_size": 546845,
+      "sha256": "9f58ff31515e1a25a895c66f23934e88f28737cd71c7182fda7d2eb9e19aa172"
     },
     {
       "public_id": "be1253ba-8b1d-5196-9261-792cc8086648",
@@ -19446,6 +19488,13 @@
       "storage_key": "scores/c7/c7381c00-7854-5eac-b5b5-e3b14b7cfb38.pdf",
       "file_size": 230040,
       "sha256": "e6b19597e64216737ff3e0fb8f5dcb2e324754c2adb1958be72783231aeb8e61"
+    },
+    {
+      "public_id": "c7406edf-bb75-4482-904e-3978b44baf62",
+      "source_path": "scores/艺术歌曲/c7406edf-bb75-4482-904e-3978b44baf62.pdf",
+      "storage_key": "scores/c7/c7406edf-bb75-4482-904e-3978b44baf62.pdf",
+      "file_size": 458095,
+      "sha256": "f767e6d69a78cfd560667b121df149d8326c41eb60c5f46f9a5a738ff973b511"
     },
     {
       "public_id": "c7464950-12a8-5dc5-ba5d-55501e2e529a",
@@ -22052,6 +22101,13 @@
       "sha256": "59047e066332366221c710f3b6b74188ce8d688da6537256c6feed34da61b6a5"
     },
     {
+      "public_id": "e17604fa-8ed0-4d49-995e-eb63017266af",
+      "source_path": "scores/艺术歌曲/e17604fa-8ed0-4d49-995e-eb63017266af.pdf",
+      "storage_key": "scores/e1/e17604fa-8ed0-4d49-995e-eb63017266af.pdf",
+      "file_size": 208160,
+      "sha256": "ca5970462ba895a6f08b5e86b06cb27c7cf20d178b4054f35973e5cf9edcc45b"
+    },
+    {
       "public_id": "e183ed53-b473-4533-a547-9121d0f665e4",
       "source_path": "scores/艺术歌曲/e183ed53-b473-4533-a547-9121d0f665e4.pdf",
       "storage_key": "scores/e1/e183ed53-b473-4533-a547-9121d0f665e4.pdf",
@@ -23072,6 +23128,13 @@
       "storage_key": "scores/ec/ec635bd4-a4d8-5318-9273-2e1756f082a6.pdf",
       "file_size": 273219,
       "sha256": "cc587ad0316c8d36fb9df6d9a33bf215060cd043d8d2002af81274fba55ce7bf"
+    },
+    {
+      "public_id": "ec6449cb-030d-4cbe-bb6f-c70fa42367cc",
+      "source_path": "scores/艺术歌曲/ec6449cb-030d-4cbe-bb6f-c70fa42367cc.pdf",
+      "storage_key": "scores/ec/ec6449cb-030d-4cbe-bb6f-c70fa42367cc.pdf",
+      "file_size": 1107038,
+      "sha256": "ad6c9b8a5ae080fd7352d0d6962cf6455d69138e933353f77fe7386c31f56252"
     },
     {
       "public_id": "ec8d0065-16c5-55e2-8cab-edf5a0541023",
