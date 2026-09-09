@@ -1,0 +1,304 @@
+{
+  "label": "Op.48与Op.107：Peters独立单曲",
+  "checked_on": "2026-09-08",
+  "recorded_at": "2026-09-09T02:43:33.670514+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "9105",
+    "9106",
+    "9107",
+    "9108",
+    "9109",
+    "9110",
+    "9111",
+    "246589",
+    "246590",
+    "246591",
+    "246592",
+    "246593"
+  ],
+  "source_notes": "实时IMSLP作品页确认两套作品均为德语、voice/piano、Public Domain；Op.48七份列在Peters高声部组，Op.107五份为Peters声乐钢琴独立单曲。完整谱、其他声区及改编不在本批。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览十二份完整接触表并放大核对首尾、标题、速度、歌词、编制和异常页。",
+  "rendering_note": "十二份单曲共24页，页序连续、标题和歌词可辨、末页完整结束；Op.48低分辨率扫描仍可清楚阅读。#246590谱面速度标记为Mit Laune，已纠正来源解析多出的or。",
+  "metadata_changes": [
+    {
+      "imslp_id": "9105",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9105",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9106",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9106",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9107",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9107",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9108",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9108",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9109",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9109",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9110",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9110",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9111",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9111",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "246590",
+      "field": "proposed_title",
+      "before": "No. 2 Salamander. Mit Launeor, Op. 107",
+      "after": "No. 2 Salamander. Mit Laune, Op. 107",
+      "evidence": "The first rendered score page prints “Salamander.” and the tempo “Mit Laune.”; the trailing “or” is a source-page parsing artifact."
+    }
+  ],
+  "files": {
+    "9105": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Der Gang zum Liebchen. Con grazia, Op. 48"
+      ],
+      "notes": "No. 1 Der Gang zum Liebchen. Con grazia, Op. 48；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9106": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Der Überläufer. Andante con moto, Op. 48"
+      ],
+      "notes": "No. 2 Der Überläufer. Andante con moto, Op. 48；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9107": {
+      "pages": 1,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Liebesklage des Mädchens. Etwas langsam, Op. 48"
+      ],
+      "notes": "No. 3 Liebesklage des Mädchens. Etwas langsam, Op. 48；高声部Peters版，共1页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9108": {
+      "pages": 1,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Gold überweigt die Liebe. Poco andante, Op. 48"
+      ],
+      "notes": "No. 4 Gold überweigt die Liebe. Poco andante, Op. 48；高声部Peters版，共1页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9109": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Trost in Thränen. Andante, Op. 48"
+      ],
+      "notes": "No. 5 Trost in Thränen. Andante, Op. 48；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9110": {
+      "pages": 1,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Vergangen ist mir Glück und Heil. Andante, Op. 48"
+      ],
+      "notes": "No. 6 Vergangen ist mir Glück und Heil. Andante, Op. 48；高声部Peters版，共1页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9111": {
+      "pages": 3,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Herbstgefühl. Ziemlich langsam, Op. 48"
+      ],
+      "notes": "No. 7 Herbstgefühl. Ziemlich langsam, Op. 48；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "246589": {
+      "pages": 3,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 An die Stolze. Sehr lebhaft und ausdrucksvoll, Op. 107"
+      ],
+      "notes": "No. 1 An die Stolze. Sehr lebhaft und ausdrucksvoll, Op. 107；声乐钢琴Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "246590": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Salamander. Mit Laune, Op. 107"
+      ],
+      "notes": "No. 2 Salamander. Mit Laune, Op. 107；声乐钢琴Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "246591": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Das Mädchen spricht. Lebhaft und Anmuthig, Op. 107"
+      ],
+      "notes": "No. 3 Das Mädchen spricht. Lebhaft und Anmuthig, Op. 107；声乐钢琴Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "246592": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Maienkätzchen. Grazioso, Op. 107"
+      ],
+      "notes": "No. 4 Maienkätzchen. Grazioso, Op. 107；声乐钢琴Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "246593": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Mädchenlied. Leise bewegt, Op. 107"
+      ],
+      "notes": "No. 5 Mädchenlied. Leise bewegt, Op. 107；声乐钢琴Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-09T02:45:03+00:00",
+  "approved_publication_ids": [
+    "9105",
+    "9106",
+    "9107",
+    "9108",
+    "9109",
+    "9110",
+    "9111",
+    "246589",
+    "246590",
+    "246591",
+    "246592",
+    "246593"
+  ]
+}

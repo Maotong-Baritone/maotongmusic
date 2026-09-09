@@ -1,0 +1,116 @@
+{
+  "batch_id": "brahms-op48-op107-twelve-20260909",
+  "recorded_at": "2026-09-09T02:43:33.650359+00:00",
+  "source_manifest_before_sha256": "b9a6d798a411d4773a687533c9fd21b440a8111cd7abf7318f4d5219988cf29d",
+  "source_manifest_after_sha256": "e58fd124bf0e95eb4dc1bfd70e892a9ba05a6cded239ab33c40a9b0358af6ab5",
+  "staging_manifest_before_sha256": "7d796f1986b835d4cd84d47ba69280d13a62fd8fb3f530fc8cb3a5f71e59b4d6",
+  "staging_manifest_after_sha256": "fdde50642400e769b541bbae2db6c1038e51c8d9b00f05afb26c9526cee984cd",
+  "backup": "backup\\import_metadata\\brahms-op48-op107-twelve-20260909-20260908_204333_470505",
+  "changes": [
+    {
+      "imslp_id": "9105",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9105",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9106",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9106",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9107",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9107",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9108",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9108",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9109",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9109",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9110",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9110",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9111",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "9111",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "Live IMSLP lists the file in the Peters high-voice group; the rendered score has German text and voice with piano."
+    },
+    {
+      "imslp_id": "246590",
+      "field": "proposed_title",
+      "before": "No. 2 Salamander. Mit Launeor, Op. 107",
+      "after": "No. 2 Salamander. Mit Laune, Op. 107",
+      "evidence": "The first rendered score page prints “Salamander.” and the tempo “Mit Laune.”; the trailing “or” is a source-page parsing artifact."
+    }
+  ]
+}

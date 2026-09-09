@@ -59908,13 +59908,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "ed9b8e87-a63c-45e8-93d7-3cf075d68f43",
           "source_references": [
             {
@@ -59922,10 +59922,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "1. Der Gang zum Liebchen"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9106",
@@ -59953,13 +59950,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4223a0a5-a7fd-4264-8e9e-eeeadd2a7727",
           "source_references": [
             {
@@ -59967,10 +59964,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "2. Der Überläufer"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9107",
@@ -59998,13 +59992,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9421999a-fd97-4d76-be9b-e23a2e57961b",
           "source_references": [
             {
@@ -60012,10 +60006,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "3. Liebesklage des Mädchens"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9108",
@@ -60043,13 +60034,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5715f5f5-d72a-42a9-a5a3-74b275c4bc90",
           "source_references": [
             {
@@ -60057,10 +60048,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "4. Gold überwiegt die Liebe"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9109",
@@ -60088,13 +60076,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "114ff1ff-9b26-4c22-b15b-b29cc388f61d",
           "source_references": [
             {
@@ -60102,10 +60090,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "5. Trost in Tränen"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9110",
@@ -60133,13 +60118,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "16598c92-947c-439c-8e57-c437a73d0c89",
           "source_references": [
             {
@@ -60147,10 +60132,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "6. Vergangen ist mir Glück und Heil"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9111",
@@ -60178,13 +60160,13 @@
           "movement_number": 7,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "70ad19a5-ca97-4149-a075-112bab16dac3",
           "source_references": [
             {
@@ -60192,10 +60174,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.48_%28Brahms%2C_Johannes%29",
               "description": "7. Herbstgefühl"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "39330",
@@ -71747,9 +71726,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "151a2665-8703-48ad-9192-3d5548777845",
           "source_references": [
             {
@@ -71757,10 +71736,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.107_%28Brahms%2C_Johannes%29",
               "description": "1. An die Stolze"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246590",
@@ -71782,7 +71758,7 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Salamander. Mit Laune, Op. 107",
+          "proposed_title": "No. 2 Salamander. Mit Launeor, Op. 107",
           "proposed_work": "5 Lieder, Op. 107",
           "title_scope": "individual_movement",
           "movement_number": 2,
@@ -71792,9 +71768,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5d2738b8-32a9-4d0b-9322-2613a6a77f4d",
           "source_references": [
             {
@@ -71802,10 +71778,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.107_%28Brahms%2C_Johannes%29",
               "description": "2. Salamander"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246591",
@@ -71837,9 +71810,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "40a782c7-05f4-4f62-8a4d-60364dd0ac0c",
           "source_references": [
             {
@@ -71847,10 +71820,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.107_%28Brahms%2C_Johannes%29",
               "description": "3. Das Mädchen spricht"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246592",
@@ -71882,9 +71852,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "0c2f48f7-7767-4444-8a39-53021093ddff",
           "source_references": [
             {
@@ -71892,10 +71862,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.107_%28Brahms%2C_Johannes%29",
               "description": "4. Maienkätzchen"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246593",
@@ -71927,9 +71894,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "2f1ce81d-d0ef-4614-a177-c0268962bf72",
           "source_references": [
             {
@@ -71937,10 +71904,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.107_%28Brahms%2C_Johannes%29",
               "description": "5. Mädchenlied"
             }
-          ],
-          "published_at": "2026-09-09T02:45:03+00:00",
-          "publication_batch_id": "brahms-op48-op107-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "347103",
