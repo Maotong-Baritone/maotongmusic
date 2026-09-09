@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3574,
-  "unique_content_count": 3555,
+  "entry_count": 3584,
+  "unique_content_count": 3565,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4421854284,
+  "total_size": 4424523623,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2765,6 +2765,13 @@
       "storage_key": "scores/1a/1a9e70a9-f907-5148-ad68-f6eb9fe847ad.pdf",
       "file_size": 918562,
       "sha256": "6136cec6eb1b4d1837cb9e8405b50a98e950e50a3b7710a06c896c29939e9aa8"
+    },
+    {
+      "public_id": "1a9f60ed-4e8d-42a7-b882-3d6dcf0bf7a4",
+      "source_path": "scores/艺术歌曲/1a9f60ed-4e8d-42a7-b882-3d6dcf0bf7a4.pdf",
+      "storage_key": "scores/1a/1a9f60ed-4e8d-42a7-b882-3d6dcf0bf7a4.pdf",
+      "file_size": 192769,
+      "sha256": "69c22338c07e86deb08f72afd552966cf2621e99cc8a49de1559841b8180d3ff"
     },
     {
       "public_id": "1aa3fe38-a19f-5c7e-8b78-3070ac29ad35",
@@ -7268,6 +7275,13 @@
       "sha256": "bf29b10091891798b9e80cac56c8ee59cc67aaae2ad3438fb5cdde3cbe7d6725"
     },
     {
+      "public_id": "4a011007-a912-450a-8c63-ca4ba7bfb085",
+      "source_path": "scores/艺术歌曲/4a011007-a912-450a-8c63-ca4ba7bfb085.pdf",
+      "storage_key": "scores/4a/4a011007-a912-450a-8c63-ca4ba7bfb085.pdf",
+      "file_size": 411022,
+      "sha256": "c29cb4b79371cdcd1ef1e467c74eb968b6d3de0c87b7b3fb8146e36250d3b80b"
+    },
+    {
       "public_id": "4a2c56be-f35e-579e-b3a6-631e7981d701",
       "source_path": "scores/歌剧咏叹调/1766007829575_Quell_amor_che_nato_a_forza.pdf",
       "storage_key": "scores/4a/4a2c56be-f35e-579e-b3a6-631e7981d701.pdf",
@@ -7693,6 +7707,13 @@
       "storage_key": "scores/4f/4f108222-926a-4ab2-b4d1-1da5c92957c1.pdf",
       "file_size": 289841,
       "sha256": "dc3ed61b3c9dbee660aa25f70e16ce282c2ef6b19c8a6a060225f3645f7080ea"
+    },
+    {
+      "public_id": "4f1a497a-422f-412c-9171-dd86a8211a44",
+      "source_path": "scores/艺术歌曲/4f1a497a-422f-412c-9171-dd86a8211a44.pdf",
+      "storage_key": "scores/4f/4f1a497a-422f-412c-9171-dd86a8211a44.pdf",
+      "file_size": 205669,
+      "sha256": "373c5601678d8516d791dd676d50752683b676d49227eba8b69d74c1f802a6d1"
     },
     {
       "public_id": "4f3e6ddc-e86c-474c-bec4-fd5b4bf8b0ba",
@@ -12539,6 +12560,13 @@
       "sha256": "b5d54af86d3b3e6acbcd2e23713a0dd634e23f642232b463f16d0c9d35f40bf4"
     },
     {
+      "public_id": "82692ff9-011d-42fb-88b0-090b4539963b",
+      "source_path": "scores/艺术歌曲/82692ff9-011d-42fb-88b0-090b4539963b.pdf",
+      "storage_key": "scores/82/82692ff9-011d-42fb-88b0-090b4539963b.pdf",
+      "file_size": 389848,
+      "sha256": "34fb46d2f4bf30ef09ead7245b1e5a5fae39a415c7fda71e5b99273f5559d5d5"
+    },
+    {
       "public_id": "826b764b-9f5a-5487-a8c6-eb8c14076727",
       "source_path": "scores/歌剧咏叹调/1766098244474_Corri_amica.pdf",
       "storage_key": "scores/82/826b764b-9f5a-5487-a8c6-eb8c14076727.pdf",
@@ -14247,6 +14275,13 @@
       "sha256": "68f03c94b2dcd1fb962b74b93096455bc5c46daa47da618a916f9896e194f782"
     },
     {
+      "public_id": "9388feee-2fda-4d4d-8c94-3a1044544fe9",
+      "source_path": "scores/艺术歌曲/9388feee-2fda-4d4d-8c94-3a1044544fe9.pdf",
+      "storage_key": "scores/93/9388feee-2fda-4d4d-8c94-3a1044544fe9.pdf",
+      "file_size": 224610,
+      "sha256": "cb08b2db0daabb0b9573e8030b4bfaeec01f5808f32ae4b123985de11e598217"
+    },
+    {
       "public_id": "93a10659-123b-5e3c-9dee-f18761453b85",
       "source_path": "scores/歌剧咏叹调/1766038691839_Oh_ma_chere_compagne.pdf",
       "storage_key": "scores/93/93a10659-123b-5e3c-9dee-f18761453b85.pdf",
@@ -14427,6 +14462,13 @@
       "storage_key": "scores/95/952e8897-009b-5d6e-85ac-a7a51e0f5574.pdf",
       "file_size": 628695,
       "sha256": "e73f12591fde8039ad7ee3aef7731cf13587c470f4bb7bcbb0dcb5942200bf78"
+    },
+    {
+      "public_id": "9545e2e2-4156-4cc3-8ed8-c16e736192f6",
+      "source_path": "scores/艺术歌曲/9545e2e2-4156-4cc3-8ed8-c16e736192f6.pdf",
+      "storage_key": "scores/95/9545e2e2-4156-4cc3-8ed8-c16e736192f6.pdf",
+      "file_size": 217100,
+      "sha256": "d66c8555d5eeaab1329016fb4fc41946323fe456855fbd6bd41830c202292a54"
     },
     {
       "public_id": "955e692b-c755-5869-80ee-bdefffbde383",
@@ -15302,6 +15344,13 @@
       "storage_key": "scores/9e/9e18a24d-2c49-4239-b6b9-7342b9715a68.pdf",
       "file_size": 1786793,
       "sha256": "dcf4e4d29230bdaa3410673a99cca72ca053f10474a1bae526bc15c677bf5918"
+    },
+    {
+      "public_id": "9e19aab8-f25a-480a-98be-ab047f27c877",
+      "source_path": "scores/艺术歌曲/9e19aab8-f25a-480a-98be-ab047f27c877.pdf",
+      "storage_key": "scores/9e/9e19aab8-f25a-480a-98be-ab047f27c877.pdf",
+      "file_size": 198524,
+      "sha256": "51bacd2d8a34af5cb86893b9839a753d6766caab6a857daafb50d73b619a5374"
     },
     {
       "public_id": "9e2ac75d-b8da-5973-9e78-62d5ea8723ad",
@@ -16681,6 +16730,13 @@
       "storage_key": "scores/ac/ac0d167f-78dc-51cb-accc-17ac215d27d5.pdf",
       "file_size": 13129906,
       "sha256": "b50816f9f16ce55b1402ecefe6eb040030e6abf534e5ca70e7fd377d824bdb24"
+    },
+    {
+      "public_id": "ac15dd0a-951a-407d-bb0f-4df1c2707c8f",
+      "source_path": "scores/艺术歌曲/ac15dd0a-951a-407d-bb0f-4df1c2707c8f.pdf",
+      "storage_key": "scores/ac/ac15dd0a-951a-407d-bb0f-4df1c2707c8f.pdf",
+      "file_size": 218510,
+      "sha256": "01345e6b543c408b3fb4c834a9d9f2f62ef6cd6729abb13dd0e5f0e1cc9d3432"
     },
     {
       "public_id": "ac4219a5-7f62-516e-9016-e45e90d5d5c4",
@@ -19215,6 +19271,13 @@
       "storage_key": "scores/c3/c3bf7714-7024-5445-b841-cbd8a45ef4f2.pdf",
       "file_size": 3768424,
       "sha256": "67a0fd1a7c675cb98bf039629b69e693592bf781d1c8b878ebfdfec76b78b07b"
+    },
+    {
+      "public_id": "c3cc0737-091b-4c21-83b2-f1e713a93521",
+      "source_path": "scores/艺术歌曲/c3cc0737-091b-4c21-83b2-f1e713a93521.pdf",
+      "storage_key": "scores/c3/c3cc0737-091b-4c21-83b2-f1e713a93521.pdf",
+      "file_size": 308745,
+      "sha256": "9a20c7e2c32b8963da87e1a7723d4d172c2d92d08a9d7587cf81924abd4842f4"
     },
     {
       "public_id": "c3e6cfbc-fd24-559c-9bf3-15ae3c05ebc2",
@@ -24360,6 +24423,13 @@
       "storage_key": "scores/f9/f948e7af-73cb-50ba-8c71-38ba8923c972.pdf",
       "file_size": 7710486,
       "sha256": "073e02de8201eb556239a1c1bdc8d69dd6c54255ad88ada5db5c7317728484b6"
+    },
+    {
+      "public_id": "f94c7cd3-93d1-473a-903f-b70e1c19f605",
+      "source_path": "scores/艺术歌曲/f94c7cd3-93d1-473a-903f-b70e1c19f605.pdf",
+      "storage_key": "scores/f9/f94c7cd3-93d1-473a-903f-b70e1c19f605.pdf",
+      "file_size": 302542,
+      "sha256": "42cdf5536ebc1effbb4d360202a734fb3a36aef6665560518da79ab3103d88c6"
     },
     {
       "public_id": "f964cfe9-8e82-5351-b0bf-b978d9d261ba",
