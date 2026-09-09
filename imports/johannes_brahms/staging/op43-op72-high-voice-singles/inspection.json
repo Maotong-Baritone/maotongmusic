@@ -1,0 +1,259 @@
+{
+  "label": "Op.43与Op.72：高声部单曲",
+  "checked_on": "2026-09-08",
+  "recorded_at": "2026-09-09T01:48:22.409031+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "9112",
+    "9113",
+    "9114",
+    "9115",
+    "42188",
+    "42189",
+    "42190",
+    "42191",
+    "42192"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.43四首与Op.72五首均为德语、voice/piano、Public Domain；本批九份Peters文件均列在高声部组。#9114标题中的Horn被解析器误判为圆号分谱，来源分组与谱面均确认其为声乐与钢琴艺术歌曲。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览九份完整接触表并放大核对首尾、标题、速度、歌词、编制和异常页。",
+  "rendering_note": "九份单曲共35页，页序连续、标题和歌词可辨、末页完整结束；Op.43扫描分辨率偏低但实际阅读清楚。",
+  "metadata_changes": [
+    {
+      "imslp_id": "9112",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9112",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9113",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9113",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "voice_types",
+      "before": "圆号分谱",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "language",
+      "before": "",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9115",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9115",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42188",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42189",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42190",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42191",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42192",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "category",
+      "before": "器乐分谱",
+      "after": "艺术歌曲",
+      "evidence": "“Horn” is part of the German song title; live IMSLP and the rendered one-page score confirm a voice-and-piano art song."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "“Horn” is part of the German song title; live IMSLP and the rendered one-page score confirm a voice-and-piano art song."
+    }
+  ],
+  "files": {
+    "9112": {
+      "pages": 8,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Von ewiger Liebe. Mässig — Ziemlich langsam, Op. 43"
+      ],
+      "notes": "No. 1 Von ewiger Liebe. Mässig — Ziemlich langsam, Op. 43；高声部Peters版，共8页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9113": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Die Mainacht. Sehr langsam und ausdrucksvwoll, Op. 43"
+      ],
+      "notes": "No. 2 Die Mainacht. Sehr langsam und ausdrucksvwoll, Op. 43；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9114": {
+      "pages": 1,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Ich schell mein Horn ins Jammerthal. Durchaus nicht zu langsam und ziemlich frei vorzutragen, Op. 43"
+      ],
+      "notes": "No. 3 Ich schell mein Horn ins Jammerthal. Durchaus nicht zu langsam und ziemlich frei vorzutragen, Op. 43；高声部Peters版，共1页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "9115": {
+      "pages": 5,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Das Lied vom Herrn von Falkenstein. Allegro, Op. 43"
+      ],
+      "notes": "No. 4 Das Lied vom Herrn von Falkenstein. Allegro, Op. 43；高声部Peters版，共5页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42188": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Alte Liebe. Bewegt, doch nicht zu sehr, Op. 72"
+      ],
+      "notes": "No. 1 Alte Liebe. Bewegt, doch nicht zu sehr, Op. 72；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42189": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Sommerfäden. Andante con moto, Op. 72"
+      ],
+      "notes": "No. 2 Sommerfäden. Andante con moto, Op. 72；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42190": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 O Kühler Wald. Langsam, Op. 72"
+      ],
+      "notes": "No. 3 O Kühler Wald. Langsam, Op. 72；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42191": {
+      "pages": 5,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Verzagen. Bewegt, Op. 72"
+      ],
+      "notes": "No. 4 Verzagen. Bewegt, Op. 72；高声部Peters版，共5页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42192": {
+      "pages": 4,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Unüberwindlich. Vivace, Op. 72"
+      ],
+      "notes": "No. 5 Unüberwindlich. Vivace, Op. 72；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-09T01:50:00+00:00",
+  "approved_publication_ids": [
+    "9112",
+    "9113",
+    "9114",
+    "9115",
+    "42188",
+    "42189",
+    "42190",
+    "42191",
+    "42192"
+  ]
+}

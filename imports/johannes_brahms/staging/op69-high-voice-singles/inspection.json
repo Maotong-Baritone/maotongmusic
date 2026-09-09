@@ -1,0 +1,217 @@
+{
+  "label": "9 Songs, Op.69：高声部单曲",
+  "checked_on": "2026-09-08",
+  "recorded_at": "2026-09-08T20:33:02.520927+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "41942",
+    "41943",
+    "41944",
+    "41945",
+    "41946",
+    "41947",
+    "41948",
+    "41949",
+    "41950"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.69、九首目录、德语、voice/piano、Public Domain，并明确#41942–#41950为Peters高声部单曲；其中Nos.1、5–9为原调。完整谱、低声部、中音版、现代排版和改编不在本批。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler渲染全部页面；查看全部页面接触表并重点核对首尾、标题、速度、歌词、编制和完整结束。",
+  "rendering_note": "九份单曲页序连续、内容清晰，标题、歌词与末页完整结束均与来源范围相符。",
+  "metadata_changes": [
+    {
+      "imslp_id": "41942",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41943",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41944",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41945",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41946",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41947",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41948",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41949",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41950",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    }
+  ],
+  "files": {
+    "41942": {
+      "pages": 3,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Klage I. Poco allegro e grazioso"
+      ],
+      "notes": "No. 1 Klage I. Poco allegro e grazioso；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41943": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Klage II. Con moto"
+      ],
+      "notes": "No. 2 Klage II. Con moto；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41944": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Abschied. Con moto"
+      ],
+      "notes": "No. 3 Abschied. Con moto；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41945": {
+      "pages": 5,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Des Liebsten Schwur. Sehr belebt und heimlich"
+      ],
+      "notes": "No. 4 Des Liebsten Schwur. Sehr belebt und heimlich；高声部Peters版，共5页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41946": {
+      "pages": 3,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Tambourliedchen. Sehr lebhaft"
+      ],
+      "notes": "No. 5 Tambourliedchen. Sehr lebhaft；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41947": {
+      "pages": 7,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Vom Strande. Bewegt"
+      ],
+      "notes": "No. 6 Vom Strande. Bewegt；高声部Peters版，共7页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41948": {
+      "pages": 2,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Über die See. Andante"
+      ],
+      "notes": "No. 7 Über die See. Andante；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41949": {
+      "pages": 3,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 Salome. Sehr lebhaft"
+      ],
+      "notes": "No. 8 Salome. Sehr lebhaft；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41950": {
+      "pages": 7,
+      "key": "",
+      "number": 9,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 9 Mädchenfluch. Belebt"
+      ],
+      "notes": "No. 9 Mädchenfluch. Belebt；高声部Peters版，共7页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-08T20:34:11+00:00",
+  "approved_publication_ids": [
+    "41942",
+    "41943",
+    "41944",
+    "41945",
+    "41946",
+    "41947",
+    "41948",
+    "41949",
+    "41950"
+  ]
+}

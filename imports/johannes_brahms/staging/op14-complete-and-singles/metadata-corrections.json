@@ -1,0 +1,80 @@
+{
+  "batch_id": "brahms-op14-complete-and-low-voice-nine-20260906",
+  "recorded_at": "2026-09-06T18:52:33.730658+00:00",
+  "source_manifest_before_sha256": "b316d764fdef9e6577a0f2c2748b3d9146025e1033344f33ed3908d0ac163aa0",
+  "source_manifest_after_sha256": "aef705241f55daad18b9985fa31b7d254d7a75ac8b46e8bcb8ffd21b84930f8d",
+  "staging_manifest_before_sha256": "b3176f93d24f1ac0507dc9058fdc295c4a002e5b265f82d9dbf5a2235db18b1b",
+  "staging_manifest_after_sha256": "a00660e4dcf5b2dc29b3ecbed8dfade2ae7a4c734ccaa3f2c8e3e54ab959a475",
+  "backup": "backup\\import_metadata\\brahms-op14-complete-and-low-voice-nine-20260906-20260906_125233_531526",
+  "changes": [
+    {
+      "imslp_id": "22850",
+      "field": "category/sub_category",
+      "before": [
+        "声乐套曲",
+        "艺术歌曲"
+      ],
+      "after": [
+        "艺术歌曲",
+        ""
+      ],
+      "evidence": "Complete set is eight independent art songs; matches the established site treatment of complete Brahms song collections."
+    },
+    {
+      "imslp_id": "53063",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47025",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47026",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "53064",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47027",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47028",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "53065",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47029",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    }
+  ]
+}

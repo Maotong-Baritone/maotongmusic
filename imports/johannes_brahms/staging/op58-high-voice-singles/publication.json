@@ -1,0 +1,98 @@
+{
+  "batch_id": "brahms-op58-high-voice-eight-20260908",
+  "approved_ids": [
+    "21766",
+    "21767",
+    "21768",
+    "21769",
+    "21770",
+    "21771",
+    "21772",
+    "21773"
+  ],
+  "approved_count": 8,
+  "storage_verified_count": 8,
+  "local_catalog_count": 8,
+  "website_published_count": 8,
+  "catalog_updated_at": "2026-09-08T15:05:36+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "4aa445a813957690d38065b93ca8efcff19f65e8",
+  "github_actions_run_id": 34242706014,
+  "website_verified_at": "2026-09-08T15:46:10+00:00",
+  "browser_verified_at": "2026-09-08T15:46:10+00:00",
+  "browser_verification": "线上目录共3507份、艺术歌曲704份，最新8份均为Op.58 No.1–8高声部Peters单曲；详情简介已缩短为来源、版本、出版和编者，预览及下载入口正常；首页最新动态与本批一致。",
+  "validation": {
+    "unit_tests_passed": 73,
+    "strict_catalog_entries": 3507,
+    "strict_pdf_files": 3507,
+    "strict_errors": 0,
+    "strict_warnings": 0,
+    "storage_manifest_entries": 3507,
+    "storage_manifest_exact": true,
+    "submissions_db_rows": 1,
+    "public_hash_matches": 8,
+    "git_committed_pdf_hash_matches": 8,
+    "online_data_exact_commit": true,
+    "online_logs_exact_commit": true
+  },
+  "backup_directory": "backup\\import_publications\\brahms-op58-high-voice-eight-20260908-20260908_090522_505959",
+  "files": [
+    {
+      "imslp_id": "21766",
+      "public_id": "963ab236-3e49-4b88-9a57-9100fd83fb7d",
+      "filename": "艺术歌曲/963ab236-3e49-4b88-9a57-9100fd83fb7d.pdf",
+      "storage_key": "scores/96/963ab236-3e49-4b88-9a57-9100fd83fb7d.pdf",
+      "sha256": "6ae03c592d0988fc77fdcf73bee097e14d4763c76e68dbfb3130173214c299da"
+    },
+    {
+      "imslp_id": "21767",
+      "public_id": "825e1bb1-5648-4766-80a5-3feaf6328931",
+      "filename": "艺术歌曲/825e1bb1-5648-4766-80a5-3feaf6328931.pdf",
+      "storage_key": "scores/82/825e1bb1-5648-4766-80a5-3feaf6328931.pdf",
+      "sha256": "12cda3100e6a8ab498941294b74497d220cf0d4b9a48a2a7b1d495d8483fb8a9"
+    },
+    {
+      "imslp_id": "21768",
+      "public_id": "828eec9f-6986-43df-9f48-a07e958efc77",
+      "filename": "艺术歌曲/828eec9f-6986-43df-9f48-a07e958efc77.pdf",
+      "storage_key": "scores/82/828eec9f-6986-43df-9f48-a07e958efc77.pdf",
+      "sha256": "d1f3bb3c4eb6aa2f66158369d35f0ffd8c0c9734ffff0d96e75ab695f2d99fd1"
+    },
+    {
+      "imslp_id": "21769",
+      "public_id": "a9bb2218-56cd-4e56-93c5-6defdd239a96",
+      "filename": "艺术歌曲/a9bb2218-56cd-4e56-93c5-6defdd239a96.pdf",
+      "storage_key": "scores/a9/a9bb2218-56cd-4e56-93c5-6defdd239a96.pdf",
+      "sha256": "1f510309567383a6f6ce82bd02c17cc154c027fed6331ce6291853dad3113871"
+    },
+    {
+      "imslp_id": "21770",
+      "public_id": "835592df-0e53-48ac-b751-3160808fd13f",
+      "filename": "艺术歌曲/835592df-0e53-48ac-b751-3160808fd13f.pdf",
+      "storage_key": "scores/83/835592df-0e53-48ac-b751-3160808fd13f.pdf",
+      "sha256": "2b4aba24180912fbcc9c1155b186b335372a2eee6ef3fbb6f0ef9dc740c4b942"
+    },
+    {
+      "imslp_id": "21771",
+      "public_id": "989a14f7-1c48-4c1d-8e6f-ad7f32bb6563",
+      "filename": "艺术歌曲/989a14f7-1c48-4c1d-8e6f-ad7f32bb6563.pdf",
+      "storage_key": "scores/98/989a14f7-1c48-4c1d-8e6f-ad7f32bb6563.pdf",
+      "sha256": "7ff017486bb16abe47fa3deb4ae174528e339bdb3d14497f53e83c2d10a405ae"
+    },
+    {
+      "imslp_id": "21772",
+      "public_id": "4876bee4-1523-42a8-bc93-6feec995765e",
+      "filename": "艺术歌曲/4876bee4-1523-42a8-bc93-6feec995765e.pdf",
+      "storage_key": "scores/48/4876bee4-1523-42a8-bc93-6feec995765e.pdf",
+      "sha256": "ab3627445be3176f75d9f799246713669316bb029e46f1f87a51ca5d17d4fd36"
+    },
+    {
+      "imslp_id": "21773",
+      "public_id": "01d5a550-830e-40f1-b4e5-87c478f6fb29",
+      "filename": "艺术歌曲/01d5a550-830e-40f1-b4e5-87c478f6fb29.pdf",
+      "storage_key": "scores/01/01d5a550-830e-40f1-b4e5-87c478f6fb29.pdf",
+      "sha256": "1ae0b72b785aa77dc0d1089ebe44a2f3b723c07fe79c210c45258343ca1c65ef"
+    }
+  ]
+}

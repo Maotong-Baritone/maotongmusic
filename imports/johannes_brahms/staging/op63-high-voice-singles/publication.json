@@ -1,0 +1,106 @@
+{
+  "batch_id": "brahms-op63-high-voice-nine-20260908",
+  "approved_ids": [
+    "41714",
+    "41715",
+    "41716",
+    "41717",
+    "41718",
+    "41719",
+    "41720",
+    "41721",
+    "41722"
+  ],
+  "approved_count": 9,
+  "storage_verified_count": 9,
+  "local_catalog_count": 9,
+  "website_published_count": 9,
+  "catalog_updated_at": "2026-09-08T16:57:50+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "git_commit": "67502dede9ea57f5880fb457d5fb84c7e66ebc63",
+  "github_actions_run_id": 34254342089,
+  "website_verified_at": "2026-09-08T19:59:20+00:00",
+  "browser_verified_at": "2026-09-08T19:59:20+00:00",
+  "browser_verification": "线上目录共3524份、艺术歌曲721份，最新9份均为Op.63 No.1–9高声部Peters原调单曲；No.5–9使用谱面印刷标题，目录、德语、高声部、钢琴、简洁详情、预览及下载入口均已核对。",
+  "validation": {
+    "unit_tests_passed": 77,
+    "strict_catalog_entries": 3524,
+    "strict_pdf_files": 3524,
+    "strict_errors": 0,
+    "strict_warnings": 0,
+    "storage_manifest_entries": 3524,
+    "storage_manifest_exact": true,
+    "submissions_db_rows": 1,
+    "public_hash_matches": 9,
+    "git_committed_pdf_hash_matches": 9,
+    "online_data_exact_commit": true,
+    "online_logs_exact_commit": true
+  },
+  "backup_directory": "backup\\import_publications\\brahms-op63-high-voice-nine-20260908-20260908_105738_725698",
+  "files": [
+    {
+      "imslp_id": "41714",
+      "public_id": "27d65c44-f37b-46b3-b0b1-068817f62d94",
+      "filename": "艺术歌曲/27d65c44-f37b-46b3-b0b1-068817f62d94.pdf",
+      "storage_key": "scores/27/27d65c44-f37b-46b3-b0b1-068817f62d94.pdf",
+      "sha256": "847db3ae194317c59a6083a5fe459287e3afd4d2ef23e3ba19c7d7f0af0e9dd5"
+    },
+    {
+      "imslp_id": "41715",
+      "public_id": "dd7ceeab-42cc-482e-b21e-862afad41108",
+      "filename": "艺术歌曲/dd7ceeab-42cc-482e-b21e-862afad41108.pdf",
+      "storage_key": "scores/dd/dd7ceeab-42cc-482e-b21e-862afad41108.pdf",
+      "sha256": "e5e84ef9797300a7ed85128e5a9710e5b4ec49d57fb32d44db8a90a21b04f67f"
+    },
+    {
+      "imslp_id": "41716",
+      "public_id": "41ad160a-1d24-4ccb-91da-c3ce9efd9544",
+      "filename": "艺术歌曲/41ad160a-1d24-4ccb-91da-c3ce9efd9544.pdf",
+      "storage_key": "scores/41/41ad160a-1d24-4ccb-91da-c3ce9efd9544.pdf",
+      "sha256": "6b5993f3cbcf6e6fc813dfcd94b75435e13d329db3e74f842420b138468ab45a"
+    },
+    {
+      "imslp_id": "41717",
+      "public_id": "dc2395b4-78a3-46d5-b04a-708ca8371b5c",
+      "filename": "艺术歌曲/dc2395b4-78a3-46d5-b04a-708ca8371b5c.pdf",
+      "storage_key": "scores/dc/dc2395b4-78a3-46d5-b04a-708ca8371b5c.pdf",
+      "sha256": "3eb5b610fddf9f6d7f0b282d55827838fb7c305409b72138576ccfa0ad14519a"
+    },
+    {
+      "imslp_id": "41718",
+      "public_id": "0afd4c6d-5872-4b1a-8a1d-98bdf82c85d3",
+      "filename": "艺术歌曲/0afd4c6d-5872-4b1a-8a1d-98bdf82c85d3.pdf",
+      "storage_key": "scores/0a/0afd4c6d-5872-4b1a-8a1d-98bdf82c85d3.pdf",
+      "sha256": "6b11e52f4ff72508e4420fc4bc984228693ec5d7ebef99c584cae6570d445d62"
+    },
+    {
+      "imslp_id": "41719",
+      "public_id": "8432a53f-cb03-476e-b07c-ff23eeb425ac",
+      "filename": "艺术歌曲/8432a53f-cb03-476e-b07c-ff23eeb425ac.pdf",
+      "storage_key": "scores/84/8432a53f-cb03-476e-b07c-ff23eeb425ac.pdf",
+      "sha256": "684f6cedf3c19f34ce03db1732530f381a2fb2f4117b178d4f7181063a2b1263"
+    },
+    {
+      "imslp_id": "41720",
+      "public_id": "7016c16c-5fbe-42c4-b9bd-0eb873b1c3df",
+      "filename": "艺术歌曲/7016c16c-5fbe-42c4-b9bd-0eb873b1c3df.pdf",
+      "storage_key": "scores/70/7016c16c-5fbe-42c4-b9bd-0eb873b1c3df.pdf",
+      "sha256": "7c631763c9e14044d4702c5cf830c4b2c99a49f74da0c900bbf04afa7272d04e"
+    },
+    {
+      "imslp_id": "41721",
+      "public_id": "d8ed09ce-b697-4201-86a6-b1f68dec1bca",
+      "filename": "艺术歌曲/d8ed09ce-b697-4201-86a6-b1f68dec1bca.pdf",
+      "storage_key": "scores/d8/d8ed09ce-b697-4201-86a6-b1f68dec1bca.pdf",
+      "sha256": "970255453dac7d939b37ae0f4649a141e681fb244de21161d680549424e29c02"
+    },
+    {
+      "imslp_id": "41722",
+      "public_id": "fafe82c7-b521-4fbd-bdc5-954954ba4927",
+      "filename": "艺术歌曲/fafe82c7-b521-4fbd-bdc5-954954ba4927.pdf",
+      "storage_key": "scores/fa/fafe82c7-b521-4fbd-bdc5-954954ba4927.pdf",
+      "sha256": "4c061dc6a9849c1d079cb577da4e42904db69da75efcadff30a1dd739c0a00ef"
+    }
+  ]
+}

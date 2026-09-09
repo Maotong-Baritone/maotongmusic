@@ -1,0 +1,67 @@
+{
+  "batch_id": "brahms-op57-high-voice-eight-20260907",
+  "recorded_at": "2026-09-08T01:16:55.479703+00:00",
+  "source_manifest_before_sha256": "f5c1cd1b9e998e2cfdde695fc5f56f7dd5e3ec99da9efab730ae2684dfce70dd",
+  "source_manifest_after_sha256": "3769b5ed62a9b9179a84fec7d5fdcc9ff3037ce430f21b297c88fd41b426182b",
+  "staging_manifest_before_sha256": "1b7b12bea1384af2a8dbf84c01e475a3050ed9dbca85d24f96865473518c92bc",
+  "staging_manifest_after_sha256": "8fbc99b908071be2cc955ef3ad1726864f57e3f481a4f6c9322f169bb1fbc8a3",
+  "backup": "backup\\import_metadata\\brahms-op57-high-voice-eight-20260907-20260907_191655_292178",
+  "changes": [
+    {
+      "imslp_id": "9656",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9657",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9658",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9659",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9660",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9661",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9662",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    },
+    {
+      "imslp_id": "9663",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as Brahms Albums for high voice (original keys)."
+    }
+  ]
+}

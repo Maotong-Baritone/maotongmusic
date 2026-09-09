@@ -1,0 +1,13 @@
+{
+  "imslp_id": "9661",
+  "field": "file_info page count",
+  "before": "3 pages",
+  "after": "2 pages",
+  "evidence": "Normal released IMSLP #9661 PDF parses as two pages; both pages will be visually checked for complete musical ending. Live listing displayed three pages.",
+  "source_manifest_before_sha256": "15069def67256a7ecfb292c7ff588b0d522b7e7981fd392f6ab1d030e78b7293",
+  "source_manifest_after_sha256": "f5c1cd1b9e998e2cfdde695fc5f56f7dd5e3ec99da9efab730ae2684dfce70dd",
+  "retained_observed_pdf": "imports\\johannes_brahms\\staging\\op57-high-voice-singles\\source-listing-discrepancy\\IMSLP9661-observed-original.pdf",
+  "retained_sha256": "9969c999758ca87088a82ca03a2fcd46a1ce9d58446e76bb2a2ece301da1533e",
+  "backup": "backup\\import_metadata\\brahms-op57-imslp9661-page-count-20260907_191449_182285",
+  "recorded_at": "2026-09-08T01:14:49.375592+00:00"
+}

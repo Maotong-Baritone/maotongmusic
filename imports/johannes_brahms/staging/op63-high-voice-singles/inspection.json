@@ -1,0 +1,252 @@
+{
+  "label": "9 Lieder and Songs, Op.63：高声部单曲",
+  "checked_on": "2026-09-08",
+  "recorded_at": "2026-09-08T16:56:59.676042+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "41714",
+    "41715",
+    "41716",
+    "41717",
+    "41718",
+    "41719",
+    "41720",
+    "41721",
+    "41722"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.63、九首目录、德语、voice/piano、Public Domain，并明确#41714–#41722为Peters高声部原调单曲；完整谱、低声部扫描、手稿、现代排版及中音版不在本批。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler渲染全部页面；查看全部页面接触表并重点核对首尾、标题、速度、歌词、编制和完整结束。",
+  "rendering_note": "九份单曲页序连续、内容清晰，标题、歌词与末页完整结束均与来源范围相符。",
+  "metadata_changes": [
+    {
+      "imslp_id": "41714",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41715",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41716",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41717",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41718",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41719",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41720",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41721",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41722",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41718",
+      "field": "proposed_title",
+      "before": "No. 5 Junge Liebe I. Lebhaft, Op. 63",
+      "after": "No. 5 Meine Liebe ist grün. Lebhaft, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41719",
+      "field": "proposed_title",
+      "before": "No. 6 Junge Liebe II. Zart bewegt, Op. 63",
+      "after": "No. 6 Wenn um den Holunder. Zart bewegt, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41720",
+      "field": "proposed_title",
+      "before": "No. 7 Heimweh I. Zart bewegt, Op. 63",
+      "after": "No. 7 Heimweh. Zart bewegt, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41721",
+      "field": "proposed_title",
+      "before": "No. 8 Heimweh II. Etwas langsam, Op. 63",
+      "after": "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41722",
+      "field": "proposed_title",
+      "before": "No. 9 Heimweh III. Etwas langsam, Op. 63",
+      "after": "No. 9 Ich sah als Knabe Blumen blühn. Etwas langsam, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    }
+  ],
+  "files": {
+    "41714": {
+      "pages": 7,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Frühlingstrost. Lebhaft"
+      ],
+      "notes": "No. 1 Frühlingstrost. Lebhaft；高声部Peters版，共7页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41715": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Erinnerung. Innig"
+      ],
+      "notes": "No. 2 Erinnerung. Innig；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41716": {
+      "pages": 4,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 An ein Bild. Etwas langsam"
+      ],
+      "notes": "No. 3 An ein Bild. Etwas langsam；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41717": {
+      "pages": 6,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 An die Tauben. Sehr lebhaft"
+      ],
+      "notes": "No. 4 An die Tauben. Sehr lebhaft；高声部Peters版，共6页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41718": {
+      "pages": 4,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Meine Liebe ist grün. Lebhaft"
+      ],
+      "notes": "No. 5 Meine Liebe ist grün. Lebhaft；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41719": {
+      "pages": 4,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Wenn um den Holunder. Zart bewegt"
+      ],
+      "notes": "No. 6 Wenn um den Holunder. Zart bewegt；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41720": {
+      "pages": 4,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Heimweh. Zart bewegt"
+      ],
+      "notes": "No. 7 Heimweh. Zart bewegt；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41721": {
+      "pages": 5,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam"
+      ],
+      "notes": "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam；高声部Peters版，共5页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "41722": {
+      "pages": 4,
+      "key": "",
+      "number": 9,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 9 Ich sah als Knabe Blumen blühn. Etwas langsam"
+      ],
+      "notes": "No. 9 Ich sah als Knabe Blumen blühn. Etwas langsam；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-08T16:57:50+00:00",
+  "approved_publication_ids": [
+    "41714",
+    "41715",
+    "41716",
+    "41717",
+    "41718",
+    "41719",
+    "41720",
+    "41721",
+    "41722"
+  ]
+}

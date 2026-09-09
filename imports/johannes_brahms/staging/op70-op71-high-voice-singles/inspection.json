@@ -1,0 +1,268 @@
+{
+  "label": "Op.70与Op.71：高声部单曲",
+  "checked_on": "2026-09-08",
+  "recorded_at": "2026-09-08T21:17:36.572019+00:00",
+  "proposal_only": true,
+  "publication_approved": false,
+  "proposed_first_publication_ids": [
+    "42125",
+    "42126",
+    "42127",
+    "42128",
+    "42132",
+    "42133",
+    "42134",
+    "42135",
+    "42136"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.70与Op.71共九首、德语、voice/piano、Public Domain，并明确#42125–#42128及#42132–#42136为Peters高声部单曲；Op.70四首及Op.71 Nos.1–4为原调。完整谱、低声部、中音版、外语版和改编不在本批。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler渲染全部页面；查看全部页面接触表并重点核对首尾、标题、速度、歌词、编制和完整结束。",
+  "rendering_note": "九份单曲页序连续、内容清晰，标题、歌词与末页完整结束均与来源范围相符。",
+  "metadata_changes": [
+    {
+      "imslp_id": "42125",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42126",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42127",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42128",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42132",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42133",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42134",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42135",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42136",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP sources identify these nine Peters files as editions for high voice and the works as voice and piano."
+    },
+    {
+      "imslp_id": "42125",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42126",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42127",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42128",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42132",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42133",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42134",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42135",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42136",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    }
+  ],
+  "files": {
+    "42125": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Im Garten am Seegestade. Traurig, doch nicht zu langsam, Op. 70"
+      ],
+      "notes": "No. 1 Im Garten am Seegestade. Traurig, doch nicht zu langsam, Op. 70；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42126": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Lerchengesang. Andante espressivo, Op. 70"
+      ],
+      "notes": "No. 2 Lerchengesang. Andante espressivo, Op. 70；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42127": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Serenade. Grazioso, Op. 70"
+      ],
+      "notes": "No. 3 Serenade. Grazioso, Op. 70；高声部Peters版，共2页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42128": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Abendregen. Ruhig, Op. 70"
+      ],
+      "notes": "No. 4 Abendregen. Ruhig, Op. 70；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42132": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Es liebt sich so lieblich im Lenze! Anmuthig bewegt, Op. 71"
+      ],
+      "notes": "No. 1 Es liebt sich so lieblich im Lenze! Anmuthig bewegt, Op. 71；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42133": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 An den Mond. Nicht zu langsam und mit Anmuth, Op. 71"
+      ],
+      "notes": "No. 2 An den Mond. Nicht zu langsam und mit Anmuth, Op. 71；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42134": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Geheimnis. Belebt und heimlich, Op. 71"
+      ],
+      "notes": "No. 3 Geheimnis. Belebt und heimlich, Op. 71；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42135": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Willst du, dass ich geh'? Sehr lebhaft, Op. 71"
+      ],
+      "notes": "No. 4 Willst du, dass ich geh'? Sehr lebhaft, Op. 71；高声部Peters版，共4页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    },
+    "42136": {
+      "pages": 3,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Minnelied. Sehr innig, doch nicht zu langsam, Op. 71"
+      ],
+      "notes": "No. 5 Minnelied. Sehr innig, doch nicht zu langsam, Op. 71；高声部Peters版，共3页；首尾及完整接触表检查通过。",
+      "publication_note": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source_page": "https://imslp.org/wiki/8_Lieder_and_Romances%2C_Op.14_%28Brahms%2C_Johannes%29",
+  "observation_method": "Normal anonymous IMSLP wait page in the supported browser; visible released link or normal PDF redirect only.",
+  "files": [
+    {"imslp_id": "22850", "observed_at": "2026-09-06T18:45:28.490Z", "access_method": "wait_page", "url": "https://s9.imslp.org/files/imglnks/usimg/d/db/IMSLP22850-PMLP12898-BraWV,_S._47f.pdf"},
+    {"imslp_id": "53063", "observed_at": "2026-09-06T18:45:45.180Z", "access_method": "wait_page", "url": "https://s9.imslp.org/files/imglnks/usimg/7/77/IMSLP53063-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_1_600dpi.pdf"},
+    {"imslp_id": "47025", "observed_at": "2026-09-06T18:46:01.825Z", "access_method": "wait_page", "url": "https://vmirror.imslp.org/files/imglnks/usimg/4/4d/IMSLP47025-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_2_600dpi.pdf"},
+    {"imslp_id": "47026", "observed_at": "2026-09-06T18:46:25.573Z", "access_method": "wait_page", "url": "https://ks15.imslp.org/files/imglnks/usimg/c/c6/IMSLP47026-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_3_600dpi.pdf"},
+    {"imslp_id": "53064", "observed_at": "2026-09-06T18:46:42.224Z", "access_method": "wait_page", "url": "https://ks15.imslp.org/files/imglnks/usimg/2/20/IMSLP53064-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_4_600dpi.pdf"},
+    {"imslp_id": "47027", "observed_at": "2026-09-06T18:46:59.066Z", "access_method": "direct_pdf_redirect", "url": "https://s9.imslp.org/files/imglnks/usimg/a/a2/IMSLP47027-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_5_600dpi.pdf"},
+    {"imslp_id": "47028", "observed_at": "2026-09-06T18:47:35.660Z", "access_method": "wait_page", "url": "https://s9.imslp.org/files/imglnks/usimg/e/ea/IMSLP47028-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_6_600dpi.pdf"},
+    {"imslp_id": "53065", "observed_at": "2026-09-06T18:47:52.430Z", "access_method": "wait_page", "url": "https://s9.imslp.org/files/imglnks/usimg/3/34/IMSLP53065-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_7_600dpi.pdf"},
+    {"imslp_id": "47029", "observed_at": "2026-09-06T18:48:09.181Z", "access_method": "wait_page", "url": "https://s9.imslp.org/files/imglnks/usimg/f/fc/IMSLP47029-PMLP12898-Brahms_Album_tief_Peters_Op_14_No_8_600dpi.pdf"}
+  ]
+}

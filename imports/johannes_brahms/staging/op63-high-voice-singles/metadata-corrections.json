@@ -1,0 +1,109 @@
+{
+  "batch_id": "brahms-op63-high-voice-nine-20260908",
+  "recorded_at": "2026-09-08T16:56:49.819407+00:00",
+  "source_manifest_before_sha256": "4324b077549d3118c81f925f3f433869f03f309a5c61e7f17a2d49fb46fa4ea6",
+  "source_manifest_after_sha256": "47495fa957d6eb0ed3ab426139d457b2de5b3fef11fd6995a92e213fd1d73aae",
+  "staging_manifest_before_sha256": "07ee084ee631d0b129bbc96d93467a497432bad270c7868a120229530c89de4f",
+  "staging_manifest_after_sha256": "fe77f9a7b7ff17e9e00493df77402c5e95e8e62bfa8c134a568198da61bf4328",
+  "backup": "backup\\import_metadata\\brahms-op63-high-voice-nine-20260908-20260908_105649_623742",
+  "changes": [
+    {
+      "imslp_id": "41714",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41715",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41716",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41717",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41718",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41719",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41720",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41721",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41722",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice in original keys and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41718",
+      "field": "proposed_title",
+      "before": "No. 5 Junge Liebe I. Lebhaft, Op. 63",
+      "after": "No. 5 Meine Liebe ist grün. Lebhaft, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41719",
+      "field": "proposed_title",
+      "before": "No. 6 Junge Liebe II. Zart bewegt, Op. 63",
+      "after": "No. 6 Wenn um den Holunder. Zart bewegt, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41720",
+      "field": "proposed_title",
+      "before": "No. 7 Heimweh I. Zart bewegt, Op. 63",
+      "after": "No. 7 Heimweh. Zart bewegt, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41721",
+      "field": "proposed_title",
+      "before": "No. 8 Heimweh II. Etwas langsam, Op. 63",
+      "after": "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "41722",
+      "field": "proposed_title",
+      "before": "No. 9 Heimweh III. Etwas langsam, Op. 63",
+      "after": "No. 9 Ich sah als Knabe Blumen blühn. Etwas langsam, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    }
+  ]
+}

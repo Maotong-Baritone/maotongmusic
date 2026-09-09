@@ -1,0 +1,67 @@
+{
+  "batch_id": "brahms-op59-high-voice-eight-20260908",
+  "recorded_at": "2026-09-08T16:11:47.243435+00:00",
+  "source_manifest_before_sha256": "4ab4897c8e6f08228f3312e4b2be3b348792e9f3d45e2f42fb2ca1eefa0ba781",
+  "source_manifest_after_sha256": "e59dc1bc9f2350433898c5dace85ddc8b2c3ff13c71655a61d05ae3046c059a1",
+  "staging_manifest_before_sha256": "50395e2dbec47dc09c7c7d332cf6bf2c46ead97509cf8380c11c2106ddc7f993",
+  "staging_manifest_after_sha256": "8e2e2c1c856cc981fe4fa3a30c145bb34aaa0f8dd2a98d3d710b1a856c7883eb",
+  "backup": "backup\\import_metadata\\brahms-op59-high-voice-eight-20260908-20260908_101147_052235",
+  "changes": [
+    {
+      "imslp_id": "41548",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41549",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41550",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41551",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41552",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41553",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41554",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    },
+    {
+      "imslp_id": "41555",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies the work instrumentation as voice and piano and these eight Peters files as the edition for high voice; Nos. 2–7 retain the original keys."
+    }
+  ]
+}

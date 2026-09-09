@@ -1,0 +1,116 @@
+{
+  "batch_id": "brahms-op43-op72-high-voice-nine-20260909",
+  "recorded_at": "2026-09-09T01:47:00.819919+00:00",
+  "source_manifest_before_sha256": "fbd31188aefda6b3e05a5fe1cd4272013d7c6144934473ff932899bf1c6e1c56",
+  "source_manifest_after_sha256": "30e784d19428c62f6d97018198849d88f5d5ee26388af989b38ff8f79b7ff85c",
+  "staging_manifest_before_sha256": "1b9a29db7d5c5579ab2c7424019352f1579928142d855b2a673ae3c77d684500",
+  "staging_manifest_after_sha256": "fc3644cefe38e72ae2589fcdceba3be5fa4d40404ea66035b853eafc54b95348",
+  "backup": "backup\\import_metadata\\brahms-op43-op72-high-voice-nine-20260909-20260908_194700_637564",
+  "changes": [
+    {
+      "imslp_id": "9112",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9112",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9113",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9113",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "voice_types",
+      "before": "圆号分谱",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "language",
+      "before": "",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9115",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9115",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42188",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42189",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42190",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42191",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "42192",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the file under the Peters high-voice edition; the work and rendered score are German voice and piano."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "category",
+      "before": "器乐分谱",
+      "after": "艺术歌曲",
+      "evidence": "“Horn” is part of the German song title; live IMSLP and the rendered one-page score confirm a voice-and-piano art song."
+    },
+    {
+      "imslp_id": "9114",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "“Horn” is part of the German song title; live IMSLP and the rendered one-page score confirm a voice-and-piano art song."
+    }
+  ]
+}

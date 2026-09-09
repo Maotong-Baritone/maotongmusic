@@ -1,0 +1,74 @@
+{
+  "batch_id": "brahms-op32-high-voice-nine-20260907",
+  "recorded_at": "2026-09-08T00:38:58.093131+00:00",
+  "source_manifest_before_sha256": "a2c1ad303ba0d0e641f624995c091aeb89d71b179e0725250c04d9e043d209bf",
+  "source_manifest_after_sha256": "a0593d8cce691c84b0d089401ed766962c051c4d33007ec091828a47ad79920c",
+  "staging_manifest_before_sha256": "92ef3b4efd6a976763c96a73ad67202798478f8e6feedf2e9f142f50390e949a",
+  "staging_manifest_after_sha256": "d6b42203e6a9a1542c29c8bfce4aa737ea64d15b7dd1ddb5644dd569b6d544c8",
+  "backup": "backup\\import_metadata\\brahms-op32-high-voice-nine-20260907-20260907_183857_899185",
+  "changes": [
+    {
+      "imslp_id": "8990",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8991",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8992",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8993",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8994",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8995",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8996",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8997",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8998",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    }
+  ]
+}

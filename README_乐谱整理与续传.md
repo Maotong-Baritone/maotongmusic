@@ -90,7 +90,7 @@
 3. 作曲家本人改编可在核实后按实际版本整理；第三方或未确认改编保持当前待审/排除规则，不能批量解除限制。
 4. 使用匿名正常流程，遵守站点等待时间、频率限制与许可条件。只用实际观察到且正常放行的下载地址；不猜隐藏地址，不绕过登录、付费、验证码、版权检查或工具安全停止。
 5. 下载至隔离暂存目录，保留实际来源地址、文件号、文件名、出版/编订信息、许可说明、页数、文件大小和 SHA256。确认下载物真的是 PDF，而非网页或缩略图。
-6. 解析文件结构并渲染所有页；检查完整性、标题/册号/单曲范围、各乐章起始页、调性和实际编制。按 PDF 技能的要求进行视觉核查，保留检查记录。
+6. 解析文件结构并渲染所有页。清晰、元数据明确的单曲先查看全部页面接触表，重点放大首尾页和任何异常页；合集、手稿、模糊扫描、版本冲突或疑点文件再逐页放大核查。始终检查完整性、标题/册号/单曲范围、各乐章起始页、调性和实际编制，并保留检查记录。
 7. 元数据有错时记录修改前后值、依据、备份与并发校验，只修改本批明确的条目；不全局覆盖用户已经编辑过的资料。
 
 ## 4. 发布流程与完成标准
@@ -108,13 +108,15 @@
 9. 比对线上 JSON，检查列表/搜索、单曲或册号标题、调性、中文标记、详情、预览/下载和首页动态；完成后才在本批 `publication.json` 设置 `website_status=verified_live`。
 10. 更新续传交接并报告实际新增数量。失败或等待时保存准确断点，不宣称完成，不盲目重新上传整个批次。
 
-## 5. 当前进度快照（2026-09-05）
+详情简介采用简短的结构化信息：保留来源、版本/出版者、编者、文件范围或页码、编制、语言和已发现的异常。普通文件不反复写“原PDF未改、逐页连续、标题相符”等低信息量句子；只有确有缺页、误标、合集定位或版本疑点时增加详细说明。
 
-本节依据实际目录和十五份批次回执更新；接手时继续核对是否已有新批次。
+## 5. 当前进度快照（2026-09-08）
+
+本节依据实际目录和二十五份批次回执更新；接手时继续核对是否已有新批次。
 
 - 网站：[猫瞳音乐乐谱库](https://maotong.me/maotongmusic/)，PDF仍使用 `https://scores.maotong.me`。
-- 本地正式目录 3,472 条；勃拉姆斯本轮批准 62 份，线上回执确认 62 份。最近一批状态 `verified_live`。
-- 预审161个作品页、3,486个去重候选；待审 2,284、排除 1,138、暂缓 2、批准 62。待审数包含重复版本，不等于待上传文件数。
+- 本地正式目录 3,553 条；勃拉姆斯本轮批准 143 份，线上回执确认 143 份。最近一批状态 `verified_live`。
+- 预审161个作品页、3,486个去重候选；待审 2,203、排除 1,138、暂缓 2、批准 143。待审数包含重复版本，不等于待上传文件数。
 - 原始submissions.db保留1条原投稿；旧目录、旧动态、旧存储记录及原投稿均已与批次备份核对。
 - 哈恩已有此前成果，不从头重发，不编造累计数量。
 
@@ -135,16 +137,27 @@
 | 5 Duets, Op.66 | 1 | [verified_live](imports/johannes_brahms/staging/five-duets-op66/publication.json) |
 | 4 Ballades and Romances, Op.75 | 1 | [verified_live](imports/johannes_brahms/staging/four-ballades-romances-op75/publication.json) |
 | 3 Quartets, Op.31 | 1 | [verified_live](imports/johannes_brahms/staging/three-quartets-op31/publication.json) |
+| 3 Quartets, Op.64 | 1 | [verified_live](imports/johannes_brahms/staging/three-quartets-op64/publication.json) |
+| Op.14完整谱及低声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op14-complete-and-singles/publication.json) |
+| Op.32高声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op32-high-voice-singles/publication.json) |
+| Op.57高声部单曲 | 8 | [verified_live](imports/johannes_brahms/staging/op57-high-voice-singles/publication.json) |
+| Op.58高声部单曲 | 8 | [verified_live](imports/johannes_brahms/staging/op58-high-voice-singles/publication.json) |
+| Op.59高声部单曲 | 8 | [verified_live](imports/johannes_brahms/staging/op59-high-voice-singles/publication.json) |
+| Op.63高声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op63-high-voice-singles/publication.json) |
+| Op.69高声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op69-high-voice-singles/publication.json) |
+| Op.70与Op.71高声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op70-op71-high-voice-singles/publication.json) |
+| Op.85与Op.106高声部单曲 | 11 | [verified_live](imports/johannes_brahms/staging/op85-op106-high-voice-singles/publication.json) |
+| Op.43与Op.72高声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op43-op72-high-voice-singles/publication.json) |
 
-最近第十五批新增1份、共18页《3 Quartets, Op.31》原始PDF；三首PDF起始页为1、9、16，编制为女高音、女低音、男高音、男低音四重唱与钢琴，标记德语及四重唱、钢琴，选用未滤色扫描。此前第十四批《4 Ballades and Romances, Op.75》1份/28页另有回执；Op.116另3份完整版本仍仅暂存。
+最近第二十六批一次新增9份、共35页Op.43与Op.72 Peters高声部独立单曲：Op.43 No.1–4及Op.72 No.1–5均已核对标题、速度、德语及高声部、钢琴编制；#9114标题中的Horn误触发的圆号分谱分类已按来源与谱面纠正。公开PDF哈希、简洁详情、预览和首页动态已验证。Op.116另3份完整版本仍仅暂存。
 
-最近部署提交 `0d38e8c5cc286b26d4ca3b152cc797f8ba2a1809`，Pages run `33988528612`。最近批次线上时间以回执为准。28项发布、暂存、报告及类别/编制边界隔离测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
+最近部署提交 `a56e9b9917e9801cd9377c07ec17feac8ffb7a62`，Pages run `34300866373`。最近批次线上时间以回执为准。85项勃拉姆斯发布、暂存、报告及类别/编制边界隔离测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
 
 ### 断点与下一步
 
 当前受支持CUA浏览器可以可靠读取URL及正常等待后的可见下载链接，先前旧工具的识别问题已通过正常受支持流程解决。作者归属存疑的Anh.IV/2两份候选已暂缓，未下载或发布。
 
-下一轮可核查 `3 Quartets, Op.64` 的完整谱，候选为首版#23088、Soldan版#627551、未滤色扫描#104767与滤色件#104768；优先实时检查#104767是否完整，并核对四重唱与钢琴的实际编制、三首目录和PDF起始页。艺术歌曲类别必须继续使用显式类别和编制白名单。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
+后续按用户确认的效率规则，继续把明确公版、元数据清楚且无重复疑点的实际文件合并成每批约8–12份，并且整批只部署一次。Op.43与Op.72九份已完成；下一轮从其他声乐作品中筛选普通清晰文件，`4 Quartets, Op.92` 的完整版本及独立声部分谱仍按复杂项目逐份判断。普通清晰单曲按全部页面接触表加首尾页重点检查，疑点文件再逐页放大。艺术歌曲类别必须继续使用显式类别和编制白名单。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
 
 ## 6. 新任务接手与现有自动化
 
@@ -173,7 +186,7 @@
 实现注意：
 
 - `tools/publish_brahms_op116.py` 已参数化 `PublicationBatch`，但默认仍为首批 8 份，默认类别仅器乐独奏；不要盲跑默认脚本来发布新批次。
-- `tools/brahms_late_piano_batch.py` 的来源检查要求批次显式允许的类别与编制、无警告、明确 Public Domain 和 eligible。默认仅器乐独奏/钢琴独奏；管风琴和艺术歌曲批次均用具体白名单限定，下载与发布都检查，28项相关隔离测试通过。其他新类型仍须有界适配并测试，不能删除限制来强行上传声乐、室内乐或总谱。
+- `tools/brahms_late_piano_batch.py` 的来源检查要求批次显式允许的类别与编制、无警告、明确 Public Domain 和 eligible。默认仅器乐独奏/钢琴独奏；管风琴和艺术歌曲批次均用具体白名单限定，下载与发布都检查，73项相关勃拉姆斯测试通过。其他新类型仍须有界适配并测试，不能删除限制来强行上传声乐、室内乐或总谱。
 - 后续批次封装分别在 `tools/brahms_piano_continuation.py`、`tools/brahms_early_piano_batch.py`、`tools/brahms_variations_batch.py`；复用前核对文件号和批次范围，不重复执行已完成批次。
 - `tools/render_brahms_late_piano.py`、`tools/report_brahms_late_piano.py` 用于渲染和报告，报告需区分完整作品、单曲、选段/分册。
 - 通用存储同步工具的执行模式可能覆盖不同内容对象，不可用未经预览的全量同步代替本批有限发布。

@@ -1,0 +1,76 @@
+{
+  "batch_id": "brahms-op70-op71-high-voice-nine-20260908",
+  "recorded_at": "2026-09-08T21:17:36.546027+00:00",
+  "source_manifest_before_sha256": "4e920e084f615b1e446a45f1b14a4f337769ee0a75dd2391514460e381591a9d",
+  "source_manifest_after_sha256": "9af826b81ca77e0d57f851a54407d080d0308ea026e40b17cff7b11342455cc4",
+  "staging_manifest_before_sha256": "c2bd117baf6c9219348560b6bc1024dc1ff820c59ce8ae9b5735e429f616be19",
+  "staging_manifest_after_sha256": "9b8791c76861260e1478138b202b735626b38bf8d6104481d52ee92db4a997c0",
+  "data_before_sha256": "7e161c81758722f75f6bd5b19ad735a18ca1784af18c37f2f365f60146e8c9ae",
+  "data_after_sha256": "df89e8940a7e9cd5cc7d050a1009cf29b98f9893675c5c692f08ae1b6b3538ee",
+  "backup": "backup\\import_metadata\\brahms-op70-op71-high-voice-nine-20260908-language-20260908_151736_298544",
+  "changes": [
+    {
+      "imslp_id": "42125",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42126",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42127",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42128",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42132",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42133",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42134",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42135",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    },
+    {
+      "imslp_id": "42136",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page and every rendered score show German titles and German text; the inherited English/French labels belong to adjacent editions."
+    }
+  ]
+}

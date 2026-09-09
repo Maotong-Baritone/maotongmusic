@@ -1,0 +1,237 @@
+{
+  "label": "8 Lieder and Romances, Op.14：完整谱及低声部单曲",
+  "checked_on": "2026-09-06",
+  "recorded_at": "2026-09-06T18:53:21.853832+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "22850",
+    "53063",
+    "47025",
+    "47026",
+    "53064",
+    "47027",
+    "47028",
+    "53065",
+    "47029"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.14、八首目录、德语、原作编制voice/piano及Public Domain。本批选择#22850首版完整谱，并收录低声部栏目下八份互不重复的Peters独立单曲#53063/#47025/#47026/#53064/#47027/#47028/#53065/#47029；滤色全集#97694及高声选集#82790不在本批。所有下载均来自正常匿名等待后可见链接或正常PDF跳转。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部49页；查看九份全页接触表，并复核完整谱标题页、八首起始页、音乐末页和出版目录。",
+  "rendering_note": "首版完整谱共28页：PDF第1页封面、第2页封二、第3页标题页；八首分别从PDF第4、9、11、14、17、20、21、25页开始，第26页音乐完整结束；第27页封底、第28页出版目录均按原文件保留。谱面为德语独唱与钢琴，八首跨多调，全集调性留空。八份低声部单曲共21页，各文件逐页连续、标题与速度一致且末页完整结束，无缺页。",
+  "metadata_changes": [
+    {
+      "imslp_id": "22850",
+      "field": "category/sub_category",
+      "before": [
+        "声乐套曲",
+        "艺术歌曲"
+      ],
+      "after": [
+        "艺术歌曲",
+        ""
+      ],
+      "evidence": "Complete set is eight independent art songs; matches the established site treatment of complete Brahms song collections."
+    },
+    {
+      "imslp_id": "53063",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47025",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47026",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "53064",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47027",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47028",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "53065",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    },
+    {
+      "imslp_id": "47029",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "Live IMSLP source groups all eight files under Low voice; the Peters edition and filenames identify tiefe Stimme."
+    }
+  ],
+  "files": {
+    "22850": {
+      "pages": 28,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        4,
+        9,
+        11,
+        14,
+        17,
+        20,
+        21,
+        25
+      ],
+      "titles": [
+        "No. 1 Vor dem Fenster. Andante",
+        "No. 2 Vom verwundeten Knaben. Andantino",
+        "No. 3 Murrays Ermordung. Con moto",
+        "No. 4 Ein Sonett. Langsam, sehr innig",
+        "No. 5 Trennung. Sehr schnell",
+        "No. 6 Gang zur Liebsten. Andante con espressione",
+        "No. 7 Ständchen. Allegretto",
+        "No. 8 Sehnsucht. Andante"
+      ],
+      "notes": "首版完整谱共28页：PDF第1页封面、第2页封二、第3页标题页；八首分别从PDF第4、9、11、14、17、20、21、25页开始，第26页音乐完整结束；第27页封底、第28页出版目录均按原文件保留。谱面为德语独唱与钢琴，八首跨多调，全集调性留空。",
+      "publication_note": "首版完整谱共28页：PDF第1页封面、第2页封二、第3页标题页；八首分别从PDF第4、9、11、14、17、20、21、25页开始，第26页音乐完整结束；第27页封底、第28页出版目录均按原文件保留。谱面为德语独唱与钢琴，八首跨多调，全集调性留空。来源为1860/61年Rieter-Biedermann首版扫描，原PDF字节未改。"
+    },
+    "53063": {
+      "pages": 5,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Vor dem Fenster. Andante"
+      ],
+      "notes": "低声部Peters版《No. 1 Vor dem Fenster. Andante》，PDF共5页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 1 Vor dem Fenster. Andante》，PDF共5页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "47025": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Vom verwundeten Knaben. Andantino"
+      ],
+      "notes": "低声部Peters版《No. 2 Vom verwundeten Knaben. Andantino》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 2 Vom verwundeten Knaben. Andantino》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "47026": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Murrays Ermordung. Con moto"
+      ],
+      "notes": "低声部Peters版《No. 3 Murrays Ermordung. Con moto》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 3 Murrays Ermordung. Con moto》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "53064": {
+      "pages": 3,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Ein Sonett. Langsam, sehr innig"
+      ],
+      "notes": "低声部Peters版《No. 4 Ein Sonett. Langsam, sehr innig》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 4 Ein Sonett. Langsam, sehr innig》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "47027": {
+      "pages": 3,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Trennung. Sehr schnell"
+      ],
+      "notes": "低声部Peters版《No. 5 Trennung. Sehr schnell》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 5 Trennung. Sehr schnell》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "47028": {
+      "pages": 1,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Gang zur Liebsten. Andante con espressione"
+      ],
+      "notes": "低声部Peters版《No. 6 Gang zur Liebsten. Andante con espressione》，PDF共1页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 6 Gang zur Liebsten. Andante con espressione》，PDF共1页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "53065": {
+      "pages": 3,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Ständchen. Allegretto"
+      ],
+      "notes": "低声部Peters版《No. 7 Ständchen. Allegretto》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 7 Ständchen. Allegretto》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "47029": {
+      "pages": 1,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 Sehnsucht. Andante"
+      ],
+      "notes": "低声部Peters版《No. 8 Sehnsucht. Andante》，PDF共1页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "低声部Peters版《No. 8 Sehnsucht. Andante》，PDF共1页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及独唱与钢琴编制均与来源相符，原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-06T18:54:12+00:00",
+  "approved_publication_ids": [
+    "22850",
+    "53063",
+    "47025",
+    "47026",
+    "53064",
+    "47027",
+    "47028",
+    "53065",
+    "47029"
+  ]
+}

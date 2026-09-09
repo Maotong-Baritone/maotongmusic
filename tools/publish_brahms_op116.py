@@ -155,7 +155,7 @@ def prepare(root=ROOT, *, batch=OP116_BATCH):
         target = root/'scores'/filename
         if target.exists() and (not existing or digest(target.read_bytes()) != staged['sha256']):
             raise ValueError(f'Refusing to overwrite local score: #{file_id}')
-        description = f"来源：IMSLP #{file_id}；作品页：{work['source_url']}；版本：{source.get('description_en') or source['description']}；版权：Public Domain；出版信息：{source['publisher']}；编者：{source.get('editor','')}"
+        description = staged.get('description_summary') or f"来源：IMSLP #{file_id}；作品页：{work['source_url']}；版本：{source.get('description_en') or source['description']}；版权：Public Domain；出版信息：{source['publisher']}；编者：{source.get('editor','')}"
         if file_id == '84692':
             description += '；谱面核对：实际印刷页码 105–128（来源页写 pp.105–38），版号 J.B.64'
         elif staged.get('publication_note'):

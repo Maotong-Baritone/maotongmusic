@@ -1,0 +1,74 @@
+{
+  "batch_id": "brahms-op69-high-voice-nine-20260908",
+  "recorded_at": "2026-09-08T20:32:05.057892+00:00",
+  "source_manifest_before_sha256": "6cc6d510e86eac90526993b695079bf44cce3472d73525aed2c4712bed4d91ed",
+  "source_manifest_after_sha256": "29f1d075580fc405a2c314ecafd398a06c48107f47aa12a1f86ce215d6b54958",
+  "staging_manifest_before_sha256": "93cfec47a6ff09d1564ab6a11a8a0669983f06157b37dd84cd566ef45cc7c9c5",
+  "staging_manifest_after_sha256": "1b08349de69f12618abe1e97c73a1210de9999a17bb5081f5ee4fd03a73fc118",
+  "backup": "backup\\import_metadata\\brahms-op69-high-voice-nine-20260908-20260908_143204_869719",
+  "changes": [
+    {
+      "imslp_id": "41942",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41943",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41944",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41945",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41946",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41947",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41948",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41949",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "41950",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these nine Peters files as the edition for high voice and the work instrumentation as voice and piano."
+    }
+  ]
+}

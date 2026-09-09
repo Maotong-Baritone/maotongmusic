@@ -14,7 +14,7 @@
 
 第四批 **三首钢琴奏鸣曲 Op.1、2、5 与谐谑曲 Op.4，共 4 份 / 116 页** 已核对并上传，同步本地目录、数据库和独立首页动态。奏鸣曲详情附实际 PDF 乐章起始页，Op.1 正文第13页、Op.4 正文第7页，保留前置校订报告与目录。见 [第四批回执](staging/opp1-2-4-5/publication.json)、[核对记录](staging/opp1-2-4-5/README.md)。各批是否完成线上核验以各自回执为准。
 
-第五批 **Op.9、21、24、35 共6份/93页** 已完成上线核验；Op.35两册独立命名。第六批 **WoO 4、5、6与Op.18b、39共5份/79页** 已verified_live。第七批 **WoO 5 No.2手稿与Op.39 No.15共2份/5页** 当前状态 `verified_live`。批准共62份，回执确认上线62份；详见 [最新续传交接](CONTINUATION.md)、[第六批回执](staging/woo4-6-op18b-39/publication.json)、[第七批回执](staging/woo5-op39-singles/publication.json)。
+第五批 **Op.9、21、24、35 共6份/93页** 已完成上线核验；Op.35两册独立命名。第六批 **WoO 4、5、6与Op.18b、39共5份/79页** 已verified_live。第七批 **WoO 5 No.2手稿与Op.39 No.15共2份/5页** 当前状态 `verified_live`。当前累计批准152份，回执确认上线152份；详见 [最新续传交接](CONTINUATION.md) 和各批次回执。
 
 第八批 **管风琴WoO7–10与Op.122，共5份/57页** 当前状态 `verified_live`，详见 [第八批回执](staging/organ-woo7-10-op122/publication.json)。Op.122十一首实际PDF目录及原有空白、出版目录页均保留；WoO9/10分别注明前奏曲与赋格起始页。
 
@@ -31,6 +31,28 @@
 第十四批 **4 Ballades and Romances, Op.75，共1份/28页** 当前状态 `verified_live`，详见 [第十四批回执](staging/four-ballades-romances-op75/publication.json)。选用#97833未滤色完整扫描，四首实际PDF起始页为1、13、18、23；各曲二重唱声部组合已记录，归入艺术歌曲，标记德语和二重唱、钢琴。
 
 第十五批 **3 Quartets, Op.31，共1份/18页** 当前状态 `verified_live`，详见 [第十五批回执](staging/three-quartets-op31/publication.json)。选用#104116未滤色完整扫描，三首实际PDF起始页为1、9、16；来源清单的英语误标已修正为德语，归入艺术歌曲，标记四重唱、钢琴。
+
+第十六批 **3 Quartets, Op.64，共1份/26页** 当前状态 `verified_live`，详见 [第十六批回执](staging/three-quartets-op64/publication.json)。选用#104767未滤色完整扫描，三首实际PDF起始页为1、11、18；归入艺术歌曲，标记德语和四重唱、钢琴。
+
+第十七批 **8 Lieder and Romances, Op.14，共9份/49页** 当前状态 `verified_live`，详见 [第十七批回执](staging/op14-complete-and-singles/publication.json)。一次发布首版完整谱及No.1–8低声部Peters独立谱；完整谱八首实际PDF起始页为4、9、11、14、17、20、21、25，九份均归入艺术歌曲并标记德语。
+
+第十八批 **9 Lieder and Songs, Op.32，共9份/25页** 当前状态 `verified_live`，详见 [第十八批回执](staging/op32-high-voice-singles/publication.json)。一次发布No.1–9九份Peters高声部独立谱；标题、速度、德语及高声部、钢琴编制均已核对，线上目录、预览、下载哈希和首页动态已验证。
+
+第十九批 **8 Lieder and Songs, Op.57，共8份/28页** 当前状态 `verified_live`，详见 [第十九批回执](staging/op57-high-voice-singles/publication.json)。一次发布No.1–8八份Peters高声部独立谱；#9661来源页标3页而公开PDF实际为2页，已逐页确认音乐完整结束。线上目录、预览、下载哈希和首页动态已验证。
+
+第二十批 **8 Lieder and Songs, Op.58，共8份/26页** 当前状态 `verified_live`，详见 [第二十批回执](staging/op58-high-voice-singles/publication.json)。一次发布No.1–8八份Peters高声部独立谱；详情已缩短为来源、版本、出版和编者，线上目录、预览、下载哈希和首页动态已验证。
+
+第二十一批 **8 Lieder and Songs, Op.59，共8份/31页** 当前状态 `verified_live`，详见 [第二十一批回执](staging/op59-high-voice-singles/publication.json)。一次发布No.1–8八份Peters高声部独立谱；No.2–7为原调，线上目录、简洁详情、预览、下载哈希和首页动态已验证。
+
+第二十二批 **9 Lieder and Songs, Op.63，共9份/42页** 当前状态 `verified_live`，详见 [第二十二批回执](staging/op63-high-voice-singles/publication.json)。一次发布No.1–9九份Peters高声部原调独立谱；No.5–9按谱面印刷题名修正，线上目录、简洁详情、预览、下载哈希和首页动态已验证。
+
+第二十三批 **9 Songs, Op.69，共9份/35页** 当前状态 `verified_live`，详见 [第二十三批回执](staging/op69-high-voice-singles/publication.json)。一次发布No.1–9九份Peters高声部独立谱；其中No.1、5–9为原调，线上目录、简洁详情、预览、下载哈希和首页动态已验证。
+
+第二十四批 **4 Gesänge, Op.70与5 Songs, Op.71，共9份/27页** 当前状态 `verified_live`，详见 [第二十四批回执](staging/op70-op71-high-voice-singles/publication.json)。一次发布两套作品共九份Peters高声部独立谱；来源解析误带入的英语/法语标签已按实时作品页和谱面修正为德语，线上目录、简洁详情、预览、下载哈希和首页动态已验证。
+
+第二十五批 **6 Lieder, Op.85与5 Lieder, Op.106，共11份/32页** 当前状态 `verified_live`，详见 [第二十五批回执](staging/op85-op106-high-voice-singles/publication.json)。一次发布两套作品共十一份Peters高声部独立谱；全部页面已自动解析和渲染，人工通览接触表并重点核对首尾，线上目录、简洁详情、预览、下载哈希和首页动态已验证。
+
+第二十六批 **4 Songs, Op.43与5 Songs, Op.72，共9份/35页** 当前状态 `verified_live`，详见 [第二十六批回执](staging/op43-op72-high-voice-singles/publication.json)。一次发布两套作品共九份Peters高声部独立谱；全部页面已自动解析和渲染，人工通览接触表并重点核对首尾。#9114标题中的Horn误判已按实时来源和谱面纠正为德语声乐与钢琴艺术歌曲；线上目录、简洁详情、预览、下载哈希和首页动态已验证。
 
 Op.39单曲#649836实际为降A大调，已据PDF纠正来源A major误标。作者归属存疑的Anh.IV/2两份候选暂缓，未下载或上传。
 
@@ -51,7 +73,7 @@ Op.39单曲#649836实际为降A大调，已据PDF纠正来源A major误标。作
 - 来源：IMSLP 的 Brahms 作曲家页面中 Compositions 区域，不含单列的 Collected Works。
 - 161 个作品页，3,510 处文件引用；按 IMSLP 文件号合并后为 3,486 个候选。
 - 初始状态：2,348 个待审核、1,138 个排除、0 个批准。默认排除版权检查未通过、第三方/未确认改编以及单独封面页等条目。
-- 最新核对后（2026-09-05）：2,284个待审核、1,138个排除、2个暂缓、62个批准；批次实际线上状态见各回执。第一批另3份完整版本仅暂存。
+- 最新核对后（2026-09-08）：2,194个待审核、1,138个排除、2个暂缓、152个批准；批次实际线上状态见各回执。第一批另3份完整版本仅暂存。
 - 已识别 1,111 个单乐章/单首文件；不明确的范围、标题和编制保留警告，不把文件名数字直接当作乐章号。
 - 各类警告和决策数量以当前审核页、manifest和刷新后的导出为准；没有警告仍需实时核对来源和实际谱面。
 - 调性主要来自作品页/乐章列表，尚未核对实际谱面；高低声版本、移调版尤其需要第二轮检查。
@@ -69,7 +91,7 @@ Op.39单曲#649836实际为降A大调，已据PDF纠正来源A major误标。作
 ## 后续分阶段进行
 
 1. 已完成：用户审核整理规则和代表性元数据，并授权按该规则继续其余合格作品。
-2. 逐批下载至暂存区，检查 PDF 内容、文件完整性、版本、调性和许可条件。常规合格条目无需再次逐批询问；需要新分类、版权判断或存在无法解决的疑点时保留待审，不凭“都可以上传”忽略问题。
+2. 逐批下载至暂存区，检查 PDF 内容、文件完整性、版本、调性和许可条件。清晰单曲渲染全部页面并查看接触表，重点放大首尾和异常页；合集、手稿、模糊扫描或冲突版本再逐页放大。详情简介保留来源、版本、编者、范围、编制、语言和异常，避免重复的过程说明。常规合格条目无需再次逐批询问；需要新分类、版权判断或存在无法解决的疑点时保留待审，不凭“都可以上传”忽略问题。
 3. 通过核对后，同步正式目录、数据库、存储和首页 `logs.json`，按实际发布数量记录更新，验证公开下载及线上页面，分别保留每批回执。下载、批准、本地写入和实际上线分别记录，不互相替代。
 
 ## 维护命令

@@ -1,0 +1,106 @@
+{
+  "batch_id": "brahms-op14-complete-and-low-voice-nine-20260906",
+  "approved_ids": [
+    "22850",
+    "53063",
+    "47025",
+    "47026",
+    "53064",
+    "47027",
+    "47028",
+    "53065",
+    "47029"
+  ],
+  "approved_count": 9,
+  "storage_verified_count": 9,
+  "local_catalog_count": 9,
+  "website_published_count": 9,
+  "catalog_updated_at": "2026-09-06T18:54:12+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-op14-complete-and-low-voice-nine-20260906-20260906_125402_168696",
+  "files": [
+    {
+      "imslp_id": "22850",
+      "public_id": "e9e2845e-c51d-4b23-80c8-ec495296255b",
+      "filename": "艺术歌曲/e9e2845e-c51d-4b23-80c8-ec495296255b.pdf",
+      "storage_key": "scores/e9/e9e2845e-c51d-4b23-80c8-ec495296255b.pdf",
+      "sha256": "f99cf67afdef6b125ff261f146fc13db03ed3bf5a0635aa654179141fd01ad9a"
+    },
+    {
+      "imslp_id": "53063",
+      "public_id": "f1625a83-8408-4e4b-a443-dff40f7d15e5",
+      "filename": "艺术歌曲/f1625a83-8408-4e4b-a443-dff40f7d15e5.pdf",
+      "storage_key": "scores/f1/f1625a83-8408-4e4b-a443-dff40f7d15e5.pdf",
+      "sha256": "c12034f0d5b4a629948c7f50aab85507ef4c98378df6e4c283960e3dd548cbe2"
+    },
+    {
+      "imslp_id": "47025",
+      "public_id": "6523de0a-2c22-48d2-b875-73b4f4f18296",
+      "filename": "艺术歌曲/6523de0a-2c22-48d2-b875-73b4f4f18296.pdf",
+      "storage_key": "scores/65/6523de0a-2c22-48d2-b875-73b4f4f18296.pdf",
+      "sha256": "57e98e5cc2abfd5f3fb2c2901b72e3162dcd6b6b1b4336d36d5f1afa5a9eeffd"
+    },
+    {
+      "imslp_id": "47026",
+      "public_id": "cd051c20-bf8a-4f01-b1a6-d29bcb0cba54",
+      "filename": "艺术歌曲/cd051c20-bf8a-4f01-b1a6-d29bcb0cba54.pdf",
+      "storage_key": "scores/cd/cd051c20-bf8a-4f01-b1a6-d29bcb0cba54.pdf",
+      "sha256": "bc1fe097edaab1d764a83939397db23271b3c5208fbdbfe2878a9f8acfd8f8f1"
+    },
+    {
+      "imslp_id": "53064",
+      "public_id": "186ca065-85fc-4686-8f2c-b150cb3262f3",
+      "filename": "艺术歌曲/186ca065-85fc-4686-8f2c-b150cb3262f3.pdf",
+      "storage_key": "scores/18/186ca065-85fc-4686-8f2c-b150cb3262f3.pdf",
+      "sha256": "bdeccc673247980b7980831599d68f81b06ca04fa79a88fa3a65fa06b28cdf43"
+    },
+    {
+      "imslp_id": "47027",
+      "public_id": "0dfc7646-1bbd-4e1d-85a6-c708199f7278",
+      "filename": "艺术歌曲/0dfc7646-1bbd-4e1d-85a6-c708199f7278.pdf",
+      "storage_key": "scores/0d/0dfc7646-1bbd-4e1d-85a6-c708199f7278.pdf",
+      "sha256": "9348a16acab9ec2b05fb21175877c8253674e54aac7546a4719e68d39c1d2eb9"
+    },
+    {
+      "imslp_id": "47028",
+      "public_id": "93e25340-b030-4733-93eb-52cf3d44a132",
+      "filename": "艺术歌曲/93e25340-b030-4733-93eb-52cf3d44a132.pdf",
+      "storage_key": "scores/93/93e25340-b030-4733-93eb-52cf3d44a132.pdf",
+      "sha256": "c0da5d42bea3d91b386df02de12367a9a6722cc1425e28f4ffbb1afd388a781f"
+    },
+    {
+      "imslp_id": "53065",
+      "public_id": "f3fdca32-8439-4a71-b4dd-eec0a805fc09",
+      "filename": "艺术歌曲/f3fdca32-8439-4a71-b4dd-eec0a805fc09.pdf",
+      "storage_key": "scores/f3/f3fdca32-8439-4a71-b4dd-eec0a805fc09.pdf",
+      "sha256": "e01e73bbc56196c11a71ad9fdbbb80567594d90befd013da85e71a0898ce8d22"
+    },
+    {
+      "imslp_id": "47029",
+      "public_id": "bf9a97d6-cdd3-42e0-a769-c75c91b46e0a",
+      "filename": "艺术歌曲/bf9a97d6-cdd3-42e0-a769-c75c91b46e0a.pdf",
+      "storage_key": "scores/bf/bf9a97d6-cdd3-42e0-a769-c75c91b46e0a.pdf",
+      "sha256": "b83fb116031da56b610b3add000e3d712ad35d14aa508799a5faabb215d952ec"
+    }
+  ],
+  "git_commit": "d305d19da0c82831d011f888a24c1dd2ee321c8b",
+  "github_actions_run_id": 34053246024,
+  "website_verified_at": "2026-09-06T19:05:30+00:00",
+  "browser_verified_at": "2026-09-06T19:05:30+00:00",
+  "browser_verification": "线上目录总数3482，艺术歌曲679；最新9条均为Op.14完整谱及No.1–8低声部单曲，标题、所属作品、德语、分类与中文编制正确。完整谱详情列出PDF第4、9、11、14、17、20、21、25页起始，R2下载与预览指向正确公开文件，浏览器已显示首版封面；首页最新动态准确汇总本批9份。",
+  "validation": {
+    "unit_tests_passed": 67,
+    "strict_catalog_entries": 3482,
+    "strict_pdf_files": 3482,
+    "strict_errors": 0,
+    "strict_warnings": 0,
+    "storage_manifest_entries": 3482,
+    "storage_manifest_exact": true,
+    "submissions_db_rows": 1,
+    "public_hash_matches": 9,
+    "git_committed_pdf_hash_matches": 9,
+    "online_data_exact_commit": true,
+    "online_logs_exact_commit": true
+  }
+}

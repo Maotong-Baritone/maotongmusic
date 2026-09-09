@@ -1,0 +1,60 @@
+{
+  "source_page": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
+  "observation_method": "Normal anonymous IMSLP wait page in the supported browser; visible released link or normal PDF redirect only.",
+  "files": [
+    {
+      "imslp_id": "8990",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://vmirror.imslp.org/files/imglnks/usimg/0/08/IMSLP08990-Brahms_-_Op._32,_No._1_(Vol._3).pdf"
+    },
+    {
+      "imslp_id": "8991",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://s9.imslp.org/files/imglnks/usimg/2/2f/IMSLP08991-Brahms_-_Op._32,_No._2_(Vol._2).pdf"
+    },
+    {
+      "imslp_id": "8992",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://vmirror.imslp.org/files/imglnks/usimg/9/95/IMSLP08992-Brahms_-_Op._32,_No._3_(Vol._3).pdf"
+    },
+    {
+      "imslp_id": "8993",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://s9.imslp.org/files/imglnks/usimg/f/fb/IMSLP08993-Brahms_-_Op._32,_No._4_(Vol._3).pdf"
+    },
+    {
+      "imslp_id": "8994",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://ks15.imslp.org/files/imglnks/usimg/a/ae/IMSLP08994-Brahms_-_Op._32,_No._5_(Vol._2).pdf"
+    },
+    {
+      "imslp_id": "8995",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://s9.imslp.org/files/imglnks/usimg/d/dc/IMSLP08995-Brahms_-_Op._32,_No._6_(Vol._3).pdf"
+    },
+    {
+      "imslp_id": "8996",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "direct_pdf_redirect",
+      "url": "https://vmirror.imslp.org/files/imglnks/usimg/8/80/IMSLP08996-Brahms_-_Op._32,_No._7_(Vol._3).pdf"
+    },
+    {
+      "imslp_id": "8997",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://ks15.imslp.org/files/imglnks/usimg/8/8d/IMSLP08997-Brahms_-_Op._32,_No._8_(Vol._3).pdf"
+    },
+    {
+      "imslp_id": "8998",
+      "observed_at": "2026-09-08T00:35:59.115180+00:00",
+      "access_method": "wait_page",
+      "url": "https://s9.imslp.org/files/imglnks/usimg/c/c1/IMSLP08998-Brahms_-_Op._32,_No._9_(Vol._2).pdf"
+    }
+  ]
+}

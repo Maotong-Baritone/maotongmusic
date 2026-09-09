@@ -1,0 +1,67 @@
+{
+  "batch_id": "brahms-op58-high-voice-eight-20260908",
+  "recorded_at": "2026-09-08T15:02:18.073281+00:00",
+  "source_manifest_before_sha256": "16ebf2970a64aff124b835d03542f3a6e93a1895e648f977798ba7f3831b311a",
+  "source_manifest_after_sha256": "0aca465354399866b8eb503aec90d16499af6c22bcee7c6aefbd079e48178538",
+  "staging_manifest_before_sha256": "9364666bcf12434a56e4e2182ef3e875b92d11e7d0a9c415f989f4d0c60ee34b",
+  "staging_manifest_after_sha256": "d609bbd42e6fd3fa8cfac46f2a258108eb99a5b4e7b069b70812cd42e6bf64aa",
+  "backup": "backup\\import_metadata\\brahms-op58-high-voice-eight-20260908-20260908_090217_888162",
+  "changes": [
+    {
+      "imslp_id": "21766",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21767",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21768",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21769",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21770",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21771",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21772",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    },
+    {
+      "imslp_id": "21773",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source identifies these eight Peters files as the edition for high voice in original keys."
+    }
+  ]
+}

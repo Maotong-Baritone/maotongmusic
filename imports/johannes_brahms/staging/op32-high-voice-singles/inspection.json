@@ -1,0 +1,217 @@
+{
+  "label": "9 Lieder and Songs, Op.32：高声部单曲",
+  "checked_on": "2026-09-07",
+  "recorded_at": "2026-09-08T00:38:58.115739+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "8990",
+    "8991",
+    "8992",
+    "8993",
+    "8994",
+    "8995",
+    "8996",
+    "8997",
+    "8998"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.32、九首目录、德语、原作编制voice/piano及Public Domain。本批收录高声部栏目下九份互不重复的Peters独立单曲#8990–#8998；完整谱、低声部版本及选集不在本批。所有下载均来自正常匿名等待后可见链接或正常PDF跳转。",
+  "method": "保留原PDF字节；pypdf逐页解析、SHA256校验；Poppler以80dpi渲染全部25页；查看九份全页接触表，逐份复核标题、速度、歌词、编制和末页完整性。",
+  "rendering_note": "九份高声部单曲共25页，各文件逐页连续、标题与速度一致且末页完整结束，无缺页。",
+  "metadata_changes": [
+    {
+      "imslp_id": "8990",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8991",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8992",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8993",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8994",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8995",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8996",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8997",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    },
+    {
+      "imslp_id": "8998",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP source groups all nine files under High voice; the Peters edition note explicitly identifies an edition transposed for high voice."
+    }
+  ],
+  "files": {
+    "8990": {
+      "pages": 5,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Wie rafft ich mich auf in der Nacht. Andante"
+      ],
+      "notes": "高声部Peters版《No. 1 Wie rafft ich mich auf in der Nacht. Andante》，PDF共5页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 1 Wie rafft ich mich auf in der Nacht. Andante》，PDF共5页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8991": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Nicht mehr zu dir zu gehen. Langsam"
+      ],
+      "notes": "高声部Peters版《No. 2 Nicht mehr zu dir zu gehen. Langsam》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 2 Nicht mehr zu dir zu gehen. Langsam》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8992": {
+      "pages": 1,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Ich schleich umher. Mässig"
+      ],
+      "notes": "高声部Peters版《No. 3 Ich schleich umher. Mässig》，PDF共1页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 3 Ich schleich umher. Mässig》，PDF共1页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8993": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Der Strom, der neben mir verrauschte. Moderato, ma agitato"
+      ],
+      "notes": "高声部Peters版《No. 4 Der Strom, der neben mir verrauschte. Moderato, ma agitato》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 4 Der Strom, der neben mir verrauschte. Moderato, ma agitato》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8994": {
+      "pages": 3,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Wehe, so willst du mich wieder. Allegro"
+      ],
+      "notes": "高声部Peters版《No. 5 Wehe, so willst du mich wieder. Allegro》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 5 Wehe, so willst du mich wieder. Allegro》，PDF共3页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8995": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Du sprichst, dass ich mich täuschte. Andante con moto"
+      ],
+      "notes": "高声部Peters版《No. 6 Du sprichst, dass ich mich täuschte. Andante con moto》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 6 Du sprichst, dass ich mich täuschte. Andante con moto》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8996": {
+      "pages": 2,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Bitteres zu sagen denkst du. Con moto, espressivo ma grazioso"
+      ],
+      "notes": "高声部Peters版《No. 7 Bitteres zu sagen denkst du. Con moto, espressivo ma grazioso》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 7 Bitteres zu sagen denkst du. Con moto, espressivo ma grazioso》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8997": {
+      "pages": 2,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 So stehn wir, ich und meine Weide. In gehender Bewegung"
+      ],
+      "notes": "高声部Peters版《No. 8 So stehn wir, ich und meine Weide. In gehender Bewegung》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 8 So stehn wir, ich und meine Weide. In gehender Bewegung》，PDF共2页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    },
+    "8998": {
+      "pages": 5,
+      "key": "",
+      "number": 9,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 9 Wie bist du, meine Königin. Adagio"
+      ],
+      "notes": "高声部Peters版《No. 9 Wie bist du, meine Königin. Adagio》，PDF共5页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。",
+      "publication_note": "高声部Peters版《No. 9 Wie bist du, meine Königin. Adagio》，PDF共5页，逐页为连续完整乐谱且末页完整结束；谱面标题、速度、德语歌词及高声部与钢琴编制均与来源相符，原PDF字节未改。"
+    }
+  },
+  "approved_at": "2026-09-08T00:39:58+00:00",
+  "approved_publication_ids": [
+    "8990",
+    "8991",
+    "8992",
+    "8993",
+    "8994",
+    "8995",
+    "8996",
+    "8997",
+    "8998"
+  ]
+}
