@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3618,
-  "unique_content_count": 3599,
+  "entry_count": 3627,
+  "unique_content_count": 3608,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4435662222,
+  "total_size": 4440815839,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -959,6 +959,13 @@
       "storage_key": "scores/09/096ee149-1c08-5f44-9436-b228148357cc.pdf",
       "file_size": 2046496,
       "sha256": "5fe704b73381bbafc8fd64380794df6324a895b30ef269dc5476bb446cb91f76"
+    },
+    {
+      "public_id": "097cc026-7e1f-41f8-bf25-659d63c8fc0a",
+      "source_path": "scores/艺术歌曲/097cc026-7e1f-41f8-bf25-659d63c8fc0a.pdf",
+      "storage_key": "scores/09/097cc026-7e1f-41f8-bf25-659d63c8fc0a.pdf",
+      "file_size": 694162,
+      "sha256": "8a10c71fdfbd0d18341a659625ce3cafef5aa7617eab53f4f3fb80bef8cb562a"
     },
     {
       "public_id": "098964d4-5d09-5cda-8c2c-7b731c5ae644",
@@ -4391,6 +4398,13 @@
       "sha256": "2bddd46d4ea2e142092aabe038159eceefc6083832d31a6ad7d96104abedf4a0"
     },
     {
+      "public_id": "2ca344ed-c964-467b-b7a5-52a65170cde0",
+      "source_path": "scores/艺术歌曲/2ca344ed-c964-467b-b7a5-52a65170cde0.pdf",
+      "storage_key": "scores/2c/2ca344ed-c964-467b-b7a5-52a65170cde0.pdf",
+      "file_size": 625975,
+      "sha256": "07aae0850e467d6e1e4f7a654cca2c9dc26862460dd3d177ebd378ee356d757e"
+    },
+    {
       "public_id": "2caf2422-d733-53b9-8e0a-2320f86b265d",
       "source_path": "scores/歌剧咏叹调/1766098360110_Ah_perche_dirmi_crudel.pdf",
       "storage_key": "scores/2c/2caf2422-d733-53b9-8e0a-2320f86b265d.pdf",
@@ -5490,6 +5504,13 @@
       "sha256": "d49d1fb9337fafa7c5786659b4eac8984071393db30ef4aef56b6be3ed09c033"
     },
     {
+      "public_id": "394973f1-3e99-4090-b7f6-bb3a7dfd4440",
+      "source_path": "scores/艺术歌曲/394973f1-3e99-4090-b7f6-bb3a7dfd4440.pdf",
+      "storage_key": "scores/39/394973f1-3e99-4090-b7f6-bb3a7dfd4440.pdf",
+      "file_size": 699814,
+      "sha256": "587e5ca8bd867f8d559af7af8eae2580cf2f28e3a51d3463091ecfb6cabd7165"
+    },
+    {
       "public_id": "39544ddb-cc3d-5f59-9191-4271a90ed5e2",
       "source_path": "scores/歌剧咏叹调/1766007766669_Lempio_sleale_indegno_vorria.pdf",
       "storage_key": "scores/39/39544ddb-cc3d-5f59-9191-4271a90ed5e2.pdf",
@@ -5845,6 +5866,13 @@
       "storage_key": "scores/3c/3c0706b0-b03b-5087-8849-872f47fc7299.pdf",
       "file_size": 11028523,
       "sha256": "fb12f3a2c4a76c841e90b47f01fa69e549fb012066b302ccc01a15c6b7067831"
+    },
+    {
+      "public_id": "3c16eb93-90ff-4848-ac85-3e5d906b3b01",
+      "source_path": "scores/艺术歌曲/3c16eb93-90ff-4848-ac85-3e5d906b3b01.pdf",
+      "storage_key": "scores/3c/3c16eb93-90ff-4848-ac85-3e5d906b3b01.pdf",
+      "file_size": 670307,
+      "sha256": "b4a3f445bca80fe09b49b145c755726ac95bda613f5c2d79656a47d8caa998ba"
     },
     {
       "public_id": "3c281dd7-d69f-576c-9705-d40f8be0bd2f",
@@ -11685,6 +11713,13 @@
       "sha256": "736cf03317f0924633cbbbdf7fe9ac1068e5b3b39c6a108c2050b5a6ace68d08"
     },
     {
+      "public_id": "7755eda3-b1d1-4631-94af-9fceafdbac56",
+      "source_path": "scores/艺术歌曲/7755eda3-b1d1-4631-94af-9fceafdbac56.pdf",
+      "storage_key": "scores/77/7755eda3-b1d1-4631-94af-9fceafdbac56.pdf",
+      "file_size": 477935,
+      "sha256": "d8f42df4b10ce09f94bbf4d5c0d1af2e743320be84286ae2b618fa0326c690b0"
+    },
+    {
       "public_id": "775ebbca-bd4f-5771-9abc-69d277b552e0",
       "source_path": "scores/歌剧咏叹调/1766007766427_Belle_dee_di_questo_core.pdf",
       "storage_key": "scores/77/775ebbca-bd4f-5771-9abc-69d277b552e0.pdf",
@@ -13440,6 +13475,13 @@
       "storage_key": "scores/8a/8a3eb66b-d627-5b3b-b2d7-8e2af4a499ab.pdf",
       "file_size": 746605,
       "sha256": "6686d2b6338f439234f0113d9aa39a9240684dd4738eac5579b759d53d23b2fe"
+    },
+    {
+      "public_id": "8a509d88-ed83-4100-ab0b-7c9967cd3294",
+      "source_path": "scores/艺术歌曲/8a509d88-ed83-4100-ab0b-7c9967cd3294.pdf",
+      "storage_key": "scores/8a/8a509d88-ed83-4100-ab0b-7c9967cd3294.pdf",
+      "file_size": 565824,
+      "sha256": "58e2f3e74a5161609ab35de0ad5fc51deaaeaf5d2458d303f6077577da7daf6e"
     },
     {
       "public_id": "8a564988-e632-5e06-80ef-1bba492cc685",
@@ -17026,6 +17068,13 @@
       "sha256": "a1ae1ddf5af72fc995688f520228f89d81831184d9aa41b39a44b5fa81950c97"
     },
     {
+      "public_id": "ad379761-87ac-42cb-9b73-d28f6672d14a",
+      "source_path": "scores/艺术歌曲/ad379761-87ac-42cb-9b73-d28f6672d14a.pdf",
+      "storage_key": "scores/ad/ad379761-87ac-42cb-9b73-d28f6672d14a.pdf",
+      "file_size": 372433,
+      "sha256": "e1f57f85ac741a6f2dab6b86a312e837fa273d0c95ab3f3704d4215ef4f2928a"
+    },
+    {
       "public_id": "ad577e86-b1b1-574b-ad94-dbf5b72d2ee3",
       "source_path": "scores/歌剧咏叹调/1766098823817_Per_veder_su_quel_bel_viso.pdf",
       "storage_key": "scores/ad/ad577e86-b1b1-574b-ad94-dbf5b72d2ee3.pdf",
@@ -19903,6 +19952,13 @@
       "sha256": "04db4241f2b8e63e754868667d40579250c38ee46619b21d2dd5266bfe9541e7"
     },
     {
+      "public_id": "c7e1d821-030e-42ee-b56b-2fde5408cf01",
+      "source_path": "scores/艺术歌曲/c7e1d821-030e-42ee-b56b-2fde5408cf01.pdf",
+      "storage_key": "scores/c7/c7e1d821-030e-42ee-b56b-2fde5408cf01.pdf",
+      "file_size": 420858,
+      "sha256": "8ff291c08047f3d507ae9e8884d234687a998cc7b0de97160bc48effe3e92383"
+    },
+    {
       "public_id": "c7f8e854-cc11-5306-b153-f1763eb30f42",
       "source_path": "scores/乐谱书/曲集/1765944211.pdf",
       "storage_key": "scores/c7/c7f8e854-cc11-5306-b153-f1763eb30f42.pdf",
@@ -20937,6 +20993,13 @@
       "storage_key": "scores/d2/d2ab54b3-2e88-4bc4-8860-e6ade3b57d76.pdf",
       "file_size": 196301,
       "sha256": "599ea8de443364639f48334a46e07f999c9b14556eab20265cf8332b316db192"
+    },
+    {
+      "public_id": "d2c19ee6-5890-4fdc-a3de-b5c903352a87",
+      "source_path": "scores/艺术歌曲/d2c19ee6-5890-4fdc-a3de-b5c903352a87.pdf",
+      "storage_key": "scores/d2/d2c19ee6-5890-4fdc-a3de-b5c903352a87.pdf",
+      "file_size": 626309,
+      "sha256": "f13182a27a719b753ac8e298e0f17a5dd59cd69dbe8c83bf930edf8e31edb79e"
     },
     {
       "public_id": "d2e0cfb6-8244-5b0d-963d-6c10b5e686bd",
