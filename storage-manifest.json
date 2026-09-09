@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3606,
-  "unique_content_count": 3587,
+  "entry_count": 3618,
+  "unique_content_count": 3599,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4430712161,
+  "total_size": 4435662222,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1521,6 +1521,13 @@
       "sha256": "eaaf458d4f7ff8a4cccf1cebc02b8a4aba11ae223ba3ff573b259a6d206dbfd1"
     },
     {
+      "public_id": "0f562a15-8617-4361-bed5-a0ca85c0c1f9",
+      "source_path": "scores/艺术歌曲/0f562a15-8617-4361-bed5-a0ca85c0c1f9.pdf",
+      "storage_key": "scores/0f/0f562a15-8617-4361-bed5-a0ca85c0c1f9.pdf",
+      "file_size": 320355,
+      "sha256": "3ec19b06dd76bc8f3a19aff4852e848ac2f367d1f5265a00e9228e166fa8688f"
+    },
+    {
       "public_id": "0f695e9a-5f95-5e7c-83d1-ca9a30c1caea",
       "source_path": "scores/歌剧咏叹调/1766294180751_Helas_mon_coeur_sensible_et_tendre.pdf",
       "storage_key": "scores/0f/0f695e9a-5f95-5e7c-83d1-ca9a30c1caea.pdf",
@@ -1568,6 +1575,13 @@
       "storage_key": "scores/0f/0fab836b-93bc-59dd-bd2e-37d4035935ea.pdf",
       "file_size": 7799822,
       "sha256": "a1baacbb9f612b75af3ff03d2fc72495d56730246f8bcf2a4413e0e64a39765c"
+    },
+    {
+      "public_id": "0fb11ab2-d3f2-4f9c-8dd2-7bde511c28fc",
+      "source_path": "scores/艺术歌曲/0fb11ab2-d3f2-4f9c-8dd2-7bde511c28fc.pdf",
+      "storage_key": "scores/0f/0fb11ab2-d3f2-4f9c-8dd2-7bde511c28fc.pdf",
+      "file_size": 189315,
+      "sha256": "76c1ce8a2bff209f08a67bf5a15c0bf15b3ef78e11b9016dac7b65e76509fd0d"
     },
     {
       "public_id": "0fe0e5c3-795a-5202-b07c-eaf03d9235ef",
@@ -4830,6 +4844,13 @@
       "storage_key": "scores/31/319f0edf-0fab-5c1d-a95c-0fb033e60e65.pdf",
       "file_size": 187127,
       "sha256": "f228edb5d4b1490bbda7c0e85d40a687cf14ba3a6bcecd156c30f4bb2d4b9e86"
+    },
+    {
+      "public_id": "31ea08c0-8a43-495b-b137-ef8d7ae2f795",
+      "source_path": "scores/艺术歌曲/31ea08c0-8a43-495b-b137-ef8d7ae2f795.pdf",
+      "storage_key": "scores/31/31ea08c0-8a43-495b-b137-ef8d7ae2f795.pdf",
+      "file_size": 152259,
+      "sha256": "78918d5a0eb555c46230d9bec3272df2fbddfe26bc09ceea8655cf2dee70d9eb"
     },
     {
       "public_id": "32188b00-91f2-5f74-bd83-a1a248b86651",
@@ -9998,6 +10019,13 @@
       "sha256": "eee5006181c1c4626925caf3c607f8738be0ea14fbc44b3fc7dc828ef8cbe505"
     },
     {
+      "public_id": "65efdcfb-e904-4e16-afeb-91e5ac9c5db9",
+      "source_path": "scores/艺术歌曲/65efdcfb-e904-4e16-afeb-91e5ac9c5db9.pdf",
+      "storage_key": "scores/65/65efdcfb-e904-4e16-afeb-91e5ac9c5db9.pdf",
+      "file_size": 602263,
+      "sha256": "9fd23ec2a51f2549165b5d06a6eb304359b0eed399e1a4b6a42232723d9523ca"
+    },
+    {
       "public_id": "65f7bfa5-8577-558c-a983-0525e188b0fd",
       "source_path": "scores/歌剧咏叹调/1766007762845_Mia_bella_godo_che_son_per_te.pdf",
       "storage_key": "scores/65/65f7bfa5-8577-558c-a983-0525e188b0fd.pdf",
@@ -14086,6 +14114,13 @@
       "sha256": "a1a87c2e9fbf05a8b186baddf0ee2a0697dba9ae67fee990bcbacaba9bd27849"
     },
     {
+      "public_id": "908c51e9-ba7b-466d-a6b8-caa2f8262bc1",
+      "source_path": "scores/艺术歌曲/908c51e9-ba7b-466d-a6b8-caa2f8262bc1.pdf",
+      "storage_key": "scores/90/908c51e9-ba7b-466d-a6b8-caa2f8262bc1.pdf",
+      "file_size": 315419,
+      "sha256": "7cd18ead4310acbf314061838f6f8c7ba53018c4eb84356705be3d69c449aead"
+    },
+    {
       "public_id": "9094d6e3-53e9-4f73-a0ee-b4dba574a4ee",
       "source_path": "scores/艺术歌曲/9094d6e3-53e9-4f73-a0ee-b4dba574a4ee.pdf",
       "storage_key": "scores/90/9094d6e3-53e9-4f73-a0ee-b4dba574a4ee.pdf",
@@ -15262,6 +15297,13 @@
       "sha256": "b338cfc30527ed16ed8cee98d8898d34b9ddc053b5d2c3885d3744d690e56c0d"
     },
     {
+      "public_id": "9bd66865-0140-4913-8403-6e062158e020",
+      "source_path": "scores/艺术歌曲/9bd66865-0140-4913-8403-6e062158e020.pdf",
+      "storage_key": "scores/9b/9bd66865-0140-4913-8403-6e062158e020.pdf",
+      "file_size": 313113,
+      "sha256": "926365d8e1f19ded092c352231d4454eff7b03a15e97fc5003add0912e0b6704"
+    },
+    {
       "public_id": "9bd76cbc-f28b-59fb-ad8e-496097a8a72f",
       "source_path": "scores/歌剧咏叹调/1766294202609_E_questasilo_ameno_e_grato.pdf",
       "storage_key": "scores/9b/9bd76cbc-f28b-59fb-ad8e-496097a8a72f.pdf",
@@ -15407,6 +15449,13 @@
       "storage_key": "scores/9d/9db844aa-442e-50a7-aee2-8f81369e2699.pdf",
       "file_size": 7812916,
       "sha256": "ffb4e46d2905f19e4c6361518ca0fb43b09324b4fc32485e88b39b361b1e5c99"
+    },
+    {
+      "public_id": "9dcacfe7-64d1-4882-9e8f-ad51b7b0f01b",
+      "source_path": "scores/艺术歌曲/9dcacfe7-64d1-4882-9e8f-ad51b7b0f01b.pdf",
+      "storage_key": "scores/9d/9dcacfe7-64d1-4882-9e8f-ad51b7b0f01b.pdf",
+      "file_size": 529283,
+      "sha256": "0ac494b60cbc6c67d0da89cfdb86a0f0eeda35ef6b11b77ffe1fe02c607269fc"
     },
     {
       "public_id": "9dfd4209-e2ac-58d9-8ff5-878e61feb5ef",
@@ -16219,6 +16268,13 @@
       "storage_key": "scores/a6/a63536fe-ec4c-557f-b0e6-24e92291b592.pdf",
       "file_size": 766584,
       "sha256": "e5a6370b4354bba485c264af9bf0d468855f9b1656d85b49b9e341558a18a3b5"
+    },
+    {
+      "public_id": "a662f27f-ebaf-4ba5-890c-2dbd9932e708",
+      "source_path": "scores/艺术歌曲/a662f27f-ebaf-4ba5-890c-2dbd9932e708.pdf",
+      "storage_key": "scores/a6/a662f27f-ebaf-4ba5-890c-2dbd9932e708.pdf",
+      "file_size": 515582,
+      "sha256": "c9aa02696ec2743b7b7c6ba63aec0a5f2472445888c0f3bf6917542034ad7e8d"
     },
     {
       "public_id": "a6816938-0efe-46a8-a904-467a270259c4",
@@ -20127,6 +20183,13 @@
       "sha256": "b927aec7dce6342ea7a04e698c00ff035eab80d4e09881af4a12dad89d40d84c"
     },
     {
+      "public_id": "cacc1a60-70a2-43e1-bb88-2124426613f2",
+      "source_path": "scores/艺术歌曲/cacc1a60-70a2-43e1-bb88-2124426613f2.pdf",
+      "storage_key": "scores/ca/cacc1a60-70a2-43e1-bb88-2124426613f2.pdf",
+      "file_size": 525360,
+      "sha256": "65f6f0f728045691e2b3a51ab9335724fbc5e50da3556915c9176be48b0427fb"
+    },
+    {
       "public_id": "cad00ec5-a2f8-42cb-acc9-c055b9a2c357",
       "source_path": "scores/室内乐/cad00ec5-a2f8-42cb-acc9-c055b9a2c357.pdf",
       "storage_key": "scores/ca/cad00ec5-a2f8-42cb-acc9-c055b9a2c357.pdf",
@@ -20587,6 +20650,13 @@
       "storage_key": "scores/cf/cf69cacc-5fec-5b9f-9475-0a173e7109c0.pdf",
       "file_size": 2842053,
       "sha256": "4cda3ad44968a522f25f1032f561f005a801c09e568733d34b1903ac4efb9f20"
+    },
+    {
+      "public_id": "cf6f12c4-d230-42cf-964e-ffa3407b4279",
+      "source_path": "scores/艺术歌曲/cf6f12c4-d230-42cf-964e-ffa3407b4279.pdf",
+      "storage_key": "scores/cf/cf6f12c4-d230-42cf-964e-ffa3407b4279.pdf",
+      "file_size": 621282,
+      "sha256": "7165bdb62e2d899582e583034d67f5377d77357dcf53c60439e4a0e9a1561cd5"
     },
     {
       "public_id": "cf79d9d8-3a93-57d8-852d-18628150ec3a",
@@ -21198,6 +21268,13 @@
       "sha256": "be310adaffb9016ed79b20153b246d94cdb6b0eb865976bd1f9f5a6b98a1d041"
     },
     {
+      "public_id": "d68468d9-e2ec-45fe-ad54-1105ffd6297b",
+      "source_path": "scores/艺术歌曲/d68468d9-e2ec-45fe-ad54-1105ffd6297b.pdf",
+      "storage_key": "scores/d6/d68468d9-e2ec-45fe-ad54-1105ffd6297b.pdf",
+      "file_size": 532291,
+      "sha256": "4e5bf85aab5536d9734ec9a7031f2202ee9d8cb4db95d37fe2109caa08765899"
+    },
+    {
       "public_id": "d6b06b05-6613-5c83-9258-580796400dd4",
       "source_path": "scores/声乐作品/艺术歌曲/1766372554881_Die_Manner_sind_mechant_-_D866_Medium_Original.pdf",
       "storage_key": "scores/d6/d6b06b05-6613-5c83-9258-580796400dd4.pdf",
@@ -21329,6 +21406,13 @@
       "storage_key": "scores/d7/d74a14be-f52b-527b-b3c6-813b07eab96b.pdf",
       "file_size": 311540,
       "sha256": "4a71c35258bf74669d7a184b9b24ce743f2c65557ff34b6f5da5b776ae177261"
+    },
+    {
+      "public_id": "d77a4b81-b0bd-4a24-90db-68321a443c48",
+      "source_path": "scores/艺术歌曲/d77a4b81-b0bd-4a24-90db-68321a443c48.pdf",
+      "storage_key": "scores/d7/d77a4b81-b0bd-4a24-90db-68321a443c48.pdf",
+      "file_size": 333539,
+      "sha256": "48b067d598a574d17ab135791ea1649f27a2f95a2079ceff5b6df982f1631522"
     },
     {
       "public_id": "d793ed2d-60ae-51dd-b946-5a8ac7157b17",
