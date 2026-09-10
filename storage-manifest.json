@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3627,
-  "unique_content_count": 3608,
+  "entry_count": 3637,
+  "unique_content_count": 3618,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4440815839,
+  "total_size": 4445506914,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -3019,6 +3019,13 @@
       "sha256": "b9da81de45b0daed9100f0aa0cd624188aa7b6c8629094c04b7bf431502552f5"
     },
     {
+      "public_id": "1d7450be-e6b4-430a-840c-0711fa40d00b",
+      "source_path": "scores/艺术歌曲/1d7450be-e6b4-430a-840c-0711fa40d00b.pdf",
+      "storage_key": "scores/1d/1d7450be-e6b4-430a-840c-0711fa40d00b.pdf",
+      "file_size": 676167,
+      "sha256": "16b87ccca1751a84f5d976d815550c0c0597ae68163859e632c328929026a95c"
+    },
+    {
       "public_id": "1d799c52-8ead-5de5-82c7-9aae01f1cf3b",
       "source_path": "scores/歌剧咏叹调/1766007818155_Io_non_ti_chiedo_piu_oh_sposo_amato.pdf",
       "storage_key": "scores/1d/1d799c52-8ead-5de5-82c7-9aae01f1cf3b.pdf",
@@ -3353,6 +3360,13 @@
       "storage_key": "scores/21/213d185e-3df1-58c6-b870-5bbf7c9aeaa0.pdf",
       "file_size": 4914245,
       "sha256": "c2ab23e60d303e4b94c5b0b73a92b97cdcc399f61301b98776c95b65ba9eb9a6"
+    },
+    {
+      "public_id": "214297e9-819c-46ac-9fdb-cc9e5b6f5a48",
+      "source_path": "scores/艺术歌曲/214297e9-819c-46ac-9fdb-cc9e5b6f5a48.pdf",
+      "storage_key": "scores/21/214297e9-819c-46ac-9fdb-cc9e5b6f5a48.pdf",
+      "file_size": 457692,
+      "sha256": "ac6ca23ed20c888532fa3d37289b49bb114bcb7d3b607d9e8d0a7b77fcd501a9"
     },
     {
       "public_id": "214d4e78-0466-4e4e-bf0c-0dac47a64644",
@@ -7513,6 +7527,13 @@
       "sha256": "bdf764ea05a23aec6418f27ece2b540829ab114d4f41b704b8943610abbc2e35"
     },
     {
+      "public_id": "4ba86425-c89b-4bd4-9cca-3c65ea92bcb5",
+      "source_path": "scores/艺术歌曲/4ba86425-c89b-4bd4-9cca-3c65ea92bcb5.pdf",
+      "storage_key": "scores/4b/4ba86425-c89b-4bd4-9cca-3c65ea92bcb5.pdf",
+      "file_size": 374349,
+      "sha256": "b0e2d524771d79a134a00566a8bf092d2f73c616a70240207bfb2839484ad78a"
+    },
+    {
       "public_id": "4bb4fed1-80c2-5ef0-aaa6-fdf6c69142b5",
       "source_path": "scores/歌剧咏叹调/1766038757904_So_che_per_via_dei_triboli.pdf",
       "storage_key": "scores/4b/4bb4fed1-80c2-5ef0-aaa6-fdf6c69142b5.pdf",
@@ -8143,6 +8164,13 @@
       "sha256": "1c06c76c3d38c252fae7fb0616e8d20509248e8cc18c9d2e84b7b8214890220a"
     },
     {
+      "public_id": "5325f09f-8ce0-4486-ac83-37a38427a31b",
+      "source_path": "scores/艺术歌曲/5325f09f-8ce0-4486-ac83-37a38427a31b.pdf",
+      "storage_key": "scores/53/5325f09f-8ce0-4486-ac83-37a38427a31b.pdf",
+      "file_size": 312015,
+      "sha256": "b66421d2ba8723bd0b022ab476b2c8547ea3c257639974cdfe717ba362426f97"
+    },
+    {
       "public_id": "532c5c86-8458-57d9-862b-d60bf0134c21",
       "source_path": "scores/歌剧咏叹调/1766007758547_Voglio_che_mora_si_traffitto_del_mio_sdegno.pdf",
       "storage_key": "scores/53/532c5c86-8458-57d9-862b-d60bf0134c21.pdf",
@@ -8505,6 +8533,13 @@
       "storage_key": "scores/57/57691d0c-032c-550d-b105-3106b0d6c3e6.pdf",
       "file_size": 109733,
       "sha256": "8e31e243641ca9b53d0594e4b2ef165bfe310baa17a1dd118484f899c04b4df5"
+    },
+    {
+      "public_id": "57752452-843e-4f8e-9a09-11f1c20ed227",
+      "source_path": "scores/艺术歌曲/57752452-843e-4f8e-9a09-11f1c20ed227.pdf",
+      "storage_key": "scores/57/57752452-843e-4f8e-9a09-11f1c20ed227.pdf",
+      "file_size": 375962,
+      "sha256": "908da97ae3058a2d50164da95b97713f48ccbe5e47dbf2ac7a8e3ed310b0852c"
     },
     {
       "public_id": "578677db-8dda-4170-baf8-822f3568feec",
@@ -11251,6 +11286,13 @@
       "sha256": "572e58e2110ef28dae704b8f363550ce9b2acbf1f10a0d8e44bacd6c25e63179"
     },
     {
+      "public_id": "71c4a4c1-cf70-41c4-98a4-16ee72436bbf",
+      "source_path": "scores/艺术歌曲/71c4a4c1-cf70-41c4-98a4-16ee72436bbf.pdf",
+      "storage_key": "scores/71/71c4a4c1-cf70-41c4-98a4-16ee72436bbf.pdf",
+      "file_size": 469732,
+      "sha256": "6ddd17fdc1b2d60d6a6e24460e7c0edf56351f4f291b94248c35328abbb0bb63"
+    },
+    {
       "public_id": "71ce0d9f-d7dc-575b-8210-889ba0ec50ae",
       "source_path": "scores/声乐作品/艺术歌曲/1766372652426_Winterlied_-_D401_Medium_Original.pdf",
       "storage_key": "scores/71/71ce0d9f-d7dc-575b-8210-889ba0ec50ae.pdf",
@@ -12523,6 +12565,13 @@
       "storage_key": "scores/80/805cf16c-5b46-55c4-8595-d386f8a71209.pdf",
       "file_size": 22853076,
       "sha256": "ebe6115e520aecf8c9a8422571ded10d67ef3c81e0aa141293f481ed85d444ee"
+    },
+    {
+      "public_id": "80746120-970b-4c54-8cac-f36b1a1c1d5a",
+      "source_path": "scores/艺术歌曲/80746120-970b-4c54-8cac-f36b1a1c1d5a.pdf",
+      "storage_key": "scores/80/80746120-970b-4c54-8cac-f36b1a1c1d5a.pdf",
+      "file_size": 393574,
+      "sha256": "d1b53e85dacf9bf1e7dbe81fdc42539b74f1a91f4419f0388220f4c95c3578d9"
     },
     {
       "public_id": "808213d1-9287-5b14-95bd-4bc2ee7a782d",
@@ -15778,6 +15827,13 @@
       "storage_key": "scores/9f/9ffaa7a5-e145-5bf9-bad7-0316ac3dc291.pdf",
       "file_size": 991312,
       "sha256": "b275e52d7c9673f0eaa7fa7382cdfa0247cfa7d575b35414939acaccd0af49df"
+    },
+    {
+      "public_id": "a016e09f-6cd4-42aa-8235-0786ee93b5a2",
+      "source_path": "scores/艺术歌曲/a016e09f-6cd4-42aa-8235-0786ee93b5a2.pdf",
+      "storage_key": "scores/a0/a016e09f-6cd4-42aa-8235-0786ee93b5a2.pdf",
+      "file_size": 288122,
+      "sha256": "30db3e4c7f47baf2e4fe8f57a01832fde02f262e63214ef1ea0ad222a49e510e"
     },
     {
       "public_id": "a01c71a5-2a17-5ebe-a1f8-d214917a2f78",
@@ -20505,6 +20561,13 @@
       "sha256": "02c5adea0c8fd5513f846c973f3f56582983cffa66159c772334f9b40df5d913"
     },
     {
+      "public_id": "cd605ad8-762e-4c34-b323-489ca1c2d7fc",
+      "source_path": "scores/艺术歌曲/cd605ad8-762e-4c34-b323-489ca1c2d7fc.pdf",
+      "storage_key": "scores/cd/cd605ad8-762e-4c34-b323-489ca1c2d7fc.pdf",
+      "file_size": 1035175,
+      "sha256": "d1ac67d7568b2eceafc0676662686f1a8f4c099766b0f4307657f2a082b4dfd7"
+    },
+    {
       "public_id": "cd608234-8290-5d0c-b359-89868fc5ed3c",
       "source_path": "scores/歌剧咏叹调/1765777781.pdf",
       "storage_key": "scores/cd/cd608234-8290-5d0c-b359-89868fc5ed3c.pdf",
@@ -22904,6 +22967,13 @@
       "storage_key": "scores/e5/e575832f-85bb-5bd3-81b9-cda10c602125.pdf",
       "file_size": 8805840,
       "sha256": "34e4a0df2aaf8093ccd0bda05aed4213bc66379df3253f8f0dbf5b2e4c749019"
+    },
+    {
+      "public_id": "e58595ef-83fb-4f27-a373-f042a15e5f27",
+      "source_path": "scores/艺术歌曲/e58595ef-83fb-4f27-a373-f042a15e5f27.pdf",
+      "storage_key": "scores/e5/e58595ef-83fb-4f27-a373-f042a15e5f27.pdf",
+      "file_size": 308287,
+      "sha256": "788be9e1525da005b3eb0ae2309b2c4531e9cf9890fbc0c7bf5c27bd5b8d7858"
     },
     {
       "public_id": "e58bbcd8-5eff-5fb1-a589-9f1e147e7945",
