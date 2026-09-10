@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3637,
-  "unique_content_count": 3618,
+  "entry_count": 3647,
+  "unique_content_count": 3628,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4445506914,
+  "total_size": 4448413247,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -5469,6 +5469,13 @@
       "sha256": "9f7cab676ccd70055b2d85e427378b48151d2203dff01e3a8fc8eab4f560b495"
     },
     {
+      "public_id": "3869d2bb-e364-4c85-af0e-94df56b59529",
+      "source_path": "scores/艺术歌曲/3869d2bb-e364-4c85-af0e-94df56b59529.pdf",
+      "storage_key": "scores/38/3869d2bb-e364-4c85-af0e-94df56b59529.pdf",
+      "file_size": 264468,
+      "sha256": "875217eb79f5bcaf3d40a0dec065af84e8c6d0cd582866efa6897086623f507b"
+    },
+    {
       "public_id": "3896f355-9450-5900-b3c1-81a9fcc84485",
       "source_path": "scores/歌剧咏叹调/1766007748826_Va_combatti_ancor_da_forte.pdf",
       "storage_key": "scores/38/3896f355-9450-5900-b3c1-81a9fcc84485.pdf",
@@ -6918,6 +6925,13 @@
       "sha256": "dda38b86dc9c53317e0c0c5ee1c216380845e30a07871577cdcd25119365a2b9"
     },
     {
+      "public_id": "45f8da07-a397-4561-a311-e2b02de2b9b0",
+      "source_path": "scores/艺术歌曲/45f8da07-a397-4561-a311-e2b02de2b9b0.pdf",
+      "storage_key": "scores/45/45f8da07-a397-4561-a311-e2b02de2b9b0.pdf",
+      "file_size": 187515,
+      "sha256": "030dab385422e25041b24e2dcb6a0075ae6fb20e5d8ee979f6facaa43ff4d579"
+    },
+    {
       "public_id": "45fcb47e-320a-50ff-8bf5-7b2ac2ed343d",
       "source_path": "scores/歌剧咏叹调/1766093543577_Chi_il_bel_sogno_di_Doretta.pdf",
       "storage_key": "scores/45/45fcb47e-320a-50ff-8bf5-7b2ac2ed343d.pdf",
@@ -7926,6 +7940,13 @@
       "sha256": "8f1c072c205b5ad9724d058487ef6b91b9d48ba1e1735003528ceda2e8a7791a"
     },
     {
+      "public_id": "50200b91-2261-4efe-93c3-10650724dfd4",
+      "source_path": "scores/艺术歌曲/50200b91-2261-4efe-93c3-10650724dfd4.pdf",
+      "storage_key": "scores/50/50200b91-2261-4efe-93c3-10650724dfd4.pdf",
+      "file_size": 603272,
+      "sha256": "fe8cb152df08d4872093e0c6d7a68dfa8622cd539fb6ad1f53a0af8a05dd4ccf"
+    },
+    {
       "public_id": "50229566-d7b9-5ed0-bb43-f6285f4ecd8e",
       "source_path": "scores/歌剧咏叹调/1768703277_29_Oprichnik_Ponu_dalis'_mne_budto_golosa_i_shum_shagov_Soprano.pdf",
       "storage_key": "scores/50/50229566-d7b9-5ed0-bb43-f6285f4ecd8e.pdf",
@@ -8820,6 +8841,13 @@
       "storage_key": "scores/5a/5a09838d-f4d8-539d-8f31-f0db59d42704.pdf",
       "file_size": 80819,
       "sha256": "a9e43b93f6ff60bde60ab0fa736e1402b43caabd0d6d1637e071455a32fc224d"
+    },
+    {
+      "public_id": "5a14d0b2-ec23-4f1b-9667-3f7cfd75f53c",
+      "source_path": "scores/艺术歌曲/5a14d0b2-ec23-4f1b-9667-3f7cfd75f53c.pdf",
+      "storage_key": "scores/5a/5a14d0b2-ec23-4f1b-9667-3f7cfd75f53c.pdf",
+      "file_size": 196796,
+      "sha256": "32d72ff2d28153ecc0c2d4764bd43256c8113e6b9435461224a12e62dc983992"
     },
     {
       "public_id": "5a16de39-1b8f-5de3-b1c7-4110ac9db932",
@@ -11489,6 +11517,13 @@
       "sha256": "31d9580a6a573bfe011f212c2a3200751a164d27630e5fb06f1cfccefa8d5d83"
     },
     {
+      "public_id": "73b81660-d114-4799-ab2c-5453fd0771cf",
+      "source_path": "scores/艺术歌曲/73b81660-d114-4799-ab2c-5453fd0771cf.pdf",
+      "storage_key": "scores/73/73b81660-d114-4799-ab2c-5453fd0771cf.pdf",
+      "file_size": 210815,
+      "sha256": "4a6ce539c5bf41471456beb0e39223d484a565b0e69d62a36d4c6f6eab98f13a"
+    },
+    {
       "public_id": "73cde5a1-2407-5817-8c69-593d9a360906",
       "source_path": "scores/歌剧咏叹调/1766294192770_Sans_votre_brusque_retraite.pdf",
       "storage_key": "scores/73/73cde5a1-2407-5817-8c69-593d9a360906.pdf",
@@ -12208,6 +12243,13 @@
       "storage_key": "scores/7b/7bcae7cb-d167-5648-b48c-3497116315d6.pdf",
       "file_size": 590223,
       "sha256": "83203b9b39b8999cff031c4a7899676b4a4449f9ff72689d04423a9db68d7890"
+    },
+    {
+      "public_id": "7bcf287d-da2c-4a4e-8ab1-35cd27dd59d6",
+      "source_path": "scores/艺术歌曲/7bcf287d-da2c-4a4e-8ab1-35cd27dd59d6.pdf",
+      "storage_key": "scores/7b/7bcf287d-da2c-4a4e-8ab1-35cd27dd59d6.pdf",
+      "file_size": 483917,
+      "sha256": "d425928e5a366663f99f6afaed9faad2dc78b46787edf7137371f5b423a630ec"
     },
     {
       "public_id": "7be6d2de-e43b-59d2-803e-19563ad6dcbe",
@@ -17971,6 +18013,13 @@
       "sha256": "5e55df952021f4589f66c8d46ba8eb85ce99ff3d03158ecd981d0ae8f99796a7"
     },
     {
+      "public_id": "b51bd884-a509-4f10-be8f-d4f9b6f2c9ab",
+      "source_path": "scores/艺术歌曲/b51bd884-a509-4f10-be8f-d4f9b6f2c9ab.pdf",
+      "storage_key": "scores/b5/b51bd884-a509-4f10-be8f-d4f9b6f2c9ab.pdf",
+      "file_size": 199179,
+      "sha256": "a42489dce5d443bc02fd1669a193d11978b1969e1581d1344446f074fbd73c0d"
+    },
+    {
       "public_id": "b5304134-3f6a-59dc-9f9b-980b5e0980ab",
       "source_path": "scores/声乐作品/艺术歌曲/1766372596238_Klage_-_D371_Medium_Original.pdf",
       "storage_key": "scores/b5/b5304134-3f6a-59dc-9f9b-980b5e0980ab.pdf",
@@ -20743,6 +20792,13 @@
       "sha256": "0830d833a193ee9fe420b66e5e623751138d132656a92b69ed937fd643aabf3f"
     },
     {
+      "public_id": "cf2b2782-2818-4c4b-873d-3363985650bc",
+      "source_path": "scores/艺术歌曲/cf2b2782-2818-4c4b-873d-3363985650bc.pdf",
+      "storage_key": "scores/cf/cf2b2782-2818-4c4b-873d-3363985650bc.pdf",
+      "file_size": 280378,
+      "sha256": "552a5225e893227c46139555764ed98db097e0fc32d57077cf7071c8d8666886"
+    },
+    {
       "public_id": "cf2c44ff-f90c-582d-80a0-9f4b2b3d5dba",
       "source_path": "scores/歌剧咏叹调/1766007812838_Crude_furie_deg_orridi_abissi.pdf",
       "storage_key": "scores/cf/cf2c44ff-f90c-582d-80a0-9f4b2b3d5dba.pdf",
@@ -20818,6 +20874,13 @@
       "storage_key": "scores/cf/cf98c1e7-bf5c-5b78-b904-1bcaeef86ab0.pdf",
       "file_size": 646772,
       "sha256": "f66902eb5c48e151b38a93ac11a85a6f43a3e4d691b422b4676119b21759598c"
+    },
+    {
+      "public_id": "cfb11d16-c49a-4b38-bfb4-ee4e704ad281",
+      "source_path": "scores/艺术歌曲/cfb11d16-c49a-4b38-bfb4-ee4e704ad281.pdf",
+      "storage_key": "scores/cf/cfb11d16-c49a-4b38-bfb4-ee4e704ad281.pdf",
+      "file_size": 282078,
+      "sha256": "aedea75fb0724607c805741f4615d528b3cd7a37374b59be01409ce1b46cc620"
     },
     {
       "public_id": "cfb65ffb-0335-5b80-8e71-6672198a474b",
@@ -22680,6 +22743,13 @@
       "storage_key": "scores/e2/e27b72f6-53bb-5fd4-90c1-e1b1e10e1b27.pdf",
       "file_size": 610677,
       "sha256": "fe0be1ae5a3f355097e21c14a5b5fdb4be30b3a22f771ea39b25cc172ec65f42"
+    },
+    {
+      "public_id": "e2a263fe-4f5d-495c-897c-78335aa8de3e",
+      "source_path": "scores/艺术歌曲/e2a263fe-4f5d-495c-897c-78335aa8de3e.pdf",
+      "storage_key": "scores/e2/e2a263fe-4f5d-495c-897c-78335aa8de3e.pdf",
+      "file_size": 197915,
+      "sha256": "71e313e767cb8b69667270ddaca6c638a44d8916212e20468dbaed3e02002d99"
     },
     {
       "public_id": "e2b3c4f1-612b-56b1-bd98-45ced33ed3a0",
