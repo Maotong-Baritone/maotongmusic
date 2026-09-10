@@ -1,0 +1,151 @@
+{
+  "batch_id": "brahms-op49-op84-high-voice-ten-20260909",
+  "recorded_at": "2026-09-10T03:24:06.048990+00:00",
+  "source_manifest_before_sha256": "1954d0453ad453bce39bc8b9f153a0c03763885a1280ef4aff6344140d67d7aa",
+  "source_manifest_after_sha256": "0979ccdbe6d3d5f6dd90ab9e56b23697b1d068ab09cfc7cb0bc8ec28c2dde756",
+  "staging_manifest_before_sha256": "00d5346ec2548b78c40e4f84007fd33ed0c19ec6f44ad2a1be815b1fa994e3ad",
+  "staging_manifest_after_sha256": "1a394f956fd87ebfc706fdc1e71c94d92e9cfd3a3a460f8aa32832aab0b122dc",
+  "backup": "backup\\import_metadata\\brahms-op49-op84-high-voice-ten-20260909-20260909_212405_868964",
+  "changes": [
+    {
+      "imslp_id": "9202",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9202",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9203",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9203",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9204",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9204",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9205",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9205",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9206",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9206",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44067",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44067",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44068",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44068",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44069",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44069",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44070",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44070",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44071",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44071",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    }
+  ]
+}

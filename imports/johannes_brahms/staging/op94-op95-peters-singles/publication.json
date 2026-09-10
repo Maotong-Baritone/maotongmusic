@@ -1,0 +1,131 @@
+{
+  "batch_id": "brahms-op94-op95-peters-twelve-20260909",
+  "approved_ids": [
+    "244854",
+    "244855",
+    "244856",
+    "244857",
+    "244858",
+    "246557",
+    "246558",
+    "246559",
+    "246560",
+    "246561",
+    "246562",
+    "246563"
+  ],
+  "approved_count": 12,
+  "storage_verified_count": 12,
+  "local_catalog_count": 12,
+  "website_published_count": 12,
+  "catalog_updated_at": "2026-09-09T17:58:21+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-op94-op95-peters-twelve-20260909-20260909_115808_155539",
+  "files": [
+    {
+      "imslp_id": "244854",
+      "public_id": "5ce892c7-9730-4d65-b247-babcc42ce982",
+      "filename": "艺术歌曲/5ce892c7-9730-4d65-b247-babcc42ce982.pdf",
+      "storage_key": "scores/5c/5ce892c7-9730-4d65-b247-babcc42ce982.pdf",
+      "sha256": "95a7e91193910cc0212271dcab89fae0179301d8627d75340af08fb8d54b72f8"
+    },
+    {
+      "imslp_id": "244855",
+      "public_id": "a712d65f-15d7-4625-abdc-8a07c8390393",
+      "filename": "艺术歌曲/a712d65f-15d7-4625-abdc-8a07c8390393.pdf",
+      "storage_key": "scores/a7/a712d65f-15d7-4625-abdc-8a07c8390393.pdf",
+      "sha256": "c5ed768d630e242660f197ef1978bdee05b60b1c471ebed1e49204f223cc3205"
+    },
+    {
+      "imslp_id": "244856",
+      "public_id": "c31b2f95-5228-4e06-be72-5763cc7658ea",
+      "filename": "艺术歌曲/c31b2f95-5228-4e06-be72-5763cc7658ea.pdf",
+      "storage_key": "scores/c3/c31b2f95-5228-4e06-be72-5763cc7658ea.pdf",
+      "sha256": "7b874dc5164f1c57f59949914bcd5723e584406c4b811d3dfa2d8b99f182b22e"
+    },
+    {
+      "imslp_id": "244857",
+      "public_id": "9f859e07-21bf-437d-8558-c3f43dfa7880",
+      "filename": "艺术歌曲/9f859e07-21bf-437d-8558-c3f43dfa7880.pdf",
+      "storage_key": "scores/9f/9f859e07-21bf-437d-8558-c3f43dfa7880.pdf",
+      "sha256": "417f062c3c757ee43221a1a4ecbd8513f7122cf16932522c2e1d9a81bd2373a5"
+    },
+    {
+      "imslp_id": "244858",
+      "public_id": "3b25836f-182a-4586-8325-c715c9ce728d",
+      "filename": "艺术歌曲/3b25836f-182a-4586-8325-c715c9ce728d.pdf",
+      "storage_key": "scores/3b/3b25836f-182a-4586-8325-c715c9ce728d.pdf",
+      "sha256": "c69360a77464fb33ca21f7e735ca5c2b8816e5e5ea1433a3c79746a253e02fc7"
+    },
+    {
+      "imslp_id": "246557",
+      "public_id": "1b684173-6f33-41c8-b54d-66fa7c7103c2",
+      "filename": "艺术歌曲/1b684173-6f33-41c8-b54d-66fa7c7103c2.pdf",
+      "storage_key": "scores/1b/1b684173-6f33-41c8-b54d-66fa7c7103c2.pdf",
+      "sha256": "9265f8fbe9de26959572c72d3cb4c2b7ce9b8a24c127d258463177dc11335ef9"
+    },
+    {
+      "imslp_id": "246558",
+      "public_id": "ae3de20a-d903-4a13-9864-fff5a8c00e8b",
+      "filename": "艺术歌曲/ae3de20a-d903-4a13-9864-fff5a8c00e8b.pdf",
+      "storage_key": "scores/ae/ae3de20a-d903-4a13-9864-fff5a8c00e8b.pdf",
+      "sha256": "97fe7273aeec9f124a55ef63b0de517132fca17047449e1dd081e9a869ef1216"
+    },
+    {
+      "imslp_id": "246559",
+      "public_id": "abf9fe62-9be8-424a-8c0a-306925b16284",
+      "filename": "艺术歌曲/abf9fe62-9be8-424a-8c0a-306925b16284.pdf",
+      "storage_key": "scores/ab/abf9fe62-9be8-424a-8c0a-306925b16284.pdf",
+      "sha256": "d999046b895d473bd63313648baf8eda1bcc6901b2e8f6c921302c768a207947"
+    },
+    {
+      "imslp_id": "246560",
+      "public_id": "9b59d672-ebbc-4081-92a7-64e1f644aafe",
+      "filename": "艺术歌曲/9b59d672-ebbc-4081-92a7-64e1f644aafe.pdf",
+      "storage_key": "scores/9b/9b59d672-ebbc-4081-92a7-64e1f644aafe.pdf",
+      "sha256": "2831f962f0893668e3572262a94014680ef80c7f617a10b2f06003c5a0051353"
+    },
+    {
+      "imslp_id": "246561",
+      "public_id": "be131399-5d4c-44a5-96ea-528eb18426b3",
+      "filename": "艺术歌曲/be131399-5d4c-44a5-96ea-528eb18426b3.pdf",
+      "storage_key": "scores/be/be131399-5d4c-44a5-96ea-528eb18426b3.pdf",
+      "sha256": "b69337fcdfac04565ffa60c4d65c75d2e05704d70fe44bad56d87858969e3ed3"
+    },
+    {
+      "imslp_id": "246562",
+      "public_id": "8504a713-1b17-484b-9714-7329da467269",
+      "filename": "艺术歌曲/8504a713-1b17-484b-9714-7329da467269.pdf",
+      "storage_key": "scores/85/8504a713-1b17-484b-9714-7329da467269.pdf",
+      "sha256": "d652f6b9a506f4c2b779e59dc3dd9c25b729645d0973396118b8150620e78068"
+    },
+    {
+      "imslp_id": "246563",
+      "public_id": "9094d6e3-53e9-4f73-a0ee-b4dba574a4ee",
+      "filename": "艺术歌曲/9094d6e3-53e9-4f73-a0ee-b4dba574a4ee.pdf",
+      "storage_key": "scores/90/9094d6e3-53e9-4f73-a0ee-b4dba574a4ee.pdf",
+      "sha256": "fc3a86e970b60bdb7fa043f112bc2f5cb09d05e68f0c299538b9bfc125bb8a20"
+    }
+  ],
+  "git_commit": "c3ffb0ad6d36817a3fc0bcb62bc2f3de2680d4bb",
+  "pages_run_id": 34386369447,
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/34386369447",
+  "validation": {
+    "catalog_total": 3596,
+    "storage_manifest_exact": true,
+    "submissions_db_rows": 1,
+    "tests_passed": 173,
+    "public_hash_matches": 12,
+    "approved_total": 186,
+    "pending_total": 2160,
+    "excluded_total": 1138,
+    "deferred_total": 2,
+    "online_data_exact_commit": true,
+    "online_logs_exact_commit": true,
+    "browser_catalog_total": 3596,
+    "browser_batch_rows_verified": 12,
+    "browser_preview_and_download_entry_verified": true
+  },
+  "verified_at": "2026-09-09T18:29:35.368366+00:00"
+}

@@ -1,0 +1,123 @@
+{
+  "batch_id": "brahms-op19-op105-high-voice-ten-20260909",
+  "recorded_at": "2026-09-09T18:59:29.126047+00:00",
+  "source_manifest_before_sha256": "948fed6b355a89b3040e85866ad1ec69acc2818aadb8161f456170a82b9c63d4",
+  "source_manifest_after_sha256": "79fcec8b8c382aec46be738e968180cc8cd58c982d80be3a820f2d2ad811ce9c",
+  "staging_manifest_before_sha256": "526d1ede62b2275a18f70b33a6ceb4f86ba1e341efd21f485b8206feefe631c2",
+  "staging_manifest_after_sha256": "4f4600c93b3e2fce2a7e5ac4a51d5e8404f29cee74311dabe41ca2e5eb6f3851",
+  "backup": "backup\\import_metadata\\brahms-op19-op105-high-voice-ten-20260909-20260909_125928_931502",
+  "changes": [
+    {
+      "imslp_id": "8654",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "8655",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "8656",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "8657",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "8658",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "246584",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "246585",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "246586",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "246587",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "246588",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP places the selected Peters files under the high-voice heading; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "246584",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.105 work page identifies German; the rendered score contains German lyrics."
+    },
+    {
+      "imslp_id": "246585",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.105 work page identifies German; the rendered score contains German lyrics."
+    },
+    {
+      "imslp_id": "246586",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.105 work page identifies German; the rendered score contains German lyrics."
+    },
+    {
+      "imslp_id": "246587",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.105 work page identifies German; the rendered score contains German lyrics."
+    },
+    {
+      "imslp_id": "246588",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.105 work page identifies German; the rendered score contains German lyrics."
+    },
+    {
+      "imslp_id": "246584",
+      "field": "title",
+      "before": "No. 1 Wie Melodien zeiht es mir. Zart, Op. 105",
+      "after": "No. 1 Wie Melodien zieht es mir. Zart, Op. 105",
+      "evidence": "The first rendered score page prints “Wie Melodien zieht es mir.”; “zeiht” was a work-page parsing typo."
+    }
+  ]
+}

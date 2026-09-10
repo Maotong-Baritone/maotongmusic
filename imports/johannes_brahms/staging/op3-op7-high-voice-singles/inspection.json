@@ -1,0 +1,339 @@
+{
+  "label": "Op.3与Op.7：Peters高声部独立单曲",
+  "checked_on": "2026-09-09",
+  "recorded_at": "2026-09-09T21:58:09.810137+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "5333",
+    "5334",
+    "5335",
+    "5336",
+    "5337",
+    "5338",
+    "5346",
+    "5347",
+    "5348",
+    "5349",
+    "5350",
+    "5351"
+  ],
+  "source_notes": "实时IMSLP作品页确认两套作品均为德语、voice/piano、Public Domain；所选十二份文件属于Peters高声部组。完整谱、低声部、中声部、手稿及改编不在本批。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览十二份完整接触表并重点放大核对首尾、标题、速度、德语、编制和异常页。",
+  "rendering_note": "十二份普通清晰单曲的全部页面均已渲染；页序连续、标题和歌词可辨、末页完整结束。",
+  "metadata_changes": [
+    {
+      "imslp_id": "5333",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5334",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5335",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5336",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5337",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5338",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5346",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5347",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5348",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5349",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5350",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5351",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5333",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5334",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5335",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5336",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5337",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5338",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5336",
+      "field": "title",
+      "before": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigen Schwang, Op. 3",
+      "after": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigem Schwung, Op. 3",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    },
+    {
+      "imslp_id": "5348",
+      "field": "title",
+      "before": "No. 3 Anklänge. Andante molto, Op. 7",
+      "after": "No. 3 Anklänge. Andante moderato, Op. 7",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    }
+  ],
+  "files": {
+    "5333": {
+      "pages": 3,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Liebestreu. Sehr langsam, Op. 3"
+      ],
+      "notes": "No. 1 Liebestreu. Sehr langsam, Op. 3；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5334": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Liebe und Frühling. Moderato ma non troppo, Op. 3"
+      ],
+      "notes": "No. 2 Liebe und Frühling. Moderato ma non troppo, Op. 3；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5335": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Liebe und Frühling. Vivace con fuoco, Op. 3"
+      ],
+      "notes": "No. 3 Liebe und Frühling. Vivace con fuoco, Op. 3；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5336": {
+      "pages": 3,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigem Schwung, Op. 3"
+      ],
+      "notes": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigem Schwung, Op. 3；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5337": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 In der Fremde. Poco agitato, Op. 3"
+      ],
+      "notes": "No. 5 In der Fremde. Poco agitato, Op. 3；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5338": {
+      "pages": 4,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Lied. Poco allegretto, Op. 3"
+      ],
+      "notes": "No. 6 Lied. Poco allegretto, Op. 3；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5346": {
+      "pages": 3,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Treue Liebe. Andante con espressione, Op. 7"
+      ],
+      "notes": "No. 1 Treue Liebe. Andante con espressione, Op. 7；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5347": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Parole. Andante con moto, Op. 7"
+      ],
+      "notes": "No. 2 Parole. Andante con moto, Op. 7；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5348": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Anklänge. Andante moderato, Op. 7"
+      ],
+      "notes": "No. 3 Anklänge. Andante moderato, Op. 7；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5349": {
+      "pages": 1,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Volkslied. Bewegt, Op. 7"
+      ],
+      "notes": "No. 4 Volkslied. Bewegt, Op. 7；共1页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5350": {
+      "pages": 1,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Die Trauernde. Langsam, Op. 7"
+      ],
+      "notes": "No. 5 Die Trauernde. Langsam, Op. 7；共1页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "5351": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Heimkehr. Allegro agitato, Op. 7"
+      ],
+      "notes": "No. 6 Heimkehr. Allegro agitato, Op. 7；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-09T21:59:28+00:00",
+  "approved_publication_ids": [
+    "5333",
+    "5334",
+    "5335",
+    "5336",
+    "5337",
+    "5338",
+    "5346",
+    "5347",
+    "5348",
+    "5349",
+    "5350",
+    "5351"
+  ]
+}

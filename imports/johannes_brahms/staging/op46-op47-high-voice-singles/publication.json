@@ -1,0 +1,110 @@
+{
+  "batch_id": "brahms-op46-op47-high-voice-nine-20260909",
+  "approved_ids": [
+    "9005",
+    "9006",
+    "9007",
+    "9008",
+    "9017",
+    "9018",
+    "9019",
+    "9020",
+    "9021"
+  ],
+  "approved_count": 9,
+  "storage_verified_count": 9,
+  "local_catalog_count": 9,
+  "website_published_count": 9,
+  "catalog_updated_at": "2026-09-09T23:11:38+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-op46-op47-high-voice-nine-20260909-20260909_171128_807106",
+  "files": [
+    {
+      "imslp_id": "9005",
+      "public_id": "2ca344ed-c964-467b-b7a5-52a65170cde0",
+      "filename": "艺术歌曲/2ca344ed-c964-467b-b7a5-52a65170cde0.pdf",
+      "storage_key": "scores/2c/2ca344ed-c964-467b-b7a5-52a65170cde0.pdf",
+      "sha256": "07aae0850e467d6e1e4f7a654cca2c9dc26862460dd3d177ebd378ee356d757e"
+    },
+    {
+      "imslp_id": "9006",
+      "public_id": "ad379761-87ac-42cb-9b73-d28f6672d14a",
+      "filename": "艺术歌曲/ad379761-87ac-42cb-9b73-d28f6672d14a.pdf",
+      "storage_key": "scores/ad/ad379761-87ac-42cb-9b73-d28f6672d14a.pdf",
+      "sha256": "e1f57f85ac741a6f2dab6b86a312e837fa273d0c95ab3f3704d4215ef4f2928a"
+    },
+    {
+      "imslp_id": "9007",
+      "public_id": "097cc026-7e1f-41f8-bf25-659d63c8fc0a",
+      "filename": "艺术歌曲/097cc026-7e1f-41f8-bf25-659d63c8fc0a.pdf",
+      "storage_key": "scores/09/097cc026-7e1f-41f8-bf25-659d63c8fc0a.pdf",
+      "sha256": "8a10c71fdfbd0d18341a659625ce3cafef5aa7617eab53f4f3fb80bef8cb562a"
+    },
+    {
+      "imslp_id": "9008",
+      "public_id": "8a509d88-ed83-4100-ab0b-7c9967cd3294",
+      "filename": "艺术歌曲/8a509d88-ed83-4100-ab0b-7c9967cd3294.pdf",
+      "storage_key": "scores/8a/8a509d88-ed83-4100-ab0b-7c9967cd3294.pdf",
+      "sha256": "58e2f3e74a5161609ab35de0ad5fc51deaaeaf5d2458d303f6077577da7daf6e"
+    },
+    {
+      "imslp_id": "9017",
+      "public_id": "d2c19ee6-5890-4fdc-a3de-b5c903352a87",
+      "filename": "艺术歌曲/d2c19ee6-5890-4fdc-a3de-b5c903352a87.pdf",
+      "storage_key": "scores/d2/d2c19ee6-5890-4fdc-a3de-b5c903352a87.pdf",
+      "sha256": "f13182a27a719b753ac8e298e0f17a5dd59cd69dbe8c83bf930edf8e31edb79e"
+    },
+    {
+      "imslp_id": "9018",
+      "public_id": "3c16eb93-90ff-4848-ac85-3e5d906b3b01",
+      "filename": "艺术歌曲/3c16eb93-90ff-4848-ac85-3e5d906b3b01.pdf",
+      "storage_key": "scores/3c/3c16eb93-90ff-4848-ac85-3e5d906b3b01.pdf",
+      "sha256": "b4a3f445bca80fe09b49b145c755726ac95bda613f5c2d79656a47d8caa998ba"
+    },
+    {
+      "imslp_id": "9019",
+      "public_id": "c7e1d821-030e-42ee-b56b-2fde5408cf01",
+      "filename": "艺术歌曲/c7e1d821-030e-42ee-b56b-2fde5408cf01.pdf",
+      "storage_key": "scores/c7/c7e1d821-030e-42ee-b56b-2fde5408cf01.pdf",
+      "sha256": "8ff291c08047f3d507ae9e8884d234687a998cc7b0de97160bc48effe3e92383"
+    },
+    {
+      "imslp_id": "9020",
+      "public_id": "394973f1-3e99-4090-b7f6-bb3a7dfd4440",
+      "filename": "艺术歌曲/394973f1-3e99-4090-b7f6-bb3a7dfd4440.pdf",
+      "storage_key": "scores/39/394973f1-3e99-4090-b7f6-bb3a7dfd4440.pdf",
+      "sha256": "587e5ca8bd867f8d559af7af8eae2580cf2f28e3a51d3463091ecfb6cabd7165"
+    },
+    {
+      "imslp_id": "9021",
+      "public_id": "7755eda3-b1d1-4631-94af-9fceafdbac56",
+      "filename": "艺术歌曲/7755eda3-b1d1-4631-94af-9fceafdbac56.pdf",
+      "storage_key": "scores/77/7755eda3-b1d1-4631-94af-9fceafdbac56.pdf",
+      "sha256": "d8f42df4b10ce09f94bbf4d5c0d1af2e743320be84286ae2b618fa0326c690b0"
+    }
+  ],
+  "git_commit": "3368f3c326e80e02b529c409c1e305d146d80b97",
+  "pages_run_id": 34416111425,
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/34416111425",
+  "pages_status": "success",
+  "verified_live_at": "2026-09-10T03:02:22Z",
+  "validation": {
+    "catalog_total": 3627,
+    "tests_passed": 179,
+    "strict_catalog": true,
+    "strict_storage": true,
+    "public_hash_verified": 9,
+    "approved_total": 217,
+    "pending_total": 2129,
+    "excluded_total": 1138,
+    "deferred_total": 2,
+    "submissions_preserved": 1,
+    "live_catalog_matches_local": true,
+    "live_logs_match_local": true,
+    "live_batch_rows_verified": 9,
+    "live_detail_verified": true,
+    "live_preview_verified": true,
+    "live_download_sha256_verified": 9
+  }
+}

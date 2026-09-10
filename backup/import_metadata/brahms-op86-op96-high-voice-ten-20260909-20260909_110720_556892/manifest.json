@@ -58139,13 +58139,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "2ca344ed-c964-467b-b7a5-52a65170cde0",
           "source_references": [
             {
@@ -58153,10 +58153,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "1. Die Kränze"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9006",
@@ -58178,19 +58175,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Magyarisch. Andante, Op. 46",
+          "proposed_title": "No. 2 The Lied, Art Song, and Choral Texts Archive Andante, Op. 46",
           "proposed_work": "4 Lieder, Op. 46",
           "title_scope": "individual_movement",
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "ad379761-87ac-42cb-9b73-d28f6672d14a",
           "source_references": [
             {
@@ -58198,10 +58195,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "2. Magyarisch"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9007",
@@ -58229,13 +58223,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "097cc026-7e1f-41f8-bf25-659d63c8fc0a",
           "source_references": [
             {
@@ -58243,10 +58237,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "3. Die Schale der Vergessenheit"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9008",
@@ -58274,13 +58265,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "8a509d88-ed83-4100-ab0b-7c9967cd3294",
           "source_references": [
             {
@@ -58288,10 +58279,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "4. An die Nachtigall"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "110512",
@@ -58956,13 +58944,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "d2c19ee6-5890-4fdc-a3de-b5c903352a87",
           "source_references": [
             {
@@ -58970,10 +58958,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "1. Botschaft"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9018",
@@ -58995,19 +58980,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Liebesglut. Appassionato, Op. 47",
+          "proposed_title": "No. 2 Liebesgluth. Appassionato, Op. 47",
           "proposed_work": "5 Lieder, Op. 47",
           "title_scope": "individual_movement",
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "3c16eb93-90ff-4848-ac85-3e5d906b3b01",
           "source_references": [
             {
@@ -59015,10 +59000,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "2. Liebesglut"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9019",
@@ -59046,13 +59028,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "c7e1d821-030e-42ee-b56b-2fde5408cf01",
           "source_references": [
             {
@@ -59060,10 +59042,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "3. Sonntag"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9020",
@@ -59085,19 +59064,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 4 O liebliche Wangen. Lebhaft, Op. 47",
+          "proposed_title": "No. 4 O liebliche Wangen, ihr macht mir Verlangen. Lebhaft, Op. 47",
           "proposed_work": "5 Lieder, Op. 47",
           "title_scope": "individual_movement",
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "394973f1-3e99-4090-b7f6-bb3a7dfd4440",
           "source_references": [
             {
@@ -59105,10 +59084,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "4. O liebliche Wangen"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9021",
@@ -59136,13 +59112,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "7755eda3-b1d1-4631-94af-9fceafdbac56",
           "source_references": [
             {
@@ -59150,10 +59126,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "5. Die Liebende schreibt"
             }
-          ],
-          "published_at": "2026-09-09T23:11:38+00:00",
-          "publication_batch_id": "brahms-op46-op47-high-voice-nine-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "43841",
@@ -60845,13 +60818,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "e58595ef-83fb-4f27-a373-f042a15e5f27",
           "source_references": [
             {
@@ -60859,10 +60832,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "1. [Am Sonntag Morgen zierlich angetan"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9203",
@@ -60890,13 +60860,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "1d7450be-e6b4-430a-840c-0711fa40d00b",
           "source_references": [
             {
@@ -60904,10 +60874,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "2. An ein Veilchen"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9204",
@@ -60935,13 +60902,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "71c4a4c1-cf70-41c4-98a4-16ee72436bbf",
           "source_references": [
             {
@@ -60949,10 +60916,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "3. Sehnsucht"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9205",
@@ -60980,13 +60944,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a016e09f-6cd4-42aa-8235-0786ee93b5a2",
           "source_references": [
             {
@@ -60994,10 +60958,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "4. Wiegenlied"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9206",
@@ -61025,13 +60986,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "cd605ad8-762e-4c34-b323-489ca1c2d7fc",
           "source_references": [
             {
@@ -61039,10 +61000,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "5. Abenddämmerung"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "39332",
@@ -65181,13 +65139,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9e19aab8-f25a-480a-98be-ab047f27c877",
           "source_references": [
             {
@@ -65195,10 +65153,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.86_%28Brahms%2C_Johannes%29",
               "description": "1. Therese"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "46904",
@@ -65226,13 +65181,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9388feee-2fda-4d4d-8c94-3a1044544fe9",
           "source_references": [
             {
@@ -65240,10 +65195,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.86_%28Brahms%2C_Johannes%29",
               "description": "2. Feldeinsamkeit"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "46905",
@@ -65271,13 +65223,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "ac15dd0a-951a-407d-bb0f-4df1c2707c8f",
           "source_references": [
             {
@@ -65285,10 +65237,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.86_%28Brahms%2C_Johannes%29",
               "description": "3. Nachtwandler"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "46906",
@@ -65316,13 +65265,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "1a9f60ed-4e8d-42a7-b882-3d6dcf0bf7a4",
           "source_references": [
             {
@@ -65330,10 +65279,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.86_%28Brahms%2C_Johannes%29",
               "description": "4. Über die Heide"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "46907",
@@ -65361,13 +65307,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "82692ff9-011d-42fb-88b0-090b4539963b",
           "source_references": [
             {
@@ -65375,10 +65321,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.86_%28Brahms%2C_Johannes%29",
               "description": "5. Versunken"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "46908",
@@ -65406,13 +65349,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4a011007-a912-450a-8c63-ca4ba7bfb085",
           "source_references": [
             {
@@ -65420,10 +65363,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.86_%28Brahms%2C_Johannes%29",
               "description": "6. Todessehnen"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "42849",
@@ -66477,13 +66417,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5ce892c7-9730-4d65-b247-babcc42ce982",
           "source_references": [
             {
@@ -66491,10 +66431,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.94_%28Brahms%2C_Johannes%29",
               "description": "1. Mit vierzig Jahren"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "244855",
@@ -66522,13 +66459,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a712d65f-15d7-4625-abdc-8a07c8390393",
           "source_references": [
             {
@@ -66536,10 +66473,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.94_%28Brahms%2C_Johannes%29",
               "description": "2. Steig auf, geliebter Schatten"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "244856",
@@ -66567,13 +66501,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "c31b2f95-5228-4e06-be72-5763cc7658ea",
           "source_references": [
             {
@@ -66581,10 +66515,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.94_%28Brahms%2C_Johannes%29",
               "description": "3. Mein Herz ist Schwer"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "244857",
@@ -66612,13 +66543,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9f859e07-21bf-437d-8558-c3f43dfa7880",
           "source_references": [
             {
@@ -66626,10 +66557,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.94_%28Brahms%2C_Johannes%29",
               "description": "4. Sapphische Ode"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "244858",
@@ -66657,13 +66585,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "3b25836f-182a-4586-8325-c715c9ce728d",
           "source_references": [
             {
@@ -66671,10 +66599,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.94_%28Brahms%2C_Johannes%29",
               "description": "5. Kein Haus, keine Heimat"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "43593",
@@ -67021,9 +66946,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "1b684173-6f33-41c8-b54d-66fa7c7103c2",
           "source_references": [
             {
@@ -67031,10 +66956,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "1. Das Mädchen"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246558",
@@ -67066,9 +66988,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "ae3de20a-d903-4a13-9864-fff5a8c00e8b",
           "source_references": [
             {
@@ -67076,10 +66998,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "2. Bei dir sind meine Gedanken"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246559",
@@ -67111,9 +67030,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "abf9fe62-9be8-424a-8c0a-306925b16284",
           "source_references": [
             {
@@ -67121,10 +67040,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "3. Beim Abschied"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246560",
@@ -67156,9 +67072,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9b59d672-ebbc-4081-92a7-64e1f644aafe",
           "source_references": [
             {
@@ -67166,10 +67082,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "4. Der Jäger"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246561",
@@ -67201,9 +67114,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "be131399-5d4c-44a5-96ea-528eb18426b3",
           "source_references": [
             {
@@ -67211,10 +67124,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "5. Vorschneller Schwur"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246562",
@@ -67246,9 +67156,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "8504a713-1b17-484b-9714-7329da467269",
           "source_references": [
             {
@@ -67256,10 +67166,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "6. Mädchenlied"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246563",
@@ -67291,9 +67198,9 @@
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9094d6e3-53e9-4f73-a0ee-b4dba574a4ee",
           "source_references": [
             {
@@ -67301,10 +67208,7 @@
               "source_url": "https://imslp.org/wiki/7_Lieder%2C_Op.95_%28Brahms%2C_Johannes%29",
               "description": "7. Schön war, das ich dir weihte"
             }
-          ],
-          "published_at": "2026-09-09T17:58:21+00:00",
-          "publication_batch_id": "brahms-op94-op95-peters-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "347096",
@@ -68056,13 +67960,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4f1a497a-422f-412c-9171-dd86a8211a44",
           "source_references": [
             {
@@ -68070,10 +67974,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.96_%28Brahms%2C_Johannes%29",
               "description": "1. Der Tod, das ist die kühle Nacht"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246581",
@@ -68101,13 +68002,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "f94c7cd3-93d1-473a-903f-b70e1c19f605",
           "source_references": [
             {
@@ -68115,10 +68016,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.96_%28Brahms%2C_Johannes%29",
               "description": "2. Wir wandelten"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246582",
@@ -68146,13 +68044,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9545e2e2-4156-4cc3-8ed8-c16e736192f6",
           "source_references": [
             {
@@ -68160,10 +68058,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.96_%28Brahms%2C_Johannes%29",
               "description": "3. Es schauen die Blumen"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246583",
@@ -68191,13 +68086,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "英语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "c3cc0737-091b-4c21-83b2-f1e713a93521",
           "source_references": [
             {
@@ -68205,10 +68100,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.96_%28Brahms%2C_Johannes%29",
               "description": "4. Meerfahrt"
             }
-          ],
-          "published_at": "2026-09-09T17:09:53+00:00",
-          "publication_batch_id": "brahms-op86-op96-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "77753",
@@ -70151,19 +70043,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 1 Wie Melodien zieht es mir. Zart, Op. 105",
+          "proposed_title": "No. 1 Wie Melodien zeiht es mir. Zart, Op. 105",
           "proposed_work": "5 Lieder, Op. 105",
           "title_scope": "individual_movement",
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "33b366ab-0103-400b-8a3d-cf3d63e07b9f",
           "source_references": [
             {
@@ -70171,10 +70063,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "1. Wie Melodien zieht es mir"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246585",
@@ -70202,13 +70091,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5e7a2d2e-2ba8-43ae-8cf0-3e3bc12d0e88",
           "source_references": [
             {
@@ -70216,10 +70105,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "2. Immer leiser wird mein Schlummer"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246586",
@@ -70247,13 +70133,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "187ad32c-bbb6-445d-8f3f-bbcc4d65d937",
           "source_references": [
             {
@@ -70261,10 +70147,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "3. Klage"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246587",
@@ -70292,13 +70175,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "d819e27e-286e-4d2c-a5d8-80cbbd244864",
           "source_references": [
             {
@@ -70306,10 +70189,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "4. Auf dem Kirchhofe"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "246588",
@@ -70337,13 +70217,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "02d9bfd4-a71a-45fe-8c12-a572cf52f170",
           "source_references": [
             {
@@ -70351,10 +70231,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "5. Verrat"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "49378",
@@ -90679,13 +90556,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "0c8b8c69-1b45-4fd8-9b12-a541c1bcb6b5",
           "source_references": [
             {
@@ -90693,10 +90570,7 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "1. Der Kuß"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "8655",
@@ -90724,13 +90598,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "29b97965-e3ca-4fb3-9b4e-51bd0ddc2a8b",
           "source_references": [
             {
@@ -90738,10 +90612,7 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "2. Scheiden und Meiden"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "8656",
@@ -90769,13 +90640,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "3d7ffe2e-c67e-456a-8474-db90a5cb583d",
           "source_references": [
             {
@@ -90783,10 +90654,7 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "3. In der Ferne"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "8657",
@@ -90814,13 +90682,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "47216acb-2c3a-4c44-bf00-73a7c61a88b5",
           "source_references": [
             {
@@ -90828,10 +90696,7 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "4. Der Schmied"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "8658",
@@ -90859,13 +90724,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "aa38dcbf-db28-4aba-a699-5a147c57f04d",
           "source_references": [
             {
@@ -90873,10 +90738,7 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "5. An eine Äolsharfe"
             }
-          ],
-          "published_at": "2026-09-09T19:00:35+00:00",
-          "publication_batch_id": "brahms-op19-op105-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "54911",
@@ -95685,13 +95547,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "80746120-970b-4c54-8cac-f36b1a1c1d5a",
           "source_references": [
             {
@@ -95699,10 +95561,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "1. Sommerabend"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44068",
@@ -95730,13 +95589,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "57752452-843e-4f8e-9a09-11f1c20ed227",
           "source_references": [
             {
@@ -95744,10 +95603,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "2. Der Kranz"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44069",
@@ -95775,13 +95631,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5325f09f-8ce0-4486-ac83-37a38427a31b",
           "source_references": [
             {
@@ -95789,10 +95645,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "3. In den Beeren"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44070",
@@ -95820,13 +95673,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4ba86425-c89b-4bd4-9cca-3c65ea92bcb5",
           "source_references": [
             {
@@ -95834,10 +95687,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "4. Vergebliches Ständchen"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44071",
@@ -95865,13 +95715,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "214297e9-819c-46ac-9fdb-cc9e5b6f5a48",
           "source_references": [
             {
@@ -95879,10 +95729,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "5. Spannung"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "38727",
@@ -105846,13 +105693,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "cacc1a60-70a2-43e1-bb88-2124426613f2",
           "source_references": [
             {
@@ -105860,10 +105707,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.3_%28Brahms%2C_Johannes%29",
               "description": "1. Liebestreu"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5334",
@@ -105891,13 +105735,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "d77a4b81-b0bd-4a24-90db-68321a443c48",
           "source_references": [
             {
@@ -105905,10 +105749,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.3_%28Brahms%2C_Johannes%29",
               "description": "2. Liebe und Frühling I"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5335",
@@ -105936,13 +105777,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "d68468d9-e2ec-45fe-ad54-1105ffd6297b",
           "source_references": [
             {
@@ -105950,10 +105791,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.3_%28Brahms%2C_Johannes%29",
               "description": "3. Liebe und Frühling II"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5336",
@@ -105975,19 +105813,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigem Schwung, Op. 3",
+          "proposed_title": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigen Schwang, Op. 3",
           "proposed_work": "6 Songs, Op. 3",
           "title_scope": "individual_movement",
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "65efdcfb-e904-4e16-afeb-91e5ac9c5db9",
           "source_references": [
             {
@@ -105995,10 +105833,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.3_%28Brahms%2C_Johannes%29",
               "description": "4. Lied (aus dem Gedicht Ivan)"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5337",
@@ -106026,13 +105861,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "908c51e9-ba7b-466d-a6b8-caa2f8262bc1",
           "source_references": [
             {
@@ -106040,10 +105875,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.3_%28Brahms%2C_Johannes%29",
               "description": "5. In der Fremde"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5338",
@@ -106071,13 +105903,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "cf6f12c4-d230-42cf-964e-ffa3407b4279",
           "source_references": [
             {
@@ -106085,10 +105917,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.3_%28Brahms%2C_Johannes%29",
               "description": "6. Lied"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "38733",
@@ -107078,13 +106907,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a662f27f-ebaf-4ba5-890c-2dbd9932e708",
           "source_references": [
             {
@@ -107092,10 +106921,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.7_%28Brahms%2C_Johannes%29",
               "description": "1. Treue Liebe"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5347",
@@ -107123,13 +106949,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9dcacfe7-64d1-4882-9e8f-ad51b7b0f01b",
           "source_references": [
             {
@@ -107137,10 +106963,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.7_%28Brahms%2C_Johannes%29",
               "description": "2. Parole"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5348",
@@ -107162,19 +106985,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 3 Anklänge. Andante moderato, Op. 7",
+          "proposed_title": "No. 3 Anklänge. Andante molto, Op. 7",
           "proposed_work": "6 Songs, Op. 7",
           "title_scope": "individual_movement",
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "0f562a15-8617-4361-bed5-a0ca85c0c1f9",
           "source_references": [
             {
@@ -107182,10 +107005,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.7_%28Brahms%2C_Johannes%29",
               "description": "3. Anklänge"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5349",
@@ -107213,13 +107033,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "0fb11ab2-d3f2-4f9c-8dd2-7bde511c28fc",
           "source_references": [
             {
@@ -107227,10 +107047,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.7_%28Brahms%2C_Johannes%29",
               "description": "4. Volkslied"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5350",
@@ -107258,13 +107075,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "31ea08c0-8a43-495b-b137-ef8d7ae2f795",
           "source_references": [
             {
@@ -107272,10 +107089,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.7_%28Brahms%2C_Johannes%29",
               "description": "5. Die Trauernde"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "5351",
@@ -107303,13 +107117,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "9bd66865-0140-4913-8403-6e062158e020",
           "source_references": [
             {
@@ -107317,10 +107131,7 @@
               "source_url": "https://imslp.org/wiki/6_Songs%2C_Op.7_%28Brahms%2C_Johannes%29",
               "description": "6. Heimkehr"
             }
-          ],
-          "published_at": "2026-09-09T21:59:28+00:00",
-          "publication_batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "39241",

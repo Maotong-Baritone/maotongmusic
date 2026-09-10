@@ -60845,13 +60845,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "e58595ef-83fb-4f27-a373-f042a15e5f27",
           "source_references": [
             {
@@ -60859,10 +60859,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "1. [Am Sonntag Morgen zierlich angetan"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9203",
@@ -60890,13 +60887,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "1d7450be-e6b4-430a-840c-0711fa40d00b",
           "source_references": [
             {
@@ -60904,10 +60901,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "2. An ein Veilchen"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9204",
@@ -60935,13 +60929,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "71c4a4c1-cf70-41c4-98a4-16ee72436bbf",
           "source_references": [
             {
@@ -60949,10 +60943,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "3. Sehnsucht"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9205",
@@ -60980,13 +60971,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a016e09f-6cd4-42aa-8235-0786ee93b5a2",
           "source_references": [
             {
@@ -60994,10 +60985,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "4. Wiegenlied"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "9206",
@@ -61025,13 +61013,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "cd605ad8-762e-4c34-b323-489ca1c2d7fc",
           "source_references": [
             {
@@ -61039,10 +61027,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.49_%28Brahms%2C_Johannes%29",
               "description": "5. Abenddämmerung"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "39332",
@@ -95685,13 +95670,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "80746120-970b-4c54-8cac-f36b1a1c1d5a",
           "source_references": [
             {
@@ -95699,10 +95684,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "1. Sommerabend"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44068",
@@ -95730,13 +95712,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "57752452-843e-4f8e-9a09-11f1c20ed227",
           "source_references": [
             {
@@ -95744,10 +95726,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "2. Der Kranz"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44069",
@@ -95775,13 +95754,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5325f09f-8ce0-4486-ac83-37a38427a31b",
           "source_references": [
             {
@@ -95789,10 +95768,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "3. In den Beeren"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44070",
@@ -95820,13 +95796,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4ba86425-c89b-4bd4-9cca-3c65ea92bcb5",
           "source_references": [
             {
@@ -95834,10 +95810,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "4. Vergebliches Ständchen"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44071",
@@ -95865,13 +95838,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "二重唱、钢琴",
+          "voice_types": "高声部",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "214297e9-819c-46ac-9fdb-cc9e5b6f5a48",
           "source_references": [
             {
@@ -95879,10 +95852,7 @@
               "source_url": "https://imslp.org/wiki/5_Romances_and_Songs%2C_Op.84_%28Brahms%2C_Johannes%29",
               "description": "5. Spannung"
             }
-          ],
-          "published_at": "2026-09-10T03:24:51+00:00",
-          "publication_batch_id": "brahms-op49-op84-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "38727",

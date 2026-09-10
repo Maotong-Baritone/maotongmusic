@@ -1,0 +1,151 @@
+{
+  "batch_id": "brahms-op3-op7-high-voice-twelve-20260909",
+  "recorded_at": "2026-09-09T21:57:45.294006+00:00",
+  "source_manifest_before_sha256": "ff1c2641a9c754e169627b4d141ac0df17c2a91a7060e01dc29fe86b05cc3832",
+  "source_manifest_after_sha256": "107cfb676dc511feb638caa93ded4651c6d32c2417a01a01eee8fb6bb90564d2",
+  "staging_manifest_before_sha256": "e77d3a045a14e87dcfbb943802a64a45ce416472da622551287a913efe07ca54",
+  "staging_manifest_after_sha256": "a72a9c0cdbc5e0865b4f3878776a8ce5244d9c98e74d824548ba7d707ff15ab2",
+  "backup": "backup\\import_metadata\\brahms-op3-op7-high-voice-twelve-20260909-20260909_155745_114514",
+  "changes": [
+    {
+      "imslp_id": "5333",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5334",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5335",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5336",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5337",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5338",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5346",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5347",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5348",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5349",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5350",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5351",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups these Peters files with previews named Hohe Stimme; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "5333",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5334",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5335",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5336",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5337",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5338",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.3 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "5336",
+      "field": "title",
+      "before": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigen Schwang, Op. 3",
+      "after": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigem Schwung, Op. 3",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    },
+    {
+      "imslp_id": "5348",
+      "field": "title",
+      "before": "No. 3 Anklänge. Andante molto, Op. 7",
+      "after": "No. 3 Anklänge. Andante moderato, Op. 7",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "batch_id": "brahms-op46-op47-high-voice-nine-20260909",
+  "recorded_at": "2026-09-09T23:11:06.972568+00:00",
+  "source_manifest_before_sha256": "0dec07338e21dac59bc51576ba14216d9575e9818f5f5652e1563da0b0f7e1ea",
+  "source_manifest_after_sha256": "aec180ff4dd56f0bd03eb50c769a97f37a7e0be98a8c23e8b8bc2e813b96a169",
+  "staging_manifest_before_sha256": "4ab015c60250fad20426768403dd2d54a7a4de81965c4682fa5c6174b0911a09",
+  "staging_manifest_after_sha256": "960337431c1e3a81c0dea815b02e33f2d8804331f88a370206081773621ceb6a",
+  "backup": "backup\\import_metadata\\brahms-op46-op47-high-voice-nine-20260909-20260909_171106_789643",
+  "changes": [
+    {
+      "imslp_id": "9005",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9006",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9007",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9008",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9017",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9018",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9019",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9020",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9021",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP groups the selected Peters files under the high-voice edition; the rendered scores contain one vocal line with piano."
+    },
+    {
+      "imslp_id": "9017",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.47 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "9018",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.47 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "9019",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.47 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "9020",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.47 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "9021",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live Op.47 work page identifies German and the selected Peters scores use German text."
+    },
+    {
+      "imslp_id": "9006",
+      "field": "title",
+      "before": "No. 2 The Lied, Art Song, and Choral Texts Archive Andante, Op. 46",
+      "after": "No. 2 Magyarisch. Andante, Op. 46",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    },
+    {
+      "imslp_id": "9018",
+      "field": "title",
+      "before": "No. 2 Liebesgluth. Appassionato, Op. 47",
+      "after": "No. 2 Liebesglut. Appassionato, Op. 47",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    },
+    {
+      "imslp_id": "9020",
+      "field": "title",
+      "before": "No. 4 O liebliche Wangen, ihr macht mir Verlangen. Lebhaft, Op. 47",
+      "after": "No. 4 O liebliche Wangen. Lebhaft, Op. 47",
+      "evidence": "The first rendered Peters score page supplies the printed title and tempo marking."
+    }
+  ]
+}

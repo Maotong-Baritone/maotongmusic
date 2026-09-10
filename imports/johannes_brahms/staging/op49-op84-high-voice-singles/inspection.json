@@ -1,0 +1,309 @@
+{
+  "label": "Op.49与Op.84：Peters高声部独立单曲",
+  "checked_on": "2026-09-09",
+  "recorded_at": "2026-09-10T03:24:06.257420+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "9202",
+    "9203",
+    "9204",
+    "9205",
+    "9206",
+    "44067",
+    "44068",
+    "44069",
+    "44070",
+    "44071"
+  ],
+  "source_notes": "实时IMSLP作品页确认两套作品均为德语、Public Domain；Op.49所选五份属于Peters高声部组，Op.84所选五份为Peters高声部版本并可作二重唱。完整谱、低声部、中声部、手稿及改编不在本批。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览十份完整接触表并重点放大核对首尾、标题、速度、德语、编制和异常页。",
+  "rendering_note": "十份普通清晰单曲的全部页面均已渲染；页序连续、标题和歌词可辨、末页完整结束。Op.84谱面以角色标记交替演唱。",
+  "metadata_changes": [
+    {
+      "imslp_id": "9202",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9202",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9203",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9203",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9204",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9204",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9205",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9205",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "9206",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups Op.49 under the high-voice Peters edition and the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "9206",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44067",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44067",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44068",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44068",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44069",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44069",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44070",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44070",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "44071",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "二重唱、钢琴",
+      "evidence": "The live IMSLP work page identifies two voices with piano; the rendered score prints alternating role labels in its vocal line."
+    },
+    {
+      "imslp_id": "44071",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    }
+  ],
+  "files": {
+    "9202": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Am Sonntag Morgen. Andante espressivo, Op. 49"
+      ],
+      "notes": "No. 1 Am Sonntag Morgen. Andante espressivo, Op. 49；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "9203": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 An ein Veilchen. Andante, Op. 49"
+      ],
+      "notes": "No. 2 An ein Veilchen. Andante, Op. 49；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "9204": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Sehnsucht. Langsam, Op. 49"
+      ],
+      "notes": "No. 3 Sehnsucht. Langsam, Op. 49；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "9205": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Wiegenlied. Zart bewegt, Op. 49"
+      ],
+      "notes": "No. 4 Wiegenlied. Zart bewegt, Op. 49；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "9206": {
+      "pages": 6,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Abenddämmerung. Ruhig, Op. 49"
+      ],
+      "notes": "No. 5 Abenddämmerung. Ruhig, Op. 49；共6页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "44067": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Sommerabend. Andante con moto, Op. 84"
+      ],
+      "notes": "No. 1 Sommerabend. Andante con moto, Op. 84；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "44068": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Der Kranz. Allegro grazioso, Op. 84"
+      ],
+      "notes": "No. 2 Der Kranz. Allegro grazioso, Op. 84；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "44069": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 In den Beeren. Sehr lebhaft, Op. 84"
+      ],
+      "notes": "No. 3 In den Beeren. Sehr lebhaft, Op. 84；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "44070": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Vergebliches Ständchen. Lebhaft und gut gelaunt, Op. 84"
+      ],
+      "notes": "No. 4 Vergebliches Ständchen. Lebhaft und gut gelaunt, Op. 84；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "44071": {
+      "pages": 5,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Spannung. Bewegt und heimlich, Op. 84"
+      ],
+      "notes": "No. 5 Spannung. Bewegt und heimlich, Op. 84；共5页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-10T03:24:51+00:00",
+  "approved_publication_ids": [
+    "9202",
+    "9203",
+    "9204",
+    "9205",
+    "9206",
+    "44067",
+    "44068",
+    "44069",
+    "44070",
+    "44071"
+  ]
+}

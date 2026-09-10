@@ -1,0 +1,151 @@
+{
+  "batch_id": "brahms-op86-op96-high-voice-ten-20260909",
+  "recorded_at": "2026-09-09T17:07:20.744113+00:00",
+  "source_manifest_before_sha256": "3bc81e893b7581f50148919e125f569491159b84eb502e55ec4ddac9dc72ee08",
+  "source_manifest_after_sha256": "455a6aaac1e811ad7c9bd2a986c9534baa4fd7c2407e57a04de2f21756f9744a",
+  "staging_manifest_before_sha256": "706b7ebd2602b3b2bbd7a847cecde585562bf6209e8f46a535c549906ec4e004",
+  "staging_manifest_after_sha256": "0eb253026b28457b792f59c85fbdae8d97d062392a1a3dbfb3cd7709b1dbdc04",
+  "backup": "backup\\import_metadata\\brahms-op86-op96-high-voice-ten-20260909-20260909_110720_556892",
+  "changes": [
+    {
+      "imslp_id": "46903",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46903",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46904",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46904",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46905",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46905",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46906",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46906",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46907",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46907",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46908",
+      "field": "voice_types",
+      "before": "高声部",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "46908",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246580",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246580",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246581",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246581",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246582",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246582",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246583",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    },
+    {
+      "imslp_id": "246583",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "Live IMSLP identifies this Peters file as a high-voice edition; the rendered score has German text for voice and piano."
+    }
+  ]
+}
