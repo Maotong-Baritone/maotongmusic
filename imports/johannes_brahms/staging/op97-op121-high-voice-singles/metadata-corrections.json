@@ -1,0 +1,207 @@
+{
+  "batch_id": "brahms-op97-op121-high-voice-ten-20260909",
+  "recorded_at": "2026-09-10T04:11:04.839134+00:00",
+  "source_manifest_before_sha256": "6accf6a43ea95a05e9e546f17785dc97653519e0a9b6797033a99834f05c9a77",
+  "source_manifest_after_sha256": "1505833ccb5eb111a8dac8ebc7c41e6f66ac08666578ac01d3d301da62ab7516",
+  "staging_manifest_before_sha256": "010b4ffe1d75877597431839ac21531a2c80502cfee3e994b3708b9d63a9d4a9",
+  "staging_manifest_after_sha256": "0b6574dbe5bba2187e840e83f8484d0366e74d24e4e8bfca45aa8ed82a450b52",
+  "backup": "backup\\import_metadata\\brahms-op97-op121-high-voice-ten-20260909-20260909_221104_653246",
+  "changes": [
+    {
+      "imslp_id": "232392",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "232392",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "232392",
+      "field": "title",
+      "before": "No. 1 Nachtigall Langsam, Op. 97",
+      "after": "No. 1 Nachtigall. Langsam, Op. 97",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    },
+    {
+      "imslp_id": "232393",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "232393",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "232393",
+      "field": "title",
+      "before": "No. 2 Auf dem Schiffe Lebhaft und rasch, Op. 97",
+      "after": "No. 2 Auf dem Schiffe. Lebhaft und rasch, Op. 97",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    },
+    {
+      "imslp_id": "232394",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "232394",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "232394",
+      "field": "title",
+      "before": "No. 3 Entführung Schnell, Op. 97",
+      "after": "No. 3 Entführung. Schnell, Op. 97",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    },
+    {
+      "imslp_id": "232395",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "232395",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "232395",
+      "field": "title",
+      "before": "No. 4 Dort in den Weiden steht ein Haus Lebhaft und anmuthig, Op. 97",
+      "after": "No. 4 Dort in den Weiden. Lebhaft und anmuthig, Op. 97",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    },
+    {
+      "imslp_id": "232396",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "232396",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "232396",
+      "field": "title",
+      "before": "No. 5 Komm bald Zart bewegt, Op. 97",
+      "after": "No. 5 Komm bald. Zart bewegt, Op. 97",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    },
+    {
+      "imslp_id": "232397",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "232397",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "232397",
+      "field": "title",
+      "before": "No. 6 Trennung Anmuthig bewegt, Op. 97",
+      "after": "No. 6 Trennung. Anmuthig bewegt, Op. 97",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    },
+    {
+      "imslp_id": "232397",
+      "field": "tonality",
+      "before": "",
+      "after": "降A大调",
+      "evidence": "The IMSLP high-voice file is labelled A-flat major and the rendered score shows four flats; it also prints the original key as F major."
+    },
+    {
+      "imslp_id": "64768",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "64768",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "64769",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "64769",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "64770",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "64770",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "64771",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "高声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected Peters file under High Voice; the rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "64771",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP work page identifies German and the selected Peters score uses German text."
+    },
+    {
+      "imslp_id": "64771",
+      "field": "title",
+      "before": "No. 4 Wenn ich mit Menschen und mit Engelszungen redete. Con moto ed anima, Op. 121",
+      "after": "No. 4 Wenn ich mit Menschen und mit Engelszungen redete. Andante con moto ed anima, Op. 121",
+      "evidence": "The rendered first page supplies the printed title and tempo; punctuation separates the independent title from its tempo."
+    }
+  ]
+}

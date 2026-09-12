@@ -68834,19 +68834,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 1 Nachtigall. Langsam, Op. 97",
+          "proposed_title": "No. 1 Nachtigall Langsam, Op. 97",
           "proposed_work": "6 Lieder, Op. 97",
           "title_scope": "individual_movement",
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "b51bd884-a509-4f10-be8f-d4f9b6f2c9ab",
           "source_references": [
             {
@@ -68854,10 +68854,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.97_%28Brahms%2C_Johannes%29",
               "description": "1. Nachtigall"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "232393",
@@ -68879,19 +68876,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Auf dem Schiffe. Lebhaft und rasch, Op. 97",
+          "proposed_title": "No. 2 Auf dem Schiffe Lebhaft und rasch, Op. 97",
           "proposed_work": "6 Lieder, Op. 97",
           "title_scope": "individual_movement",
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "cfb11d16-c49a-4b38-bfb4-ee4e704ad281",
           "source_references": [
             {
@@ -68899,10 +68896,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.97_%28Brahms%2C_Johannes%29",
               "description": "2. Auf dem Schiffe"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "232394",
@@ -68924,19 +68918,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 3 Entführung. Schnell, Op. 97",
+          "proposed_title": "No. 3 Entführung Schnell, Op. 97",
           "proposed_work": "6 Lieder, Op. 97",
           "title_scope": "individual_movement",
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5a14d0b2-ec23-4f1b-9667-3f7cfd75f53c",
           "source_references": [
             {
@@ -68944,10 +68938,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.97_%28Brahms%2C_Johannes%29",
               "description": "3. Entführung"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "232395",
@@ -68969,19 +68960,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 4 Dort in den Weiden. Lebhaft und anmuthig, Op. 97",
+          "proposed_title": "No. 4 Dort in den Weiden steht ein Haus Lebhaft und anmuthig, Op. 97",
           "proposed_work": "6 Lieder, Op. 97",
           "title_scope": "individual_movement",
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "73b81660-d114-4799-ab2c-5453fd0771cf",
           "source_references": [
             {
@@ -68989,10 +68980,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.97_%28Brahms%2C_Johannes%29",
               "description": "4. Dort in den Weiden"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "232396",
@@ -69014,19 +69002,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 5 Komm bald. Zart bewegt, Op. 97",
+          "proposed_title": "No. 5 Komm bald Zart bewegt, Op. 97",
           "proposed_work": "6 Lieder, Op. 97",
           "title_scope": "individual_movement",
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "e2a263fe-4f5d-495c-897c-78335aa8de3e",
           "source_references": [
             {
@@ -69034,10 +69022,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.97_%28Brahms%2C_Johannes%29",
               "description": "5. Komm bald"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "232397",
@@ -69059,19 +69044,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 6 Trennung. Anmuthig bewegt, Op. 97",
+          "proposed_title": "No. 6 Trennung Anmuthig bewegt, Op. 97",
           "proposed_work": "6 Lieder, Op. 97",
           "title_scope": "individual_movement",
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
-          "tonality": "降A大调",
-          "language_cn": "德语",
+          "voice_types": "声乐、钢琴",
+          "tonality": "",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "45f8da07-a397-4561-a311-e2b02de2b9b0",
           "source_references": [
             {
@@ -69079,10 +69064,7 @@
               "source_url": "https://imslp.org/wiki/6_Lieder%2C_Op.97_%28Brahms%2C_Johannes%29",
               "description": "6. Trennung (A♭ major)"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "986406",
@@ -104912,13 +104894,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "50200b91-2261-4efe-93c3-10650724dfd4",
           "source_references": [
             {
@@ -104926,10 +104908,7 @@
               "source_url": "https://imslp.org/wiki/4_Serious_Songs%2C_Op.121_%28Brahms%2C_Johannes%29",
               "description": "1. Denn es gehet dem Menschen wie dem Vieh"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "64769",
@@ -104957,13 +104936,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "cf2b2782-2818-4c4b-873d-3363985650bc",
           "source_references": [
             {
@@ -104971,10 +104950,7 @@
               "source_url": "https://imslp.org/wiki/4_Serious_Songs%2C_Op.121_%28Brahms%2C_Johannes%29",
               "description": "2. Ich wandte mich und sahe"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "64770",
@@ -105002,13 +104978,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "3869d2bb-e364-4c85-af0e-94df56b59529",
           "source_references": [
             {
@@ -105016,10 +104992,7 @@
               "source_url": "https://imslp.org/wiki/4_Serious_Songs%2C_Op.121_%28Brahms%2C_Johannes%29",
               "description": "3. O Tod, wie bitter bist du!"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "64771",
@@ -105041,19 +105014,19 @@
           "editor": "Max Friedlaender (1852–1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 4 Wenn ich mit Menschen und mit Engelszungen redete. Andante con moto ed anima, Op. 121",
+          "proposed_title": "No. 4 Wenn ich mit Menschen und mit Engelszungen redete. Con moto ed anima, Op. 121",
           "proposed_work": "4 Serious Songs, Op. 121",
           "title_scope": "individual_movement",
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "高声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "7bcf287d-da2c-4a4e-8ab1-35cd27dd59d6",
           "source_references": [
             {
@@ -105061,10 +105034,7 @@
               "source_url": "https://imslp.org/wiki/4_Serious_Songs%2C_Op.121_%28Brahms%2C_Johannes%29",
               "description": "4. Wenn ich mit Menschen- und mit Engelzungen redete"
             }
-          ],
-          "published_at": "2026-09-10T04:11:36+00:00",
-          "publication_batch_id": "brahms-op97-op121-high-voice-ten-20260909",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "613748",
