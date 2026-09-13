@@ -8,7 +8,7 @@ const itemsPerPage = 15;
 let currentLyricsId = null;
 let currentPdfUrl = '';
 let currentDetailId = null;
-let fuseInstance = null; // Fuse.js 实例
+
 let favorites = loadStoredFavorites();
 const BASE_PAGE_TITLE = document.title;
 let detailHistoryChangeInProgress = false;
@@ -249,28 +249,6 @@ async function loadData() {
         if (!dataRes.ok) throw new Error("无法加载乐谱数据");
         musicData = await dataRes.json();
         
-        // 初始化 Fuse.js
-        if (typeof Fuse !== 'undefined') {
-            const fuseOptions = {
-                keys: [
-                    { name: 'title', weight: 0.4 },
-                    { name: 'composer', weight: 0.3 },
-                    { name: 'work', weight: 0.2 },
-                    { name: 'description', weight: 0.1 }
-                ],
-                threshold: 0.3, // 模糊阈值，越低越精确
-                ignoreLocation: true
-            };
-            // 预处理数据：将别名加入到 composer 字段中以便搜索
-            const searchableData = musicData.map(item => {
-                return { ...item, _search_composer_alias: composerSearchText(item.composer) };
-            });
-            // 更新 keys 以包含别名
-            fuseOptions.keys.push({ name: '_search_composer_alias', weight: 0.3 });
-            
-            fuseInstance = new Fuse(searchableData, fuseOptions);
-        }
-        
         if (logRes.ok) {
             changeLog = await logRes.json();
         }
@@ -288,6 +266,48 @@ async function loadData() {
 }
 
 function normalizeStr(str) { if (!str) return ""; return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+// 折叠复制粘贴带来的空白、全角字符和标点，保留重音不敏感匹配。
+function normalizeSearch(value) {
+    return normalizeStr(String(value || '').normalize('NFKC'))
+        .replace(/[\u200b-\u200d\ufeff]/g, '')
+        .replace(/[’‘'\x22“”]/g, '')
+        .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+}
+
+function withinOneEdit(a, b) {
+    if (Math.abs(a.length - b.length) > 1) return false;
+    let i = 0, j = 0, edits = 0;
+    while (i < a.length && j < b.length) {
+        if (a[i] === b[j]) { i++; j++; continue; }
+        if (++edits > 1) return false;
+        if (a.length >= b.length) i++;
+        if (b.length >= a.length) j++;
+    }
+    return edits + (i < a.length || j < b.length ? 1 : 0) <= 1;
+}
+
+function matchesSearch(item, query) {
+    const text = normalizeSearch([item.title, composerSearchText(item.composer), item.work, item.description].filter(Boolean).join(' '));
+    const needle = normalizeSearch(query);
+    if (!needle) return false;
+    if (text.includes(needle)) return true;
+    // 连写/省音形式，例如 Dagl'immortali 与 Dagli immortali。
+    const compact = text.replace(/ /g, '');
+    const joined = needle.replace(/ /g, '');
+    if (compact.includes(joined)) return true;
+    if (joined.length >= 8) {
+        for (let i = 0; i < compact.length; i++) {
+            if (compact[i] !== joined[0] && compact[i] !== joined[1] && compact[i + 1] !== joined[0]) continue;
+            for (const size of [joined.length - 1, joined.length, joined.length + 1]) {
+                if (i + size <= compact.length && withinOneEdit(joined, compact.slice(i, i + size))) return true;
+            }
+        }
+    }
+    const words = text.split(' ');
+    return needle.split(' ').every(token => text.includes(token) ||
+        (token.length >= 5 && words.some(word => withinOneEdit(token, word))));
+}
+
 function compareByDateDesc(a, b) {
     const dateCompare = String(b.date || '').localeCompare(String(a.date || ''));
     return dateCompare || Number(b.id) - Number(a.id);
@@ -462,26 +482,9 @@ function applyFilters() {
         result = result.filter(item => favorites.has(getStableId(item)));
     }
 
-    // 1. 如果有搜索词，优先使用 Fuse.js 进行模糊搜索
-    if (filters.search && fuseInstance) {
-        const fuseResults = fuseInstance.search(filters.search);
-        result = fuseResults.map(r => r.item);
-        // 如果同时在看收藏夹，需要取交集
-        if (filters.favoritesOnly) {
-             result = result.filter(item => favorites.has(getStableId(item)));
-        }
-    } else if (filters.search) {
-        // Fallback: 如果 Fuse 未加载，使用旧的简单搜索
-        const searchBase = normalizeStr(filters.search);
-        result = result.filter(item => {
-             const itemTitle = normalizeStr(item.title); 
-             const itemComposer = normalizeStr(item.composer); 
-             const itemWork = normalizeStr(item.work); 
-             const itemDesc = normalizeStr(item.description);
-             let composerKeywords = normalizeStr(composerSearchText(item.composer));
-             const fullSearchableText = `${itemTitle} ${composerKeywords} ${itemWork} ${itemDesc}`;
-             return fullSearchableText.includes(searchBase);
-        });
+    // 搜索规则随网站发布，不依赖外部组件是否加载成功。
+    if (filters.search) {
+        result = result.filter(item => matchesSearch(item, filters.search));
     }
 
     // 2. 应用其他过滤器 (精确匹配)
@@ -775,7 +778,12 @@ window.copyDetailLink = async function() {
         button.textContent = '✅ 链接已复制';
     } catch (error) {
         console.warn('无法复制详情链接。', error);
-        button.textContent = '请从地址栏复制链接';
+        const field = document.getElementById('detailLinkFallback');
+        field.hidden = false;
+        field.value = detailUrl;
+        field.focus();
+        field.select();
+        button.textContent = '请长按下方链接复制';
     }
     window.setTimeout(() => { button.textContent = '🔗 复制详情链接'; }, 1800);
 }
@@ -813,6 +821,8 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     const filename = String(item.filename || '');
     const pdfUrl = buildScoreUrl(item);
     dlBtn.href = pdfUrl;
+    document.getElementById('wechatDownloadHelp').hidden = !/MicroMessenger/i.test(navigator.userAgent);
+    document.getElementById('detailLinkFallback').hidden = true;
     dlBtn.download = `${item.title || 'score'}.pdf`;
     document.getElementById('mOpenPdf').href = pdfUrl;
     document.getElementById('btnShareDetail').textContent = '🔗 复制详情链接';
@@ -822,7 +832,7 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     const previewActions = document.getElementById('previewActions');
     clearPdfPreview();
     if (filename.toLowerCase().endsWith('.pdf')) {
-         currentPdfUrl = `${pdfUrl}#toolbar=0&view=FitH`;
+         currentPdfUrl = `${pdfUrl}#view=FitH`;
          previewStatus.innerText = 'PDF 预览尚未加载';
          previewHelp.innerText = '为节省流量，只有点击按钮后才会载入乐谱。';
          previewActions.style.display = 'flex';

@@ -544,3 +544,15 @@ footer {
     }
     .usage-notice-footer .btn { width: 100%; }
 }
+
+/* 操作区位于详情头部，独立于资料和 PDF 预览。 */
+.score-actions { background: var(--bg-color, #fff); flex-shrink: 0; }
+.score-download-actions { display: flex; gap: .5rem; }
+.score-download-actions > .btn { width: auto !important; flex: 1; margin-top: 0 !important; }
+@media (max-width: 991px) {
+    #detailModal .modal-header { position: sticky; top: 0; z-index: 3; }
+    .score-actions { position: sticky; top: 62px; z-index: 2; }
+}
+@media (min-width: 992px) {
+    #detailModal .responsive-modal-body { min-height: 0; flex: 1; overflow: hidden; }
+}
