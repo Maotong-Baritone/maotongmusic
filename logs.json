@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-09-14 23:06",
+        "type": "add",
+        "msg": "新增勃拉姆斯《9 Lieder and Songs, Op. 32》Peters低声部独立歌曲谱9份；标题、速度、德语及低声部与钢琴编制均已核对。",
+        "batch_id": "brahms-op32-low-voice-nine-20260910",
+        "count": 9
+    },
+    {
         "date": "2026-09-09 22:11",
         "type": "add",
         "msg": "新增勃拉姆斯Op.97与Op.121的Peters高声部独立歌曲谱10份；标题、速度、德语及高声部与钢琴编制均已核对。",

@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3647,
-  "unique_content_count": 3628,
+  "entry_count": 3656,
+  "unique_content_count": 3637,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4448413247,
+  "total_size": 4451103529,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -3418,6 +3418,13 @@
       "sha256": "e9d8c24e1b2e3008310fa0a7c3888ac853d39bffcee1f133616b9cd1d7cce7b9"
     },
     {
+      "public_id": "21c9e783-890a-4531-8d26-93b8122a9323",
+      "source_path": "scores/艺术歌曲/21c9e783-890a-4531-8d26-93b8122a9323.pdf",
+      "storage_key": "scores/21/21c9e783-890a-4531-8d26-93b8122a9323.pdf",
+      "file_size": 190517,
+      "sha256": "162c7eddab1a9aa6a509100a45f850c2bb4fe53321799766efa1ea1da1a70841"
+    },
+    {
       "public_id": "21cb8c77-abb2-52dd-941f-bc41feef4d1e",
       "source_path": "scores/歌剧咏叹调/1766007785823_Chio_parta_si_crudele_parto_ma_senza_cor.pdf",
       "storage_key": "scores/21/21cb8c77-abb2-52dd-941f-bc41feef4d1e.pdf",
@@ -4573,6 +4580,13 @@
       "sha256": "8a0946da6375cb5c3069544662265ed768dfc7208aaebb32185ec52f3f6ad9aa"
     },
     {
+      "public_id": "2eaf82d7-06c6-4072-99e1-d2d8b113645b",
+      "source_path": "scores/艺术歌曲/2eaf82d7-06c6-4072-99e1-d2d8b113645b.pdf",
+      "storage_key": "scores/2e/2eaf82d7-06c6-4072-99e1-d2d8b113645b.pdf",
+      "file_size": 312315,
+      "sha256": "4d864c4f84fca51f933fa80517c3f24ede6a507f32c73e1fc726ca53f9c4fc18"
+    },
+    {
       "public_id": "2eb8317b-bb64-58db-ba7a-944ac29903bf",
       "source_path": "scores/歌剧咏叹调/1768703277_25_Pikovaya_dama_(The_Queen_of_Spades)_Podrugi_milyye_(Pauline's_Aria)_contralto.pdf",
       "storage_key": "scores/2e/2eb8317b-bb64-58db-ba7a-944ac29903bf.pdf",
@@ -5691,6 +5705,13 @@
       "storage_key": "scores/3a/3a62f7d2-622c-54a1-9e45-35bb2d891198.pdf",
       "file_size": 245751,
       "sha256": "9cd83e25173e1beabfe6f0805f9fc6d40d9de8d67bdd18de84bc09b054f6d02d"
+    },
+    {
+      "public_id": "3a6696be-6561-43eb-821a-7c0421ddf60b",
+      "source_path": "scores/艺术歌曲/3a6696be-6561-43eb-821a-7c0421ddf60b.pdf",
+      "storage_key": "scores/3a/3a6696be-6561-43eb-821a-7c0421ddf60b.pdf",
+      "file_size": 101739,
+      "sha256": "7e4621602c0ea0e122c28c3c6fb489bd4d06cf37fb003f1d0f107751f0843264"
     },
     {
       "public_id": "3a721f0d-7eba-5b05-a089-0b2ac12dbece",
@@ -8430,6 +8451,13 @@
       "sha256": "247a59145ce99189222420771d593e5d65aedc1658f552fb6eafb98a001ac28d"
     },
     {
+      "public_id": "557f6371-60f4-456c-8dc9-9cc731819171",
+      "source_path": "scores/艺术歌曲/557f6371-60f4-456c-8dc9-9cc731819171.pdf",
+      "storage_key": "scores/55/557f6371-60f4-456c-8dc9-9cc731819171.pdf",
+      "file_size": 215224,
+      "sha256": "15bdbba971b045a491bde94f74c4c30e19ff0d1ce6a8029089a78bd2a3006ce3"
+    },
+    {
       "public_id": "5588ee5a-f0f4-5afa-9822-549cfaf998f7",
       "source_path": "scores/歌剧咏叹调/1766038685680_Au_palais_des_fees.pdf",
       "storage_key": "scores/55/5588ee5a-f0f4-5afa-9822-549cfaf998f7.pdf",
@@ -9613,6 +9641,13 @@
       "sha256": "264297443f86546b59c4578682fab1df2fd313b01de25fe082f11a8af19ba99f"
     },
     {
+      "public_id": "6096acbd-b050-46a6-81a5-78e951f849b2",
+      "source_path": "scores/艺术歌曲/6096acbd-b050-46a6-81a5-78e951f849b2.pdf",
+      "storage_key": "scores/60/6096acbd-b050-46a6-81a5-78e951f849b2.pdf",
+      "file_size": 290225,
+      "sha256": "65352180aff890072a13c38ebdb94b185e4592e59704519138ec2f361bdd7a9f"
+    },
+    {
       "public_id": "60994892-ed6d-5424-be56-5d2df69a80bc",
       "source_path": "scores/歌剧咏叹调/1766007794400_So_che_vana_la_speranza.pdf",
       "storage_key": "scores/60/60994892-ed6d-5424-be56-5d2df69a80bc.pdf",
@@ -9991,6 +10026,13 @@
       "sha256": "a0b0f2f689c3d4e5943abc2b71151816489518b2d9159b574f631301494e79eb"
     },
     {
+      "public_id": "650d96de-99ff-4d7e-9c7a-337f9f8c1a66",
+      "source_path": "scores/艺术歌曲/650d96de-99ff-4d7e-9c7a-337f9f8c1a66.pdf",
+      "storage_key": "scores/65/650d96de-99ff-4d7e-9c7a-337f9f8c1a66.pdf",
+      "file_size": 234799,
+      "sha256": "495b551607e22b11a592dd36fa763f0fea8f00ecdc20dadc9c4c6bd330f838ce"
+    },
+    {
       "public_id": "6513dc36-5884-50e9-936f-9fcb8a99d96b",
       "source_path": "scores/歌剧咏叹调/1766007781446_Oh_care_parolette_oh_dolci_sguardi.pdf",
       "storage_key": "scores/65/6513dc36-5884-50e9-936f-9fcb8a99d96b.pdf",
@@ -10269,6 +10311,13 @@
       "storage_key": "scores/67/674aee21-c463-516e-a565-356ebde9bc65.pdf",
       "file_size": 675639,
       "sha256": "bbd74eeaebeaa5f8a4981d6234e82d71847898126ccd6f1fde3a3289f5c2cb2f"
+    },
+    {
+      "public_id": "674c3e99-87c8-482a-8ed3-e0bbc791c419",
+      "source_path": "scores/艺术歌曲/674c3e99-87c8-482a-8ed3-e0bbc791c419.pdf",
+      "storage_key": "scores/67/674c3e99-87c8-482a-8ed3-e0bbc791c419.pdf",
+      "file_size": 559381,
+      "sha256": "04af7eebc177d97ed2a0b03cc70714d0401168c53507fc0337bd405c0f8125a1"
     },
     {
       "public_id": "6767d419-9b88-5386-96b1-1913f80372bf",
@@ -14275,6 +14324,13 @@
       "sha256": "d7db1bc257f959a42b04036da29dbf4c5a5de19224d7462a55bf7c055cfbf130"
     },
     {
+      "public_id": "90c3877c-4599-41d8-9819-67b7cce63e26",
+      "source_path": "scores/艺术歌曲/90c3877c-4599-41d8-9819-67b7cce63e26.pdf",
+      "storage_key": "scores/90/90c3877c-4599-41d8-9819-67b7cce63e26.pdf",
+      "file_size": 236444,
+      "sha256": "ec04113029afa77598bc9537683f6f7e17432238af001f6dbde48ebfd79bdebf"
+    },
+    {
       "public_id": "90c5bf83-539f-5952-aaec-07d356930edf",
       "source_path": "scores/歌剧咏叹调/1766097817513_Ah_come_il_cor_di_giubilo.pdf",
       "storage_key": "scores/90/90c5bf83-539f-5952-aaec-07d356930edf.pdf",
@@ -15960,6 +16016,13 @@
       "storage_key": "scores/a1/a1559154-7a78-545e-8215-3c1c1b982f4b.pdf",
       "file_size": 728432,
       "sha256": "535a0758222cbd3c3aeac942813a7d8f31c11d9e2c2eade441571c248d22b2c0"
+    },
+    {
+      "public_id": "a170693b-eb94-4d53-82f8-1788c275b073",
+      "source_path": "scores/艺术歌曲/a170693b-eb94-4d53-82f8-1788c275b073.pdf",
+      "storage_key": "scores/a1/a170693b-eb94-4d53-82f8-1788c275b073.pdf",
+      "file_size": 549638,
+      "sha256": "7b76136ee5242aba8ef18456ac199d84c679325353f4e61d5adb298ebed12e34"
     },
     {
       "public_id": "a188c27b-05e5-5d33-b65f-d197a55a9b5b",
