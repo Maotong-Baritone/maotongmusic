@@ -1,0 +1,195 @@
+{
+  "label": "8 Lieder and Songs, Op.58：Peters低声部单曲",
+  "checked_on": "2026-09-15",
+  "recorded_at": "2026-09-16T01:45:46.414397+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "305401",
+    "305402",
+    "305403",
+    "305404",
+    "305405",
+    "305406",
+    "305407",
+    "305408"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.58为德语独唱与钢琴作品；所选八份均为Max Friedlaender编辑、Edition Peters出版并标为Public Domain的低声部版（No.5保留原调）。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看八份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。",
+  "rendering_note": "八份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。",
+  "metadata_changes": [
+    {
+      "imslp_id": "305401",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305402",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305403",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305404",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305405",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305406",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305407",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305408",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    }
+  ],
+  "files": {
+    "305401": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Blinde Kuh. Vivace, Op. 58"
+      ],
+      "notes": "No. 1 Blinde Kuh. Vivace, Op. 58，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305402": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Während des Regens. Lebhaft, Op. 58"
+      ],
+      "notes": "No. 2 Während des Regens. Lebhaft, Op. 58，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305403": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Die Spröde. Grazioso, Op. 58"
+      ],
+      "notes": "No. 3 Die Spröde. Grazioso, Op. 58，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305404": {
+      "pages": 3,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 O komme, holde Sommernacht verschwiegen. Lebhaft und heimlich, Op. 58"
+      ],
+      "notes": "No. 4 O komme, holde Sommernacht verschwiegen. Lebhaft und heimlich, Op. 58，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305405": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Schwermut. Sehr langsam, Op. 58"
+      ],
+      "notes": "No. 5 Schwermut. Sehr langsam, Op. 58，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305406": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 In der Gasse. Gehend, Op. 58"
+      ],
+      "notes": "No. 6 In der Gasse. Gehend, Op. 58，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305407": {
+      "pages": 3,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Vorüber. Sehr langsam, Op. 58"
+      ],
+      "notes": "No. 7 Vorüber. Sehr langsam, Op. 58，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305408": {
+      "pages": 6,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 Serenade. Grazioso, Op. 58"
+      ],
+      "notes": "No. 8 Serenade. Grazioso, Op. 58，共6页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-16T01:58:18+00:00",
+  "approved_publication_ids": [
+    "305401",
+    "305402",
+    "305403",
+    "305404",
+    "305405",
+    "305406",
+    "305407",
+    "305408"
+  ]
+}

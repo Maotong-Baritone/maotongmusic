@@ -16,7 +16,7 @@ BATCH = PublicationBatch(
     batch_id='brahms-op58-low-voice-eight-20260915',
     stage_rel=Path('imports/johannes_brahms/staging/op58-low-voice-singles'),
     work_titles=('8 Lieder and Songs, Op.58',),
-    log_message='新增勃拉姆斯《8 Lieder and Songs, Op. 57》Peters低声部钢琴伴奏单曲8份；标题、速度、德语及编制均已核对。',
+    log_message='新增勃拉姆斯《8 Lieder and Songs, Op. 58》Peters低声部钢琴伴奏单曲8份；标题、速度、德语及编制均已核对。',
     allowed_voice_types=('声乐、钢琴', '低声部', '低声部、钢琴'),
     allowed_categories=('艺术歌曲',),
 )
@@ -107,7 +107,7 @@ def record_inspection(root=workflow.ROOT):
         'proposal_only': True,
         'publication_approved': False,
         'proposed_first_publication_ids': list(BATCH.ids),
-        'source_notes': '实时IMSLP作品页确认Op.58为德语独唱与钢琴作品；所选八份均为Max Friedlaender编辑、Edition Peters出版并标为Public Domain的低声部移调版。',
+        'source_notes': '实时IMSLP作品页确认Op.58为德语独唱与钢琴作品；所选八份均为Max Friedlaender编辑、Edition Peters出版并标为Public Domain的低声部版（No.5保留原调）。',
         'method': '保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看八份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。',
         'rendering_note': '八份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。',
         'metadata_changes': workflow.publication.read_json(stage / 'metadata-corrections.json')['changes'],

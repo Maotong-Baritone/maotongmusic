@@ -54870,13 +54870,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a93b3526-93ee-42b0-9fcf-3715eb3ae7f9",
           "source_references": [
             {
@@ -54884,10 +54884,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "1. Blinde Kuh (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305402",
@@ -54915,13 +54912,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "0ca7e15e-8c37-4f30-8020-4fa89208c86e",
           "source_references": [
             {
@@ -54929,10 +54926,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "2. Während des Regens (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305403",
@@ -54960,13 +54954,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "3f6fcd66-d3b8-4950-889a-1309edf54c9a",
           "source_references": [
             {
@@ -54974,10 +54968,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "3. Die Spröde (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305404",
@@ -55005,13 +54996,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "b810594d-8120-4e3b-9d9a-de160665dc8c",
           "source_references": [
             {
@@ -55019,10 +55010,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "4. O komme, holde Sommernacht verschwiegen (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305405",
@@ -55050,13 +55038,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "ca991753-7105-4ef6-a9a4-0c38a23477e1",
           "source_references": [
             {
@@ -55064,10 +55052,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "5. Schwermut (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305406",
@@ -55095,13 +55080,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "16050d92-3969-4347-bcd8-eab146c92caa",
           "source_references": [
             {
@@ -55109,10 +55094,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "6. In der Gasse (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305407",
@@ -55140,13 +55122,13 @@
           "movement_number": 7,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "72124988-fc55-4981-90e1-281d36359fd1",
           "source_references": [
             {
@@ -55154,10 +55136,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "7. Vorüber (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305408",
@@ -55185,13 +55164,13 @@
           "movement_number": 8,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "b257b9a6-a933-4985-979e-49ee9245fc1e",
           "source_references": [
             {
@@ -55199,10 +55178,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.58_%28Brahms%2C_Johannes%29",
               "description": "8. Serenade (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:58:18+00:00",
-          "publication_batch_id": "brahms-op58-low-voice-eight-20260915",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "110714",
