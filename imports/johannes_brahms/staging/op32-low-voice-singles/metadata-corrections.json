@@ -1,0 +1,74 @@
+{
+  "batch_id": "brahms-op32-low-voice-nine-20260910",
+  "recorded_at": "2026-09-15T05:05:00.245004+00:00",
+  "source_manifest_before_sha256": "66135dd611e3b2721f8ea51f58dff410dbc8f226344a1c2d6ffdc5347ac60805",
+  "source_manifest_after_sha256": "3a04e64d9fca9720ccfe640639e2fb862c5cb76500592589771d82e54fec152d",
+  "staging_manifest_before_sha256": "df6542ef8b2b2f4ebacf347f65dc37669fb103a417cb7371347b373c7c9c35a5",
+  "staging_manifest_after_sha256": "4f88a024ee76507473086c6a8c8242356340a563bd50abbaa6fc7de26bdfdce8",
+  "backup": "backup\\import_metadata\\brahms-op32-low-voice-nine-20260910-20260914_230500_057971",
+  "changes": [
+    {
+      "imslp_id": "58479",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81512",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81869",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81870",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81513",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81871",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81872",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81873",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "81514",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    }
+  ]
+}

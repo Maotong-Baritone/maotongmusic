@@ -52868,13 +52868,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "674c3e99-87c8-482a-8ed3-e0bbc791c419",
           "source_references": [
             {
@@ -52882,10 +52882,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "1. Wie rafft ich mich auf in der Nacht"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81512",
@@ -52913,13 +52910,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "6096acbd-b050-46a6-81a5-78e951f849b2",
           "source_references": [
             {
@@ -52927,10 +52924,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "2. Nicht mehr zu dir zu gehen"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81869",
@@ -52958,13 +52952,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "3a6696be-6561-43eb-821a-7c0421ddf60b",
           "source_references": [
             {
@@ -52972,10 +52966,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "3. Ich schleich umher"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81870",
@@ -53003,13 +52994,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "90c3877c-4599-41d8-9819-67b7cce63e26",
           "source_references": [
             {
@@ -53017,10 +53008,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "4. Der Strom, der neben mir verrauschte"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81513",
@@ -53048,13 +53036,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "2eaf82d7-06c6-4072-99e1-d2d8b113645b",
           "source_references": [
             {
@@ -53062,10 +53050,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "5. Wehe, so willst du mich wieder"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81871",
@@ -53093,13 +53078,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "650d96de-99ff-4d7e-9c7a-337f9f8c1a66",
           "source_references": [
             {
@@ -53107,10 +53092,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "6. Du sprichst, dass ich mich täuschte"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81872",
@@ -53138,13 +53120,13 @@
           "movement_number": 7,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "21c9e783-890a-4531-8d26-93b8122a9323",
           "source_references": [
             {
@@ -53152,10 +53134,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "7. Bitteres zu sagen denkst du"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81873",
@@ -53183,13 +53162,13 @@
           "movement_number": 8,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "557f6371-60f4-456c-8dc9-9cc731819171",
           "source_references": [
             {
@@ -53197,10 +53176,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "8. So stehn wir, ich und meine Weide"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "81514",
@@ -53228,13 +53204,13 @@
           "movement_number": 9,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a170693b-eb94-4d53-82f8-1788c275b073",
           "source_references": [
             {
@@ -53242,10 +53218,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.32_%28Brahms%2C_Johannes%29",
               "description": "9. Wie bist du, meine Königin"
             }
-          ],
-          "published_at": "2026-09-15T05:06:22+00:00",
-          "publication_batch_id": "brahms-op32-low-voice-nine-20260910",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "110489",
@@ -53957,13 +53930,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "de84e956-c53c-4de0-9dcb-d452e728e892",
           "source_references": [
             {
@@ -53971,10 +53944,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "1. Von waldbekränzter Höhe (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305411",
@@ -54002,13 +53972,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "08cd694b-0cb9-4939-8a2f-e800b3a445fe",
           "source_references": [
             {
@@ -54016,10 +53986,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "2. Wenn du nur zuweilen lächelst (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305286",
@@ -54047,13 +54014,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a717aa20-8293-4125-8f88-0797ce3a2420",
           "source_references": [
             {
@@ -54061,10 +54028,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "3. Es träumte mir, ich sei dir teuer (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305287",
@@ -54092,13 +54056,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "064b9a51-4330-444c-84e2-8b4cb28a372f",
           "source_references": [
             {
@@ -54106,10 +54070,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "4. Ach, wende diesen Blick (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305288",
@@ -54137,13 +54098,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "f2bc89e0-9116-4996-a942-b03823c4f082",
           "source_references": [
             {
@@ -54151,10 +54112,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "5. In meiner Nächte Sehnen (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305289",
@@ -54182,13 +54140,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "66edbec7-cd43-488e-8725-a872fd288f64",
           "source_references": [
             {
@@ -54196,10 +54154,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "6. Strahlt zuweilen auch ein mildes Licht (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305290",
@@ -54227,13 +54182,13 @@
           "movement_number": 7,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "8948373d-4b98-43a0-baeb-22a80aef81bd",
           "source_references": [
             {
@@ -54241,10 +54196,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "7. Die Schnur, die Perl an Perle (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "305412",
@@ -54272,13 +54224,13 @@
           "movement_number": 8,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "edca32cc-c71d-45ac-a157-799d981658f7",
           "source_references": [
             {
@@ -54286,10 +54238,7 @@
               "source_url": "https://imslp.org/wiki/8_Lieder_and_Songs%2C_Op.57_%28Brahms%2C_Johannes%29",
               "description": "8. Unbewegte laue Luft (扫描)"
             }
-          ],
-          "published_at": "2026-09-16T01:14:58+00:00",
-          "publication_batch_id": "brahms-op57-low-voice-eight-20260914",
-          "publication_status": "catalog_and_storage_published"
+          ]
         }
       ]
     },

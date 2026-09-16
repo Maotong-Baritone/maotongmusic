@@ -115,8 +115,8 @@
 本节依据实际目录和三十四份批次回执更新；接手时继续核对是否已有新批次。
 
 - 网站：[猫瞳音乐乐谱库](https://maotong.me/maotongmusic/)，PDF仍使用 `https://scores.maotong.me`。
-- 本地正式目录 3,647 条；勃拉姆斯本轮批准 237 份，线上回执确认 237 份。最近一批状态 `verified_live`。
-- 预审161个作品页、3,486个去重候选；待审 2,109、排除 1,138、暂缓 2、批准 237。待审数包含重复版本，不等于待上传文件数。
+- 本地正式目录 3,656 条；勃拉姆斯本轮批准 246 份，线上回执确认 246 份。最近一批状态 `verified_live`。
+- 预审161个作品页、3,486个去重候选；待审 2,100、排除 1,138、暂缓 2、批准 246。待审数包含重复版本，不等于待上传文件数。
 - 原始submissions.db保留1条原投稿；旧目录、旧动态、旧存储记录及原投稿均已与批次备份核对。
 - 哈恩已有此前成果，不从头重发，不编造累计数量。
 
@@ -156,10 +156,11 @@
 | Op.46与Op.47高声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op46-op47-high-voice-singles/publication.json) |
 | Op.49与Op.84高声部单曲 | 10 | [verified_live](imports/johannes_brahms/staging/op49-op84-high-voice-singles/publication.json) |
 | Op.97与Op.121高声部单曲 | 10 | [verified_live](imports/johannes_brahms/staging/op97-op121-high-voice-singles/publication.json) |
+| Op.32低声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op32-low-voice-singles/publication.json) |
 
-最近第三十四批一次新增10份、共30页Op.97与Op.121的Peters高声部独立歌曲谱。全部页面已自动解析、渲染并通览接触表，首尾、标题、速度、德语和高声部、钢琴编制均已核对；Op.97 No.6按来源及谱面记为降A大调。公开PDF哈希、简洁详情、预览和首页动态已验证。Op.116另3份完整版本仍仅暂存。
+最近第三十五批一次新增9份、共25页Op.32的Peters低声部独立歌曲谱。全部页面已自动解析、渲染并通览接触表，首尾、标题、速度、德语和低声部、钢琴编制均已核对；公开PDF哈希、简洁详情、预览和首页动态已验证。Op.116另3份完整版本仍仅暂存。
 
-最近部署提交 `cd86f5b9897a6ddb2d8bba1a1bc6061bab23cecb`，Pages run `34437144267`。最近批次线上时间以回执为准。183项测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
+最近部署提交 `3cddac0cfb9da85ca72efa95230b50d966d734f0`，Pages run `34931479617`。最近批次线上时间以回执为准。185项测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
 
 ### 断点与下一步
 

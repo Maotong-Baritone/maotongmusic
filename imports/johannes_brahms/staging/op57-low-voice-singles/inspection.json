@@ -1,0 +1,195 @@
+{
+  "label": "8 Lieder and Songs, Op.57：Peters低声部单曲",
+  "checked_on": "2026-09-15",
+  "recorded_at": "2026-09-16T01:13:42.556936+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "305410",
+    "305411",
+    "305286",
+    "305287",
+    "305288",
+    "305289",
+    "305290",
+    "305412"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.57为德语独唱与钢琴作品；所选八份均为Max Friedlaender编辑、Edition Peters出版并标为Public Domain的低声部移调版。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看八份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。",
+  "rendering_note": "八份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。",
+  "metadata_changes": [
+    {
+      "imslp_id": "305410",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305411",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305286",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305287",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305288",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305289",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305290",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "305412",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    }
+  ],
+  "files": {
+    "305410": {
+      "pages": 6,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Von waldbekränzter Höhe. Lebhaft, Op. 57"
+      ],
+      "notes": "No. 1 Von waldbekränzter Höhe. Lebhaft, Op. 57，共6页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305411": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Wenn du nur zuweilen lächelst. Poco andante, Op. 57"
+      ],
+      "notes": "No. 2 Wenn du nur zuweilen lächelst. Poco andante, Op. 57，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305286": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Es träumte mir. Sehr langsam, Op. 57"
+      ],
+      "notes": "No. 3 Es träumte mir. Sehr langsam, Op. 57，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305287": {
+      "pages": 3,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Ach, wende diesen Blick. Ziemlich langsam, Op. 57"
+      ],
+      "notes": "No. 4 Ach, wende diesen Blick. Ziemlich langsam, Op. 57，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305288": {
+      "pages": 4,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 In meiner Nächte Sehnen. Agitato, Op. 57"
+      ],
+      "notes": "No. 5 In meiner Nächte Sehnen. Agitato, Op. 57，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305289": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Strahlt zuweilen auch ein mildes Licht. Sanft bewegt, Op. 57"
+      ],
+      "notes": "No. 6 Strahlt zuweilen auch ein mildes Licht. Sanft bewegt, Op. 57，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305290": {
+      "pages": 4,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Die Schnur, die Perl an Perle. Etwas langsam, Op. 57"
+      ],
+      "notes": "No. 7 Die Schnur, die Perl an Perle. Etwas langsam, Op. 57，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "305412": {
+      "pages": 5,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 Unbewegte laue Luft. Langsam, Op. 57"
+      ],
+      "notes": "No. 8 Unbewegte laue Luft. Langsam, Op. 57，共5页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-16T01:14:58+00:00",
+  "approved_publication_ids": [
+    "305410",
+    "305411",
+    "305286",
+    "305287",
+    "305288",
+    "305289",
+    "305290",
+    "305412"
+  ]
+}

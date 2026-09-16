@@ -1,4 +1,4 @@
-"""Bounded nine-file batch for Brahms Op.32 Peters low-voice songs."""
+"""Bounded eight-file batch for Brahms Op.57 Peters low-voice songs."""
 import argparse
 import hashlib
 import json
@@ -10,13 +10,13 @@ from tools import brahms_late_piano_batch as workflow
 from tools.publish_brahms_op116 import PublicationBatch
 
 
-IDS = ('58479', '81512', '81869', '81870', '81513', '81871', '81872', '81873', '81514')
+IDS = ('305410', '305411', '305286', '305287', '305288', '305289', '305290', '305412')
 BATCH = PublicationBatch(
     ids=IDS,
-    batch_id='brahms-op32-low-voice-nine-20260910',
-    stage_rel=Path('imports/johannes_brahms/staging/op32-low-voice-singles'),
-    work_titles=('9 Lieder and Songs, Op.32',),
-    log_message='新增勃拉姆斯《9 Lieder and Songs, Op. 32》Peters低声部独立歌曲谱9份；标题、速度、德语及低声部与钢琴编制均已核对。',
+    batch_id='brahms-op57-low-voice-eight-20260914',
+    stage_rel=Path('imports/johannes_brahms/staging/op57-low-voice-singles'),
+    work_titles=('8 Lieder and Songs, Op.57',),
+    log_message='新增勃拉姆斯《8 Lieder and Songs, Op. 57》Peters低声部钢琴伴奏单曲8份；标题、速度、德语及编制均已核对。',
     allowed_voice_types=('声乐、钢琴', '低声部', '低声部、钢琴'),
     allowed_categories=('艺术歌曲',),
 )
@@ -40,18 +40,18 @@ def apply_metadata_corrections(root=workflow.ROOT):
     }
     stage_by_id = {item['imslp_id']: item for item in stage['files']}
     if set(source_by_id) != set(IDS) or set(stage_by_id) != set(IDS):
-        raise ValueError('Op.32 low-voice correction scope changed')
+        raise ValueError('Op.57 low-voice correction scope changed')
     for file_id in IDS:
         source_item = source_by_id[file_id]
         stage_item = stage_by_id[file_id]
         if (source_item['category'] != '艺术歌曲' or source_item['sub_category'] != ''
-                or source_item['voice_types'] != '声乐、钢琴'
+                or source_item['voice_types'] != '低声部'
                 or source_item['language_cn'] != '德语'):
-            raise ValueError(f'Op.32 source metadata changed concurrently: {file_id}')
+            raise ValueError(f'Op.57 source metadata changed concurrently: {file_id}')
         if (stage_item['category'] != '艺术歌曲' or stage_item['sub_category'] != ''
-                or stage_item['voice_types'] != '声乐、钢琴'
+                or stage_item['voice_types'] != '低声部'
                 or stage_item['language'] != '德语'):
-            raise ValueError(f'Op.32 staged metadata changed concurrently: {file_id}')
+            raise ValueError(f'Op.57 staged metadata changed concurrently: {file_id}')
     stamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     backup = root / 'backup' / 'import_metadata' / f'{BATCH.batch_id}-{stamp}'
     backup.mkdir(parents=True, exist_ok=False)
@@ -62,9 +62,9 @@ def apply_metadata_corrections(root=workflow.ROOT):
         source_by_id[file_id]['voice_types'] = '低声部、钢琴'
         stage_by_id[file_id]['voice_types'] = '低声部、钢琴'
         changes.append({
-            'imslp_id': file_id, 'field': 'voice_types', 'before': '声乐、钢琴',
+            'imslp_id': file_id, 'field': 'voice_types', 'before': '低声部',
             'after': '低声部、钢琴',
-            'evidence': 'The live IMSLP page groups all nine selected Peters files under Low voice; each rendered score has one vocal line with piano.',
+            'evidence': 'The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano.',
         })
     source_after = workflow.publication.json_bytes(source)
     stage_after = workflow.publication.json_bytes(stage)
@@ -90,7 +90,7 @@ def record_inspection(root=workflow.ROOT):
     manifest = workflow.publication.read_json(manifest_path)
     by_id = {item['imslp_id']: item for item in manifest['files']}
     if set(by_id) != set(BATCH.ids):
-        raise ValueError('Staged Op.32 low-voice scope changed before inspection record')
+        raise ValueError('Staged Op.57 low-voice scope changed before inspection record')
     titles = {file_id: by_id[file_id]['title'] for file_id in IDS}
     for file_id in IDS:
         by_id[file_id].update(
@@ -101,22 +101,22 @@ def record_inspection(root=workflow.ROOT):
         )
     workflow.publication.atomic_bytes(manifest_path, workflow.publication.json_bytes(manifest))
     inspection = {
-        'label': '9 Lieder and Songs, Op.32：Peters低声部独立歌曲',
+        'label': '8 Lieder and Songs, Op.57：Peters低声部单曲',
         'checked_on': datetime.now().astimezone().date().isoformat(),
         'recorded_at': datetime.now(timezone.utc).isoformat(),
         'proposal_only': True,
         'publication_approved': False,
         'proposed_first_publication_ids': list(BATCH.ids),
-        'source_notes': '实时IMSLP作品页确认Op.32为德语声乐与钢琴作品；所选九份均为Max Friedlaender编订、Edition Peters出版并标记Public Domain的低声部独立歌曲。高声部、完整谱、手稿及改编不在本批。',
-        'method': '保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览九份完整接触表并重点放大核对首尾、标题、速度、德语、编制和异常页。',
-        'rendering_note': '九份普通清晰单曲的全部页面均已渲染；页序连续、标题和歌词可辨、末页完整结束。',
+        'source_notes': '实时IMSLP作品页确认Op.57为德语独唱与钢琴作品；所选八份均为Max Friedlaender编辑、Edition Peters出版并标为Public Domain的低声部移调版。',
+        'method': '保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看八份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。',
+        'rendering_note': '八份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。',
         'metadata_changes': workflow.publication.read_json(stage / 'metadata-corrections.json')['changes'],
         'files': {
             file_id: {
                 'pages': by_id[file_id]['page_count'], 'key': '',
                 'number': by_id[file_id]['movement_number'],
                 'movement_start_pdf_pages': [1], 'titles': [titles[file_id]],
-                'notes': f'{titles[file_id]}；共{by_id[file_id]["page_count"]}页；完整接触表及首尾页检查通过。',
+                'notes': f'{titles[file_id]}，共{by_id[file_id]["page_count"]}页；接触表及首尾页核对通过。',
                 'publication_note': '',
             } for file_id in IDS
         },
