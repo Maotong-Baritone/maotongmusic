@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-09-15 19:14",
+        "type": "add",
+        "msg": "新增勃拉姆斯《8 Lieder and Songs, Op. 57》Peters低声部钢琴伴奏单曲8份；标题、速度、德语及编制均已核对。",
+        "batch_id": "brahms-op57-low-voice-eight-20260914",
+        "count": 8
+    },
+    {
         "date": "2026-09-14 23:06",
         "type": "add",
         "msg": "新增勃拉姆斯《9 Lieder and Songs, Op. 32》Peters低声部独立歌曲谱9份；标题、速度、德语及低声部与钢琴编制均已核对。",

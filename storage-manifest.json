@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3656,
-  "unique_content_count": 3637,
+  "entry_count": 3664,
+  "unique_content_count": 3645,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4451103529,
+  "total_size": 4455025539,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -653,6 +653,13 @@
       "sha256": "7899ef8f908aa3d7a643e70a6db77053bb33a719611d1e63d59fb69a4a60545e"
     },
     {
+      "public_id": "064b9a51-4330-444c-84e2-8b4cb28a372f",
+      "source_path": "scores/艺术歌曲/064b9a51-4330-444c-84e2-8b4cb28a372f.pdf",
+      "storage_key": "scores/06/064b9a51-4330-444c-84e2-8b4cb28a372f.pdf",
+      "file_size": 376154,
+      "sha256": "87cb4b7fdbc7727f9b51f494e84de88a535609ca0d26d6414e306f9d1ebd3173"
+    },
+    {
       "public_id": "064c5900-29a2-507e-8bf5-ab8b3da93de2",
       "source_path": "scores/声乐作品/艺术歌曲/1766372576808_Fruhlingslied_-_D398_Medium_Original.pdf",
       "storage_key": "scores/06/064c5900-29a2-507e-8bf5-ab8b3da93de2.pdf",
@@ -889,6 +896,13 @@
       "storage_key": "scores/08/08c52ef6-2be1-5548-ba86-ca7d845756eb.pdf",
       "file_size": 1280755,
       "sha256": "bc8f8dcc78595537aaa22b39d033df60fee73ea320372326613dfd2385f416ce"
+    },
+    {
+      "public_id": "08cd694b-0cb9-4939-8a2f-e800b3a445fe",
+      "source_path": "scores/艺术歌曲/08cd694b-0cb9-4939-8a2f-e800b3a445fe.pdf",
+      "storage_key": "scores/08/08cd694b-0cb9-4939-8a2f-e800b3a445fe.pdf",
+      "file_size": 324679,
+      "sha256": "7a21edfcda3cb8ba7ff47703504a4e58e029f07db1ca2dd50c902ffe2b2e6c46"
     },
     {
       "public_id": "08d9bf03-b19e-56de-be1a-ae76e72f9166",
@@ -10264,6 +10278,13 @@
       "sha256": "81da3f9011e64defeded3ba70e164a1d76aa37c73c115741d4ba67e0aa60e9f1"
     },
     {
+      "public_id": "66edbec7-cd43-488e-8725-a872fd288f64",
+      "source_path": "scores/艺术歌曲/66edbec7-cd43-488e-8725-a872fd288f64.pdf",
+      "storage_key": "scores/66/66edbec7-cd43-488e-8725-a872fd288f64.pdf",
+      "file_size": 265242,
+      "sha256": "df81ce8ae91971d6531ff233ed03ac53f2c0b52496605944e64f737b56a1d457"
+    },
+    {
       "public_id": "66efbbeb-7221-593c-ab7b-44979d2ba0d9",
       "source_path": "scores/歌剧咏叹调/1766012385289_Non_siate_ritrosi.pdf",
       "storage_key": "scores/66/66efbbeb-7221-593c-ab7b-44979d2ba0d9.pdf",
@@ -13547,6 +13568,13 @@
       "sha256": "28521f73fa9ba9445612f47f9d4d2d4be275ca6f1398d8d6f7b60e6fec1828e0"
     },
     {
+      "public_id": "8948373d-4b98-43a0-baeb-22a80aef81bd",
+      "source_path": "scores/艺术歌曲/8948373d-4b98-43a0-baeb-22a80aef81bd.pdf",
+      "storage_key": "scores/89/8948373d-4b98-43a0-baeb-22a80aef81bd.pdf",
+      "file_size": 505619,
+      "sha256": "bf2688cc6df4580167ce0f33058b39884598e5740fe70b2d534f216dacfd8d06"
+    },
+    {
       "public_id": "894df34c-ae6e-41cd-9e38-5050351f12f2",
       "source_path": "scores/器乐分谱/894df34c-ae6e-41cd-9e38-5050351f12f2.pdf",
       "storage_key": "scores/89/894df34c-ae6e-41cd-9e38-5050351f12f2.pdf",
@@ -16541,6 +16569,13 @@
       "storage_key": "scores/a7/a712d65f-15d7-4625-abdc-8a07c8390393.pdf",
       "file_size": 188156,
       "sha256": "c5ed768d630e242660f197ef1978bdee05b60b1c471ebed1e49204f223cc3205"
+    },
+    {
+      "public_id": "a717aa20-8293-4125-8f88-0797ce3a2420",
+      "source_path": "scores/艺术歌曲/a717aa20-8293-4125-8f88-0797ce3a2420.pdf",
+      "storage_key": "scores/a7/a717aa20-8293-4125-8f88-0797ce3a2420.pdf",
+      "file_size": 310855,
+      "sha256": "7cbb53a39d4c5af65ab9c01d0def4bb4d317a79a3eeab6a152259467b4bb813a"
     },
     {
       "public_id": "a71ba37f-882e-4022-9fea-7aac6a65971a",
@@ -22423,6 +22458,13 @@
       "sha256": "4cf61f6b8d6036ba41e2d89dbe06a4c03faa20c0fa27f02cdf98d24d0c7d81cd"
     },
     {
+      "public_id": "de84e956-c53c-4de0-9dcb-d452e728e892",
+      "source_path": "scores/艺术歌曲/de84e956-c53c-4de0-9dcb-d452e728e892.pdf",
+      "storage_key": "scores/de/de84e956-c53c-4de0-9dcb-d452e728e892.pdf",
+      "file_size": 876501,
+      "sha256": "e4e92631f4d78bf1f2f5eeb767d54259f41ebb1fe8feda47a086afdbadcf644a"
+    },
+    {
       "public_id": "de911d4c-6b69-5df8-9bbd-b5ca1a7bff67",
       "source_path": "scores/歌剧咏叹调/1766097940780_O_lusinghiero_amor.pdf",
       "storage_key": "scores/de/de911d4c-6b69-5df8-9bbd-b5ca1a7bff67.pdf",
@@ -23942,6 +23984,13 @@
       "sha256": "14e04457e45199d3a55fc9d238b987f54bab1303c6eb5941f0610ba7310aca5e"
     },
     {
+      "public_id": "edca32cc-c71d-45ac-a157-799d981658f7",
+      "source_path": "scores/艺术歌曲/edca32cc-c71d-45ac-a157-799d981658f7.pdf",
+      "storage_key": "scores/ed/edca32cc-c71d-45ac-a157-799d981658f7.pdf",
+      "file_size": 772527,
+      "sha256": "b47c9b9003273d444e815944530da96c78dd55a1e3a118d2329f97d7a5fa11b1"
+    },
+    {
       "public_id": "edd265ef-5065-5549-bc27-143086612b31",
       "source_path": "scores/歌剧咏叹调/1766007752206_In_quella_sola_in_quella_candida_mano_e_bella.pdf",
       "storage_key": "scores/ed/edd265ef-5065-5549-bc27-143086612b31.pdf",
@@ -24430,6 +24479,13 @@
       "storage_key": "scores/f2/f2bb8150-df52-5d0d-8d6d-56833607c4cb.pdf",
       "file_size": 628184,
       "sha256": "ccba9507bf2aa2f326d310b625c53809b4ad561ef0e695d526a479919cb53d9f"
+    },
+    {
+      "public_id": "f2bc89e0-9116-4996-a942-b03823c4f082",
+      "source_path": "scores/艺术歌曲/f2bc89e0-9116-4996-a942-b03823c4f082.pdf",
+      "storage_key": "scores/f2/f2bc89e0-9116-4996-a942-b03823c4f082.pdf",
+      "file_size": 490433,
+      "sha256": "393bbba75f7345dbbb574a641468302b9c44f63cce90d2328eb4dcb5bb68f717"
     },
     {
       "public_id": "f2c6e2cb-6de7-52cc-a761-3ef9b911b16f",
