@@ -13,9 +13,9 @@
   "approved_count": 8,
   "storage_verified_count": 8,
   "local_catalog_count": 8,
-  "website_published_count": 0,
+  "website_published_count": 8,
   "catalog_updated_at": "2026-09-16T01:14:58+00:00",
-  "website_status": "awaiting_deployment",
+  "website_status": "verified_live",
   "website_url": "https://maotong.me/maotongmusic/",
   "backup_directory": "backup\\import_publications\\brahms-op57-low-voice-eight-20260914-20260915_191448_992391",
   "files": [
@@ -75,5 +75,17 @@
       "storage_key": "scores/ed/edca32cc-c71d-45ac-a157-799d981658f7.pdf",
       "sha256": "b47c9b9003273d444e815944530da96c78dd55a1e3a118d2329f97d7a5fa11b1"
     }
-  ]
+  ],
+  "commit_sha": "882899c",
+  "pages_run_id": 35043456982,
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/35043456982",
+  "pages_status": "success",
+  "pages_commit_sha": "4cc206582d6baf33bb689a7cb6d8dc81b49bbf84",
+  "verified_live_at": "2026-09-16T01:27:13.292466+00:00",
+  "live_catalog_count": 3664,
+  "live_catalog_exact": true,
+  "live_logs_exact": true,
+  "live_hashes_verified_count": 8,
+  "live_detail_verified": true,
+  "live_preview_verified": true
 }
