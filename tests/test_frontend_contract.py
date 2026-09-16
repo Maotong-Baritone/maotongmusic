@@ -12,6 +12,10 @@ class FrontendContractTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.index_html = (ROOT / "index.html").read_text(encoding="utf-8")
+        cls.resources_html = (ROOT / "resources.html").read_text(encoding="utf-8")
+        cls.contact_html = (ROOT / "contact.html").read_text(encoding="utf-8")
+        cls.resources_js = (ROOT / "js" / "resources.js").read_text(encoding="utf-8")
+        cls.resources_data = (ROOT / "js" / "resources-data.js").read_text(encoding="utf-8")
         cls.app_js = (ROOT / "js" / "app.js").read_text(encoding="utf-8")
         cls.styles = (ROOT / "css" / "style.css").read_text(encoding="utf-8")
         cls.site_config = (ROOT / "site-config.json").read_text(encoding="utf-8")
@@ -49,6 +53,16 @@ class FrontendContractTest(unittest.TestCase):
 
     def test_no_lyrics_is_not_offered_as_a_language_filter(self):
         self.assertIn("l && l !== '无歌词'", self.app_js)
+
+    def test_professional_resources_have_a_dedicated_page(self):
+        self.assertIn('href="resources.html"', self.index_html)
+        self.assertIn('href="resources.html"', self.contact_html)
+        self.assertNotIn('🌍 常用链接', self.index_html)
+        self.assertIn('id="resourceSearch"', self.resources_html)
+        self.assertIn('id="resourceFilters"', self.resources_html)
+        self.assertIn('target="_blank" rel="noopener noreferrer"', self.resources_js)
+        self.assertGreaterEqual(self.resources_data.count("url: 'https://"), 21)
+        self.assertIn("url: 'https://theoperadatabase.com/'", self.resources_data)
 
     def test_catalog_uses_only_supported_language_labels(self):
         deprecated = {"无歌词", "俄语/法语", "俄语/德语", "法语/俄语", "法语/英语"}

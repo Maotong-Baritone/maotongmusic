@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="为古典音乐学习者和专业人士整理的乐谱、声乐、歌剧、音乐学、档案、录音与职业资源。">
+    <title>音乐专业资源 | 征集网站名字中</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=20260915a" rel="stylesheet">
+</head>
+<body class="resources-page">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1 fw-bold font-serif fs-3" href="index.html">🎹 征集网站名字中</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#resourceNavbar" aria-controls="resourceNavbar" aria-expanded="false" aria-label="展开导航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="resourceNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">🏠 乐谱库</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-warning" aria-current="page" href="resources.html">🌍 音乐专业资源</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">👋 联系我</a></li>
+                    <li class="nav-item"><button class="nav-link btn btn-sm border-0 px-3 text-start" id="resourceThemeToggle" type="button" aria-label="切换深色模式">🌙</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="resource-hero">
+        <div class="container">
+            <p class="resource-eyebrow mb-3">古典音乐学习与从业导航</p>
+            <h1 class="font-serif display-5 fw-bold mb-3">音乐专业资源</h1>
+            <p class="resource-lead mb-0">找乐谱、查歌词与 IPA、研究歌剧和音乐史，也可以查找 Audition、比赛与职业机会。每个入口都说明“能做什么”以及“适合谁”。</p>
+        </div>
+    </header>
+
+    <main class="container resource-main">
+        <section class="resource-toolbar" aria-label="资源搜索和筛选">
+            <label class="resource-search" for="resourceSearch">
+                <span aria-hidden="true">🔍</span>
+                <input id="resourceSearch" type="search" placeholder="搜索网站、用途或标签…" autocomplete="off">
+            </label>
+            <div class="resource-filters" id="resourceFilters" role="group" aria-label="按类别筛选"></div>
+        </section>
+
+        <div class="resource-results-header">
+            <p id="resourceCount" class="mb-0" aria-live="polite"></p>
+            <button class="resource-clear" id="resourceClear" type="button" hidden>清除筛选</button>
+        </div>
+        <section class="resource-grid" id="resourceGrid" aria-label="音乐专业资源列表"></section>
+        <section class="resource-empty" id="resourceEmpty" hidden>
+            <div class="resource-empty-icon" aria-hidden="true">🎼</div>
+            <h2 class="h5">没有找到匹配的资源</h2>
+            <p class="mb-0">试试其他关键词，或清除当前类别筛选。</p>
+        </section>
+        <p class="resource-disclaimer">这些网站由第三方运营，内容、费用和访问方式可能变化。外部链接将在新标签页中打开。</p>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-2">为音乐学习者与专业人士整理的实用入口</p>
+            <a class="footer-link" href="index.html">返回乐谱库</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/resources-data.js?v=20260915a"></script>
+    <script src="js/resources.js?v=20260915a"></script>
+</body>
+</html>
