@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3664,
-  "unique_content_count": 3645,
+  "entry_count": 3672,
+  "unique_content_count": 3653,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4455025539,
+  "total_size": 4458472778,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1262,6 +1262,13 @@
       "sha256": "3295ab7c2781a6ca0f6cc2a3a1add1990b6ce715d9a05c09c527880edbdabf47"
     },
     {
+      "public_id": "0ca7e15e-8c37-4f30-8020-4fa89208c86e",
+      "source_path": "scores/艺术歌曲/0ca7e15e-8c37-4f30-8020-4fa89208c86e.pdf",
+      "storage_key": "scores/0c/0ca7e15e-8c37-4f30-8020-4fa89208c86e.pdf",
+      "file_size": 472179,
+      "sha256": "eb2aeed91744aee574b0001819473a2712db26253c50b3b55bd981f343a1643c"
+    },
+    {
       "public_id": "0ceaedda-9411-55ae-bfbb-3eaa1a1abca6",
       "source_path": "scores/歌剧咏叹调/1766007735745_Si_me_caro_imitar_quel_bel_fiore.pdf",
       "storage_key": "scores/0c/0ceaedda-9411-55ae-bfbb-3eaa1a1abca6.pdf",
@@ -2352,6 +2359,13 @@
       "storage_key": "scores/16/16022563-9803-51ee-969e-5c451d9ae11c.pdf",
       "file_size": 424134,
       "sha256": "5d55c7c9de16ed4bd2843fa22fcbe2601c6caf8ddb89eaa66f8be1489460b8a3"
+    },
+    {
+      "public_id": "16050d92-3969-4347-bcd8-eab146c92caa",
+      "source_path": "scores/艺术歌曲/16050d92-3969-4347-bcd8-eab146c92caa.pdf",
+      "storage_key": "scores/16/16050d92-3969-4347-bcd8-eab146c92caa.pdf",
+      "file_size": 262406,
+      "sha256": "0e64f9d3e8221ac7fb3f34791d9dbd679b2cf6f188609f5442125a6050465c2b"
     },
     {
       "public_id": "161282c1-bf54-55cf-ae4b-e2013e4cd691",
@@ -6293,6 +6307,13 @@
       "storage_key": "scores/3f/3f58f973-4e9c-5875-9c13-530cd84e5531.pdf",
       "file_size": 381433,
       "sha256": "4405972695c733ee3f52a9e0d964bf48d6315800d32b29d713418f440a8a6d6a"
+    },
+    {
+      "public_id": "3f6fcd66-d3b8-4950-889a-1309edf54c9a",
+      "source_path": "scores/艺术歌曲/3f6fcd66-d3b8-4950-889a-1309edf54c9a.pdf",
+      "storage_key": "scores/3f/3f6fcd66-d3b8-4950-889a-1309edf54c9a.pdf",
+      "file_size": 402005,
+      "sha256": "713a3779fd441676eaeda2dd028db5c53750bc428dfb6b005bac296ed7c780f0"
     },
     {
       "public_id": "3f886176-4cda-5006-8035-3340076d65f2",
@@ -11431,6 +11452,13 @@
       "storage_key": "scores/72/720e1888-dfd0-511a-aba8-2d6f261eb193.pdf",
       "file_size": 565433,
       "sha256": "f7268ff81bfb3d1898a803f48933bdbbd39ff91ddf7df8ba7517410ac6f0b4ed"
+    },
+    {
+      "public_id": "72124988-fc55-4981-90e1-281d36359fd1",
+      "source_path": "scores/艺术歌曲/72124988-fc55-4981-90e1-281d36359fd1.pdf",
+      "storage_key": "scores/72/72124988-fc55-4981-90e1-281d36359fd1.pdf",
+      "file_size": 356905,
+      "sha256": "25458bdfe9aa4cda84d75f0a0d190f38b045a135da29a288e8bbe896792a121a"
     },
     {
       "public_id": "72146146-ebf0-480c-9890-b001134a03bb",
@@ -16760,6 +16788,13 @@
       "sha256": "362db67a6840dc83c54bb4d64a051a2e897ac7ee35477ea6d7f19d934ac47e3a"
     },
     {
+      "public_id": "a93b3526-93ee-42b0-9fcf-3715eb3ae7f9",
+      "source_path": "scores/艺术歌曲/a93b3526-93ee-42b0-9fcf-3715eb3ae7f9.pdf",
+      "storage_key": "scores/a9/a93b3526-93ee-42b0-9fcf-3715eb3ae7f9.pdf",
+      "file_size": 514317,
+      "sha256": "5be9f60ddc3859b93830a770312c07e5099c0666b550b5e78c3fa1a7a2cb2ecb"
+    },
+    {
       "public_id": "a940396a-9176-5915-85bb-968e04a61356",
       "source_path": "scores/宗教声乐作品/1765920397.pdf",
       "storage_key": "scores/a9/a940396a-9176-5915-85bb-968e04a61356.pdf",
@@ -17817,6 +17852,13 @@
       "sha256": "db20c265d2e592091d82006acc431f51a9095547cd2a4f372969dbd7502eaced"
     },
     {
+      "public_id": "b257b9a6-a933-4985-979e-49ee9245fc1e",
+      "source_path": "scores/艺术歌曲/b257b9a6-a933-4985-979e-49ee9245fc1e.pdf",
+      "storage_key": "scores/b2/b257b9a6-a933-4985-979e-49ee9245fc1e.pdf",
+      "file_size": 822835,
+      "sha256": "9ce6f0f480e246a60e4a4b41342efdd48b758a8df05e08a729094fcfd51b4700"
+    },
+    {
       "public_id": "b268fd74-1324-5005-9b6b-c0aaa6363ab4",
       "source_path": "scores/歌剧咏叹调/1766294204063_Quel_nouveau_ciel_pare_ces_lieux.pdf",
       "storage_key": "scores/b2/b268fd74-1324-5005-9b6b-c0aaa6363ab4.pdf",
@@ -18382,6 +18424,13 @@
       "storage_key": "scores/b7/b7e39b06-f8b6-54d2-b509-20b7629b1d16.pdf",
       "file_size": 249725,
       "sha256": "ad2f9a5076bbbcfcd1f8bce9b2ab75058ee21f753b7664388be586d8881fe9c8"
+    },
+    {
+      "public_id": "b810594d-8120-4e3b-9d9a-de160665dc8c",
+      "source_path": "scores/艺术歌曲/b810594d-8120-4e3b-9d9a-de160665dc8c.pdf",
+      "storage_key": "scores/b8/b810594d-8120-4e3b-9d9a-de160665dc8c.pdf",
+      "file_size": 371212,
+      "sha256": "df7a218366368e51723ab4afde4ca22821f0da1bb0fa16b0624ea657499d3969"
     },
     {
       "public_id": "b81146f9-6ddc-5135-b322-5783277065bb",
@@ -20426,6 +20475,13 @@
       "storage_key": "scores/ca/ca959033-8f3b-5ac7-83ef-47eec6f23920.pdf",
       "file_size": 1029902,
       "sha256": "5ab36aac66c17dee646b9ca2bf3737149603810881706d4d47bf9b4c56e8bc3b"
+    },
+    {
+      "public_id": "ca991753-7105-4ef6-a9a4-0c38a23477e1",
+      "source_path": "scores/艺术歌曲/ca991753-7105-4ef6-a9a4-0c38a23477e1.pdf",
+      "storage_key": "scores/ca/ca991753-7105-4ef6-a9a4-0c38a23477e1.pdf",
+      "file_size": 245380,
+      "sha256": "71b88eb4e277061bb2219ac29e5059d7d7906a65cb64386ed7333693ba47f0c8"
     },
     {
       "public_id": "caa91414-67e0-42d7-921a-32956e9e952e",
