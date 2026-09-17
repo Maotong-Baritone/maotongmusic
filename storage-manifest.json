@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3672,
-  "unique_content_count": 3653,
+  "entry_count": 3671,
+  "unique_content_count": 3652,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4458472778,
+  "total_size": 4359327527,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -14000,13 +14000,6 @@
       "storage_key": "scores/8c/8cf0314a-93a7-5720-a813-1ccad7dda8a0.pdf",
       "file_size": 642022,
       "sha256": "845aa1d78050dc30fed45d3cd8226c904771f196eadbedc73e9c544994f45765"
-    },
-    {
-      "public_id": "8cf879c7-70ba-4667-b53e-b5784f866f9d",
-      "source_path": "scores/歌剧总谱/8cf879c7-70ba-4667-b53e-b5784f866f9d.pdf",
-      "storage_key": "scores/8c/8cf879c7-70ba-4667-b53e-b5784f866f9d.pdf",
-      "file_size": 99145251,
-      "sha256": "44fd14bdd11bd8d7bb7d0db4a9163e74b90c846a8c833fb4393754c4fd9d1081"
     },
     {
       "public_id": "8d0fe137-9df6-5866-9bbb-0c26cfeab805",

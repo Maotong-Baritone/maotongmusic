@@ -1,6 +1,7 @@
 .env
 .venv/
 __pycache__/
+dist/
 *.py[cod]
 tmp/
 submissions.db
