@@ -61,8 +61,12 @@ class FrontendContractTest(unittest.TestCase):
         self.assertIn('id="resourceSearch"', self.resources_html)
         self.assertIn('id="resourceFilters"', self.resources_html)
         self.assertIn('target="_blank" rel="noopener noreferrer"', self.resources_js)
-        self.assertGreaterEqual(self.resources_data.count("url: 'https://"), 21)
+        self.assertGreaterEqual(self.resources_data.count("url: 'https://"), 42)
         self.assertIn("url: 'https://theoperadatabase.com/'", self.resources_data)
+        self.assertIn("url: 'https://accnote.com/'", self.resources_data)
+        self.assertIn("const usageOrder =", self.resources_js)
+        self.assertIn('class="resource-group"', self.resources_js)
+        self.assertIn("['全部', '表演', '创作与理论', '研究', '教育', '职业']", self.resources_js)
 
     def test_catalog_uses_only_supported_language_labels(self):
         deprecated = {"无歌词", "俄语/法语", "俄语/德语", "法语/俄语", "法语/英语"}

@@ -43,14 +43,15 @@
                 <span aria-hidden="true">🔍</span>
                 <input id="resourceSearch" type="search" placeholder="搜索网站、用途或标签…" autocomplete="off">
             </label>
-            <div class="resource-filters" id="resourceFilters" role="group" aria-label="按类别筛选"></div>
+            <div class="resource-filter-label">按方向查看</div>
+            <div class="resource-filters" id="resourceFilters" role="group" aria-label="按专业方向筛选"></div>
         </section>
 
         <div class="resource-results-header">
             <p id="resourceCount" class="mb-0" aria-live="polite"></p>
             <button class="resource-clear" id="resourceClear" type="button" hidden>清除筛选</button>
         </div>
-        <section class="resource-grid" id="resourceGrid" aria-label="音乐专业资源列表"></section>
+        <div class="resource-directory" id="resourceGrid" aria-label="按使用类型分组的音乐专业资源"></div>
         <section class="resource-empty" id="resourceEmpty" hidden>
             <div class="resource-empty-icon" aria-hidden="true">🎼</div>
             <h2 class="h5">没有找到匹配的资源</h2>
