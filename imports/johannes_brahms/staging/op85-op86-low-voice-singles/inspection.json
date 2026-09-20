@@ -1,0 +1,325 @@
+{
+  "label": "6 Lieder, Op.85与6 Lieder, Op.86：低声部单曲",
+  "checked_on": "2026-09-20",
+  "recorded_at": "2026-09-20T18:32:01.894362+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "346944",
+    "346945",
+    "42847",
+    "346946",
+    "346947",
+    "42848",
+    "42849",
+    "42850",
+    "42851",
+    "346948",
+    "346949",
+    "346950"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.85与Op.86各含六首德语独唱与钢琴作品；所选十二份均标为Public Domain的低声部版，出版为N. Simrock并由Edition Peters再版。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看十二份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。",
+  "rendering_note": "十二份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。",
+  "metadata_changes": [
+    {
+      "imslp_id": "346944",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "346945",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42847",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "346946",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "346947",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42848",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42849",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42849",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.86 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "42850",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42850",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.86 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "42851",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42851",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.86 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "346948",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "346948",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.86 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "346949",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "346949",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.86 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "346950",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "346950",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.86 work page identifies the language as German; the selected low-voice scores contain German text."
+    }
+  ],
+  "files": {
+    "346944": {
+      "pages": 3,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Sommerabend. Langsam, Op. 85"
+      ],
+      "notes": "No. 1 Sommerabend. Langsam, Op. 85，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "346945": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Mondenschein. Langsam, Op. 85"
+      ],
+      "notes": "No. 2 Mondenschein. Langsam, Op. 85，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "42847": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Mädchenlied. Gehend, Op. 85"
+      ],
+      "notes": "No. 3 Mädchenlied. Gehend, Op. 85，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "346946": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Ade! Bewegt, Op. 85"
+      ],
+      "notes": "No. 4 Ade! Bewegt, Op. 85，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "346947": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Frühlingslied. Lebhaft, Op. 85"
+      ],
+      "notes": "No. 5 Frühlingslied. Lebhaft, Op. 85，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "42848": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 In Waldeinsamkeit. Langsam, Op. 85"
+      ],
+      "notes": "No. 6 In Waldeinsamkeit. Langsam, Op. 85，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "42849": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Therese. Etwas bewegt, Op. 86"
+      ],
+      "notes": "No. 1 Therese. Etwas bewegt, Op. 86，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "42850": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Feldeinsamkeit. Langsam, Op. 86"
+      ],
+      "notes": "No. 2 Feldeinsamkeit. Langsam, Op. 86，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "42851": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Nachtwandler. Langsam, Op. 86"
+      ],
+      "notes": "No. 3 Nachtwandler. Langsam, Op. 86，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "346948": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Über die Heide. Ziemlich langsam, gehend, Op. 86"
+      ],
+      "notes": "No. 4 Über die Heide. Ziemlich langsam, gehend, Op. 86，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "346949": {
+      "pages": 4,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Versunken. Sehr leidenschaftlich, doch nicht zu rasch, Op. 86"
+      ],
+      "notes": "No. 5 Versunken. Sehr leidenschaftlich, doch nicht zu rasch, Op. 86，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "346950": {
+      "pages": 4,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Todessehnen. Langsam, Op. 86"
+      ],
+      "notes": "No. 6 Todessehnen. Langsam, Op. 86，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-20T18:34:48+00:00",
+  "approved_publication_ids": [
+    "346944",
+    "346945",
+    "42847",
+    "346946",
+    "346947",
+    "42848",
+    "42849",
+    "42850",
+    "42851",
+    "346948",
+    "346949",
+    "346950"
+  ]
+}

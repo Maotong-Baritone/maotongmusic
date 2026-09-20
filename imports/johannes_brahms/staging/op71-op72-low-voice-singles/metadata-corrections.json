@@ -1,0 +1,144 @@
+{
+  "batch_id": "brahms-op71-op72-low-voice-ten-20260920",
+  "recorded_at": "2026-09-20T17:59:55.940576+00:00",
+  "source_manifest_before_sha256": "dafd271401c97fa0aac9f1e33a46530d6468b37f338ac8862a23054155fba006",
+  "source_manifest_after_sha256": "32719ff4f7e6aee899d5fc1fe9ec484ca7975c96fbf8c702de8a5604b16794ba",
+  "staging_manifest_before_sha256": "af0262f36492a33d9a3a237d32e92814eb2001b48a7c59ef58395fd64528b4df",
+  "staging_manifest_after_sha256": "99168c588933590fc607ed29d794a3ae086b5fcdbe85b44268aa9fc2515fa15b",
+  "backup": "backup\\import_metadata\\brahms-op71-op72-low-voice-ten-20260920-20260920_115955_754910",
+  "changes": [
+    {
+      "imslp_id": "39109",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "39109",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.71 work page identifies the language as German; the selected scores contain German text."
+    },
+    {
+      "imslp_id": "39109",
+      "field": "title",
+      "before": "No. 1 Es liebt sich so lieblich im Lenze! Anmuthig bewegt, Op. 71",
+      "after": "No. 1 Es liebt sich so lieblich im Lenze! Anmutig bewegt, Op. 71",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "39110",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "39110",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.71 work page identifies the language as German; the selected scores contain German text."
+    },
+    {
+      "imslp_id": "39110",
+      "field": "title",
+      "before": "No. 2 An den Mond. Nicht zu langsam und mit Anmuth, Op. 71",
+      "after": "No. 2 An den Mond. Nicht zu langsam und mit Anmut, Op. 71",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "39111",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "39111",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.71 work page identifies the language as German; the selected scores contain German text."
+    },
+    {
+      "imslp_id": "326311",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "326311",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.71 work page identifies the language as German; the selected scores contain German text."
+    },
+    {
+      "imslp_id": "326311",
+      "field": "title",
+      "before": "No. 4 Willst du, dass ich geh'? Sehr lebhaft, Op. 71",
+      "after": "No. 4 Willst du, daß ich geh'? Sehr lebhaft, Op. 71",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "39112",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "39112",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.71 work page identifies the language as German; the selected scores contain German text."
+    },
+    {
+      "imslp_id": "39137",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "326313",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "326314",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "326314",
+      "field": "title",
+      "before": "No. 3 O Kühler Wald. Langsam, Op. 72",
+      "after": "No. 3 O kühler Wald. Langsam, Op. 72",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "326315",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "326316",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    }
+  ]
+}
