@@ -1,0 +1,202 @@
+{
+  "label": "8 Lieder and Songs, Op.59：Peters低声部单曲",
+  "checked_on": "2026-09-19",
+  "recorded_at": "2026-09-19T23:58:20.056513+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "309180",
+    "309181",
+    "309182",
+    "309183",
+    "309184",
+    "309185",
+    "309186",
+    "309187"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.59为德语独唱与钢琴作品；所选八份均为Max Friedlaender编辑、Edition Peters出版并标为Public Domain的低声部版（No.1保留原调）。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看八份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。",
+  "rendering_note": "八份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。",
+  "metadata_changes": [
+    {
+      "imslp_id": "309180",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309181",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309182",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309183",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309184",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309185",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309186",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309187",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309182",
+      "field": "title",
+      "before": "No. 3 Regenlied. In mässiger, ruhiger bewegung, Op. 59",
+      "after": "No. 3 Regenlied. In mässiger, ruhiger Bewegung, Op. 59",
+      "evidence": "The rendered first score page prints “In mässiger, ruhiger Bewegung.” with a capital B."
+    }
+  ],
+  "files": {
+    "309180": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Dämmrung senkte sich von oben. Langsam, Op. 59"
+      ],
+      "notes": "No. 1 Dämmrung senkte sich von oben. Langsam, Op. 59，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309181": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Auf dem See. Etwas bewegt, Op. 59"
+      ],
+      "notes": "No. 2 Auf dem See. Etwas bewegt, Op. 59，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309182": {
+      "pages": 9,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Regenlied. In mässiger, ruhiger Bewegung, Op. 59"
+      ],
+      "notes": "No. 3 Regenlied. In mässiger, ruhiger Bewegung, Op. 59，共9页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309183": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Nachklang. Sanft bewegt, Op. 59"
+      ],
+      "notes": "No. 4 Nachklang. Sanft bewegt, Op. 59，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309184": {
+      "pages": 3,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Agnes. Con moto, Op. 59"
+      ],
+      "notes": "No. 5 Agnes. Con moto, Op. 59，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309185": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Eine gute, gute Nacht. Poco andante, Op. 59"
+      ],
+      "notes": "No. 6 Eine gute, gute Nacht. Poco andante, Op. 59，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309186": {
+      "pages": 3,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Mein wundes Herz verlangt nach milder Ruh. Bewegt, Op. 59"
+      ],
+      "notes": "No. 7 Mein wundes Herz verlangt nach milder Ruh. Bewegt, Op. 59，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "309187": {
+      "pages": 2,
+      "key": "",
+      "number": 8,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 8 Dein blaues Auge hält so still. Ziemlich langsam, Op. 59"
+      ],
+      "notes": "No. 8 Dein blaues Auge hält so still. Ziemlich langsam, Op. 59，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-19T23:59:44+00:00",
+  "approved_publication_ids": [
+    "309180",
+    "309181",
+    "309182",
+    "309183",
+    "309184",
+    "309185",
+    "309186",
+    "309187"
+  ]
+}

@@ -110,13 +110,13 @@
 
 详情简介采用简短的结构化信息：保留来源、版本/出版者、编者、文件范围或页码、编制、语言和已发现的异常。普通文件不反复写“原PDF未改、逐页连续、标题相符”等低信息量句子；只有确有缺页、误标、合集定位或版本疑点时增加详细说明。
 
-## 5. 当前进度快照（2026-09-09）
+## 5. 当前进度快照（2026-09-19）
 
 本节依据实际目录和三十四份批次回执更新；接手时继续核对是否已有新批次。
 
 - 网站：[猫瞳音乐乐谱库](https://maotong.me/maotongmusic/)，PDF仍使用 `https://scores.maotong.me`。
-- 本地正式目录 3,664 条；勃拉姆斯本轮批准 254 份，线上回执确认 254 份。最近一批状态 `verified_live`。
-- 预审161个作品页、3,486个去重候选；待审 2,092、排除 1,138、暂缓 2、批准 254。待审数包含重复版本，不等于待上传文件数。
+- 本地正式目录 3,697 条；勃拉姆斯本轮批准 288 份，线上回执确认 288 份。最近一批状态 `verified_live`。
+- 预审161个作品页、3,486个去重候选；待审 2,058、排除 1,138、暂缓 2、批准 288。待审数包含重复版本，不等于待上传文件数。
 - 原始submissions.db保留1条原投稿；旧目录、旧动态、旧存储记录及原投稿均已与批次备份核对。
 - 哈恩已有此前成果，不从头重发，不编造累计数量。
 
@@ -158,16 +158,20 @@
 | Op.97与Op.121高声部单曲 | 10 | [verified_live](imports/johannes_brahms/staging/op97-op121-high-voice-singles/publication.json) |
 | Op.32低声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op32-low-voice-singles/publication.json) |
 | Op.57低声部单曲 | 8 | [verified_live](imports/johannes_brahms/staging/op57-low-voice-singles/publication.json) |
+| Op.58低声部单曲 | 8 | [verified_live](imports/johannes_brahms/staging/op58-low-voice-singles/publication.json) |
+| Op.59低声部单曲 | 8 | [verified_live](imports/johannes_brahms/staging/op59-low-voice-singles/publication.json) |
+| Op.63低声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op63-low-voice-singles/publication.json) |
+| Op.69低声部单曲 | 9 | [verified_live](imports/johannes_brahms/staging/op69-low-voice-singles/publication.json) |
 
-最近第三十六批一次新增8份、共28页Op.57的Peters低声部独立歌曲谱。全部页面已自动解析、渲染并通览接触表，首尾、标题、速度、德语和低声部、钢琴编制均已核对；公开PDF哈希、简洁详情、预览和首页动态已验证。Op.116另3份完整版本仍仅暂存。
+最近第四十批一次新增9份、共35页Op.69的Peters低声部移调版独立歌曲谱。全部页面已自动解析、渲染并通览接触表，首尾、标题、速度、德语和低声部、钢琴编制均已核对；九份公开PDF哈希、简洁详情、预览和首页动态已验证。Op.116另3份完整版本仍仅暂存。
 
-最近部署提交 `3cddac0cfb9da85ca72efa95230b50d966d734f0`，Pages run `34931479617`。最近批次线上时间以回执为准。185项测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
+最近部署提交 `8e845bee0e374e9eca720b0fd368e767c5c9a636`，Pages run `35525993536`。最近批次线上时间以回执为准。196项测试通过；严格目录与存储检查均通过。全局审核字段catalog_and_storage_published不等同于单批线上状态，以publication.json为准。
 
 ### 断点与下一步
 
 当前受支持CUA浏览器可以可靠读取URL及正常等待后的可见下载链接，先前旧工具的识别问题已通过正常受支持流程解决。作者归属存疑的Anh.IV/2两份候选已暂缓，未下载或发布。
 
-后续按用户确认的效率规则，继续把明确公版、元数据清楚且无重复疑点的实际文件合并成每批约8–12份，并且整批只部署一次。Op.97与Op.121十份已完成；下一轮从其他声乐作品中筛选普通清晰文件，`4 Quartets, Op.92` 的完整版本及独立声部分谱仍按复杂项目逐份判断。普通清晰单曲按全部页面接触表加首尾页重点检查，疑点文件再逐页放大。艺术歌曲类别必须继续使用显式类别和编制白名单。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
+后续按用户确认的效率规则，继续把明确公版、元数据清楚且无重复疑点的实际文件合并成每批约8–12份，并且整批只部署一次。Op.69低声部九份已完成；下一轮从其他声乐作品中筛选普通清晰文件，`4 Quartets, Op.92` 的完整版本及独立声部分谱仍按复杂项目逐份判断。普通清晰单曲按全部页面接触表加首尾页重点检查，疑点文件再逐页放大。艺术歌曲类别必须继续使用显式类别和编制白名单。详见 [CONTINUATION.md](imports/johannes_brahms/CONTINUATION.md)。若最新批次还未verified_live，先收尾再写下一批目录。
 
 ## 6. 新任务接手与现有自动化
 

@@ -1,0 +1,109 @@
+{
+  "batch_id": "brahms-op63-low-voice-nine-20260919",
+  "recorded_at": "2026-09-20T00:31:54.551550+00:00",
+  "source_manifest_before_sha256": "a0048f9782f9f86f2c085c671ca89f66b705c9d970a16d7bc491b7ce5de446c6",
+  "source_manifest_after_sha256": "5ab62fd9b94462fb75c11447841f656ab31c8f4ab670a875e63d38b9bdec152f",
+  "staging_manifest_before_sha256": "7b67868397df77b880f0fbcfa74250fff968d513cc576617b8e2b9354ebceb7b",
+  "staging_manifest_after_sha256": "9c081c3f8e1a91a18441e41d38e816ea9bcd1b99f750b246670be3ccfd7d59ae",
+  "backup": "backup\\import_metadata\\brahms-op63-low-voice-nine-20260919-20260919_183154_345469",
+  "changes": [
+    {
+      "imslp_id": "311649",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "311650",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "311651",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "311652",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "44195",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "311653",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "311654",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "44196",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "311655",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all nine selected files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "44195",
+      "field": "proposed_title",
+      "before": "No. 5 Junge Liebe I. Lebhaft, Op. 63",
+      "after": "No. 5 Meine Liebe ist grün. Lebhaft, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "311653",
+      "field": "proposed_title",
+      "before": "No. 6 Junge Liebe II. Zart bewegt, Op. 63",
+      "after": "No. 6 Wenn um den Holunder. Zart bewegt, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "311654",
+      "field": "proposed_title",
+      "before": "No. 7 Heimweh I. Zart bewegt, Op. 63",
+      "after": "No. 7 Heimweh. Zart bewegt, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "44196",
+      "field": "proposed_title",
+      "before": "No. 8 Heimweh II. Etwas langsam, Op. 63",
+      "after": "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    },
+    {
+      "imslp_id": "311655",
+      "field": "proposed_title",
+      "before": "No. 9 Heimweh III. Etwas langsam, Op. 63",
+      "after": "No. 9 Ich sah als Knabe Blumen blühn. Etwas langsam, Op. 63",
+      "evidence": "The first rendered score page prints this independent title; the live IMSLP page notes that Brahms supplied the titles for Nos. 5–9."
+    }
+  ]
+}

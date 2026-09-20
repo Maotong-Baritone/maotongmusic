@@ -1,0 +1,74 @@
+{
+  "batch_id": "brahms-op59-low-voice-eight-20260919",
+  "recorded_at": "2026-09-19T23:58:15.042719+00:00",
+  "source_manifest_before_sha256": "b3be127b5c55ea6537d6fb71f3eaa703d4439dfcfba16cec4c17380439a59fb7",
+  "source_manifest_after_sha256": "d313a8fc9f3203ae58ab0b0fb801430c467083a14f43f131515d3c29a8c7f63b",
+  "staging_manifest_before_sha256": "2a143f91c1d6c915a369ee1ee81a3e09dc73f149bc43cd6a2fdd7002f15a5c8a",
+  "staging_manifest_after_sha256": "f96c6a5d7c191a57e58d91dd0e72aa0d250520adb48c3ba579d352387bee5933",
+  "backup": "backup\\import_metadata\\brahms-op59-low-voice-eight-20260919-20260919_175814_842427",
+  "changes": [
+    {
+      "imslp_id": "309180",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309181",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309182",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309183",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309184",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309185",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309186",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309187",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups all eight selected Peters files under Low voice; each rendered score has one vocal line with piano."
+    },
+    {
+      "imslp_id": "309182",
+      "field": "title",
+      "before": "No. 3 Regenlied. In mässiger, ruhiger bewegung, Op. 59",
+      "after": "No. 3 Regenlied. In mässiger, ruhiger Bewegung, Op. 59",
+      "evidence": "The rendered first score page prints “In mässiger, ruhiger Bewegung.” with a capital B."
+    }
+  ]
+}

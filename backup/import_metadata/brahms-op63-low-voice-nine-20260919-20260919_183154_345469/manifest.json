@@ -57087,13 +57087,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "714ad8d7-d3ac-4494-8764-0ae691cd0219",
           "source_references": [
             {
@@ -57101,10 +57101,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "1. Frühlingstrost"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "311650",
@@ -57132,13 +57129,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "ea7f4f42-aa14-443f-a90f-70fb360c1bee",
           "source_references": [
             {
@@ -57146,10 +57143,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "2. Erinnerung"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "311651",
@@ -57177,13 +57171,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4e7e6d12-6b3e-4448-b33b-841ee79d1890",
           "source_references": [
             {
@@ -57191,10 +57185,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "3. An ein Bild"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "311652",
@@ -57222,13 +57213,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "f7427784-da32-4b28-a654-241f5d7639a0",
           "source_references": [
             {
@@ -57236,10 +57227,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "4. An die Tauben"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44195",
@@ -57261,19 +57249,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 5 Meine Liebe ist grün. Lebhaft, Op. 63",
+          "proposed_title": "No. 5 Junge Liebe I. Lebhaft, Op. 63",
           "proposed_work": "9 Lieder and Songs, Op. 63",
           "title_scope": "individual_movement",
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "5a4705e2-1551-408b-95f8-cdfb043ee372",
           "source_references": [
             {
@@ -57281,10 +57269,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "5. Junge Lieder I"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "311653",
@@ -57306,19 +57291,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 6 Wenn um den Holunder. Zart bewegt, Op. 63",
+          "proposed_title": "No. 6 Junge Liebe II. Zart bewegt, Op. 63",
           "proposed_work": "9 Lieder and Songs, Op. 63",
           "title_scope": "individual_movement",
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "15187e38-4ae1-45c6-8f04-3fca193ebfb8",
           "source_references": [
             {
@@ -57326,10 +57311,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "6. Junge Lieder II"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "311654",
@@ -57351,19 +57333,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 7 Heimweh. Zart bewegt, Op. 63",
+          "proposed_title": "No. 7 Heimweh I. Zart bewegt, Op. 63",
           "proposed_work": "9 Lieder and Songs, Op. 63",
           "title_scope": "individual_movement",
           "movement_number": 7,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4b83cfb5-1683-480a-a8c5-e42cf9b9ae2b",
           "source_references": [
             {
@@ -57371,10 +57353,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "7. Heimweh I"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "44196",
@@ -57396,19 +57375,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam, Op. 63",
+          "proposed_title": "No. 8 Heimweh II. Etwas langsam, Op. 63",
           "proposed_work": "9 Lieder and Songs, Op. 63",
           "title_scope": "individual_movement",
           "movement_number": 8,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "a24e385b-da15-4bc3-9025-df524eec905d",
           "source_references": [
             {
@@ -57416,10 +57395,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "8. Heimweh II"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "311655",
@@ -57441,19 +57417,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 9 Ich sah als Knabe Blumen blühn. Etwas langsam, Op. 63",
+          "proposed_title": "No. 9 Heimweh III. Etwas langsam, Op. 63",
           "proposed_work": "9 Lieder and Songs, Op. 63",
           "title_scope": "individual_movement",
           "movement_number": 9,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "6693e4a5-e52b-4433-ac4f-714d577c695e",
           "source_references": [
             {
@@ -57461,10 +57437,7 @@
               "source_url": "https://imslp.org/wiki/9_Lieder_and_Songs%2C_Op.63_%28Brahms%2C_Johannes%29",
               "description": "9. Heimweh III"
             }
-          ],
-          "published_at": "2026-09-20T00:34:13+00:00",
-          "publication_batch_id": "brahms-op63-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "850679",
@@ -110323,13 +110296,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "128f1d22-3ea6-4515-a56b-cd5217b3ffbd",
           "source_references": [
             {
@@ -110337,10 +110310,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "1. Klage I (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "273694",
@@ -110368,13 +110338,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "833444d3-a676-4ee2-b326-eb4a7073e91b",
           "source_references": [
             {
@@ -110382,10 +110352,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "2. Klage II (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "273695",
@@ -110413,13 +110380,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "2cf48cf8-58da-485a-8198-c6b5be8e0b67",
           "source_references": [
             {
@@ -110427,10 +110394,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "3. Abschied (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "39043",
@@ -110458,13 +110422,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "f73c006e-fca3-4984-b9df-41350cf0026c",
           "source_references": [
             {
@@ -110472,10 +110436,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "4. Des Liebsten Schwur (扫描)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "39044",
@@ -110503,13 +110464,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "14908b9f-ed0c-4242-a6d6-61449218fe4f",
           "source_references": [
             {
@@ -110517,10 +110478,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "5. Tambourliedchen (扫描)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "274967",
@@ -110548,13 +110506,13 @@
           "movement_number": 6,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "1cbc79f1-5c20-40af-b957-f59324683d9d",
           "source_references": [
             {
@@ -110562,10 +110520,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "6. Vom Strande (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "274968",
@@ -110593,13 +110548,13 @@
           "movement_number": 7,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "b2a18248-a48d-487e-b7c5-c1fc2fcd5fda",
           "source_references": [
             {
@@ -110607,10 +110562,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "7. Über die See (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "275650",
@@ -110638,13 +110590,13 @@
           "movement_number": 8,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "15870efc-3f5e-418b-a86a-6398895f78ae",
           "source_references": [
             {
@@ -110652,10 +110604,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "8. Salome (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "275651",
@@ -110683,13 +110632,13 @@
           "movement_number": 9,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "fa8e5008-6618-4423-a96c-a899f2324641",
           "source_references": [
             {
@@ -110697,10 +110646,7 @@
               "source_url": "https://imslp.org/wiki/9_Songs%2C_Op.69_%28Brahms%2C_Johannes%29",
               "description": "9. Mädchenfluch (High Quality)"
             }
-          ],
-          "published_at": "2026-09-20T01:07:58+00:00",
-          "publication_batch_id": "brahms-op69-low-voice-nine-20260919",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "273692",

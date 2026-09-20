@@ -1,0 +1,99 @@
+{
+  "batch_id": "brahms-op69-low-voice-nine-20260919",
+  "approved_ids": [
+    "273693",
+    "273694",
+    "273695",
+    "39043",
+    "39044",
+    "274967",
+    "274968",
+    "275650",
+    "275651"
+  ],
+  "approved_count": 9,
+  "storage_verified_count": 9,
+  "local_catalog_count": 9,
+  "website_published_count": 9,
+  "catalog_updated_at": "2026-09-20T01:07:58+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-op69-low-voice-nine-20260919-20260919_190747_556405",
+  "files": [
+    {
+      "imslp_id": "273693",
+      "public_id": "128f1d22-3ea6-4515-a56b-cd5217b3ffbd",
+      "filename": "艺术歌曲/128f1d22-3ea6-4515-a56b-cd5217b3ffbd.pdf",
+      "storage_key": "scores/12/128f1d22-3ea6-4515-a56b-cd5217b3ffbd.pdf",
+      "sha256": "1ad921e57227d16ace448cc25ed5360c7db70381257d1a581051879ea7bc5653"
+    },
+    {
+      "imslp_id": "273694",
+      "public_id": "833444d3-a676-4ee2-b326-eb4a7073e91b",
+      "filename": "艺术歌曲/833444d3-a676-4ee2-b326-eb4a7073e91b.pdf",
+      "storage_key": "scores/83/833444d3-a676-4ee2-b326-eb4a7073e91b.pdf",
+      "sha256": "8d38749ca6e6f57a423bd0608c7020102cd454bef67aee61e02c99a9b1152992"
+    },
+    {
+      "imslp_id": "273695",
+      "public_id": "2cf48cf8-58da-485a-8198-c6b5be8e0b67",
+      "filename": "艺术歌曲/2cf48cf8-58da-485a-8198-c6b5be8e0b67.pdf",
+      "storage_key": "scores/2c/2cf48cf8-58da-485a-8198-c6b5be8e0b67.pdf",
+      "sha256": "0a805c0bb613fcb1b152fb95345745f91385468f4fa43ff859153d965f289715"
+    },
+    {
+      "imslp_id": "39043",
+      "public_id": "f73c006e-fca3-4984-b9df-41350cf0026c",
+      "filename": "艺术歌曲/f73c006e-fca3-4984-b9df-41350cf0026c.pdf",
+      "storage_key": "scores/f7/f73c006e-fca3-4984-b9df-41350cf0026c.pdf",
+      "sha256": "11eb2c8ab9e283329594946d2e5ce5ef3fbc9e840fc7801f1b0c20c41567a582"
+    },
+    {
+      "imslp_id": "39044",
+      "public_id": "14908b9f-ed0c-4242-a6d6-61449218fe4f",
+      "filename": "艺术歌曲/14908b9f-ed0c-4242-a6d6-61449218fe4f.pdf",
+      "storage_key": "scores/14/14908b9f-ed0c-4242-a6d6-61449218fe4f.pdf",
+      "sha256": "aa860f4f19e029361ff19c4f83e2b72c3aa42c22c35c1f569bfe91f95f71d10c"
+    },
+    {
+      "imslp_id": "274967",
+      "public_id": "1cbc79f1-5c20-40af-b957-f59324683d9d",
+      "filename": "艺术歌曲/1cbc79f1-5c20-40af-b957-f59324683d9d.pdf",
+      "storage_key": "scores/1c/1cbc79f1-5c20-40af-b957-f59324683d9d.pdf",
+      "sha256": "818868083e59d5a42b288798f23696a9c5e9a60455bd14e00f5de7438ddb95d0"
+    },
+    {
+      "imslp_id": "274968",
+      "public_id": "b2a18248-a48d-487e-b7c5-c1fc2fcd5fda",
+      "filename": "艺术歌曲/b2a18248-a48d-487e-b7c5-c1fc2fcd5fda.pdf",
+      "storage_key": "scores/b2/b2a18248-a48d-487e-b7c5-c1fc2fcd5fda.pdf",
+      "sha256": "9bab434894eff50ffa5ee203aa4ce14be308656a796d0f021552f571eab7c090"
+    },
+    {
+      "imslp_id": "275650",
+      "public_id": "15870efc-3f5e-418b-a86a-6398895f78ae",
+      "filename": "艺术歌曲/15870efc-3f5e-418b-a86a-6398895f78ae.pdf",
+      "storage_key": "scores/15/15870efc-3f5e-418b-a86a-6398895f78ae.pdf",
+      "sha256": "35ac20aaf8c5d4216b5b40a2ef99480398d0f7e67af401e9728bdf390cfa48d6"
+    },
+    {
+      "imslp_id": "275651",
+      "public_id": "fa8e5008-6618-4423-a96c-a899f2324641",
+      "filename": "艺术歌曲/fa8e5008-6618-4423-a96c-a899f2324641.pdf",
+      "storage_key": "scores/fa/fa8e5008-6618-4423-a96c-a899f2324641.pdf",
+      "sha256": "f32360642a6f33c0ee4a6d5d42f1aca46c09c712c5197c2bd956fc8e78e27441"
+    }
+  ],
+  "commit_sha": "8e845bee0e374e9eca720b0fd368e767c5c9a636",
+  "pages_run_id": 35525993536,
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/35525993536",
+  "pages_status": "success",
+  "pages_commit_sha": "8e845bee0e374e9eca720b0fd368e767c5c9a636",
+  "verified_live_at": "2026-09-20T17:41:44.634642+00:00",
+  "live_catalog_count": 3697,
+  "live_catalog_exact": true,
+  "live_logs_exact": true,
+  "live_hashes_verified_count": 9,
+  "live_detail_verified": true,
+  "live_preview_verified": true
+}
