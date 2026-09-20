@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3707,
-  "unique_content_count": 3688,
+  "entry_count": 3719,
+  "unique_content_count": 3700,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4377954384,
+  "total_size": 4381761752,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2830,6 +2830,13 @@
       "sha256": "df82f08126174b985371a16866fc411178944d611ca3071a8ca5cee581071a1f"
     },
     {
+      "public_id": "1a03a6ce-18ef-4846-b548-ccd4847c6e4e",
+      "source_path": "scores/艺术歌曲/1a03a6ce-18ef-4846-b548-ccd4847c6e4e.pdf",
+      "storage_key": "scores/1a/1a03a6ce-18ef-4846-b548-ccd4847c6e4e.pdf",
+      "file_size": 308373,
+      "sha256": "53d89d98f06b0ab45d3b6a5b14bff0b8dd878dbb6623a929ac5f1b594557f176"
+    },
+    {
       "public_id": "1a22c05c-6f45-5fce-a8de-7fc0e635ce27",
       "source_path": "scores/歌剧咏叹调/1765774769.pdf",
       "storage_key": "scores/1a/1a22c05c-6f45-5fce-a8de-7fc0e635ce27.pdf",
@@ -5469,6 +5476,13 @@
       "sha256": "8f64894ac10cecd1d766e7089348ead47127c6f55b4da4c3993406d8af84fcac"
     },
     {
+      "public_id": "36e80446-fddf-431b-8083-12f50870c8ff",
+      "source_path": "scores/艺术歌曲/36e80446-fddf-431b-8083-12f50870c8ff.pdf",
+      "storage_key": "scores/36/36e80446-fddf-431b-8083-12f50870c8ff.pdf",
+      "file_size": 430314,
+      "sha256": "5872506ca6df630d60edf49702815e01383cc1cd2abe12e8d4d5f1e23829c777"
+    },
+    {
       "public_id": "36eb6043-a3b8-5767-8b15-353b162ae15d",
       "source_path": "scores/声乐作品/艺术歌曲/1766372628979_Schwanengesang_-_13._Der_Doppelganger_-_D957_High_Original.pdf",
       "storage_key": "scores/36/36eb6043-a3b8-5767-8b15-353b162ae15d.pdf",
@@ -5551,6 +5565,13 @@
       "storage_key": "scores/37/37dd46cc-6e59-5816-8fcb-329c9ef55ce9.pdf",
       "file_size": 2035808,
       "sha256": "3debe2e98876c6fbe95106324ae3740db28dce4d2a81025a9d37acb380c7a561"
+    },
+    {
+      "public_id": "37e8b0e7-2102-44f6-8987-e25635b14d59",
+      "source_path": "scores/艺术歌曲/37e8b0e7-2102-44f6-8987-e25635b14d59.pdf",
+      "storage_key": "scores/37/37e8b0e7-2102-44f6-8987-e25635b14d59.pdf",
+      "file_size": 220693,
+      "sha256": "bd57f9360533061bb61117d5b4b2c2d5c0c38887ba8619294ebf497e44166164"
     },
     {
       "public_id": "38151442-0db4-4836-8676-8e69f7b96599",
@@ -6797,6 +6818,13 @@
       "storage_key": "scores/43/43399dea-4542-57ae-ad1b-6862f813d5b7.pdf",
       "file_size": 3673411,
       "sha256": "880b1322cf9844a5ab58afcf297950e8eb40058bfde61a3a6a38080a4b3e6720"
+    },
+    {
+      "public_id": "43416f64-53f6-4311-9eaa-5a181a34d804",
+      "source_path": "scores/艺术歌曲/43416f64-53f6-4311-9eaa-5a181a34d804.pdf",
+      "storage_key": "scores/43/43416f64-53f6-4311-9eaa-5a181a34d804.pdf",
+      "file_size": 541426,
+      "sha256": "a657c794b053ca35c26f685a68e6d7d29c337342a990dc3da8286f79d8ac2224"
     },
     {
       "public_id": "4344b7b3-9140-5722-88a1-3b942fb217cb",
@@ -9186,6 +9214,13 @@
       "sha256": "9e9f9675a3f103ab85cc6d1f086dfe141729f08759b893e9336e8c613b53dfd8"
     },
     {
+      "public_id": "5b713d3d-6e2f-441d-9126-991c81b93674",
+      "source_path": "scores/艺术歌曲/5b713d3d-6e2f-441d-9126-991c81b93674.pdf",
+      "storage_key": "scores/5b/5b713d3d-6e2f-441d-9126-991c81b93674.pdf",
+      "file_size": 272280,
+      "sha256": "dae92591a3b5d98c0f6a198105f85d0782a7f6fd59ed7a55738b9f0c90b76afd"
+    },
+    {
       "public_id": "5b80b55c-e281-401e-8448-4ae8b3761b8b",
       "source_path": "scores/器乐独奏/5b80b55c-e281-401e-8448-4ae8b3761b8b.pdf",
       "storage_key": "scores/5b/5b80b55c-e281-401e-8448-4ae8b3761b8b.pdf",
@@ -10670,6 +10705,13 @@
       "sha256": "f53dd42b305231371123dce23b07928b354caeea1f91778ce51e647aeacec963"
     },
     {
+      "public_id": "691ec46d-7062-4ba3-8da9-f7b23b121acb",
+      "source_path": "scores/艺术歌曲/691ec46d-7062-4ba3-8da9-f7b23b121acb.pdf",
+      "storage_key": "scores/69/691ec46d-7062-4ba3-8da9-f7b23b121acb.pdf",
+      "file_size": 237361,
+      "sha256": "e311a61ee48f5b4fa6f49f8ba29ddd380aa6a23ec7dbdbea8f9712c23194f10f"
+    },
+    {
       "public_id": "692cbfaf-f27e-5063-a843-5dcb46b1c3f6",
       "source_path": "scores/声乐作品/艺术歌曲/1766372495673_Als_ich_sie_erroten_sah_-_D153_Medium_Original.pdf",
       "storage_key": "scores/69/692cbfaf-f27e-5063-a843-5dcb46b1c3f6.pdf",
@@ -11207,6 +11249,13 @@
       "storage_key": "scores/6d/6ded6b6b-4dcd-5d2b-ab1b-14cca01d5773.pdf",
       "file_size": 715903,
       "sha256": "35185bfa2ba0325096162aaa645a619917cb355ede4e3c2d09a5683858118a17"
+    },
+    {
+      "public_id": "6e0a9958-7363-4cdc-9e86-172eb0a06d1c",
+      "source_path": "scores/艺术歌曲/6e0a9958-7363-4cdc-9e86-172eb0a06d1c.pdf",
+      "storage_key": "scores/6e/6e0a9958-7363-4cdc-9e86-172eb0a06d1c.pdf",
+      "file_size": 247616,
+      "sha256": "da934de34ea7b3118978597b5409b4d89a7d2499d6235198837ede1b60c6e044"
     },
     {
       "public_id": "6e192157-961c-5f07-8fcc-26e398b877f6",
@@ -18741,6 +18790,13 @@
       "sha256": "54eed71e03c8bacfef62f017eb4cc60cdd83b2b7ec32f63505d5b0f5c97c8079"
     },
     {
+      "public_id": "b95b7ea7-85ab-4115-891a-30e253d19f16",
+      "source_path": "scores/艺术歌曲/b95b7ea7-85ab-4115-891a-30e253d19f16.pdf",
+      "storage_key": "scores/b9/b95b7ea7-85ab-4115-891a-30e253d19f16.pdf",
+      "file_size": 198862,
+      "sha256": "68b4e8286d64b209da1c6dd5ba4dc9f38d028495d0193ac73e204cbe2a3efdde"
+    },
+    {
       "public_id": "b95bc8f0-d140-5f25-a1a2-9c1445fe55cb",
       "source_path": "scores/歌剧咏叹调/1766007752768_No_che_servire_altrui_no_questanima_non_sa.pdf",
       "storage_key": "scores/b9/b95bc8f0-d140-5f25-a1a2-9c1445fe55cb.pdf",
@@ -19285,6 +19341,13 @@
       "storage_key": "scores/be/bedd0a71-acb9-52de-b8a4-3ff1d0d20605.pdf",
       "file_size": 445823,
       "sha256": "1130a9e881a3a4796210c918bdde4e46132024b357afdee7550eddc8835f794b"
+    },
+    {
+      "public_id": "bee9323d-7264-433f-b368-3fd5e10eac88",
+      "source_path": "scores/艺术歌曲/bee9323d-7264-433f-b368-3fd5e10eac88.pdf",
+      "storage_key": "scores/be/bee9323d-7264-433f-b368-3fd5e10eac88.pdf",
+      "file_size": 222085,
+      "sha256": "d41961356017f17e096ba2e097471ab6922ad40c36cf4cdba70e2c5c957f9af1"
     },
     {
       "public_id": "bf1abff1-f4a7-54f4-90e1-900e6d764437",
@@ -20650,6 +20713,13 @@
       "storage_key": "scores/c9/c9fd236d-d9a6-5648-be7b-dd72025c4256.pdf",
       "file_size": 950346,
       "sha256": "10316984791383b86f20b571561abc8985c354ec8e453808305041b960965035"
+    },
+    {
+      "public_id": "ca03b5b0-15ae-4ff1-b8c4-1b4514a6d2e4",
+      "source_path": "scores/艺术歌曲/ca03b5b0-15ae-4ff1-b8c4-1b4514a6d2e4.pdf",
+      "storage_key": "scores/ca/ca03b5b0-15ae-4ff1-b8c4-1b4514a6d2e4.pdf",
+      "file_size": 241681,
+      "sha256": "1f0f27d9c36b125a4e2bf04c1cce73805a153545e408d4328d03652fcaf65940"
     },
     {
       "public_id": "ca0fb6b3-ba38-5d7b-8271-0d0fd953e42e",
@@ -23599,6 +23669,13 @@
       "sha256": "b5c75064397d4dd8253352911ee01ac8458413a8e998cc9c7851e92e52810d79"
     },
     {
+      "public_id": "e81e14b5-0d0a-4d5f-8319-92798da70537",
+      "source_path": "scores/艺术歌曲/e81e14b5-0d0a-4d5f-8319-92798da70537.pdf",
+      "storage_key": "scores/e8/e81e14b5-0d0a-4d5f-8319-92798da70537.pdf",
+      "file_size": 313825,
+      "sha256": "bd45158a076a319bab9475f54e9fde73d7ff991946baa36941e783489972f95a"
+    },
+    {
       "public_id": "e83115b8-b4da-5535-9627-9bdd242db5f1",
       "source_path": "scores/歌剧咏叹调/1766007732734_Mi_lusinga_il_dolce_affeto.pdf",
       "storage_key": "scores/e8/e83115b8-b4da-5535-9627-9bdd242db5f1.pdf",
@@ -24843,6 +24920,13 @@
       "storage_key": "scores/f3/f3a23e63-14d5-4c63-ad2c-29c361dcc74a.pdf",
       "file_size": 342281,
       "sha256": "d8ba0f11ad2c460093eabca278f995e33c3a8b1ba7188c9193f4cf21a264bcfd"
+    },
+    {
+      "public_id": "f3a6899d-3ff0-41c3-9524-d5205d735023",
+      "source_path": "scores/艺术歌曲/f3a6899d-3ff0-41c3-9524-d5205d735023.pdf",
+      "storage_key": "scores/f3/f3a6899d-3ff0-41c3-9524-d5205d735023.pdf",
+      "file_size": 572852,
+      "sha256": "85c79fb8b82bab6ab0ebad47a628890beb41ee96904e6b2ae3a4090b22102846"
     },
     {
       "public_id": "f3c02fcf-470b-4280-8202-2e9fb4eb4279",
