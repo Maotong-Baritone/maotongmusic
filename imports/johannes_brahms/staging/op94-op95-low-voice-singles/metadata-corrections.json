@@ -1,0 +1,130 @@
+{
+  "batch_id": "brahms-op94-op95-low-voice-twelve-20260921",
+  "recorded_at": "2026-09-21T16:32:36.605272+00:00",
+  "source_manifest_before_sha256": "538a91f632e1e85a8f86b2862ace80b4bfdfdf53c6852d8967c29aff1cb8dc18",
+  "source_manifest_after_sha256": "970441ef9daa4b01319accca6d0658957e4eba1fe899775044d1919b0824eec5",
+  "staging_manifest_before_sha256": "db93a78e24f48cf3f0d096b9bbf1c220c0e956421ce79dfa7c5281abb7b16723",
+  "staging_manifest_after_sha256": "5ce51ac59f303eb25c87efcddcd0cbbaf585554237eb54052abe76ca9810a590",
+  "backup": "backup\\import_metadata\\brahms-op94-op95-low-voice-twelve-20260921-20260921_103236_418506",
+  "changes": [
+    {
+      "imslp_id": "347092",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347092",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347093",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347093",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347094",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347094",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "42852",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42852",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347095",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347095",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347096",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43032",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347097",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43033",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347098",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43034",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43035",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    }
+  ]
+}

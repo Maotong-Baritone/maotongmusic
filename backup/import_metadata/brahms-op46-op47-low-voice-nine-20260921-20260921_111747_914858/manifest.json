@@ -58655,13 +58655,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "77395044-01de-4e7a-bcfc-39eb84aa7d1c",
           "source_references": [
             {
@@ -58669,10 +58669,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "1. Die Kränze"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "347115",
@@ -58694,19 +58691,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Magyarisch. Andante, Op. 46",
+          "proposed_title": "No. 2 The Lied, Art Song, and Choral Texts Archive Andante, Op. 46",
           "proposed_work": "4 Lieder, Op. 46",
           "title_scope": "individual_movement",
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "15a595cb-ad8a-498b-aa32-cc4433e0ea4e",
           "source_references": [
             {
@@ -58714,10 +58711,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "2. Magyarisch"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "347116",
@@ -58745,13 +58739,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "aba4f711-6f27-4618-8c08-cdc49401f712",
           "source_references": [
             {
@@ -58759,10 +58753,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "3. Die Schale der Vergessenheit"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "43418",
@@ -58790,13 +58781,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "低声部",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "7b27cc9a-ff28-4d50-be19-2d5acbf2a2e4",
           "source_references": [
             {
@@ -58804,10 +58795,7 @@
               "source_url": "https://imslp.org/wiki/4_Lieder%2C_Op.46_%28Brahms%2C_Johannes%29",
               "description": "4. An die Nachtigall"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         }
       ]
     },
@@ -59319,13 +59307,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "0d42e3b5-3c89-4f87-b199-a962f89cac4e",
           "source_references": [
             {
@@ -59333,10 +59321,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "1. Botschaft"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "279897",
@@ -59358,19 +59343,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 2 Liebesglut. Appassionato, Op. 47",
+          "proposed_title": "No. 2 Liebesgluth. Appassionato, Op. 47",
           "proposed_work": "5 Lieder, Op. 47",
           "title_scope": "individual_movement",
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "7b91940a-cc1e-4fc9-9d11-bcab623cdb18",
           "source_references": [
             {
@@ -59378,10 +59363,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "2. Liebesglut"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "43842",
@@ -59409,13 +59391,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "f29f1cee-c501-4fda-8571-024a88f2a792",
           "source_references": [
             {
@@ -59423,10 +59405,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "3. Sonntag"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "43843",
@@ -59448,19 +59427,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 4 O liebliche Wangen. Lebhaft, Op. 47",
+          "proposed_title": "No. 4 O liebliche Wangen, ihr macht mir Verlangen. Lebhaft, Op. 47",
           "proposed_work": "5 Lieder, Op. 47",
           "title_scope": "individual_movement",
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "4091f100-caea-4edd-8aea-86bde2e28ebe",
           "source_references": [
             {
@@ -59468,10 +59447,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "4. O liebliche Wangen"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "279898",
@@ -59499,13 +59475,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "低声部、钢琴",
+          "voice_types": "声乐、钢琴",
           "tonality": "",
-          "language_cn": "德语",
+          "language_cn": "法语",
           "warnings": [],
-          "decision": "approved",
+          "decision": "pending",
           "review_notes": "",
-          "review_edited": true,
+          "review_edited": false,
           "public_id": "85814e38-0637-497d-8b51-10887f508f70",
           "source_references": [
             {
@@ -59513,10 +59489,7 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.47_%28Brahms%2C_Johannes%29",
               "description": "5. Die Liebende schreibt"
             }
-          ],
-          "published_at": "2026-09-21T17:19:35+00:00",
-          "publication_batch_id": "brahms-op46-op47-low-voice-nine-20260921",
-          "publication_status": "catalog_and_storage_published"
+          ]
         },
         {
           "imslp_id": "740177",

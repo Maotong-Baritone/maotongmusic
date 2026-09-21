@@ -1,0 +1,130 @@
+{
+  "batch_id": "brahms-op46-op47-low-voice-nine-20260921",
+  "recorded_at": "2026-09-21T17:17:48.098313+00:00",
+  "source_manifest_before_sha256": "422fdcd7f425add1dd1262cb76a4e5a9e5fb0f8754dbe496b3dd7957d7071421",
+  "source_manifest_after_sha256": "0495e56ccf0822f3ce6058f02e2d845a8b94a1417376c0b468e6cb2da82e806b",
+  "staging_manifest_before_sha256": "050efddb27e2d4f2043b14ea68c9f76a75eab579605a49a7561a71676134b8f0",
+  "staging_manifest_after_sha256": "2d3f615fbab99e272fbddb91166a19002501d3ee2e90e34746a5a1d046efc3fa",
+  "backup": "backup\\import_metadata\\brahms-op46-op47-low-voice-nine-20260921-20260921_111747_914858",
+  "changes": [
+    {
+      "imslp_id": "43417",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347115",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347115",
+      "field": "title",
+      "before": "No. 2 The Lied, Art Song, and Choral Texts Archive Andante, Op. 46",
+      "after": "No. 2 Magyarisch. Andante, Op. 46",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "347116",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43418",
+      "field": "voice_types",
+      "before": "低声部",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43841",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43841",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.47 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "279897",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "279897",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.47 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "279897",
+      "field": "title",
+      "before": "No. 2 Liebesgluth. Appassionato, Op. 47",
+      "after": "No. 2 Liebesglut. Appassionato, Op. 47",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "43842",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43842",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.47 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "43843",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43843",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.47 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "43843",
+      "field": "title",
+      "before": "No. 4 O liebliche Wangen, ihr macht mir Verlangen. Lebhaft, Op. 47",
+      "after": "No. 4 O liebliche Wangen. Lebhaft, Op. 47",
+      "evidence": "The rendered first score page supplies the printed title and tempo spelling."
+    },
+    {
+      "imslp_id": "279898",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "279898",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.47 work page identifies the language as German; the selected low-voice scores contain German text."
+    }
+  ]
+}

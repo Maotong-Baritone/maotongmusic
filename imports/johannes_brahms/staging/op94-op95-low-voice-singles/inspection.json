@@ -1,0 +1,318 @@
+{
+  "label": "5 Lieder, Op.94与7 Lieder, Op.95：低声部单曲",
+  "checked_on": "2026-09-21",
+  "recorded_at": "2026-09-21T16:36:14.516628+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "347092",
+    "347093",
+    "347094",
+    "42852",
+    "347095",
+    "347096",
+    "43032",
+    "347097",
+    "43033",
+    "347098",
+    "43034",
+    "43035"
+  ],
+  "source_notes": "实时IMSLP作品页确认Op.94含五首、Op.95含七首德语独唱与钢琴作品；所选十二份均标为Public Domain的低声部版，出版为N. Simrock并由Edition Peters再版。Op.95所选版编者为Max Friedlaender。",
+  "method": "保留原PDF字节；pypdf自动解析全部页面并校验SHA256；Poppler渲染全部页面；人工查看十二份全页接触表并重点核对首尾、标题、速度、语言、编制和异常页。",
+  "rendering_note": "十二份普通清晰单曲的全部页面均已渲染；页数、内容连续性、可读性和末页收束正常。",
+  "metadata_changes": [
+    {
+      "imslp_id": "347092",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347092",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347093",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347093",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347094",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347094",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "42852",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "42852",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347095",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347095",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "The live IMSLP Op.94 work page identifies the language as German; the selected low-voice scores contain German text."
+    },
+    {
+      "imslp_id": "347096",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43032",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347097",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43033",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "347098",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43034",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    },
+    {
+      "imslp_id": "43035",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "The live IMSLP page groups the selected file under Low voice and identifies the work instrumentation as voice and piano."
+    }
+  ],
+  "files": {
+    "347092": {
+      "pages": 3,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Mit vierzig Jahren ist der Berg erstiegen. Langsam, Op. 94"
+      ],
+      "notes": "No. 1 Mit vierzig Jahren ist der Berg erstiegen. Langsam, Op. 94，共3页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "347093": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Steig auf, geliebter Schatten. Gehalten, Op. 94"
+      ],
+      "notes": "No. 2 Steig auf, geliebter Schatten. Gehalten, Op. 94，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "347094": {
+      "pages": 4,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Mein Herz ist schwer, mein Auge wacht. Unruhig bewegt, doch nicht schnell, Op. 94"
+      ],
+      "notes": "No. 3 Mein Herz ist schwer, mein Auge wacht. Unruhig bewegt, doch nicht schnell, Op. 94，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "42852": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Sapphische Ode. Ziemlich langsam, Op. 94"
+      ],
+      "notes": "No. 4 Sapphische Ode. Ziemlich langsam, Op. 94，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "347095": {
+      "pages": 1,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Kein Haus, keine Heimat. Tempo giusto, Op. 94"
+      ],
+      "notes": "No. 5 Kein Haus, keine Heimat. Tempo giusto, Op. 94，共1页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "347096": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Das Mädchen. Munter, mit freiem Vortrag, Op. 95"
+      ],
+      "notes": "No. 1 Das Mädchen. Munter, mit freiem Vortrag, Op. 95，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "43032": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Bei dir sind meine Gedanken. Schnell und heimlich, Op. 95"
+      ],
+      "notes": "No. 2 Bei dir sind meine Gedanken. Schnell und heimlich, Op. 95，共4页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "347097": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Beim Abschied. Sehr lebhaft und ungeduldig, Op. 95"
+      ],
+      "notes": "No. 3 Beim Abschied. Sehr lebhaft und ungeduldig, Op. 95，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "43033": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Der Jäger. Lebhaft, Op. 95"
+      ],
+      "notes": "No. 4 Der Jäger. Lebhaft, Op. 95，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "347098": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Vorschneller Schwur. Allegretto, Op. 95"
+      ],
+      "notes": "No. 5 Vorschneller Schwur. Allegretto, Op. 95，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "43034": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Mädchenlied. Behaglich, Op. 95"
+      ],
+      "notes": "No. 6 Mädchenlied. Behaglich, Op. 95，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    },
+    "43035": {
+      "pages": 2,
+      "key": "",
+      "number": 7,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 7 Schön war, das ich dir weihte. Einfach, Op. 95"
+      ],
+      "notes": "No. 7 Schön war, das ich dir weihte. Einfach, Op. 95，共2页；接触表及首尾页核对通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-21T16:38:04+00:00",
+  "approved_publication_ids": [
+    "347092",
+    "347093",
+    "347094",
+    "42852",
+    "347095",
+    "347096",
+    "43032",
+    "347097",
+    "43033",
+    "347098",
+    "43034",
+    "43035"
+  ]
+}
