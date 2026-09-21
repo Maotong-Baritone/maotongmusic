@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3731,
-  "unique_content_count": 3712,
+  "entry_count": 3740,
+  "unique_content_count": 3721,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4385177883,
+  "total_size": 4389256800,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1339,6 +1339,13 @@
       "sha256": "fae2b1b868ddff65301942906107afa16a0037a245a8073f932f95f2d96363ba"
     },
     {
+      "public_id": "0d42e3b5-3c89-4f87-b199-a962f89cac4e",
+      "source_path": "scores/艺术歌曲/0d42e3b5-3c89-4f87-b199-a962f89cac4e.pdf",
+      "storage_key": "scores/0d/0d42e3b5-3c89-4f87-b199-a962f89cac4e.pdf",
+      "file_size": 402032,
+      "sha256": "a8d3731abc122867c64312244678a4e7f257588e1de018de701be7eea54ec871"
+    },
+    {
       "public_id": "0d454646-3bfb-5354-bb3b-001fce109cc5",
       "source_path": "scores/歌剧咏叹调/1766007764109_Dopo_il_nembo_e_la_procella.pdf",
       "storage_key": "scores/0d/0d454646-3bfb-5354-bb3b-001fce109cc5.pdf",
@@ -2359,6 +2366,13 @@
       "storage_key": "scores/15/15870efc-3f5e-418b-a86a-6398895f78ae.pdf",
       "file_size": 417387,
       "sha256": "35ac20aaf8c5d4216b5b40a2ef99480398d0f7e67af401e9728bdf390cfa48d6"
+    },
+    {
+      "public_id": "15a595cb-ad8a-498b-aa32-cc4433e0ea4e",
+      "source_path": "scores/艺术歌曲/15a595cb-ad8a-498b-aa32-cc4433e0ea4e.pdf",
+      "storage_key": "scores/15/15a595cb-ad8a-498b-aa32-cc4433e0ea4e.pdf",
+      "file_size": 330272,
+      "sha256": "770ec6e6858cabde57f52a826d762121673edb1f13faf7ce99bda2f4f5ecacea"
     },
     {
       "public_id": "15b1ae05-7407-5bc0-89ff-651caf22281d",
@@ -6538,6 +6552,13 @@
       "storage_key": "scores/40/40839994-61b1-51b3-9cee-e11c60febb1c.pdf",
       "file_size": 245496,
       "sha256": "bc6b2e9a5f1a02e6a52d1098c9b622317b263c1cd59bb33951b69c8ddc75d30b"
+    },
+    {
+      "public_id": "4091f100-caea-4edd-8aea-86bde2e28ebe",
+      "source_path": "scores/艺术歌曲/4091f100-caea-4edd-8aea-86bde2e28ebe.pdf",
+      "storage_key": "scores/40/4091f100-caea-4edd-8aea-86bde2e28ebe.pdf",
+      "file_size": 481498,
+      "sha256": "9b2cd08c0bbdf88416f4bf5451c1b9f6cd642f5170159a36df5ccd8ebac4f71f"
     },
     {
       "public_id": "40a782c7-05f4-4f62-8a4d-60364dd0ac0c",
@@ -12126,6 +12147,13 @@
       "sha256": "736cf03317f0924633cbbbdf7fe9ac1068e5b3b39c6a108c2050b5a6ace68d08"
     },
     {
+      "public_id": "77395044-01de-4e7a-bcfc-39eb84aa7d1c",
+      "source_path": "scores/艺术歌曲/77395044-01de-4e7a-bcfc-39eb84aa7d1c.pdf",
+      "storage_key": "scores/77/77395044-01de-4e7a-bcfc-39eb84aa7d1c.pdf",
+      "file_size": 409497,
+      "sha256": "d815e555441c6d48f9bb4af0369279a97a53b9b954eeb31d2da71412074649bf"
+    },
+    {
       "public_id": "7755eda3-b1d1-4631-94af-9fceafdbac56",
       "source_path": "scores/艺术歌曲/7755eda3-b1d1-4631-94af-9fceafdbac56.pdf",
       "storage_key": "scores/77/7755eda3-b1d1-4631-94af-9fceafdbac56.pdf",
@@ -12525,6 +12553,13 @@
       "sha256": "88af3e62c22fbae5662ddfa21b71292ec9036ddc5aef0fd66210a384cc3b2fc5"
     },
     {
+      "public_id": "7b27cc9a-ff28-4d50-be19-2d5acbf2a2e4",
+      "source_path": "scores/艺术歌曲/7b27cc9a-ff28-4d50-be19-2d5acbf2a2e4.pdf",
+      "storage_key": "scores/7b/7b27cc9a-ff28-4d50-be19-2d5acbf2a2e4.pdf",
+      "file_size": 486158,
+      "sha256": "7450820a6049cc1a95d3be5033178ac78ae4e799d066995f75466c4c063ea74e"
+    },
+    {
       "public_id": "7b686e0e-573a-5ae6-8a09-0d2fc92ea056",
       "source_path": "scores/歌剧咏叹调/1768703277_42_Mazepa_Kakoy_To_vlast'yu_neponyatnoy_Soprano.pdf",
       "storage_key": "scores/7b/7b686e0e-573a-5ae6-8a09-0d2fc92ea056.pdf",
@@ -12544,6 +12579,13 @@
       "storage_key": "scores/7b/7b8800da-7906-5944-b837-c52e477def17.pdf",
       "file_size": 179604,
       "sha256": "a23e2a1b11dda50a0fe13e738e62ffa026c86707c94e80d1ee330600a500c81b"
+    },
+    {
+      "public_id": "7b91940a-cc1e-4fc9-9d11-bcab623cdb18",
+      "source_path": "scores/艺术歌曲/7b91940a-cc1e-4fc9-9d11-bcab623cdb18.pdf",
+      "storage_key": "scores/7b/7b91940a-cc1e-4fc9-9d11-bcab623cdb18.pdf",
+      "file_size": 610529,
+      "sha256": "1beab221f5c7e58d1873efda65054905bce7481aad0b03bcc350dcb6ab110b84"
     },
     {
       "public_id": "7b964ef8-3d21-5624-8cf4-24b1bb349f0b",
@@ -13454,6 +13496,13 @@
       "storage_key": "scores/85/857823a3-1750-42b4-bb4a-e52e54d1dd5f.pdf",
       "file_size": 3003579,
       "sha256": "347fe01e7f61a7fedcefa71dca17ca0ce6908ca808d2e3862a03bf77a2661314"
+    },
+    {
+      "public_id": "85814e38-0637-497d-8b51-10887f508f70",
+      "source_path": "scores/艺术歌曲/85814e38-0637-497d-8b51-10887f508f70.pdf",
+      "storage_key": "scores/85/85814e38-0637-497d-8b51-10887f508f70.pdf",
+      "file_size": 434297,
+      "sha256": "25bcb58635974e1ce7d09cd228231b4405e33dcfd420277ccc7b54e2098203ff"
     },
     {
       "public_id": "858d4a29-4299-536b-8cd9-9a2149f76c50",
@@ -17388,6 +17437,13 @@
       "storage_key": "scores/ab/ab9fb1fe-3f22-4426-aff2-f8c123719159.pdf",
       "file_size": 19477701,
       "sha256": "d008436d920706c2f604389083d7f641e39eba5fabe6e5e90584255aaf0ca654"
+    },
+    {
+      "public_id": "aba4f711-6f27-4618-8c08-cdc49401f712",
+      "source_path": "scores/艺术歌曲/aba4f711-6f27-4618-8c08-cdc49401f712.pdf",
+      "storage_key": "scores/ab/aba4f711-6f27-4618-8c08-cdc49401f712.pdf",
+      "file_size": 658107,
+      "sha256": "b706632dee4d937ce369be1cfe0d7316e0aa434a156a5d2b3fb19afce8bc1faa"
     },
     {
       "public_id": "aba508a3-f93d-57d0-98ab-af78852c6005",
@@ -24899,6 +24955,13 @@
       "storage_key": "scores/f2/f2850534-84c9-4a3f-a0e0-16210615bae8.pdf",
       "file_size": 371849,
       "sha256": "12b75284e58db4061a05e86489c7e167433eaa265f13507135b8c0d88084a986"
+    },
+    {
+      "public_id": "f29f1cee-c501-4fda-8571-024a88f2a792",
+      "source_path": "scores/艺术歌曲/f29f1cee-c501-4fda-8571-024a88f2a792.pdf",
+      "storage_key": "scores/f2/f29f1cee-c501-4fda-8571-024a88f2a792.pdf",
+      "file_size": 266527,
+      "sha256": "26db26d690b6f33b461bec8cff385922d6373b56ba3d3a3130c8364a60ff3c02"
     },
     {
       "public_id": "f2bb8150-df52-5d0d-8d6d-56833607c4cb",
