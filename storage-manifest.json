@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 3719,
-  "unique_content_count": 3700,
+  "entry_count": 3731,
+  "unique_content_count": 3712,
   "duplicate_content_groups": 19,
   "duplicate_file_count": 19,
-  "total_size": 4381761752,
+  "total_size": 4385177883,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1297,6 +1297,13 @@
       "sha256": "04cb48ac60d9819c7c80340507896155a7168a782ec39a7beefb40a65d2be3d9"
     },
     {
+      "public_id": "0d0467e0-6da9-4e07-a5b9-8b38a0e5b141",
+      "source_path": "scores/艺术歌曲/0d0467e0-6da9-4e07-a5b9-8b38a0e5b141.pdf",
+      "storage_key": "scores/0d/0d0467e0-6da9-4e07-a5b9-8b38a0e5b141.pdf",
+      "file_size": 110560,
+      "sha256": "bfa8a18a15fbdbd595a680f5302929f5b3cf5929f6c949558d5f8730324ecca6"
+    },
+    {
       "public_id": "0d06a8e2-d17d-5fd0-8ffa-3bdda58b6849",
       "source_path": "scores/歌剧咏叹调/1766097630877_Perdon_ti_chiedo_o_Padre.pdf",
       "storage_key": "scores/0d/0d06a8e2-d17d-5fd0-8ffa-3bdda58b6849.pdf",
@@ -1456,6 +1463,13 @@
       "storage_key": "scores/0e/0e3e7c06-8545-547d-839a-32790035fe9e.pdf",
       "file_size": 529367,
       "sha256": "570321231875e700498fb4fd4a1d6ae2072b5c9778f6e4acba0bd29ef376c97d"
+    },
+    {
+      "public_id": "0e3f7c6a-3d5a-425a-ab60-188e0b1c8ce3",
+      "source_path": "scores/艺术歌曲/0e3f7c6a-3d5a-425a-ab60-188e0b1c8ce3.pdf",
+      "storage_key": "scores/0e/0e3f7c6a-3d5a-425a-ab60-188e0b1c8ce3.pdf",
+      "file_size": 306408,
+      "sha256": "6aa6835417390f05e62f0c9dbab98e4af61bfdcfbd7d54843c7e8e20f47a9202"
     },
     {
       "public_id": "0e6cfc8e-bcd5-57c3-a601-689c2d159256",
@@ -8745,6 +8759,13 @@
       "sha256": "f55b02d15c6395993529cace265beb3c71ac8456166effc6cc5c3dcb22d40665"
     },
     {
+      "public_id": "574750f8-08e3-4ae6-9a99-3fe18fcd0a4b",
+      "source_path": "scores/艺术歌曲/574750f8-08e3-4ae6-9a99-3fe18fcd0a4b.pdf",
+      "storage_key": "scores/57/574750f8-08e3-4ae6-9a99-3fe18fcd0a4b.pdf",
+      "file_size": 209428,
+      "sha256": "b6fa274dc67f45fd9ac2ddff8fd240a820e39cbb0cb50166979579f7c5608141"
+    },
+    {
       "public_id": "574cd5fc-2ef6-5c49-b257-e75eae6c37ed",
       "source_path": "scores/声乐作品/艺术歌曲/1766372605807_Lied_des_gefangenen_Jagers_-_D843_Medium_Original.pdf",
       "storage_key": "scores/57/574cd5fc-2ef6-5c49-b257-e75eae6c37ed.pdf",
@@ -9305,6 +9326,13 @@
       "sha256": "0e5c5cdd13b94ae7b0caa905b7fb973ee6767a1b338e12bbadc5668864175e4c"
     },
     {
+      "public_id": "5c1b31bc-e37e-44ad-8828-6215a65b90df",
+      "source_path": "scores/艺术歌曲/5c1b31bc-e37e-44ad-8828-6215a65b90df.pdf",
+      "storage_key": "scores/5c/5c1b31bc-e37e-44ad-8828-6215a65b90df.pdf",
+      "file_size": 181420,
+      "sha256": "c94a80e7c6148f1689759959b6d75a9bedba4898a607474ec5464357a8f89857"
+    },
+    {
       "public_id": "5c30eadf-aac4-55e9-8c0a-a492f5dbb683",
       "source_path": "scores/歌剧咏叹调/1766012399486_Saltro_che_lagrime.pdf",
       "storage_key": "scores/5c/5c30eadf-aac4-55e9-8c0a-a492f5dbb683.pdf",
@@ -9562,6 +9590,13 @@
       "storage_key": "scores/5e/5e32a687-fc1d-56a4-ae1a-f9b3345353da.pdf",
       "file_size": 2967564,
       "sha256": "ce90e4802738e410d20f1569fde4f7c81742fcb8f068aec35f38e62857fae850"
+    },
+    {
+      "public_id": "5e459da8-c895-4878-adad-d9b29c9ee3d2",
+      "source_path": "scores/艺术歌曲/5e459da8-c895-4878-adad-d9b29c9ee3d2.pdf",
+      "storage_key": "scores/5e/5e459da8-c895-4878-adad-d9b29c9ee3d2.pdf",
+      "file_size": 191704,
+      "sha256": "35de47175354bc1fd7cd95e8f308277d476f34dd6e89cf79d47135f32e617f2d"
     },
     {
       "public_id": "5e5db039-bcc8-52ab-9e36-62146ca236cd",
@@ -9828,6 +9863,13 @@
       "storage_key": "scores/60/607faa54-516c-55a4-9ebf-b55cf011ffda.pdf",
       "file_size": 692765,
       "sha256": "ddbf7c115dc0f5873eabb1289e408c6cd5cdc015425727a75e91d8532de4673c"
+    },
+    {
+      "public_id": "608d7ba3-3294-44e7-9723-5b54bf2f288b",
+      "source_path": "scores/艺术歌曲/608d7ba3-3294-44e7-9723-5b54bf2f288b.pdf",
+      "storage_key": "scores/60/608d7ba3-3294-44e7-9723-5b54bf2f288b.pdf",
+      "file_size": 185439,
+      "sha256": "db1819a933a64d415f90923177e6f8c8aa1a6df08493eac748424e7aa73d2279"
     },
     {
       "public_id": "609002e2-e908-5fc6-8131-10491ea66518",
@@ -12574,6 +12616,13 @@
       "sha256": "05abaa52935275cc372dee913301bc9f3a0897bcded5b7fcacfea23c61fe6e24"
     },
     {
+      "public_id": "7c385d29-9e04-4a6c-9d4a-e129fd3a23b7",
+      "source_path": "scores/艺术歌曲/7c385d29-9e04-4a6c-9d4a-e129fd3a23b7.pdf",
+      "storage_key": "scores/7c/7c385d29-9e04-4a6c-9d4a-e129fd3a23b7.pdf",
+      "file_size": 353548,
+      "sha256": "9872ae635b6f51f9a3c6feae53135f90b121d62cb288777c65404a8959c8715d"
+    },
+    {
       "public_id": "7c3b63d6-8f48-4190-9c12-d859567ff3cf",
       "source_path": "scores/器乐独奏/7c3b63d6-8f48-4190-9c12-d859567ff3cf.pdf",
       "storage_key": "scores/7c/7c3b63d6-8f48-4190-9c12-d859567ff3cf.pdf",
@@ -13036,6 +13085,13 @@
       "sha256": "ceb02edc97a2d957d4c6e79c7715e75e16959f13105390244781ae619ecd41a9"
     },
     {
+      "public_id": "814e2c62-d3f5-41de-b874-e170e64e0359",
+      "source_path": "scores/艺术歌曲/814e2c62-d3f5-41de-b874-e170e64e0359.pdf",
+      "storage_key": "scores/81/814e2c62-d3f5-41de-b874-e170e64e0359.pdf",
+      "file_size": 497721,
+      "sha256": "b681322ad6c28cc91e6244fb2d08b3fd2dd207b59105fb25d1164d74c31f42a4"
+    },
+    {
       "public_id": "81556433-847f-50e1-90d7-3a2d5fc9dcb4",
       "source_path": "scores/歌剧咏叹调/1766007778676_Con_lui_volate_dolce_pensieri_dell_alma_amante.pdf",
       "storage_key": "scores/81/81556433-847f-50e1-90d7-3a2d5fc9dcb4.pdf",
@@ -13314,6 +13370,13 @@
       "storage_key": "scores/84/84e642c9-f363-577f-9351-5db9ce765c2c.pdf",
       "file_size": 437660,
       "sha256": "e5681a4299076c12bd2e44f035904bff8905266f08587576277a5b1ae4b484b1"
+    },
+    {
+      "public_id": "84fb2948-6623-4a81-88d3-e47d45f59df3",
+      "source_path": "scores/艺术歌曲/84fb2948-6623-4a81-88d3-e47d45f59df3.pdf",
+      "storage_key": "scores/84/84fb2948-6623-4a81-88d3-e47d45f59df3.pdf",
+      "file_size": 289094,
+      "sha256": "e617424bd4926f43810fe96fb38ae08ef15805fb8bc0bc247b257b1b3975663a"
     },
     {
       "public_id": "85041ebd-9be7-5968-ba2d-afd2878fbe47",
@@ -19462,6 +19525,13 @@
       "sha256": "e57a38b49769d7d67b7653c779708863fb4fd53636ad8c82f97fcd3754c379b2"
     },
     {
+      "public_id": "bf93826b-0415-4b5e-aaa7-ff2c6051a180",
+      "source_path": "scores/艺术歌曲/bf93826b-0415-4b5e-aaa7-ff2c6051a180.pdf",
+      "storage_key": "scores/bf/bf93826b-0415-4b5e-aaa7-ff2c6051a180.pdf",
+      "file_size": 471092,
+      "sha256": "860c9c27f5f2e480f4c61f8a3deb2c941f6367f1752437429ec03b4dc3e030dc"
+    },
+    {
       "public_id": "bf95bf17-78eb-4ca7-b784-27d095fa4f7a",
       "source_path": "scores/歌剧总谱/bf95bf17-78eb-4ca7-b784-27d095fa4f7a.pdf",
       "storage_key": "scores/bf/bf95bf17-78eb-4ca7-b784-27d095fa4f7a.pdf",
@@ -24026,6 +24096,13 @@
       "sha256": "a940ab0e0f26b18d548a62bc6c158fe7274e4c75f2e3c8bfd7059c71e8250569"
     },
     {
+      "public_id": "eb7df94e-b676-4963-be74-d3f7f3e38133",
+      "source_path": "scores/艺术歌曲/eb7df94e-b676-4963-be74-d3f7f3e38133.pdf",
+      "storage_key": "scores/eb/eb7df94e-b676-4963-be74-d3f7f3e38133.pdf",
+      "file_size": 382693,
+      "sha256": "49916defda8a7fed834df7167ff077d43861d55a8964fd4f9e2d5fc96d240722"
+    },
+    {
       "public_id": "eb7e0de2-2942-5dff-9fbf-66a49b517149",
       "source_path": "scores/歌剧咏叹调/1766098709377_Come_bello.pdf",
       "storage_key": "scores/eb/eb7e0de2-2942-5dff-9fbf-66a49b517149.pdf",
@@ -25116,6 +25193,13 @@
       "storage_key": "scores/f5/f5dcc6b9-937e-574d-a4b4-36854cb0460e.pdf",
       "file_size": 477743,
       "sha256": "537be87dfaf1b6f583ebf7f4be4cf995b650e0e7232459624cee9aee7acd4070"
+    },
+    {
+      "public_id": "f5de8372-11c1-47d2-a1a5-c1c50f5a42d3",
+      "source_path": "scores/艺术歌曲/f5de8372-11c1-47d2-a1a5-c1c50f5a42d3.pdf",
+      "storage_key": "scores/f5/f5de8372-11c1-47d2-a1a5-c1c50f5a42d3.pdf",
+      "file_size": 237024,
+      "sha256": "b008f3e7128d7ae68a661901c337ca5154bfa3bc5cfcf2d746b44a643f12278c"
     },
     {
       "public_id": "f5e1e0f0-1efe-52c4-8d0e-9f325dbb057d",
