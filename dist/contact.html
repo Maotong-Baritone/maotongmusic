@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>联系我 | 征集网站名字中</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #264653;
+            --accent-color: #2a9d8f;
+            --bg-color: #fdfbf7;
+            --text-main: #2b2d42;
+        }
+        body { 
+            background-color: var(--bg-color); 
+            font-family: 'Noto Sans SC', sans-serif; 
+            color: var(--text-main);
+            display: flex; flex-direction: column; min-height: 100vh; 
+        }
+        .font-serif { font-family: 'Playfair Display', 'Noto Serif SC', serif; }
+        .container { flex: 1; }
+        
+        /* 导航栏 */
+        .navbar {
+            background: rgba(38, 70, 83, 0.95) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* 顶部横幅 */
+        .page-header {
+            background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
+            padding: 4rem 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* 卡片样式 */
+        .contact-card {
+            background: white;
+            border: none;
+            border-radius: 16px;
+            padding: 2rem;
+            height: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+        
+        /* 社交媒体徽章 */
+        .social-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            transition: background 0.2s;
+        }
+        .social-item:hover {
+            background-color: #f1f3f5;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        /* 颜色定义 */
+        .douyin-bg { background: linear-gradient(45deg, #000000, #25F4EE, #FE2C55); }
+        .xhs-bg { background-color: #FF2442; }
+        .wechat-bg { background-color: #07C160; }
+        .email-bg { background-color: #2a9d8f; }
+        .web-bg { background-color: #457b9d; } /* 个人网站颜色 */
+
+        footer { 
+            background-color: #264653; color: #a8b2d1; padding: 3rem 0; margin-top: 5rem; font-family: 'Noto Serif SC', serif;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1 fw-bold font-serif fs-3" href="index.html">🎹 征集网站名字中</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">🌍 音乐专业资源</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showSponsorModal()">❤️ 赞助</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 返回首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-warning" href="contact.html">👋 联系我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header shadow-sm">
+        <div class="container">
+            <h1 class="font-serif fw-bold mb-2">保持联系</h1>
+            <p class="text-white-50 font-serif fst-italic">Contact & Social Media</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-lg-5">
+                <div class="contact-card">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="social-icon email-bg">📬</div>
+                        <h4 class="mb-0 fw-bold font-serif">联系方式</h4>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6 class="text-uppercase text-muted small fw-bold mb-3">官方网站</h6>
+                        <a href="https://maotong.me" target="_blank" rel="noopener noreferrer" class="social-item text-decoration-none border border-primary bg-primary bg-opacity-10">
+                            <div class="social-icon web-bg">🌐</div>
+                            <div class="flex-grow-1 text-dark">
+                                <h6 class="mb-0 fw-bold">Maotong.me</h6>
+                                <p class="mb-0 text-muted small">访问个人主页</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">Visit ↗</span>
+                        </a>
+                    </div>
+
+                    <h6 class="text-uppercase text-muted small fw-bold mb-3">电子邮箱</h6>
+                    <div class="list-group list-group-flush">
+                        <a href="mailto:435970608@qq.com" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0 bg-light rounded mb-2">
+                            <div>
+                                <span class="d-block text-muted small">QQ邮箱</span>
+                                <span class="fw-bold text-dark">435970608@qq.com</span>
+                            </div>
+                            <span class="badge bg-white text-secondary border">写信 ↗</span>
+                        </a>
+                        <a href="mailto:yumaotong0613@gmail.com" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0 bg-light rounded">
+                            <div>
+                                <span class="d-block text-muted small">Gmail</span>
+                                <span class="fw-bold text-dark">yumaotong0613@gmail.com</span>
+                            </div>
+                            <span class="badge bg-white text-secondary border">写信 ↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="contact-card">
+                    <h4 class="mb-4 fw-bold font-serif border-bottom pb-2">社交媒体</h4>
+
+                    <div class="social-item">
+                        <div class="social-icon wechat-bg">💬</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold">微信 (WeChat)</h6>
+                            <p class="mb-0 text-muted small" id="wxId">435970608</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline-success rounded-pill" onclick="copyWechat()">复制ID</button>
+                    </div>
+                    <div class="alert alert-light border border-success p-2 small text-success mb-4">
+                        💡 提示：添加请注明 <strong>"来自乐谱库网站"</strong>
+                    </div>
+
+                    <div class="social-item">
+                        <div class="social-icon douyin-bg">🎵</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold">非著名旅美男中音MT</h6>
+                            <p class="mb-0 text-muted small">抖音号: 2188213618</p>
+                        </div>
+                        <a href="https://v.douyin.com/YKihJCHDbcY/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark rounded-pill px-3">主页 ↗</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-10">
+                <div class="contact-card bg-light border-0" style="background: linear-gradient(to right, #ffffff, #f8f9fa);">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h4 class="fw-bold font-serif text-primary mb-3">❤️ 支持本站</h4>
+                            <p class="text-muted mb-4">如果您觉得这里的乐谱对您有帮助，欢迎打赏支持！<br>您的支持将用于服务器维护与乐谱整理，帮助这个小站走得更远。</p>
+                            <button class="btn btn-primary rounded-pill px-4 shadow-sm fw-bold" onclick="showSponsorModal()">
+                                ☕ 请我喝杯咖啡
+                            </button>
+                        </div>
+                        <div class="col-md-4 text-center d-none d-md-block">
+                            <div style="font-size: 5rem;">🎁</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <h5 class="text-white mb-3 font-serif">征集网站名字中</h5>
+            <p class="small text-muted mb-0">
+                &copy; 2025-2026 Yu Maotong. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="sponsorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-0 bg-light justify-content-center position-relative">
+                    <h5 class="modal-title fw-bold font-serif text-primary">❤️ 支持本站</h5>
+                    <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 bg-white">
+                    <p class="text-muted mb-4 small">维护网站不易，您的支持是我最大的动力！<br>所有打赏将用于服务器维护与乐谱整理。</p>
+                    
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                         <div class="p-3 bg-light rounded-3 border" style="max-width: 260px;">
+                            <img src="img/wechat_pay.jpg" class="img-fluid rounded mb-2" alt="微信支付">
+                            <div class="small fw-bold text-success"><span class="fs-5 align-middle me-1">💬</span>微信支付</div>
+                         </div>
+                    </div>
+                    
+                    <p class="small text-muted fst-italic mt-2 mb-0">感谢每一位热爱音乐的朋友！🌹</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showSponsorModal() {
+            const modal = new bootstrap.Modal(document.getElementById('sponsorModal'));
+            modal.show();
+        }
+
+        function copyWechat() {
+            const wxId = document.getElementById('wxId').innerText;
+            navigator.clipboard.writeText(wxId).then(() => {
+                alert('微信号 ' + wxId + ' 已复制！\n请打开微信添加好友。');
+            }).catch(err => {
+                console.error('复制失败', err);
+            });
+        }
+    </script>
+</body>
+</html>

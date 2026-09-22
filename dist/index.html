@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>征集网站名字中 | Maotong's Scores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=20260913a" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fw-bold font-serif fs-3">🎹 征集网站名字中</span>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showFavorites()">❤️ 我的收藏</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start" href="resources.html">🌍 音乐专业资源</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showSponsorModal()">❤️ 赞助</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showUsageNotice()">📌 使用须知</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start">👋 联系我</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showLogModal()">🔔 动态</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3" id="themeToggleBtn" onclick="toggleTheme()" title="切换深色模式" aria-label="切换深色模式">🌙</button>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="badge bg-warning text-dark ms-2">v0.4重构版</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="site-notice-bar" role="region" aria-label="网站使用须知">
+        <div class="container">
+            <button type="button" class="site-notice-button" onclick="showUsageNotice()" aria-haspopup="dialog" aria-controls="usageNoticeModal">
+                <span class="site-notice-title">📌 使用须知</span>
+                <span class="site-notice-copy">乐谱文件已迁移至 Cloudflare R2；未找到乐谱可联系我反馈。</span>
+                <span class="site-notice-cta">查看详情 <span aria-hidden="true">→</span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="container position-relative" style="z-index: 2;">
+            <h1 class="font-serif display-4 fw-bold mb-3">征集网站名字中</h1>
+            <p class="text-white-50 mb-5 font-serif fst-italic fs-5">"分享音乐 · 传承艺术"</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="input-group input-group-lg search-container">
+                        <span class="input-group-text bg-transparent border-0 ps-3 text-muted">🔍</span>
+                        <input type="text" id="searchInput" class="form-control border-0 bg-transparent" placeholder="搜曲名、作曲家、目录内容..." aria-label="搜索乐谱" style="box-shadow: none;">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" style="background-color:#2a9d8f; border:none;" type="button" onclick="performSearch()">搜索</button>
+                    </div>
+                    
+                    <div class="mt-4 d-flex flex-column align-items-center gap-2">
+                        <button class="btn btn-link text-white text-decoration-none opacity-75 hover-opacity-100" onclick="resetFilters()">🌟 查看完整乐谱列表</button>
+                        <div class="d-flex gap-4 text-white-50 mt-1 small font-serif">
+                            <span>📚 总藏量: <span id="statTotal" class="text-white fw-bold">...</span></span>
+                            <span>👤 作曲家: <span id="statComposer" class="text-white fw-bold">...</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-none d-md-block" style="height: 60px; overflow: hidden; margin-top: -50px; position: relative; z-index: 1;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--bg-color);"></path>
+        </svg>
+    </div>
+
+    <div class="container position-relative mt-4" style="z-index: 10;">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="category-card">
+                    <div class="cat-header text-primary bg-light bg-opacity-50">🎤 声乐作品</div>
+                    <div class="list-group list-group-flush category-group">
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧咏叹调', this)">歌剧咏叹调 <span class="badge bg-light text-dark count-badge" data-cat="歌剧咏叹调">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧重唱', this)">歌剧重唱 <span class="badge bg-light text-dark count-badge" data-cat="歌剧重唱">0</span></button>
+                        
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('宗教声乐作品', this)">宗教声乐作品 <span class="badge bg-light text-dark count-badge" data-cat="宗教声乐作品">0</span></button>
+                        
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('艺术歌曲', this)">艺术歌曲 <span class="badge bg-light text-dark count-badge" data-cat="艺术歌曲">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('音乐剧选段', this)">音乐剧选段 <span class="badge bg-light text-dark count-badge" data-cat="音乐剧选段">0</span></button>
+                        
+                        <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">其他分类</div>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('合唱作品', this)">合唱作品 <span class="badge bg-light text-dark count-badge" data-cat="合唱作品">0</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="category-card">
+                    <div class="cat-header text-success bg-light bg-opacity-50">📚 曲集与器乐</div>
+                    <div class="list-group list-group-flush category-group">
+                        <div class="py-2 bg-light text-center small text-muted fw-bold border-bottom font-serif">套曲与曲集</div>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('声乐套曲', this)">声乐套曲 <span class="badge bg-light text-dark count-badge" data-cat="声乐套曲">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('乐谱书/曲集', this)">乐谱书/曲集 <span class="badge bg-light text-dark count-badge" data-cat="乐谱书/曲集">0</span></button>
+                    </div>
+                    <div class="list-group list-group-flush category-group mt-3">
+                        <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">器乐作品</div>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('器乐独奏', this)">器乐独奏 <span class="badge bg-light text-dark count-badge" data-cat="器乐独奏">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('器乐分谱', this)">器乐分谱 <span class="badge bg-light text-dark count-badge" data-cat="器乐分谱">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('室内乐', this)">室内乐 <span class="badge bg-light text-dark count-badge" data-cat="室内乐">0</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="category-card">
+                    <div class="cat-header text-danger bg-light bg-opacity-50">🎼 总谱与特殊</div>
+                    <div class="list-group list-group-flush category-group">
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('歌剧总谱', this)">歌剧总谱 <span class="badge bg-light text-dark count-badge" data-cat="歌剧总谱">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('管弦乐/交响曲', this)">管弦乐/交响曲 <span class="badge bg-light text-dark count-badge" data-cat="管弦乐/交响曲">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('协奏曲总谱', this)">协奏曲总谱 <span class="badge bg-light text-dark count-badge" data-cat="协奏曲总谱">0</span></button>
+                        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('宗教声乐作品总谱', this)">
+                            <div>宗教声乐作品总谱<div class="small text-muted" style="font-size:0.65rem">(弥撒、清唱剧、康塔塔等)</div></div>
+                            <span class="badge bg-light text-dark count-badge" data-cat="宗教声乐作品总谱">0</span>
+                        </button>
+                    </div>
+                     <div class="mt-3 list-group list-group-flush category-group">
+                         <div class="py-2 bg-light text-center small text-muted fw-bold border-top border-bottom font-serif">其他</div>
+                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('音乐会咏叹调/世俗康塔塔', this)">音乐会咏叹调/世俗康塔塔 <span class="badge bg-light text-dark count-badge" data-cat="音乐会咏叹调/世俗康塔塔">0</span></button>
+                         <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterCategory('其他', this)">其他 <span class="badge bg-light text-dark count-badge" data-cat="其他">0</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content-section" id="mainContentArea">
+        <div class="card filter-panel shadow-sm border-0 mb-4">
+            <div class="card-body py-3">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-auto fw-bold text-secondary d-none d-md-block">🌪️ 筛选:</div>
+                    <div class="col-6 col-md-2">
+                        <label class="visually-hidden" for="composerInput">按作曲家筛选</label>
+                        <input class="form-control form-control-sm border-0 bg-light" list="composerOptions" id="composerInput" placeholder="👤 作曲家" oninput="applyFilters()">
+                        <datalist id="composerOptions"></datalist>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <label class="visually-hidden" for="voiceInput">按声部或乐器筛选</label>
+                        <input class="form-control form-control-sm border-0 bg-light" list="voiceOptions" id="voiceInput" placeholder="🎻 编制" oninput="applyFilters()">
+                        <datalist id="voiceOptions"></datalist>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <label class="visually-hidden" for="languageSelect">按语言筛选</label>
+                        <select id="languageSelect" class="form-select form-select-sm border-0 bg-light" onchange="applyFilters()"><option value="all">🌐 语言</option></select>
+                    </div>
+                    <div class="col-6 col-md-3 border-start ps-4">
+                        <label class="visually-hidden" for="sortSelect">乐谱排序方式</label>
+                        <select id="sortSelect" class="form-select form-select-sm fw-bold text-primary border-0" onchange="applyFilters()">
+                            <option value="date_desc">📅 时间 (新)</option>
+                            <option value="date_asc">📅 时间 (旧)</option>
+                            <option value="title_asc">🔤 曲名</option>
+                            <option value="composer_asc">👤 作曲家</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-auto ms-auto d-grid d-md-block">
+                         <button class="btn btn-sm btn-outline-secondary filter-reset-button rounded-pill px-3 w-100" id="filterResetBtn" type="button" onclick="handleFilterReset()" disabled>暂无筛选</button>
+                    </div>
+                </div>
+                <div class="active-filters-bar mt-3 pt-3 border-top" id="activeFiltersBar" aria-live="polite" hidden>
+                    <span class="active-filters-label">🔎 当前搜索范围：</span>
+                    <div class="active-filters-list" id="activeFiltersList"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="recentSection" class="mb-5">
+                    <h5 class="mb-4 font-serif fw-bold" style="color: #264653; border-left: 4px solid #e76f51; padding-left: 10px;">🆕 最新上传</h5>
+                    <div class="row row-cols-1 row-cols-md-3 g-4" id="recentList"></div>
+                </div>
+                <div id="listSection">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 id="listTitle" class="fw-bold font-serif display-6" style="font-size: 1.5rem;">📚 乐谱目录</h4>
+                        <span class="badge rounded-pill" style="background-color: #e9c46a; color: #333;" id="filteredCount">0 首乐谱</span>
+                    </div>
+                    <div class="card shadow-sm border-0 d-none d-md-block" style="border-radius: 12px; overflow: hidden;">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0 table-custom">
+                                <thead class="bg-light"><tr><th width="40%" class="ps-4 py-3">标题 / 作品出处</th><th width="20%">作曲家</th><th width="10%">语言</th><th width="15%">分类</th><th class="text-end pe-4">操作</th></tr></thead>
+                                <tbody id="mainTableBody" class="bg-white"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mobile-score-list d-md-none" id="mobileScoreList" aria-live="polite"></div>
+                    <nav aria-label="乐谱目录分页" class="mt-5" id="paginationNav"><ul class="pagination justify-content-center" id="paginationUl"></ul></nav>
+                    <div id="noResult" class="text-center p-5 text-muted" style="display:none;"><div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。</p><a href="contact.html" class="btn btn-outline-primary rounded-pill px-4">💬 联系我求谱</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center"><h4 class="text-white mb-3 font-serif">征集网站名字中</h4><p class="mb-4 text-white-50 small">"分享音乐 · 传承艺术"</p><div class="d-inline-block border-top border-secondary pt-4 mt-2"><p class="small text-muted mb-0">&copy; 2025-2026 Yu Maotong. All Rights Reserved.<br><span style="font-size: 0.8em; opacity: 0.5;">仅供学习使用，请勿商用</span></p></div></div>
+    </footer>
+
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content responsive-modal-content">
+                <div class="modal-header border-0 bg-light">
+                    <h5 class="modal-title fw-bold font-serif" id="detailModalTitle">乐谱详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭乐谱详情"></button>
+                </div>
+                <div class="score-actions p-3 border-bottom" aria-label="乐谱操作">
+                                <div class="d-flex flex-wrap justify-content-center gap-2" id="previewActions">
+                                    <button type="button" class="btn btn-outline-primary rounded-pill px-4" id="btnLoadPreview" onclick="loadPdfPreview()">👁️ 加载预览</button>
+                                    <a class="btn btn-outline-secondary rounded-pill px-4" id="mOpenPdf" href="#" target="_blank" rel="noopener noreferrer">新窗口打开</a>
+                                </div>
+                    <div class="score-download-actions mt-2">
+                            <a id="mDownload" href="#" class="btn btn-primary w-100 py-2 shadow-sm rounded-pill" style="background-color:#2a9d8f; border:none;" download>⬇️ 下载 PDF</a>
+                            <button id="btnShareDetail" type="button" class="btn btn-outline-secondary w-100 py-2 mt-2 rounded-pill" onclick="copyDetailLink()">🔗 复制详情链接</button>
+
+                    </div>
+                    <div id="wechatDownloadHelp" class="alert alert-info small mt-2 mb-0" role="note" hidden>
+                        微信内若只能预览、无法保存，请点右上角“···”，选择“在浏览器打开”，再下载 PDF。也可以复制详情链接，粘贴到 Safari 或其他浏览器打开。
+                    </div>
+                    <label class="small d-block mt-2">若下载后打开了 PDF，请使用阅读器的下载或分享菜单保存。</label>
+                    <input id="detailLinkFallback" class="form-control mt-2" aria-label="长按复制乐谱详情链接" readonly hidden>
+                </div>
+                <div class="modal-body p-0 responsive-modal-body">
+                    <div class="row h-100 g-0 responsive-row">
+                        <div class="col-lg-3 col-12 p-4 bg-white responsive-col-left">
+                            <span class="badge bg-primary mb-3" id="mCategory" style="background-color: #264653 !important;"></span>
+                            <h3 id="mTitle" class="score-title mb-2 fw-bold text-dark"></h3>
+                            <p class="mb-4 text-muted fst-italic"><span id="mWork" class="fs-6">-</span></p>
+                            <div class="card mb-4 border-0 bg-light rounded-3 p-3">
+                                <ul class="list-unstyled mb-0 small gap-2 d-flex flex-column">
+                                    <li>👤 <strong>作曲家:</strong> <span id="mComposer"></span></li>
+                                    <li>🗣️ <strong>语言:</strong> <span id="mLanguage"></span></li>
+                                    <li>🎹 <strong>调性:</strong> <span id="mTonality"></span></li>
+                                    <li>👥 <strong>编制:</strong> <span id="mVoice"></span></li>
+                                    <li>🎵 <strong>体裁:</strong> <span id="mSubCat"></span></li> <li>📅 <strong>上传日期:</strong> <span id="mDate"></span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="card bg-light border-0 shadow-sm mb-3" id="descCard" style="display:none;">
+                                <div class="card-body p-3">
+                                    <h6 class="card-subtitle mb-2 text-muted small fw-bold">📝 简介 / 包含曲目</h6>
+                                    <p class="card-text small text-secondary" id="mDescription" style="white-space: pre-wrap;"></p>
+                                </div>
+                            </div>
+                            
+                            <button id="btnReadLyrics" class="btn btn-outline-dark w-100 py-2 mb-3 shadow-sm rounded-pill fw-bold" style="display:none;" onclick="openLyricsReader()">
+                                📖 阅读歌词 / 剧本
+                            </button>
+
+                            <div class="download-notice mt-3" role="note">
+                                <p class="mb-2">🌐 乐谱文件托管于 Cloudflare R2；若下载失败，请稍后重试或更换网络。</p>
+                                <p class="mb-0">仅供学习与研究，请勿商用或未经许可再次传播。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-12 bg-secondary position-relative responsive-col-right">
+                            <iframe id="mPreview" src="about:blank" width="100%" height="100%" title="乐谱 PDF 预览" style="border:none; display:none;"></iframe>
+                            <div id="previewPlaceholder" class="preview-placeholder flex-column align-items-center justify-content-center h-100 text-white text-center p-4">
+                                <div class="fs-1 mb-3" aria-hidden="true">📄</div>
+                                <p class="fs-5 fw-bold mb-2" id="previewStatus">PDF 预览尚未加载</p>
+                                <p class="small text-white-50 mb-4" id="previewHelp">为节省流量，只有点击按钮后才会载入乐谱。</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="readerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header border-bottom shadow-sm">
+                    <div class="d-flex align-items-center">
+                         <h5 class="modal-title fw-bold font-serif me-3" id="readerTitle">剧本阅读器</h5>
+                         <span class="badge bg-secondary" id="readerComposer"></span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭歌词阅读器"></button>
+                </div>
+                <div class="modal-body p-0" style="background-color: #fcfcfc;">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-md-6 h-100 overflow-auto reader-text-col reader-original">
+                                <h6 class="text-muted text-uppercase small fw-bold mb-4 border-bottom pb-2">原文 (Original)</h6>
+                                <div id="readerOriginalText">加载中...</div>
+                            </div>
+                            <div class="col-md-6 h-100 overflow-auto reader-text-col reader-translation">
+                                <h6 class="text-muted text-uppercase small fw-bold mb-4 border-bottom pb-2">中文翻译 (Translation)</h6>
+                                <div id="readerTransText">加载中...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sponsorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-0 bg-light justify-content-center position-relative">
+                    <h5 class="modal-title fw-bold font-serif text-primary">❤️ 支持本站</h5>
+                    <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="关闭赞助窗口"></button>
+                </div>
+                <div class="modal-body p-4 bg-white">
+                    <p class="text-muted mb-4 small">维护网站不易，您的支持是我最大的动力！<br>所有打赏将用于服务器维护与乐谱整理。</p>
+                    
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                         <div class="p-3 bg-light rounded-3 border" style="max-width: 260px;">
+                            <img src="img/wechat_pay.jpg" class="img-fluid rounded mb-2" alt="微信支付">
+                            <div class="small fw-bold text-success"><span class="fs-5 align-middle me-1">💬</span>微信支付</div>
+                         </div>
+                         <!-- 预留支付宝位置
+                         <div class="p-3 bg-light rounded-3 border" style="max-width: 260px;">
+                            <img src="img/alipay.jpg" class="img-fluid rounded mb-2" alt="支付宝">
+                            <div class="small fw-bold text-primary"><span class="fs-5 align-middle me-1">🟦</span>支付宝</div>
+                         </div>
+                         -->
+                    </div>
+                    
+                    <p class="small text-muted fst-italic mt-2 mb-0">感谢每一位热爱音乐的朋友！🌹</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="usageNoticeModal" tabindex="-1" aria-labelledby="usageNoticeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content usage-notice-modal border-0 shadow-lg">
+                <div class="modal-header usage-notice-header border-0">
+                    <div>
+                        <div class="small fw-bold text-uppercase usage-notice-kicker mb-1">Before you download</div>
+                        <h5 class="modal-title fw-bold font-serif mb-0" id="usageNoticeTitle">📌 使用与版权说明</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <section class="usage-notice-item">
+                        <div class="usage-notice-icon" aria-hidden="true">🌐</div>
+                        <div>
+                            <h6 class="fw-bold mb-2">下载说明</h6>
+                            <p class="mb-0 text-muted">本站乐谱文件托管于 Cloudflare R2。受网络环境影响，部分国内用户仍可能遇到下载速度较慢、连接不稳定或下载失败的情况。如遇问题，建议稍后重试或更换网络。</p>
+                        </div>
+                    </section>
+
+                    <section class="usage-notice-item">
+                        <div class="usage-notice-icon" aria-hidden="true">🔎</div>
+                        <div>
+                            <h6 class="fw-bold mb-2">找不到需要的乐谱？</h6>
+                            <p class="mb-0 text-muted">如果站内暂时没有你需要的乐谱，可能是尚未整理或上传。欢迎通过站内“联系我”私信，建议附上作品名、作曲家和所需版本。后续如能找到来源可靠、版权状态允许公开分享的版本，我会陆续补充更新。</p>
+                        </div>
+                    </section>
+
+                    <section class="usage-notice-item mb-0">
+                        <div class="usage-notice-icon" aria-hidden="true">⚖️</div>
+                        <div>
+                            <h6 class="fw-bold mb-2">版权说明</h6>
+                            <p class="mb-0 text-muted">部分近现代及新作品仍受版权保护，因此暂时无法上传或提供下载，敬请理解。本站资料仅供个人学习与研究使用，请勿商用或未经许可再次传播。</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer usage-notice-footer border-0 px-4 px-md-5 pb-4 pt-0">
+                    <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4">💬 联系我求谱</a>
+                    <button type="button" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">我知道了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">最近动态</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭最近动态"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js?v=20260913a"></script>
+</body>
+</html>

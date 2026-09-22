@@ -1,0 +1,7 @@
+{
+  "scoreStorage": {
+    "baseUrl": "https://scores.maotong.me",
+    "objectPrefix": "scores",
+    "keyStrategy": "public_id_sharded"
+  }
+}
