@@ -70100,19 +70100,19 @@
           "editor": "Max Friedlaender (1852-1934)",
           "eligible": true,
           "skip_reason": "",
-          "proposed_title": "No. 1 Wie Melodien zeiht es mir. Zart, Op. 105",
+          "proposed_title": "No. 1 Wie Melodien zieht es mir. Zart, Op. 105",
           "proposed_work": "5 Lieder, Op. 105",
           "title_scope": "individual_movement",
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
-          "language_cn": "法语",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "d559dff7-a00a-4333-a83c-d2558770a38c",
           "source_references": [
             {
@@ -70120,7 +70120,10 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "1. Wie Melodien zieht es mir"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "43320",
@@ -70148,13 +70151,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
-          "language_cn": "法语",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "4f2d3230-b185-4104-872c-ac3d802df409",
           "source_references": [
             {
@@ -70162,7 +70165,10 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "2. Immer leiser wird mein Schlummer"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "347100",
@@ -70190,13 +70196,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
-          "language_cn": "法语",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "fc11ff85-ab77-416f-8947-ee968059b97f",
           "source_references": [
             {
@@ -70204,7 +70210,10 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "3. Klage"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "43321",
@@ -70232,13 +70241,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
-          "language_cn": "法语",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "d95a681d-4676-467b-8b43-9732e6f24ac1",
           "source_references": [
             {
@@ -70246,7 +70255,10 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "4. Auf dem Kirchhofe"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "347101",
@@ -70274,13 +70286,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
-          "language_cn": "法语",
+          "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "8c01b73f-c74c-4acf-a7b3-a879ba327919",
           "source_references": [
             {
@@ -70288,7 +70300,10 @@
               "source_url": "https://imslp.org/wiki/5_Lieder%2C_Op.105_%28Brahms%2C_Johannes%29",
               "description": "5. Verrat"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "85159",
@@ -91147,13 +91162,13 @@
           "movement_number": 1,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "f09cdbc5-c428-4f5a-a9b5-015a42c8ef23",
           "source_references": [
             {
@@ -91161,7 +91176,10 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "1. Der Kuß"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "54912",
@@ -91189,13 +91207,13 @@
           "movement_number": 2,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "3c2cf50a-724a-43fc-95a1-0ee94a19e1ae",
           "source_references": [
             {
@@ -91203,7 +91221,10 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "2. Scheiden und Meiden"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "54913",
@@ -91231,13 +91252,13 @@
           "movement_number": 3,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "35cc6e92-df1c-4db1-870e-7c3bf7eb4563",
           "source_references": [
             {
@@ -91245,7 +91266,10 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "3. In der Ferne"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "39255",
@@ -91273,13 +91297,13 @@
           "movement_number": 4,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "6f29cf55-5b58-4b28-a4dc-d48c7aa09b1e",
           "source_references": [
             {
@@ -91287,7 +91311,10 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "4. Der Schmied"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "39256",
@@ -91315,13 +91342,13 @@
           "movement_number": 5,
           "category": "艺术歌曲",
           "sub_category": "",
-          "voice_types": "声乐、钢琴",
+          "voice_types": "低声部、钢琴",
           "tonality": "",
           "language_cn": "德语",
           "warnings": [],
-          "decision": "pending",
+          "decision": "approved",
           "review_notes": "",
-          "review_edited": false,
+          "review_edited": true,
           "public_id": "7a5738ef-5ca4-46c7-9d64-40c46b9ce004",
           "source_references": [
             {
@@ -91329,7 +91356,10 @@
               "source_url": "https://imslp.org/wiki/5_Poems%2C_Op.19_%28Brahms%2C_Johannes%29",
               "description": "5. An eine Äolsharfe"
             }
-          ]
+          ],
+          "published_at": "2026-09-22T23:17:35+00:00",
+          "publication_batch_id": "brahms-op19-op105-low-voice-ten-20260922",
+          "publication_status": "catalog_and_storage_published"
         },
         {
           "imslp_id": "67460",
