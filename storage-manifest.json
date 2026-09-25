@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4836,
-  "unique_content_count": 4814,
+  "entry_count": 4845,
+  "unique_content_count": 4823,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5252047422,
+  "total_size": 5254089503,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -3122,6 +3122,13 @@
       "storage_key": "scores/16/1643b7c2-70ed-4f9d-9804-8b3a1c69de68.pdf",
       "file_size": 2908962,
       "sha256": "f83dffbd0cd8e8022ad3bc05ae55297809dbc4ecacf78f5b22dc72493fd96b73"
+    },
+    {
+      "public_id": "1652018d-0eeb-40b0-ab17-201bf77fa773",
+      "source_path": "scores/合唱作品/1652018d-0eeb-40b0-ab17-201bf77fa773.pdf",
+      "storage_key": "scores/16/1652018d-0eeb-40b0-ab17-201bf77fa773.pdf",
+      "file_size": 93966,
+      "sha256": "5c1041ea6776cd6b4b45c72a7c150e8e2dc6518c67b937bc746d9c4b3c725b9f"
     },
     {
       "public_id": "16598c92-947c-439c-8e57-c437a73d0c89",
@@ -6482,6 +6489,13 @@
       "storage_key": "scores/31/31515165-fbe7-417a-bff4-1e60ca99a294.pdf",
       "file_size": 292984,
       "sha256": "d11ef8b100ecd95e8d644d7071c946cd5b5f0a4f86e182029e11546376662488"
+    },
+    {
+      "public_id": "315f901e-39ac-4bf5-8650-b024a471fd0d",
+      "source_path": "scores/艺术歌曲/315f901e-39ac-4bf5-8650-b024a471fd0d.pdf",
+      "storage_key": "scores/31/315f901e-39ac-4bf5-8650-b024a471fd0d.pdf",
+      "file_size": 299347,
+      "sha256": "17849d710c77c3520b256be5733cfb17868691ddfa6301c7312c6e2c310966d1"
     },
     {
       "public_id": "31723252-b3fa-575f-9c80-9e0494d6da02",
@@ -12623,6 +12637,13 @@
       "sha256": "47fe956e8b7f6e122a06e24f4db2dd424ef3e59152ad41bed1cec87d551c064f"
     },
     {
+      "public_id": "5fc3bb43-b129-4e4f-95c1-9cfc045c1d9e",
+      "source_path": "scores/合唱作品/5fc3bb43-b129-4e4f-95c1-9cfc045c1d9e.pdf",
+      "storage_key": "scores/5f/5fc3bb43-b129-4e4f-95c1-9cfc045c1d9e.pdf",
+      "file_size": 159736,
+      "sha256": "f510006cf29354ca38b847f7ca3d83b1a2e121649b11506d4b1357bc60235c55"
+    },
+    {
       "public_id": "5fd58c3e-bdf0-4b7d-b64c-b16bf9babdb9",
       "source_path": "scores/歌剧咏叹调/5fd58c3e-bdf0-4b7d-b64c-b16bf9babdb9.pdf",
       "storage_key": "scores/5f/5fd58c3e-bdf0-4b7d-b64c-b16bf9babdb9.pdf",
@@ -15974,6 +15995,13 @@
       "storage_key": "scores/79/79b13f6a-ec6d-5c7e-8dfb-d4dca3af4485.pdf",
       "file_size": 666997,
       "sha256": "a20fe5c9b617a27659da728b5afa0478eb9b6733cd08930abe183ecf4ae0cb2f"
+    },
+    {
+      "public_id": "79ce586c-7172-45c7-b3e0-9afcf5dd4ffb",
+      "source_path": "scores/合唱作品/79ce586c-7172-45c7-b3e0-9afcf5dd4ffb.pdf",
+      "storage_key": "scores/79/79ce586c-7172-45c7-b3e0-9afcf5dd4ffb.pdf",
+      "file_size": 123540,
+      "sha256": "b990037bbe027f1b2260b9d0bbf80397b713ff97fc1ce7c45f4dd2ddbd72d652"
     },
     {
       "public_id": "79e5e0d9-810a-4be9-bcdd-55f5c0616a7d",
@@ -24019,6 +24047,13 @@
       "sha256": "97d9a1b0c2a8d5398ab1974420ec3361263420aa9902cefaa21de79a60e2d6e0"
     },
     {
+      "public_id": "b61e5f3d-31ad-4f9d-b2d2-16400b479a1b",
+      "source_path": "scores/合唱作品/b61e5f3d-31ad-4f9d-b2d2-16400b479a1b.pdf",
+      "storage_key": "scores/b6/b61e5f3d-31ad-4f9d-b2d2-16400b479a1b.pdf",
+      "file_size": 326874,
+      "sha256": "d4e1250886efb5753b87eaa32f53caa0a0e4a400909bf7d2dd4a030b08afbb22"
+    },
+    {
       "public_id": "b62006bf-200b-404d-8516-3937c8dd9c12",
       "source_path": "scores/歌剧咏叹调/b62006bf-200b-404d-8516-3937c8dd9c12.pdf",
       "storage_key": "scores/b6/b62006bf-200b-404d-8516-3937c8dd9c12.pdf",
@@ -25664,6 +25699,13 @@
       "sha256": "318b5ab0cb1887d472bf697c151b5125d3e84bf8e54438c19a2466d739f7848d"
     },
     {
+      "public_id": "c2410f7d-1d5b-4193-92f3-dda4a9abb0d3",
+      "source_path": "scores/合唱作品/c2410f7d-1d5b-4193-92f3-dda4a9abb0d3.pdf",
+      "storage_key": "scores/c2/c2410f7d-1d5b-4193-92f3-dda4a9abb0d3.pdf",
+      "file_size": 308590,
+      "sha256": "242e446a4f0ae121c8e46e2e746fdd975e333c52a9df5e0a3be543061e787c2f"
+    },
+    {
       "public_id": "c258177c-401d-5640-b54e-d52e4c9d5999",
       "source_path": "scores/歌剧咏叹调/1766007793234_Dolce_bene_di_questalma.pdf",
       "storage_key": "scores/c2/c258177c-401d-5640-b54e-d52e4c9d5999.pdf",
@@ -25846,6 +25888,13 @@
       "sha256": "ce3ab3851e0f61ea084e8b6c0b6b4f899d6337050ebe6e7ec996ab270b035e50"
     },
     {
+      "public_id": "c33fac56-364b-4755-8da6-2cdbc1eeab61",
+      "source_path": "scores/合唱作品/c33fac56-364b-4755-8da6-2cdbc1eeab61.pdf",
+      "storage_key": "scores/c3/c33fac56-364b-4755-8da6-2cdbc1eeab61.pdf",
+      "file_size": 116833,
+      "sha256": "ad43693c57686dbaa23d8a9884f1b22e90319a89d8a6000e8204c97287604b91"
+    },
+    {
       "public_id": "c340877c-3a71-5c23-be64-9b427f16aeba",
       "source_path": "scores/歌剧咏叹调/1766038872873_Si_di_Corsari_il_fulmine.pdf",
       "storage_key": "scores/c3/c340877c-3a71-5c23-be64-9b427f16aeba.pdf",
@@ -25935,6 +25984,13 @@
       "storage_key": "scores/c3/c3e6cfbc-fd24-559c-9bf3-15ae3c05ebc2.pdf",
       "file_size": 200702,
       "sha256": "8e0b32955cd5755aeb2adb30ac16dc8caaf257fd7af4e9d7faa90f45edf08633"
+    },
+    {
+      "public_id": "c3efd00e-7a0f-4f43-9ff9-b8d8c8b8706e",
+      "source_path": "scores/合唱作品/c3efd00e-7a0f-4f43-9ff9-b8d8c8b8706e.pdf",
+      "storage_key": "scores/c3/c3efd00e-7a0f-4f43-9ff9-b8d8c8b8706e.pdf",
+      "file_size": 280131,
+      "sha256": "05958c95ad25b7345184f3bb941b215c2c82e6ec0bbf6cb105b98dda978e0b7c"
     },
     {
       "public_id": "c41e1a40-b6f2-50aa-a26b-3936cf90c5e1",
@@ -29603,6 +29659,13 @@
       "storage_key": "scores/de/ded51b79-e822-4e7b-a25a-886e48a762e3.pdf",
       "file_size": 162029,
       "sha256": "9888767bacf5c9bcf49183ca3e0bd4189126cc1b9e8315ee69dd66aa7102cb47"
+    },
+    {
+      "public_id": "ded757b8-2c47-46b3-a2a9-b98a8de12fb9",
+      "source_path": "scores/艺术歌曲/ded757b8-2c47-46b3-a2a9-b98a8de12fb9.pdf",
+      "storage_key": "scores/de/ded757b8-2c47-46b3-a2a9-b98a8de12fb9.pdf",
+      "file_size": 333064,
+      "sha256": "ec6a31610b64903fcdf072c5b913a4c9050613024426e1a8823edef123770723"
     },
     {
       "public_id": "dee61af7-c385-55b1-b0f5-5e2cbc8dbc11",
