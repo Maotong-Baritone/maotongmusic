@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4809,
-  "unique_content_count": 4787,
+  "entry_count": 4821,
+  "unique_content_count": 4799,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5232271678,
+  "total_size": 5238204265,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -4062,6 +4062,13 @@
       "sha256": "44fd758c24a66d1d8e08ebd1179e6a6b06c12956791f344d92c491ce8e7cd11b"
     },
     {
+      "public_id": "1e18410e-2ae1-4d4e-961f-028cbaaf279c",
+      "source_path": "scores/艺术歌曲/1e18410e-2ae1-4d4e-961f-028cbaaf279c.pdf",
+      "storage_key": "scores/1e/1e18410e-2ae1-4d4e-961f-028cbaaf279c.pdf",
+      "file_size": 325852,
+      "sha256": "ed7ef9d23f6d4c289e8fbf9d77e2bcd5011ccb4f2f0e76c82481ff45dc2654fe"
+    },
+    {
       "public_id": "1e19cfd0-4a13-4a0b-b45c-6681718130dd",
       "source_path": "scores/歌剧咏叹调/1e19cfd0-4a13-4a0b-b45c-6681718130dd.pdf",
       "storage_key": "scores/1e/1e19cfd0-4a13-4a0b-b45c-6681718130dd.pdf",
@@ -4648,6 +4655,13 @@
       "storage_key": "scores/22/22f81f69-4153-548c-a877-9fb30e463bbd.pdf",
       "file_size": 358091,
       "sha256": "b3b06e3eeb640024851cbafbe81a9118ffa8f7f29f1e6e44a48b7bd1f27e9c2c"
+    },
+    {
+      "public_id": "231a88d3-0575-402c-a2b0-67b78c81540d",
+      "source_path": "scores/艺术歌曲/231a88d3-0575-402c-a2b0-67b78c81540d.pdf",
+      "storage_key": "scores/23/231a88d3-0575-402c-a2b0-67b78c81540d.pdf",
+      "file_size": 545867,
+      "sha256": "371cb3958ef5ac878fa7c1d928ab540a240e7f42d2236607b75e07973c553cbf"
     },
     {
       "public_id": "232760ff-0c1c-5868-b294-3a4f0c7d9dc9",
@@ -6846,6 +6860,13 @@
       "storage_key": "scores/35/350c1cf6-e9a4-507d-bd1c-fce8e47d36fa.pdf",
       "file_size": 565152,
       "sha256": "e5c53eb568d8f474d3db66a75f631e2391b059795005511a6ecde503def6283a"
+    },
+    {
+      "public_id": "3519e76a-e6ea-44da-943a-0b64225b8b6c",
+      "source_path": "scores/艺术歌曲/3519e76a-e6ea-44da-943a-0b64225b8b6c.pdf",
+      "storage_key": "scores/35/3519e76a-e6ea-44da-943a-0b64225b8b6c.pdf",
+      "file_size": 298413,
+      "sha256": "fea781a1e1c106725237478a9384fbf81d3a365f70684491cfac8042eec698d6"
     },
     {
       "public_id": "3522ea20-6c92-583e-9208-d7f38ddc726d",
@@ -12672,6 +12693,13 @@
       "sha256": "cbaf37ff5a00af2ad96e20c00e9a6bf1e00ee6c062415facb6f0e2951a009092"
     },
     {
+      "public_id": "60a67f9b-e8af-48ee-ba1f-020ce23ec4d6",
+      "source_path": "scores/艺术歌曲/60a67f9b-e8af-48ee-ba1f-020ce23ec4d6.pdf",
+      "storage_key": "scores/60/60a67f9b-e8af-48ee-ba1f-020ce23ec4d6.pdf",
+      "file_size": 110503,
+      "sha256": "a30876e153eeea66c65aeb390e90aeb8803381807796498ee43ca1529971cc64"
+    },
+    {
       "public_id": "60cda971-9c28-588c-b30d-e8d668d2dff1",
       "source_path": "scores/歌剧咏叹调/1766007745036_Voli_colla_sua_tromba.pdf",
       "storage_key": "scores/60/60cda971-9c28-588c-b30d-e8d668d2dff1.pdf",
@@ -16949,6 +16977,13 @@
       "sha256": "d1f3bb3c4eb6aa2f66158369d35f0ffd8c0c9734ffff0d96e75ab695f2d99fd1"
     },
     {
+      "public_id": "829eaf92-1a22-4ba1-92a0-4615838f0899",
+      "source_path": "scores/艺术歌曲/829eaf92-1a22-4ba1-92a0-4615838f0899.pdf",
+      "storage_key": "scores/82/829eaf92-1a22-4ba1-92a0-4615838f0899.pdf",
+      "file_size": 185067,
+      "sha256": "d0d5f7b2fb1593dbd341aa58cc6cb42b9882d9940ac8a43581f0f86685d73f5d"
+    },
+    {
       "public_id": "82df83c4-fdbc-447e-96d7-0605e40c3a55",
       "source_path": "scores/歌剧咏叹调/82df83c4-fdbc-447e-96d7-0605e40c3a55.pdf",
       "storage_key": "scores/82/82df83c4-fdbc-447e-96d7-0605e40c3a55.pdf",
@@ -18986,6 +19021,13 @@
       "sha256": "aa52c364c921cb3714b12eeddbf07e48f86c1038086492f11e63491004789ac8"
     },
     {
+      "public_id": "91a36adb-4afd-4478-a45f-f400ede750a2",
+      "source_path": "scores/艺术歌曲/91a36adb-4afd-4478-a45f-f400ede750a2.pdf",
+      "storage_key": "scores/91/91a36adb-4afd-4478-a45f-f400ede750a2.pdf",
+      "file_size": 360624,
+      "sha256": "e50807e2fada237596778258be1ac32aec6500af6742c607bbf63a6b822c7bcc"
+    },
+    {
       "public_id": "91a7d12f-0dc2-5811-a6d6-d73545ca1b43",
       "source_path": "scores/歌剧咏叹调/1766007797089_Si_me_contrario_il_Cielo_e_che_sperar.pdf",
       "storage_key": "scores/91/91a7d12f-0dc2-5811-a6d6-d73545ca1b43.pdf",
@@ -19803,6 +19845,13 @@
       "storage_key": "scores/97/97e902fe-deac-5b54-ae91-2376cc052752.pdf",
       "file_size": 360945,
       "sha256": "b365d58dad08de9791110978783d34e27a076f95b66d3244e0fcae0d5c3ff829"
+    },
+    {
+      "public_id": "97fac7da-ee24-4e39-97c3-697be4996d22",
+      "source_path": "scores/艺术歌曲/97fac7da-ee24-4e39-97c3-697be4996d22.pdf",
+      "storage_key": "scores/97/97fac7da-ee24-4e39-97c3-697be4996d22.pdf",
+      "file_size": 91431,
+      "sha256": "ecac29fe2445c796e8b06b191344db4a24429d536e4142d2164e6fcd12a6ef3a"
     },
     {
       "public_id": "9817c913-78e9-5b1f-b891-7ce202d4cb38",
@@ -22143,6 +22192,13 @@
       "sha256": "2d48e712c7b171286e203220f5efcad3ec5b51f574c1ac274a2e3f205ddaffd2"
     },
     {
+      "public_id": "a9e7d8f7-be41-4d33-8b1d-859968cd01af",
+      "source_path": "scores/艺术歌曲/a9e7d8f7-be41-4d33-8b1d-859968cd01af.pdf",
+      "storage_key": "scores/a9/a9e7d8f7-be41-4d33-8b1d-859968cd01af.pdf",
+      "file_size": 369883,
+      "sha256": "d018d14cf91b7507c7a7e1206493985741c7ee2b78e2c5edb219a17320f6dc7f"
+    },
+    {
       "public_id": "a9e9147c-31c6-4e39-8066-9dcfcda91718",
       "source_path": "scores/歌剧咏叹调/a9e9147c-31c6-4e39-8066-9dcfcda91718.pdf",
       "storage_key": "scores/a9/a9e9147c-31c6-4e39-8066-9dcfcda91718.pdf",
@@ -24103,6 +24159,13 @@
       "sha256": "228fa67aa290a66697bd0158d1fed4c521137d40cbf0aa1336aeb2afdc654ac4"
     },
     {
+      "public_id": "b7ccdb30-40a9-4f22-a4cc-87175c685809",
+      "source_path": "scores/艺术歌曲/b7ccdb30-40a9-4f22-a4cc-87175c685809.pdf",
+      "storage_key": "scores/b7/b7ccdb30-40a9-4f22-a4cc-87175c685809.pdf",
+      "file_size": 200468,
+      "sha256": "b9ffd361f1053036f4d6ca49e77e57f8cd5a5f3b8c336a476287e0670af889be"
+    },
+    {
       "public_id": "b7dc699f-db60-591d-92e4-426c4c01ef19",
       "source_path": "scores/歌剧咏叹调/1766098257035_In_questo_semplice_modesto_asilo.pdf",
       "storage_key": "scores/b7/b7dc699f-db60-591d-92e4-426c4c01ef19.pdf",
@@ -24500,6 +24563,13 @@
       "storage_key": "scores/ba/bab3e0fb-5646-41fb-a775-9d2dacb0ee8c.pdf",
       "file_size": 230596,
       "sha256": "5d135c5448875a276bda8c527c0a5c07f5da132ca72435ac53342ca195535db0"
+    },
+    {
+      "public_id": "bab45edb-dfdc-4b6e-9ceb-fbf558d375fb",
+      "source_path": "scores/艺术歌曲/bab45edb-dfdc-4b6e-9ceb-fbf558d375fb.pdf",
+      "storage_key": "scores/ba/bab45edb-dfdc-4b6e-9ceb-fbf558d375fb.pdf",
+      "file_size": 181700,
+      "sha256": "9cd83cc8ca3f4d5e2c4112f93fc85ea992345a8450fe1f04a297dc7a2fb86695"
     },
     {
       "public_id": "bac61be3-eeab-5c27-8911-a36e2087b2f6",
@@ -26600,6 +26670,13 @@
       "storage_key": "scores/c9/c98f280e-8e70-4f0b-8bb7-d7d5919b9ffa.pdf",
       "file_size": 251796,
       "sha256": "a0d3330ce88aba9e316113b2d74125d13a141e63369e79e6e80c7b981ba3c629"
+    },
+    {
+      "public_id": "c998f8d6-345a-4915-8831-b00a66c3ac1d",
+      "source_path": "scores/艺术歌曲/c998f8d6-345a-4915-8831-b00a66c3ac1d.pdf",
+      "storage_key": "scores/c9/c998f8d6-345a-4915-8831-b00a66c3ac1d.pdf",
+      "file_size": 2930054,
+      "sha256": "219f4c5b279972ddc74befe485dae43a4e843be169de8ad55a057ae58816926a"
     },
     {
       "public_id": "c9ae8cd1-ebdd-5a34-aef5-54c1077ce503",
@@ -30331,6 +30408,13 @@
       "storage_key": "scores/e5/e59bfd95-d4f4-4c8d-9120-4a3a9a5c2542.pdf",
       "file_size": 2061563,
       "sha256": "d40760a0463fd2b0089a8b9242c7fca9cb753d33af307145e153726bc20c12b6"
+    },
+    {
+      "public_id": "e5a85791-2af9-4875-adf8-76467ac19148",
+      "source_path": "scores/艺术歌曲/e5a85791-2af9-4875-adf8-76467ac19148.pdf",
+      "storage_key": "scores/e5/e5a85791-2af9-4875-adf8-76467ac19148.pdf",
+      "file_size": 332725,
+      "sha256": "a8103b677079623d382dcc9233056ba7c4632205714af2cdc9cb413d7fab1173"
     },
     {
       "public_id": "e5a91230-4d24-4027-a1c5-868c4666a2c1",
