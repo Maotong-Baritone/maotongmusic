@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4845,
-  "unique_content_count": 4823,
+  "entry_count": 4854,
+  "unique_content_count": 4832,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5254089503,
+  "total_size": 5258015998,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -196,6 +196,13 @@
       "storage_key": "scores/01/013697b1-6ffc-5449-bb9a-89d56865b20a.pdf",
       "file_size": 1099882,
       "sha256": "93b658d590f23e9e4513ad5b6cd41ef8e75fc8bb5954668498e02061e5601f98"
+    },
+    {
+      "public_id": "01373531-d3b0-407a-ad02-f192743a4726",
+      "source_path": "scores/艺术歌曲/01373531-d3b0-407a-ad02-f192743a4726.pdf",
+      "storage_key": "scores/01/01373531-d3b0-407a-ad02-f192743a4726.pdf",
+      "file_size": 109366,
+      "sha256": "51a952c149681f869f38092d39ca42c31cd4b3f9720ac19847490cd56a74fb6d"
     },
     {
       "public_id": "01464313-ad53-5791-957c-b86a297e12a5",
@@ -994,6 +1001,13 @@
       "storage_key": "scores/07/07475e27-813e-5519-aaad-f47c331ffcae.pdf",
       "file_size": 199697,
       "sha256": "3b8fd898e99d2b569611ea362ebf4480904b6c49089be43fbf412752c4ed95a4"
+    },
+    {
+      "public_id": "075238f7-f84d-4099-931e-3577dfdd2597",
+      "source_path": "scores/艺术歌曲/075238f7-f84d-4099-931e-3577dfdd2597.pdf",
+      "storage_key": "scores/07/075238f7-f84d-4099-931e-3577dfdd2597.pdf",
+      "file_size": 408962,
+      "sha256": "35886aa243ae88716ff7fa7af72ca8d000f8257e399132b510b91ee58a140504"
     },
     {
       "public_id": "07531d29-553f-5c98-9976-91da43e1e47e",
@@ -2093,6 +2107,13 @@
       "storage_key": "scores/0f/0fc49623-6896-4d88-9b3e-cd46286eb54e.pdf",
       "file_size": 51291,
       "sha256": "c37045a7bfed848f05635060ce34027a1a9ebc482ec163437841d3993700c1bf"
+    },
+    {
+      "public_id": "0fd33ee7-c474-41b4-9903-85106142583b",
+      "source_path": "scores/艺术歌曲/0fd33ee7-c474-41b4-9903-85106142583b.pdf",
+      "storage_key": "scores/0f/0fd33ee7-c474-41b4-9903-85106142583b.pdf",
+      "file_size": 438221,
+      "sha256": "caef6713d17c000ad5fb6317f9659e07e4ab9ee0ffd30ad8d221c4517ad5945c"
     },
     {
       "public_id": "0fe0e5c3-795a-5202-b07c-eaf03d9235ef",
@@ -12518,6 +12539,13 @@
       "sha256": "932a17da9a808cc06e2222d48d6134d8427d5f63a3f67d3036d7f2ab4ab9dbd3"
     },
     {
+      "public_id": "5ee3e3e0-5be9-4e86-b9a7-db0a886909c5",
+      "source_path": "scores/艺术歌曲/5ee3e3e0-5be9-4e86-b9a7-db0a886909c5.pdf",
+      "storage_key": "scores/5e/5ee3e3e0-5be9-4e86-b9a7-db0a886909c5.pdf",
+      "file_size": 394480,
+      "sha256": "51d0d3ee2f4b07f0e30f8adee68c1703dc825e37931c60c69b524d3c0c985da3"
+    },
+    {
       "public_id": "5f231b62-9eb1-5a27-97c5-6551c56f1e2e",
       "source_path": "scores/歌剧咏叹调/1766093848251_Wie_lachend_sie.pdf",
       "storage_key": "scores/5f/5f231b62-9eb1-5a27-97c5-6551c56f1e2e.pdf",
@@ -17971,6 +17999,13 @@
       "sha256": "c5b80a14833ebcdf08526d69a3566b25d4ce7f3ab1defc063ed1400ef9043e47"
     },
     {
+      "public_id": "890ee936-e89e-49d2-9ed9-950b0ece1b19",
+      "source_path": "scores/艺术歌曲/890ee936-e89e-49d2-9ed9-950b0ece1b19.pdf",
+      "storage_key": "scores/89/890ee936-e89e-49d2-9ed9-950b0ece1b19.pdf",
+      "file_size": 413946,
+      "sha256": "fabfb1bd1dd40b2364f83ca959434ceec8ad2e535f1257182b53555dcb01d43a"
+    },
+    {
       "public_id": "8917270a-96a9-49ad-be78-ce8c2c340a23",
       "source_path": "scores/器乐分谱/8917270a-96a9-49ad-be78-ce8c2c340a23.pdf",
       "storage_key": "scores/89/8917270a-96a9-49ad-be78-ce8c2c340a23.pdf",
@@ -18963,6 +18998,13 @@
       "storage_key": "scores/90/9068fd36-acd2-4579-a2de-de19ac613204.pdf",
       "file_size": 431468,
       "sha256": "f453c2a4da7ee88e802cad5fe16bc58156c06b086abc80e8ee24dd4d1dc07e7a"
+    },
+    {
+      "public_id": "90759a9a-24b0-4a27-b5bc-3273d6f89742",
+      "source_path": "scores/艺术歌曲/90759a9a-24b0-4a27-b5bc-3273d6f89742.pdf",
+      "storage_key": "scores/90/90759a9a-24b0-4a27-b5bc-3273d6f89742.pdf",
+      "file_size": 630072,
+      "sha256": "3ee6905deecc444ac0d5926415ebf54a172c1323bc23776881826014081ebacf"
     },
     {
       "public_id": "9086461a-e14e-4b63-a22e-1a3821126c5b",
@@ -20657,6 +20699,13 @@
       "storage_key": "scores/9d/9d316851-1fa7-56e0-a8bb-5b6834980944.pdf",
       "file_size": 470550,
       "sha256": "a2eb236e87a484167a0e34e1979587b47ce85be7ee21120a33feb9f5d49c7843"
+    },
+    {
+      "public_id": "9d325e04-17d6-407d-a3df-7d9f80ba6281",
+      "source_path": "scores/艺术歌曲/9d325e04-17d6-407d-a3df-7d9f80ba6281.pdf",
+      "storage_key": "scores/9d/9d325e04-17d6-407d-a3df-7d9f80ba6281.pdf",
+      "file_size": 356606,
+      "sha256": "9d6f994a86509bddf4f07d5372b6bf8330c9b78f5176e71aee47d9ad80af9e04"
     },
     {
       "public_id": "9d4a3bc4-bd60-4c88-af21-5aa280746896",
@@ -31222,6 +31271,13 @@
       "sha256": "6e964f8ae7a48304b7b64a56f3ff7777cbc0dcd51f3bd45941f3c92a62bc0734"
     },
     {
+      "public_id": "eb4a5e18-b835-4b70-a66a-70372b171498",
+      "source_path": "scores/艺术歌曲/eb4a5e18-b835-4b70-a66a-70372b171498.pdf",
+      "storage_key": "scores/eb/eb4a5e18-b835-4b70-a66a-70372b171498.pdf",
+      "file_size": 707521,
+      "sha256": "1f613fafaf3c19363acf5374422f6a9e9b74930cb29e432098ce078c95fc71c3"
+    },
+    {
       "public_id": "eb4a744f-286e-49f4-ac43-c8bbd8e53611",
       "source_path": "scores/歌剧咏叹调/eb4a744f-286e-49f4-ac43-c8bbd8e53611.pdf",
       "storage_key": "scores/eb/eb4a744f-286e-49f4-ac43-c8bbd8e53611.pdf",
@@ -31920,6 +31976,13 @@
       "storage_key": "scores/ef/ef8f1216-bec0-579f-96cb-d9edc538b853.pdf",
       "file_size": 990483,
       "sha256": "dad331b91a9657589be205c96aa53f37240d977dcc00835729413a2e14182c1f"
+    },
+    {
+      "public_id": "efad3e83-9cf4-40f9-833d-bbe8bf98af60",
+      "source_path": "scores/艺术歌曲/efad3e83-9cf4-40f9-833d-bbe8bf98af60.pdf",
+      "storage_key": "scores/ef/efad3e83-9cf4-40f9-833d-bbe8bf98af60.pdf",
+      "file_size": 467321,
+      "sha256": "c6dc65e55bf5c3d2a31ba0ba63e74a618cf8c3df99571bac3ce08985e889bd7a"
     },
     {
       "public_id": "efba5fa7-5620-5dff-bf57-2d031d7636f1",

@@ -1,0 +1,187 @@
+{
+  "label": "WoO 20、21、23–26、28–30：短小声乐作品",
+  "checked_on": "2026-09-25",
+  "recorded_at": "2026-09-25T21:36:37.110022+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "102714",
+    "85498",
+    "85506",
+    "102768",
+    "102763",
+    "102770",
+    "102716",
+    "102772",
+    "102718"
+  ],
+  "source_notes": "实时IMSLP作品页确认九份均为Public Domain；七份无伴奏合唱或卡农、两份德语声乐与钢琴艺术歌曲。",
+  "method": "保留原PDF字节；pypdf解析全部14页并校验SHA256；Poppler渲染全部页面；人工逐页放大核对题名、调性、德语、编制、页序及同页相邻作品。",
+  "rendering_note": "九份清晰原扫描共14页，文字与谱面可读；短卡农依原版跨作品同页排印，实际起始位置和相邻内容已逐份记录。",
+  "metadata_changes": [
+    {
+      "imslp_id": "102768",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus."
+    },
+    {
+      "imslp_id": "102763",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus."
+    },
+    {
+      "imslp_id": "102770",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus (SSAA)."
+    },
+    {
+      "imslp_id": "102716",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "混声合唱",
+      "evidence": "Live IMSLP instrumentation: mixed chorus (SATB)."
+    },
+    {
+      "imslp_id": "102772",
+      "field": "voice_types",
+      "before": "二重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus."
+    },
+    {
+      "imslp_id": "102718",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "混声合唱",
+      "evidence": "Live IMSLP instrumentation: mixed chorus (SATB)."
+    }
+  ],
+  "files": {
+    "102714": {
+      "pages": 2,
+      "key": "D大调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Dem dunkeln Schoß der heilgen Erde, WoO 20"
+      ],
+      "notes": "正文始于PDF第1页；作品在第2页上半结束，同页下半接《Töne, lindernder Klang》。",
+      "publication_note": "正文始于PDF第1页；作品在第2页上半结束，同页下半接《Töne, lindernder Klang》。"
+    },
+    "85498": {
+      "pages": 2,
+      "key": "降A大调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Mondnacht, WoO 21"
+      ],
+      "notes": "正文始于PDF第1页并在第2页完整结束。",
+      "publication_note": "正文始于PDF第1页并在第2页完整结束。"
+    },
+    "85506": {
+      "pages": 2,
+      "key": "g小调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Regenlied, WoO 23"
+      ],
+      "notes": "正文始于PDF第1页并在第2页完整结束。",
+      "publication_note": "正文始于PDF第1页并在第2页完整结束。"
+    },
+    "102768": {
+      "pages": 1,
+      "key": "b小调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Grausam erweiset sich Amor, WoO 24"
+      ],
+      "notes": "PDF第1页上半为《Mir lächelt kein Frühling》结尾；本作始于同页下半，按原版卡农排印完整收录。",
+      "publication_note": "PDF第1页上半为《Mir lächelt kein Frühling》结尾；本作始于同页下半，按原版卡农排印完整收录。"
+    },
+    "102763": {
+      "pages": 2,
+      "key": "降a小调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Mir lächelt kein Frühling, WoO 25"
+      ],
+      "notes": "正文始于PDF第1页；作品在第2页上半结束，同页下半接《Grausam erweiset sich Amor》。",
+      "publication_note": "正文始于PDF第1页；作品在第2页上半结束，同页下半接《Grausam erweiset sich Amor》。"
+    },
+    "102770": {
+      "pages": 1,
+      "key": "G大调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "O wie sanft!, WoO 26"
+      ],
+      "notes": "正文始于PDF第1页，按原版一页卡农排印完整收录。",
+      "publication_note": "正文始于PDF第1页，按原版一页卡农排印完整收录。"
+    },
+    "102716": {
+      "pages": 2,
+      "key": "e小调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Töne, lindernder Klang, WoO 28"
+      ],
+      "notes": "PDF第1页上半为《Dem dunkeln Schoß der heilgen Erde》结尾；本作始于同页下半，在第2页上半结束，同页下半接《Zu Rauch》。",
+      "publication_note": "PDF第1页上半为《Dem dunkeln Schoß der heilgen Erde》结尾；本作始于同页下半，在第2页上半结束，同页下半接《Zu Rauch》。"
+    },
+    "102772": {
+      "pages": 1,
+      "key": "d小调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Wann?, WoO 29"
+      ],
+      "notes": "本作位于PDF第1页上半；同页下半另收《Spruch, WoO 27》。",
+      "publication_note": "本作位于PDF第1页上半；同页下半另收《Spruch, WoO 27》。"
+    },
+    "102718": {
+      "pages": 1,
+      "key": "降E大调",
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Zu Rauch, WoO 30"
+      ],
+      "notes": "PDF第1页上半为《Töne, lindernder Klang》结尾；本作始于同页下半，按原版卡农排印完整收录。",
+      "publication_note": "PDF第1页上半为《Töne, lindernder Klang》结尾；本作始于同页下半，按原版卡农排印完整收录。"
+    }
+  },
+  "approved_at": "2026-09-25T21:38:17+00:00",
+  "approved_publication_ids": [
+    "102714",
+    "85498",
+    "85506",
+    "102768",
+    "102763",
+    "102770",
+    "102716",
+    "102772",
+    "102718"
+  ]
+}
