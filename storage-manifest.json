@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4821,
-  "unique_content_count": 4799,
+  "entry_count": 4829,
+  "unique_content_count": 4807,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5238204265,
+  "total_size": 5246207949,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -959,6 +959,13 @@
       "storage_key": "scores/07/071295a3-f405-439d-b49c-4501a9036c81.pdf",
       "file_size": 284162,
       "sha256": "1a0e8b1e4be6bdc4a68eca1c841f4013017e0aaceb79eb86ef5ecf2fedf56835"
+    },
+    {
+      "public_id": "07296197-9c24-441b-a215-365ace2636f9",
+      "source_path": "scores/艺术歌曲/07296197-9c24-441b-a215-365ace2636f9.pdf",
+      "storage_key": "scores/07/07296197-9c24-441b-a215-365ace2636f9.pdf",
+      "file_size": 1127899,
+      "sha256": "2d04bba84d7c3d3c07a6ec2cd72e7f4883c605b1366c06585b36f11d5606205c"
     },
     {
       "public_id": "0739b5b3-8815-4839-acc8-ddc842306be0",
@@ -3927,6 +3934,13 @@
       "storage_key": "scores/1c/1cc42854-ba7c-5cd8-bed7-8b9d6d29acb8.pdf",
       "file_size": 510497,
       "sha256": "d0390de2bebf7377e388d162ef31227ecfbcd05608384caa2e131aa14eb7e4dc"
+    },
+    {
+      "public_id": "1ccdbc9f-146e-4020-aaec-c6bd9e4180c1",
+      "source_path": "scores/艺术歌曲/1ccdbc9f-146e-4020-aaec-c6bd9e4180c1.pdf",
+      "storage_key": "scores/1c/1ccdbc9f-146e-4020-aaec-c6bd9e4180c1.pdf",
+      "file_size": 912719,
+      "sha256": "d79824783a889df5b50530cae8edf2ec377e0d396e65790bcfa6dc7c2ddece6c"
     },
     {
       "public_id": "1cf13203-d7ec-46c0-bdc4-f9bd11b8431c",
@@ -11853,6 +11867,13 @@
       "sha256": "7d7d17f580d86580a7a3ba8d729f28067ba324db8bde45889d398ea2004b2731"
     },
     {
+      "public_id": "5b08fd6a-33d0-4bfb-8ce8-50a245593a9f",
+      "source_path": "scores/艺术歌曲/5b08fd6a-33d0-4bfb-8ce8-50a245593a9f.pdf",
+      "storage_key": "scores/5b/5b08fd6a-33d0-4bfb-8ce8-50a245593a9f.pdf",
+      "file_size": 1715373,
+      "sha256": "c917747ef8697ac3a870bf16cb68968ad6092444661204f5365039fa5f91ced5"
+    },
+    {
       "public_id": "5b0f3b25-642c-5fb4-acc6-4f72c775df54",
       "source_path": "scores/声乐作品/艺术歌曲/1766372572075_Erinnerung_-_D101_Medium_Original.pdf",
       "storage_key": "scores/5b/5b0f3b25-642c-5fb4-acc6-4f72c775df54.pdf",
@@ -12040,6 +12061,13 @@
       "storage_key": "scores/5c/5c370817-e64c-599f-bcb0-892dd9f16fc7.pdf",
       "file_size": 217868,
       "sha256": "9c1582d41ae63ea90def117dba19c5e85a0a822fd4af7feaac7c57561598db82"
+    },
+    {
+      "public_id": "5c3f11b1-2ade-4339-9237-c65c9080f7cb",
+      "source_path": "scores/艺术歌曲/5c3f11b1-2ade-4339-9237-c65c9080f7cb.pdf",
+      "storage_key": "scores/5c/5c3f11b1-2ade-4339-9237-c65c9080f7cb.pdf",
+      "file_size": 862446,
+      "sha256": "2a6fa02f254fb30e6a00f8ccfced62ae907c610a7a4226ad35a0d6d05ecbb6d2"
     },
     {
       "public_id": "5c5c6f77-4398-42ca-8485-160c8837b654",
@@ -16396,6 +16424,13 @@
       "sha256": "cf750e43ff59d4a1c95eb5dba01ed3a34740a11ea4dcb18abfeea023924184e5"
     },
     {
+      "public_id": "7d969f52-7479-40e8-9817-cc8f8e21497d",
+      "source_path": "scores/艺术歌曲/7d969f52-7479-40e8-9817-cc8f8e21497d.pdf",
+      "storage_key": "scores/7d/7d969f52-7479-40e8-9817-cc8f8e21497d.pdf",
+      "file_size": 521912,
+      "sha256": "968ae6c09187267c889423233b9e4a2841cbfc49178e5b1026dec7e68644697f"
+    },
+    {
       "public_id": "7e1142d6-8d06-575a-b072-033a732685f2",
       "source_path": "scores/歌剧咏叹调/1766007737477_Mi_da_speranza_al_core.pdf",
       "storage_key": "scores/7e/7e1142d6-8d06-575a-b072-033a732685f2.pdf",
@@ -19173,6 +19208,13 @@
       "storage_key": "scores/92/92bb717f-2e0a-592b-a0c1-060cb475d5d0.pdf",
       "file_size": 393033,
       "sha256": "1dba3a4096c802f43c24c7ee3aaa1530a0d75e79e67fe95a900c09679dc9bb95"
+    },
+    {
+      "public_id": "92c1b25f-2b81-4849-8b5e-55ed18f8fb04",
+      "source_path": "scores/艺术歌曲/92c1b25f-2b81-4849-8b5e-55ed18f8fb04.pdf",
+      "storage_key": "scores/92/92c1b25f-2b81-4849-8b5e-55ed18f8fb04.pdf",
+      "file_size": 873522,
+      "sha256": "1efd1a28ed57a2bd027bac76c00111feae59ab7f97a6b60adf6a21cfd89ab230"
     },
     {
       "public_id": "92c28c35-b021-512c-98d1-8d9e050e0dd4",
@@ -28051,6 +28093,13 @@
       "sha256": "6335afb705066097c4f3558b46ca36952bb3e19d9da76e3ae0564dd626a58675"
     },
     {
+      "public_id": "d443d7cc-5b47-4006-8eb2-2e3e8e0184f8",
+      "source_path": "scores/艺术歌曲/d443d7cc-5b47-4006-8eb2-2e3e8e0184f8.pdf",
+      "storage_key": "scores/d4/d443d7cc-5b47-4006-8eb2-2e3e8e0184f8.pdf",
+      "file_size": 1409514,
+      "sha256": "f6e112ff2fc1f75ee9f9fce0a81b997c2da230f4a6adb3ff2532dafdd22cb37a"
+    },
+    {
       "public_id": "d4580373-e922-5b8f-969d-3815ccb4db28",
       "source_path": "scores/声乐作品/艺术歌曲/1766372598257_Labetrank_der_Liebe_-_D302_Medium_Original.pdf",
       "storage_key": "scores/d4/d4580373-e922-5b8f-969d-3815ccb4db28.pdf",
@@ -28196,6 +28245,13 @@
       "storage_key": "scores/d5/d5a0f34b-1a93-5d2f-bf88-e14095943941.pdf",
       "file_size": 1134372,
       "sha256": "05a1323791f4af78461d677591e763c98dcf1e4685ea4043b56b3ce8b0c2cf7e"
+    },
+    {
+      "public_id": "d5b6fd45-f2de-4d56-9264-26bf0aedfdba",
+      "source_path": "scores/艺术歌曲/d5b6fd45-f2de-4d56-9264-26bf0aedfdba.pdf",
+      "storage_key": "scores/d5/d5b6fd45-f2de-4d56-9264-26bf0aedfdba.pdf",
+      "file_size": 580299,
+      "sha256": "9d0ca27f2ec10270795fdd69106074058282162eed9b7cdc80bf03402edc97c0"
     },
     {
       "public_id": "d5e09fc1-e8d3-5315-a278-7040220a2a3a",
