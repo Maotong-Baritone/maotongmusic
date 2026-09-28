@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4881,
-  "unique_content_count": 4859,
+  "entry_count": 4889,
+  "unique_content_count": 4867,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5267661245,
+  "total_size": 5270298993,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -742,6 +742,13 @@
       "storage_key": "scores/05/0582d83f-7704-59a8-aa71-17a49af15fbb.pdf",
       "file_size": 493575,
       "sha256": "ccc0fee9c2f1308ac21ce56d4704aa6390fdbdf3e6448483ed4b15f2435793ac"
+    },
+    {
+      "public_id": "0587fdc6-1f5c-440f-ac08-c917361933fc",
+      "source_path": "scores/艺术歌曲/0587fdc6-1f5c-440f-ac08-c917361933fc.pdf",
+      "storage_key": "scores/05/0587fdc6-1f5c-440f-ac08-c917361933fc.pdf",
+      "file_size": 288046,
+      "sha256": "63cf69622b7f2f20bbe2e7975020894df132e0796702a8138623eb98fa42d41f"
     },
     {
       "public_id": "058be671-3f0e-49c5-9a21-0d0cfdf8865d",
@@ -10397,6 +10404,13 @@
       "sha256": "855de8671f4af8ba5c39a597d73762b17d4e163698b89858dba4c2d8e67c4032"
     },
     {
+      "public_id": "4dafa331-95f8-47b9-b10c-ed19b00e9b2c",
+      "source_path": "scores/艺术歌曲/4dafa331-95f8-47b9-b10c-ed19b00e9b2c.pdf",
+      "storage_key": "scores/4d/4dafa331-95f8-47b9-b10c-ed19b00e9b2c.pdf",
+      "file_size": 276891,
+      "sha256": "02ab9ace4249454fc9ceabb6a139cffacc0a97db93f6cc80b060d1c400f255d0"
+    },
+    {
       "public_id": "4db6f61c-7981-5ce9-b069-5b2d80587633",
       "source_path": "scores/歌剧咏叹调/1766097570216_Fragolette_fortunate.pdf",
       "storage_key": "scores/4d/4db6f61c-7981-5ce9-b069-5b2d80587633.pdf",
@@ -15808,6 +15822,13 @@
       "sha256": "0c9db66531bedd342eeb78323de4e367ec77ba4cda50c67ecfac4f0dcf43f9ea"
     },
     {
+      "public_id": "7810bf46-f4be-4bd2-aafd-8dae2024d1c1",
+      "source_path": "scores/艺术歌曲/7810bf46-f4be-4bd2-aafd-8dae2024d1c1.pdf",
+      "storage_key": "scores/78/7810bf46-f4be-4bd2-aafd-8dae2024d1c1.pdf",
+      "file_size": 221046,
+      "sha256": "3e08cedad59992efa0651659d933365b9e891afdda03f8f8f6c02f66b694a572"
+    },
+    {
       "public_id": "781aa52a-4fb3-58f5-a35b-6db6cf6394ba",
       "source_path": "scores/歌剧咏叹调/1765920914.pdf",
       "storage_key": "scores/78/781aa52a-4fb3-58f5-a35b-6db6cf6394ba.pdf",
@@ -20519,6 +20540,13 @@
       "sha256": "4b283de709fc6cfde56700d8c2814fa18fbf85823cbb3e2c37da2a31426c7c8f"
     },
     {
+      "public_id": "9b178045-063c-4208-b980-bba08da490f6",
+      "source_path": "scores/艺术歌曲/9b178045-063c-4208-b980-bba08da490f6.pdf",
+      "storage_key": "scores/9b/9b178045-063c-4208-b980-bba08da490f6.pdf",
+      "file_size": 459087,
+      "sha256": "a891773805998a29a2897283069a13f37f1c4b0166f5d50851c0e647e0b00906"
+    },
+    {
       "public_id": "9b204780-f065-509d-8857-c01ee153cf15",
       "source_path": "scores/声乐作品/艺术歌曲/1766372559970_Die_schone_Mullerin_-_11._Mein_-_D795_High_Original.pdf",
       "storage_key": "scores/9b/9b204780-f065-509d-8857-c01ee153cf15.pdf",
@@ -21203,6 +21231,13 @@
       "storage_key": "scores/9f/9fecf6a9-859c-55f2-9eea-8de7528b1e7c.pdf",
       "file_size": 266586,
       "sha256": "f0aaa1d8e665b8e4935ada963a5b8ca73bcefd0466424c76cc4a9223b40c4870"
+    },
+    {
+      "public_id": "9ff38a31-49f5-412a-927a-5845f8562626",
+      "source_path": "scores/艺术歌曲/9ff38a31-49f5-412a-927a-5845f8562626.pdf",
+      "storage_key": "scores/9f/9ff38a31-49f5-412a-927a-5845f8562626.pdf",
+      "file_size": 314683,
+      "sha256": "b2e74136827e58be86c0731547091568be2ad54ec0865a9fbe69b185a2ae7839"
     },
     {
       "public_id": "9ff6201e-2604-4fea-b056-bc351b45b2be",
@@ -27120,6 +27155,13 @@
       "sha256": "921aef713c9f620343db8f3663ed4a9813a2e75bfa7169f12350060571d13a25"
     },
     {
+      "public_id": "ca4789a6-331b-4395-a704-a3b23dc40921",
+      "source_path": "scores/艺术歌曲/ca4789a6-331b-4395-a704-a3b23dc40921.pdf",
+      "storage_key": "scores/ca/ca4789a6-331b-4395-a704-a3b23dc40921.pdf",
+      "file_size": 326767,
+      "sha256": "13095e29d08620dee8b186118962caa5f93de9adc57cf490594e3f7eb1135ada"
+    },
+    {
       "public_id": "ca7542fe-ab77-4a08-b0d0-53e74d4cc4c7",
       "source_path": "scores/歌剧咏叹调/ca7542fe-ab77-4a08-b0d0-53e74d4cc4c7.pdf",
       "storage_key": "scores/ca/ca7542fe-ab77-4a08-b0d0-53e74d4cc4c7.pdf",
@@ -28210,6 +28252,13 @@
       "storage_key": "scores/d2/d2f80da2-6991-5b3e-b792-7d4cca7ca03d.pdf",
       "file_size": 601075,
       "sha256": "3c2be4ec6b6de912ca56e586ef493b8e58a22a73bce8d3b799a88f39c2ca8846"
+    },
+    {
+      "public_id": "d2fe2a52-af3d-428c-a778-667d2d1a2136",
+      "source_path": "scores/艺术歌曲/d2fe2a52-af3d-428c-a778-667d2d1a2136.pdf",
+      "storage_key": "scores/d2/d2fe2a52-af3d-428c-a778-667d2d1a2136.pdf",
+      "file_size": 348408,
+      "sha256": "903212b0b3818ca5226e20f21ce5b7cda17ad0548c192d8868d50aa09f9503ff"
     },
     {
       "public_id": "d301503c-a43d-568a-bbbc-09bd987ec863",
@@ -32718,6 +32767,13 @@
       "storage_key": "scores/f3/f3d0510e-e863-5400-970f-eef2576ca81b.pdf",
       "file_size": 813500,
       "sha256": "7df45fdce6eaf877c78b0e74aa934663c113825fb44e1c57ef637cd7d4417e72"
+    },
+    {
+      "public_id": "f3d1a831-1fd2-4e1d-baa8-1e133ac0484d",
+      "source_path": "scores/艺术歌曲/f3d1a831-1fd2-4e1d-baa8-1e133ac0484d.pdf",
+      "storage_key": "scores/f3/f3d1a831-1fd2-4e1d-baa8-1e133ac0484d.pdf",
+      "file_size": 402820,
+      "sha256": "d006faea2e1a79948dbc00dd4e96ab44999f86299d72810b493c243246803d9d"
     },
     {
       "public_id": "f3db50a2-9475-5482-958a-ae0cad357f68",
