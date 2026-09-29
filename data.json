@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742095,
+        "public_id": "efcb1020-2c0a-4ba2-88a5-e4edac067424",
+        "title": "Albumblatt für Clara Schumann",
+        "work": "",
+        "category": "艺术歌曲",
+        "sub_category": "",
+        "voice_types": "独唱（无伴奏）",
+        "tonality": "C大调",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #374716；版本：勃拉姆斯1868年手稿（Mus.ms.autogr. Brahms, J. 10）；文件范围：PDF第1页为手稿正面，第2页为空白背面；谱面核对：PDF第1页为手稿正面，含题名、德语题词、Adagio单旋律及1868年9月12日日期；第2页为无音乐内容的背面空白五线纸。",
+        "filename": "艺术歌曲/efcb1020-2c0a-4ba2-88a5-e4edac067424.pdf",
+        "date": "2026-09-28",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-albumblatt-clara-manuscript-one-20260929",
+        "source_imslp_id": "374716",
+        "storage_key": "scores/ef/efcb1020-2c0a-4ba2-88a5-e4edac067424.pdf",
+        "storage_sha256": "70eb0176904582d48a4d9bd21169c677bfc458fa588077ba3322a9fd8536e704",
+        "storage_size": 377163,
+        "storage_synced_at": "2026-09-29T05:06:54+00:00"
+    },
+    {
         "id": 1790049742094,
         "public_id": "921ce368-7c2b-4ec3-9d7a-d5a05c6baf89",
         "title": "No. 1 Es liebt sich so lieblich im Lenze. Anmuthig bewegt, Op. 71",
