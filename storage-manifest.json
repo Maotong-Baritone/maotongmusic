@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4897,
-  "unique_content_count": 4875,
+  "entry_count": 4898,
+  "unique_content_count": 4876,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5274209810,
+  "total_size": 5277286985,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -42,6 +42,13 @@
       "storage_key": "scores/00/00676a69-2961-5f52-bec6-c7760514cdc4.pdf",
       "file_size": 184827,
       "sha256": "b5b01113ed591c7d1cdba920773a6a8daa8a6d90f38cc8db3abb264b83a75623"
+    },
+    {
+      "public_id": "006d48ed-d109-4305-9fb6-fcbbd91372f2",
+      "source_path": "scores/声乐套曲/006d48ed-d109-4305-9fb6-fcbbd91372f2.pdf",
+      "storage_key": "scores/00/006d48ed-d109-4305-9fb6-fcbbd91372f2.pdf",
+      "file_size": 3077175,
+      "sha256": "5ebeb415e7ccf348635f1c789207bf2b3a22a434f444129165dee352f4260319"
     },
     {
       "public_id": "006fc25a-eae5-495d-93e7-36f64f792e35",
