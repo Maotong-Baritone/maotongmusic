@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742097,
+        "public_id": "cb8e88fe-37d7-4902-9362-5838dcf46bff",
+        "title": "49 Deutsche Volkslieder, WoO 33",
+        "work": "",
+        "category": "声乐套曲",
+        "sub_category": "艺术歌曲",
+        "voice_types": "声乐、钢琴；第43–49首可加混声合唱",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #23200；版本：N. Simrock，约1894年初版，版号10206–10211、10218、10219；文件范围：49首德语民歌七册完整谱，第43–49首可加混声合唱；谱面核对：七册合订：第1册PDF第1–16页（正文4–15）；第2册17–40页（正文21–37，38空白、39封底、40广告）；第3册41–60页（正文45–57，58空白、59封底、60广告）；第4册61–84页（正文65–81，82空白、83封底、84广告）；第5册85–108页（正文89–105，106空白、107封底、108广告）；第6册109–128页（正文113–125，126空白、127封底、128广告）；第7册129–152页（正文133–149，149含第43–49首歌词，150空白、151封底、152广告）。目录：No.1 Sagt mir, o schönste Schäf'rin mein（PDF第4页）；No.2 Erlaube mir, fein's Mädchen（PDF第6页）；No.3 Gar lieblich hat sich gesellet（PDF第7页）；No.4 Guten Abend（PDF第9页）；No.5 Die Sonne scheint nicht mehr（PDF第11页）；No.6 Da unten im Thale（PDF第12页）；No.7 Gunhilde（PDF第13页）；No.8 Ach, englische Schäferin（PDF第21页）；No.9 Es war eine schöne Jüdin（PDF第23页）；No.10 Es ritt ein Ritter（PDF第26页）；No.11 Jungfräulein, soll ich mit euch gehn（PDF第28页）；No.12 Feinsliebchen, du sollst mir nicht barfuss gehn（PDF第31页）；No.13 Wach auf, mein Hort（PDF第34页）；No.14 Maria ging aus wandern（PDF第36页）；No.15 Schwesterlein（PDF第45页）；No.16 Wach auf, mein' Herzensschöne（PDF第47页）；No.17 Ach Gott, wie weh tut Scheiden（PDF第49页）；No.18 So wünsch ich ihr ein' gute Nacht（PDF第51页）；No.19 Nur ein Gesicht auf Erden lebt（PDF第53页）；No.20 Schönster Schatz, mein Engel（PDF第54页）；No.21 Es ging ein Maidlein zarte（PDF第56页）；No.22 Wo gehst du hin, du Stolze?（PDF第65页）；No.23 Der Reiter（PDF第66页）；No.24 Mir ist ein schön's braun's Maidelein（PDF第68页）；No.25 Mein Mädel hat einen Rosenmund（PDF第72页）；No.26 Ach könnt' ich diesen Abend（PDF第74页）；No.27 Ich stand auf hohem Berge（PDF第76页）；No.28 Es reit' ein Herr und auch sein Knecht（PDF第78页）；No.29 Es war ein Markgraf über'm Rhein（PDF第89页）；No.30 All' mein' Gedanken（PDF第92页）；No.31 Dort in den Weiden steht ein Haus（PDF第94页）；No.32 So will ich frisch und fröhlich sein（PDF第96页）；No.33 Och Moder, ich well en Ding han（PDF第98页）；No.34 We kumm' ich dann de Poots eren?（PDF第100页）；No.35 Soll sich der Mond nicht heller scheinen（PDF第104页）；No.36 Es wohnet ein Fiedler（PDF第113页）；No.37 Du mein einzig Licht（PDF第115页）；No.38 Des Abends kann ich nicht schlafen gehn（PDF第116页）；No.39 Schöner Augen schöne Strahlen（PDF第118页）；No.40 Ich weiss mir'n Maidlein（PDF第120页）；No.41 Es steht ein' Lind'（PDF第122页）；No.42 In stiller Nacht（PDF第124页）；No.43 Es stunden drei Rosen（PDF第133页）；No.44 Dem Himmel will ich klagen（PDF第136页）；No.45 Es sass ein schneeweiss Vögelein（PDF第138页）；No.46 Es war einmal ein Zimmergesell（PDF第141页）；No.47 Es ging sich uns're Fraue（PDF第143页）；No.48 Nachtigall, sag（PDF第145页）；No.49 Verstohlen geht der Mond auf（PDF第147页）",
+        "filename": "声乐套曲/cb8e88fe-37d7-4902-9362-5838dcf46bff.pdf",
+        "date": "2026-09-29",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-woo33-first-edition-one-20260929",
+        "source_imslp_id": "23200",
+        "storage_key": "scores/cb/cb8e88fe-37d7-4902-9362-5838dcf46bff.pdf",
+        "storage_sha256": "9597cada517ac947066cca30e7f18007e24cdbcb6a9a73efd61d395e46434b1f",
+        "storage_size": 28781086,
+        "storage_synced_at": "2026-09-29T17:17:58+00:00"
+    },
+    {
         "id": 1790049742096,
         "public_id": "006d48ed-d109-4305-9fb6-fcbbd91372f2",
         "title": "28 Deutsche Volkslieder, WoO 32",
