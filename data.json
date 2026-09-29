@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742098,
+        "public_id": "2da3f9c1-0921-49ad-886b-6dc7fef7b4b6",
+        "title": "14 Deutsche Volkslieder, WoO 34",
+        "work": "",
+        "category": "合唱作品",
+        "sub_category": "",
+        "voice_types": "混声合唱（无伴奏）",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #23201；版本：J. Rieter-Biedermann，1864年初版，版号395a、395b；文件范围：14首德语无伴奏混声合唱民歌两册完整谱；谱面核对：两册合订：第1册PDF第1–21页（封面1、题名2、空白3、题献4、正文5–20、21空白）；第2册PDF第22–41页（题名22、空白23、题献24、正文25–40、41空白）。目录：No.1 Von edler Art（PDF第5页）；No.2 Mit Lust tät ich ausreiten（PDF第7页）；No.3 Bei nächtlicher Weil（PDF第9页）；No.4 Vom heiligen Märtyrer Emmerano（PDF第11页）；No.5 Täublein weiss（PDF第13页）；No.6 Ach lieber Herre Jesu Christ（PDF第17页）；No.7 Sankt Raphael（PDF第19页）；No.8 In stiller Nacht（PDF第25页）；No.9 Abschiedslied（PDF第27页）；No.10 Der tote Knabe（PDF第29页）；No.11 Die Wollust in den Maien（PDF第31页）；No.12 Morgengesang（PDF第33页）；No.13 Schnitter Tod（PDF第37页）；No.14 Der englische Jäger（PDF第39页）",
+        "filename": "合唱作品/2da3f9c1-0921-49ad-886b-6dc7fef7b4b6.pdf",
+        "date": "2026-09-29",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-woo34-first-edition-one-20260929",
+        "source_imslp_id": "23201",
+        "storage_key": "scores/2d/2da3f9c1-0921-49ad-886b-6dc7fef7b4b6.pdf",
+        "storage_sha256": "ac943fa0e4bab6b4a7864316fc373e40b9e4c467eaf69b50914619978c1c2306",
+        "storage_size": 7240186,
+        "storage_synced_at": "2026-09-29T20:59:36+00:00"
+    },
+    {
         "id": 1790049742097,
         "public_id": "cb8e88fe-37d7-4902-9362-5838dcf46bff",
         "title": "49 Deutsche Volkslieder, WoO 33",
