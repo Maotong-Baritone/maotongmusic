@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4902,
-  "unique_content_count": 4880,
+  "entry_count": 4904,
+  "unique_content_count": 4882,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5314990607,
+  "total_size": 5331228372,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -17586,6 +17586,13 @@
       "sha256": "18872ce1ce96f820313f06716bca8c282118be873b3b35b83d3137819fbf8ec8"
     },
     {
+      "public_id": "856c87a5-712f-42af-9abb-e6fc721ea818",
+      "source_path": "scores/声乐套曲/856c87a5-712f-42af-9abb-e6fc721ea818.pdf",
+      "storage_key": "scores/85/856c87a5-712f-42af-9abb-e6fc721ea818.pdf",
+      "file_size": 11350189,
+      "sha256": "85582dd922437b24c9bcf23b463d64cb42447c3ca087a1bc88431eee53eb334b"
+    },
+    {
       "public_id": "856f5071-1f7e-5686-9dff-5181227986a4",
       "source_path": "scores/声乐作品/艺术歌曲/1766372558811_Die_schone_Mullerin_-_06._Der_Neugierige_-_D795_High_Original.pdf",
       "storage_key": "scores/85/856f5071-1f7e-5686-9dff-5181227986a4.pdf",
@@ -28595,6 +28602,13 @@
       "storage_key": "scores/d5/d5065887-2ccc-569f-bab8-f1d18d8b52a4.pdf",
       "file_size": 840887,
       "sha256": "162c3dec822224b5b9c783edc66117ff67fcce2e94ef701e607e44e66b0bb6e0"
+    },
+    {
+      "public_id": "d521acbe-06fa-45d7-bc5d-3481bdb6a582",
+      "source_path": "scores/声乐套曲/d521acbe-06fa-45d7-bc5d-3481bdb6a582.pdf",
+      "storage_key": "scores/d5/d521acbe-06fa-45d7-bc5d-3481bdb6a582.pdf",
+      "file_size": 4887576,
+      "sha256": "d3d5ffb2cd6d8d174e4f1be98f0842265b24b2d58ce0506e8c8664c526b0e3c2"
     },
     {
       "public_id": "d52aed84-3657-57df-bc6e-cfbcc9bd3d06",

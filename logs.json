@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-09-29 19:59",
+        "type": "add",
+        "msg": "新增勃拉姆斯《15 Volkskinderlieder, WoO 31》德语初版及英文版完整谱2份；曲目、实际PDF起始页、语言、编制及出版版本均已核对。",
+        "batch_id": "brahms-woo31-two-editions-20260929",
+        "count": 2
+    },
+    {
         "date": "2026-09-29 16:10",
         "type": "add",
         "msg": "新增勃拉姆斯《12 Deutsche Volkslieder, WoO 35》完整谱及No.12初版单曲2份；12首目录、实际PDF起始页、德语歌词、版本及无伴奏混声合唱编制均已逐页核对。",
