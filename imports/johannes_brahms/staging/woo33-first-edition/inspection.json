@@ -1,0 +1,188 @@
+{
+  "label": "49 Deutsche Volkslieder, WoO 33 西姆罗克初版完整谱",
+  "checked_on": "2026-09-29",
+  "recorded_at": "2026-09-29T17:17:30.617919+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "23200"
+  ],
+  "source_notes": "实时IMSLP确认#23200为Public Domain、Complete Score、152页、西姆罗克约1894年初版；#87938为另一完整版本，排除以避免重复。",
+  "method": "保留原PDF字节；pypdf解析152页；Poppler渲染全部页面；人工检查10张全页接触表并逐页原尺寸放大核对152页、49首题名与起始页、七册结构、德语歌词、编制及异常。",
+  "full_size_review": "completed_all_152_pages",
+  "metadata_changes": [
+    {
+      "imslp_id": "23200",
+      "field": "language_cn",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP标明German；谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "23200",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "声乐、钢琴；第43–49首可加混声合唱",
+      "evidence": "实时IMSLP配置与谱面第43–49首SATB合唱声部一致。"
+    },
+    {
+      "imslp_id": "87938",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "另一完整版本；选用#23200西姆罗克初版避免重复发布。"
+    }
+  ],
+  "volume_page_ranges": [
+    {
+      "volume": 1,
+      "pdf_pages": "1–16",
+      "music_pages": "4–15"
+    },
+    {
+      "volume": 2,
+      "pdf_pages": "17–40",
+      "music_pages": "21–37"
+    },
+    {
+      "volume": 3,
+      "pdf_pages": "41–60",
+      "music_pages": "45–57"
+    },
+    {
+      "volume": 4,
+      "pdf_pages": "61–84",
+      "music_pages": "65–81"
+    },
+    {
+      "volume": 5,
+      "pdf_pages": "85–108",
+      "music_pages": "89–105"
+    },
+    {
+      "volume": 6,
+      "pdf_pages": "109–128",
+      "music_pages": "113–125"
+    },
+    {
+      "volume": 7,
+      "pdf_pages": "129–152",
+      "music_pages": "133–149"
+    }
+  ],
+  "files": {
+    "23200": {
+      "pages": 152,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        4,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        21,
+        23,
+        26,
+        28,
+        31,
+        34,
+        36,
+        45,
+        47,
+        49,
+        51,
+        53,
+        54,
+        56,
+        65,
+        66,
+        68,
+        72,
+        74,
+        76,
+        78,
+        89,
+        92,
+        94,
+        96,
+        98,
+        100,
+        104,
+        113,
+        115,
+        116,
+        118,
+        120,
+        122,
+        124,
+        133,
+        136,
+        138,
+        141,
+        143,
+        145,
+        147
+      ],
+      "titles": [
+        "No.1 Sagt mir, o schönste Schäf'rin mein",
+        "No.2 Erlaube mir, fein's Mädchen",
+        "No.3 Gar lieblich hat sich gesellet",
+        "No.4 Guten Abend",
+        "No.5 Die Sonne scheint nicht mehr",
+        "No.6 Da unten im Thale",
+        "No.7 Gunhilde",
+        "No.8 Ach, englische Schäferin",
+        "No.9 Es war eine schöne Jüdin",
+        "No.10 Es ritt ein Ritter",
+        "No.11 Jungfräulein, soll ich mit euch gehn",
+        "No.12 Feinsliebchen, du sollst mir nicht barfuss gehn",
+        "No.13 Wach auf, mein Hort",
+        "No.14 Maria ging aus wandern",
+        "No.15 Schwesterlein",
+        "No.16 Wach auf, mein' Herzensschöne",
+        "No.17 Ach Gott, wie weh tut Scheiden",
+        "No.18 So wünsch ich ihr ein' gute Nacht",
+        "No.19 Nur ein Gesicht auf Erden lebt",
+        "No.20 Schönster Schatz, mein Engel",
+        "No.21 Es ging ein Maidlein zarte",
+        "No.22 Wo gehst du hin, du Stolze?",
+        "No.23 Der Reiter",
+        "No.24 Mir ist ein schön's braun's Maidelein",
+        "No.25 Mein Mädel hat einen Rosenmund",
+        "No.26 Ach könnt' ich diesen Abend",
+        "No.27 Ich stand auf hohem Berge",
+        "No.28 Es reit' ein Herr und auch sein Knecht",
+        "No.29 Es war ein Markgraf über'm Rhein",
+        "No.30 All' mein' Gedanken",
+        "No.31 Dort in den Weiden steht ein Haus",
+        "No.32 So will ich frisch und fröhlich sein",
+        "No.33 Och Moder, ich well en Ding han",
+        "No.34 We kumm' ich dann de Poots eren?",
+        "No.35 Soll sich der Mond nicht heller scheinen",
+        "No.36 Es wohnet ein Fiedler",
+        "No.37 Du mein einzig Licht",
+        "No.38 Des Abends kann ich nicht schlafen gehn",
+        "No.39 Schöner Augen schöne Strahlen",
+        "No.40 Ich weiss mir'n Maidlein",
+        "No.41 Es steht ein' Lind'",
+        "No.42 In stiller Nacht",
+        "No.43 Es stunden drei Rosen",
+        "No.44 Dem Himmel will ich klagen",
+        "No.45 Es sass ein schneeweiss Vögelein",
+        "No.46 Es war einmal ein Zimmergesell",
+        "No.47 Es ging sich uns're Fraue",
+        "No.48 Nachtigall, sag",
+        "No.49 Verstohlen geht der Mond auf"
+      ],
+      "notes": "七册及49首连续完整；第43–49首为声乐、混声合唱（可选）与钢琴；仅见来源铅笔标记，无缺页、错序或裁切异常。",
+      "publication_note": "七册合订：第1册PDF第1–16页（正文4–15）；第2册17–40页（正文21–37，38空白、39封底、40广告）；第3册41–60页（正文45–57，58空白、59封底、60广告）；第4册61–84页（正文65–81，82空白、83封底、84广告）；第5册85–108页（正文89–105，106空白、107封底、108广告）；第6册109–128页（正文113–125，126空白、127封底、128广告）；第7册129–152页（正文133–149，149含第43–49首歌词，150空白、151封底、152广告）。目录：No.1 Sagt mir, o schönste Schäf'rin mein（PDF第4页）；No.2 Erlaube mir, fein's Mädchen（PDF第6页）；No.3 Gar lieblich hat sich gesellet（PDF第7页）；No.4 Guten Abend（PDF第9页）；No.5 Die Sonne scheint nicht mehr（PDF第11页）；No.6 Da unten im Thale（PDF第12页）；No.7 Gunhilde（PDF第13页）；No.8 Ach, englische Schäferin（PDF第21页）；No.9 Es war eine schöne Jüdin（PDF第23页）；No.10 Es ritt ein Ritter（PDF第26页）；No.11 Jungfräulein, soll ich mit euch gehn（PDF第28页）；No.12 Feinsliebchen, du sollst mir nicht barfuss gehn（PDF第31页）；No.13 Wach auf, mein Hort（PDF第34页）；No.14 Maria ging aus wandern（PDF第36页）；No.15 Schwesterlein（PDF第45页）；No.16 Wach auf, mein' Herzensschöne（PDF第47页）；No.17 Ach Gott, wie weh tut Scheiden（PDF第49页）；No.18 So wünsch ich ihr ein' gute Nacht（PDF第51页）；No.19 Nur ein Gesicht auf Erden lebt（PDF第53页）；No.20 Schönster Schatz, mein Engel（PDF第54页）；No.21 Es ging ein Maidlein zarte（PDF第56页）；No.22 Wo gehst du hin, du Stolze?（PDF第65页）；No.23 Der Reiter（PDF第66页）；No.24 Mir ist ein schön's braun's Maidelein（PDF第68页）；No.25 Mein Mädel hat einen Rosenmund（PDF第72页）；No.26 Ach könnt' ich diesen Abend（PDF第74页）；No.27 Ich stand auf hohem Berge（PDF第76页）；No.28 Es reit' ein Herr und auch sein Knecht（PDF第78页）；No.29 Es war ein Markgraf über'm Rhein（PDF第89页）；No.30 All' mein' Gedanken（PDF第92页）；No.31 Dort in den Weiden steht ein Haus（PDF第94页）；No.32 So will ich frisch und fröhlich sein（PDF第96页）；No.33 Och Moder, ich well en Ding han（PDF第98页）；No.34 We kumm' ich dann de Poots eren?（PDF第100页）；No.35 Soll sich der Mond nicht heller scheinen（PDF第104页）；No.36 Es wohnet ein Fiedler（PDF第113页）；No.37 Du mein einzig Licht（PDF第115页）；No.38 Des Abends kann ich nicht schlafen gehn（PDF第116页）；No.39 Schöner Augen schöne Strahlen（PDF第118页）；No.40 Ich weiss mir'n Maidlein（PDF第120页）；No.41 Es steht ein' Lind'（PDF第122页）；No.42 In stiller Nacht（PDF第124页）；No.43 Es stunden drei Rosen（PDF第133页）；No.44 Dem Himmel will ich klagen（PDF第136页）；No.45 Es sass ein schneeweiss Vögelein（PDF第138页）；No.46 Es war einmal ein Zimmergesell（PDF第141页）；No.47 Es ging sich uns're Fraue（PDF第143页）；No.48 Nachtigall, sag（PDF第145页）；No.49 Verstohlen geht der Mond auf（PDF第147页）"
+    }
+  },
+  "approved_at": "2026-09-29T17:17:58+00:00",
+  "approved_publication_ids": [
+    "23200"
+  ]
+}

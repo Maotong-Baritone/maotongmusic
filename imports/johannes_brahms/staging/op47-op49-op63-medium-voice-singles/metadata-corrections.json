@@ -1,0 +1,124 @@
+{
+  "batch_id": "brahms-op47-op49-op63-medium-voice-eight-20260927",
+  "recorded_at": "2026-09-27T18:39:51.734989+00:00",
+  "prior_receipt_sha256": "4ecc7f38f8614c8bb9579e5669da9d2791d56cb4339db8af5bc11b60b3e86885",
+  "source_manifest_before_sha256": "f717094ae0ab95d6df11701ece9a2ef9d74ac04e94765c195471e7d960f16064",
+  "source_manifest_after_sha256": "d5178f9fc882d676233ef100cb55f592a7e6995605f6c9c6512c8414faeb35b1",
+  "staging_manifest_before_sha256": "9fee7c0b178eaa0dbab8549cc3a20271655657197942faa48b0a5a7dd890c62d",
+  "staging_manifest_after_sha256": "30e3f662bfe6e6af3665c4d09700ce07750f102284626b9edb376d2f72b91b7e",
+  "backup": "backup\\import_metadata\\brahms-op47-op49-op63-medium-voice-eight-20260927-titles-20260927_123951_507920",
+  "changes": [
+    {
+      "imslp_id": "134615",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "134615",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "134616",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "134616",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "134617",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "134617",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "135131",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "135131",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "135132",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "135132",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "135133",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "135133",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "135457",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "135864",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "135457",
+      "field": "proposed_title",
+      "before": "No. 5 Junge Liebe I. Lebhaft, Op. 63",
+      "after": "No. 5 Meine Liebe ist grün. Lebhaft, Op. 63",
+      "evidence": "首份渲染谱面印有该独立标题；与同作品已上线低声部版的谱面命名一致。"
+    },
+    {
+      "imslp_id": "135864",
+      "field": "proposed_title",
+      "before": "No. 8 Heimweh II. Etwas langsam, Op. 63",
+      "after": "No. 8 O wüsst' ich doch den Weg zurück. Etwas langsam, Op. 63",
+      "evidence": "首份渲染谱面印有该独立标题；与同作品已上线低声部版的谱面命名一致。"
+    }
+  ]
+}

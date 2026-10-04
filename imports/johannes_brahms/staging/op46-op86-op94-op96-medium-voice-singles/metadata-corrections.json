@@ -1,0 +1,123 @@
+{
+  "batch_id": "brahms-op46-op86-op94-op96-medium-voice-nine-20260927",
+  "recorded_at": "2026-09-27T00:32:18.052710+00:00",
+  "source_manifest_before_sha256": "521e2e085ac30f3073f8ce8f543c25fb17123ab202b799ada04ecbda61b189a4",
+  "source_manifest_after_sha256": "9ff7ec83be55da57790454ec7ba2ba113c23c03552e85f7e93483f7eadda04ca",
+  "staging_manifest_before_sha256": "6ae218923c418c9dbe1d6fad804b3d3aa7145e3222ea55f3e4c8c79dc4dd530f",
+  "staging_manifest_after_sha256": "109be7159d1154e2818cc27450573525008e06d0a8d4d6959036619b511e6bed",
+  "backup": "backup\\import_metadata\\brahms-op46-op86-op94-op96-medium-voice-nine-20260927-20260926_183217_839442",
+  "changes": [
+    {
+      "imslp_id": "133951",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "133953",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242969",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242969",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "242970",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242970",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "242971",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242971",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243448",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243448",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243534",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243534",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243535",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243535",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243536",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243536",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    }
+  ]
+}

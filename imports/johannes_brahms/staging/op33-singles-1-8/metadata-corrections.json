@@ -1,0 +1,25 @@
+{
+  "batch_id": "brahms-op33-singles-one-eight-20260924",
+  "recorded_at": "2026-09-25T01:21:39.949102+00:00",
+  "source_manifest_before_sha256": "eda377c51a4a976f22587eb12fa866f5209cb97128c0ebdd89e87a9212aa12f1",
+  "source_manifest_after_sha256": "187d67960d2898b9739e69429f4c1c9dc2407b0e91ecdd3f01e8e4475bc579c5",
+  "staging_manifest_before_sha256": "3ce122d1a9c2a6063bc826d248654b5afcd66c47fef36ed66042d178f5f466fa",
+  "staging_manifest_after_sha256": "007c824d67b1c802ee66f180041304b0372c1e5628245253f60902a6e75a6eb5",
+  "backup": "backup\\import_metadata\\brahms-op33-singles-one-eight-20260924-20260924_192139_759726",
+  "changes": [
+    {
+      "imslp_id": "9121",
+      "field": "title",
+      "before": "No. 6 Wie soll ich die Freude. Allegro, Op. 33",
+      "after": "No. 6 Wie soll ich die Freude, die Wonne denn tragen? Allegro, Op. 33",
+      "evidence": "渲染谱面首页印刷完整题名与速度标记。"
+    },
+    {
+      "imslp_id": "9122",
+      "field": "title",
+      "before": "No. 7 War es dir. Lebhaft, Op. 33",
+      "after": "No. 7 War es dir, dem diese Lippen bebten. Lebhaft, Op. 33",
+      "evidence": "渲染谱面首页印刷完整题名与速度标记。"
+    }
+  ]
+}

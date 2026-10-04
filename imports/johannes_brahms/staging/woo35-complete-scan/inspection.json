@@ -1,0 +1,120 @@
+{
+  "label": "12 Deutsche Volkslieder, WoO 35完整谱及No.12初版单曲",
+  "checked_on": "2026-09-29",
+  "recorded_at": "2026-09-29T22:09:44.369553+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "102712",
+    "108869"
+  ],
+  "source_notes": "实时IMSLP确认#102712为Public Domain、完整原扫描、11页、Breitkopf & Härtel 1926–27年全集第21卷；#102713为同一扫描的滤色重复版，排除。#108869为Public Domain、No.12单页初版Urtext，作为有用独立单曲保留。#202904为现代排版且采用CC BY-NC-SA 3.0特殊许可，排除。",
+  "method": "保留两份原PDF字节；pypdf解析全部12页；Poppler渲染全部页面；人工检查完整谱全页接触表并逐页原尺寸放大11页，另逐页放大No.12初版单页，核对12首题名、实际起始页、德语歌词、SATB无伴奏编制、版本和异常。",
+  "full_size_review": "completed_all_12_pages_across_2_files",
+  "metadata_changes": [
+    {
+      "imslp_id": "102712",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "作品为真正SATB无伴奏混声合唱；按现有分类归入合唱作品，不重复使用艺术歌曲子分类。"
+    },
+    {
+      "imslp_id": "102712",
+      "field": "voice_types",
+      "before": "混声合唱",
+      "after": "混声合唱（无伴奏）",
+      "evidence": "实时IMSLP配置为Chorus (SATB)，分类为For unaccompanied chorus；谱面仅合唱声部。"
+    },
+    {
+      "imslp_id": "108869",
+      "field": "proposed_title",
+      "before": "No. 12 Altdeutches Kapflied, WoO 35",
+      "after": "No.12 Altdeutsches Kampflied, WoO 35",
+      "evidence": "实时IMSLP分段标题及谱面标题均为Altdeutsches Kampflied。"
+    },
+    {
+      "imslp_id": "108869",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "谱面标注für Chor，为无伴奏合唱；不使用艺术歌曲子分类。"
+    },
+    {
+      "imslp_id": "108869",
+      "field": "voice_types",
+      "before": "混声合唱",
+      "after": "混声合唱（无伴奏）",
+      "evidence": "实时IMSLP作品配置为Chorus (SATB)，谱面无伴奏。"
+    },
+    {
+      "imslp_id": "102713",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "与#102712为同一扫描的滤色版本；保留原扫描以避免重复。"
+    },
+    {
+      "imslp_id": "202904",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "No.5现代排版采用CC BY-NC-SA 3.0特殊许可，且完整公版扫描已含此曲。"
+    }
+  ],
+  "files": {
+    "102712": {
+      "pages": 11,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        7,
+        8,
+        9,
+        9,
+        11
+      ],
+      "titles": [
+        "No.1 Scheiden",
+        "No.2 Wach auf!",
+        "No.3 Erlaube mir",
+        "No.4 Der Fiedler",
+        "No.5 Da unten im Tale",
+        "No.6 Des Abends",
+        "No.7 Wach auf! (2. Bearbeitung)",
+        "No.8 Dort in den Weiden",
+        "No.9 Altes Volkslied",
+        "No.10 Der Ritter und die Feine",
+        "No.11 Der Zimmergesell",
+        "No.12 Altdeutsches Kampflied"
+      ],
+      "notes": "11页连续摘自全集第21卷；未见缺页、错序、裁切或不可读异常。No.5与No.4、No.7与No.6、No.11与No.10分别同页起始。",
+      "publication_note": "全集第21卷连续摘页，PDF第1–11页对应印刷页18–28、全集页144–154；12首均完整。目录：No.1 Scheiden（PDF第1页）；No.2 Wach auf!（PDF第2页）；No.3 Erlaube mir（PDF第3页）；No.4 Der Fiedler（PDF第4页）；No.5 Da unten im Tale（PDF第4页，同页起始）；No.6 Des Abends（PDF第5页）；No.7 Wach auf! (2. Bearbeitung)（PDF第5页，同页起始）；No.8 Dort in den Weiden（PDF第7页）；No.9 Altes Volkslied（PDF第8页）；No.10 Der Ritter und die Feine（PDF第9页）；No.11 Der Zimmergesell（PDF第9页，同页起始）；No.12 Altdeutsches Kampflied（PDF第11页）"
+    },
+    "108869": {
+      "pages": 1,
+      "key": "",
+      "number": 12,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No.12 Altdeutsches Kampflied"
+      ],
+      "notes": "初版单页扫描清晰完整；谱面选集编号为28，作品内编号为WoO 35 No.12；末注其余歌词见后记，不影响本页音乐完整性。",
+      "publication_note": "单页完整乐谱；PDF第1页即乐谱起始，谱面选集编号为No.28，作品内编号为WoO 35 No.12；印刷页码33、版号9。"
+    }
+  },
+  "approved_at": "2026-09-29T22:10:36+00:00",
+  "approved_publication_ids": [
+    "102712",
+    "108869"
+  ]
+}

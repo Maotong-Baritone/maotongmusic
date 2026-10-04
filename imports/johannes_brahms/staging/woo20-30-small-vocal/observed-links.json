@@ -1,0 +1,61 @@
+{
+  "batch_id": "brahms-woo20-30-small-vocal-nine-20260925",
+  "observed_at": "2026-09-25T15:24:00-06:00",
+  "method": "IMSLP work page and normal anonymous 15-second wait in the supported in-app browser",
+  "files": [
+    {
+      "imslp_id": "102714",
+      "work": "Dem dunkeln Schoß der heilgen Erde, WoO 20",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102714/hfpb",
+      "download_url": "https://ks15.imslp.org/files/imglnks/usimg/a/a3/IMSLP102714-PMLP210132-Brahms_Werke_Band_21_Breitkopf_JB_120_WoO_20_scan.pdf"
+    },
+    {
+      "imslp_id": "85498",
+      "work": "Mondnacht, WoO 21",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/85498/hfpb",
+      "download_url": "https://ks15.imslp.org/files/imglnks/usimg/f/fd/IMSLP85498-PMLP52988-Brahms_Werke_Band_26_Breitkopf_JB_169_WoO_21_scan.pdf"
+    },
+    {
+      "imslp_id": "85506",
+      "work": "Regenlied, WoO 23",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/85506/hfpb",
+      "download_url": "https://ks15.imslp.org/files/imglnks/usimg/1/11/IMSLP85506-PMLP174812-Brahms_Werke_Band_26_Breitkopf_JB_170_WoO_23_scan.pdf"
+    },
+    {
+      "imslp_id": "102768",
+      "work": "Grausam erweiset sich Amor, WoO 24",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102768/hfpb",
+      "download_url": "https://ks15.imslp.org/files/imglnks/usimg/9/97/IMSLP102768-PMLP210215-Brahms_Werke_Band_21_Breitkopf_JB_127_WoO_24_scan.pdf"
+    },
+    {
+      "imslp_id": "102763",
+      "work": "Mir lächelt kein Frühling, WoO 25",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102763/hfpb",
+      "download_url": "https://s9.imslp.org/files/imglnks/usimg/f/fb/IMSLP102763-PMLP210203-Brahms_Werke_Band_21_Breitkopf_JB_126_WoO_25_scan.pdf"
+    },
+    {
+      "imslp_id": "102770",
+      "work": "O wie sanft!, WoO 26",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102770/hfpb",
+      "download_url": "https://s9.imslp.org/files/imglnks/usimg/6/67/IMSLP102770-PMLP210220-Brahms_Werke_Band_21_Breitkopf_JB_128_WoO_26_scan.pdf"
+    },
+    {
+      "imslp_id": "102716",
+      "work": "Töne, lindernder Klang, WoO 28",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102716/hfpb",
+      "download_url": "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP102716-PMLP210137-Brahms_Werke_Band_21_Breitkopf_JB_121_WoO_28_scan.pdf"
+    },
+    {
+      "imslp_id": "102772",
+      "work": "Wann?, WoO 29",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102772/hfpb",
+      "download_url": "https://ks15.imslp.org/files/imglnks/usimg/a/a2/IMSLP102772-PMLP210225-Brahms_Werke_Band_21_Breitkopf_JB_129_WoO_29_scan.pdf"
+    },
+    {
+      "imslp_id": "102718",
+      "work": "Zu Rauch, WoO 30",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/102718/hfpb",
+      "download_url": "https://ks15.imslp.org/files/imglnks/usimg/8/85/IMSLP102718-PMLP210142-Brahms_Werke_Band_21_Breitkopf_JB_122_WoO_30_scan.pdf"
+    }
+  ]
+}

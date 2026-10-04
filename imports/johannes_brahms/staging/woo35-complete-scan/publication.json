@@ -1,0 +1,42 @@
+{
+  "batch_id": "brahms-woo35-complete-and-no12-first-edition-two-20260929",
+  "approved_ids": [
+    "102712",
+    "108869"
+  ],
+  "approved_count": 2,
+  "storage_verified_count": 2,
+  "local_catalog_count": 2,
+  "website_published_count": 2,
+  "catalog_updated_at": "2026-09-29T22:10:36+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-woo35-complete-and-no12-first-edition-two-20260929-20260929_161032_565598",
+  "files": [
+    {
+      "imslp_id": "102712",
+      "public_id": "73047f2f-e71f-415f-803c-ebb967192711",
+      "filename": "合唱作品/73047f2f-e71f-415f-803c-ebb967192711.pdf",
+      "storage_key": "scores/73/73047f2f-e71f-415f-803c-ebb967192711.pdf",
+      "sha256": "5eeb94b94166dd7dc7d7c42e4ebe356bc08d506456c1de08ba4613a5beb729ae"
+    },
+    {
+      "imslp_id": "108869",
+      "public_id": "0da8d76c-6d1e-4368-a597-1fae7a495a4b",
+      "filename": "合唱作品/0da8d76c-6d1e-4368-a597-1fae7a495a4b.pdf",
+      "storage_key": "scores/0d/0da8d76c-6d1e-4368-a597-1fae7a495a4b.pdf",
+      "sha256": "f4ba0f4b610cc879027ad3fae9c4633f01fd4058ffbbcf533abef6a05f7f6be0"
+    }
+  ],
+  "commit": "845fc8c601e46778f781165c682061466953cdd8",
+  "pages_run_id": 36638183178,
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/36638183178",
+  "verified_live_at": "2026-09-30T01:38:00+00:00",
+  "online_catalog_count": 4902,
+  "online_logs_count": 114,
+  "online_catalog_exact": true,
+  "online_logs_exact": true,
+  "online_ui_verified": true,
+  "online_pdf_verified_count": 2,
+  "status": "verified_live"
+}

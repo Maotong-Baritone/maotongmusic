@@ -1,0 +1,98 @@
+{
+  "label": "15 Volkskinderlieder, WoO 31 德语初版及英文版",
+  "checked_on": "2026-09-29",
+  "recorded_at": "2026-09-30T01:58:35.067973+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "23199",
+    "836460"
+  ],
+  "source_notes": "实时IMSLP作品页确认两份Public Domain完整谱、页数、语言、声乐与钢琴编制及出版信息；全集替代扫描#88080/#88081不采用。",
+  "method": "保留原PDF字节；pypdf解析；Poppler渲染全部页面；人工查看两份全页接触表，并放大核对封面、首尾页、曲目页序、语言、编制和版本。",
+  "metadata_changes": [
+    {
+      "imslp_id": "23199",
+      "field": "language_cn",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "谱面标题及全部歌词为德语；实时IMSLP一般信息亦标为German。"
+    },
+    {
+      "imslp_id": "836460",
+      "field": "proposed_title",
+      "before": "15 Volkskinderlieder, WoO 31",
+      "after": "Popular Nursery Songs, WoO 31",
+      "evidence": "英文版封面实际题名为Popular Nursery Songs。"
+    },
+    {
+      "imslp_id": "836460",
+      "field": "proposed_work",
+      "before": "",
+      "after": "15 Volkskinderlieder, WoO 31",
+      "evidence": "该文件为WoO 31的英文翻译完整版本，所属作品另列。"
+    },
+    {
+      "imslp_id": "88080",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "已保留德语初版#23199；该后出全集版为同曲完整替代扫描，避免重复发布。"
+    },
+    {
+      "imslp_id": "88081",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "已保留德语初版#23199；该后出全集版为同曲完整替代扫描，避免重复发布。"
+    }
+  ],
+  "files": {
+    "23199": {
+      "pages": 24,
+      "movement_start_pdf_pages": [
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21
+      ],
+      "notes": "PDF第1页封面、第2页空白内封、第3页题名页；曲目起始页：No.1第4页、No.2第5页、No.3第6页、No.4第8页、No.5第10页、No.6第11页、No.7第12页、No.8第一版第13页、No.8第二版第14页、No.9第15页、No.10第16页、No.11第18页、No.12第19页、No.13第20页、No.14第21页；第22–23页为空白封底，第24页为出版社目录。"
+    },
+    "836460": {
+      "pages": 19,
+      "movement_start_pdf_pages": [
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      "notes": "PDF第1页封面、第2页空白；英文曲目起始页：No.1第3页、No.2第4页、No.3第6页、No.4第8页、No.5第9页、No.6第10页、No.7第11页、No.8第12页、No.9第13页、No.10第14页、No.11第16页、No.12第17页、No.13第18页、No.14第19页；此英文版收14首编号歌曲，未收入德语初版No.8的第二版本。"
+    }
+  },
+  "approved_at": "2026-09-30T01:59:33+00:00",
+  "approved_publication_ids": [
+    "23199",
+    "836460"
+  ]
+}

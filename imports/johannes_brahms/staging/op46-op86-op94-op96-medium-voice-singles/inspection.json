@@ -1,0 +1,266 @@
+{
+  "label": "Op.46、Op.86、Op.94与Op.96：Peters中音声部独立歌曲",
+  "checked_on": "2026-09-26",
+  "recorded_at": "2026-09-27T00:32:36.753165+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "133951",
+    "133953",
+    "242969",
+    "242970",
+    "242971",
+    "243448",
+    "243534",
+    "243535",
+    "243536"
+  ],
+  "source_notes": "实时IMSLP作品页确认四套作品为德语、Public Domain；九份均列于中音声部组。Op.46滤色镜重复文件未纳入。#243448来源文件名误写No.2，页面条目、作品目录及谱面均明确为No.4 Sapphische Ode。",
+  "method": "保留原PDF字节；pypdf解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览九份完整接触表并放大核对首尾、标题、编号、速度、德语、编制和异常页。",
+  "rendering_note": "九份普通清晰单曲全部页面均已渲染；页序连续，标题与歌词可辨，末页完整结束，无异常或缺页。",
+  "metadata_changes": [
+    {
+      "imslp_id": "133951",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "133953",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242969",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242969",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "242970",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242970",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "242971",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "242971",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243448",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243448",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243534",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243534",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243535",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243535",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "243536",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243536",
+      "field": "language",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页标示German，谱面歌词为德语。"
+    }
+  ],
+  "files": {
+    "133951": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Die Kränze. Ziemlich langsam, Op. 46"
+      ],
+      "notes": "No. 1 Die Kränze. Ziemlich langsam, Op. 46；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "133953": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 An die Nachtigall. Ziemlich langsam, Op. 46"
+      ],
+      "notes": "No. 4 An die Nachtigall. Ziemlich langsam, Op. 46；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "242969": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Therese. Etwas bewegt, Op. 86"
+      ],
+      "notes": "No. 1 Therese. Etwas bewegt, Op. 86；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "242970": {
+      "pages": 2,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Feldeinsamkeit. Langsam, Op. 86"
+      ],
+      "notes": "No. 2 Feldeinsamkeit. Langsam, Op. 86；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "242971": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Nachtwandler. Langsam, Op. 86"
+      ],
+      "notes": "No. 3 Nachtwandler. Langsam, Op. 86；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "243448": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Sapphische Ode. Ziemlich langsam, Op. 94"
+      ],
+      "notes": "No. 4 Sapphische Ode. Ziemlich langsam, Op. 94；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "243534": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Der Tod, das ist die kühle Nacht. Sehr langsam, Op. 96"
+      ],
+      "notes": "No. 1 Der Tod, das ist die kühle Nacht. Sehr langsam, Op. 96；共2页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "243535": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Wir wandelten, wir zwei zusammen. Andante espressivo, Op. 96"
+      ],
+      "notes": "No. 2 Wir wandelten, wir zwei zusammen. Andante espressivo, Op. 96；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "243536": {
+      "pages": 3,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Meerfahrt. Andante sostenuto, Op. 96"
+      ],
+      "notes": "No. 4 Meerfahrt. Andante sostenuto, Op. 96；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-27T00:33:40+00:00",
+  "approved_publication_ids": [
+    "133951",
+    "133953",
+    "242969",
+    "242970",
+    "242971",
+    "243448",
+    "243534",
+    "243535",
+    "243536"
+  ]
+}

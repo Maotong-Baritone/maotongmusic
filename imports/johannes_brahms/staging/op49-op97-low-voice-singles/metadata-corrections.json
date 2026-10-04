@@ -1,0 +1,207 @@
+{
+  "batch_id": "brahms-op49-op97-low-voice-eleven-20260924",
+  "recorded_at": "2026-09-25T00:08:49.378572+00:00",
+  "source_manifest_before_sha256": "c3e29036e3ecaf327000ab922fad006ef1735cafe60f4c19004b227ea6fa1915",
+  "source_manifest_after_sha256": "efc68fad0d37f6ecaca7fe023dbfb9410167618f05faeadcbed28df64908ff9f",
+  "staging_manifest_before_sha256": "95459b84879bc6f2f99a7cb885f5cd9c58cd2b7c0429fc4b7273cbea6eda5bcc",
+  "staging_manifest_after_sha256": "e44ea61da09da14c1bff8e9cb8edbfbcaf88edcd4077052d3f7c09002238eb89",
+  "backup": "backup\\import_metadata\\brahms-op49-op97-low-voice-eleven-20260924-20260924_180849_195045",
+  "changes": [
+    {
+      "imslp_id": "39332",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39332",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "39333",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39333",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "312722",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "312722",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "39334",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39334",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "312723",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "312723",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43302",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43302",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43302",
+      "field": "title",
+      "before": "No. 1 Nachtigall Langsam, Op. 97",
+      "after": "No. 1 Nachtigall. Langsam, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "346977",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "346977",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "346977",
+      "field": "title",
+      "before": "No. 2 Auf dem Schiffe Lebhaft und rasch, Op. 97",
+      "after": "No. 2 Auf dem Schiffe. Lebhaft und rasch, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "346978",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "346978",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "346978",
+      "field": "title",
+      "before": "No. 3 Entführung Schnell, Op. 97",
+      "after": "No. 3 Entführung. Schnell, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "43303",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43303",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43303",
+      "field": "title",
+      "before": "No. 4 Dort in den Weiden steht ein Haus Lebhaft und anmuthig, Op. 97",
+      "after": "No. 4 Dort in den Weiden. Lebhaft und anmuthig, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "43304",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43304",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43304",
+      "field": "title",
+      "before": "No. 5 Komm bald Zart bewegt, Op. 97",
+      "after": "No. 5 Komm bald. Zart bewegt, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "43305",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43305",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43305",
+      "field": "title",
+      "before": "No. 6 Trennung Anmuthig bewegt, Op. 97",
+      "after": "No. 6 Trennung. Anmuthig bewegt, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    }
+  ]
+}

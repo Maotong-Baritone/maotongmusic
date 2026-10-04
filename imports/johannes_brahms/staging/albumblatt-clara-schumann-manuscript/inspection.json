@@ -1,0 +1,47 @@
+{
+  "label": "Albumblatt für Clara Schumann 无伴奏独唱手稿",
+  "checked_on": "2026-09-28",
+  "recorded_at": "2026-09-29T05:05:48.493296+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "374716"
+  ],
+  "source_notes": "实时IMSLP作品页确认Public Domain、Holograph manuscript, 1868、C major、voice及For unaccompanied voices。",
+  "method": "保留原PDF字节；pypdf解析两页；Poppler以180dpi渲染两页；人工逐页放大核对题名、题词、旋律、日期、馆藏号及空白背面。",
+  "metadata_changes": [
+    {
+      "imslp_id": "374716",
+      "field": "voice_types",
+      "before": "声乐",
+      "after": "独唱（无伴奏）",
+      "evidence": "实时IMSLP标注For 1 voice、For unaccompanied voices；谱面仅有单旋律与歌词，无伴奏。"
+    },
+    {
+      "imslp_id": "374716",
+      "field": "language",
+      "before": "",
+      "after": "德语",
+      "evidence": "手稿正面歌词为“Hoch auf’m Berg, tief im Tal, grüß’ ich dich vieltausendmal”。"
+    }
+  ],
+  "files": {
+    "374716": {
+      "pages": 2,
+      "key": "C大调",
+      "number": null,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "Albumblatt für Clara Schumann"
+      ],
+      "notes": "第1页完整手稿正面；第2页空白背面；无缺页或裁切异常。",
+      "publication_note": "PDF第1页为手稿正面，含题名、德语题词、Adagio单旋律及1868年9月12日日期；第2页为无音乐内容的背面空白五线纸。"
+    }
+  },
+  "approved_at": "2026-09-29T05:06:54+00:00",
+  "approved_publication_ids": [
+    "374716"
+  ]
+}

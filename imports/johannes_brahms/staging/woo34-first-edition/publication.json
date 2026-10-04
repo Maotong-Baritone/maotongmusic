@@ -1,0 +1,36 @@
+{
+  "batch_id": "brahms-woo34-first-edition-one-20260929",
+  "approved_ids": [
+    "23201"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-29T20:59:36+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-woo34-first-edition-one-20260929-20260929_145932_563208",
+  "files": [
+    {
+      "imslp_id": "23201",
+      "public_id": "2da3f9c1-0921-49ad-886b-6dc7fef7b4b6",
+      "filename": "合唱作品/2da3f9c1-0921-49ad-886b-6dc7fef7b4b6.pdf",
+      "storage_key": "scores/2d/2da3f9c1-0921-49ad-886b-6dc7fef7b4b6.pdf",
+      "sha256": "ac943fa0e4bab6b4a7864316fc373e40b9e4c467eaf69b50914619978c1c2306"
+    }
+  ],
+  "git_commit": "d182f121d2324f9d247a34366624a5e986f58b88",
+  "pages_run_id": 36630381774,
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/36630381774",
+  "verified_live": true,
+  "online_catalog_total": 4900,
+  "online_log_count": 1,
+  "pages_conclusion": "success",
+  "pages_completed_at": "2026-09-29T21:40:13Z",
+  "online_data_equal_local": true,
+  "online_logs_equal_local": true,
+  "online_pdf_sha256_verified": true,
+  "online_ui_verified": true,
+  "verified_live_at": "2026-09-29T21:48:34.626999+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "batch_id": "brahms-op69-op105-op107-medium-voice-eight-20260928",
+  "recorded_at": "2026-09-28T17:17:58.503486+00:00",
+  "source_manifest_before_sha256": "43688a954897d88cb02464eb58c115aba4b737ccd24fbdda4e49fc2849b1c2ab",
+  "source_manifest_after_sha256": "da68d7831d4bef73f836ccb472317b85400673ee1aa2bed003150b3e068a6173",
+  "staging_manifest_before_sha256": "09acce5f72bb7d617747f25d31169e2c0ca60e5cc3b382b60e1c6c3e57ab781f",
+  "staging_manifest_after_sha256": "10637a2f0e727d086197160bb8ef9815e652ada952472e16118116cd455f6242",
+  "backup": "backup\\import_metadata\\brahms-op69-op105-op107-medium-voice-eight-20260928-20260928_111758_311658",
+  "changes": [
+    {
+      "imslp_id": "136897",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "136898",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "55045",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "55045",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "55045",
+      "field": "proposed_title",
+      "before": "No. 1 Wie Melodien zeiht es mir. Zart, Op. 105",
+      "after": "No. 1 Wie Melodien zieht es mir. Zart, Op. 105",
+      "evidence": "谱面所印独立题名与速度标记。"
+    },
+    {
+      "imslp_id": "55016",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "55016",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "55017",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "55017",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "55017",
+      "field": "proposed_title",
+      "before": "No. 4 Auf dem Kirchhofe. Mässig, Op. 105",
+      "after": "No. 4 Auf dem Kirchhofe. Andante moderato, Op. 105",
+      "evidence": "谱面所印独立题名与速度标记。"
+    },
+    {
+      "imslp_id": "243828",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243828",
+      "field": "proposed_title",
+      "before": "No. 2 Salamander. Mit Launeor, Op. 107",
+      "after": "No. 2 Salamander. Mit Laune, Op. 107",
+      "evidence": "谱面所印独立题名与速度标记。"
+    },
+    {
+      "imslp_id": "243829",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    },
+    {
+      "imslp_id": "243830",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面均显示独唱声部与钢琴。"
+    }
+  ]
+}

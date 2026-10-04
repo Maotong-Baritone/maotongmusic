@@ -1,0 +1,57 @@
+{
+  "batch": "op46-op86-op94-op96-medium-voice-singles",
+  "status": "downloading_and_inspecting",
+  "updated_at": "2026-09-27T00:18:43Z",
+  "source_policy": "IMSLP anonymous wait completed; only the displayed public PDF links were used",
+  "downloaded": [
+    {
+      "imslp_id": 133951,
+      "work": "4 Lieder, Op.46",
+      "item": "No.1 Die Kränze",
+      "source_page": "https://imslp.org/wiki/4_Lieder,_Op.46_(Brahms,_Johannes)",
+      "pages": 4,
+      "sha256": "967c476ee3bb5d2649b38eb8752ddebfe2260afe69d4287e1e821286ae2ec77c"
+    },
+    {
+      "imslp_id": 133953,
+      "work": "4 Lieder, Op.46",
+      "item": "No.4 An die Nachtigall",
+      "source_page": "https://imslp.org/wiki/4_Lieder,_Op.46_(Brahms,_Johannes)",
+      "pages": 4,
+      "sha256": "36ea2d64e4da339e0b3c103450a6b74440fc0e884d0e9a2bbbc45fe6dbea8f43"
+    },
+    {
+      "imslp_id": 242969,
+      "work": "6 Lieder, Op.86",
+      "item": "No.1 Therese",
+      "source_page": "https://imslp.org/wiki/6_Lieder,_Op.86_(Brahms,_Johannes)",
+      "pages": 2,
+      "sha256": "8051462932ec5a3a4e205681ec4a5cd1b1eec3a74993386743fa2e9b875d0437"
+    },
+    {
+      "imslp_id": 242970,
+      "work": "6 Lieder, Op.86",
+      "item": "No.2 Feldeinsamkeit",
+      "source_page": "https://imslp.org/wiki/6_Lieder,_Op.86_(Brahms,_Johannes)",
+      "pages": 2,
+      "sha256": "68bdb5ae6ed5213cde7aaa52ce1c5a15e80f6a9758cc991c49c72ef8fcee4093"
+    },
+    {
+      "imslp_id": 242971,
+      "work": "6 Lieder, Op.86",
+      "item": "No.3 Nachtwandler",
+      "source_page": "https://imslp.org/wiki/6_Lieder,_Op.86_(Brahms,_Johannes)",
+      "pages": 2,
+      "sha256": "0026ce306ff3e98f1c7ab507820e2832f7f415b68ff9494dcf41bb154f4d8bd6"
+    }
+  ],
+  "source_findings": {
+    "language": "German",
+    "instrumentation": "voice, piano",
+    "voice_edition": "medium voice",
+    "copyright": "Public Domain",
+    "op46_duplicates_excluded": [133952, 133954]
+  },
+  "remaining_candidate_ids": [243448, 243534, 243535, 243536],
+  "next_step": "Complete normal IMSLP downloads, parse and render every page, inspect contact sheets and enlarged first/last/anomaly pages before any publication."
+}

@@ -1,0 +1,58 @@
+{
+  "batch_id": "brahms-woo35-complete-and-no12-first-edition-two-20260929",
+  "recorded_at": "2026-09-29T22:09:44.369553+00:00",
+  "source_manifest_before_sha256": "bac5aabf1d99e924f40d11bfe7abce8e5344fcc889bced8309d8d9fe4b92a05f",
+  "source_manifest_after_sha256": "b07b6aca2726c663efcdc3c4777d9536a69b3b1881a28906084b1e08f88bd059",
+  "backup": "backup\\import_metadata\\brahms-woo35-complete-and-no12-first-edition-two-20260929-20260929_160944_190687",
+  "changes": [
+    {
+      "imslp_id": "102712",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "作品为真正SATB无伴奏混声合唱；按现有分类归入合唱作品，不重复使用艺术歌曲子分类。"
+    },
+    {
+      "imslp_id": "102712",
+      "field": "voice_types",
+      "before": "混声合唱",
+      "after": "混声合唱（无伴奏）",
+      "evidence": "实时IMSLP配置为Chorus (SATB)，分类为For unaccompanied chorus；谱面仅合唱声部。"
+    },
+    {
+      "imslp_id": "108869",
+      "field": "proposed_title",
+      "before": "No. 12 Altdeutches Kapflied, WoO 35",
+      "after": "No.12 Altdeutsches Kampflied, WoO 35",
+      "evidence": "实时IMSLP分段标题及谱面标题均为Altdeutsches Kampflied。"
+    },
+    {
+      "imslp_id": "108869",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "谱面标注für Chor，为无伴奏合唱；不使用艺术歌曲子分类。"
+    },
+    {
+      "imslp_id": "108869",
+      "field": "voice_types",
+      "before": "混声合唱",
+      "after": "混声合唱（无伴奏）",
+      "evidence": "实时IMSLP作品配置为Chorus (SATB)，谱面无伴奏。"
+    },
+    {
+      "imslp_id": "102713",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "与#102712为同一扫描的滤色版本；保留原扫描以避免重复。"
+    },
+    {
+      "imslp_id": "202904",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "No.5现代排版采用CC BY-NC-SA 3.0特殊许可，且完整公版扫描已含此曲。"
+    }
+  ]
+}

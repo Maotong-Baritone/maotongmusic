@@ -1,0 +1,23 @@
+{
+  "batch_id": "brahms-albumblatt-clara-manuscript-one-20260929",
+  "approved_ids": [
+    "374716"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-29T05:06:54+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-albumblatt-clara-manuscript-one-20260929-20260928_230651_936831",
+  "files": [
+    {
+      "imslp_id": "374716",
+      "public_id": "efcb1020-2c0a-4ba2-88a5-e4edac067424",
+      "filename": "艺术歌曲/efcb1020-2c0a-4ba2-88a5-e4edac067424.pdf",
+      "storage_key": "scores/ef/efcb1020-2c0a-4ba2-88a5-e4edac067424.pdf",
+      "sha256": "70eb0176904582d48a4d9bd21169c677bfc458fa588077ba3322a9fd8536e704"
+    }
+  ]
+}

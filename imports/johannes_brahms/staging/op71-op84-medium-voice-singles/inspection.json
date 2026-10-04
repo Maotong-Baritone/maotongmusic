@@ -1,0 +1,228 @@
+{
+  "label": "Op.71与Op.84：Peters中音声部独立歌曲",
+  "checked_on": "2026-09-28",
+  "recorded_at": "2026-09-29T04:18:47.849521+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "138117",
+    "138118",
+    "138119",
+    "138120",
+    "142695",
+    "142696",
+    "142697"
+  ],
+  "source_notes": "实时IMSLP作品页确认两套作品为德语、Public Domain；七份均列于中音声部组。",
+  "method": "保留原PDF字节；pypdf解析全部页面并校验SHA256；Poppler渲染全部页面；人工通览七份完整接触表并放大核对首尾、标题、编号、速度、德语、编制和异常页。",
+  "metadata_changes": [
+    {
+      "imslp_id": "138117",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "138117",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "138117",
+      "field": "title",
+      "before": "No. 1 Es liebt sich so lieblich im Lenze! Anmuthig bewegt, Op. 71",
+      "after": "No. 1 Es liebt sich so lieblich im Lenze. Anmuthig bewegt, Op. 71",
+      "evidence": "谱面首页标题以句点结束。"
+    },
+    {
+      "imslp_id": "138118",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "138118",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "138119",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "138119",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "138120",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "中音声部、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "138120",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "142695",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "二重唱、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "142695",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "142696",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "二重唱、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "142696",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    },
+    {
+      "imslp_id": "142697",
+      "field": "voice_types",
+      "before": "中音声部",
+      "after": "二重唱、钢琴",
+      "evidence": "实时IMSLP中音声部组及谱面角色、钢琴系统所示实际编制。"
+    },
+    {
+      "imslp_id": "142697",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时IMSLP作品页及谱面歌词均为德语。"
+    }
+  ],
+  "files": {
+    "138117": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Es liebt sich so lieblich im Lenze. Anmuthig bewegt, Op. 71"
+      ],
+      "notes": "No. 1 Es liebt sich so lieblich im Lenze. Anmuthig bewegt, Op. 71；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "138118": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 An den Mond. Nicht zu langsam und mit Anmuth, Op. 71"
+      ],
+      "notes": "No. 2 An den Mond. Nicht zu langsam und mit Anmuth, Op. 71；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "138119": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Geheimnis. Belebt und heimlich, Op. 71"
+      ],
+      "notes": "No. 3 Geheimnis. Belebt und heimlich, Op. 71；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "138120": {
+      "pages": 3,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Minnelied. Sehr innig, doch nicht zu langsam, Op. 71"
+      ],
+      "notes": "No. 5 Minnelied. Sehr innig, doch nicht zu langsam, Op. 71；共3页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "142695": {
+      "pages": 4,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Sommerabend. Andante con moto, Op. 84"
+      ],
+      "notes": "No. 1 Sommerabend. Andante con moto, Op. 84；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "142696": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Der Kranz. Allegro grazioso, Op. 84"
+      ],
+      "notes": "No. 2 Der Kranz. Allegro grazioso, Op. 84；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    },
+    "142697": {
+      "pages": 4,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Vergebliches Ständchen. Lebhaft und gut gelaunt, Op. 84"
+      ],
+      "notes": "No. 4 Vergebliches Ständchen. Lebhaft und gut gelaunt, Op. 84；共4页；完整接触表及首尾页检查通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-29T04:20:02+00:00",
+  "approved_publication_ids": [
+    "138117",
+    "138118",
+    "138119",
+    "138120",
+    "142695",
+    "142696",
+    "142697"
+  ]
+}

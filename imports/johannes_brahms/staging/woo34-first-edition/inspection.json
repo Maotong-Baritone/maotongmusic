@@ -1,0 +1,107 @@
+{
+  "label": "14 Deutsche Volkslieder, WoO 34 Rieter-Biedermann初版完整谱",
+  "checked_on": "2026-09-29",
+  "recorded_at": "2026-09-29T20:58:52.467515+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "23201"
+  ],
+  "source_notes": "实时IMSLP确认#23201为Public Domain、Complete Score、41页、J. Rieter-Biedermann 1864年初版；#102709与#102710为1926–27全集版原扫描和滤色替代版，排除以避免重复版本。",
+  "method": "保留原PDF字节；pypdf解析41页；Poppler渲染全部页面；人工检查4张全页接触表并逐页原尺寸放大核对41页、14首题名与起始页、两册结构、德语歌词、SATB无伴奏编制及异常。",
+  "full_size_review": "completed_all_41_pages",
+  "metadata_changes": [
+    {
+      "imslp_id": "23201",
+      "field": "language_cn",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP一般信息标明German；谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "23201",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "作品为真正SATB无伴奏混声合唱；按现有分类归入合唱作品，不重复使用艺术歌曲子分类。"
+    },
+    {
+      "imslp_id": "23201",
+      "field": "voice_types",
+      "before": "混声合唱",
+      "after": "混声合唱（无伴奏）",
+      "evidence": "实时IMSLP配置为mixed chorus (SATB)，分类为For unaccompanied chorus；谱面仅SATB四声部。"
+    },
+    {
+      "imslp_id": "102709",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "1926–27年全集版替代扫描；选用#23201初版以避免重复发布。"
+    },
+    {
+      "imslp_id": "102710",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "1926–27年全集版替代扫描；选用#23201初版以避免重复发布。"
+    }
+  ],
+  "volume_page_ranges": [
+    {
+      "volume": 1,
+      "pdf_pages": "1–21",
+      "music_pages": "5–20"
+    },
+    {
+      "volume": 2,
+      "pdf_pages": "22–41",
+      "music_pages": "25–40"
+    }
+  ],
+  "files": {
+    "23201": {
+      "pages": 41,
+      "key": "",
+      "number": null,
+      "movement_start_pdf_pages": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        17,
+        19,
+        25,
+        27,
+        29,
+        31,
+        33,
+        37,
+        39
+      ],
+      "titles": [
+        "No.1 Von edler Art",
+        "No.2 Mit Lust tät ich ausreiten",
+        "No.3 Bei nächtlicher Weil",
+        "No.4 Vom heiligen Märtyrer Emmerano",
+        "No.5 Täublein weiss",
+        "No.6 Ach lieber Herre Jesu Christ",
+        "No.7 Sankt Raphael",
+        "No.8 In stiller Nacht",
+        "No.9 Abschiedslied",
+        "No.10 Der tote Knabe",
+        "No.11 Die Wollust in den Maien",
+        "No.12 Morgengesang",
+        "No.13 Schnitter Tod",
+        "No.14 Der englische Jäger"
+      ],
+      "notes": "两册及14首连续完整；SATB无伴奏混声合唱。全页有来源数字水印及少量铅笔馆藏标记，未见缺页、错序、裁切或不可读异常。",
+      "publication_note": "两册合订：第1册PDF第1–21页（封面1、题名2、空白3、题献4、正文5–20、21空白）；第2册PDF第22–41页（题名22、空白23、题献24、正文25–40、41空白）。目录：No.1 Von edler Art（PDF第5页）；No.2 Mit Lust tät ich ausreiten（PDF第7页）；No.3 Bei nächtlicher Weil（PDF第9页）；No.4 Vom heiligen Märtyrer Emmerano（PDF第11页）；No.5 Täublein weiss（PDF第13页）；No.6 Ach lieber Herre Jesu Christ（PDF第17页）；No.7 Sankt Raphael（PDF第19页）；No.8 In stiller Nacht（PDF第25页）；No.9 Abschiedslied（PDF第27页）；No.10 Der tote Knabe（PDF第29页）；No.11 Die Wollust in den Maien（PDF第31页）；No.12 Morgengesang（PDF第33页）；No.13 Schnitter Tod（PDF第37页）；No.14 Der englische Jäger（PDF第39页）"
+    }
+  },
+  "approved_at": "2026-09-29T20:59:36+00:00",
+  "approved_publication_ids": [
+    "23201"
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "label": "Op.49与Op.97：低声部独立单曲",
+  "checked_on": "2026-09-24",
+  "recorded_at": "2026-09-25T00:08:49.394114+00:00",
+  "proposal_only": false,
+  "publication_approved": true,
+  "proposed_first_publication_ids": [
+    "39332",
+    "39333",
+    "312722",
+    "39334",
+    "312723",
+    "43302",
+    "346977",
+    "346978",
+    "43303",
+    "43304",
+    "43305"
+  ],
+  "source_notes": "实时IMSLP作品页确认十一份均为Public Domain低声部独立单曲，德语独唱与钢琴，N. Simrock出版并由Edition Peters再版。",
+  "method": "保留原PDF字节；pypdf解析全部30页并校验SHA256；Poppler渲染全部页面；人工通览十一份完整接触表并重点放大首尾、标题、速度、歌词、编制和异常页。",
+  "rendering_note": "十一份清晰单曲共30页，页序连续、文字与谱面可读、末页完整结束。",
+  "metadata_changes": [
+    {
+      "imslp_id": "39332",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39332",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "39333",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39333",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "312722",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "312722",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "39334",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39334",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "312723",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "312723",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43302",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43302",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43302",
+      "field": "title",
+      "before": "No. 1 Nachtigall Langsam, Op. 97",
+      "after": "No. 1 Nachtigall. Langsam, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "346977",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "346977",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "346977",
+      "field": "title",
+      "before": "No. 2 Auf dem Schiffe Lebhaft und rasch, Op. 97",
+      "after": "No. 2 Auf dem Schiffe. Lebhaft und rasch, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "346978",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "346978",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "346978",
+      "field": "title",
+      "before": "No. 3 Entführung Schnell, Op. 97",
+      "after": "No. 3 Entführung. Schnell, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "43303",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43303",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43303",
+      "field": "title",
+      "before": "No. 4 Dort in den Weiden steht ein Haus Lebhaft und anmuthig, Op. 97",
+      "after": "No. 4 Dort in den Weiden. Lebhaft und anmuthig, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "43304",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43304",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43304",
+      "field": "title",
+      "before": "No. 5 Komm bald Zart bewegt, Op. 97",
+      "after": "No. 5 Komm bald. Zart bewegt, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "43305",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组为低声部；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "43305",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页及渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "43305",
+      "field": "title",
+      "before": "No. 6 Trennung Anmuthig bewegt, Op. 97",
+      "after": "No. 6 Trennung. Anmuthig bewegt, Op. 97",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    }
+  ],
+  "files": {
+    "39332": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Am Sonntag Morgen. Andante espressivo, Op. 49"
+      ],
+      "notes": "No. 1 Am Sonntag Morgen. Andante espressivo, Op. 49，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "39333": {
+      "pages": 4,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 An ein Veilchen. Andante, Op. 49"
+      ],
+      "notes": "No. 2 An ein Veilchen. Andante, Op. 49，共4页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "312722": {
+      "pages": 3,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Sehnsucht. Langsam, Op. 49"
+      ],
+      "notes": "No. 3 Sehnsucht. Langsam, Op. 49，共3页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "39334": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Wiegenlied. Zart bewegt, Op. 49"
+      ],
+      "notes": "No. 4 Wiegenlied. Zart bewegt, Op. 49，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "312723": {
+      "pages": 6,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Abenddämmerung. Ruhig, Op. 49"
+      ],
+      "notes": "No. 5 Abenddämmerung. Ruhig, Op. 49，共6页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "43302": {
+      "pages": 2,
+      "key": "",
+      "number": 1,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 1 Nachtigall. Langsam, Op. 97"
+      ],
+      "notes": "No. 1 Nachtigall. Langsam, Op. 97，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "346977": {
+      "pages": 3,
+      "key": "",
+      "number": 2,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 2 Auf dem Schiffe. Lebhaft und rasch, Op. 97"
+      ],
+      "notes": "No. 2 Auf dem Schiffe. Lebhaft und rasch, Op. 97，共3页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "346978": {
+      "pages": 2,
+      "key": "",
+      "number": 3,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 3 Entführung. Schnell, Op. 97"
+      ],
+      "notes": "No. 3 Entführung. Schnell, Op. 97，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "43303": {
+      "pages": 2,
+      "key": "",
+      "number": 4,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 4 Dort in den Weiden. Lebhaft und anmuthig, Op. 97"
+      ],
+      "notes": "No. 4 Dort in den Weiden. Lebhaft und anmuthig, Op. 97，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "43304": {
+      "pages": 2,
+      "key": "",
+      "number": 5,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 5 Komm bald. Zart bewegt, Op. 97"
+      ],
+      "notes": "No. 5 Komm bald. Zart bewegt, Op. 97，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    },
+    "43305": {
+      "pages": 2,
+      "key": "",
+      "number": 6,
+      "movement_start_pdf_pages": [
+        1
+      ],
+      "titles": [
+        "No. 6 Trennung. Anmuthig bewegt, Op. 97"
+      ],
+      "notes": "No. 6 Trennung. Anmuthig bewegt, Op. 97，共2页；全页接触表及首尾核对通过。",
+      "publication_note": ""
+    }
+  },
+  "approved_at": "2026-09-25T00:10:19+00:00",
+  "approved_publication_ids": [
+    "39332",
+    "39333",
+    "312722",
+    "39334",
+    "312723",
+    "43302",
+    "346977",
+    "346978",
+    "43303",
+    "43304",
+    "43305"
+  ]
+}

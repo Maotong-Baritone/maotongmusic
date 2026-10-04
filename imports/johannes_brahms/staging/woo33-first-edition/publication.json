@@ -1,0 +1,30 @@
+{
+  "batch_id": "brahms-woo33-first-edition-one-20260929",
+  "approved_ids": [
+    "23200"
+  ],
+  "approved_count": 1,
+  "storage_verified_count": 1,
+  "local_catalog_count": 1,
+  "website_published_count": 1,
+  "catalog_updated_at": "2026-09-29T17:17:58+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-woo33-first-edition-one-20260929-20260929_111752_011468",
+  "files": [
+    {
+      "imslp_id": "23200",
+      "public_id": "cb8e88fe-37d7-4902-9362-5838dcf46bff",
+      "filename": "声乐套曲/cb8e88fe-37d7-4902-9362-5838dcf46bff.pdf",
+      "storage_key": "scores/cb/cb8e88fe-37d7-4902-9362-5838dcf46bff.pdf",
+      "sha256": "9597cada517ac947066cca30e7f18007e24cdbcb6a9a73efd61d395e46434b1f"
+    }
+  ],
+  "deployed_commit": "3be409abedf2abe0e825073aa368ab6ff1c757a7",
+  "pages_run_id": 36604146542,
+  "verified_live_at": "2026-09-29T20:38:59+00:00",
+  "online_catalog_total": 4899,
+  "online_log_count": 1,
+  "online_ui_verified": true,
+  "online_pdf_sha256_verified": true
+}

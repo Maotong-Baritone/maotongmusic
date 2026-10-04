@@ -1,0 +1,23 @@
+{
+  "batch_id": "brahms-albumblatt-clara-manuscript-one-20260929",
+  "recorded_at": "2026-09-29T05:05:48.493296+00:00",
+  "source_manifest_before_sha256": "1ba1a9ed527e5026dc06a09daf83b8ffb2ed4471930bdcecb2fe8a9188fdf284",
+  "source_manifest_after_sha256": "a3b736f63a1a8a1ec50ed1c71c788c06d4950a349f8b13d2096f07d7e3d20891",
+  "backup": "backup\\import_metadata\\brahms-albumblatt-clara-manuscript-one-20260929-20260928_230548_286006",
+  "changes": [
+    {
+      "imslp_id": "374716",
+      "field": "voice_types",
+      "before": "声乐",
+      "after": "独唱（无伴奏）",
+      "evidence": "实时IMSLP标注For 1 voice、For unaccompanied voices；谱面仅有单旋律与歌词，无伴奏。"
+    },
+    {
+      "imslp_id": "374716",
+      "field": "language",
+      "before": "",
+      "after": "德语",
+      "evidence": "手稿正面歌词为“Hoch auf’m Berg, tief im Tal, grüß’ ich dich vieltausendmal”。"
+    }
+  ]
+}

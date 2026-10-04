@@ -1,0 +1,103 @@
+{
+  "batch_id": "brahms-op46-op86-op94-op96-medium-voice-nine-20260927",
+  "approved_ids": [
+    "133951",
+    "133953",
+    "242969",
+    "242970",
+    "242971",
+    "243448",
+    "243534",
+    "243535",
+    "243536"
+  ],
+  "approved_count": 9,
+  "storage_verified_count": 9,
+  "local_catalog_count": 9,
+  "website_published_count": 9,
+  "catalog_updated_at": "2026-09-27T00:33:40+00:00",
+  "website_status": "verified_live",
+  "website_url": "https://maotong.me/maotongmusic/",
+  "backup_directory": "backup\\import_publications\\brahms-op46-op86-op94-op96-medium-voice-nine-20260927-20260926_183329_890371",
+  "files": [
+    {
+      "imslp_id": "133951",
+      "public_id": "bc61ec3b-e840-4d83-b103-a604db2e5490",
+      "filename": "艺术歌曲/bc61ec3b-e840-4d83-b103-a604db2e5490.pdf",
+      "storage_key": "scores/bc/bc61ec3b-e840-4d83-b103-a604db2e5490.pdf",
+      "sha256": "967c476ee3bb5d2649b38eb8752ddebfe2260afe69d4287e1e821286ae2ec77c"
+    },
+    {
+      "imslp_id": "133953",
+      "public_id": "fc4ff2b1-5c35-49aa-9504-77d9c0804e1b",
+      "filename": "艺术歌曲/fc4ff2b1-5c35-49aa-9504-77d9c0804e1b.pdf",
+      "storage_key": "scores/fc/fc4ff2b1-5c35-49aa-9504-77d9c0804e1b.pdf",
+      "sha256": "36ea2d64e4da339e0b3c103450a6b74440fc0e884d0e9a2bbbc45fe6dbea8f43"
+    },
+    {
+      "imslp_id": "242969",
+      "public_id": "3caa2937-3f9f-47d4-967d-518f0cd376a0",
+      "filename": "艺术歌曲/3caa2937-3f9f-47d4-967d-518f0cd376a0.pdf",
+      "storage_key": "scores/3c/3caa2937-3f9f-47d4-967d-518f0cd376a0.pdf",
+      "sha256": "8051462932ec5a3a4e205681ec4a5cd1b1eec3a74993386743fa2e9b875d0437"
+    },
+    {
+      "imslp_id": "242970",
+      "public_id": "f352728e-083b-414e-ad49-2a4b5f6bab6a",
+      "filename": "艺术歌曲/f352728e-083b-414e-ad49-2a4b5f6bab6a.pdf",
+      "storage_key": "scores/f3/f352728e-083b-414e-ad49-2a4b5f6bab6a.pdf",
+      "sha256": "68bdb5ae6ed5213cde7aaa52ce1c5a15e80f6a9758cc991c49c72ef8fcee4093"
+    },
+    {
+      "imslp_id": "242971",
+      "public_id": "f80ae6ed-80da-4f4b-bee9-a8d030aaf9ad",
+      "filename": "艺术歌曲/f80ae6ed-80da-4f4b-bee9-a8d030aaf9ad.pdf",
+      "storage_key": "scores/f8/f80ae6ed-80da-4f4b-bee9-a8d030aaf9ad.pdf",
+      "sha256": "0026ce306ff3e98f1c7ab507820e2832f7f415b68ff9494dcf41bb154f4d8bd6"
+    },
+    {
+      "imslp_id": "243448",
+      "public_id": "fe8ba3fc-dfc3-449c-8ac0-ee913d5c2387",
+      "filename": "艺术歌曲/fe8ba3fc-dfc3-449c-8ac0-ee913d5c2387.pdf",
+      "storage_key": "scores/fe/fe8ba3fc-dfc3-449c-8ac0-ee913d5c2387.pdf",
+      "sha256": "c825f32dd41b1f6b71aecf393ae16d706ef67a46de184408c2d3305c3daad48d"
+    },
+    {
+      "imslp_id": "243534",
+      "public_id": "b9dcbafb-b48a-46c5-9b00-32ae7f87e648",
+      "filename": "艺术歌曲/b9dcbafb-b48a-46c5-9b00-32ae7f87e648.pdf",
+      "storage_key": "scores/b9/b9dcbafb-b48a-46c5-9b00-32ae7f87e648.pdf",
+      "sha256": "e8167dee2bb98cec72bbb46e49ccf164bd71448b49d38c67c175aa2eadb73758"
+    },
+    {
+      "imslp_id": "243535",
+      "public_id": "5a0f46ef-7a18-4a42-ae0e-46ceed781f8e",
+      "filename": "艺术歌曲/5a0f46ef-7a18-4a42-ae0e-46ceed781f8e.pdf",
+      "storage_key": "scores/5a/5a0f46ef-7a18-4a42-ae0e-46ceed781f8e.pdf",
+      "sha256": "20a8d6e3f0645edd65eb2c9d6c5004d8271bcc79bdfc4703f5c1215a30683c36"
+    },
+    {
+      "imslp_id": "243536",
+      "public_id": "f5bbc62d-6bcf-4f6b-ac7d-b9e37f3d33c8",
+      "filename": "艺术歌曲/f5bbc62d-6bcf-4f6b-ac7d-b9e37f3d33c8.pdf",
+      "storage_key": "scores/f5/f5bbc62d-6bcf-4f6b-ac7d-b9e37f3d33c8.pdf",
+      "sha256": "b71c8208757ab7f0aaeecd8c9e854f754a04e2aa33dc34f57a43afa777567ecc"
+    }
+  ],
+  "git_commit": "bd0fe7bf9507fc56754edadc97e83d78fd971cd2",
+  "pages_run_id": "36282981856",
+  "pages_run_status": "success",
+  "pages_run_url": "https://github.com/Maotong-Baritone/maotongmusic/actions/runs/36282981856",
+  "deployment_completed_at": "2026-09-27T00:45:32Z",
+  "verified_live_at": "2026-09-27T00:48:56+00:00",
+  "online_verification": {
+    "catalog_count": 4863,
+    "batch_log_count": 1,
+    "catalog_rows_exact": 9,
+    "catalog_and_logs_json_equal": true,
+    "pdf_hashes_exact": 9,
+    "detail_and_download_checked": true,
+    "homepage_log_checked": true,
+    "title_correction_verified": true
+  }
+}

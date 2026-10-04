@@ -1,0 +1,44 @@
+{
+  "batch_id": "brahms-woo31-two-editions-20260929",
+  "recorded_at": "2026-09-30T01:58:35.067973+00:00",
+  "source_manifest_before_sha256": "ea7d01c96305664906720d3559776ac602844a6d8a5e8e6700cc6d85339a6bec",
+  "source_manifest_after_sha256": "90c6d9c21dff10339ce22f91347df9d37aaf7042be27df63af5390e7aa3fb147",
+  "backup": "backup\\import_metadata\\brahms-woo31-two-editions-20260929-20260929_195834_891689",
+  "changes": [
+    {
+      "imslp_id": "23199",
+      "field": "language_cn",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "谱面标题及全部歌词为德语；实时IMSLP一般信息亦标为German。"
+    },
+    {
+      "imslp_id": "836460",
+      "field": "proposed_title",
+      "before": "15 Volkskinderlieder, WoO 31",
+      "after": "Popular Nursery Songs, WoO 31",
+      "evidence": "英文版封面实际题名为Popular Nursery Songs。"
+    },
+    {
+      "imslp_id": "836460",
+      "field": "proposed_work",
+      "before": "",
+      "after": "15 Volkskinderlieder, WoO 31",
+      "evidence": "该文件为WoO 31的英文翻译完整版本，所属作品另列。"
+    },
+    {
+      "imslp_id": "88080",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "已保留德语初版#23199；该后出全集版为同曲完整替代扫描，避免重复发布。"
+    },
+    {
+      "imslp_id": "88081",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "已保留德语初版#23199；该后出全集版为同曲完整替代扫描，避免重复发布。"
+    }
+  ]
+}

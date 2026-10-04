@@ -1,0 +1,51 @@
+{
+  "batch_id": "brahms-woo20-30-small-vocal-nine-20260925",
+  "recorded_at": "2026-09-25T21:32:43.371542+00:00",
+  "source_manifest_before_sha256": "9dfcd0321297deaf54eb126360c15ea6f5f267b4336408f64510d782f99814a1",
+  "source_manifest_after_sha256": "5589976197125b2d5b1ea17019c3314cd11d9763c916ac60efe5d3d7ac4ebd31",
+  "backup": "backup\\import_metadata\\brahms-woo20-30-small-vocal-nine-20260925-20260925_153243_192103",
+  "changes": [
+    {
+      "imslp_id": "102768",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus."
+    },
+    {
+      "imslp_id": "102763",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus."
+    },
+    {
+      "imslp_id": "102770",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus (SSAA)."
+    },
+    {
+      "imslp_id": "102716",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "混声合唱",
+      "evidence": "Live IMSLP instrumentation: mixed chorus (SATB)."
+    },
+    {
+      "imslp_id": "102772",
+      "field": "voice_types",
+      "before": "二重唱",
+      "after": "女声合唱",
+      "evidence": "Live IMSLP instrumentation: female chorus."
+    },
+    {
+      "imslp_id": "102718",
+      "field": "voice_types",
+      "before": "四重唱",
+      "after": "混声合唱",
+      "evidence": "Live IMSLP instrumentation: mixed chorus (SATB)."
+    }
+  ]
+}

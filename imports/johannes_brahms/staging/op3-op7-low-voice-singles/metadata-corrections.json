@@ -1,0 +1,151 @@
+{
+  "batch_id": "brahms-op3-op7-low-voice-twelve-20260924",
+  "recorded_at": "2026-09-25T00:46:03.665131+00:00",
+  "source_manifest_before_sha256": "c6b02077cfd19aecce73a4b724d14d9e6f7576008f98a324d7f029b0c7ecfde9",
+  "source_manifest_after_sha256": "8fca142939ac2fad74213cbc36cb5fe1787418dc4d597555137e819f3ac3be6e",
+  "staging_manifest_before_sha256": "080709a8d39d4f7a958bae2a6a63e2c893c09349f6ba4b4a1ae8c6ed032a4e91",
+  "staging_manifest_after_sha256": "bca837d527465e9a8913b0e5de61580ab72f565ce1a83922d7cb4035bc670441",
+  "backup": "backup\\import_metadata\\brahms-op3-op7-low-voice-twelve-20260924-20260924_184603_485296",
+  "changes": [
+    {
+      "imslp_id": "38733",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "38733",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页与渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "45105",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45105",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页与渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "45106",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45106",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页与渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "45300",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45300",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页与渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "45300",
+      "field": "title",
+      "before": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigen Schwang, Op. 3",
+      "after": "No. 4 Lied aus dem Gedicht 'Ivan'. Mit feurigem Schwung, Op. 3",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "45301",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45301",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页与渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "45302",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45302",
+      "field": "language",
+      "before": "法语",
+      "after": "德语",
+      "evidence": "实时作品页与渲染谱面显示德语歌词。"
+    },
+    {
+      "imslp_id": "39241",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45365",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45366",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45366",
+      "field": "title",
+      "before": "No. 3 Anklänge. Andante molto, Op. 7",
+      "after": "No. 3 Anklänge. Andante moderato, Op. 7",
+      "evidence": "渲染谱面首页印刷题名与速度标记。"
+    },
+    {
+      "imslp_id": "45367",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "45368",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    },
+    {
+      "imslp_id": "39242",
+      "field": "voice_types",
+      "before": "声乐、钢琴",
+      "after": "低声部、钢琴",
+      "evidence": "实时IMSLP分组及文件名为低声部版本；渲染谱面为独唱与钢琴。"
+    }
+  ]
+}

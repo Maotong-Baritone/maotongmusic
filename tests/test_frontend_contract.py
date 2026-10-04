@@ -27,6 +27,13 @@ class FrontendContractTest(unittest.TestCase):
         self.assertIn("preview.contentWindow.location.replace(currentPdfUrl)", self.app_js)
         self.assertIn("delete preview.dataset.loadedUrl", self.app_js)
 
+    def test_touch_pdf_preview_is_vertically_scrollable(self):
+        self.assertIn('id="mobilePdfPreview"', self.index_html)
+        self.assertIn("shouldUseTouchPdfPreview()", self.app_js)
+        self.assertIn("pdfjs-dist@${PDFJS_VERSION}", self.app_js)
+        self.assertIn("touch-action: pan-y pinch-zoom", self.styles)
+        self.assertIn("-webkit-overflow-scrolling: touch", self.styles)
+
     def test_mobile_catalog_has_its_own_card_surface(self):
         self.assertIn('id="mobileScoreList"', self.index_html)
         self.assertIn("mobileHtml +=", self.app_js)

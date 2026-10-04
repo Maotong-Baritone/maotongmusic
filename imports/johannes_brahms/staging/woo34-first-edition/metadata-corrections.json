@@ -1,0 +1,44 @@
+{
+  "batch_id": "brahms-woo34-first-edition-one-20260929",
+  "recorded_at": "2026-09-29T20:58:52.467515+00:00",
+  "source_manifest_before_sha256": "212918e92c9a09e10727aa6fec78f1973e21708a45da3d923116d52fade0cc87",
+  "source_manifest_after_sha256": "3ba490a5264be1bc9ef84202204513170cf561f76b1ae6fc345c06bc0dd6d71a",
+  "backup": "backup\\import_metadata\\brahms-woo34-first-edition-one-20260929-20260929_145852_292399",
+  "changes": [
+    {
+      "imslp_id": "23201",
+      "field": "language_cn",
+      "before": "英语",
+      "after": "德语",
+      "evidence": "实时IMSLP一般信息标明German；谱面歌词为德语。"
+    },
+    {
+      "imslp_id": "23201",
+      "field": "sub_category",
+      "before": "艺术歌曲",
+      "after": "",
+      "evidence": "作品为真正SATB无伴奏混声合唱；按现有分类归入合唱作品，不重复使用艺术歌曲子分类。"
+    },
+    {
+      "imslp_id": "23201",
+      "field": "voice_types",
+      "before": "混声合唱",
+      "after": "混声合唱（无伴奏）",
+      "evidence": "实时IMSLP配置为mixed chorus (SATB)，分类为For unaccompanied chorus；谱面仅SATB四声部。"
+    },
+    {
+      "imslp_id": "102709",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "1926–27年全集版替代扫描；选用#23201初版以避免重复发布。"
+    },
+    {
+      "imslp_id": "102710",
+      "field": "decision",
+      "before": "pending",
+      "after": "excluded",
+      "evidence": "1926–27年全集版替代扫描；选用#23201初版以避免重复发布。"
+    }
+  ]
+}

@@ -704,8 +704,12 @@ function detailUrlFor(id) {
     return url;
 }
 
+let pdfPreviewGeneration = 0;
+
 function clearPdfPreview() {
+    pdfPreviewGeneration += 1;
     const preview = document.getElementById('mPreview');
+    const mobilePreview = document.getElementById('mobilePdfPreview');
     const placeholder = document.getElementById('previewPlaceholder');
     try {
         preview.contentWindow.location.replace('about:blank');
@@ -714,7 +718,89 @@ function clearPdfPreview() {
     }
     delete preview.dataset.loadedUrl;
     preview.style.display = 'none';
+    mobilePreview.replaceChildren();
+    mobilePreview.hidden = true;
     placeholder.style.display = 'flex';
+}
+
+const PDFJS_VERSION = '4.10.38';
+let pdfJsPromise;
+
+function shouldUseTouchPdfPreview() {
+    return window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 992;
+}
+
+async function getPdfJs() {
+    if (!pdfJsPromise) {
+        pdfJsPromise = import(`https://cdn.jsdelivr.net/npm/pdfjs-dist@${PDFJS_VERSION}/build/pdf.min.mjs`)
+            .then(pdfjs => {
+                pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${PDFJS_VERSION}/build/pdf.worker.min.mjs`;
+                return pdfjs;
+            });
+    }
+    return pdfJsPromise;
+}
+
+async function loadTouchPdfPreview(url) {
+    const generation = ++pdfPreviewGeneration;
+    const viewer = document.getElementById('mobilePdfPreview');
+    viewer.hidden = false;
+    viewer.innerHTML = '<div class="mobile-pdf-loading">正在载入可滑动预览…</div>';
+
+    try {
+        const pdfjs = await getPdfJs();
+        const pdf = await pdfjs.getDocument({ url }).promise;
+        if (generation !== pdfPreviewGeneration) return;
+        const pages = document.createDocumentFragment();
+        const pageShells = [];
+
+        for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+            const page = await pdf.getPage(pageNumber);
+            const naturalViewport = page.getViewport({ scale: 1 });
+            const cssWidth = Math.max(280, viewer.clientWidth - 24);
+            const cssScale = cssWidth / naturalViewport.width;
+            const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
+            const renderViewport = page.getViewport({ scale: cssScale * pixelRatio });
+            const shell = document.createElement('div');
+            shell.className = 'mobile-pdf-page-shell';
+            shell.style.aspectRatio = `${renderViewport.width} / ${renderViewport.height}`;
+            shell.setAttribute('aria-label', `第 ${pageNumber} 页，共 ${pdf.numPages} 页`);
+            pages.appendChild(shell);
+            pageShells.push({ shell, page, renderViewport });
+        }
+
+        viewer.replaceChildren(pages);
+        if (generation !== pdfPreviewGeneration) return;
+        const observer = new IntersectionObserver(entries => {
+            if (generation !== pdfPreviewGeneration) {
+                observer.disconnect();
+                return;
+            }
+            entries.filter(entry => entry.isIntersecting).forEach(entry => {
+                const record = pageShells.find(item => item.shell === entry.target);
+                if (!record || record.shell.dataset.rendering) return;
+                record.shell.dataset.rendering = 'true';
+                const canvas = document.createElement('canvas');
+                canvas.className = 'mobile-pdf-page';
+                canvas.width = Math.ceil(record.renderViewport.width);
+                canvas.height = Math.ceil(record.renderViewport.height);
+                record.shell.appendChild(canvas);
+                record.page.render({
+                    canvasContext: canvas.getContext('2d'),
+                    viewport: record.renderViewport
+                }).promise.then(() => observer.unobserve(record.shell));
+            });
+        }, { root: viewer, rootMargin: '150% 0px' });
+        pageShells.forEach(({ shell }) => observer.observe(shell));
+        viewer.scrollTop = 0;
+    } catch (error) {
+        if (generation !== pdfPreviewGeneration) return;
+        console.warn('可滑动 PDF 预览载入失败，改用浏览器内置预览。', error);
+        viewer.hidden = true;
+        const preview = document.getElementById('mPreview');
+        preview.src = url;
+        preview.style.display = 'block';
+    }
 }
 
 function initDetailNavigation() {
@@ -756,9 +842,15 @@ function openDetailFromUrl() {
     if (scoreId) openDetail(scoreId, { syncUrl: false });
 }
 
-window.loadPdfPreview = function() {
+window.loadPdfPreview = async function() {
     if (!currentPdfUrl) return;
     const preview = document.getElementById('mPreview');
+    document.getElementById('previewPlaceholder').style.display = 'none';
+    if (shouldUseTouchPdfPreview()) {
+        preview.style.display = 'none';
+        await loadTouchPdfPreview(currentPdfUrl);
+        return;
+    }
     try {
         preview.contentWindow.location.replace(currentPdfUrl);
     } catch (error) {
@@ -766,7 +858,6 @@ window.loadPdfPreview = function() {
     }
     preview.dataset.loadedUrl = currentPdfUrl;
     preview.style.display = 'block';
-    document.getElementById('previewPlaceholder').style.display = 'none';
 }
 
 window.copyDetailLink = async function() {

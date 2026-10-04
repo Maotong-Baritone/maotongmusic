@@ -1,0 +1,42 @@
+{
+  "batch_id": "brahms-albumblatt-clara-manuscript-one-20260929",
+  "scope": "Albumblatt für Clara Schumann complete holograph manuscript",
+  "authorization": "User authorized continued reviewed Brahms batches.",
+  "published": true,
+  "files": [
+    {
+      "imslp_id": "374716",
+      "public_id": "efcb1020-2c0a-4ba2-88a5-e4edac067424",
+      "title": "Albumblatt für Clara Schumann",
+      "work": "",
+      "category": "艺术歌曲",
+      "sub_category": "",
+      "voice_types": "独唱（无伴奏）",
+      "tonality": "C大调",
+      "language": "德语",
+      "movement_number": null,
+      "title_scope": "whole_work",
+      "source_url": "https://imslp.org/wiki/Albumblatt_f%C3%BCr_Clara_Schumann_%28Brahms%2C_Johannes%29",
+      "publisher": "Holograph manuscript, 1868.",
+      "editor": "",
+      "source_description": "Complete Manuscipt",
+      "copyright": "Public Domain",
+      "handler_url": "https://imslp.org/wiki/Special:ImagefromIndex/374716",
+      "access_method": "wait_page",
+      "local_path": "pdfs/IMSLP374716-PMLP604863-AlbumblattfuerClaraSchumann.pdf",
+      "sha256": "70eb0176904582d48a4d9bd21169c677bfc458fa588077ba3322a9fd8536e704",
+      "bytes": 377163,
+      "page_count": 2,
+      "rendered_pages": 2,
+      "technical_check": "PDF header, SHA256, pypdf two-page parsing, Poppler rendering of both pages",
+      "visual_check": "checked_with_notes",
+      "publication_note": "PDF第1页为手稿正面，含题名、德语题词、Adagio单旋律及1868年9月12日日期；第2页为无音乐内容的背面空白五线纸。",
+      "description_summary": "来源：IMSLP #374716；版本：勃拉姆斯1868年手稿（Mus.ms.autogr. Brahms, J. 10）；文件范围：PDF第1页为手稿正面，第2页为空白背面",
+      "publication_approved": true,
+      "published_at": "2026-09-29T05:06:54+00:00",
+      "publication_batch_id": "brahms-albumblatt-clara-manuscript-one-20260929"
+    }
+  ],
+  "published_count": 1,
+  "publication_batch_id": "brahms-albumblatt-clara-manuscript-one-20260929"
+}
