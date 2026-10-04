@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4904,
-  "unique_content_count": 4882,
+  "entry_count": 4912,
+  "unique_content_count": 4890,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5331228372,
+  "total_size": 5398729567,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -10180,6 +10180,13 @@
       "sha256": "b0e2d524771d79a134a00566a8bf092d2f73c616a70240207bfb2839484ad78a"
     },
     {
+      "public_id": "4bb31454-aa52-478c-8aa1-be8e7177ccc6",
+      "source_path": "scores/合唱作品/4bb31454-aa52-478c-8aa1-be8e7177ccc6.pdf",
+      "storage_key": "scores/4b/4bb31454-aa52-478c-8aa1-be8e7177ccc6.pdf",
+      "file_size": 18255282,
+      "sha256": "96e7a025fcc012ab64b4cda7ceb626dfed90e9ed5d422f5be12f4efdc941f6a6"
+    },
+    {
       "public_id": "4bb4fed1-80c2-5ef0-aaa6-fdf6c69142b5",
       "source_path": "scores/歌剧咏叹调/1766038757904_So_che_per_via_dei_triboli.pdf",
       "storage_key": "scores/4b/4bb4fed1-80c2-5ef0-aaa6-fdf6c69142b5.pdf",
@@ -11620,6 +11627,13 @@
       "storage_key": "scores/58/58684e9e-7020-5279-9d5c-2b45d8232b2a.pdf",
       "file_size": 977321,
       "sha256": "c3d24f4f29507bdbc8d690d01b4984b44236b7dd20a530e8b1d33a942e7ae591"
+    },
+    {
+      "public_id": "587307eb-5614-46d1-9ff2-504da8dab915",
+      "source_path": "scores/合唱作品/587307eb-5614-46d1-9ff2-504da8dab915.pdf",
+      "storage_key": "scores/58/587307eb-5614-46d1-9ff2-504da8dab915.pdf",
+      "file_size": 6073279,
+      "sha256": "028ba4528c04b1b4b767d2850a09783445af531da70c0a2bb5aba2f93ff0ab4b"
     },
     {
       "public_id": "5873fd9b-614d-5cb6-ab9c-9871264d38e2",
@@ -13365,6 +13379,13 @@
       "sha256": "1ebf18cc5266486eb39061fe572afa0f9022f4f193be1d51bbb9efb073e0326b"
     },
     {
+      "public_id": "64b9a0e8-3f08-4f58-837d-1a39afe588ab",
+      "source_path": "scores/合唱作品/64b9a0e8-3f08-4f58-837d-1a39afe588ab.pdf",
+      "storage_key": "scores/64/64b9a0e8-3f08-4f58-837d-1a39afe588ab.pdf",
+      "file_size": 8659769,
+      "sha256": "3cf569d3cbdd95303da7576eb6c535ffe94abcc723d4dac98032b4d13c1347d7"
+    },
+    {
       "public_id": "64c39a3c-4117-53d1-b846-5c54b5e261e2",
       "source_path": "scores/歌剧咏叹调/1766038761034_Speme_al_vecchio_ora_una_figlia.pdf",
       "storage_key": "scores/64/64c39a3c-4117-53d1-b846-5c54b5e261e2.pdf",
@@ -13734,6 +13755,13 @@
       "storage_key": "scores/67/67278751-ddb8-5a67-8116-3fddbb7a31c8.pdf",
       "file_size": 2941795,
       "sha256": "a6370ea0c5d5e745e3b97e2e3a6ceaeef14e9e3eaec51fa78cf0cf71ea700230"
+    },
+    {
+      "public_id": "6735a905-6209-4d45-b689-138697ada0ee",
+      "source_path": "scores/合唱作品/6735a905-6209-4d45-b689-138697ada0ee.pdf",
+      "storage_key": "scores/67/6735a905-6209-4d45-b689-138697ada0ee.pdf",
+      "file_size": 6472329,
+      "sha256": "bded0aa153a406b41d28970552127b7781d14386706b8447f2eb95484a680a8e"
     },
     {
       "public_id": "674aee21-c463-516e-a565-356ebde9bc65",
@@ -17369,6 +17397,13 @@
       "sha256": "963d500bab0a328ebc81b3e1d3cae47f1679d647ee2bfa36e41a30d7e5a2eb16"
     },
     {
+      "public_id": "83daf7e2-0efb-45d9-8fc6-809ce75b8004",
+      "source_path": "scores/合唱作品/83daf7e2-0efb-45d9-8fc6-809ce75b8004.pdf",
+      "storage_key": "scores/83/83daf7e2-0efb-45d9-8fc6-809ce75b8004.pdf",
+      "file_size": 4032229,
+      "sha256": "9d4a7ed7a92532578dddf049978529c7a0371f0b767852d52f2219d907cb9cfe"
+    },
+    {
       "public_id": "83ea0682-8368-4d92-ae91-e6f19b5af46a",
       "source_path": "scores/艺术歌曲/83ea0682-8368-4d92-ae91-e6f19b5af46a.pdf",
       "storage_key": "scores/83/83ea0682-8368-4d92-ae91-e6f19b5af46a.pdf",
@@ -19313,6 +19348,13 @@
       "storage_key": "scores/91/9181e9ee-598e-5175-893c-202c4b94d6f7.pdf",
       "file_size": 141780,
       "sha256": "8830b883e6a33ab7a71c50977f63908cf07922f8b3f00757d712241c8641d16f"
+    },
+    {
+      "public_id": "918e003e-e55d-4f34-82a9-90c5143ac2ec",
+      "source_path": "scores/艺术歌曲/918e003e-e55d-4f34-82a9-90c5143ac2ec.pdf",
+      "storage_key": "scores/91/918e003e-e55d-4f34-82a9-90c5143ac2ec.pdf",
+      "file_size": 9815515,
+      "sha256": "16f7cd0a73da2bbbf8ddae8d4f2187dfce2d0bc4fa24733aae06b067996954ec"
     },
     {
       "public_id": "919a6942-3990-54e1-bbf5-360cee58d4f6",
@@ -26329,6 +26371,13 @@
       "sha256": "2698ab89a1a7046c6e7e5aa26e097575f21f772e936122a287771b1d6ea815ee"
     },
     {
+      "public_id": "c48e6897-0eb7-45bf-8970-25249b216576",
+      "source_path": "scores/合唱作品/c48e6897-0eb7-45bf-8970-25249b216576.pdf",
+      "storage_key": "scores/c4/c48e6897-0eb7-45bf-8970-25249b216576.pdf",
+      "file_size": 4794930,
+      "sha256": "1683bb087d18ce8f425d6fe343e8440447e2410c2f677dbb3dea331fe94c658d"
+    },
+    {
       "public_id": "c49d636e-91a0-41dd-8e21-013d5d81e87e",
       "source_path": "scores/艺术歌曲/c49d636e-91a0-41dd-8e21-013d5d81e87e.pdf",
       "storage_key": "scores/c4/c49d636e-91a0-41dd-8e21-013d5d81e87e.pdf",
@@ -33236,6 +33285,13 @@
       "storage_key": "scores/f7/f7021b6b-05e6-51c4-b901-f4259f5a99db.pdf",
       "file_size": 2167298,
       "sha256": "ebc59dd3668b530059178c73971cccb148118e5a85d10215739b831db2ad529d"
+    },
+    {
+      "public_id": "f70d48f4-a15f-4c99-915b-2dc713debc69",
+      "source_path": "scores/合唱作品/f70d48f4-a15f-4c99-915b-2dc713debc69.pdf",
+      "storage_key": "scores/f7/f70d48f4-a15f-4c99-915b-2dc713debc69.pdf",
+      "file_size": 9397862,
+      "sha256": "92e10a650233ae269d1363ee5a48a960861da20c25b6d1bbefefd5952dac4760"
     },
     {
       "public_id": "f713f40d-61de-4447-89f0-ac3410273ecb",
