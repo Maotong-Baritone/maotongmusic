@@ -19,3 +19,10 @@ backup/import_publications/
 /imports/johannes_brahms/staging/op19-op105-low-voice-singles/
 /tests/test_brahms_op19_op105_low_voice_scope.py
 /tools/brahms_op19_op105_low_voice_batch.py
+
+# Local Brahms audit, rendering, backup, and batch-helper artifacts
+/imports/johannes_brahms/staging/
+/backup/import_metadata/
+/backup/metadata_fixes/
+/tests/test_brahms_*_scope.py
+/tools/brahms_*_batch.py
