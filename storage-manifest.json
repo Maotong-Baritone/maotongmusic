@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4920,
-  "unique_content_count": 4898,
+  "entry_count": 4928,
+  "unique_content_count": 4906,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5432448162,
+  "total_size": 5474793954,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -609,6 +609,13 @@
       "storage_key": "scores/04/04432d96-1924-5988-9843-f8b626d0583f.pdf",
       "file_size": 813206,
       "sha256": "5e9dcaf792a030f81539ba44c34f0984e7358cb5831016ba622c42d3bab6959a"
+    },
+    {
+      "public_id": "044aa030-1709-48bb-9dee-4bdd162ebbd4",
+      "source_path": "scores/声乐套曲/044aa030-1709-48bb-9dee-4bdd162ebbd4.pdf",
+      "storage_key": "scores/04/044aa030-1709-48bb-9dee-4bdd162ebbd4.pdf",
+      "file_size": 3777963,
+      "sha256": "c9114b8d516bcae4b5f7b0bdd6a59b2f3cf8bd814c23b51f53f6d6c8ae832844"
     },
     {
       "public_id": "04547273-5791-4013-b166-bfb703ac59d0",
@@ -3572,6 +3579,13 @@
       "sha256": "5a041316c2776d12bcb1fd06a4a7b296e65ecb95cae9349e78ffda373be441dd"
     },
     {
+      "public_id": "1924db47-21e8-44e6-9090-bed245a7dda2",
+      "source_path": "scores/宗教声乐作品/1924db47-21e8-44e6-9090-bed245a7dda2.pdf",
+      "storage_key": "scores/19/1924db47-21e8-44e6-9090-bed245a7dda2.pdf",
+      "file_size": 6269408,
+      "sha256": "c1b7d79093d0add3d125c9a1a9b42dc64ec55e260ce40862101cdf2211df2a1f"
+    },
+    {
       "public_id": "192fa33c-3ca3-5aad-9089-f22d58d4e22b",
       "source_path": "scores/歌剧咏叹调/1766097988340_Que_les_destins_prosperes.pdf",
       "storage_key": "scores/19/192fa33c-3ca3-5aad-9089-f22d58d4e22b.pdf",
@@ -3969,6 +3983,13 @@
       "storage_key": "scores/1c/1c870dcb-3bcc-58b8-bc35-11933cda901d.pdf",
       "file_size": 616840,
       "sha256": "4b1b83413c8224bc4aec8d76dce4c13c98dcadc9e7aef83ae6ac48821473e410"
+    },
+    {
+      "public_id": "1c8dda4d-2618-4357-81b8-6ddf660d2344",
+      "source_path": "scores/宗教声乐作品/1c8dda4d-2618-4357-81b8-6ddf660d2344.pdf",
+      "storage_key": "scores/1c/1c8dda4d-2618-4357-81b8-6ddf660d2344.pdf",
+      "file_size": 2866802,
+      "sha256": "a45f97e7a7b330353596edbda6ed192944fd4487a2107c5361efc9549a647c87"
     },
     {
       "public_id": "1c900df9-9f98-42d8-8536-4020d1c13041",
@@ -13442,6 +13463,13 @@
       "sha256": "9a75847eab817c0ded03bb3d68621daef2fba5676d3b08eaa61701dd47dcf458"
     },
     {
+      "public_id": "651492de-4fab-4be7-9a38-7af77986563e",
+      "source_path": "scores/艺术歌曲/651492de-4fab-4be7-9a38-7af77986563e.pdf",
+      "storage_key": "scores/65/651492de-4fab-4be7-9a38-7af77986563e.pdf",
+      "file_size": 7596902,
+      "sha256": "b11614a47a90b8fcac964fb29798c0bdd08d3c26024829bc25f146fbad3c533f"
+    },
+    {
       "public_id": "6522e67a-f59f-46fb-9ef6-aa7d536c190d",
       "source_path": "scores/艺术歌曲/6522e67a-f59f-46fb-9ef6-aa7d536c190d.pdf",
       "storage_key": "scores/65/6522e67a-f59f-46fb-9ef6-aa7d536c190d.pdf",
@@ -16219,6 +16247,13 @@
       "storage_key": "scores/79/79b13f6a-ec6d-5c7e-8dfb-d4dca3af4485.pdf",
       "file_size": 666997,
       "sha256": "a20fe5c9b617a27659da728b5afa0478eb9b6733cd08930abe183ecf4ae0cb2f"
+    },
+    {
+      "public_id": "79b41f12-72cc-48e2-8e4a-d042d9fb8b31",
+      "source_path": "scores/合唱作品/79b41f12-72cc-48e2-8e4a-d042d9fb8b31.pdf",
+      "storage_key": "scores/79/79b41f12-72cc-48e2-8e4a-d042d9fb8b31.pdf",
+      "file_size": 4737927,
+      "sha256": "74cb5de9d3a39d812a4fdccab54e65537bdd653b5f348ab39a208d32a941c818"
     },
     {
       "public_id": "79ce586c-7172-45c7-b3e0-9afcf5dd4ffb",
@@ -19560,6 +19595,13 @@
       "sha256": "8c98e235e706924aafcff544419db498804b59b315dca5584dc6aae520227cb5"
     },
     {
+      "public_id": "92d8c18a-5589-4ae9-95ef-d7016bb57aec",
+      "source_path": "scores/声乐套曲/92d8c18a-5589-4ae9-95ef-d7016bb57aec.pdf",
+      "storage_key": "scores/92/92d8c18a-5589-4ae9-95ef-d7016bb57aec.pdf",
+      "file_size": 5069858,
+      "sha256": "ecbe65e0ab3dd5e9d96ef8fd939ac530a4d6cd42a9c29ba534aee827d452e95b"
+    },
+    {
       "public_id": "92d93813-9bc0-5a22-8d23-a1221db2a7bc",
       "source_path": "scores/歌剧咏叹调/1766098891108_Quel_tuo_sorriso_altero.pdf",
       "storage_key": "scores/92/92d93813-9bc0-5a22-8d23-a1221db2a7bc.pdf",
@@ -20792,6 +20834,13 @@
       "sha256": "eaf35a1552164c50727d5a41b2df7d06f0d3d286ff897a2b16d3c5c6d50238aa"
     },
     {
+      "public_id": "9bffb0be-9b38-4bc1-b892-8de7ce102995",
+      "source_path": "scores/宗教声乐作品/9bffb0be-9b38-4bc1-b892-8de7ce102995.pdf",
+      "storage_key": "scores/9b/9bffb0be-9b38-4bc1-b892-8de7ce102995.pdf",
+      "file_size": 8328713,
+      "sha256": "2d154b06e2645a7a7432d9a05ea1bc5b7219720a24fe21fc7f5196c539134987"
+    },
+    {
       "public_id": "9c1a3a7a-b561-47c6-b208-49ad1e49dbf9",
       "source_path": "scores/歌剧咏叹调/9c1a3a7a-b561-47c6-b208-49ad1e49dbf9.pdf",
       "storage_key": "scores/9c/9c1a3a7a-b561-47c6-b208-49ad1e49dbf9.pdf",
@@ -21994,6 +22043,13 @@
       "storage_key": "scores/a4/a4994dba-3526-5890-b22d-bcf2dd8a3b23.pdf",
       "file_size": 116663,
       "sha256": "8826f45b4a893e570c1e96809e25061ef1854bcb30dc1cbc88d46a8691fac73f"
+    },
+    {
+      "public_id": "a4a7f7bb-0cb0-4ebe-a41d-ca871a8926ae",
+      "source_path": "scores/合唱作品/a4a7f7bb-0cb0-4ebe-a41d-ca871a8926ae.pdf",
+      "storage_key": "scores/a4/a4a7f7bb-0cb0-4ebe-a41d-ca871a8926ae.pdf",
+      "file_size": 3698219,
+      "sha256": "b3559fc9539074e76aeb219487d5d2e6539e5e339f86d985747457faf0c18928"
     },
     {
       "public_id": "a4acbb34-ea8d-57ff-bf81-ba35c6dde163",
