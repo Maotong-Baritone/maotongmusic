@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4912,
-  "unique_content_count": 4890,
+  "entry_count": 4920,
+  "unique_content_count": 4898,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5398729567,
+  "total_size": 5432448162,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -3915,6 +3915,13 @@
       "sha256": "a8d0a7c0b10af6245c7946c3ab87831d85b2d8c9e3853cbbdcb7c355a256f331"
     },
     {
+      "public_id": "1be6b732-d27e-4faf-98cd-1b9a75bdc651",
+      "source_path": "scores/宗教声乐作品/1be6b732-d27e-4faf-98cd-1b9a75bdc651.pdf",
+      "storage_key": "scores/1b/1be6b732-d27e-4faf-98cd-1b9a75bdc651.pdf",
+      "file_size": 2560200,
+      "sha256": "350255f8cc7b2cb9d00e4689d70a65bb1509b52d001d38fe7a19562db3553afe"
+    },
+    {
       "public_id": "1c0b4476-e5ca-5dd9-acb8-217f91456ddb",
       "source_path": "scores/声乐作品/艺术歌曲/1766372639072_Taglich_zu_singen_-_D533_Medium_Original.pdf",
       "storage_key": "scores/1c/1c0b4476-e5ca-5dd9-acb8-217f91456ddb.pdf",
@@ -5250,6 +5257,13 @@
       "storage_key": "scores/26/26fe0991-7dd1-45be-915e-ed8a89854896.pdf",
       "file_size": 757681,
       "sha256": "a4ac1e4da185299f06d2d4ba26d0b1acc4c99309306411bed3e62feaabea655b"
+    },
+    {
+      "public_id": "2712aa7a-c198-4cbd-a76e-0f37dda1a117",
+      "source_path": "scores/宗教声乐作品/2712aa7a-c198-4cbd-a76e-0f37dda1a117.pdf",
+      "storage_key": "scores/27/2712aa7a-c198-4cbd-a76e-0f37dda1a117.pdf",
+      "file_size": 1585728,
+      "sha256": "bf7618e3819e3965f73f313b332fdf187e1c9b616c3eb6d6539fe1b2e5bcd3f1"
     },
     {
       "public_id": "272894a3-0a2f-5054-adb6-c517cd49edcc",
@@ -14499,6 +14513,13 @@
       "sha256": "2d0f315e1448370b35f09840f3d3ef7880cef31127b9bfe71ae912b511619af5"
     },
     {
+      "public_id": "6c79ff9d-5e78-4c99-852a-75b31f22d22a",
+      "source_path": "scores/艺术歌曲/6c79ff9d-5e78-4c99-852a-75b31f22d22a.pdf",
+      "storage_key": "scores/6c/6c79ff9d-5e78-4c99-852a-75b31f22d22a.pdf",
+      "file_size": 10245709,
+      "sha256": "1002c5816a4729905aee8ba1190b6192b036017dcd1ac79ca63d3077bf4b49fb"
+    },
+    {
       "public_id": "6c8afd78-4e3b-56dd-98ee-6f3095c74d81",
       "source_path": "scores/歌剧咏叹调/1766294176063_Au_faite_des_grandeurs.pdf",
       "storage_key": "scores/6c/6c8afd78-4e3b-56dd-98ee-6f3095c74d81.pdf",
@@ -21574,6 +21595,13 @@
       "storage_key": "scores/a2/a209658d-0af6-557c-85b1-d5ffd351f62e.pdf",
       "file_size": 392253,
       "sha256": "150efbf970b4d4196dc20df1e8b3008e73f37ce9db79e027bc8c9bc790a31bc7"
+    },
+    {
+      "public_id": "a2231159-3add-42b9-9ccb-7d6a874692e5",
+      "source_path": "scores/合唱作品/a2231159-3add-42b9-9ccb-7d6a874692e5.pdf",
+      "storage_key": "scores/a2/a2231159-3add-42b9-9ccb-7d6a874692e5.pdf",
+      "file_size": 3199029,
+      "sha256": "6ce45e1563f9945612ce6df0175119810f65a0e6a4712ccffa60cee3e6d9906e"
     },
     {
       "public_id": "a229c3c3-4807-58cb-b875-98cfd1a2b95b",
@@ -29458,6 +29486,13 @@
       "sha256": "2600ab4f84b17abb1397faa02761e5383f59c41161677907be33a8893f007c71"
     },
     {
+      "public_id": "db11cf53-9dd9-4284-8a02-492c0f289182",
+      "source_path": "scores/声乐套曲/db11cf53-9dd9-4284-8a02-492c0f289182.pdf",
+      "storage_key": "scores/db/db11cf53-9dd9-4284-8a02-492c0f289182.pdf",
+      "file_size": 4236812,
+      "sha256": "8fc810b58123383aed14842ae417097a8421c117fdcda15991c2b8e88e9683c1"
+    },
+    {
       "public_id": "db44a76b-82e9-5503-bd59-7b27e43ab00a",
       "source_path": "scores/宗教声乐作品总谱/Mozart_Requiem.pdf",
       "storage_key": "scores/db/db44a76b-82e9-5503-bd59-7b27e43ab00a.pdf",
@@ -29913,6 +29948,13 @@
       "sha256": "c3a2cda0fadeaab2ca62da30528a5cc35bb697f450dfca7a9abf85bb4e73ba30"
     },
     {
+      "public_id": "de2eba73-c5df-4a6d-853d-d2d58698b274",
+      "source_path": "scores/合唱作品/de2eba73-c5df-4a6d-853d-d2d58698b274.pdf",
+      "storage_key": "scores/de/de2eba73-c5df-4a6d-853d-d2d58698b274.pdf",
+      "file_size": 4027725,
+      "sha256": "055a923e7dc0a97245fa82f9ca5ef441f3b60bd8cf05f5340e48a9f8038504bc"
+    },
+    {
       "public_id": "de3154c8-52a4-5f3b-ac33-410679391bba",
       "source_path": "scores/歌剧咏叹调/1766098807365_Io_ti_veggio_or_vegli_e_tremi..._Questa_e_lora.pdf",
       "storage_key": "scores/de/de3154c8-52a4-5f3b-ac33-410679391bba.pdf",
@@ -30184,6 +30226,13 @@
       "storage_key": "scores/df/dff1ce68-8a3e-5430-8155-bc2dc4cce86f.pdf",
       "file_size": 613278,
       "sha256": "b9819e7f2c6c1c24da5f92cf4346e5743432e932f30e4f7a528a6e533bf8b7aa"
+    },
+    {
+      "public_id": "dff2c863-028e-4fa8-ad1f-508ebf560fd3",
+      "source_path": "scores/艺术歌曲/dff2c863-028e-4fa8-ad1f-508ebf560fd3.pdf",
+      "storage_key": "scores/df/dff2c863-028e-4fa8-ad1f-508ebf560fd3.pdf",
+      "file_size": 4358793,
+      "sha256": "2b411e57ad06acb2c970d5815846d3a069390eb6d138dadda7d29578dcda2629"
     },
     {
       "public_id": "e0117bae-977f-4acd-8fc7-5c1c838c8079",
@@ -32683,6 +32732,13 @@
       "storage_key": "scores/f2/f21c1983-180e-496c-b106-f361a5df1d87.pdf",
       "file_size": 2047487,
       "sha256": "2349da68e124f17929f8e4960e8f64750f5faa3ddfe27f06bb65e5a381b2353e"
+    },
+    {
+      "public_id": "f21e01f7-ae15-4a63-b604-ef81fb93080a",
+      "source_path": "scores/声乐套曲/f21e01f7-ae15-4a63-b604-ef81fb93080a.pdf",
+      "storage_key": "scores/f2/f21e01f7-ae15-4a63-b604-ef81fb93080a.pdf",
+      "file_size": 3504599,
+      "sha256": "3bc55f3c01c523fa50d03eb7127fa9b62761f62f7624f94c6efbd29be87f7434"
     },
     {
       "public_id": "f22f6fe8-29d5-4300-8ca6-abc46487b84e",
