@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4928,
-  "unique_content_count": 4906,
+  "entry_count": 4935,
+  "unique_content_count": 4913,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5474793954,
+  "total_size": 5516810227,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -5742,6 +5742,13 @@
       "sha256": "1edf5bd534f2c2441fd1e432c7f8f443f6a738174c152bc3093270e9a74dab1c"
     },
     {
+      "public_id": "2a0127d7-8431-4912-84c0-19db146b8901",
+      "source_path": "scores/声乐套曲/2a0127d7-8431-4912-84c0-19db146b8901.pdf",
+      "storage_key": "scores/2a/2a0127d7-8431-4912-84c0-19db146b8901.pdf",
+      "file_size": 3415634,
+      "sha256": "0335aaf6b4a0d10e3bf146394fb6b0a95f6a82cf785ce2e33f828c2618c376fd"
+    },
+    {
       "public_id": "2a17a2e1-e0ed-5512-a793-7e3b9711ee25",
       "source_path": "scores/声乐作品/艺术歌曲/1766372568917_Edone_-_D445_Medium_Original.pdf",
       "storage_key": "scores/2a/2a17a2e1-e0ed-5512-a793-7e3b9711ee25.pdf",
@@ -6706,6 +6713,13 @@
       "storage_key": "scores/32/32188b00-91f2-5f74-bd83-a1a248b86651.pdf",
       "file_size": 1161539,
       "sha256": "24ba5822c136ea750ef37048534c3b34fb18aeeafe862a7cfd8448279f0aaebc"
+    },
+    {
+      "public_id": "322ce0ce-e6f6-48f2-8c11-36db5aeab2ef",
+      "source_path": "scores/声乐套曲/322ce0ce-e6f6-48f2-8c11-36db5aeab2ef.pdf",
+      "storage_key": "scores/32/322ce0ce-e6f6-48f2-8c11-36db5aeab2ef.pdf",
+      "file_size": 9516815,
+      "sha256": "9d8da33aacb5b9177819c317eeee6ded62026753837a994cb0ea789de5a6f316"
     },
     {
       "public_id": "3245f016-919c-58d9-b555-b320d888c6dc",
@@ -14891,6 +14905,13 @@
       "sha256": "064a17115d06ba979774176f917d204ea777a398241ca47ff811333bfb3f3f6a"
     },
     {
+      "public_id": "6f4fa4be-6476-4fe4-a999-4c4cae9635c9",
+      "source_path": "scores/声乐套曲/6f4fa4be-6476-4fe4-a999-4c4cae9635c9.pdf",
+      "storage_key": "scores/6f/6f4fa4be-6476-4fe4-a999-4c4cae9635c9.pdf",
+      "file_size": 3688921,
+      "sha256": "6cbcb461cc15620ebebcb2293eec4d5c1cb3b8fe0270ab23fd38a544448c3c91"
+    },
+    {
       "public_id": "6f5d4187-1045-50e3-8a05-46c56de2ef6b",
       "source_path": "scores/歌剧咏叹调/1766012407566_Non_piu_andrai_farfallone_amoroso.pdf",
       "storage_key": "scores/6f/6f5d4187-1045-50e3-8a05-46c56de2ef6b.pdf",
@@ -15316,6 +15337,13 @@
       "storage_key": "scores/72/72707eb2-e0f9-4798-9c7b-72096ef9a8fb.pdf",
       "file_size": 350953,
       "sha256": "4ee2387f930c9b89c2d26a2380e1b69e66a2b31812c25ec95a0f9aa6def4bf59"
+    },
+    {
+      "public_id": "727294ea-d852-47ae-b334-e8a55fd07175",
+      "source_path": "scores/声乐套曲/727294ea-d852-47ae-b334-e8a55fd07175.pdf",
+      "storage_key": "scores/72/727294ea-d852-47ae-b334-e8a55fd07175.pdf",
+      "file_size": 3710046,
+      "sha256": "a34b9f1a90807c9e7666e0d7b43d6f399f0739215c0d791da2e4fae70e2a6295"
     },
     {
       "public_id": "72892129-1538-519b-82d5-a389a47941dd",
@@ -19560,6 +19588,13 @@
       "sha256": "341a4e314fb481857caea40059a40e9117b7cb3cd89c15fdeaeaaf1cb2bb5875"
     },
     {
+      "public_id": "92a0e643-38ca-4c6e-848b-36bd0aa78e16",
+      "source_path": "scores/声乐套曲/92a0e643-38ca-4c6e-848b-36bd0aa78e16.pdf",
+      "storage_key": "scores/92/92a0e643-38ca-4c6e-848b-36bd0aa78e16.pdf",
+      "file_size": 6329697,
+      "sha256": "e1dde9678d324de74a9ad57898a33130f657966bf2afe46344bfa9edefc42829"
+    },
+    {
       "public_id": "92a4c53b-6ddb-5572-9f80-464832b38960",
       "source_path": "scores/歌剧咏叹调/1766093531401_Minnie_dalla_mia_casa_son_partito.pdf",
       "storage_key": "scores/92/92a4c53b-6ddb-5572-9f80-464832b38960.pdf",
@@ -22428,6 +22463,13 @@
       "storage_key": "scores/a8/a845ae6c-977c-4778-8686-51fd33ddc6dd.pdf",
       "file_size": 641612,
       "sha256": "ff983cc56d8cdde32914d1f39d7bd6aa7493d0daa58eb81ea282595e511bba29"
+    },
+    {
+      "public_id": "a85972ba-47af-4152-a20f-2955cb0e53a6",
+      "source_path": "scores/声乐套曲/a85972ba-47af-4152-a20f-2955cb0e53a6.pdf",
+      "storage_key": "scores/a8/a85972ba-47af-4152-a20f-2955cb0e53a6.pdf",
+      "file_size": 5614647,
+      "sha256": "ad6a5ee4264f3a2fe27c13a19d4eea03bd09f545e69d8f11ab9e541f5aa49299"
     },
     {
       "public_id": "a860a48d-1d00-52cc-9764-35bdd5dc0061",
@@ -33880,6 +33922,13 @@
       "storage_key": "scores/fb/fb422b81-179b-5162-a4a1-6859ce597205.pdf",
       "file_size": 2537433,
       "sha256": "e7e1355aa0cca3cdd67b08a28cf744ebb2b07b5f1e83f3fe214470fcb319a711"
+    },
+    {
+      "public_id": "fb5b67f3-2667-4288-86fc-040e173a92fa",
+      "source_path": "scores/声乐套曲/fb5b67f3-2667-4288-86fc-040e173a92fa.pdf",
+      "storage_key": "scores/fb/fb5b67f3-2667-4288-86fc-040e173a92fa.pdf",
+      "file_size": 9740513,
+      "sha256": "c436ea3234419aa9a5368b56fd1ecf2e144f5ddf2fd92db364efb1fc13a10621"
     },
     {
       "public_id": "fb602016-a43f-4062-837e-68147d01817d",
