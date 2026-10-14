@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4935,
-  "unique_content_count": 4913,
+  "entry_count": 4945,
+  "unique_content_count": 4923,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5516810227,
+  "total_size": 5582297467,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1155,6 +1155,13 @@
       "storage_key": "scores/08/0858740e-3c4b-44bc-b46a-075c9fac936d.pdf",
       "file_size": 244554,
       "sha256": "311ca58084f226336d175afc05c314dcbd2b541b2be6ba4b44a5b3eb86d0ef47"
+    },
+    {
+      "public_id": "085f8368-1bde-471a-a9d8-94f14bf51082",
+      "source_path": "scores/声乐套曲/085f8368-1bde-471a-a9d8-94f14bf51082.pdf",
+      "storage_key": "scores/08/085f8368-1bde-471a-a9d8-94f14bf51082.pdf",
+      "file_size": 3740082,
+      "sha256": "a428dd25bd7e7ab44ae6f4115f7978497382e5d8d0f3a714077e242900b77a66"
     },
     {
       "public_id": "088f1f68-5768-4618-8ac8-316222b77517",
@@ -3586,6 +3593,13 @@
       "sha256": "c1b7d79093d0add3d125c9a1a9b42dc64ec55e260ce40862101cdf2211df2a1f"
     },
     {
+      "public_id": "192891e5-a5c8-4a2d-87ac-7aaffcc83276",
+      "source_path": "scores/声乐套曲/192891e5-a5c8-4a2d-87ac-7aaffcc83276.pdf",
+      "storage_key": "scores/19/192891e5-a5c8-4a2d-87ac-7aaffcc83276.pdf",
+      "file_size": 5802637,
+      "sha256": "16f5338a625e383acda2f833c5ae1a17c6be709e5fafc7b939baa3f24cc8c5dd"
+    },
+    {
       "public_id": "192fa33c-3ca3-5aad-9089-f22d58d4e22b",
       "source_path": "scores/歌剧咏叹调/1766097988340_Que_les_destins_prosperes.pdf",
       "storage_key": "scores/19/192fa33c-3ca3-5aad-9089-f22d58d4e22b.pdf",
@@ -3955,6 +3969,13 @@
       "storage_key": "scores/1c/1c1211d6-0685-46ad-96ff-46781deb2e9a.pdf",
       "file_size": 746945,
       "sha256": "e4047660d3e26f501dfbe0b34865a9bcf3b16a59bb429b18e944fcff21dc55df"
+    },
+    {
+      "public_id": "1c161fcc-62a7-44ce-b69a-cccb5bec6082",
+      "source_path": "scores/声乐套曲/1c161fcc-62a7-44ce-b69a-cccb5bec6082.pdf",
+      "storage_key": "scores/1c/1c161fcc-62a7-44ce-b69a-cccb5bec6082.pdf",
+      "file_size": 7545948,
+      "sha256": "894330c04abef6815149fff04feb28025e8a224316ca489337491b4238c27b69"
     },
     {
       "public_id": "1c22a11c-39c7-59ad-82d5-2bfce68dfa1a",
@@ -4641,6 +4662,13 @@
       "storage_key": "scores/21/21b148d1-ec5b-4ae4-8c73-80009ce71b27.pdf",
       "file_size": 599334,
       "sha256": "54787d29e538363b9eb1ccf08289b0dd8fc70f62e6ec7d36a7e1c32015677ad6"
+    },
+    {
+      "public_id": "21b3b1dd-cc37-4a98-99e3-6c870f619dab",
+      "source_path": "scores/声乐套曲/21b3b1dd-cc37-4a98-99e3-6c870f619dab.pdf",
+      "storage_key": "scores/21/21b3b1dd-cc37-4a98-99e3-6c870f619dab.pdf",
+      "file_size": 8927513,
+      "sha256": "a9055f83c199f106e6f4309a936068028eade3a004a65399f07313df6f474c84"
     },
     {
       "public_id": "21b75a95-a2e8-5b18-8af7-2163c3e8e3fc",
@@ -5768,6 +5796,13 @@
       "storage_key": "scores/2a/2a6e6e1b-0867-4900-b29f-e64e94a6a5da.pdf",
       "file_size": 796903,
       "sha256": "785079e8dd47e6b8c7769e752a112349e8a783cdd7e087a07b9f83c2f9199f35"
+    },
+    {
+      "public_id": "2a71a7b3-327a-44b4-a490-e9ea3372606c",
+      "source_path": "scores/声乐套曲/2a71a7b3-327a-44b4-a490-e9ea3372606c.pdf",
+      "storage_key": "scores/2a/2a71a7b3-327a-44b4-a490-e9ea3372606c.pdf",
+      "file_size": 8905897,
+      "sha256": "5e9995d904e8fd0b140ea503f6dc3dcf80e9efb4ff85283ac15adf7c17969977"
     },
     {
       "public_id": "2a76449b-21a2-4029-b3a8-6d5d4881947e",
@@ -9548,6 +9583,13 @@
       "storage_key": "scores/46/46eff617-d1e7-5476-984f-9ca9da415ad0.pdf",
       "file_size": 213853,
       "sha256": "2b6dd0c3e148fa1d2f9ae404d46a2fe691cb9cf31f8ebbf0d7d09c3e83fc687f"
+    },
+    {
+      "public_id": "46f8837a-6ceb-49f5-a1d0-fd26b0caf8a8",
+      "source_path": "scores/声乐套曲/46f8837a-6ceb-49f5-a1d0-fd26b0caf8a8.pdf",
+      "storage_key": "scores/46/46f8837a-6ceb-49f5-a1d0-fd26b0caf8a8.pdf",
+      "file_size": 7474268,
+      "sha256": "ce2d0e1d75f97080361a80b6b8a3b2a454a88fa43fa90775e8060e66a37d6cf6"
     },
     {
       "public_id": "46fd341d-e81f-5b19-998b-30504d295372",
@@ -16606,6 +16648,13 @@
       "sha256": "3322ac4f1be2ea140cd14ceb4779ee49c2d903cdd386e1cf1505e4e1df97aaaa"
     },
     {
+      "public_id": "7c81753a-5c4a-4677-a007-6581c0e57808",
+      "source_path": "scores/声乐套曲/7c81753a-5c4a-4677-a007-6581c0e57808.pdf",
+      "storage_key": "scores/7c/7c81753a-5c4a-4677-a007-6581c0e57808.pdf",
+      "file_size": 9244321,
+      "sha256": "7de68963ee0ef64abcf78df1e1e8b521022cdfb34f6f5e2b1c657544fc90119f"
+    },
+    {
       "public_id": "7c92df08-e5b7-51d7-b16d-20935c41084a",
       "source_path": "scores/歌剧咏叹调/1766007799057_Sorge_nel_petto_certo_diletto.pdf",
       "storage_key": "scores/7c/7c92df08-e5b7-51d7-b16d-20935c41084a.pdf",
@@ -16772,6 +16821,13 @@
       "storage_key": "scores/7d/7d969f52-7479-40e8-9817-cc8f8e21497d.pdf",
       "file_size": 521912,
       "sha256": "968ae6c09187267c889423233b9e4a2841cbfc49178e5b1026dec7e68644697f"
+    },
+    {
+      "public_id": "7dc3bc71-ce3a-4606-b739-8d207b839431",
+      "source_path": "scores/声乐套曲/7dc3bc71-ce3a-4606-b739-8d207b839431.pdf",
+      "storage_key": "scores/7d/7dc3bc71-ce3a-4606-b739-8d207b839431.pdf",
+      "file_size": 4397032,
+      "sha256": "b4e39e870501cb7d8a36cd71a37b5ba271ef0b14b3980d22d099efd5c29ad457"
     },
     {
       "public_id": "7e1142d6-8d06-575a-b072-033a732685f2",
@@ -18186,6 +18242,13 @@
       "storage_key": "scores/88/88a04c8b-43de-4ca1-b8dd-6dfd29a48945.pdf",
       "file_size": 496623,
       "sha256": "fc0e0782025080950dbcca46799d6d36a885aa6137d9ec82dedf484023a0554c"
+    },
+    {
+      "public_id": "88ad4e70-ea39-420d-b30c-05c8c8868964",
+      "source_path": "scores/声乐套曲/88ad4e70-ea39-420d-b30c-05c8c8868964.pdf",
+      "storage_key": "scores/88/88ad4e70-ea39-420d-b30c-05c8c8868964.pdf",
+      "file_size": 4056746,
+      "sha256": "09c07f93871436135b74698c577a048a170e58bf93c21a07ded215f479e2fef9"
     },
     {
       "public_id": "88aecde1-0c18-4dbb-88e0-bad24cbe51a7",
@@ -20832,6 +20895,13 @@
       "storage_key": "scores/9b/9b9844aa-03fb-5b87-a720-812b48aff0e5.pdf",
       "file_size": 1157952,
       "sha256": "b817bb5efbafde259928bfc75b65051f29cbe0c306631120a3461906a3a4fe04"
+    },
+    {
+      "public_id": "9ba51e40-f742-49b2-95a2-e2900a40eddb",
+      "source_path": "scores/声乐套曲/9ba51e40-f742-49b2-95a2-e2900a40eddb.pdf",
+      "storage_key": "scores/9b/9ba51e40-f742-49b2-95a2-e2900a40eddb.pdf",
+      "file_size": 5392796,
+      "sha256": "8537c593aa6c4149f0560f32ce5dfa99e4520a66c1809400dd9252fa31a6448a"
     },
     {
       "public_id": "9bbf5933-d7a3-4fce-9135-9c489b1ca700",
