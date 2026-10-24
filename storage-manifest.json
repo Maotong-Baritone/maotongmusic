@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4945,
-  "unique_content_count": 4923,
+  "entry_count": 4953,
+  "unique_content_count": 4931,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5582297467,
+  "total_size": 5632800595,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -7856,6 +7856,13 @@
       "sha256": "ec497d8904beb82ac6c88597b5a74bb781f8eeec6e2467a470e3b05ff296ab1a"
     },
     {
+      "public_id": "3adac108-b33c-40a0-a714-2407ba645367",
+      "source_path": "scores/声乐套曲/3adac108-b33c-40a0-a714-2407ba645367.pdf",
+      "storage_key": "scores/3a/3adac108-b33c-40a0-a714-2407ba645367.pdf",
+      "file_size": 3303435,
+      "sha256": "ef05207f3907a22e044354b045d54d3a1f7846cb79803ee1b218b55132c9335c"
+    },
+    {
       "public_id": "3add225d-3c86-5678-8d4a-444f0584b174",
       "source_path": "scores/歌剧咏叹调/1766007770643_Tu_nel_piagarmi_il_seno.pdf",
       "storage_key": "scores/3a/3add225d-3c86-5678-8d4a-444f0584b174.pdf",
@@ -8281,6 +8288,13 @@
       "storage_key": "scores/3d/3dbd9042-fb9e-4214-b15e-7d68cf15e035.pdf",
       "file_size": 334592,
       "sha256": "1e41531d7cc2a1b3010f012fb97d9721626132b6ecd789b835dc85519652e14f"
+    },
+    {
+      "public_id": "3dbd97f7-4aff-4db1-a616-ef81161e9748",
+      "source_path": "scores/声乐套曲/3dbd97f7-4aff-4db1-a616-ef81161e9748.pdf",
+      "storage_key": "scores/3d/3dbd97f7-4aff-4db1-a616-ef81161e9748.pdf",
+      "file_size": 2066739,
+      "sha256": "8c446f72a46e041ff8eb998c001a9a8313fb80d839b628be1394886936bf48e0"
     },
     {
       "public_id": "3dc2d29b-499a-50af-98ce-fa447a4ec8ac",
@@ -12112,6 +12126,13 @@
       "sha256": "3abf71a0e31cfb29aff35cc749eb02cc6c79eb359f9ed43279092e49be84b053"
     },
     {
+      "public_id": "5ac8cc91-f689-49a4-8fa9-1803fa61249d",
+      "source_path": "scores/声乐套曲/5ac8cc91-f689-49a4-8fa9-1803fa61249d.pdf",
+      "storage_key": "scores/5a/5ac8cc91-f689-49a4-8fa9-1803fa61249d.pdf",
+      "file_size": 3885952,
+      "sha256": "e8e98caad046427bdf1aaca065afc4d0857747be37bc464d1c306a911bb49331"
+    },
+    {
       "public_id": "5acde34a-cedb-48f9-82b0-d21735d7789f",
       "source_path": "scores/歌剧咏叹调/5acde34a-cedb-48f9-82b0-d21735d7789f.pdf",
       "storage_key": "scores/5a/5acde34a-cedb-48f9-82b0-d21735d7789f.pdf",
@@ -14847,6 +14868,13 @@
       "storage_key": "scores/6e/6ea40a1e-d9b3-4534-90f7-849cd0139bd1.pdf",
       "file_size": 24888465,
       "sha256": "2e107665a9558de2d43c9160c0173170de4b22f1aa5e30119663b69b20d806cf"
+    },
+    {
+      "public_id": "6eb03d3c-1f2f-4328-adbe-6b8669caf4a1",
+      "source_path": "scores/声乐套曲/6eb03d3c-1f2f-4328-adbe-6b8669caf4a1.pdf",
+      "storage_key": "scores/6e/6eb03d3c-1f2f-4328-adbe-6b8669caf4a1.pdf",
+      "file_size": 4191699,
+      "sha256": "7ec3905179ff27d0198110d76e1aa4a78bec980bffa8454b329d101bd6cf8e4b"
     },
     {
       "public_id": "6eb1d720-4eb8-5eb0-ada5-cdd4b3a0186b",
@@ -19658,6 +19686,13 @@
       "sha256": "e1dde9678d324de74a9ad57898a33130f657966bf2afe46344bfa9edefc42829"
     },
     {
+      "public_id": "92a48f62-30d4-4608-bfd2-e664243c01ce",
+      "source_path": "scores/声乐套曲/92a48f62-30d4-4608-bfd2-e664243c01ce.pdf",
+      "storage_key": "scores/92/92a48f62-30d4-4608-bfd2-e664243c01ce.pdf",
+      "file_size": 3431473,
+      "sha256": "59a74e9cbdf1cd850452bb223e5b45ae5ab4e61edb9384dc4844819212cd3637"
+    },
+    {
       "public_id": "92a4c53b-6ddb-5572-9f80-464832b38960",
       "source_path": "scores/歌剧咏叹调/1766093531401_Minnie_dalla_mia_casa_son_partito.pdf",
       "storage_key": "scores/92/92a4c53b-6ddb-5572-9f80-464832b38960.pdf",
@@ -21714,6 +21749,13 @@
       "storage_key": "scores/a1/a188c27b-05e5-5d33-b65f-d197a55a9b5b.pdf",
       "file_size": 398255,
       "sha256": "82a524c47d0db081c0d092229caafd838cb89f5cb7a7c39fe677f43cd67f3705"
+    },
+    {
+      "public_id": "a199ce31-7ad8-4bd4-8d2c-c26d0d808415",
+      "source_path": "scores/声乐套曲/a199ce31-7ad8-4bd4-8d2c-c26d0d808415.pdf",
+      "storage_key": "scores/a1/a199ce31-7ad8-4bd4-8d2c-c26d0d808415.pdf",
+      "file_size": 9110541,
+      "sha256": "d0a717faf1a12b026c94dbd5500ff8b06b304f981b7369944efe3f211eb6665c"
     },
     {
       "public_id": "a1add8fe-8f26-575b-bcb0-9d91d5bfa83d",
@@ -24696,6 +24738,13 @@
       "storage_key": "scores/b7/b71f17a9-5f6f-566f-862a-0101994a8b53.pdf",
       "file_size": 5195694,
       "sha256": "9a8e6047c0f9b34f9b1b37e557f09fa79d348f3d23152a61e52a6efbcf98cee0"
+    },
+    {
+      "public_id": "b721e4f5-0afb-447d-89aa-494df8147e41",
+      "source_path": "scores/声乐套曲/b721e4f5-0afb-447d-89aa-494df8147e41.pdf",
+      "storage_key": "scores/b7/b721e4f5-0afb-447d-89aa-494df8147e41.pdf",
+      "file_size": 20519809,
+      "sha256": "e48c2e62e7b2df050cceb29f14d74d97b24c7eeef28a245838b41cea249683cc"
     },
     {
       "public_id": "b7330f0b-76ad-53b7-89f1-a509f28dac18",
@@ -29232,6 +29281,13 @@
       "storage_key": "scores/d7/d7f91f74-9709-5349-a712-9cc21aeb9669.pdf",
       "file_size": 660509,
       "sha256": "3df89d4f87ebac63ae05dc4d9a987a321251ca24e1245fc9e490d810363ec765"
+    },
+    {
+      "public_id": "d8026243-a5ef-434c-a8e6-f6d6d4fd345d",
+      "source_path": "scores/声乐套曲/d8026243-a5ef-434c-a8e6-f6d6d4fd345d.pdf",
+      "storage_key": "scores/d8/d8026243-a5ef-434c-a8e6-f6d6d4fd345d.pdf",
+      "file_size": 3993480,
+      "sha256": "a6ef70955431009129ac7aca560676018c090276dc0c7ff84ce731ffc9edfe37"
     },
     {
       "public_id": "d819e27e-286e-4d2c-a5d8-80cbbd244864",
