@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import shutil
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -57,6 +59,31 @@ class FrontendContractTest(unittest.TestCase):
         self.assertNotIn("const pdfUrl = `scores/${encodedFilename}`", self.app_js)
         self.assertIn('"keyStrategy": "public_id_sharded"', self.site_config)
         self.assertIn('"baseUrl": "https://', self.site_config)
+
+    @unittest.skipUnless(shutil.which('node'), 'Node.js is needed for URL behavior checks')
+    def test_preview_cache_version_preserves_pdf_identity_and_download_url(self):
+        script = r"""
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const source = fs.readFileSync('js/app.js', 'utf8').split('function loadStoredFavorites()')[0];
+const context = vm.createContext({ URL, Set, document: {title: '', baseURI: 'https://maotong.me/maotongmusic/'}, loadStoredFavorites: () => new Set() });
+vm.runInContext(source, context);
+context.configureScoreStorage({baseUrl: 'https://scores.maotong.me', keyStrategy: 'public_id_sharded'});
+const item = {public_id: '3dbd97f7-4aff-4db1-a616-ef81161e9748'};
+const download = context.buildScoreUrl(item);
+const preview = new URL(context.buildScorePreviewUrl(item));
+assert.equal(preview.origin + preview.pathname, download);
+assert.equal(preview.searchParams.get('preview'), 'cors-1');
+assert.equal(preview.hash, '#view=FitH');
+assert.equal(context.buildScoreUrl(item), download);
+assert.equal(context.buildScorePreviewUrl({}), '');
+context.configureScoreStorage({});
+const local = new URL(context.buildScorePreviewUrl({filename: '艺术歌曲/a b.pdf'}));
+assert.equal(decodeURI(local.pathname), '/maotongmusic/scores/艺术歌曲/a b.pdf');
+assert.equal(local.origin, 'https://maotong.me');
+"""
+        subprocess.run(['node', '-e', script], cwd=ROOT, check=True, capture_output=True, text=True)
 
     def test_no_lyrics_is_not_offered_as_a_language_filter(self):
         self.assertIn("l && l !== '无歌词'", self.app_js)

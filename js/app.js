@@ -72,6 +72,16 @@ function buildScoreUrl(item) {
     return scoreStorage.baseUrl ? `${scoreStorage.baseUrl}/${encodedKey}` : encodedKey;
 }
 
+function buildScorePreviewUrl(item) {
+    const scoreUrl = buildScoreUrl(item);
+    if (!scoreUrl) return '';
+    const previewUrl = new URL(scoreUrl, document.baseURI);
+    // Keep previews off immutable PDF responses cached before R2 CORS was enabled.
+    previewUrl.searchParams.set('preview', 'cors-1');
+    previewUrl.hash = 'view=FitH';
+    return previewUrl.href;
+}
+
 function loadStoredFavorites() {
     try {
         const stored = JSON.parse(localStorage.getItem('favorites') || '[]');
@@ -923,7 +933,7 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     const previewActions = document.getElementById('previewActions');
     clearPdfPreview();
     if (filename.toLowerCase().endsWith('.pdf')) {
-         currentPdfUrl = `${pdfUrl}#view=FitH`;
+         currentPdfUrl = buildScorePreviewUrl(item);
          previewStatus.innerText = 'PDF 预览尚未加载';
          previewHelp.innerText = '为节省流量，只有点击按钮后才会载入乐谱。';
          previewActions.style.display = 'flex';
