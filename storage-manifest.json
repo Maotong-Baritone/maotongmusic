@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4953,
-  "unique_content_count": 4931,
+  "entry_count": 4962,
+  "unique_content_count": 4940,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5632800595,
+  "total_size": 5636012323,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1323,6 +1323,13 @@
       "storage_key": "scores/09/09edd7cc-3ca5-4aac-8c2a-8d0705d30dbd.pdf",
       "file_size": 225109,
       "sha256": "684d7815e5f41d8be72be160bd9a4b478d4e72d9e425be1680baf5281c72430c"
+    },
+    {
+      "public_id": "0a07851d-a0b7-4a31-afe9-12ca91116b35",
+      "source_path": "scores/艺术歌曲/0a07851d-a0b7-4a31-afe9-12ca91116b35.pdf",
+      "storage_key": "scores/0a/0a07851d-a0b7-4a31-afe9-12ca91116b35.pdf",
+      "file_size": 334300,
+      "sha256": "a0b2923e81d316b88adfa6a20d70d627720918f8c3f339b37bcb453d3187609d"
     },
     {
       "public_id": "0a16c9f2-9091-5498-a638-b74dc2211577",
@@ -9130,6 +9137,13 @@
       "sha256": "32784abc0d2b74d304a390c7ef50c631d2bf78020cc9e9effa910b51c8b87bbc"
     },
     {
+      "public_id": "438dccbe-4f20-43fd-8667-d739b4a23262",
+      "source_path": "scores/艺术歌曲/438dccbe-4f20-43fd-8667-d739b4a23262.pdf",
+      "storage_key": "scores/43/438dccbe-4f20-43fd-8667-d739b4a23262.pdf",
+      "file_size": 420706,
+      "sha256": "17d22af532496af1296f6cb2f6e2618f00c192cef5e500628b1a70d008d670d8"
+    },
+    {
       "public_id": "4391be06-1d4a-55bf-87b5-fa1e599c7cf1",
       "source_path": "scores/歌剧咏叹调/1766038867167_Vola_talor_dal_carcere.pdf",
       "storage_key": "scores/43/4391be06-1d4a-55bf-87b5-fa1e599c7cf1.pdf",
@@ -10250,6 +10264,13 @@
       "sha256": "a04464f6b25368cd50766679207bdda3316560962b3adf780f7c6f56c958257a"
     },
     {
+      "public_id": "4b6f483a-cf0f-4116-9f15-0bef5c0f35d7",
+      "source_path": "scores/艺术歌曲/4b6f483a-cf0f-4116-9f15-0bef5c0f35d7.pdf",
+      "storage_key": "scores/4b/4b6f483a-cf0f-4116-9f15-0bef5c0f35d7.pdf",
+      "file_size": 462137,
+      "sha256": "ad7510b9352015751269fa9f584e364e8049199281cd45cbee66b31ddcfb8d37"
+    },
+    {
       "public_id": "4b83cfb5-1683-480a-a8c5-e42cf9b9ae2b",
       "source_path": "scores/艺术歌曲/4b83cfb5-1683-480a-a8c5-e42cf9b9ae2b.pdf",
       "storage_key": "scores/4b/4b83cfb5-1683-480a-a8c5-e42cf9b9ae2b.pdf",
@@ -10612,6 +10633,13 @@
       "storage_key": "scores/4e/4e08db62-70ec-523a-b7e0-1010abeac3d4.pdf",
       "file_size": 3073484,
       "sha256": "eedd059bf760567ebcc47a5acb9eaf1f06a2cf325fcfffc890173b6cda3ec279"
+    },
+    {
+      "public_id": "4e0e2704-e264-4774-8a45-858a9ec3cea9",
+      "source_path": "scores/艺术歌曲/4e0e2704-e264-4774-8a45-858a9ec3cea9.pdf",
+      "storage_key": "scores/4e/4e0e2704-e264-4774-8a45-858a9ec3cea9.pdf",
+      "file_size": 650251,
+      "sha256": "ae702f3f8edae1a2c1d2ce20ae6306548d1c2da7dff1b59dc74cf14d035cad30"
     },
     {
       "public_id": "4e166c66-de6c-5644-bcca-24ddd5e6b822",
@@ -12887,6 +12915,13 @@
       "storage_key": "scores/5f/5f9f521d-00e1-4049-8e78-f61f1aff4017.pdf",
       "file_size": 194035,
       "sha256": "263264c1bf31fdebe235ecc63ba4ae9b3f167d4ace433fc8cd17350ee5ee9586"
+    },
+    {
+      "public_id": "5fae9276-b128-4034-8773-49f399ff013d",
+      "source_path": "scores/艺术歌曲/5fae9276-b128-4034-8773-49f399ff013d.pdf",
+      "storage_key": "scores/5f/5fae9276-b128-4034-8773-49f399ff013d.pdf",
+      "file_size": 231631,
+      "sha256": "5a120645ff394841929b9c8c6c6a38b1c9c71507f39208a6d485b7ca13823b95"
     },
     {
       "public_id": "5fb9b6f6-e9ba-58ce-bc68-a69edcb7a1cc",
@@ -16849,6 +16884,13 @@
       "storage_key": "scores/7d/7d969f52-7479-40e8-9817-cc8f8e21497d.pdf",
       "file_size": 521912,
       "sha256": "968ae6c09187267c889423233b9e4a2841cbfc49178e5b1026dec7e68644697f"
+    },
+    {
+      "public_id": "7da43655-188c-469d-9f63-2f7753873300",
+      "source_path": "scores/艺术歌曲/7da43655-188c-469d-9f63-2f7753873300.pdf",
+      "storage_key": "scores/7d/7da43655-188c-469d-9f63-2f7753873300.pdf",
+      "file_size": 307234,
+      "sha256": "016117554f94f285369d9dd9e009c12dbf2eab79fc00856dd4f52a3546ccef66"
     },
     {
       "public_id": "7dc3bc71-ce3a-4606-b739-8d207b839431",
@@ -25419,6 +25461,13 @@
       "sha256": "6d6fdb76c66255c4f63c7f14c9156ffdb18c3746b1aedaaeede23409ede62641"
     },
     {
+      "public_id": "bc905445-1ad4-4cbb-863c-44e73ed79c6d",
+      "source_path": "scores/艺术歌曲/bc905445-1ad4-4cbb-863c-44e73ed79c6d.pdf",
+      "storage_key": "scores/bc/bc905445-1ad4-4cbb-863c-44e73ed79c6d.pdf",
+      "file_size": 407859,
+      "sha256": "b8abf771a08aefd3e02b3a5f739a9159720760d7c68879e10ee8e8cac8273bc6"
+    },
+    {
       "public_id": "bca767ff-af71-50ed-8f6f-c44e43a5131a",
       "source_path": "scores/歌剧咏叹调/1766038843373_Tu_del_mio_Carlo_al_seno.pdf",
       "storage_key": "scores/bc/bca767ff-af71-50ed-8f6f-c44e43a5131a.pdf",
@@ -26236,6 +26285,13 @@
       "storage_key": "scores/c2/c21c720d-bcc4-5d7b-a9e0-1b28b4646a03.pdf",
       "file_size": 1456616,
       "sha256": "6e876ec6bcd39fb06f649b37cc3b2d1330cea282ff0710e52a8db8e07f7a6eaf"
+    },
+    {
+      "public_id": "c22359aa-e4c1-43be-af24-15b5666b105e",
+      "source_path": "scores/艺术歌曲/c22359aa-e4c1-43be-af24-15b5666b105e.pdf",
+      "storage_key": "scores/c2/c22359aa-e4c1-43be-af24-15b5666b105e.pdf",
+      "file_size": 208516,
+      "sha256": "77953c65adb3e493a519922a93476c787bee3017f9ada2e066198449cc506b48"
     },
     {
       "public_id": "c22925ea-8e8f-5c0c-a5a0-b26dfb884e5a",
@@ -31353,6 +31409,13 @@
       "storage_key": "scores/e7/e7256ea1-f1dc-51d3-a0e0-502088209f15.pdf",
       "file_size": 928389,
       "sha256": "517e5fe44f5ff78e78a1d960eb46b98e6e7771bbe080937aecc8a42b654745ed"
+    },
+    {
+      "public_id": "e7352465-4392-4a81-9411-ae662e3fd84a",
+      "source_path": "scores/艺术歌曲/e7352465-4392-4a81-9411-ae662e3fd84a.pdf",
+      "storage_key": "scores/e7/e7352465-4392-4a81-9411-ae662e3fd84a.pdf",
+      "file_size": 189094,
+      "sha256": "96dc78daee596b1a2d00a3e5b58ab9fb40fbba43aee86c665d14b31bddba5af6"
     },
     {
       "public_id": "e75ff6e8-027b-57f1-a781-6a41e65b8e33",
