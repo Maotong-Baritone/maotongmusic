@@ -1,5 +1,166 @@
 [
     {
+        "date": "2026-10-25 18:41",
+        "type": "add",
+        "batch_id": "luo-zhongrong-local-twenty-three-20261025",
+        "count": 23,
+        "msg": "新增罗忠镕相关乐谱23份：22份独立歌曲谱及版本谱，另附《秋之歌》三首合并谱；《渔家傲·秋思》分别收录降D调与降E调版本。"
+    },
+    {
+        "date": "2026-10-25 18:35",
+        "type": "add",
+        "msg": "新增勃拉姆斯中音声部独立歌曲谱9份：Op.7、19、46、48、70、72、106；已核对实际曲号、谱面标题、德语及声乐与钢琴编制。",
+        "batch_id": "brahms-medium-voice-nine-20261025",
+        "count": 9
+    },
+    {
+        "date": "2026-10-24 15:26",
+        "type": "add",
+        "msg": "新增勃拉姆斯艺术歌曲完整初版谱8份：Op.3、7、19、33、43、69、71、121；已核对实际声部、德英歌词、分册结构及全部曲目PDF起始页。",
+        "batch_id": "brahms-song-cycle-first-editions-eight-20261024",
+        "count": 8
+    },
+    {
+        "date": "2026-10-13 19:44",
+        "type": "add",
+        "msg": "新增勃拉姆斯艺术歌曲完整初版谱10份：Op.49、85、86、94、95、96、97、105、106、107；已核对德语歌词、高低声部版本及全部曲目实际PDF起始页。",
+        "batch_id": "brahms-song-cycle-first-editions-ten-20261013",
+        "count": 10
+    },
+    {
+        "date": "2026-10-06 18:46",
+        "type": "add",
+        "msg": "新增勃拉姆斯艺术歌曲完整初版谱7份：Op.32、46、47、48、57、59、63；已核对德语歌词、两册结构及全部曲目实际PDF起始页。",
+        "batch_id": "brahms-song-cycle-first-editions-seven-20261006",
+        "count": 7
+    },
+    {
+        "date": "2026-10-06 13:37",
+        "type": "add",
+        "msg": "新增勃拉姆斯声乐及合唱初版谱8份：Op.6、13、27、44、74、91、110、112；已核对实际文件范围、各曲PDF起始页、语言及中文编制。",
+        "batch_id": "brahms-vocal-choral-first-editions-eight-20261006",
+        "count": 8
+    },
+    {
+        "date": "2026-10-06 12:55",
+        "type": "add",
+        "msg": "新增勃拉姆斯声乐及合唱初版谱8份：Op.17、30、37、52、70、72、84、93b；已核对实际文件范围、各曲PDF起始页、语言及中文编制。",
+        "batch_id": "brahms-vocal-choral-first-editions-eight-20261004",
+        "count": 8
+    },
+    {
+        "date": "2026-10-04 12:57",
+        "type": "add",
+        "msg": "新增勃拉姆斯合唱及声乐初版谱8份：Op.41、42、44、62、93a、103、104、113；已核对实际文件范围、各曲PDF起始页、德语及中文编制。",
+        "batch_id": "brahms-choral-first-editions-eight-20261003",
+        "count": 8
+    },
+    {
+        "date": "2026-09-29 19:59",
+        "type": "add",
+        "msg": "新增勃拉姆斯《15 Volkskinderlieder, WoO 31》德语初版及英文版完整谱2份；曲目、实际PDF起始页、语言、编制及出版版本均已核对。",
+        "batch_id": "brahms-woo31-two-editions-20260929",
+        "count": 2
+    },
+    {
+        "date": "2026-09-29 16:10",
+        "type": "add",
+        "msg": "新增勃拉姆斯《12 Deutsche Volkslieder, WoO 35》完整谱及No.12初版单曲2份；12首目录、实际PDF起始页、德语歌词、版本及无伴奏混声合唱编制均已逐页核对。",
+        "batch_id": "brahms-woo35-complete-and-no12-first-edition-two-20260929",
+        "count": 2
+    },
+    {
+        "date": "2026-09-29 14:59",
+        "type": "add",
+        "msg": "新增勃拉姆斯《14 Deutsche Volkslieder, WoO 34》1864年初版完整谱1份；14首目录、两册结构、实际PDF起始页、德语歌词及无伴奏混声合唱编制均已逐页核对。",
+        "batch_id": "brahms-woo34-first-edition-one-20260929",
+        "count": 1
+    },
+    {
+        "date": "2026-09-29 11:17",
+        "type": "add",
+        "msg": "新增勃拉姆斯《49 Deutsche Volkslieder, WoO 33》西姆罗克初版完整谱1份；49首目录、七册结构、实际PDF起始页、德语歌词及第43–49首可选混声合唱编制均已逐页核对。",
+        "batch_id": "brahms-woo33-first-edition-one-20260929",
+        "count": 1
+    },
+    {
+        "date": "2026-09-29 09:54",
+        "type": "add",
+        "msg": "新增勃拉姆斯《28 Deutsche Volkslieder, WoO 32》声乐与钢琴完整谱1份；28首目录、实际PDF起始页、德语歌词及出版版本均已核对。",
+        "batch_id": "brahms-woo32-complete-scan-one-20260929",
+        "count": 1
+    },
+    {
+        "date": "2026-09-28 23:06",
+        "type": "add",
+        "msg": "新增勃拉姆斯《Albumblatt für Clara Schumann》无伴奏独唱手稿1份；题名、德语歌词、C大调、日期及手稿正反面均已核对。",
+        "batch_id": "brahms-albumblatt-clara-manuscript-one-20260929",
+        "count": 1
+    },
+    {
+        "date": "2026-09-28 22:20",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.71与Op.84中音声部Peters独立歌曲谱7份；标题、编号、速度、德语及实际声乐与钢琴编制均已核对。",
+        "batch_id": "brahms-op71-op84-medium-voice-seven-20260929",
+        "count": 7
+    },
+    {
+        "date": "2026-09-28 11:19",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.69、Op.105与Op.107中音声部Peters独立歌曲谱8份；标题、编号、速度、德语及中音声部与钢琴编制均已核对。",
+        "batch_id": "brahms-op69-op105-op107-medium-voice-eight-20260928",
+        "count": 8
+    },
+    {
+        "date": "2026-09-27 13:13",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.85、Op.95与Op.97中音声部Peters独立歌曲谱10份；标题、编号、速度、德语及声乐与钢琴编制均已核对。",
+        "batch_id": "brahms-op85-op95-op97-medium-voice-ten-20260927",
+        "count": 10
+    },
+    {
+        "date": "2026-09-27 12:40",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.47、Op.49与Op.63中音声部Peters独立歌曲谱8份；标题、编号、速度、德语及声乐与钢琴编制均已核对。",
+        "batch_id": "brahms-op47-op49-op63-medium-voice-eight-20260927",
+        "count": 8
+    },
+    {
+        "date": "2026-09-26 18:33",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.46、Op.86、Op.94与Op.96中音声部Peters独立歌曲谱9份；标题、编号、速度、德语及声乐与钢琴编制均已核对。",
+        "batch_id": "brahms-op46-op86-op94-op96-medium-voice-nine-20260927",
+        "count": 9
+    },
+    {
+        "date": "2026-09-25 16:12",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.43与Op.84低声部Peters独立歌曲谱9份；标题、速度、德语及实际声乐重唱与钢琴编制均已核对。",
+        "batch_id": "brahms-op43-op84-low-voice-nine-20260925",
+        "count": 9
+    },
+    {
+        "date": "2026-09-25 15:38",
+        "type": "add",
+        "msg": "新增勃拉姆斯WoO 20、21、23–26、28–30短小声乐作品谱9份；七份无伴奏合唱/卡农与两份艺术歌曲的题名、调性、德语及实际编制均已核对。",
+        "batch_id": "brahms-woo20-30-small-vocal-nine-20260925",
+        "count": 9
+    },
+    {
+        "date": "2026-09-25 10:53",
+        "type": "add",
+        "msg": "新增勃拉姆斯《15首马格洛娜浪漫曲，Op.33》第9至15首艺术歌曲单曲谱7份；标题、速度、德语及声乐与钢琴编制均已核对。",
+        "batch_id": "brahms-op33-singles-nine-fifteen-20260925",
+        "count": 7
+    },
+    {
+        "date": "2026-09-25 10:06",
+        "type": "add",
+        "msg": "新增勃拉姆斯Op.33 No.1–8独立歌曲谱8份；标题、速度、德语及编制均已核对。",
+        "batch_id": "brahms-op33-singles-one-eight-20260924",
+        "count": 8
+    },
+    {
         "date": "2026-09-24 18:48",
         "type": "add",
         "msg": "新增勃拉姆斯Op.3与Op.7低声部钢琴伴奏单曲12份；标题、速度、德语及编制均已核对。",
