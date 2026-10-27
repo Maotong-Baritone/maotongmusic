@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4985,
-  "unique_content_count": 4963,
+  "entry_count": 4993,
+  "unique_content_count": 4971,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5650634100,
+  "total_size": 5657985825,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -9284,6 +9284,13 @@
       "sha256": "8bbb8266bd525b578a84bd221a3efea860a999c885b7ccb012f0459b3428b1ec"
     },
     {
+      "public_id": "44786cb0-759f-4ca2-a811-4049197073c6",
+      "source_path": "scores/艺术歌曲/44786cb0-759f-4ca2-a811-4049197073c6.pdf",
+      "storage_key": "scores/44/44786cb0-759f-4ca2-a811-4049197073c6.pdf",
+      "file_size": 1360891,
+      "sha256": "050cb9f6b1f608f57fc1a336a6977da0b0dae4ec17956064b359cd231b939e07"
+    },
+    {
       "public_id": "44838e76-8660-5e9b-a766-d68a7dbb7153",
       "source_path": "scores/歌剧咏叹调/1766012416800_Trostlos_schluchzet_Philomele.pdf",
       "storage_key": "scores/44/44838e76-8660-5e9b-a766-d68a7dbb7153.pdf",
@@ -9688,6 +9695,13 @@
       "storage_key": "scores/47/472cedd4-cad5-5c61-bffd-f97025015814.pdf",
       "file_size": 1822318,
       "sha256": "99c7b27c1a94ce667e9fc881e103ee98a4469ec5ee5170618e42b2515e4cad8b"
+    },
+    {
+      "public_id": "4730836e-800e-4967-bcf5-71f63979e380",
+      "source_path": "scores/艺术歌曲/4730836e-800e-4967-bcf5-71f63979e380.pdf",
+      "storage_key": "scores/47/4730836e-800e-4967-bcf5-71f63979e380.pdf",
+      "file_size": 696778,
+      "sha256": "59fdfad15b7170f5030aeb2be68b59a0d74ac3bff6c890eabef510600dac80ec"
     },
     {
       "public_id": "4748ccab-92c1-51fe-9002-ca3d14b9bc67",
@@ -12887,6 +12901,13 @@
       "storage_key": "scores/5f/5f578e2f-ea24-5065-a83c-03fb2fd579e3.pdf",
       "file_size": 417515,
       "sha256": "b099e7912f8bf062787bfdca415dede317d68c3f26bca7fd7e4e7637159855f5"
+    },
+    {
+      "public_id": "5f5a1bc7-ce0f-4f52-a0d5-d7acffc6cb75",
+      "source_path": "scores/艺术歌曲/5f5a1bc7-ce0f-4f52-a0d5-d7acffc6cb75.pdf",
+      "storage_key": "scores/5f/5f5a1bc7-ce0f-4f52-a0d5-d7acffc6cb75.pdf",
+      "file_size": 841909,
+      "sha256": "e891b4f8ee9e76eb3ebe21e69ed7aa3127df36cf5e211c880f9b931a8335c959"
     },
     {
       "public_id": "5f6faa97-0c15-5a0f-8a60-9c1c2ea6457c",
@@ -17390,6 +17411,13 @@
       "sha256": "7fe74c6df5ef7b9aec0017485f4c5fe1b63d8b9d2c7e5c261ca734811214cc47"
     },
     {
+      "public_id": "8127bfad-d027-4817-b966-eb3b0fb0b238",
+      "source_path": "scores/艺术歌曲/8127bfad-d027-4817-b966-eb3b0fb0b238.pdf",
+      "storage_key": "scores/81/8127bfad-d027-4817-b966-eb3b0fb0b238.pdf",
+      "file_size": 429088,
+      "sha256": "db2cc8d2bbf1a6b7bbe17a265c22017968de4addd01b7a0c535fa851d99a4449"
+    },
+    {
       "public_id": "8139270e-e0cf-4fb4-b7be-6d3fe11a7cc8",
       "source_path": "scores/器乐独奏/8139270e-e0cf-4fb4-b7be-6d3fe11a7cc8.pdf",
       "storage_key": "scores/81/8139270e-e0cf-4fb4-b7be-6d3fe11a7cc8.pdf",
@@ -20260,6 +20288,13 @@
       "sha256": "10755ef868122807111bfbec63e7a478e5eefc16de7efaa8cc8d5ef0e20001b8"
     },
     {
+      "public_id": "95d6b331-0f9a-4a48-b5f3-8ecae0a9e97c",
+      "source_path": "scores/艺术歌曲/95d6b331-0f9a-4a48-b5f3-8ecae0a9e97c.pdf",
+      "storage_key": "scores/95/95d6b331-0f9a-4a48-b5f3-8ecae0a9e97c.pdf",
+      "file_size": 2465320,
+      "sha256": "baeee8d0019d2f3ecd5505a433d9362e38d7d47a695a1195da0130326e3360b8"
+    },
+    {
       "public_id": "95e3d135-fd26-568d-bc29-fbb51764c2c2",
       "source_path": "scores/歌剧咏叹调/1766007768254_Zeffiretto_che_scorre_nel_prato.pdf",
       "storage_key": "scores/95/95e3d135-fd26-568d-bc29-fbb51764c2c2.pdf",
@@ -20461,6 +20496,13 @@
       "storage_key": "scores/97/976eec05-943f-5eb2-8fe8-4b3fe47e76fe.pdf",
       "file_size": 1285266,
       "sha256": "0d610ed2f93cf309c1801aa4496031db53c140949682af4c541dba4e3db61535"
+    },
+    {
+      "public_id": "97733bfd-9bbd-472d-b736-d495af05d0eb",
+      "source_path": "scores/艺术歌曲/97733bfd-9bbd-472d-b736-d495af05d0eb.pdf",
+      "storage_key": "scores/97/97733bfd-9bbd-472d-b736-d495af05d0eb.pdf",
+      "file_size": 512164,
+      "sha256": "db62ae1a51d94794e6cd56f4341c03970298fd7fdff866f92bb17f61577e738a"
     },
     {
       "public_id": "978db8dd-c481-456c-bb17-b7ff93b66f3a",
@@ -25545,6 +25587,13 @@
       "sha256": "b4e1d6d976a737b6aa407c66afe38bb074611fb9ef1c3f18bef40a8092a3668a"
     },
     {
+      "public_id": "bbe09775-6445-4eb1-a0b8-aee4abeeca51",
+      "source_path": "scores/艺术歌曲/bbe09775-6445-4eb1-a0b8-aee4abeeca51.pdf",
+      "storage_key": "scores/bb/bbe09775-6445-4eb1-a0b8-aee4abeeca51.pdf",
+      "file_size": 473499,
+      "sha256": "7619d78c325a720327c3c4dd5549ef289025f16dc39cbe42abac74eb3a92ac61"
+    },
+    {
       "public_id": "bbe4bfc8-e8d3-58d4-82d5-2eb5d7496c12",
       "source_path": "scores/歌剧咏叹调/1766098625025_Ecco_il_pugnal_su.pdf",
       "storage_key": "scores/bb/bbe4bfc8-e8d3-58d4-82d5-2eb5d7496c12.pdf",
@@ -28210,6 +28259,13 @@
       "storage_key": "scores/ce/ce2cce46-f7ac-559a-a011-0230696f1e68.pdf",
       "file_size": 2180527,
       "sha256": "934227a0ddf68e6c769a6a5a454979599c0ec69be5279b4c40b930248ada0a1c"
+    },
+    {
+      "public_id": "ce33fdc8-1326-4325-9f9f-78ea87a2f6f5",
+      "source_path": "scores/艺术歌曲/ce33fdc8-1326-4325-9f9f-78ea87a2f6f5.pdf",
+      "storage_key": "scores/ce/ce33fdc8-1326-4325-9f9f-78ea87a2f6f5.pdf",
+      "file_size": 572076,
+      "sha256": "54a0a2d764bedc6b64084cfb0969986f425c4b8aea86b45a9982edd2883a689b"
     },
     {
       "public_id": "ce4cb6cc-c117-5e7b-9bfa-449c4a326ded",

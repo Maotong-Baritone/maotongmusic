@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-26 19:08",
+        "type": "add",
+        "msg": "新增勃拉姆斯独立歌曲谱8份：Op.47、49、71、86、94、105；已核对版本、实际声部、歌词语言和完整单曲范围。",
+        "batch_id": "brahms-selected-vocal-editions-eight-20261026",
+        "count": 8
+    },
+    {
         "date": "2026-10-25 18:41",
         "type": "add",
         "batch_id": "luo-zhongrong-local-twenty-three-20261025",
