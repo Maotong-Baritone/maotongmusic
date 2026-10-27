@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 4993,
-  "unique_content_count": 4971,
+  "entry_count": 5002,
+  "unique_content_count": 4980,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5657985825,
+  "total_size": 5683985510,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2996,6 +2996,13 @@
       "storage_key": "scores/15/151a2665-8703-48ad-9192-3d5548777845.pdf",
       "file_size": 306734,
       "sha256": "c14eebfa6f79baae153dd817af13974dcd933445b4e095ee137d0af4ff02a68c"
+    },
+    {
+      "public_id": "151ad2c3-fd55-4c60-8074-38a153bc991a",
+      "source_path": "scores/艺术歌曲/151ad2c3-fd55-4c60-8074-38a153bc991a.pdf",
+      "storage_key": "scores/15/151ad2c3-fd55-4c60-8074-38a153bc991a.pdf",
+      "file_size": 505035,
+      "sha256": "56bf74cbfc30014ec25236d721bc0871ce8665bcfe41d1573eb740211b39a07f"
     },
     {
       "public_id": "1521d4ab-3f04-478d-a9f9-de0b0cc03542",
@@ -14877,6 +14884,13 @@
       "sha256": "dd5cadf670a7d778246f265fb0fe49db3a14e382e7cd988550faa912b3f57a39"
     },
     {
+      "public_id": "6db4befa-6d0d-4103-8415-e20efa737e87",
+      "source_path": "scores/艺术歌曲/6db4befa-6d0d-4103-8415-e20efa737e87.pdf",
+      "storage_key": "scores/6d/6db4befa-6d0d-4103-8415-e20efa737e87.pdf",
+      "file_size": 276202,
+      "sha256": "57bc4ee6562ab6c74b8802b0e6808843cf92b28dead4d7e515fdcd6f89b8acf7"
+    },
+    {
       "public_id": "6dbb7ea6-2eda-5d31-8ba3-37b1935d0dea",
       "source_path": "scores/歌剧咏叹调/1766007811373_Lusinghe_piu_care_damor_veri_dardi.pdf",
       "storage_key": "scores/6d/6dbb7ea6-2eda-5d31-8ba3-37b1935d0dea.pdf",
@@ -20820,6 +20834,13 @@
       "sha256": "67aed608469b07983b78eba48927679a4faee0f7ffc23c644bd69fbbb4f354d4"
     },
     {
+      "public_id": "99ffe24a-7c91-428d-9360-7a9959c82653",
+      "source_path": "scores/艺术歌曲/99ffe24a-7c91-428d-9360-7a9959c82653.pdf",
+      "storage_key": "scores/99/99ffe24a-7c91-428d-9360-7a9959c82653.pdf",
+      "file_size": 884472,
+      "sha256": "255a27b4854fc1bf92a630c42c3717c6b930fbe9e7250d8472db087f70364088"
+    },
+    {
       "public_id": "9a041a05-4f10-501e-8464-b7f8840d617d",
       "source_path": "scores/歌剧咏叹调/1766294196400_Vous_ressemblez_a_la_rose_naissante.pdf",
       "storage_key": "scores/9a/9a041a05-4f10-501e-8464-b7f8840d617d.pdf",
@@ -21021,6 +21042,13 @@
       "storage_key": "scores/9b/9b2b6912-fa54-4c3e-815d-477ffcfb1322.pdf",
       "file_size": 175824,
       "sha256": "9d25c26c169c566fced431353c19a591151042d925d1739e312947f8c064d36b"
+    },
+    {
+      "public_id": "9b3c5723-5994-4074-bb52-4137715d36f1",
+      "source_path": "scores/艺术歌曲/9b3c5723-5994-4074-bb52-4137715d36f1.pdf",
+      "storage_key": "scores/9b/9b3c5723-5994-4074-bb52-4137715d36f1.pdf",
+      "file_size": 184125,
+      "sha256": "9cfb6952644106db3edee1094e8c68bbc84a8331d18a37174d4812006f123c1f"
     },
     {
       "public_id": "9b556a34-ed88-548d-8d46-42f0cc84c362",
@@ -22386,6 +22414,13 @@
       "storage_key": "scores/a4/a4b0f9a1-8981-59aa-9aa7-01991a04ff29.pdf",
       "file_size": 3051135,
       "sha256": "378011a527fe9487a331ca96ab8f81673fc5d3431ff806467ce400d82746c51c"
+    },
+    {
+      "public_id": "a4b1f1ea-fcd2-469e-b2e7-0728e6beaf5e",
+      "source_path": "scores/艺术歌曲/a4b1f1ea-fcd2-469e-b2e7-0728e6beaf5e.pdf",
+      "storage_key": "scores/a4/a4b1f1ea-fcd2-469e-b2e7-0728e6beaf5e.pdf",
+      "file_size": 577837,
+      "sha256": "539816737d81fd86bd724180c700d6ab294ac2b1434aa929c16232b14301ef3b"
     },
     {
       "public_id": "a4d078cb-e77f-4e8d-ba51-4971a5645355",
@@ -24815,6 +24850,13 @@
       "storage_key": "scores/b6/b6436eac-699f-5489-a12b-b2f164938e64.pdf",
       "file_size": 669004,
       "sha256": "d2cd3efdd856b301e120f772e2e015fe8354360a0992c361c398bdd73fbbbb08"
+    },
+    {
+      "public_id": "b65252a4-ff51-4ec8-8509-8fa6421b2cf3",
+      "source_path": "scores/艺术歌曲/b65252a4-ff51-4ec8-8509-8fa6421b2cf3.pdf",
+      "storage_key": "scores/b6/b65252a4-ff51-4ec8-8509-8fa6421b2cf3.pdf",
+      "file_size": 554288,
+      "sha256": "2396953866d70a110be659b28df3bc7ec8ed440767ead84051cc9fcff216a9af"
     },
     {
       "public_id": "b65469ea-c6d2-44a8-9bd6-3c7b28121f57",
@@ -30431,6 +30473,13 @@
       "sha256": "c3a2cda0fadeaab2ca62da30528a5cc35bb697f450dfca7a9abf85bb4e73ba30"
     },
     {
+      "public_id": "de2d3396-dd93-4b5c-b58c-39c9d535d934",
+      "source_path": "scores/艺术歌曲/de2d3396-dd93-4b5c-b58c-39c9d535d934.pdf",
+      "storage_key": "scores/de/de2d3396-dd93-4b5c-b58c-39c9d535d934.pdf",
+      "file_size": 21958053,
+      "sha256": "3a307c1ccc8007b4d4a71789d0c26eb55d73bfda5d14af824ebfdc2bb3297265"
+    },
+    {
       "public_id": "de2eba73-c5df-4a6d-853d-d2d58698b274",
       "source_path": "scores/合唱作品/de2eba73-c5df-4a6d-853d-d2d58698b274.pdf",
       "storage_key": "scores/de/de2eba73-c5df-4a6d-853d-d2d58698b274.pdf",
@@ -30653,6 +30702,13 @@
       "storage_key": "scores/df/df87bf8a-b316-4ef8-ab96-59753176980d.pdf",
       "file_size": 294895,
       "sha256": "e4e5610cdfc01c6f416670b0609906aa91134d68cf63ba8da8ec17dc105dad79"
+    },
+    {
+      "public_id": "df88ee66-389d-4324-9bb0-f982d0cf0ad1",
+      "source_path": "scores/艺术歌曲/df88ee66-389d-4324-9bb0-f982d0cf0ad1.pdf",
+      "storage_key": "scores/df/df88ee66-389d-4324-9bb0-f982d0cf0ad1.pdf",
+      "file_size": 854220,
+      "sha256": "b6fd866bde66a06cc565afe1be83b8d9d11777f6438dbb589ccbb3d8702faac9"
     },
     {
       "public_id": "df9332f5-9014-47ca-b8b2-589ac541a12b",
@@ -34650,6 +34706,13 @@
       "storage_key": "scores/fd/fd752049-7dd3-4a81-8d15-e0847455df32.pdf",
       "file_size": 1258199,
       "sha256": "d3e923961a1bc225ac01e6e1df0dbba442f2689458e1273a9bb253289469c9aa"
+    },
+    {
+      "public_id": "fd7e5324-69f3-446c-b1cd-6711e1fbe9b1",
+      "source_path": "scores/艺术歌曲/fd7e5324-69f3-446c-b1cd-6711e1fbe9b1.pdf",
+      "storage_key": "scores/fd/fd7e5324-69f3-446c-b1cd-6711e1fbe9b1.pdf",
+      "file_size": 205453,
+      "sha256": "c1a3eed6ecee8f9f4d8a4f0bd7173e5fd7e03413d85279c51b3c9646e97059cd"
     },
     {
       "public_id": "fd9ceceb-7d27-4eb0-a58d-5837ae9bd8b0",
