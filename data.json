@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742211,
+        "public_id": "37ade7d9-9a73-4bc6-88a5-f2e855306aaf",
+        "title": "Marienlieder, Op. 22",
+        "work": "",
+        "category": "合唱作品",
+        "sub_category": "",
+        "voice_types": "混声合唱",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #101428；版本：Breitkopf & Härtel全集第21卷，Plate J.B.110；编者 Eusebius Mandyczewski；目录（PDF起始页）：1. Der englische Gruß—1；2. Marias Kirchgang—3；3. Marias Wallfahrt—4；4. Der Jäger—6；5. Ruf zur Maria—8；6. Magdalena—9上；7. Marias Lob—9下。印刷页1–9与PDF页一致",
+        "filename": "合唱作品/37ade7d9-9a73-4bc6-88a5-f2e855306aaf.pdf",
+        "date": "2026-10-28",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-marienlieder-op22-one-20261028",
+        "source_imslp_id": "101428",
+        "storage_key": "scores/37/37ade7d9-9a73-4bc6-88a5-f2e855306aaf.pdf",
+        "storage_sha256": "aefb71245ef9729e967c18eae9d32b94c4ff97119f97abe178f40b83b84cc4cd",
+        "storage_size": 1349991,
+        "storage_synced_at": "2026-10-28T06:33:23+00:00"
+    },
+    {
         "id": 1790049742210,
         "public_id": "e2e3bbe0-7765-480c-96ea-1eb6d827ffd0",
         "title": "No. 3 Scherzo. Allegro molto, Op. 18（手稿）",
