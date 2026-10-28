@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742209,
+        "public_id": "98aa861a-b90c-44b3-a03b-b895466a4dae",
+        "title": "No. 3 Adagio mesto, Op. 40（手稿）",
+        "work": "Horn Trio, Op. 40",
+        "category": "室内乐",
+        "sub_category": "三重奏",
+        "voice_types": "圆号、小提琴、钢琴",
+        "tonality": "降e小调",
+        "language": "",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #107883；版本：约1865年亲笔手稿（US-Wc）；第三乐章完整总谱，PDF 1–4对应手稿21–24页，保留手写修改",
+        "filename": "室内乐/98aa861a-b90c-44b3-a03b-b895466a4dae.pdf",
+        "date": "2026-10-27",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-op40-adagio-manuscript-one-20261028",
+        "source_imslp_id": "107883",
+        "storage_key": "scores/98/98aa861a-b90c-44b3-a03b-b895466a4dae.pdf",
+        "storage_sha256": "a6f3b7850571c10bf5bc6a6363f9aae8889941f28b9ef49869531e012e832c98",
+        "storage_size": 9280731,
+        "storage_synced_at": "2026-10-28T05:33:56+00:00"
+    },
+    {
         "id": 1790049742208,
         "public_id": "f55839da-6c6b-4087-b7f7-06f8afaec4b7",
         "title": "Kleine Hochzeits-Kantate, WoO 16",

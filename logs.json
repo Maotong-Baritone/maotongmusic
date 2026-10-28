@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-27 23:33",
+        "type": "add",
+        "msg": "新增勃拉姆斯《Horn Trio, Op. 40》第三乐章 Adagio mesto 亲笔手稿总谱1份（4页）；已核对乐章范围、降e小调及圆号、小提琴、钢琴编制。",
+        "batch_id": "brahms-op40-adagio-manuscript-one-20261028",
+        "count": 1
+    },
+    {
         "date": "2026-10-27 22:51",
         "type": "add",
         "msg": "新增勃拉姆斯《Kleine Hochzeits-Kantate, WoO 16》完整乐谱1份；已核对实际编制、德语及完整作品范围。",
