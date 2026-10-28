@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5009,
-  "unique_content_count": 4987,
+  "entry_count": 5010,
+  "unique_content_count": 4988,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5686631515,
+  "total_size": 5687321722,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -33768,6 +33768,13 @@
       "storage_key": "scores/f5/f54ee342-cadd-4051-98fa-f3c8be909c29.pdf",
       "file_size": 173528,
       "sha256": "cb960dff28577b79168179f46e5d96997d8b08ed5ae7a478dc081f71929d6ec6"
+    },
+    {
+      "public_id": "f55839da-6c6b-4087-b7f7-06f8afaec4b7",
+      "source_path": "scores/合唱作品/f55839da-6c6b-4087-b7f7-06f8afaec4b7.pdf",
+      "storage_key": "scores/f5/f55839da-6c6b-4087-b7f7-06f8afaec4b7.pdf",
+      "file_size": 690207,
+      "sha256": "4fc3a4242fa2e6518f77b904759ecf3a49627fab5e338b36f8e3c73bc5ad0619"
     },
     {
       "public_id": "f55e7db6-5985-55fe-b16a-87ef89a275c2",
