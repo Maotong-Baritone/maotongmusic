@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-28 10:53",
+        "type": "add",
+        "msg": "新增勃拉姆斯《Fest- und Gedenksprüche, Op. 109》完整总谱1份（19页）；含三首德语双混声合唱，附钢琴仅供排练，已补充实际PDF目录。",
+        "batch_id": "brahms-fest-gedenksprueche-op109-one-20261028",
+        "count": 1
+    },
+    {
         "date": "2026-10-28 01:05",
         "type": "add",
         "msg": "新增勃拉姆斯《Ave Maria, Op. 12》完整总谱1份（11页）；含女声合唱、管弦乐及可替代管弦乐的管风琴谱表，已核对拉丁语和实际PDF范围。",

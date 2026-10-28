@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5014,
-  "unique_content_count": 4992,
+  "entry_count": 5015,
+  "unique_content_count": 4993,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5713753233,
+  "total_size": 5716982746,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -16065,6 +16065,13 @@
       "storage_key": "scores/77/77174a33-e065-5457-8e82-62d3d10d555a.pdf",
       "file_size": 737024,
       "sha256": "f9c17e7e61f7fbccc8327d3c7d4c74b08a7faf42a66d5ec54296e0270f422134"
+    },
+    {
+      "public_id": "772b951b-ec92-4a50-b3a3-d03c64797887",
+      "source_path": "scores/宗教声乐作品/772b951b-ec92-4a50-b3a3-d03c64797887.pdf",
+      "storage_key": "scores/77/772b951b-ec92-4a50-b3a3-d03c64797887.pdf",
+      "file_size": 3229513,
+      "sha256": "f2450fd08270a4d5e4193d6fef0b38118b001e15b3ca729868379f86e6db34fb"
     },
     {
       "public_id": "77334339-47b9-562e-84f9-e71e397bedfe",

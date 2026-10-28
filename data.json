@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742213,
+        "public_id": "772b951b-ec92-4a50-b3a3-d03c64797887",
+        "title": "Fest- und Gedenksprüche, Op. 109",
+        "work": "",
+        "category": "宗教声乐作品",
+        "sub_category": "",
+        "voice_types": "双混声合唱（附排练钢琴）",
+        "tonality": "",
+        "language": "德语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #102574；版本：Breitkopf & Härtel全集第21卷，Plate J.B.114；编者 Eusebius Mandyczewski；目录（PDF起始页）：1. Unsere Väter hofften auf dich—2；2. Wenn ein starker Gewappneter—7；3. Wo ist ein so herrlich Volk—14；PDF1为歌词；印刷2–20（全集60–78）对应PDF1–19；附钢琴仅供排练",
+        "filename": "宗教声乐作品/772b951b-ec92-4a50-b3a3-d03c64797887.pdf",
+        "date": "2026-10-28",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-fest-gedenksprueche-op109-one-20261028",
+        "source_imslp_id": "102574",
+        "storage_key": "scores/77/772b951b-ec92-4a50-b3a3-d03c64797887.pdf",
+        "storage_sha256": "f2450fd08270a4d5e4193d6fef0b38118b001e15b3ca729868379f86e6db34fb",
+        "storage_size": 3229513,
+        "storage_synced_at": "2026-10-28T16:53:15+00:00"
+    },
+    {
         "id": 1790049742212,
         "public_id": "8403e267-fb8a-4749-91f8-f447daecf578",
         "title": "Ave Maria, Op. 12",
