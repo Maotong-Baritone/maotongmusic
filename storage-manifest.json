@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5006,
-  "unique_content_count": 4984,
+  "entry_count": 5009,
+  "unique_content_count": 4987,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5685782408,
+  "total_size": 5686631515,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -30256,6 +30256,13 @@
       "sha256": "dc36644707142beb771cb1d008fb97a9665a215abd5ca899b2139c185abe6aca"
     },
     {
+      "public_id": "dc6bd55f-9075-4a0e-9296-1b09c84e0162",
+      "source_path": "scores/艺术歌曲/dc6bd55f-9075-4a0e-9296-1b09c84e0162.pdf",
+      "storage_key": "scores/dc/dc6bd55f-9075-4a0e-9296-1b09c84e0162.pdf",
+      "file_size": 321121,
+      "sha256": "ea169882a0f411e6acd67824515ef11dbc00b16d857b77da70e88ae0d24d3e16"
+    },
+    {
       "public_id": "dc822d05-302e-585a-9156-cf695a90b09e",
       "source_path": "scores/歌剧咏叹调/1766007736294_Si_dolce_lusingar_si_forte_incatenar.pdf",
       "storage_key": "scores/dc/dc822d05-302e-585a-9156-cf695a90b09e.pdf",
@@ -31628,6 +31635,13 @@
       "sha256": "067f8daf8f4ef5156ac467376fd53704d3a13f39f752d27f5587c8313dbe2008"
     },
     {
+      "public_id": "e686dc1f-8b02-43ce-99e6-edf78bde2359",
+      "source_path": "scores/艺术歌曲/e686dc1f-8b02-43ce-99e6-edf78bde2359.pdf",
+      "storage_key": "scores/e6/e686dc1f-8b02-43ce-99e6-edf78bde2359.pdf",
+      "file_size": 274826,
+      "sha256": "b1e4f6efb53f7b24a6dad982bb7eb4e0799a000e0178fb287866921b9c305caf"
+    },
+    {
       "public_id": "e6ad4537-fb5e-5517-b761-1998de24f2ad",
       "source_path": "scores/声乐作品/艺术歌曲/1766372637903_Stimme_der_Liebe_-_D187_Medium_Original.pdf",
       "storage_key": "scores/e6/e6ad4537-fb5e-5517-b761-1998de24f2ad.pdf",
@@ -31773,6 +31787,13 @@
       "storage_key": "scores/e7/e7cd27d8-4546-4a8d-9c1d-0e906e04a1cf.pdf",
       "file_size": 231310,
       "sha256": "acb2ca6e383c7c39f3709b520a98fcb2f45185e3b60e16f5bcb44e542e63e182"
+    },
+    {
+      "public_id": "e7dd2620-f4d7-4ecb-a820-e1d5eab4ee86",
+      "source_path": "scores/艺术歌曲/e7dd2620-f4d7-4ecb-a820-e1d5eab4ee86.pdf",
+      "storage_key": "scores/e7/e7dd2620-f4d7-4ecb-a820-e1d5eab4ee86.pdf",
+      "file_size": 253160,
+      "sha256": "caf43fad0035d26ee2db1e345c9ac1509c51b5b2a8866a0403fe9a91103a78ff"
     },
     {
       "public_id": "e7ff58ce-7ce5-5a7f-9e6a-1c063a9339e3",
