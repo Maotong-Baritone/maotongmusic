@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742212,
+        "public_id": "8403e267-fb8a-4749-91f8-f447daecf578",
+        "title": "Ave Maria, Op. 12",
+        "work": "",
+        "category": "宗教声乐作品总谱",
+        "sub_category": "",
+        "voice_types": "女声合唱、管弦乐（或管风琴）",
+        "tonality": "F大调",
+        "language": "拉丁语",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #109042；版本：Breitkopf & Härtel全集第19卷，Plate J.B.96；编者 Eusebius Mandyczewski；正文PDF 1–11，对应印刷1–11（全集113–123）；管风琴谱表注明替代管弦乐",
+        "filename": "宗教声乐作品总谱/8403e267-fb8a-4749-91f8-f447daecf578.pdf",
+        "date": "2026-10-28",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-ave-maria-op12-full-score-one-20261028",
+        "source_imslp_id": "109042",
+        "storage_key": "scores/84/8403e267-fb8a-4749-91f8-f447daecf578.pdf",
+        "storage_sha256": "b3e5fa3a02d4f301e2b60d32c340e1e2c0a04cb4e9293e6beaf0e1e8b3f69fb5",
+        "storage_size": 1620397,
+        "storage_synced_at": "2026-10-28T07:05:01+00:00"
+    },
+    {
         "id": 1790049742211,
         "public_id": "37ade7d9-9a73-4bc6-88a5-f2e855306aaf",
         "title": "Marienlieder, Op. 22",
