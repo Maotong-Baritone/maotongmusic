@@ -1,5 +1,28 @@
 [
     {
+        "id": 1790049742210,
+        "public_id": "e2e3bbe0-7765-480c-96ea-1eb6d827ffd0",
+        "title": "No. 3 Scherzo. Allegro molto, Op. 18（手稿）",
+        "work": "String Sextet No. 1, Op. 18",
+        "category": "室内乐",
+        "sub_category": "六重奏",
+        "voice_types": "小提琴、中提琴、大提琴各2把",
+        "tonality": "F大调",
+        "language": "",
+        "composer": "Johannes Brahms/勃拉姆斯",
+        "voice_count": "",
+        "description": "来源：IMSLP #108197；版本：1860年亲笔手稿（US-Wc）；第三乐章总谱，Scherzo自PDF 1、Trio自PDF 3、Coda自PDF 6起；保留手写修改与末页划除小节",
+        "filename": "室内乐/e2e3bbe0-7765-480c-96ea-1eb6d827ffd0.pdf",
+        "date": "2026-10-28",
+        "has_lyrics": false,
+        "import_batch_id": "brahms-op18-scherzo-manuscript-one-20261028",
+        "source_imslp_id": "108197",
+        "storage_key": "scores/e2/e2e3bbe0-7765-480c-96ea-1eb6d827ffd0.pdf",
+        "storage_sha256": "06c69972621428344c609f4bd8e32f53051584a199eb8c72466d804836fed8dd",
+        "storage_size": 14180392,
+        "storage_synced_at": "2026-10-28T06:01:44+00:00"
+    },
+    {
         "id": 1790049742209,
         "public_id": "98aa861a-b90c-44b3-a03b-b895466a4dae",
         "title": "No. 3 Adagio mesto, Op. 40（手稿）",

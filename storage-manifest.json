@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5011,
-  "unique_content_count": 4989,
+  "entry_count": 5012,
+  "unique_content_count": 4990,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5696602453,
+  "total_size": 5710782845,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -31185,6 +31185,13 @@
       "storage_key": "scores/e2/e2d6a4bb-f5cd-5543-8d5a-36aa77b65bde.pdf",
       "file_size": 6546519,
       "sha256": "416509430fb62596e057c1623191ab4b55a4df228d5a7b65f4f079a8defbd881"
+    },
+    {
+      "public_id": "e2e3bbe0-7765-480c-96ea-1eb6d827ffd0",
+      "source_path": "scores/室内乐/e2e3bbe0-7765-480c-96ea-1eb6d827ffd0.pdf",
+      "storage_key": "scores/e2/e2e3bbe0-7765-480c-96ea-1eb6d827ffd0.pdf",
+      "file_size": 14180392,
+      "sha256": "06c69972621428344c609f4bd8e32f53051584a199eb8c72466d804836fed8dd"
     },
     {
       "public_id": "e2e805cb-062d-5f13-b4fd-aef5d1c7e638",
