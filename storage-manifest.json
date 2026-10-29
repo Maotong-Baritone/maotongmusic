@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5053,
-  "unique_content_count": 5031,
+  "entry_count": 5063,
+  "unique_content_count": 5041,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5770556438,
+  "total_size": 6068967547,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -5728,6 +5728,13 @@
       "sha256": "3b54adf048e67207dcfc553b03b27e1b55e5ed7106fb5075f868c0d2db55c3b4"
     },
     {
+      "public_id": "291a46ad-8cd2-52a6-832a-1ff6eff8ff64",
+      "source_path": "scores/其他/291a46ad-8cd2-52a6-832a-1ff6eff8ff64.pdf",
+      "storage_key": "scores/29/291a46ad-8cd2-52a6-832a-1ff6eff8ff64.pdf",
+      "file_size": 27665109,
+      "sha256": "523f20655cb9f49cd52d696d25c89774cd7d688da336409894802db1fc6daefe"
+    },
+    {
       "public_id": "293313ec-9010-4778-82b7-e3f4bae837f3",
       "source_path": "scores/室内乐/293313ec-9010-4778-82b7-e3f4bae837f3.pdf",
       "storage_key": "scores/29/293313ec-9010-4778-82b7-e3f4bae837f3.pdf",
@@ -8584,6 +8591,13 @@
       "sha256": "d9e30d94975170c81c6bbefc4f44cc057f1b5ba6effd1d50502be3c20a4a040c"
     },
     {
+      "public_id": "3ee4588e-1c5c-5837-97ea-4f33709ac69c",
+      "source_path": "scores/歌剧总谱/3ee4588e-1c5c-5837-97ea-4f33709ac69c.pdf",
+      "storage_key": "scores/3e/3ee4588e-1c5c-5837-97ea-4f33709ac69c.pdf",
+      "file_size": 34586355,
+      "sha256": "83f084d308077ff4ad1cb919ea55b755982d9e1cedcdb1e9b5616930efed4583"
+    },
+    {
       "public_id": "3eff1628-b7dd-5818-a916-38762b86877f",
       "source_path": "scores/歌剧咏叹调/1766012400139_Se_allimpero_amici_Dei.pdf",
       "storage_key": "scores/3e/3eff1628-b7dd-5818-a916-38762b86877f.pdf",
@@ -10817,6 +10831,13 @@
       "sha256": "076c6112c4ad4e75f60d9de7f98c5fa70fb56cb70d1f656a8ca49ea4df808435"
     },
     {
+      "public_id": "4e5438c3-82e8-5a62-9048-e8b152fd7a0e",
+      "source_path": "scores/歌剧总谱/4e5438c3-82e8-5a62-9048-e8b152fd7a0e.pdf",
+      "storage_key": "scores/4e/4e5438c3-82e8-5a62-9048-e8b152fd7a0e.pdf",
+      "file_size": 63076075,
+      "sha256": "1e6f44ac1026d32b7bc268157e97884ca0cf87b6de98accc4249c92050ed9605"
+    },
+    {
       "public_id": "4e543c10-71d8-5ef1-bdde-58ef5f1a48a6",
       "source_path": "scores/歌剧咏叹调/1766007817648_Un_sol_raggio_di_speranza.pdf",
       "storage_key": "scores/4e/4e543c10-71d8-5ef1-bdde-58ef5f1a48a6.pdf",
@@ -11627,6 +11648,13 @@
       "storage_key": "scores/55/5581b350-9c4f-42d4-8e0c-3e148bcbeb82.pdf",
       "file_size": 5006265,
       "sha256": "00295bc946e13ef1cabc4962e7f80c6568e76e437826b3127e6ebfbd62b595a9"
+    },
+    {
+      "public_id": "5582e72d-5b25-51d3-8e66-4b9a0027d5d7",
+      "source_path": "scores/其他/5582e72d-5b25-51d3-8e66-4b9a0027d5d7.pdf",
+      "storage_key": "scores/55/5582e72d-5b25-51d3-8e66-4b9a0027d5d7.pdf",
+      "file_size": 6197561,
+      "sha256": "cd09b98c0566b216d7ae599705c631be25f56540cd19988ac13186d14d90d9a8"
     },
     {
       "public_id": "5588ee5a-f0f4-5afa-9822-549cfaf998f7",
@@ -22983,6 +23011,13 @@
       "sha256": "eeec0f698615ae0d61fb50d84819901637d336f6989ef039e1a9920dde60ed20"
     },
     {
+      "public_id": "a7d54070-1229-532c-a78d-d80bd0397918",
+      "source_path": "scores/歌剧总谱/a7d54070-1229-532c-a78d-d80bd0397918.pdf",
+      "storage_key": "scores/a7/a7d54070-1229-532c-a78d-d80bd0397918.pdf",
+      "file_size": 3353519,
+      "sha256": "a38ef1e5cf824c20e9b7b1c8349c7befd236344c799d7cc991a225c39ee6aa4c"
+    },
+    {
       "public_id": "a7eae0e8-ee63-5b2f-a0d5-b45aee5ce2f4",
       "source_path": "scores/声乐作品/艺术歌曲/1766372516722_Da_quel_sembiante_appresi_-_D688_Medium_Original.pdf",
       "storage_key": "scores/a7/a7eae0e8-ee63-5b2f-a0d5-b45aee5ce2f4.pdf",
@@ -26595,6 +26630,13 @@
       "sha256": "d373c82f5d998516b832390556664385bfc9ed4847eb4c395c3b6883fa8fab65"
     },
     {
+      "public_id": "c0ee003a-6ad9-539e-8c1e-256d13afa57c",
+      "source_path": "scores/歌剧总谱/c0ee003a-6ad9-539e-8c1e-256d13afa57c.pdf",
+      "storage_key": "scores/c0/c0ee003a-6ad9-539e-8c1e-256d13afa57c.pdf",
+      "file_size": 12946968,
+      "sha256": "748ca56f10281ab03a665c1bc70ac680002ab26637703d7ea09e5e68ac96efe9"
+    },
+    {
       "public_id": "c0f10770-22a5-4ab5-9f24-5f8415994667",
       "source_path": "scores/歌剧咏叹调/c0f10770-22a5-4ab5-9f24-5f8415994667.pdf",
       "storage_key": "scores/c0/c0f10770-22a5-4ab5-9f24-5f8415994667.pdf",
@@ -26621,6 +26663,13 @@
       "storage_key": "scores/c1/c114334d-d17c-523d-be46-cde62f982796.pdf",
       "file_size": 607967,
       "sha256": "33244f201acfda471e2d7f68ac520334f5e234210b2d5bb152425bc1c2360565"
+    },
+    {
+      "public_id": "c11c44ba-70fc-5333-b578-b009159c9c54",
+      "source_path": "scores/歌剧总谱/c11c44ba-70fc-5333-b578-b009159c9c54.pdf",
+      "storage_key": "scores/c1/c11c44ba-70fc-5333-b578-b009159c9c54.pdf",
+      "file_size": 25141935,
+      "sha256": "82e555875d2e3825cd202c78588d2c7912c9f95104de8efd4357e92911536188"
     },
     {
       "public_id": "c1459184-bab1-5d76-9fe2-1abc1a2b4ac6",
@@ -28142,6 +28191,13 @@
       "sha256": "3de04dba5caad766e3ee1f7557f8118cc1510e1c3cd61083a3a12b06612b37ed"
     },
     {
+      "public_id": "cb1c884d-af98-51a3-bd78-17c70ed5c22e",
+      "source_path": "scores/歌剧总谱/cb1c884d-af98-51a3-bd78-17c70ed5c22e.pdf",
+      "storage_key": "scores/cb/cb1c884d-af98-51a3-bd78-17c70ed5c22e.pdf",
+      "file_size": 25814597,
+      "sha256": "63cf7f3088a5f70b572e71c19e235f9badc941fa91fc7057eaae8da9b304687e"
+    },
+    {
       "public_id": "cb2b684a-99c4-5279-8a84-7e3c10930e68",
       "source_path": "scores/歌剧咏叹调/1766098572660_Rayons_dores_Dolce_zeffiro_il_seconda.pdf",
       "storage_key": "scores/cb/cb2b684a-99c4-5279-8a84-7e3c10930e68.pdf",
@@ -28490,6 +28546,13 @@
       "storage_key": "scores/cd/cd81c1e3-520c-4595-920d-94af438d855a.pdf",
       "file_size": 487897,
       "sha256": "ec0ae466c4c906544db5615722a59e9266bc0e0d09323231f4efb61e992bba19"
+    },
+    {
+      "public_id": "cd85ed01-1a1c-56b1-a7bb-9598b0cd536c",
+      "source_path": "scores/歌剧总谱/cd85ed01-1a1c-56b1-a7bb-9598b0cd536c.pdf",
+      "storage_key": "scores/cd/cd85ed01-1a1c-56b1-a7bb-9598b0cd536c.pdf",
+      "file_size": 35991542,
+      "sha256": "16b12edaafa4b850f41397dd5c0a76ce8c1afc94a2f836a0ef91e5988cae71f5"
     },
     {
       "public_id": "cda42476-9782-5ffb-9d13-2dac13e03a34",
@@ -30310,6 +30373,13 @@
       "storage_key": "scores/db/db45fa0b-87cb-4f5c-a659-51845ef67ddf.pdf",
       "file_size": 155445,
       "sha256": "caea9305a699f6a5234facfe0e035927ad655c2c91f5a63c8f3f946368dc1881"
+    },
+    {
+      "public_id": "db47dc6b-99f7-5d16-9a8f-60223bad2284",
+      "source_path": "scores/歌剧总谱/db47dc6b-99f7-5d16-9a8f-60223bad2284.pdf",
+      "storage_key": "scores/db/db47dc6b-99f7-5d16-9a8f-60223bad2284.pdf",
+      "file_size": 63637448,
+      "sha256": "ac3e8157ec247c25086134d0bdf66811d776a6c0752b7ed6788bb36c08b0e962"
     },
     {
       "public_id": "db4c4806-75a1-52d2-aa7e-5cd1a6d0787f",
