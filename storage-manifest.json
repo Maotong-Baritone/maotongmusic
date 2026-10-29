@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5093,
-  "unique_content_count": 5071,
+  "entry_count": 5103,
+  "unique_content_count": 5081,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 6963755365,
+  "total_size": 7320623494,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -378,6 +378,13 @@
       "storage_key": "scores/02/02b8e7df-4579-5f4e-8aaf-bd1c2fecfcdc.pdf",
       "file_size": 913081,
       "sha256": "4e67508006d4c002b4e406667663372f12780d834c95587b38a08bab2d2ca7d3"
+    },
+    {
+      "public_id": "02ba7b8a-5a03-571f-952f-527befab53a0",
+      "source_path": "scores/歌剧总谱/02ba7b8a-5a03-571f-952f-527befab53a0.pdf",
+      "storage_key": "scores/02/02ba7b8a-5a03-571f-952f-527befab53a0.pdf",
+      "file_size": 20452622,
+      "sha256": "ba64667947bcd32f33a25150a9d307091b342789f8daeb75c725c3da64b86f10"
     },
     {
       "public_id": "02c74224-a7a0-5c36-af5e-a5899b91d1a8",
@@ -4608,6 +4615,13 @@
       "sha256": "2bf9fa952be28baa23cba82d7dcfbf85ac5427fb5c2944e521cf76af622ac94e"
     },
     {
+      "public_id": "20a091c2-9c36-5ed3-b490-64bc3418ef10",
+      "source_path": "scores/歌剧总谱/20a091c2-9c36-5ed3-b490-64bc3418ef10.pdf",
+      "storage_key": "scores/20/20a091c2-9c36-5ed3-b490-64bc3418ef10.pdf",
+      "file_size": 21795883,
+      "sha256": "4654f414126baf3a1b80a8b7ee8148bebbd475a2b3566e6553e703413b2cfd26"
+    },
+    {
       "public_id": "20ad3a15-302b-4bb7-8a7b-a1959905b1b1",
       "source_path": "scores/歌剧咏叹调/20ad3a15-302b-4bb7-8a7b-a1959905b1b1.pdf",
       "storage_key": "scores/20/20ad3a15-302b-4bb7-8a7b-a1959905b1b1.pdf",
@@ -5117,6 +5131,13 @@
       "storage_key": "scores/25/251f34d8-ce94-55c4-9eee-6bcc318d101a.pdf",
       "file_size": 360911,
       "sha256": "ac080561c90404ee3b81e1bb8791a870f32d5089d2fd9a38088f1e11631a5df8"
+    },
+    {
+      "public_id": "252d9ef1-5531-5a00-82f3-5d0f5c4ef234",
+      "source_path": "scores/歌剧总谱/252d9ef1-5531-5a00-82f3-5d0f5c4ef234.pdf",
+      "storage_key": "scores/25/252d9ef1-5531-5a00-82f3-5d0f5c4ef234.pdf",
+      "file_size": 54217901,
+      "sha256": "11c27ffe690e99c18a132b209f63099c91d7e961cb980d220be5740685dfea30"
     },
     {
       "public_id": "252f470d-7c2e-5d95-bf07-81d190b6e684",
@@ -13764,6 +13785,13 @@
       "sha256": "50d7945a67aa038be89b8030854bcfa6394a709f85167590ec1d32704b247b21"
     },
     {
+      "public_id": "6405577f-26d3-5722-80b8-f6ed8cfdf772",
+      "source_path": "scores/歌剧总谱/6405577f-26d3-5722-80b8-f6ed8cfdf772.pdf",
+      "storage_key": "scores/64/6405577f-26d3-5722-80b8-f6ed8cfdf772.pdf",
+      "file_size": 22826926,
+      "sha256": "b5b0d5a33d5dd87f17595f1d9fb83da7e8f32a755d86d953e6416ae9cfb9567a"
+    },
+    {
       "public_id": "64153d2a-4acf-5b03-827e-5331bf6804a1",
       "source_path": "scores/歌剧咏叹调/1766007787769_Si_scherza_si_sempre_Amor_con_doppia_face.pdf",
       "storage_key": "scores/64/64153d2a-4acf-5b03-827e-5331bf6804a1.pdf",
@@ -15757,6 +15785,13 @@
       "storage_key": "scores/72/72249ce9-152e-4a53-9a8d-af0cc727b4b0.pdf",
       "file_size": 1795728,
       "sha256": "d09c697fa1d135c434b2acccdc1422f75a192a048723ffc76c92171e9f2397ff"
+    },
+    {
+      "public_id": "7230770b-6011-5b9f-925e-4734d66ed2e6",
+      "source_path": "scores/歌剧总谱/7230770b-6011-5b9f-925e-4734d66ed2e6.pdf",
+      "storage_key": "scores/72/7230770b-6011-5b9f-925e-4734d66ed2e6.pdf",
+      "file_size": 55002699,
+      "sha256": "6396d683f4edc7a0f46376d98a3975eef7ee2bd707be1dd114ab1e01598b4cfa"
     },
     {
       "public_id": "72362762-81b1-592a-9427-2c4491d0154d",
@@ -25692,6 +25727,13 @@
       "sha256": "2e9ea2c8c2f438ee5a481a5acc01a6b6ce0e1f730808c7998cd25ca36720b44a"
     },
     {
+      "public_id": "b900385b-0ce4-5d8d-b345-3185a7008c60",
+      "source_path": "scores/歌剧总谱/b900385b-0ce4-5d8d-b345-3185a7008c60.pdf",
+      "storage_key": "scores/b9/b900385b-0ce4-5d8d-b345-3185a7008c60.pdf",
+      "file_size": 54756852,
+      "sha256": "be0ce63f5f43146a418ae31266096b48337c94e1036a9f98d7e3cbf1be3e884f"
+    },
+    {
       "public_id": "b9061f80-a67f-52c3-be87-4d16e60e5d80",
       "source_path": "scores/歌剧咏叹调/1768703277_19_Pikovaya_dama_(The_Queen_of_Spades)_Otkuda_eti_slezy_zachem_one_Soprano.pdf",
       "storage_key": "scores/b9/b9061f80-a67f-52c3-be87-4d16e60e5d80.pdf",
@@ -26418,6 +26460,13 @@
       "storage_key": "scores/be/bedd0a71-acb9-52de-b8a4-3ff1d0d20605.pdf",
       "file_size": 445823,
       "sha256": "1130a9e881a3a4796210c918bdde4e46132024b357afdee7550eddc8835f794b"
+    },
+    {
+      "public_id": "bedf8b49-5792-5676-ae48-31d800f26a80",
+      "source_path": "scores/歌剧总谱/bedf8b49-5792-5676-ae48-31d800f26a80.pdf",
+      "storage_key": "scores/be/bedf8b49-5792-5676-ae48-31d800f26a80.pdf",
+      "file_size": 12805334,
+      "sha256": "afc649200d6635b41a6c066e95e6df33c19b8a35d94c6321f4b41619d62fe598"
     },
     {
       "public_id": "bee9323d-7264-433f-b368-3fd5e10eac88",
@@ -28583,6 +28632,13 @@
       "sha256": "e752762ec850a260a0c3dd4e551d9edc12efba426a5f9d54b6a7ad221e5a9943"
     },
     {
+      "public_id": "cc967c90-46e3-5d9e-bc27-fce076b7229b",
+      "source_path": "scores/歌剧总谱/cc967c90-46e3-5d9e-bc27-fce076b7229b.pdf",
+      "storage_key": "scores/cc/cc967c90-46e3-5d9e-bc27-fce076b7229b.pdf",
+      "file_size": 38803456,
+      "sha256": "306bc4f0b03af489582dc5fd3213f27aee4f14c7d50dd36d4f34f73744abf90a"
+    },
+    {
       "public_id": "cc9f6552-766d-53da-81e9-db16094ffce7",
       "source_path": "scores/歌剧咏叹调/1766097995711_Lhymen_lui_donne_une_couronne.pdf",
       "storage_key": "scores/cc/cc9f6552-766d-53da-81e9-db16094ffce7.pdf",
@@ -29514,6 +29570,13 @@
       "sha256": "ce7694e0604409b3b992a30aa4847c07287b78332e2bb6e1371732eedd063548"
     },
     {
+      "public_id": "d3a44f85-0ccc-592e-a618-66b2e15a0a73",
+      "source_path": "scores/歌剧总谱/d3a44f85-0ccc-592e-a618-66b2e15a0a73.pdf",
+      "storage_key": "scores/d3/d3a44f85-0ccc-592e-a618-66b2e15a0a73.pdf",
+      "file_size": 60366419,
+      "sha256": "5ebf2e92c280254e080cda0abe55d19a20c918fbbd73d97489e38bba2ffa23e6"
+    },
+    {
       "public_id": "d3af7f55-68e7-550c-bb78-61d874171b21",
       "source_path": "scores/歌剧咏叹调/1766007808482_Tutta_rea_la_vita_umana.pdf",
       "storage_key": "scores/d3/d3af7f55-68e7-550c-bb78-61d874171b21.pdf",
@@ -30366,6 +30429,13 @@
       "storage_key": "scores/d9/d9cd88ae-bc8e-49b9-9a79-99d628445700.pdf",
       "file_size": 2250504,
       "sha256": "53156b2fddf5f9f7ba9b64498bb433eecb29e0596fbc60f282296a1b0e8c8c2b"
+    },
+    {
+      "public_id": "d9e4c497-29cf-5d6b-abb4-e6c6af4d357a",
+      "source_path": "scores/歌剧总谱/d9e4c497-29cf-5d6b-abb4-e6c6af4d357a.pdf",
+      "storage_key": "scores/d9/d9e4c497-29cf-5d6b-abb4-e6c6af4d357a.pdf",
+      "file_size": 15840037,
+      "sha256": "15198c999a5c072f01ff88941d697544f3cfeea5df93ebf3d99d2fb986743838"
     },
     {
       "public_id": "d9e95fb1-a065-58dd-86af-a7ba9bf1b914",

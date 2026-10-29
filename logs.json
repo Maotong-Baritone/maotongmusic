@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-29 16:58",
+        "type": "add",
+        "msg": "新增本地总谱与舞台乐谱10份（3363页），含Don Giovanni, KV 527（声乐钢琴谱，Bärenreiter意德双语版）、Don Giovanni, KV 527（声乐钢琴谱，Schirmer意英双语版）、Così fan tutte, KV 588（声乐钢琴谱，Bärenreiter版）、Così fan tutte, KV 588（声乐钢琴谱，Kalmus意英双语版）等；已区分实际编制、语言及文件范围，按原PDF收录。",
+        "batch_id": "local-full-scores-20261029-batch05",
+        "count": 10
+    },
+    {
         "date": "2026-10-29 16:55",
         "type": "add",
         "msg": "新增本地总谱与舞台乐谱10份（2662页），含L’Africaine（第三至第五幕，声乐钢琴谱）、Ariadne auf Naxos, Op.60（声乐钢琴谱，新编版）、Tristan und Isolde（声乐钢琴谱，Bülow版）、Tristan und Isolde：第一幕（声乐钢琴谱，Mottl版）等；已区分实际编制、语言及文件范围，按原PDF收录。",
