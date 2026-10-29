@@ -65,11 +65,15 @@ python tools/build_pages.py
 ```
 
 检查通过后，将生成的 `dist/` 与源文件一起提交并推送到 Git。
+GitHub Pages 使用 `.github/workflows/deploy-pages.yml`，发布来源设为 **GitHub Actions**。
+该流程只检出 `dist/` 并上传这个目录；提交 `dist/` 或发布流程的变更后自动部署，
+也可在 Actions 中手动运行。发布前会检查必需资源、公开路径白名单、PDF 排除及文件大小。
 Cloudflare Pages 当前未配置构建命令，直接发布仓库中的 `dist/`；
 发布目录由 `wrangler.toml` 固定为 `dist`。以后每次修改公开目录，
 都要先运行 `python tools/build_pages.py` 并提交更新后的 `dist/`。
 该目录只包含公开网页资源，PDF 继续由 `scores.maotong.me` 对应的 R2 存储桶提供，
-不会上传到 Pages，也不会触发 Pages 的 25 MiB 单文件限制。
+不会进入两边的网页部署包，也不会触发 Cloudflare Pages 的 25 MiB 单文件限制。
+`scores/`、后台代码及备份继续保留在本地或仓库中，不作为网页部署资源。
 
 ## 对象存储迁移准备
 

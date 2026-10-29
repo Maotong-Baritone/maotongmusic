@@ -1,0 +1,80 @@
+name: Deploy public website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out public website only
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: /dist/
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+
+      - name: Validate public files
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('dist')
+          required = {'index.html', 'contact.html', 'resources.html', 'data.json',
+                      'logs.json', 'site-config.json', 'css/style.css', 'js/app.js'}
+          missing = [name for name in sorted(required) if not (root / name).is_file()]
+          if missing:
+              raise SystemExit(f'Missing public files: {missing}')
+          allowed_files = {'index.html', 'contact.html', 'resources.html',
+                           'data.json', 'logs.json', 'site-config.json'}
+          allowed_directories = {'css', 'js', 'img', 'lyrics'}
+          paths = list(root.rglob('*'))
+          for path in paths:
+              relative = path.relative_to(root)
+              if path.is_symlink():
+                  raise SystemExit(f'Symbolic link in public artifact: {relative}')
+              if path.parent == root:
+                  allowed = allowed_directories if path.is_dir() else allowed_files
+                  if path.name not in allowed:
+                      raise SystemExit(f'Unexpected public path: {relative}')
+              if path.is_file() and (path.suffix.lower() == '.pdf' or path.stat().st_size > 25 * 1024**2):
+                  raise SystemExit(f'PDF or oversized public file: {relative}')
+          files = [path for path in paths if path.is_file()]
+          total = sum(path.stat().st_size for path in files)
+          if total > 1_000_000_000:
+              raise SystemExit('Public artifact exceeds the supported Pages site size')
+          print(json.dumps({'directory': 'dist', 'files': len(files), 'pdfs': 0,
+                            'total_bytes': total, 'largest_file_bytes': max(path.stat().st_size for path in files)}))
+          PY
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload public website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
