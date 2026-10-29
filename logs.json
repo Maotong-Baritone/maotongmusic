@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-28 21:48",
+        "type": "add",
+        "msg": "新增勃拉姆斯《Nänie, Op. 82》原版器乐分谱12份（39页），含木管、圆号、长号、定音鼓、竖琴及弦乐；已逐份核对声部范围与PDF定位。",
+        "batch_id": "brahms-nanie-op82-orchestral-parts-twelve-20261028",
+        "count": 12
+    },
+    {
         "date": "2026-10-28 10:53",
         "type": "add",
         "msg": "新增勃拉姆斯《Fest- und Gedenksprüche, Op. 109》完整总谱1份（19页）；含三首德语双混声合唱，附钢琴仅供排练，已补充实际PDF目录。",
