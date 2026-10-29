@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-29 16:55",
+        "type": "add",
+        "msg": "新增本地总谱与舞台乐谱10份（2662页），含L’Africaine（第三至第五幕，声乐钢琴谱）、Ariadne auf Naxos, Op.60（声乐钢琴谱，新编版）、Tristan und Isolde（声乐钢琴谱，Bülow版）、Tristan und Isolde：第一幕（声乐钢琴谱，Mottl版）等；已区分实际编制、语言及文件范围，按原PDF收录。",
+        "batch_id": "local-full-scores-20261029-batch04",
+        "count": 10
+    },
+    {
         "date": "2026-10-29 16:52",
         "type": "add",
         "msg": "新增本地总谱与舞台乐谱10份（2819页），含Attila（声乐钢琴谱，Lumley署名版）、Hamlet（声乐钢琴谱，法语版）、Amleto（声乐钢琴谱，意大利语版）、伤逝（校园删节版，声乐钢琴谱）等；已区分实际编制、语言及文件范围，按原PDF收录。",
