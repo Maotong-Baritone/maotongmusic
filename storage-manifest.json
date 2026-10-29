@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5103,
-  "unique_content_count": 5081,
+  "entry_count": 5109,
+  "unique_content_count": 5087,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 7320623494,
+  "total_size": 7390113383,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1246,6 +1246,13 @@
       "storage_key": "scores/09/090f127d-b79d-54ea-8fd2-8901adb80f6e.pdf",
       "file_size": 234380,
       "sha256": "04445ad3a00066076629687f9ded0074b4396c6ed7a879c7b71cfc13c86361a5"
+    },
+    {
+      "public_id": "091179aa-17d7-5a3e-b43a-499c78c860a0",
+      "source_path": "scores/室内乐/091179aa-17d7-5a3e-b43a-499c78c860a0.pdf",
+      "storage_key": "scores/09/091179aa-17d7-5a3e-b43a-499c78c860a0.pdf",
+      "file_size": 116529,
+      "sha256": "a01edd433420fd69d25cdae25f5ae25360ae623419bc995e7834c7944cb1390c"
     },
     {
       "public_id": "091b6380-bc49-401b-88dc-54a38ce51a03",
@@ -12686,6 +12693,13 @@
       "sha256": "9c1582d41ae63ea90def117dba19c5e85a0a822fd4af7feaac7c57561598db82"
     },
     {
+      "public_id": "5c38eaa3-6856-58d2-8bea-77ad6d86847b",
+      "source_path": "scores/音乐剧选段/5c38eaa3-6856-58d2-8bea-77ad6d86847b.pdf",
+      "storage_key": "scores/5c/5c38eaa3-6856-58d2-8bea-77ad6d86847b.pdf",
+      "file_size": 16938991,
+      "sha256": "3a8821a639694d403460d2b44758c8111d3cb4c2caa60d5e8584707206bb8048"
+    },
+    {
       "public_id": "5c3f11b1-2ade-4339-9237-c65c9080f7cb",
       "source_path": "scores/艺术歌曲/5c3f11b1-2ade-4339-9237-c65c9080f7cb.pdf",
       "storage_key": "scores/5c/5c3f11b1-2ade-4339-9237-c65c9080f7cb.pdf",
@@ -18685,6 +18699,13 @@
       "sha256": "847e9fe6b0b35e3a2a87adc72a3c019711567086993b9b80f7a31c8c0f600c11"
     },
     {
+      "public_id": "88579fd7-bd55-52aa-938c-fcd83a97cb7f",
+      "source_path": "scores/音乐剧选段/88579fd7-bd55-52aa-938c-fcd83a97cb7f.pdf",
+      "storage_key": "scores/88/88579fd7-bd55-52aa-938c-fcd83a97cb7f.pdf",
+      "file_size": 12629830,
+      "sha256": "0de63f6ee39d0e70a8ae681a4c8f81149bd072ec89c6cfa5fffb35e1b457ea28"
+    },
+    {
       "public_id": "885ce110-094b-5ba7-8a6e-f9742177ce29",
       "source_path": "scores/歌剧咏叹调/1766007784746_Affanni_del_pensier_un_sol_momento.pdf",
       "storage_key": "scores/88/885ce110-094b-5ba7-8a6e-f9742177ce29.pdf",
@@ -19964,6 +19985,13 @@
       "storage_key": "scores/90/90fb376d-f913-5a5e-b52d-0e6726f29eb1.pdf",
       "file_size": 445539,
       "sha256": "8423a064f82c8977e40278ecf3c4c84f810811ad8c04df76c41e976af8daf45b"
+    },
+    {
+      "public_id": "91042d09-b3ad-5928-a2ef-c6a3a2919ac7",
+      "source_path": "scores/音乐剧选段/91042d09-b3ad-5928-a2ef-c6a3a2919ac7.pdf",
+      "storage_key": "scores/91/91042d09-b3ad-5928-a2ef-c6a3a2919ac7.pdf",
+      "file_size": 6408665,
+      "sha256": "87acf493694fada54e832f7287f4ef808b347f049f89495efa88e0fa4dacdf47"
     },
     {
       "public_id": "910b9973-2d3b-55c2-9159-0c9d3e3a4994",
@@ -23674,6 +23702,13 @@
       "storage_key": "scores/ab/ab3dbb6f-b39a-5f83-a2b5-022bfbd5046f.pdf",
       "file_size": 878439,
       "sha256": "855d8c61b52f7bceee6a7ab2654b5c9da11caff38ed76ad7de90d5b7be0b8d60"
+    },
+    {
+      "public_id": "ab3e2ee7-a47c-5d1b-936e-aa8e32473314",
+      "source_path": "scores/歌剧总谱/ab3e2ee7-a47c-5d1b-936e-aa8e32473314.pdf",
+      "storage_key": "scores/ab/ab3e2ee7-a47c-5d1b-936e-aa8e32473314.pdf",
+      "file_size": 15255534,
+      "sha256": "04b84c6761345e657f636aa0e51dcde7b9e1b981ac7011ccfd8aec530ab33dd2"
     },
     {
       "public_id": "ab51596d-f343-5f27-b660-3fe98b6b1d24",
@@ -33607,6 +33642,13 @@
       "storage_key": "scores/ef/efd7e57e-3669-5c88-8f3a-0641be267f6f.pdf",
       "file_size": 25482778,
       "sha256": "fb353dc6debc9d56939dab91a1ede0dca86eaeefc86bd13e003b7e1da6c8112d"
+    },
+    {
+      "public_id": "f00f875b-2110-5d3d-bf3b-ae1fbf3e9466",
+      "source_path": "scores/歌剧总谱/f00f875b-2110-5d3d-bf3b-ae1fbf3e9466.pdf",
+      "storage_key": "scores/f0/f00f875b-2110-5d3d-bf3b-ae1fbf3e9466.pdf",
+      "file_size": 18140340,
+      "sha256": "2f0ef6b28b8bfdc25e858343b95d4d77ab32cc76f3ff539b93f43e7977e7ce65"
     },
     {
       "public_id": "f01e6b18-dac9-5a5a-bd65-ee026588ab62",
