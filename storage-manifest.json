@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5027,
-  "unique_content_count": 5005,
+  "entry_count": 5053,
+  "unique_content_count": 5031,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 5720018040,
+  "total_size": 5770556438,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2499,6 +2499,13 @@
       "storage_key": "scores/11/1191d0c4-cce2-422e-9312-80d81c21cfd6.pdf",
       "file_size": 494493,
       "sha256": "b4cb8e61512e62feae2ac5ebb974e1f751b9e2d0b70c222085464a1c4eecd23b"
+    },
+    {
+      "public_id": "11a0f80b-86d7-5f37-866e-3ac1c495389b",
+      "source_path": "scores/歌剧总谱/11a0f80b-86d7-5f37-866e-3ac1c495389b.pdf",
+      "storage_key": "scores/11/11a0f80b-86d7-5f37-866e-3ac1c495389b.pdf",
+      "file_size": 11566787,
+      "sha256": "d0ecdca4028b019aa1a20c3e82a402ed381eb8428b7ba14e5a5ae5fa2bb574d1"
     },
     {
       "public_id": "11a97cc9-93bc-5bff-ac2c-a80372c2102f",
@@ -5532,6 +5539,13 @@
       "sha256": "39a4f313dd359213d4c90bef7a69500904bec7bb57ca8acdaaacc9d969c465f4"
     },
     {
+      "public_id": "28169709-d7c4-5144-84be-44a204186ab0",
+      "source_path": "scores/音乐剧选段/28169709-d7c4-5144-84be-44a204186ab0.pdf",
+      "storage_key": "scores/28/28169709-d7c4-5144-84be-44a204186ab0.pdf",
+      "file_size": 7751187,
+      "sha256": "9e093d4abb0b4c4e1a3f207afe04e44761848665b6b7d2932d30dcbc7a18e656"
+    },
+    {
       "public_id": "2823a78a-6a9f-5c26-90dd-97c857860530",
       "source_path": "scores/歌剧咏叹调/1766007778944_Spera_che_tra_le_care_gioje_di_bella_pace.pdf",
       "storage_key": "scores/28/2823a78a-6a9f-5c26-90dd-97c857860530.pdf",
@@ -5782,6 +5796,13 @@
       "storage_key": "scores/29/29c99205-2633-5981-a8b8-a6c9b0dd4f56.pdf",
       "file_size": 1257069,
       "sha256": "90cf97ebe77ab6417d74a8efd77ee961955b8b8b27a1750f3bcf1bcb51b4178a"
+    },
+    {
+      "public_id": "29d5d87e-2c42-5ea4-9301-254a66fdc49c",
+      "source_path": "scores/音乐剧选段/29d5d87e-2c42-5ea4-9301-254a66fdc49c.pdf",
+      "storage_key": "scores/29/29d5d87e-2c42-5ea4-9301-254a66fdc49c.pdf",
+      "file_size": 2110422,
+      "sha256": "56a5902b671e7b97ed46c33b1e51759f02435aa3e4a7247bfc35ab3c56376164"
     },
     {
       "public_id": "29d717be-e314-45ee-9be2-cdfab5ac3887",
@@ -6230,6 +6251,13 @@
       "storage_key": "scores/2d/2da4812e-afbd-553c-8abc-2b6cc7e8b4f2.pdf",
       "file_size": 436283,
       "sha256": "79fc459255fd06022774b3837fed94ab166bae0bf28792700bf4011635ef8ccd"
+    },
+    {
+      "public_id": "2dba62b0-670c-5342-ae94-f2dd92c47a29",
+      "source_path": "scores/音乐剧选段/2dba62b0-670c-5342-ae94-f2dd92c47a29.pdf",
+      "storage_key": "scores/2d/2dba62b0-670c-5342-ae94-f2dd92c47a29.pdf",
+      "file_size": 213093,
+      "sha256": "80eec12d9eb3dca2c7759e9553f6054b7e09a4f483735c0065d91fc1a685daeb"
     },
     {
       "public_id": "2dc7623c-67e4-419d-8eaa-9a52e746dd07",
@@ -7303,6 +7331,13 @@
       "sha256": "90ffe0147fe900bd2df20f54f091159e92adcecea8413a0097a863e4c1056617"
     },
     {
+      "public_id": "3663039c-866c-582f-b223-b873bca5c786",
+      "source_path": "scores/音乐剧选段/3663039c-866c-582f-b223-b873bca5c786.pdf",
+      "storage_key": "scores/36/3663039c-866c-582f-b223-b873bca5c786.pdf",
+      "file_size": 220130,
+      "sha256": "ea8cd1b473d7152ee8b53c4b38c759c6828bdd9fb839d34aefad0c7063b51998"
+    },
+    {
       "public_id": "3664f3e3-b90b-53cb-bb94-b1230ac0ebe9",
       "source_path": "scores/歌剧咏叹调/1766007747810_Sento_il_cor_per_ogni_lato_circondato_di_spavento.pdf",
       "storage_key": "scores/36/3664f3e3-b90b-53cb-bb94-b1230ac0ebe9.pdf",
@@ -8087,6 +8122,13 @@
       "sha256": "4695f651832b2c2c05da4151f928b1f7ac874462e3afc90b142178db4708af97"
     },
     {
+      "public_id": "3bc94f1c-a8ed-5878-a386-5e3d6f11474f",
+      "source_path": "scores/音乐剧选段/3bc94f1c-a8ed-5878-a386-5e3d6f11474f.pdf",
+      "storage_key": "scores/3b/3bc94f1c-a8ed-5878-a386-5e3d6f11474f.pdf",
+      "file_size": 191805,
+      "sha256": "39ae7fc471b7786e92fd8e5bb33c61dbc50f087c5d9852011726bf16ddbf0376"
+    },
+    {
       "public_id": "3bcbff8a-c349-54a3-a1e4-1d24887d9b8f",
       "source_path": "scores/声乐作品/艺术歌曲/1766372560247_Die_schone_Mullerin_-_12._Pause_-_D795_High_Original.pdf",
       "storage_key": "scores/3b/3bcbff8a-c349-54a3-a1e4-1d24887d9b8f.pdf",
@@ -8386,6 +8428,13 @@
       "storage_key": "scores/3d/3dd6272f-b32a-4cff-8beb-847eb50cd07c.pdf",
       "file_size": 374543,
       "sha256": "a1ff0271c9160303b4a462f1d7eaec9c69fce9e4213fc84cc8d7fde31e1f9025"
+    },
+    {
+      "public_id": "3dd94d55-9e3f-5aee-9528-ca610b7bbc7c",
+      "source_path": "scores/音乐剧选段/3dd94d55-9e3f-5aee-9528-ca610b7bbc7c.pdf",
+      "storage_key": "scores/3d/3dd94d55-9e3f-5aee-9528-ca610b7bbc7c.pdf",
+      "file_size": 2181143,
+      "sha256": "487c69f4979afb3fc036987b2356802441c2190fbd6227f848a283fcf3730a3d"
     },
     {
       "public_id": "3ddc168d-2ef8-5288-bced-1e68c5960c21",
@@ -9669,6 +9718,13 @@
       "sha256": "ff22a930514f197adba70e2e54b3b7bbb4cf85a6fafc540d36ebbee93ec4750c"
     },
     {
+      "public_id": "46dcc432-8450-5442-82a2-a05519f040f1",
+      "source_path": "scores/音乐剧选段/46dcc432-8450-5442-82a2-a05519f040f1.pdf",
+      "storage_key": "scores/46/46dcc432-8450-5442-82a2-a05519f040f1.pdf",
+      "file_size": 248165,
+      "sha256": "baa704084b0e38ed02796d6ee0cb5fde437aa19e55b3dbbab0496edf33ad159b"
+    },
+    {
       "public_id": "46edd580-d494-431a-a7c8-c037b42fa111",
       "source_path": "scores/合唱作品/46edd580-d494-431a-a7c8-c037b42fa111.pdf",
       "storage_key": "scores/46/46edd580-d494-431a-a7c8-c037b42fa111.pdf",
@@ -10255,6 +10311,13 @@
       "storage_key": "scores/4a/4aae2e8e-b523-4153-ab6b-d85ca3bc48dc.pdf",
       "file_size": 761834,
       "sha256": "1ee67cdda4eff582a93806ecea672d9693966e159eb9b693a29eb2cf4c99146f"
+    },
+    {
+      "public_id": "4ab70a28-572c-57d1-97e6-a651656bcbe3",
+      "source_path": "scores/音乐剧选段/4ab70a28-572c-57d1-97e6-a651656bcbe3.pdf",
+      "storage_key": "scores/4a/4ab70a28-572c-57d1-97e6-a651656bcbe3.pdf",
+      "file_size": 4005025,
+      "sha256": "cc0d4c66a055ce44fd2dbee426b3351ad52db580ec3ec1110b9b7986e3ed37e5"
     },
     {
       "public_id": "4ab9e7f5-ecba-4e19-bb51-9fa71ca60dbb",
@@ -11139,6 +11202,13 @@
       "sha256": "5b47bc02b51fe7df5cb917bc3913f74e5681188352eba7059946e7695b9d393a"
     },
     {
+      "public_id": "52066590-1f29-5782-afdc-9348ddfa500b",
+      "source_path": "scores/音乐剧选段/52066590-1f29-5782-afdc-9348ddfa500b.pdf",
+      "storage_key": "scores/52/52066590-1f29-5782-afdc-9348ddfa500b.pdf",
+      "file_size": 5200205,
+      "sha256": "49aeb05883ec5210969242b30e014bb4bb87b370e732c9af7bd5ef0356d18843"
+    },
+    {
       "public_id": "5224d087-3dad-4c13-8c05-c97592b32332",
       "source_path": "scores/歌剧咏叹调/5224d087-3dad-4c13-8c05-c97592b32332.pdf",
       "storage_key": "scores/52/5224d087-3dad-4c13-8c05-c97592b32332.pdf",
@@ -11172,6 +11242,13 @@
       "storage_key": "scores/52/528ce894-c99a-51e4-89f4-57d00c7f022a.pdf",
       "file_size": 438534,
       "sha256": "52c5242f7b8b74772300ebaa63b648b8a1455d694d66fe969aad7bb7f3c4280c"
+    },
+    {
+      "public_id": "529cc2b0-dd4c-514c-bc1d-cae1f14e34b4",
+      "source_path": "scores/音乐剧选段/529cc2b0-dd4c-514c-bc1d-cae1f14e34b4.pdf",
+      "storage_key": "scores/52/529cc2b0-dd4c-514c-bc1d-cae1f14e34b4.pdf",
+      "file_size": 1511777,
+      "sha256": "423474a82373a681a7b7399ffc7f500f0198ed10c05fc0ce0b2f1521d3abd40b"
     },
     {
       "public_id": "52a22bd5-1829-43ee-b214-c4886431f8e7",
@@ -11559,6 +11636,13 @@
       "sha256": "8115129c93d357afed05be13456e22efa14e8b97ef95b80c4f31bd293566da78"
     },
     {
+      "public_id": "558a07d7-7d81-5b81-ae24-b5e66c439b5d",
+      "source_path": "scores/音乐剧选段/558a07d7-7d81-5b81-ae24-b5e66c439b5d.pdf",
+      "storage_key": "scores/55/558a07d7-7d81-5b81-ae24-b5e66c439b5d.pdf",
+      "file_size": 88527,
+      "sha256": "f9712992cd22482935521b93ef925248e553f9bc2223ef69a0194d64f50528c0"
+    },
+    {
       "public_id": "55a282b0-cbb6-4de2-b6cb-07692e7e5166",
       "source_path": "scores/歌剧咏叹调/55a282b0-cbb6-4de2-b6cb-07692e7e5166.pdf",
       "storage_key": "scores/55/55a282b0-cbb6-4de2-b6cb-07692e7e5166.pdf",
@@ -11683,6 +11767,13 @@
       "storage_key": "scores/57/5715f5f5-d72a-42a9-a5a3-74b275c4bc90.pdf",
       "file_size": 168223,
       "sha256": "cfa6d2e2f1ad65cea3ca746b3d53592889772656e0ae988afe404d1bc1e9702f"
+    },
+    {
+      "public_id": "5739406c-84a9-523a-a99f-bc5facf46353",
+      "source_path": "scores/音乐剧选段/5739406c-84a9-523a-a99f-bc5facf46353.pdf",
+      "storage_key": "scores/57/5739406c-84a9-523a-a99f-bc5facf46353.pdf",
+      "file_size": 6469145,
+      "sha256": "2aaee7c8085caf81f19c0418a1782bd6afe33d4b0f209e5d24408c3c4bfa6987"
     },
     {
       "public_id": "573bd65d-6941-58c2-812a-487f1cec8770",
@@ -14163,6 +14254,13 @@
       "sha256": "59702c00158955d940cb683b54a13ff78ef1dd2635db40b8af370398d0e1338c"
     },
     {
+      "public_id": "6827e919-d1a7-5629-b9ef-70dafd19ec74",
+      "source_path": "scores/音乐剧选段/6827e919-d1a7-5629-b9ef-70dafd19ec74.pdf",
+      "storage_key": "scores/68/6827e919-d1a7-5629-b9ef-70dafd19ec74.pdf",
+      "file_size": 1122131,
+      "sha256": "26c8c416d19155149eee6d26200b0856a62ce75689563e562457a65f3cfba5f3"
+    },
+    {
       "public_id": "682e19d8-8445-5a74-917c-2a2532217ad0",
       "source_path": "scores/歌剧咏叹调/1766012408784_E_Susanna_non_vien_Dove_sono_I_bei_momenti.pdf",
       "storage_key": "scores/68/682e19d8-8445-5a74-917c-2a2532217ad0.pdf",
@@ -16009,6 +16107,13 @@
       "storage_key": "scores/76/76221b7f-179a-5897-8ab6-41c1711604f2.pdf",
       "file_size": 2755313,
       "sha256": "85bebb661b2717a80f39460fefe3c1ae82f2aa6ab15bda1aa3a942d087232cbb"
+    },
+    {
+      "public_id": "764d9025-2bed-5df3-8471-f7898371b5a9",
+      "source_path": "scores/音乐剧选段/764d9025-2bed-5df3-8471-f7898371b5a9.pdf",
+      "storage_key": "scores/76/764d9025-2bed-5df3-8471-f7898371b5a9.pdf",
+      "file_size": 262730,
+      "sha256": "4527ba680368306b0de292bcabd8db685f0236b565d9f85c355f58ab0a51840c"
     },
     {
       "public_id": "7666c6fc-351b-59cb-b329-05902ab72abb",
@@ -19791,6 +19896,13 @@
       "sha256": "51d248bae81b2fcc7226bf08656991f82cee3245b1a9aaf2b9437bd20dc8b780"
     },
     {
+      "public_id": "91d40ada-1607-51d4-bdbd-8db6a1c42c19",
+      "source_path": "scores/音乐剧选段/91d40ada-1607-51d4-bdbd-8db6a1c42c19.pdf",
+      "storage_key": "scores/91/91d40ada-1607-51d4-bdbd-8db6a1c42c19.pdf",
+      "file_size": 576206,
+      "sha256": "4fb4330a8a0d726a5f01b6c2d9af3f87917d23348c0deb84e621bb54b779f6c5"
+    },
+    {
       "public_id": "91d5ba05-78ae-5c66-b89e-a3ae97d3e4f5",
       "source_path": "scores/宗教声乐作品/1765921231.pdf",
       "storage_key": "scores/91/91d5ba05-78ae-5c66-b89e-a3ae97d3e4f5.pdf",
@@ -20160,6 +20272,13 @@
       "storage_key": "scores/94/94504eba-9ecd-4480-870b-a1bad5a0beb7.pdf",
       "file_size": 1006180,
       "sha256": "585f5d64cc5c6f2412cc45863a335d76c43c0c4d70980569570fcae24ee35da0"
+    },
+    {
+      "public_id": "945b2b81-632e-5675-8c28-c08f4ff2f6e1",
+      "source_path": "scores/音乐剧选段/945b2b81-632e-5675-8c28-c08f4ff2f6e1.pdf",
+      "storage_key": "scores/94/945b2b81-632e-5675-8c28-c08f4ff2f6e1.pdf",
+      "file_size": 237542,
+      "sha256": "5a8dbc239cd47195177330e7c437141d790aab8e540cc29abab15a64e3ce247c"
     },
     {
       "public_id": "945b52df-06f5-5951-9964-bfaa9a6a3abf",
@@ -22080,6 +22199,13 @@
       "sha256": "150efbf970b4d4196dc20df1e8b3008e73f37ce9db79e027bc8c9bc790a31bc7"
     },
     {
+      "public_id": "a21af299-57cd-52be-a8e5-39b4e7f1e560",
+      "source_path": "scores/音乐剧选段/a21af299-57cd-52be-a8e5-39b4e7f1e560.pdf",
+      "storage_key": "scores/a2/a21af299-57cd-52be-a8e5-39b4e7f1e560.pdf",
+      "file_size": 269360,
+      "sha256": "9b02dc270badd430370139a3ea40a1feb480d3cc8e64382e26d05cb67ffdd6dc"
+    },
+    {
       "public_id": "a2231159-3add-42b9-9ccb-7d6a874692e5",
       "source_path": "scores/合唱作品/a2231159-3add-42b9-9ccb-7d6a874692e5.pdf",
       "storage_key": "scores/a2/a2231159-3add-42b9-9ccb-7d6a874692e5.pdf",
@@ -23746,6 +23872,20 @@
       "sha256": "17ed43cdd21e9e815f1d315b6b95f6d7f951fc3bf298251a898be4952b0f296d"
     },
     {
+      "public_id": "adb6f8ae-9923-5758-9e0f-15eaacf13f11",
+      "source_path": "scores/音乐剧选段/adb6f8ae-9923-5758-9e0f-15eaacf13f11.pdf",
+      "storage_key": "scores/ad/adb6f8ae-9923-5758-9e0f-15eaacf13f11.pdf",
+      "file_size": 561155,
+      "sha256": "e6432863b7e47e28daf209092c7314b0ee1cb4b27e1ad76bae9fb9788ec6e324"
+    },
+    {
+      "public_id": "adbbda3e-fb56-5d29-9830-250ebb73a708",
+      "source_path": "scores/音乐剧选段/adbbda3e-fb56-5d29-9830-250ebb73a708.pdf",
+      "storage_key": "scores/ad/adbbda3e-fb56-5d29-9830-250ebb73a708.pdf",
+      "file_size": 92404,
+      "sha256": "4c20548a9ec02a71eb0db867da5be5d0a4ee6a83106237e4923cc3e4d0f46b52"
+    },
+    {
       "public_id": "add64356-42e7-5bd9-94b9-d2aa3e6a4785",
       "source_path": "scores/歌剧咏叹调/1766098834558_Io_sentu_tremar_la_mano.pdf",
       "storage_key": "scores/ad/add64356-42e7-5bd9-94b9-d2aa3e6a4785.pdf",
@@ -24192,6 +24332,13 @@
       "storage_key": "scores/b0/b0c5cdfb-7798-56d9-b33e-5b728b967c58.pdf",
       "file_size": 477396,
       "sha256": "b79943058597129345d483e23d3d9cae137be25ad23ff02f216718c38b5f572e"
+    },
+    {
+      "public_id": "b0c660aa-fd0a-5851-b71f-474b91a33b00",
+      "source_path": "scores/音乐剧选段/b0c660aa-fd0a-5851-b71f-474b91a33b00.pdf",
+      "storage_key": "scores/b0/b0c660aa-fd0a-5851-b71f-474b91a33b00.pdf",
+      "file_size": 202868,
+      "sha256": "e04a687dc1497f24dbec00efe8f09cbee57c2269cf718b4539b6ee1909c5fb33"
     },
     {
       "public_id": "b0debfb0-77e9-50da-993e-74b9deb9cbc3",
@@ -28086,6 +28233,13 @@
       "sha256": "f3fa7d96fcb156a6c2cffcdf1af019e329ded3c6aef1e85668e22fc860ea4efc"
     },
     {
+      "public_id": "cb99ad4f-81cb-5451-b468-04061a9275b9",
+      "source_path": "scores/音乐剧选段/cb99ad4f-81cb-5451-b468-04061a9275b9.pdf",
+      "storage_key": "scores/cb/cb99ad4f-81cb-5451-b468-04061a9275b9.pdf",
+      "file_size": 1401570,
+      "sha256": "8d5ce6efdef76e3388762b358c89c43a523e714f710bbe10e2e6acad6d289a55"
+    },
+    {
       "public_id": "cbb2bb4d-1bbc-5465-bb0d-9a0019d36801",
       "source_path": "scores/歌剧咏叹调/1766093538701_Chella_mi_creda_libero.pdf",
       "storage_key": "scores/cb/cbb2bb4d-1bbc-5465-bb0d-9a0019d36801.pdf",
@@ -28560,6 +28714,13 @@
       "storage_key": "scores/cf/cf69cacc-5fec-5b9f-9475-0a173e7109c0.pdf",
       "file_size": 2842053,
       "sha256": "4cda3ad44968a522f25f1032f561f005a801c09e568733d34b1903ac4efb9f20"
+    },
+    {
+      "public_id": "cf6e26a8-0767-59ea-b10c-b02ee8361894",
+      "source_path": "scores/音乐剧选段/cf6e26a8-0767-59ea-b10c-b02ee8361894.pdf",
+      "storage_key": "scores/cf/cf6e26a8-0767-59ea-b10c-b02ee8361894.pdf",
+      "file_size": 225212,
+      "sha256": "89b33f3aecd46cb798bc1a3c59b11534a040125defea3bb789ac59828be44369"
     },
     {
       "public_id": "cf6f12c4-d230-42cf-964e-ffa3407b4279",
@@ -29696,6 +29857,13 @@
       "sha256": "077f14d2192b7aef0c072e207d5eedd7c274849b9e6a93975d602db7b3475373"
     },
     {
+      "public_id": "d820d207-7fd2-502a-ab24-7f9177cc0c8f",
+      "source_path": "scores/音乐剧选段/d820d207-7fd2-502a-ab24-7f9177cc0c8f.pdf",
+      "storage_key": "scores/d8/d820d207-7fd2-502a-ab24-7f9177cc0c8f.pdf",
+      "file_size": 819344,
+      "sha256": "674ca161b8b587c633680f87949fdcb3a25df8485be4730eb8f10158c3a9459a"
+    },
+    {
       "public_id": "d846f6f3-231b-42b2-b00d-1be7f73cc2b6",
       "source_path": "scores/歌剧咏叹调/d846f6f3-231b-42b2-b00d-1be7f73cc2b6.pdf",
       "storage_key": "scores/d8/d846f6f3-231b-42b2-b00d-1be7f73cc2b6.pdf",
@@ -30058,6 +30226,13 @@
       "storage_key": "scores/da/daa901ea-8443-5963-948b-5cbbe7610cea.pdf",
       "file_size": 390499,
       "sha256": "0c24f798ef917ffffc6cfee4818c03115cef5de6ea4a7e391e370c12b98f4b12"
+    },
+    {
+      "public_id": "dabfe36c-4a1d-5698-9ea1-c5588defca1e",
+      "source_path": "scores/音乐剧选段/dabfe36c-4a1d-5698-9ea1-c5588defca1e.pdf",
+      "storage_key": "scores/da/dabfe36c-4a1d-5698-9ea1-c5588defca1e.pdf",
+      "file_size": 984778,
+      "sha256": "ecd0054184cac6df13284c6998e8aea5be614bb6dcafc8a885efe5db2f78e428"
     },
     {
       "public_id": "daceb110-ea0b-52ae-bec1-c4cd2eae9078",
@@ -34636,6 +34811,13 @@
       "storage_key": "scores/fc/fc213bbc-0bd2-473d-a33d-7ecd0216892c.pdf",
       "file_size": 2178397,
       "sha256": "b59f6592f330315ecc2ca7c70b41a50d47ef08f8f4c8fb7222fa357e8a0d0f51"
+    },
+    {
+      "public_id": "fc228edb-0ce0-5ba4-bc9d-cdf1a0529e4f",
+      "source_path": "scores/音乐剧选段/fc228edb-0ce0-5ba4-bc9d-cdf1a0529e4f.pdf",
+      "storage_key": "scores/fc/fc228edb-0ce0-5ba4-bc9d-cdf1a0529e4f.pdf",
+      "file_size": 2025687,
+      "sha256": "f3647d6fde901f163e268ca8fac9cac0425e3a9d13198a0651257f82f1d0dbb6"
     },
     {
       "public_id": "fc33800e-08ab-53e1-aba8-bf05fc6cc495",
