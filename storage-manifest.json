@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5063,
-  "unique_content_count": 5041,
+  "entry_count": 5073,
+  "unique_content_count": 5051,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 6068967547,
+  "total_size": 6359300204,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -3796,6 +3796,13 @@
       "sha256": "34f9880e4eebbf281b54217b49449f131587afde9a931d9e62daacc16941f190"
     },
     {
+      "public_id": "1a385044-01ec-5009-8252-eeb06c0c6a19",
+      "source_path": "scores/歌剧总谱/1a385044-01ec-5009-8252-eeb06c0c6a19.pdf",
+      "storage_key": "scores/1a/1a385044-01ec-5009-8252-eeb06c0c6a19.pdf",
+      "file_size": 8198844,
+      "sha256": "b36c957bb2f831be08f2b039eca65f092a822c1dd2723e0f8d37316ca194a685"
+    },
+    {
       "public_id": "1a42c012-73dd-4df2-ad43-9073d128d6d5",
       "source_path": "scores/歌剧咏叹调/1a42c012-73dd-4df2-ad43-9073d128d6d5.pdf",
       "storage_key": "scores/1a/1a42c012-73dd-4df2-ad43-9073d128d6d5.pdf",
@@ -5495,6 +5502,13 @@
       "storage_key": "scores/27/2784d78b-d976-563e-84e3-51feb06a22b7.pdf",
       "file_size": 313006,
       "sha256": "dfde7db77f35d40aeadf2d87918164105c422ace6c35c96a0e24ce172da3f0a9"
+    },
+    {
+      "public_id": "278b28d8-72be-5fcc-b93c-6bd53f42e1b4",
+      "source_path": "scores/歌剧总谱/278b28d8-72be-5fcc-b93c-6bd53f42e1b4.pdf",
+      "storage_key": "scores/27/278b28d8-72be-5fcc-b93c-6bd53f42e1b4.pdf",
+      "file_size": 58940122,
+      "sha256": "c16265c5668f6bc4e16c804f44c94216e5f2ba7160ea690bd56366be7649846b"
     },
     {
       "public_id": "27a9c9a4-a1d4-5841-bf63-012ff0d1a55a",
@@ -10066,6 +10080,13 @@
       "storage_key": "scores/48/48f284fa-467a-59a9-b970-b854b054fc5b.pdf",
       "file_size": 1245821,
       "sha256": "7d622ff1a4202e2c8370eeef0e2c441128e6eab36d44520ece72ef298663ef84"
+    },
+    {
+      "public_id": "48f4396f-5eec-5351-b432-de7cd57cbb8a",
+      "source_path": "scores/歌剧总谱/48f4396f-5eec-5351-b432-de7cd57cbb8a.pdf",
+      "storage_key": "scores/48/48f4396f-5eec-5351-b432-de7cd57cbb8a.pdf",
+      "file_size": 16899002,
+      "sha256": "3eaa3e37405fc5e2e12c882af3a44977129c4663d4875dcbdb7472414b8eab89"
     },
     {
       "public_id": "48f47852-d0ee-518c-bd93-2d924cafe4e1",
@@ -20288,6 +20309,13 @@
       "sha256": "f2f07c3c3c5b7b4c2698d99531ae5acf00ce2a80219ccc200fa8246d6103000e"
     },
     {
+      "public_id": "943eab59-21a4-5345-8dec-39a7a9237122",
+      "source_path": "scores/歌剧总谱/943eab59-21a4-5345-8dec-39a7a9237122.pdf",
+      "storage_key": "scores/94/943eab59-21a4-5345-8dec-39a7a9237122.pdf",
+      "file_size": 27932669,
+      "sha256": "4b81895456cba7cccac3bd05d466fdcf638909eb9b33c8056fce1d2b95f6ac44"
+    },
+    {
       "public_id": "94453281-a66d-56d5-afb3-1b0caf284e45",
       "source_path": "scores/声乐作品/艺术歌曲/1766372612938_Misero_pargoletto_-_D42_High_Original.pdf",
       "storage_key": "scores/94/94453281-a66d-56d5-afb3-1b0caf284e45.pdf",
@@ -20916,6 +20944,13 @@
       "storage_key": "scores/98/98eff9d6-eee6-5725-98c6-b1b200f05082.pdf",
       "file_size": 326025,
       "sha256": "40dfb528beb77c560ae72b49e5730b8f25cce471ca1ea6a7f79ecc9a69f185dd"
+    },
+    {
+      "public_id": "98f10ef8-1cf3-507b-bd85-04989be5543a",
+      "source_path": "scores/歌剧总谱/98f10ef8-1cf3-507b-bd85-04989be5543a.pdf",
+      "storage_key": "scores/98/98f10ef8-1cf3-507b-bd85-04989be5543a.pdf",
+      "file_size": 51307373,
+      "sha256": "4eea36054d17c78b34903623ea55c3b7325c922bded900b0c1a98f0840a89946"
     },
     {
       "public_id": "98f3546b-5e98-5108-aa2e-7b11798d122b",
@@ -23758,6 +23793,13 @@
       "storage_key": "scores/ac/ac93301e-e124-56fb-8568-de6a8e799868.pdf",
       "file_size": 171130,
       "sha256": "9a842243a9430c06d13eecb3fdf2f18cd1cc42484e87825e139cfc436512cb4d"
+    },
+    {
+      "public_id": "ac9ca910-2186-5dfd-8702-733033b96383",
+      "source_path": "scores/歌剧总谱/ac9ca910-2186-5dfd-8702-733033b96383.pdf",
+      "storage_key": "scores/ac/ac9ca910-2186-5dfd-8702-733033b96383.pdf",
+      "file_size": 43990510,
+      "sha256": "c13cfffbb559cd63010ad1d756b4e9c5a24eb1650c2a9853cd1d520f09c128a7"
     },
     {
       "public_id": "acabd914-48a3-5af8-b616-6d31c6eb88b8",
@@ -26999,6 +27041,13 @@
       "storage_key": "scores/c3/c3209374-bf33-4feb-bd03-1619c6ed3c10.pdf",
       "file_size": 1878125,
       "sha256": "979107bf9d08a99bc0c1de11a8abe88d33dc19a973968a55a3ebf4eca38566eb"
+    },
+    {
+      "public_id": "c3238db8-797e-538e-ab11-9333c164a394",
+      "source_path": "scores/歌剧总谱/c3238db8-797e-538e-ab11-9333c164a394.pdf",
+      "storage_key": "scores/c3/c3238db8-797e-538e-ab11-9333c164a394.pdf",
+      "file_size": 23185150,
+      "sha256": "c9f283d9a4d409efab7cdf69f3a3c68175efe115835bb2b2575cf9149c5b492f"
     },
     {
       "public_id": "c3245d2c-7f6e-5cd9-885b-150ed84f63b1",
@@ -31208,6 +31257,13 @@
       "sha256": "f4a74ae1e2bede09adb43446552d6c2125767f04ea4f0364234f622b0701bf92"
     },
     {
+      "public_id": "e0844905-d09e-584f-b1e9-97c4b6a528b9",
+      "source_path": "scores/歌剧总谱/e0844905-d09e-584f-b1e9-97c4b6a528b9.pdf",
+      "storage_key": "scores/e0/e0844905-d09e-584f-b1e9-97c4b6a528b9.pdf",
+      "file_size": 10476621,
+      "sha256": "5e7069c8e466a97ebc0424db3ffa052983327dd71eb19c9602ca511e77d495d4"
+    },
+    {
       "public_id": "e0934606-e5ae-4e3f-829b-4502dd639d69",
       "source_path": "scores/器乐独奏/e0934606-e5ae-4e3f-829b-4502dd639d69.pdf",
       "storage_key": "scores/e0/e0934606-e5ae-4e3f-829b-4502dd639d69.pdf",
@@ -33336,6 +33392,13 @@
       "sha256": "70eb0176904582d48a4d9bd21169c677bfc458fa588077ba3322a9fd8536e704"
     },
     {
+      "public_id": "efd7e57e-3669-5c88-8f3a-0641be267f6f",
+      "source_path": "scores/歌剧总谱/efd7e57e-3669-5c88-8f3a-0641be267f6f.pdf",
+      "storage_key": "scores/ef/efd7e57e-3669-5c88-8f3a-0641be267f6f.pdf",
+      "file_size": 25482778,
+      "sha256": "fb353dc6debc9d56939dab91a1ede0dca86eaeefc86bd13e003b7e1da6c8112d"
+    },
+    {
       "public_id": "f01e6b18-dac9-5a5a-bd65-ee026588ab62",
       "source_path": "scores/歌剧咏叹调/1766007740391_Zurne_was_bin.pdf",
       "storage_key": "scores/f0/f01e6b18-dac9-5a5a-bd65-ee026588ab62.pdf",
@@ -34664,6 +34727,13 @@
       "storage_key": "scores/fa/fa692d40-5e5b-432d-bf18-75f8babe0962.pdf",
       "file_size": 3814740,
       "sha256": "6a62dd02efcf450ad582dbcba803d4e478a81d7a7c8ec2891f4cbc79b31f99e9"
+    },
+    {
+      "public_id": "fa6bf7ce-7720-5c7b-b976-ba973b5349ca",
+      "source_path": "scores/歌剧总谱/fa6bf7ce-7720-5c7b-b976-ba973b5349ca.pdf",
+      "storage_key": "scores/fa/fa6bf7ce-7720-5c7b-b976-ba973b5349ca.pdf",
+      "file_size": 23919588,
+      "sha256": "cf9c2bfa5de9e593f8d27038c430cb0591f39f830b9c700aa7ebb7f34ab565c8"
     },
     {
       "public_id": "fa7dc439-949f-52a4-9da3-0cb9b4059d9b",

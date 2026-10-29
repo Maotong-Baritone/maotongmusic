@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-29 16:48",
+        "type": "add",
+        "msg": "新增本地总谱与舞台乐谱10份（3601页），含La forza del destino（声乐钢琴谱，四幕版）、Don Carlo（管弦乐总谱，含枫丹白露幕）、Ernani（声乐钢琴谱，四幕版）、Otello（声乐钢琴谱，Saladino缩编）等；已区分实际编制、语言及文件范围，按原PDF收录。",
+        "batch_id": "local-full-scores-20261029-batch02",
+        "count": 10
+    },
+    {
         "date": "2026-10-29 16:36",
         "type": "add",
         "msg": "新增本地总谱与舞台乐谱10份（3111页），含La damnation de Faust（管弦乐总谱，全集新版第8a卷）、洛神（声乐钢琴谱，2022版）、Andrea Chénier（管弦乐总谱）、Andrea Chénier（声乐钢琴谱，Galli缩编）等；已区分实际编制、语言及文件范围，按原PDF收录。",
