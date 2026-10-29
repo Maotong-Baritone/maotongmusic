@@ -1,7 +1,7 @@
 // 全局变量
 let musicData = [];
 let changeLog = [];
-let filters = { category: 'all', composer: '', language: 'all', voice: '', search: '', favoritesOnly: false };
+let filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false };
 let sortType = 'date_desc';
 let currentPage = 1;
 const itemsPerPage = 15;
@@ -122,21 +122,165 @@ function escapeHtml(value) {
         .replace(/'/g, '&#039;');
 }
 
-const composerAliases = {
-    "Mozart": "莫扎特 Wolfgang Amadeus 沃尔夫冈 阿玛迪乌斯", "Dvořák": "Dvorak 德沃夏克 Antonin 安东宁",
-    "Bach": "巴赫 J.S.Bach Johann Sebastian", "Beethoven": "贝多芬 Ludwig van 路德维希",
-    "Schubert": "舒伯特 Franz 弗朗茨", "Schumann": "舒曼 Robert 罗伯特",
-    "Tchaikovsky": "柴可夫斯基 Pyotr Ilyich", "Rachmaninoff": "拉赫玛尼诺夫 Rachmaninov Sergey",
-    "Fauré": "Faure 福雷 Gabriel", "Debussy": "德彪西 Claude", "Verdi": "威尔第 Giuseppe",
-    "Puccini": "普契尼 Giacomo", "Wagner": "瓦格纳 Richard", "Mahler": "马勒 Gustav", "Strauss": "施特劳斯 Richard Johann"
-};
+// Only explicit aliases identify the same person; a shared surname never merges people.
+const COMPOSER_NAME_GROUPS = [
+    ['Wolfgang Amadeus Mozart/莫扎特', 'Mozart', '莫扎特', '沃尔夫冈', '阿玛迪乌斯'],
+    ['Antonín Dvořák/德沃夏克', 'Dvorak', '德沃夏克', '安东宁'],
+    ['Johann Sebastian Bach/巴赫', 'J.S. Bach/巴赫', 'J.S. Bach', 'Bach', '巴赫'],
+    ['Ludwig van Beethoven/贝多芬', 'Beethoven', '贝多芬', '路德维希'],
+    ['Franz Schubert/舒伯特', 'Schubert', '舒伯特', '弗朗茨'],
+    ['Robert Schumann/舒曼', 'Schumann', '舒曼', '罗伯特'],
+    ['Pyotr Ilyich Tchaikovsky/柴可夫斯基', 'Tchaikovsky', '柴可夫斯基'],
+    ['Sergei Rachmaninoff/拉赫玛尼诺夫', 'Rachmaninoff', 'Rachmaninov', 'Sergey', '拉赫玛尼诺夫'],
+    ['Gabriel Fauré/福雷', 'Faure', '福雷'],
+    ['Claude Debussy/德彪西', 'Debussy', '德彪西'],
+    ['Gustav Mahler/马勒', 'Mahler', '马勒'],
+    ['Giuseppe Verdi/威尔第', 'Verdi', 'G. Verdi', '威尔第'],
+    ['Giacomo Puccini/普契尼', 'Puccini', '普契尼'],
+    ['Richard Wagner/瓦格纳', 'Wagner', '瓦格纳'],
+    ['Richard Strauss/理查·施特劳斯', 'Richard Strauss', '理查·施特劳斯'],
+    ['Johann Strauss II/小约翰·施特劳斯', 'Johann Strauss II', 'Johann Strauß II', '小施特劳斯', '小约翰·施特劳斯'],
+    ['Christoph Willibald Gluck/格鲁克', 'Christoph Gluck / 格鲁克'],
+    ['Gaetano Donizetti/多尼采蒂', 'Domenico Gaetano Donizetti/多尼采蒂'],
+    ['Erich Wolfgang Korngold/科恩戈尔德', 'Erich Korngold/科恩戈尔德'],
+    ['Gioachino Rossini/罗西尼', 'Giaochino Rossini'],
+    ['Henry Purcell/普赛尔', 'Henry Purcell/普塞尔'],
+    ['Jules Massenet/马斯奈', 'Jules Massenet/儒勒 马斯内'],
+    ['Ruggero Leoncavallo/莱昂卡瓦洛', 'Ruggero Leoncavallo/莱翁卡瓦洛'],
+    ['Vincenzo Bellini/贝利尼', 'Vincenzo Bellini/贝里尼'],
+    ['Bedřich Smetana/斯美塔那', 'Smetana, Bedřich/斯美塔那'],
+    ['Thomas Adès'],
+    ['Georg Friedrich Händel/亨德尔', 'George Frideric Handel', 'Handel', '亨德尔'],
+    ['Franz Joseph Haydn/海顿', 'Joseph Haydn', '海顿']
+];
+const NON_PERSON_COMPOSERS = new Set(['ABRSM', '多位作曲家', '未署名（待核）', '杨林，莫若伟等']);
+let composerDirectory = new Map();
+let composerCredits = new Map();
+let composerQueryIndex = new Map();
+
+function normalizeComposerName(value) {
+    return normalizeStr(String(value || '').normalize('NFKC')).replace(/ß/g, 'ss').replace(/[^\p{L}\p{N}]/gu, '');
+}
+
+function initComposerDirectory(data) {
+    composerDirectory = new Map();
+    composerCredits = new Map();
+    composerQueryIndex = new Map();
+    const canonicalNames = new Map();
+    COMPOSER_NAME_GROUPS.forEach(group => group.forEach(name => canonicalNames.set(normalizeComposerName(name), group[0])));
+    function person(rawName) {
+        const name = canonicalNames.get(normalizeComposerName(rawName)) || rawName.trim().replace(/\s*\/\s*/g, '/');
+        const englishName = name.split('/')[0];
+        const id = normalizeStr(englishName).replace(/ß/g, 'ss').replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
+        if (!composerDirectory.has(id)) composerDirectory.set(id, { id, name, aliases: new Set([name, ...name.split('/')]) });
+        const entry = composerDirectory.get(id);
+        entry.aliases.add(rawName);
+        const group = COMPOSER_NAME_GROUPS.find(g => g[0] === name);
+        if (group) group.forEach(alias => entry.aliases.add(alias));
+        return { person: entry };
+    }
+    data.forEach(item => {
+        const raw = String(item.composer || '');
+        if (composerCredits.has(raw)) return;
+        let credits;
+        if (!raw || NON_PERSON_COMPOSERS.has(raw)) credits = [{ text: raw }];
+        else if (normalizeComposerName(raw) === normalizeComposerName('姜夔 / 罗忠镕（配伴奏）')) {
+            credits = [person('姜夔'), { text: ' / 罗忠镕（配伴奏）' }];
+        } else {
+            credits = raw.split('、').flatMap((name, index) => index ? [{ text: '、' }, person(name)] : [person(name)]);
+        }
+        composerCredits.set(raw, credits);
+    });
+    composerDirectory.forEach(entry => {
+        entry.searchText = [...entry.aliases].join(' ');
+        entry.aliases.forEach(alias => {
+            const key = normalizeComposerName(alias);
+            if (!composerQueryIndex.has(key)) composerQueryIndex.set(key, new Set());
+            composerQueryIndex.get(key).add(entry.id);
+        });
+    });
+}
+
+function exactComposer(value) {
+    if (composerDirectory.has(value)) return composerDirectory.get(value);
+    const matches = composerQueryIndex.get(normalizeComposerName(value));
+    return matches?.size === 1 ? composerDirectory.get([...matches][0]) : null;
+}
+
+function composerIdsFor(raw) {
+    return (composerCredits.get(String(raw || '')) || []).filter(c => c.person).map(c => c.person.id);
+}
+
+function composerDisplayName(raw) {
+    return (composerCredits.get(String(raw || '')) || [{ text: raw }]).map(c => c.person?.name || c.text).join('');
+}
 
 function composerSearchText(composer) {
-    const normalizedComposer = normalizeStr(composer);
-    const aliases = Object.entries(composerAliases)
-        .filter(([name]) => normalizedComposer.includes(normalizeStr(name)))
-        .map(([, value]) => value);
-    return `${composer || ''} ${aliases.join(' ')}`.trim();
+    return [composer, ...composerIdsFor(composer).map(id => composerDirectory.get(id).searchText)].join(' ');
+}
+
+function composerUrlFor(id) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('score');
+    url.searchParams.set('composer', id);
+    url.hash = 'mainContentArea';
+    return url;
+}
+
+function renderComposerLinks(raw) {
+    return (composerCredits.get(String(raw || '')) || [{ text: raw }]).map(credit => {
+        if (!credit.person) return escapeHtml(credit.text);
+        const { id, name } = credit.person;
+        return `<a class="composer-link" href="${escapeHtml(composerUrlFor(id).href)}" data-composer-id="${escapeHtml(id)}" aria-label="查看 ${escapeHtml(name)} 的所有作品" title="查看该作曲家的所有作品">${escapeHtml(name)}</a>`;
+    }).join('');
+}
+
+function libraryPageTitle() {
+    const composer = composerDirectory.get(filters.composerId);
+    return composer ? `${composer.name} 的作品 | ${BASE_PAGE_TITLE}` : BASE_PAGE_TITLE;
+}
+
+function saveLibraryViewToHistory() {
+    window.history.replaceState({ ...window.history.state, libraryView: { filters: { ...filters }, currentPage, sortType } }, '', window.location.href);
+}
+
+function restoreLibraryView(view) {
+    clearNonSearchFilters();
+    filters.search = '';
+    document.getElementById('searchInput').value = '';
+    if (view?.filters) {
+        filters = { ...filters, ...view.filters };
+        currentPage = Math.max(1, Number(view.currentPage) || 1);
+        sortType = view.sortType || 'date_desc';
+    } else {
+        const route = new URL(window.location.href).searchParams.get('composer');
+        if (route) {
+            const composer = exactComposer(route);
+            filters.composerId = composer?.id || route;
+            filters.composer = composer?.name || route;
+        }
+    }
+    document.getElementById('searchInput').value = filters.search;
+    document.getElementById('composerInput').value = filters.composer;
+    document.getElementById('voiceInput').value = filters.voice;
+    document.getElementById('languageSelect').value = filters.language;
+    document.getElementById('sortSelect').value = sortType;
+    document.querySelectorAll('.category-group button').forEach(button => button.classList.toggle('active-cat', button.querySelector('.count-badge')?.dataset.cat === filters.category));
+}
+
+function navigateToComposer(id) {
+    const composer = composerDirectory.get(id);
+    if (!composer) return;
+    saveLibraryViewToHistory();
+    const target = composerUrlFor(id);
+    window.history.pushState({}, '', target);
+    restoreLibraryView();
+    ['readerModal', 'detailModal'].forEach(modalId => {
+        const element = document.getElementById(modalId);
+        if (element) bootstrap.Modal.getInstance(element)?.hide();
+    });
+    applyFilters();
+    document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 const categoryMap = { 
@@ -169,6 +313,12 @@ window.addEventListener('load', () => {
     initDetailNavigation();
     loadData();
     document.getElementById('searchInput').addEventListener('keydown', (e) => { if(e.key === 'Enter') performSearch(); });
+    document.addEventListener('click', event => {
+        const link = event.target.closest('a[data-composer-id]');
+        if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        navigateToComposer(link.dataset.composerId);
+    });
 });
 
 function initTheme() {
@@ -263,9 +413,11 @@ async function loadData() {
             changeLog = await logRes.json();
         }
 
+        initComposerDirectory(musicData);
         migrateLegacyFavorites();
         initStatsAndDropdowns(); 
         renderRecent(); 
+        restoreLibraryView();
         applyFilters();
         openDetailFromUrl();
 
@@ -330,7 +482,7 @@ function performSearch() { const val = document.getElementById('searchInput').va
 
 function initStatsAndDropdowns() {
     document.getElementById('statTotal').innerText = musicData.length;
-    const composers = [...new Set(musicData.map(m => m.composer).filter(c => c))].sort((a, b) => a.localeCompare(b));
+    const composers = [...composerDirectory.values()].map(c => c.name).sort((a, b) => a.localeCompare(b));
     const languages = [...new Set(musicData.map(m => m.language).filter(l => l && l !== '无歌词'))].sort();
     const voiceTypes = [...new Set(musicData.map(m => m.voice_types).filter(v => v))].sort();
     document.getElementById('statComposer').innerText = composers.length;
@@ -372,7 +524,7 @@ function renderRecent() {
                         <small class="text-muted" style="font-size: 0.75rem;">${escapeHtml(item.date || '')}</small>
                     </div>
                     <h6 class="card-title mb-1 text-truncate" title="${escapeHtml(item.title)}"><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h6>
-                    <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(item.composer)}">${escapeHtml(item.composer)}</div>
+                    <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(composerDisplayName(item.composer))}">${renderComposerLinks(item.composer)}</div>
                     ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${escapeHtml(item.work)}">选自: ${escapeHtml(item.work)}</div>` : ''}
                 </div>
                 <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
@@ -431,6 +583,8 @@ function updateListTitle() {
         listTitle.innerText = '❤️ 我的收藏';
     } else if (filters.search) {
         listTitle.innerText = `🔍 “${filters.search}” 的搜索结果`;
+    } else if (filters.composerId) {
+        listTitle.innerText = `👤 ${composerDirectory.get(filters.composerId)?.name || filters.composer} 的作品`;
     } else if (filters.category !== 'all') {
         listTitle.innerText = `📂 ${filters.category}`;
     } else {
@@ -441,6 +595,7 @@ function updateListTitle() {
 function clearNonSearchFilters() {
     filters.category = 'all';
     filters.composer = '';
+    filters.composerId = '';
     filters.language = 'all';
     filters.voice = '';
     filters.favoritesOnly = false;
@@ -481,6 +636,16 @@ window.removeActiveFilter = function(key) {
 
 function applyFilters() {
     filters.composer = document.getElementById('composerInput').value; 
+    const selectedComposer = exactComposer(filters.composer);
+    const currentName = composerDirectory.get(filters.composerId)?.name || filters.composerId;
+    if (selectedComposer) filters.composerId = selectedComposer.id;
+    else if (filters.composer !== currentName) filters.composerId = '';
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('composer') && url.searchParams.get('composer') !== filters.composerId) {
+        if (filters.composerId) url.searchParams.set('composer', filters.composerId);
+        else url.searchParams.delete('composer');
+        window.history.replaceState(window.history.state, '', url);
+    }
     filters.language = document.getElementById('languageSelect').value;
     filters.voice = document.getElementById('voiceInput').value; 
     sortType = document.getElementById('sortSelect').value;
@@ -507,7 +672,7 @@ function applyFilters() {
 
         return (filters.category === 'all' || item.category === filters.category) && 
                (filters.language === 'all' || item.language === filters.language) && 
-               (filters.composer === '' || composerKeywords.includes(searchComposer)) && 
+               (filters.composerId ? composerIdsFor(item.composer).includes(filters.composerId) : (filters.composer === '' || composerKeywords.includes(searchComposer))) &&
                (filters.voice === '' || (item.voice_types && itemVoice.includes(searchVoice)));
     });
 
@@ -521,12 +686,13 @@ function applyFilters() {
         if (sortType === 'date_desc') return compareByDateDesc(a, b);
         if (sortType === 'date_asc') return compareByDateAsc(a, b);
         if (sortType === 'title_asc') return a.title.localeCompare(b.title); 
-        if (sortType === 'composer_asc') return a.composer.localeCompare(b.composer); 
+        if (sortType === 'composer_asc') return composerDisplayName(a.composer).localeCompare(composerDisplayName(b.composer));
         return 0;
     });
 
     renderActiveFilters();
     updateListTitle();
+    if (!currentDetailId) document.title = libraryPageTitle();
     renderPaginationTable(result);
     document.getElementById('recentSection').style.display = (filters.search || filters.favoritesOnly || filters.composer || filters.language !== 'all' || filters.voice || filters.category !== 'all') ? 'none' : 'block';
 }
@@ -624,7 +790,7 @@ function renderPaginationTable(data) {
                     </div>
                 </div>
             </td>
-            <td><span class="fw-medium text-secondary">${escapeHtml(item.composer)}</span></td>
+            <td><span class="fw-medium text-secondary">${renderComposerLinks(item.composer)}</span></td>
             <td>${item.language ? `<span class="text-muted small">${escapeHtml(item.language)}</span>` : '-'}</td>
             <td><span class="badge badge-custom ${badgeClass}">${escapeHtml(item.category)}</span>${subBadge}</td>
             <td class="text-end pe-4"><button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3 shadow-sm" onclick="openDetail('${stableId}')" aria-label="查看 ${escapeHtml(item.title)} 的详情">查看</button></td>
@@ -637,7 +803,7 @@ function renderPaginationTable(data) {
                     <small class="text-muted text-nowrap">${escapeHtml(item.date || '')}</small>
                 </div>
                 <h3 class="h6 mb-2"><button type="button" class="score-title score-title-button fw-bold text-dark text-start" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h3>
-                <p class="small text-secondary fw-medium mb-1">${escapeHtml(item.composer)}</p>
+                <p class="small text-secondary fw-medium mb-1">${renderComposerLinks(item.composer)}</p>
                 ${item.work ? `<p class="small text-muted fst-italic mb-2">选自: ${escapeHtml(item.work)}</p>` : ''}
                 <div class="d-flex flex-wrap gap-1 mb-3">${tonalityBadge}${voiceBadge}${lyricIcon}${subBadge}${item.language ? `<span class="badge bg-light text-secondary border">${escapeHtml(item.language)}</span>` : ''}</div>
                 <div class="d-flex justify-content-between align-items-center border-top pt-3">
@@ -652,7 +818,7 @@ function renderPaginationTable(data) {
 }
 
 window.resetFilters = () => { 
-    currentPage = 1; filters = { category: 'all', composer: '', language: 'all', voice: '', search: '', favoritesOnly: false }; 
+    currentPage = 1; filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false };
     document.getElementById('searchInput').value = ''; document.getElementById('composerInput').value = ''; 
     document.getElementById('languageSelect').value = 'all'; document.getElementById('voiceInput').value = ''; 
     document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat')); 
@@ -820,7 +986,7 @@ function initDetailNavigation() {
         currentPdfUrl = '';
         currentDetailId = null;
         currentLyricsId = null;
-        document.title = BASE_PAGE_TITLE;
+        document.title = libraryPageTitle();
 
         if (detailHistoryChangeInProgress) {
             detailHistoryChangeInProgress = false;
@@ -834,8 +1000,10 @@ function initDetailNavigation() {
         }
     });
 
-    window.addEventListener('popstate', () => {
+    window.addEventListener('popstate', event => {
         if (!musicData.length) return;
+        restoreLibraryView(event.state?.libraryView);
+        applyFilters();
         const scoreId = new URL(window.location.href).searchParams.get('score');
         const isOpen = modalElement.classList.contains('show');
         if (scoreId) {
@@ -896,12 +1064,13 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
 
     currentDetailId = getStableId(item);
     if (syncUrl) {
+        saveLibraryViewToHistory();
         window.history.pushState({ scoreId: currentDetailId }, '', detailUrlFor(currentDetailId));
     }
     document.title = `${item.title} | ${BASE_PAGE_TITLE}`;
 
     document.getElementById('mTitle').innerText = item.title;
-    document.getElementById('mComposer').innerText = item.composer;
+    document.getElementById('mComposer').innerHTML = renderComposerLinks(item.composer);
     document.getElementById('mWork').innerText = item.work || "";
     document.getElementById('mLanguage').innerText = item.language || "-";
     document.getElementById('mCategory').innerText = item.category;
@@ -1021,7 +1190,7 @@ window.openLyricsReader = async function() {
         const data = await res.json();
         
         document.getElementById('readerTitle').innerText = data.title || "歌词/剧本";
-        document.getElementById('readerComposer').innerText = data.composer || "";
+        document.getElementById('readerComposer').innerHTML = renderComposerLinks(data.composer || "");
         
         const formatText = (text) => {
              if (!text) return "<span class='text-muted fst-italic'>（暂无内容）</span>";

@@ -693,6 +693,23 @@ footer {
 .footer-link { color: #e9c46a; text-decoration: none; }
 .footer-link:hover { color: #fff; }
 
+.composer-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(42, 157, 143, .4);
+    text-decoration-style: dotted;
+    text-underline-offset: .2em;
+    border-radius: 3px;
+    transition: color .15s ease, text-decoration-color .15s ease;
+}
+.composer-link:hover, .composer-link:focus-visible {
+    color: var(--accent-color);
+    text-decoration-color: currentColor;
+    text-decoration-style: solid;
+}
+.composer-link:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 3px; }
+#mainContentArea { scroll-margin-top: 5rem; }
+
 @media (max-width: 991px) {
     .resource-group-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
