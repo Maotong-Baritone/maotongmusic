@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5167,
-  "unique_content_count": 5145,
+  "entry_count": 5172,
+  "unique_content_count": 5150,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 8703215789,
+  "total_size": 8989434994,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -4452,6 +4452,13 @@
       "storage_key": "scores/1e/1e99aee4-7651-576a-a774-4f6277f0dc96.pdf",
       "file_size": 922993,
       "sha256": "5b66ac3e6e095b45d9129b4bb89770ae43b7b88987633cbc38f4f714e5005336"
+    },
+    {
+      "public_id": "1ea92fda-4250-52c2-a17b-032a2728a0f9",
+      "source_path": "scores/乐谱书/曲集/1ea92fda-4250-52c2-a17b-032a2728a0f9.pdf",
+      "storage_key": "scores/1e/1ea92fda-4250-52c2-a17b-032a2728a0f9.pdf",
+      "file_size": 57195042,
+      "sha256": "cba6440a3a08aaa9c029ee46ecba8289e783858bfba3f1afbed556c5ffe06d33"
     },
     {
       "public_id": "1ebc6cf2-0bf4-5473-9f6b-82411880f44a",
@@ -10719,6 +10726,13 @@
       "sha256": "dc1b48a2c327bd512a53d31ee805cdf6884c79691fb2a9208a0464427ec204e6"
     },
     {
+      "public_id": "4bf15082-88a1-53bf-af04-f3a249d522be",
+      "source_path": "scores/乐谱书/曲集/4bf15082-88a1-53bf-af04-f3a249d522be.pdf",
+      "storage_key": "scores/4b/4bf15082-88a1-53bf-af04-f3a249d522be.pdf",
+      "file_size": 54026128,
+      "sha256": "cb0ba82c5d3df0345a974eb54051d706ab032fa150b541a9b21f7a14377092f4"
+    },
+    {
       "public_id": "4bf787db-4a97-54f5-aa44-6f297530287e",
       "source_path": "scores/歌剧咏叹调/1766007738994_Bucke_dich_du_Kreis_der_Welt.pdf",
       "storage_key": "scores/4b/4bf787db-4a97-54f5-aa44-6f297530287e.pdf",
@@ -13027,6 +13041,13 @@
       "storage_key": "scores/5d/5d5b5288-238b-5e65-ad8d-62b7b1c7500b.pdf",
       "file_size": 489512,
       "sha256": "dd26e6e0b458785dc364408bce4f85f159b6e2ad5929c357250a13b2a010dac4"
+    },
+    {
+      "public_id": "5d65ade5-b85c-5442-b48c-9dc4d3f7235a",
+      "source_path": "scores/乐谱书/曲集/5d65ade5-b85c-5442-b48c-9dc4d3f7235a.pdf",
+      "storage_key": "scores/5d/5d65ade5-b85c-5442-b48c-9dc4d3f7235a.pdf",
+      "file_size": 67015373,
+      "sha256": "e70d88d23bdefb619c366525cb86718dc36bd095be24241353c48526a17bd7a6"
     },
     {
       "public_id": "5d7f039a-3517-5539-accb-1b38397c9a44",
@@ -30025,6 +30046,13 @@
       "sha256": "6335afb705066097c4f3558b46ca36952bb3e19d9da76e3ae0564dd626a58675"
     },
     {
+      "public_id": "d442083f-4ac0-5f57-ba6e-4b10be1d354e",
+      "source_path": "scores/乐谱书/曲集/d442083f-4ac0-5f57-ba6e-4b10be1d354e.pdf",
+      "storage_key": "scores/d4/d442083f-4ac0-5f57-ba6e-4b10be1d354e.pdf",
+      "file_size": 50854636,
+      "sha256": "19a54f543081036e5801954d8cbbac30b232ae8f26503ff5fd12af1cdd5c8779"
+    },
+    {
       "public_id": "d443d7cc-5b47-4006-8eb2-2e3e8e0184f8",
       "source_path": "scores/艺术歌曲/d443d7cc-5b47-4006-8eb2-2e3e8e0184f8.pdf",
       "storage_key": "scores/d4/d443d7cc-5b47-4006-8eb2-2e3e8e0184f8.pdf",
@@ -36029,6 +36057,13 @@
       "storage_key": "scores/fe/fe778d70-5e47-5a74-9344-ca1d333117a4.pdf",
       "file_size": 390835,
       "sha256": "2ec3724d2b3a5b0c1697c76f4ac69b33b4b166c28bfdae9a2d8185931ac76b0f"
+    },
+    {
+      "public_id": "fe8acdc4-a928-507c-a236-704c4f7d28ab",
+      "source_path": "scores/乐谱书/曲集/fe8acdc4-a928-507c-a236-704c4f7d28ab.pdf",
+      "storage_key": "scores/fe/fe8acdc4-a928-507c-a236-704c4f7d28ab.pdf",
+      "file_size": 57128026,
+      "sha256": "17f53de04985cd2ceca2008a45f30df1a476626ddd3248a45f9484dafdb9ad09"
     },
     {
       "public_id": "fe8ba3fc-dfc3-449c-8ac0-ee913d5c2387",
