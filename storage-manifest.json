@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5225,
-  "unique_content_count": 5203,
+  "entry_count": 5230,
+  "unique_content_count": 5208,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9270174461,
+  "total_size": 9280168263,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -12313,6 +12313,13 @@
       "storage_key": "scores/57/57f20c5c-afa7-55c8-a93c-9c4a4e63e57b.pdf",
       "file_size": 487484,
       "sha256": "577c66fa99e7d50c146300435af19a0db8e1a64a34b4d714d96b614b623d4607"
+    },
+    {
+      "public_id": "57fdcc71-1ba6-514b-8f58-70760cb6aa9f",
+      "source_path": "scores/歌剧咏叹调/57fdcc71-1ba6-514b-8f58-70760cb6aa9f.pdf",
+      "storage_key": "scores/57/57fdcc71-1ba6-514b-8f58-70760cb6aa9f.pdf",
+      "file_size": 3219573,
+      "sha256": "d5beefbb00ff8705331ede740a52befbedb38ab4d7d1b74395fe865c81efb49e"
     },
     {
       "public_id": "580ede14-afa4-511b-ba7d-5dd3481520ab",
@@ -25594,6 +25601,13 @@
       "sha256": "f9431b5709888d5d05d65aa1abace4a234a0e4cb358c0b049d09c8de8ec4449a"
     },
     {
+      "public_id": "b37f7f8e-a79f-5ed6-b74d-459baaeef739",
+      "source_path": "scores/歌剧重唱/b37f7f8e-a79f-5ed6-b74d-459baaeef739.pdf",
+      "storage_key": "scores/b3/b37f7f8e-a79f-5ed6-b74d-459baaeef739.pdf",
+      "file_size": 1148253,
+      "sha256": "884e5e98bd11f02fcbe04ef78c5a5d77d14d534726cdb96395e4df3cae7e6470"
+    },
+    {
       "public_id": "b3802f3f-f698-5ae7-afa1-cf47194d4dc3",
       "source_path": "scores/歌剧咏叹调/1766097998909_Juste_ciel_ah_ta_clemence.pdf",
       "storage_key": "scores/b3/b3802f3f-f698-5ae7-afa1-cf47194d4dc3.pdf",
@@ -31775,6 +31789,13 @@
       "sha256": "d7d92fbd8a3284e6dd87743d5514ae0c68b7b14689eba2276fe6609a2e6baee0"
     },
     {
+      "public_id": "ddb9fe11-1dfa-55f7-b692-39c4be29eaf3",
+      "source_path": "scores/歌剧重唱/ddb9fe11-1dfa-55f7-b692-39c4be29eaf3.pdf",
+      "storage_key": "scores/dd/ddb9fe11-1dfa-55f7-b692-39c4be29eaf3.pdf",
+      "file_size": 3837974,
+      "sha256": "4efbacb97bdcb4a1a219146cfdf13a29493729e9370f7ca460761b08d1a7e39f"
+    },
+    {
       "public_id": "ddbb0f30-c072-53b3-8062-486efc8d61a9",
       "source_path": "scores/歌剧咏叹调/1766038938499_A_frenarti_o_cor_nel_petto.pdf",
       "storage_key": "scores/dd/ddbb0f30-c072-53b3-8062-486efc8d61a9.pdf",
@@ -32347,6 +32368,13 @@
       "storage_key": "scores/e1/e163c48c-9109-5853-8ac5-3163034fa20b.pdf",
       "file_size": 406144,
       "sha256": "255f154a4e0d329139f33210d291b6810583ef7a4950b125450131f54b7e43b4"
+    },
+    {
+      "public_id": "e165444b-2a16-5977-84ac-89942a5a32eb",
+      "source_path": "scores/歌剧重唱/e165444b-2a16-5977-84ac-89942a5a32eb.pdf",
+      "storage_key": "scores/e1/e165444b-2a16-5977-84ac-89942a5a32eb.pdf",
+      "file_size": 889579,
+      "sha256": "71f9366a55a576345e27b2cba9544c56b89b1f85bb1026853bcb68843d05d16f"
     },
     {
       "public_id": "e17169bb-5e6f-586b-90fd-bce165f7c90d",
@@ -33516,6 +33544,13 @@
       "storage_key": "scores/ea/ea59720b-01ab-5e39-8ce0-4fce3cc0af52.pdf",
       "file_size": 641501,
       "sha256": "0678b95a6392cd5080b1c2c32231ea6aeadfee59594c54c57e21cffabe526186"
+    },
+    {
+      "public_id": "ea6b476c-9bd3-5779-8033-4fe3def7a9dc",
+      "source_path": "scores/歌剧重唱/ea6b476c-9bd3-5779-8033-4fe3def7a9dc.pdf",
+      "storage_key": "scores/ea/ea6b476c-9bd3-5779-8033-4fe3def7a9dc.pdf",
+      "file_size": 898423,
+      "sha256": "d980cb2a9362b4ad0093378708d143d5c92be1f5fafbaba0069efe20dd1b7117"
     },
     {
       "public_id": "ea6fa502-4097-4bcd-8847-ef55376db491",
