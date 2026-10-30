@@ -96,7 +96,7 @@ ALLOWED_CATEGORIES = {
 }
 CANONICAL_LANGUAGES = {
     '意大利语', '德语', '法语', '英语', '俄语', '拉丁语', '捷克语', '汉语',
-    '法语/拉丁语',
+    '法语/拉丁语', '多语种',
 }
 BRAHMS_REVIEW_DECISIONS = set(brahms_views.DECISION_LABELS)
 

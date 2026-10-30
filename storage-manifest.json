@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5109,
-  "unique_content_count": 5087,
+  "entry_count": 5119,
+  "unique_content_count": 5097,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 7390113383,
+  "total_size": 7590682441,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -8304,6 +8304,13 @@
       "sha256": "17eddf63c212710e444956a90885ee59f07b249499d31663f401e3b429fb6d6d"
     },
     {
+      "public_id": "3c3ba5c0-3478-5e1d-8438-2971a91d2be1",
+      "source_path": "scores/乐谱书/曲集/3c3ba5c0-3478-5e1d-8438-2971a91d2be1.pdf",
+      "storage_key": "scores/3c/3c3ba5c0-3478-5e1d-8438-2971a91d2be1.pdf",
+      "file_size": 25061091,
+      "sha256": "0ec4521286852c5b583c60ced2ab5e3b5564a8210e4c51f84d335a22b517e300"
+    },
+    {
       "public_id": "3c5a1594-8753-5228-b3c7-852c6971dacf",
       "source_path": "scores/歌剧咏叹调/1766097814981_Fra_questi_luoghi_barbari.pdf",
       "storage_key": "scores/3c/3c5a1594-8753-5228-b3c7-852c6971dacf.pdf",
@@ -10761,6 +10768,13 @@
       "sha256": "92e8643727eb3c85f88b83ab4cff4db134120d9f69eda50d0b715e6e4aafa270"
     },
     {
+      "public_id": "4d2c1d79-e060-52ce-adcf-4258d5e73550",
+      "source_path": "scores/乐谱书/曲集/4d2c1d79-e060-52ce-adcf-4258d5e73550.pdf",
+      "storage_key": "scores/4d/4d2c1d79-e060-52ce-adcf-4258d5e73550.pdf",
+      "file_size": 9557066,
+      "sha256": "b9e29fe0f0fa921347f23de74b512bea53a54c9b7f7909230418c32a603e5c04"
+    },
+    {
       "public_id": "4d3eb40d-2c57-555c-9074-fe9e8d70cb26",
       "source_path": "scores/歌剧咏叹调/1766294164906_Je_nai_jamais_cheri_la_vie.pdf",
       "storage_key": "scores/4d/4d3eb40d-2c57-555c-9074-fe9e8d70cb26.pdf",
@@ -11816,6 +11830,13 @@
       "storage_key": "scores/56/5607fee5-2a05-547b-b914-fd3e71533492.pdf",
       "file_size": 901301,
       "sha256": "4443d24bd2c3a9bea1f0b895622629be0442a6cf40987f2f6d65298d65832904"
+    },
+    {
+      "public_id": "561d289c-ce6b-5db0-9b75-b546bcefb601",
+      "source_path": "scores/乐谱书/曲集/561d289c-ce6b-5db0-9b75-b546bcefb601.pdf",
+      "storage_key": "scores/56/561d289c-ce6b-5db0-9b75-b546bcefb601.pdf",
+      "file_size": 7973236,
+      "sha256": "19cf6dfc0f605d62b88f5d7b1241e1fb2055d4e89bfd19e5129492e42515d7d6"
     },
     {
       "public_id": "561ece94-7f9c-5a91-b559-547f659ea879",
@@ -14632,6 +14653,13 @@
       "sha256": "e448da1299ed450dfc9d1e6b939947265e1d5eed89718068d8f0f63b8d04304a"
     },
     {
+      "public_id": "69d65372-54a5-5ab3-833d-2547f7315c41",
+      "source_path": "scores/乐谱书/曲集/69d65372-54a5-5ab3-833d-2547f7315c41.pdf",
+      "storage_key": "scores/69/69d65372-54a5-5ab3-833d-2547f7315c41.pdf",
+      "file_size": 16070218,
+      "sha256": "137e55186e22c0a72de5aa4cc267e536ec14df53fb1297296275bd5b10c4c4e4"
+    },
+    {
       "public_id": "69df5996-b9b1-4718-bacc-566b465c7b05",
       "source_path": "scores/歌剧咏叹调/69df5996-b9b1-4718-bacc-566b465c7b05.pdf",
       "storage_key": "scores/69/69df5996-b9b1-4718-bacc-566b465c7b05.pdf",
@@ -15157,6 +15185,13 @@
       "sha256": "0d4bc60ce9cdbc5412da4576cb623095134ae88d5169e31e504333af75cb1925"
     },
     {
+      "public_id": "6d4fa7bf-b829-5d53-89d9-cba345d88eac",
+      "source_path": "scores/乐谱书/曲集/6d4fa7bf-b829-5d53-89d9-cba345d88eac.pdf",
+      "storage_key": "scores/6d/6d4fa7bf-b829-5d53-89d9-cba345d88eac.pdf",
+      "file_size": 18588797,
+      "sha256": "0f22a640b5969180e136da42ee0a2e25522f0c4846c3e72bf899af8c1b3ed4f8"
+    },
+    {
       "public_id": "6d56ba99-0480-5103-b4fd-35e332dcebaf",
       "source_path": "scores/歌剧咏叹调/1766098464772_Se_pietoso_dun_obblio_copri.pdf",
       "storage_key": "scores/6d/6d56ba99-0480-5103-b4fd-35e332dcebaf.pdf",
@@ -15575,6 +15610,13 @@
       "storage_key": "scores/71/71208508-6f63-564b-a9eb-9c836777eb9f.pdf",
       "file_size": 1087618,
       "sha256": "460bb08f06ce455552482f6368d888b4508abd9d73c709aa5cc0591344d00915"
+    },
+    {
+      "public_id": "7121f684-a3dc-5377-b4a0-76ce9c46af65",
+      "source_path": "scores/乐谱书/曲集/7121f684-a3dc-5377-b4a0-76ce9c46af65.pdf",
+      "storage_key": "scores/71/7121f684-a3dc-5377-b4a0-76ce9c46af65.pdf",
+      "file_size": 15908250,
+      "sha256": "ad4594a8cd079cbef9536c2f2b2bdae011512594698a15839327202a07bb2aab"
     },
     {
       "public_id": "7122eabd-cbb3-5c62-99b8-e7c229112561",
@@ -19679,6 +19721,13 @@
       "sha256": "d5b43391cd1df8447ed7c921b3d1eb51a58eeaed0666f5b58b8a2a3eb8d03a09"
     },
     {
+      "public_id": "8ee6ca78-455b-5279-8d16-7e0072bc586f",
+      "source_path": "scores/乐谱书/曲集/8ee6ca78-455b-5279-8d16-7e0072bc586f.pdf",
+      "storage_key": "scores/8e/8ee6ca78-455b-5279-8d16-7e0072bc586f.pdf",
+      "file_size": 18927782,
+      "sha256": "e0161ca257a47c4ea790e25418b86a079a89d4785cd2a3d910272f4f03930397"
+    },
+    {
       "public_id": "8eeb69fa-65a3-532a-9afc-f9b54b8996cc",
       "source_path": "scores/声乐作品/艺术歌曲/1766372657190_Winterreise_-_15._Die_Krahe_-_D911_High_Original.pdf",
       "storage_key": "scores/8e/8eeb69fa-65a3-532a-9afc-f9b54b8996cc.pdf",
@@ -22297,6 +22346,13 @@
       "sha256": "3f03793fb51c223cf081389e39825e60a530cf5ad8139539848a8befadb8d738"
     },
     {
+      "public_id": "a0dd8f08-77bd-59d0-93fd-2eff16100f77",
+      "source_path": "scores/乐谱书/曲集/a0dd8f08-77bd-59d0-93fd-2eff16100f77.pdf",
+      "storage_key": "scores/a0/a0dd8f08-77bd-59d0-93fd-2eff16100f77.pdf",
+      "file_size": 55867952,
+      "sha256": "33a1dc6e943f9de721709dde75d199dc4c6a47c44785afff11d958b0f320801c"
+    },
+    {
       "public_id": "a0ea9a2f-5b41-5cce-8338-3460cf437152",
       "source_path": "scores/歌剧咏叹调/1766097850782_Come_unape_negiorni_daprile.pdf",
       "storage_key": "scores/a0/a0ea9a2f-5b41-5cce-8338-3460cf437152.pdf",
@@ -22918,6 +22974,13 @@
       "storage_key": "scores/a5/a53ad6f6-f1ed-5c91-a94b-97a4354c82a1.pdf",
       "file_size": 870638,
       "sha256": "18067141e533b86d065af04f448d6886964e8e560f8627497adb44c1a2d34ec2"
+    },
+    {
+      "public_id": "a554dc74-07de-5c16-9016-bf90c4ce6e50",
+      "source_path": "scores/乐谱书/曲集/a554dc74-07de-5c16-9016-bf90c4ce6e50.pdf",
+      "storage_key": "scores/a5/a554dc74-07de-5c16-9016-bf90c4ce6e50.pdf",
+      "file_size": 11790498,
+      "sha256": "587e3082283454c0c82c7eb830fa96e900cd8cde7af40b9fe72c71c9e3c691e1"
     },
     {
       "public_id": "a56f2123-4c8d-55ed-8531-20825a2dee8b",
@@ -24052,6 +24115,13 @@
       "storage_key": "scores/ad/ad07292a-3de3-5e41-a145-396cdf638b5a.pdf",
       "file_size": 1037593,
       "sha256": "7309addf86f739970ea19e0fad055f36e10d4df4c1fb908746f4f082dad5e923"
+    },
+    {
+      "public_id": "ad0ce434-72b9-5066-9279-ae462f70455e",
+      "source_path": "scores/乐谱书/曲集/ad0ce434-72b9-5066-9279-ae462f70455e.pdf",
+      "storage_key": "scores/ad/ad0ce434-72b9-5066-9279-ae462f70455e.pdf",
+      "file_size": 20824168,
+      "sha256": "401b46e7bffcc599853e803762feebd96ce23753105e416b67e8c3012e8eb3bd"
     },
     {
       "public_id": "ad1418c9-3a14-502c-bf73-451d46f55970",

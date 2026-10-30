@@ -46,6 +46,7 @@ CANONICAL_LANGUAGES = {
     "捷克语",
     "汉语",
     "法语/拉丁语",
+    "多语种",
 }
 LANGUAGE_OPTIONAL_CATEGORIES = {
     "器乐独奏",

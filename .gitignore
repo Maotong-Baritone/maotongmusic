@@ -26,3 +26,6 @@ backup/import_publications/
 /backup/metadata_fixes/
 /tests/test_brahms_*_scope.py
 /tools/brahms_*_batch.py
+
+# Original PDF exceeds GitHub single-file limit; retained locally and in R2
+/scores/乐谱书/曲集/2ba98d71-a3f3-56c0-9a9d-6c8c07254d99.pdf

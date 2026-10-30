@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-29 21:32",
+        "type": "add",
+        "msg": "新增外国声乐谱集10份、共1849页（第1/5批），含G. Schirmer American Aria Anthology：男中音／男低音卷、Arien-Album：著名男高音咏叹调（Peters节选文件）、The Oratorio Anthology：男高音卷（扫描选本）等；区分声部与选编版本，节选、缺页及PDF目录位置在详情注明。",
+        "batch_id": "foreign-vocal-books-20261029-batch01",
+        "count": 10
+    },
+    {
         "date": "2026-10-29 18:51",
         "type": "add",
         "batch_id": "literature-trial-20261029",

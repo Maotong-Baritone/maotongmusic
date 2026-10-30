@@ -1215,6 +1215,7 @@ class SubmissionFlowTest(unittest.TestCase):
 
     def test_deprecated_compound_languages_are_not_admin_options(self):
         self.assertIn("法语/拉丁语", self.admin.CANONICAL_LANGUAGES)
+        self.assertIn("多语种", self.admin.CANONICAL_LANGUAGES)
         for language in ("俄语/法语", "俄语/德语", "法语/俄语", "法语/英语"):
             self.assertNotIn(language, self.admin.CANONICAL_LANGUAGES)
 
