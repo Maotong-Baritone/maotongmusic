@@ -116,7 +116,7 @@
         {
           "id": "johann-sebastian-bach",
           "name": "Johann Sebastian Bach/巴赫",
-          "has_scores": false
+          "has_scores": true
         },
         {
           "id": "ludwig-van-beethoven",

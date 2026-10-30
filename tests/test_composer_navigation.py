@@ -135,6 +135,15 @@ assert(!element('mainTableBody').innerHTML.includes(collection.title));
 assert.equal((context.renderComposerLinks(collection.composer).match(/data-composer-id=/g)||[]).length,3);
 """)
 
+    def test_related_literature_uses_the_canonical_composer_directory(self):
+        self.run_js(r"""
+const literature=JSON.parse(fs.readFileSync('literature.json','utf8'));
+for(const book of literature.documents)for(const person of book.related_composers){
+ const present=evaluate('composerDirectory.has('+JSON.stringify(person.id)+')');
+ assert.equal(person.has_scores,present,book.title+': '+person.name);
+}
+""")
+
 
 if __name__ == '__main__':
     unittest.main()
