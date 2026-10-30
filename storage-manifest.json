@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5119,
-  "unique_content_count": 5097,
+  "entry_count": 5129,
+  "unique_content_count": 5107,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 7590682441,
+  "total_size": 7772365824,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -7492,6 +7492,13 @@
       "sha256": "500405bebb09c2863cc4c53edc871743d1169cd22201437a679ba2a574fa19c3"
     },
     {
+      "public_id": "36975528-0926-57b7-9988-f06cb4703736",
+      "source_path": "scores/乐谱书/曲集/36975528-0926-57b7-9988-f06cb4703736.pdf",
+      "storage_key": "scores/36/36975528-0926-57b7-9988-f06cb4703736.pdf",
+      "file_size": 49194032,
+      "sha256": "1d37cdbbf99fd1bc6ba67076aee6cc26cd5df79bba265633ff28f2a1d487411b"
+    },
+    {
       "public_id": "3698c1f6-50d8-4e6f-9914-f22b7a50dc3a",
       "source_path": "scores/歌剧咏叹调/3698c1f6-50d8-4e6f-9914-f22b7a50dc3a.pdf",
       "storage_key": "scores/36/3698c1f6-50d8-4e6f-9914-f22b7a50dc3a.pdf",
@@ -8330,6 +8337,13 @@
       "storage_key": "scores/3c/3c66d4cd-7335-5bd3-9024-bc38ae52a373.pdf",
       "file_size": 622944,
       "sha256": "6c188e833e6da5f69da4e854728e7d1b6fd654d5bd6720ef8fd505c58102bfc9"
+    },
+    {
+      "public_id": "3c69751b-fd79-5a00-8efd-97f97ef49360",
+      "source_path": "scores/乐谱书/曲集/3c69751b-fd79-5a00-8efd-97f97ef49360.pdf",
+      "storage_key": "scores/3c/3c69751b-fd79-5a00-8efd-97f97ef49360.pdf",
+      "file_size": 18354249,
+      "sha256": "ea5142d0624b5462e60bc20006bf41f9cdf6e6918e83a0657338dec824f1a2d3"
     },
     {
       "public_id": "3c84decb-437f-49af-8881-a7b0342e7d30",
@@ -9821,6 +9835,13 @@
       "storage_key": "scores/46/4648b70c-9e98-59e3-ab6a-7b05e35da955.pdf",
       "file_size": 888302,
       "sha256": "e4e6b3f0ab6e9013504c4792a8fc05b665c3fcea587ae778dfdcc762024b05f0"
+    },
+    {
+      "public_id": "465b8bb1-4bcf-52c8-8050-9ed0bac2f86d",
+      "source_path": "scores/乐谱书/曲集/465b8bb1-4bcf-52c8-8050-9ed0bac2f86d.pdf",
+      "storage_key": "scores/46/465b8bb1-4bcf-52c8-8050-9ed0bac2f86d.pdf",
+      "file_size": 19602753,
+      "sha256": "d6ea9954e834d1e874a96812b4f33ba105f6cf6c64f0921dd4c696fb6689da27"
     },
     {
       "public_id": "467a2ae1-5b6a-56bd-9a0e-0232b492b079",
@@ -11594,6 +11615,13 @@
       "sha256": "e8f2b52b3385e9efa7831da27d9400a6ee85ca0a1d979802cb7f17de6d583080"
     },
     {
+      "public_id": "53d74db8-f571-510b-8275-3c6928a60aa7",
+      "source_path": "scores/乐谱书/曲集/53d74db8-f571-510b-8275-3c6928a60aa7.pdf",
+      "storage_key": "scores/53/53d74db8-f571-510b-8275-3c6928a60aa7.pdf",
+      "file_size": 12936501,
+      "sha256": "9c5d9511df4b94e60767327f2147c27bbeba846121cc2582c4d6230fb0969a99"
+    },
+    {
       "public_id": "5413d824-9ef6-56cd-8510-0a80d0467717",
       "source_path": "scores/歌剧咏叹调/1766007771733_Nel_mio_core_ritorna_il_contento.pdf",
       "storage_key": "scores/54/5413d824-9ef6-56cd-8510-0a80d0467717.pdf",
@@ -11823,6 +11851,13 @@
       "storage_key": "scores/55/55dadbbb-ab05-567a-bea2-19b45fbc0591.pdf",
       "file_size": 903819,
       "sha256": "416712557cddd8f9d34d5b5091c66852c7337786cfe216637bd730335e72c07c"
+    },
+    {
+      "public_id": "55e81363-9851-5db0-9cdc-2920d097cef8",
+      "source_path": "scores/乐谱书/曲集/55e81363-9851-5db0-9cdc-2920d097cef8.pdf",
+      "storage_key": "scores/55/55e81363-9851-5db0-9cdc-2920d097cef8.pdf",
+      "file_size": 21558526,
+      "sha256": "7cbcce07aa900c26433ea748e45b851b3451d2634e1ee60385f5c875257c7811"
     },
     {
       "public_id": "5607fee5-2a05-547b-b914-fd3e71533492",
@@ -20678,6 +20713,13 @@
       "storage_key": "scores/95/954a29a0-5272-469c-b873-fa0601be1997.pdf",
       "file_size": 362119,
       "sha256": "53e1ce223961b2b3d9346039772d1ecd64812744da8ae4a61ac7279008fabd5c"
+    },
+    {
+      "public_id": "95575014-0080-5706-8e34-c2cad2f8cfa8",
+      "source_path": "scores/乐谱书/曲集/95575014-0080-5706-8e34-c2cad2f8cfa8.pdf",
+      "storage_key": "scores/95/95575014-0080-5706-8e34-c2cad2f8cfa8.pdf",
+      "file_size": 2153521,
+      "sha256": "becae5384c720db228ea66728e5beca8bcec8e1ccef7ad810a6a55580938814b"
     },
     {
       "public_id": "955e692b-c755-5869-80ee-bdefffbde383",
@@ -30025,6 +30067,13 @@
       "sha256": "4e5bf85aab5536d9734ec9a7031f2202ee9d8cb4db95d37fe2109caa08765899"
     },
     {
+      "public_id": "d697b922-ee85-50e8-9624-9f164342207e",
+      "source_path": "scores/乐谱书/曲集/d697b922-ee85-50e8-9624-9f164342207e.pdf",
+      "storage_key": "scores/d6/d697b922-ee85-50e8-9624-9f164342207e.pdf",
+      "file_size": 10512886,
+      "sha256": "d3fa24164b93f1809cf1d02fbc7bd989468494d2d501ae0308307c08cc572a4b"
+    },
+    {
       "public_id": "d6b06b05-6613-5c83-9258-580796400dd4",
       "source_path": "scores/声乐作品/艺术歌曲/1766372554881_Die_Manner_sind_mechant_-_D866_Medium_Original.pdf",
       "storage_key": "scores/d6/d6b06b05-6613-5c83-9258-580796400dd4.pdf",
@@ -30660,6 +30709,13 @@
       "storage_key": "scores/da/daceb110-ea0b-52ae-bec1-c4cd2eae9078.pdf",
       "file_size": 112909,
       "sha256": "960ce8d12552c2a089a72ae64f770068175f4e1fd99628c574067e921a651d7a"
+    },
+    {
+      "public_id": "dada5885-e63d-5b03-9f0f-48e6a9f55062",
+      "source_path": "scores/声乐套曲/dada5885-e63d-5b03-9f0f-48e6a9f55062.pdf",
+      "storage_key": "scores/da/dada5885-e63d-5b03-9f0f-48e6a9f55062.pdf",
+      "file_size": 9349237,
+      "sha256": "f2e42ce61a49c0a72ef35be6fb511cd688367e77b4fe6d73820e3dece0441495"
     },
     {
       "public_id": "dae7cbaf-9258-5e81-bcd5-ddad08adaa90",
@@ -31815,6 +31871,13 @@
       "storage_key": "scores/e2/e27b72f6-53bb-5fd4-90c1-e1b1e10e1b27.pdf",
       "file_size": 610677,
       "sha256": "fe0be1ae5a3f355097e21c14a5b5fdb4be30b3a22f771ea39b25cc172ec65f42"
+    },
+    {
+      "public_id": "e27ee0bb-dd0f-5287-8719-ca0452f218ad",
+      "source_path": "scores/乐谱书/曲集/e27ee0bb-dd0f-5287-8719-ca0452f218ad.pdf",
+      "storage_key": "scores/e2/e27ee0bb-dd0f-5287-8719-ca0452f218ad.pdf",
+      "file_size": 17312958,
+      "sha256": "26f7fd62b23b3218228b3f6222604315a19aeadce7633d63b3ce710d98fd191a"
     },
     {
       "public_id": "e2a263fe-4f5d-495c-897c-78335aa8de3e",
@@ -35777,6 +35840,13 @@
       "storage_key": "scores/ff/ff0b97ca-3ce8-5a44-a709-e81e6969804f.pdf",
       "file_size": 631457,
       "sha256": "d7d2e91c361bed4fbac21bca8090b781b4c73b3c6b7e2fe01acce300759d0fc4"
+    },
+    {
+      "public_id": "ff15662d-0bba-5823-a68b-35f2fa85f70a",
+      "source_path": "scores/乐谱书/曲集/ff15662d-0bba-5823-a68b-35f2fa85f70a.pdf",
+      "storage_key": "scores/ff/ff15662d-0bba-5823-a68b-35f2fa85f70a.pdf",
+      "file_size": 20708720,
+      "sha256": "86b57ad16da65125d8d012b0e442ce7bb71b50eb62503db700428c9861275cf7"
     },
     {
       "public_id": "ff312c63-aa04-5f3b-9be0-96e3ca67df95",
