@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5215,
-  "unique_content_count": 5193,
+  "entry_count": 5225,
+  "unique_content_count": 5203,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9255377718,
+  "total_size": 9270174461,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -4412,6 +4412,13 @@
       "sha256": "863604841490a55d9a1767b50a216234fa08753c9c7a88cc01537729915db3df"
     },
     {
+      "public_id": "1e351a24-d168-5909-b437-884d9df03b20",
+      "source_path": "scores/合唱作品/1e351a24-d168-5909-b437-884d9df03b20.pdf",
+      "storage_key": "scores/1e/1e351a24-d168-5909-b437-884d9df03b20.pdf",
+      "file_size": 62029,
+      "sha256": "7bded85851a85c2f25cebe31b5075bfabdc34e47b6b5adf295606701a62573e1"
+    },
+    {
       "public_id": "1e58df80-ffdc-5767-9b21-0fe38a01b204",
       "source_path": "scores/歌剧咏叹调/1766097970260_Queste_un_affare.pdf",
       "storage_key": "scores/1e/1e58df80-ffdc-5767-9b21-0fe38a01b204.pdf",
@@ -6636,6 +6643,13 @@
       "storage_key": "scores/2e/2ef60dd7-5a77-5888-83d6-7f8fb47bd8bf.pdf",
       "file_size": 399988,
       "sha256": "f6e83251298857fd13e0cb3ced3c3cd54f9e2c4ed48a362bb0647eb95c0f1213"
+    },
+    {
+      "public_id": "2f0398bd-e732-510a-b04c-d8856e7e7bef",
+      "source_path": "scores/歌剧重唱/2f0398bd-e732-510a-b04c-d8856e7e7bef.pdf",
+      "storage_key": "scores/2f/2f0398bd-e732-510a-b04c-d8856e7e7bef.pdf",
+      "file_size": 476616,
+      "sha256": "942aeae160a7b7e246fd098d591f9578dfbd008753138a1252d7300808adc4ff"
     },
     {
       "public_id": "2f049545-fc64-5569-9102-03b035aa60f6",
@@ -16522,6 +16536,13 @@
       "sha256": "05631ecac1d6d4051ca4e35a984d368388ef28f28b35aea1426f5f049cc05ec6"
     },
     {
+      "public_id": "74e7b096-c2e5-5d15-bea5-2dc858506f93",
+      "source_path": "scores/歌剧重唱/74e7b096-c2e5-5d15-bea5-2dc858506f93.pdf",
+      "storage_key": "scores/74/74e7b096-c2e5-5d15-bea5-2dc858506f93.pdf",
+      "file_size": 890562,
+      "sha256": "b327421d0586105f8b04e10e7ec08781d0f58fa0427528e5a4f38e0945e34d26"
+    },
+    {
       "public_id": "74eacf2a-3baf-5d00-bd60-604d020b442b",
       "source_path": "scores/歌剧咏叹调/1766007824539_Dal_crudel_che_mha_tradita.pdf",
       "storage_key": "scores/74/74eacf2a-3baf-5d00-bd60-604d020b442b.pdf",
@@ -18370,6 +18391,13 @@
       "sha256": "1f304455172c0772bb755e2139c0ef72fa88c762d7e9237e4c08c04ce257b30d"
     },
     {
+      "public_id": "82e55055-e99f-538b-a2ee-e06886cf7f66",
+      "source_path": "scores/歌剧重唱/82e55055-e99f-538b-a2ee-e06886cf7f66.pdf",
+      "storage_key": "scores/82/82e55055-e99f-538b-a2ee-e06886cf7f66.pdf",
+      "file_size": 3328487,
+      "sha256": "5254bd3a5c1e5758d7687a8860a5e655b827925d00515fc3c2a3380ccfff54d0"
+    },
+    {
       "public_id": "82e7ae95-3162-46d1-82a8-dcd17c6918dc",
       "source_path": "scores/器乐分谱/82e7ae95-3162-46d1-82a8-dcd17c6918dc.pdf",
       "storage_key": "scores/82/82e7ae95-3162-46d1-82a8-dcd17c6918dc.pdf",
@@ -20120,6 +20148,13 @@
       "sha256": "3a8167f45bd6921e387ce653082fc634c94572897aa83f1bfcb99bf75919b9e1"
     },
     {
+      "public_id": "8ed1c736-d455-54ce-9dbe-c97298137d3c",
+      "source_path": "scores/歌剧重唱/8ed1c736-d455-54ce-9dbe-c97298137d3c.pdf",
+      "storage_key": "scores/8e/8ed1c736-d455-54ce-9dbe-c97298137d3c.pdf",
+      "file_size": 827738,
+      "sha256": "ac9de5e431e64bac0ee8e51e284adf5a57f1d2acf5b709bde8b1efc5444609b2"
+    },
+    {
       "public_id": "8ee107c1-7856-45fb-b9fa-6c4ac854ea97",
       "source_path": "scores/歌剧咏叹调/8ee107c1-7856-45fb-b9fa-6c4ac854ea97.pdf",
       "storage_key": "scores/8e/8ee107c1-7856-45fb-b9fa-6c4ac854ea97.pdf",
@@ -20741,6 +20776,13 @@
       "storage_key": "scores/92/92d93813-9bc0-5a22-8d23-a1221db2a7bc.pdf",
       "file_size": 779919,
       "sha256": "e8fc7ee7c11d61ec3704328515497fb285a2d38a35c7b4fd530416ada20e4eb8"
+    },
+    {
+      "public_id": "92e0b67c-18e7-5646-a873-0b84bcf547bf",
+      "source_path": "scores/宗教声乐作品/92e0b67c-18e7-5646-a873-0b84bcf547bf.pdf",
+      "storage_key": "scores/92/92e0b67c-18e7-5646-a873-0b84bcf547bf.pdf",
+      "file_size": 268740,
+      "sha256": "c8f1b58dc385450080d995dac293717f3777ac7f013dd17cc9310ea6aab74082"
     },
     {
       "public_id": "92f0e04a-5a46-583f-ae14-1b2ce141734d",
@@ -23501,6 +23543,13 @@
       "sha256": "5b5f86e22eb6bd49524364d1dcb6212dd9871c94d938567a757fda42c0a8419c"
     },
     {
+      "public_id": "a62889ad-1441-5664-b7ee-900e27d3ac79",
+      "source_path": "scores/歌剧咏叹调/a62889ad-1441-5664-b7ee-900e27d3ac79.pdf",
+      "storage_key": "scores/a6/a62889ad-1441-5664-b7ee-900e27d3ac79.pdf",
+      "file_size": 2504151,
+      "sha256": "acaa6d477eb967d2a5a0667c249a0f337dcf7dd644da733dd50d853481e99887"
+    },
+    {
       "public_id": "a628f9d1-6ef7-5905-8dbc-819160156db9",
       "source_path": "scores/歌剧咏叹调/1766097758174_E_fia_ver_mio_signor.pdf",
       "storage_key": "scores/a6/a628f9d1-6ef7-5905-8dbc-819160156db9.pdf",
@@ -25207,6 +25256,13 @@
       "storage_key": "scores/b1/b161f904-1d5c-52c7-ba66-9419d72c5b5b.pdf",
       "file_size": 627247,
       "sha256": "5893abe96c7f33b5ca8a5c038d5313b3538d511216e444f10c97fd027da8aa58"
+    },
+    {
+      "public_id": "b16304f5-c2b2-5c34-b0b1-a5fc3b7d11f8",
+      "source_path": "scores/歌剧重唱/b16304f5-c2b2-5c34-b0b1-a5fc3b7d11f8.pdf",
+      "storage_key": "scores/b1/b16304f5-c2b2-5c34-b0b1-a5fc3b7d11f8.pdf",
+      "file_size": 1068914,
+      "sha256": "d8a48c0c81e1426de3db19d57920b5d4eb45b4ddeee305b81e58115ea78c543a"
     },
     {
       "public_id": "b16aeadf-0ec4-5565-8646-dd1c9c036dd7",
@@ -29190,6 +29246,13 @@
       "storage_key": "scores/cb/cbe6412f-9fa1-5a4a-b10a-4336154948e4.pdf",
       "file_size": 428360,
       "sha256": "2a3a17afb927ca6b20195ff3d0cca2735294c0fb25243d1aba40e6bc7359ab9d"
+    },
+    {
+      "public_id": "cbf97241-9320-5673-8585-7c84650e5d7b",
+      "source_path": "scores/歌剧重唱/cbf97241-9320-5673-8585-7c84650e5d7b.pdf",
+      "storage_key": "scores/cb/cbf97241-9320-5673-8585-7c84650e5d7b.pdf",
+      "file_size": 4859733,
+      "sha256": "4dddc506cbacdfa7433078b74b79af973666084c7eae24cabd7de3a52ee0b436"
     },
     {
       "public_id": "cbfe5dfc-188c-57cd-b8a8-5f001438a593",
@@ -36386,6 +36449,13 @@
       "storage_key": "scores/fe/fe99057a-330f-5b30-813f-354fe7ca696b.pdf",
       "file_size": 42817,
       "sha256": "b9bc9e7b47b7326bdce452afce2652625c18a084b507e32b3cc2f258dc70e5f8"
+    },
+    {
+      "public_id": "fe9962dd-76f3-5b01-9465-378151443129",
+      "source_path": "scores/歌剧重唱/fe9962dd-76f3-5b01-9465-378151443129.pdf",
+      "storage_key": "scores/fe/fe9962dd-76f3-5b01-9465-378151443129.pdf",
+      "file_size": 509773,
+      "sha256": "f60fa50296b0d9be2b18e4452f8bdad272012f37f4d89299f38899c776df81e0"
     },
     {
       "public_id": "fe9fda3f-9c7a-5fcb-8035-6533b7b8432b",
