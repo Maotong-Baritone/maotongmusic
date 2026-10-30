@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5175,
-  "unique_content_count": 5153,
+  "entry_count": 5185,
+  "unique_content_count": 5163,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9028193021,
+  "total_size": 9046552419,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -7387,6 +7387,13 @@
       "sha256": "22ac3b35f2f1d4fe4d26b707ac219ab5a70728c2b40509dbada846dfc57386e4"
     },
     {
+      "public_id": "35917421-c2a7-5dc3-aa6d-2037e1f91e30",
+      "source_path": "scores/艺术歌曲/35917421-c2a7-5dc3-aa6d-2037e1f91e30.pdf",
+      "storage_key": "scores/35/35917421-c2a7-5dc3-aa6d-2037e1f91e30.pdf",
+      "file_size": 82999,
+      "sha256": "744c177dc15d497eccb84ac1d88f0f9e8ced0ea6305b53640b979af3ca74776e"
+    },
+    {
       "public_id": "359377ff-042f-573d-8446-8503b9cb208f",
       "source_path": "scores/歌剧咏叹调/1766098254403_Ti_vedo_ti_bacio_terreno_natio.pdf",
       "storage_key": "scores/35/359377ff-042f-573d-8446-8503b9cb208f.pdf",
@@ -13722,6 +13729,13 @@
       "sha256": "3a8017134369638eea83a18d1bcb30d662f300b8c46a1e9ad119d391ef5a739f"
     },
     {
+      "public_id": "616bb29c-fd44-5196-a249-add9de27e52c",
+      "source_path": "scores/歌剧咏叹调/616bb29c-fd44-5196-a249-add9de27e52c.pdf",
+      "storage_key": "scores/61/616bb29c-fd44-5196-a249-add9de27e52c.pdf",
+      "file_size": 370066,
+      "sha256": "df6b1ca78274b7712a0f18bc92b0ecfe0751ee79f36b8a165e9a90c7f9165ed0"
+    },
+    {
       "public_id": "617216c1-bdc0-5fcc-817d-9b153ea9d81e",
       "source_path": "scores/歌剧咏叹调/1766097679766_Pour_notre_amour...Sur_la_rive_etrangere.pdf",
       "storage_key": "scores/61/617216c1-bdc0-5fcc-817d-9b153ea9d81e.pdf",
@@ -14105,6 +14119,13 @@
       "storage_key": "scores/64/64d18770-0f3d-5d23-9fdd-ab88576cce2b.pdf",
       "file_size": 675539,
       "sha256": "a0b0f2f689c3d4e5943abc2b71151816489518b2d9159b574f631301494e79eb"
+    },
+    {
+      "public_id": "64e497c1-4e49-519b-a513-e694e465f392",
+      "source_path": "scores/歌剧咏叹调/64e497c1-4e49-519b-a513-e694e465f392.pdf",
+      "storage_key": "scores/64/64e497c1-4e49-519b-a513-e694e465f392.pdf",
+      "file_size": 2170086,
+      "sha256": "73da808156c2d8aa23a69b0c9a5f65cad011eddf0399945cbfc0c215a9146906"
     },
     {
       "public_id": "650d96de-99ff-4d7e-9c7a-337f9f8c1a66",
@@ -14826,6 +14847,13 @@
       "storage_key": "scores/69/69d65372-54a5-5ab3-833d-2547f7315c41.pdf",
       "file_size": 16070218,
       "sha256": "137e55186e22c0a72de5aa4cc267e536ec14df53fb1297296275bd5b10c4c4e4"
+    },
+    {
+      "public_id": "69db131b-e8d1-5bba-9c6b-46949e551ae0",
+      "source_path": "scores/歌剧咏叹调/69db131b-e8d1-5bba-9c6b-46949e551ae0.pdf",
+      "storage_key": "scores/69/69db131b-e8d1-5bba-9c6b-46949e551ae0.pdf",
+      "file_size": 1297092,
+      "sha256": "90fb50df14cc5e394bec0c1bd97b02bee5598d5273d3857e21011f202aa0efff"
     },
     {
       "public_id": "69df5996-b9b1-4718-bacc-566b465c7b05",
@@ -17180,6 +17208,13 @@
       "sha256": "fb447640fdef54b769c6d30a57c6b4b2f3da60dea1724dd0e4e2d53207fadeed"
     },
     {
+      "public_id": "7a9daed1-339e-570c-8ac8-38cf19b82bf9",
+      "source_path": "scores/歌剧咏叹调/7a9daed1-339e-570c-8ac8-38cf19b82bf9.pdf",
+      "storage_key": "scores/7a/7a9daed1-339e-570c-8ac8-38cf19b82bf9.pdf",
+      "file_size": 92930,
+      "sha256": "e5b35a31055dd5b8fc74fa38b00f8d1ebe8e2a940afa7b94ecba28cefa763b6d"
+    },
+    {
       "public_id": "7abee4a3-05ea-5c5e-9156-00e54a293f24",
       "source_path": "scores/歌剧咏叹调/1766007748289_Quella_fiamma_chil_petto_maccende.pdf",
       "storage_key": "scores/7a/7abee4a3-05ea-5c5e-9156-00e54a293f24.pdf",
@@ -19376,6 +19411,13 @@
       "storage_key": "scores/8b/8b10809c-e658-5e98-8893-718c64afdb50.pdf",
       "file_size": 926070,
       "sha256": "8e2ae66dd4690968fc5704d19208d17ccddf53f774a4c8b52fdd720ca464fd08"
+    },
+    {
+      "public_id": "8b172176-2cd7-531b-af10-2912214573fc",
+      "source_path": "scores/歌剧咏叹调/8b172176-2cd7-531b-af10-2912214573fc.pdf",
+      "storage_key": "scores/8b/8b172176-2cd7-531b-af10-2912214573fc.pdf",
+      "file_size": 685186,
+      "sha256": "cd9793a010e83079c7cf128bc794955a9b6d93756630cf4511aec9c61dc7318c"
     },
     {
       "public_id": "8b234215-4d2b-5afb-8800-b19913f7eb9d",
@@ -21611,6 +21653,13 @@
       "sha256": "809b70c447c49be6e1f77ca891d673d60ceee747c67cb4a5aead39afd39e87b4"
     },
     {
+      "public_id": "9a369155-e273-5164-b2d7-470b2bf0cff4",
+      "source_path": "scores/歌剧咏叹调/9a369155-e273-5164-b2d7-470b2bf0cff4.pdf",
+      "storage_key": "scores/9a/9a369155-e273-5164-b2d7-470b2bf0cff4.pdf",
+      "file_size": 1213257,
+      "sha256": "ae90fcbf0c019624ad5a5b40156063ae3e84123ac57c2ac297766d01a35173fc"
+    },
+    {
       "public_id": "9a401ed1-5f4a-5da0-ac41-fe03318b3c69",
       "source_path": "scores/歌剧咏叹调/1765777263.pdf",
       "storage_key": "scores/9a/9a401ed1-5f4a-5da0-ac41-fe03318b3c69.pdf",
@@ -22211,6 +22260,13 @@
       "storage_key": "scores/9e/9e6c6611-b20d-5181-810c-6a14628c9574.pdf",
       "file_size": 717481,
       "sha256": "53993d29785bbd2f4ca362af358070d3a203e7bda04e0d858f2670dae1d01e4f"
+    },
+    {
+      "public_id": "9e737840-0dec-51e6-b81d-211ff6459c47",
+      "source_path": "scores/歌剧咏叹调/9e737840-0dec-51e6-b81d-211ff6459c47.pdf",
+      "storage_key": "scores/9e/9e737840-0dec-51e6-b81d-211ff6459c47.pdf",
+      "file_size": 5885908,
+      "sha256": "adb5c026e7891ca52d7061ba051fed11f3de8a84e8331ec5aa445aa6cd85e046"
     },
     {
       "public_id": "9e8a665c-2d84-56b8-aada-0ead28347b0d",
@@ -33889,6 +33945,13 @@
       "sha256": "317e4cf6ad37758ef6efb2bcdbaab802276b3bd2b26a3488197814493287e638"
     },
     {
+      "public_id": "eed92b47-83f1-52db-bd1c-57e0fc6530b9",
+      "source_path": "scores/歌剧咏叹调/eed92b47-83f1-52db-bd1c-57e0fc6530b9.pdf",
+      "storage_key": "scores/ee/eed92b47-83f1-52db-bd1c-57e0fc6530b9.pdf",
+      "file_size": 493053,
+      "sha256": "f38b12f51ed01ba6a9394d05574c7f471a973bb54319f9294c08ec0563903855"
+    },
+    {
       "public_id": "eee2dd4e-f46e-5567-82ba-fb3da4e97985",
       "source_path": "scores/声乐作品/艺术歌曲/1766372510477_Auf_dem_Strom_-_D943_Medium_Original.pdf",
       "storage_key": "scores/ee/eee2dd4e-f46e-5567-82ba-fb3da4e97985.pdf",
@@ -35560,6 +35623,13 @@
       "storage_key": "scores/fb/fb422b81-179b-5162-a4a1-6859ce597205.pdf",
       "file_size": 2537433,
       "sha256": "e7e1355aa0cca3cdd67b08a28cf744ebb2b07b5f1e83f3fe214470fcb319a711"
+    },
+    {
+      "public_id": "fb51dd3f-ad88-554a-bb81-d084d80f13b5",
+      "source_path": "scores/歌剧咏叹调/fb51dd3f-ad88-554a-bb81-d084d80f13b5.pdf",
+      "storage_key": "scores/fb/fb51dd3f-ad88-554a-bb81-d084d80f13b5.pdf",
+      "file_size": 6068821,
+      "sha256": "e1ac74c2c484fb40b617020fd4ecdf28373fdce8d7ccb5a2ec860f90d3580211"
     },
     {
       "public_id": "fb5b67f3-2667-4288-86fc-040e173a92fa",
