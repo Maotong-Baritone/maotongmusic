@@ -62,6 +62,806 @@
   ],
   "documents": [
     {
+      "title": "阿尔辛娜（Castel音标与逐词英译）",
+      "original_title": "Alcina",
+      "work_id": "alcina-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "a-marchi",
+          "name": "A. Marchi",
+          "role": "原剧本来源（按扫描题署）"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "Handel Opera Libretti, Volume I；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "意大利语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "意大利语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "georg-friedrich-handel",
+          "name": "Georg Friedrich Händel/亨德尔",
+          "has_scores": true
+        }
+      ],
+      "summary": "Alcina的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：64页PDF，含剧目插图、原书第73至134页及末尾空白页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。本扫描题署A. Marchi，并提及Ariosto的Orlando Furioso；作者缩写未擅自扩展，后续改编关系未核。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 4
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：Handel Opera Libretti, Volume I",
+          "url": "https://leyerlepublications.com/collections/opera-libretti/products/handel-opera-libretti-volume-1"
+        }
+      ],
+      "id": "d0b10e63-2f1d-5924-9f66-a7bea61a0d5f",
+      "document_type": "libretto",
+      "page_count": 64,
+      "file_size": 4513994,
+      "sha256": "7b68dc50828e993f0feffe2838e0ef2f8cdb5f7ca41e63a6e9bed423688beeef",
+      "storage_key": "literature/d0/d0b10e63-2f1d-5924-9f66-a7bea61a0d5f.pdf",
+      "cover": "img/literature/d0b10e63-2f1d-5924-9f66-a7bea61a0d5f.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "军中女郎（Castel音标与逐词英译）",
+      "original_title": "La Fille du régiment",
+      "work_id": "la-fille-du-regiment-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "jules-henri-vernoy-de-saint-georges",
+          "name": "Jules-Henri Vernoy de Saint-Georges",
+          "role": "原剧本"
+        },
+        {
+          "id": "jean-francois-alfred-bayard",
+          "name": "Jean-François-Alfred Bayard",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "Italian/French Belcanto Opera Libretti, Volume III；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "法语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "法语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "gaetano-donizetti",
+          "name": "Gaetano Donizetti/多尼采蒂",
+          "has_scores": true
+        }
+      ],
+      "summary": "La Fille du régiment的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：71页PDF，含剧目插图和原书第395至464页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。法语原文，包含对白及演唱段落；不按意大利作曲家的国籍误记为意大利语。原剧本作者全名按大都会歌剧院资料与扫描缩写核对。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 4
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：Italian/French Belcanto Opera Libretti, Volume III",
+          "url": "https://leyerlepublications.com/collections/opera-libretti/products/italian-belcanto-opera-libretti-volume-3"
+        },
+        {
+          "title": "大都会歌剧院：剧本作者署名",
+          "url": "https://www.metopera.org/discover/education/educator-guides/la-fille-du-regiment/the-operas-plot-creation/"
+        }
+      ],
+      "id": "46b632ad-d9b3-5536-9818-c0888eef3bd1",
+      "document_type": "libretto",
+      "page_count": 71,
+      "file_size": 43002834,
+      "sha256": "1d9ce498ebc3f7534ba580776e34b9363c3a4cef4e3dbe8d79be2d22279ca926",
+      "storage_key": "literature/46/46b632ad-d9b3-5536-9818-c0888eef3bd1.pdf",
+      "cover": "img/literature/46b632ad-d9b3-5536-9818-c0888eef3bd1.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "茶花女（Castel音标与逐词英译）",
+      "original_title": "La traviata",
+      "work_id": "la-traviata-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "francesco-maria-piave",
+          "name": "Francesco Maria Piave",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "The Complete Verdi Libretti, Volume IV；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "意大利语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "意大利语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "giuseppe-verdi",
+          "name": "Giuseppe Verdi/威尔第",
+          "has_scores": true
+        }
+      ],
+      "summary": "La traviata的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：80页PDF，含剧目插图和原书第249至327页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。原剧本作者按剧目页署名；与歌剧首演日期分别处理，未将首演年份记为该扫描的出版年份。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 4
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：The Complete Verdi Libretti, Volume IV",
+          "url": "https://leyerlepublications.com/collections/opera-libretti/products/the-complete-verdi-libretti-volume-4"
+        }
+      ],
+      "id": "b28e3892-2461-5623-8c82-e4957b30547d",
+      "document_type": "libretto",
+      "page_count": 80,
+      "file_size": 8833493,
+      "sha256": "a0c43eb3bddf7cd324a1783a84396c30febc0257f3fa0803d779e6bfe3679004",
+      "storage_key": "literature/b2/b28e3892-2461-5623-8c82-e4957b30547d.pdf",
+      "cover": "img/literature/b28e3892-2461-5623-8c82-e4957b30547d.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "修女安洁莉卡（Castel音标与逐词英译）",
+      "original_title": "Suor Angelica",
+      "work_id": "suor-angelica-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "giovacchino-forzano",
+          "name": "Giovacchino Forzano",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "The Complete Puccini Libretti, Volume II；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "意大利语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "意大利语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "giacomo-puccini",
+          "name": "Giacomo Puccini/普契尼",
+          "has_scores": true
+        }
+      ],
+      "summary": "Suor Angelica的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：33页PDF，含剧目插图和原书第233至264页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。歌剧三联剧Il trittico的第二部；本文件仅包含这一剧目。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 3
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：The Complete Puccini Libretti, Volume II",
+          "url": "https://leyerlepublications.com/collections/opera-libretti"
+        }
+      ],
+      "id": "ae6c2364-5eb5-588b-9b87-62f8bd1ff863",
+      "document_type": "libretto",
+      "page_count": 33,
+      "file_size": 4083617,
+      "sha256": "8591d8999fdd92b57ed33cb862d60a1fdeb603e6853209ef19cee56a238e7f47",
+      "storage_key": "literature/ae/ae6c2364-5eb5-588b-9b87-62f8bd1ff863.pdf",
+      "cover": "img/literature/ae6c2364-5eb5-588b-9b87-62f8bd1ff863.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "贾尼·斯基基（Castel音标与逐词英译）",
+      "original_title": "Gianni Schicchi",
+      "work_id": "gianni-schicchi-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "giovacchino-forzano",
+          "name": "Giovacchino Forzano",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "The Complete Puccini Libretti, Volume II；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "意大利语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "意大利语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "giacomo-puccini",
+          "name": "Giacomo Puccini/普契尼",
+          "has_scores": true
+        }
+      ],
+      "summary": "贾尼斯基基（Gianni Schicchi）的意大利语原文台本、国际音标与逐词英语译释，附人物、剧情与舞台提示。",
+      "notes": "收录范围：56页PDF，含剧目插图和原书第267至321页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。亦作“贾尼斯基基”，为歌剧三联剧Il trittico的第三部；本文件仅包含这一剧目。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 3
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：The Complete Puccini Libretti, Volume II",
+          "url": "https://leyerlepublications.com/collections/opera-libretti"
+        }
+      ],
+      "id": "01db63eb-e5ae-535a-891b-f8661df2c78d",
+      "document_type": "libretto",
+      "page_count": 56,
+      "file_size": 6037970,
+      "sha256": "d250b23046219b8f291b834edbf7d455f50cdf912f980b10ad88c536761bc176",
+      "storage_key": "literature/01/01db63eb-e5ae-535a-891b-f8661df2c78d.pdf",
+      "cover": "img/literature/01db63eb-e5ae-535a-891b-f8661df2c78d.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "蝙蝠（Castel音标与逐词英译）",
+      "original_title": "Die Fledermaus",
+      "work_id": "die-fledermaus-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "carl-haffner",
+          "name": "Carl Haffner",
+          "role": "原剧本"
+        },
+        {
+          "id": "richard-genee",
+          "name": "Richard Genée",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": 2006,
+      "edition": "2006年版权版；Viennese Operetta Libretti单剧本扫描本",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "轻歌剧",
+        "国际音标",
+        "逐词英译",
+        "德语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "德语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "johann-strauss-ii",
+          "name": "Johann Strauss II/小约翰·施特劳斯",
+          "has_scores": true
+        }
+      ],
+      "summary": "Die Fledermaus的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：110页PDF，含封面、题名、版权、序言、德语音标指南、三幕台本、后记与书目广告。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。作曲家为Johann Strauss II（小约翰·施特劳斯）；原剧本署名按PDF20著录。Marcie Stapp为本版编辑；Nico Castel负责音标与逐词英译。",
+      "contents": [
+        {
+          "title": "封面",
+          "pdf_page": 1
+        },
+        {
+          "title": "题名页",
+          "pdf_page": 2
+        },
+        {
+          "title": "版权页",
+          "pdf_page": 3
+        },
+        {
+          "title": "德语国际音标指南",
+          "pdf_page": 13
+        },
+        {
+          "title": "人物与剧情、原剧本署名",
+          "pdf_page": 20
+        },
+        {
+          "title": "第一幕台本起始",
+          "pdf_page": 23
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：Viennese Operetta Libretti: Die Fledermaus",
+          "url": "https://leyerlepublications.com/collections/opera-libretti?page=2"
+        }
+      ],
+      "isbn": "1878617702",
+      "id": "40470247-e68c-562a-bfc8-bd1a9af64b67",
+      "document_type": "libretto",
+      "page_count": 110,
+      "file_size": 5585985,
+      "sha256": "8e7b4fcf9eb9af26ba3d6446f37691e2ffe117d8a845f957451b16944c65797a",
+      "storage_key": "literature/40/40470247-e68c-562a-bfc8-bd1a9af64b67.pdf",
+      "cover": "img/literature/40470247-e68c-562a-bfc8-bd1a9af64b67.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件"
+    },
+    {
+      "title": "唐璜（Castel音标与逐词英译）",
+      "original_title": "Don Giovanni",
+      "work_id": "don-giovanni-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "lorenzo-da-ponte",
+          "name": "Lorenzo Da Ponte",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "The Libretti of Mozart's Completed Operas, Volume I；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "意大利语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "意大利语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "wolfgang-amadeus-mozart",
+          "name": "Wolfgang Amadeus Mozart/莫扎特",
+          "has_scores": true
+        }
+      ],
+      "summary": "Don Giovanni的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：133页PDF，含剧目插图和原书第259至390页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。末尾保留主剧情之后的第二幕补充场景。按此文件实际范围收录，不代表莫扎特台本合集全卷。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 4
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：The Libretti of Mozart's Completed Operas, Volume I",
+          "url": "https://leyerlepublications.com/products/mozart-vol-i"
+        }
+      ],
+      "id": "d7633ee1-49ff-5939-a437-d03ca146db51",
+      "document_type": "libretto",
+      "page_count": 133,
+      "file_size": 7336855,
+      "sha256": "9a7fdc49fa5d49d6959fa669527857d5b4e3052cc008d7bbbc2bca7f4ac84541",
+      "storage_key": "literature/d7/d7633ee1-49ff-5939-a437-d03ca146db51.pdf",
+      "cover": "img/literature/d7633ee1-49ff-5939-a437-d03ca146db51.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "费加罗的婚礼（Castel音标与逐词英译）",
+      "original_title": "Le nozze di Figaro",
+      "work_id": "le-nozze-di-figaro-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "lorenzo-da-ponte",
+          "name": "Lorenzo Da Ponte",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "The Libretti of Mozart's Completed Operas, Volume II；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "意大利语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "意大利语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "wolfgang-amadeus-mozart",
+          "name": "Wolfgang Amadeus Mozart/莫扎特",
+          "has_scores": true
+        }
+      ],
+      "summary": "Le nozze di Figaro的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：169页PDF，含剧目插图和原书第281至448页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。含四幕的原文、音标及逐词英译；不代表合集全卷。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 6
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：The Libretti of Mozart's Completed Operas, Volume II",
+          "url": "https://leyerlepublications.com/collections/opera-libretti/products/mozart-opera-libretti-volume-2"
+        }
+      ],
+      "id": "d27456e1-61ee-58c9-93fd-4e63c0cb413a",
+      "document_type": "libretto",
+      "page_count": 169,
+      "file_size": 8637838,
+      "sha256": "1d067466d8f22df624656d0af86dd30b46258346767e38740adc3a8f534f73cb",
+      "storage_key": "literature/d2/d27456e1-61ee-58c9-93fd-4e63c0cb413a.pdf",
+      "cover": "img/literature/d27456e1-61ee-58c9-93fd-4e63c0cb413a.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "魔笛（Castel音标与逐词英译）",
+      "original_title": "Die Zauberflöte",
+      "work_id": "die-zauberflote-libretto",
+      "authors": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "编著、国际音标与译释"
+        },
+        {
+          "id": "emanuel-schikaneder",
+          "name": "Emanuel Schikaneder",
+          "role": "原剧本"
+        }
+      ],
+      "translators": [
+        {
+          "id": "nico-castel",
+          "name": "Nico Castel",
+          "role": "逐词英译与国际音标"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "Leyerle Publications",
+      "year": null,
+      "edition": "The Libretti of Mozart's Completed Operas, Volume II；单剧目扫描摘录，未含合集版权页，确切版次与年份未核",
+      "subjects": [
+        "language",
+        "performance",
+        "composer-studies"
+      ],
+      "tags": [
+        "台本",
+        "歌剧",
+        "国际音标",
+        "逐词英译",
+        "德语咬字",
+        "Castel译释"
+      ],
+      "purpose": "原文台本、音标与逐词英译参考",
+      "languages": [
+        "德语",
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "wolfgang-amadeus-mozart",
+          "name": "Wolfgang Amadeus Mozart/莫扎特",
+          "has_scores": true
+        }
+      ],
+      "summary": "Die Zauberflöte的原文台本、国际音标与逐词英语译释，附人物表、剧情及舞台提示。",
+      "notes": "收录范围：147页PDF，含剧目插图和原书第527至672页。这是单剧目参考资料，原文与英语译释并列。Nico Castel为编著与注音、译释者，原剧本作者另列；作曲家通过相关人物关联。保留演唱段落和对白的原文、注音与英译；不代表合集全卷。",
+      "contents": [
+        {
+          "title": "剧目插图",
+          "pdf_page": 1
+        },
+        {
+          "title": "剧目介绍、人物与剧情",
+          "pdf_page": 2
+        },
+        {
+          "title": "台本起始",
+          "pdf_page": 5
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "出版社系列书目：The Libretti of Mozart's Completed Operas, Volume II",
+          "url": "https://leyerlepublications.com/collections/opera-libretti/products/mozart-opera-libretti-volume-2"
+        }
+      ],
+      "id": "a404252d-c7ec-5325-90ce-379095ac8bf5",
+      "document_type": "libretto",
+      "page_count": 147,
+      "file_size": 32104171,
+      "sha256": "ab06fe8f8a3f003d21c64404d8f4955bd8a8ae9ecdc67d5ebd12a0f9649f8fbc",
+      "storage_key": "literature/a4/a404252d-c7ec-5325-90ce-379095ac8bf5.pdf",
+      "cover": "img/literature/a404252d-c7ec-5325-90ce-379095ac8bf5.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
       "title": "正道神学院中文论文格式指南（Turabian第九版，2024修订）",
       "work_id": "logos-turabian-chinese-guide-9th",
       "authors": [
