@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5158,
-  "unique_content_count": 5136,
+  "entry_count": 5167,
+  "unique_content_count": 5145,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 8541633799,
+  "total_size": 8703215789,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -2515,6 +2515,13 @@
       "sha256": "d7b10d5346be2f387641a5630e1954d3e76cad803ee52931abd7aa1f0b64107d"
     },
     {
+      "public_id": "1166bcdc-a92c-57cf-895c-fdb2a1e6a34f",
+      "source_path": "scores/乐谱书/曲集/1166bcdc-a92c-57cf-895c-fdb2a1e6a34f.pdf",
+      "storage_key": "scores/11/1166bcdc-a92c-57cf-895c-fdb2a1e6a34f.pdf",
+      "file_size": 25323576,
+      "sha256": "3a8522fb406fda5157ddd1f7cbde4cc1674f39f666f39c12ff2be78429bc3516"
+    },
+    {
       "public_id": "1171db1f-d854-5b5c-8c01-5f73b2625606",
       "source_path": "scores/歌剧咏叹调/1766007760331_Amor_nel_mio_penar_deggio_sperar.pdf",
       "storage_key": "scores/11/1171db1f-d854-5b5c-8c01-5f73b2625606.pdf",
@@ -4186,6 +4193,13 @@
       "storage_key": "scores/1c/1cc42854-ba7c-5cd8-bed7-8b9d6d29acb8.pdf",
       "file_size": 510497,
       "sha256": "d0390de2bebf7377e388d162ef31227ecfbcd05608384caa2e131aa14eb7e4dc"
+    },
+    {
+      "public_id": "1ccd3f11-45e2-527a-8617-bf25456df433",
+      "source_path": "scores/乐谱书/曲集/1ccd3f11-45e2-527a-8617-bf25456df433.pdf",
+      "storage_key": "scores/1c/1ccd3f11-45e2-527a-8617-bf25456df433.pdf",
+      "file_size": 55611800,
+      "sha256": "63964bc983c5bff8aac02ef9ac732ac174f2f1b51ed1056140c38a496c4a1fa1"
     },
     {
       "public_id": "1ccdbc9f-146e-4020-aaec-c6bd9e4180c1",
@@ -5887,6 +5901,13 @@
       "storage_key": "scores/29/29b13170-975f-42c3-9bd2-1cb3786f52c8.pdf",
       "file_size": 172615,
       "sha256": "075414b39b90d5fb13ca6865268bb1405f5ec9ed520a63c85a140e33b88db63e"
+    },
+    {
+      "public_id": "29b18438-2d45-5759-bb06-212e9278df33",
+      "source_path": "scores/乐谱书/曲集/29b18438-2d45-5759-bb06-212e9278df33.pdf",
+      "storage_key": "scores/29/29b18438-2d45-5759-bb06-212e9278df33.pdf",
+      "file_size": 9251430,
+      "sha256": "ea9a330b3d158a629d56f6459f92a2afdbcaf2621cd45e371a610d64a0b3bc25"
     },
     {
       "public_id": "29b2ef02-c127-42dd-99b1-2e8beec60fe4",
@@ -11377,6 +11398,13 @@
       "sha256": "0709bdbd0330077d2e2ae29fd1ce39e9ab13c40a4dc5f223220a60a34a683d5f"
     },
     {
+      "public_id": "51690b0d-a32e-5277-ba37-c20d36721dd4",
+      "source_path": "scores/乐谱书/曲集/51690b0d-a32e-5277-ba37-c20d36721dd4.pdf",
+      "storage_key": "scores/51/51690b0d-a32e-5277-ba37-c20d36721dd4.pdf",
+      "file_size": 27720694,
+      "sha256": "8b3f20055afc30f4410a47ec61e1ce05412714c55ac302cdf95bb25366a8ef4a"
+    },
+    {
       "public_id": "5170df03-c41c-59a8-a6c7-6a72aa9dd9db",
       "source_path": "scores/歌剧咏叹调/1766007809967_Scaccia_oh_bella_dal_seno_il_timore.pdf",
       "storage_key": "scores/51/5170df03-c41c-59a8-a6c7-6a72aa9dd9db.pdf",
@@ -16046,6 +16074,13 @@
       "sha256": "af0b69a6cde905e9f9f25b34d78692cd240c8744f904b68e62c7d9a00c596223"
     },
     {
+      "public_id": "72dfa3cc-3716-5205-8749-9165275a9770",
+      "source_path": "scores/乐谱书/曲集/72dfa3cc-3716-5205-8749-9165275a9770.pdf",
+      "storage_key": "scores/72/72dfa3cc-3716-5205-8749-9165275a9770.pdf",
+      "file_size": 10321994,
+      "sha256": "22074c7149e15775660148c42a5d89f48588a0bc400f056eabf685e010495b11"
+    },
+    {
       "public_id": "72e9c0b1-d6e1-5300-bc1d-25ff23693f45",
       "source_path": "scores/歌剧咏叹调/1766098767948_Je_marchais_pieux_dans_la_vie.pdf",
       "storage_key": "scores/72/72e9c0b1-d6e1-5300-bc1d-25ff23693f45.pdf",
@@ -17159,6 +17194,13 @@
       "sha256": "7450820a6049cc1a95d3be5033178ac78ae4e799d066995f75466c4c063ea74e"
     },
     {
+      "public_id": "7b329685-555a-5935-bd62-1634884b62e5",
+      "source_path": "scores/乐谱书/曲集/7b329685-555a-5935-bd62-1634884b62e5.pdf",
+      "storage_key": "scores/7b/7b329685-555a-5935-bd62-1634884b62e5.pdf",
+      "file_size": 12357392,
+      "sha256": "0a7138943ed0b7f0a664ab48b5c222ce5cdf3db476f5a929318cb3d33cdc4c3e"
+    },
+    {
       "public_id": "7b4e0230-9fa8-4d3e-a8e2-80a65c920dcf",
       "source_path": "scores/歌剧咏叹调/7b4e0230-9fa8-4d3e-a8e2-80a65c920dcf.pdf",
       "storage_key": "scores/7b/7b4e0230-9fa8-4d3e-a8e2-80a65c920dcf.pdf",
@@ -17808,6 +17850,13 @@
       "storage_key": "scores/80/805cf16c-5b46-55c4-8595-d386f8a71209.pdf",
       "file_size": 22853076,
       "sha256": "ebe6115e520aecf8c9a8422571ded10d67ef3c81e0aa141293f481ed85d444ee"
+    },
+    {
+      "public_id": "806227d7-be40-54b7-8f7a-a5c9aa1c7b80",
+      "source_path": "scores/乐谱书/曲集/806227d7-be40-54b7-8f7a-a5c9aa1c7b80.pdf",
+      "storage_key": "scores/80/806227d7-be40-54b7-8f7a-a5c9aa1c7b80.pdf",
+      "file_size": 8751709,
+      "sha256": "703fc5d2422c2a6df52e02c06920329cebb3eeef3a2a06afcf37e9be0c78f751"
     },
     {
       "public_id": "8067e26c-cb69-47de-8dfb-6ade05ebf391",
@@ -30221,6 +30270,13 @@
       "sha256": "4964723884857e932db4d5332e28fe54f3a5ef9e7d77d4ae5e9cfe95b18c4a1f"
     },
     {
+      "public_id": "d66746e9-1a7e-5944-9278-67a760e39dab",
+      "source_path": "scores/乐谱书/曲集/d66746e9-1a7e-5944-9278-67a760e39dab.pdf",
+      "storage_key": "scores/d6/d66746e9-1a7e-5944-9278-67a760e39dab.pdf",
+      "file_size": 8205376,
+      "sha256": "ec5945e536664b1d4ffb5b5654aa963520a33785b316bbcb1ceb1c0995ee9c78"
+    },
+    {
       "public_id": "d674867c-acd6-51a4-a129-868eeeb10147",
       "source_path": "scores/歌剧咏叹调/1766097790626_Taci_la_notte_amica.pdf",
       "storage_key": "scores/d6/d674867c-acd6-51a4-a129-868eeeb10147.pdf",
@@ -34853,6 +34909,13 @@
       "storage_key": "scores/f5/f5ecc72f-d4dc-5eb5-bcdb-396786a10140.pdf",
       "file_size": 516045,
       "sha256": "36fa426c8a8f67b9a2bdca5d16cfac3f715fe2cdefa1795fa012e0e4f3c1adda"
+    },
+    {
+      "public_id": "f5f39131-bfdf-5818-bd49-1845d7b98024",
+      "source_path": "scores/乐谱书/曲集/f5f39131-bfdf-5818-bd49-1845d7b98024.pdf",
+      "storage_key": "scores/f5/f5f39131-bfdf-5818-bd49-1845d7b98024.pdf",
+      "file_size": 4038019,
+      "sha256": "7e8733f0714e6f165c8bcb5df2388bb2c3c2d664753028cbb7fc3db5f548683b"
     },
     {
       "public_id": "f604bea0-3ae4-48c9-a970-2cddd5f2532a",
