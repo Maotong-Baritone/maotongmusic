@@ -90,10 +90,17 @@ window.addEventListener('load',async()=>{
     document.documentElement.dataset.theme=theme;
     document.getElementById('literatureTheme').addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;localStorage.setItem('theme',next);});
     try {
-        const [catalogResponse,configResponse]=await Promise.all([fetch('literature.json',{cache:'no-cache'}),fetch('site-config.json',{cache:'no-cache'})]);
-        if(!catalogResponse.ok||!configResponse.ok)throw new Error('书目或存储配置加载失败');
-        literatureCatalog=await catalogResponse.json();
-        literatureBaseUrl=(await configResponse.json()).scoreStorage.baseUrl;
+        const configResponse=await fetch('site-config.json',{cache:'no-store'});
+        if(!configResponse.ok)throw new Error('存储配置加载失败');
+        const config=await configResponse.json();
+        const published=await WebsiteCatalog.load(config);
+        if(published)literatureCatalog=published.literature;
+        else {
+            const catalogResponse=await fetch('literature.json',{cache:'no-cache'});
+            if(!catalogResponse.ok)throw new Error('书目加载失败');
+            literatureCatalog=await catalogResponse.json();
+        }
+        literatureBaseUrl=config.scoreStorage.baseUrl;
         document.getElementById('literatureStats').innerHTML=`<span><strong>${literatureCatalog.documents.length}</strong>份文献</span><span><strong>${literatureCatalog.subjects.length}</strong>个学科方向</span><span><strong>${literatureCatalog.documents.reduce((n,d)=>n+d.page_count,0).toLocaleString()}</strong>页资料</span>`;
         function options(id,items){const select=document.getElementById(id);items.forEach(([value,label])=>select.add(new Option(label,value)));}
         options('literatureType',literatureCatalog.document_types.map(t=>[t.id,t.label]));

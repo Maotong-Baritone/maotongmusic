@@ -1,0 +1,17 @@
+{% if website_sync_state is defined %}
+<section class="card shadow-sm mb-3" aria-label="网站同步">
+  <div class="card-body d-flex flex-wrap align-items-center gap-3 py-3">
+    <div class="me-auto">
+      <strong>网站同步</strong>
+      <span class="badge {{ 'bg-success' if website_sync_state.synced else 'bg-warning text-dark' }} ms-2" role="status">{{ website_sync_state.label }}</span>
+      <div class="small text-muted mt-1">本地资料保存后，点击同步才会更新网站。同步失败时可重试。</div>
+    </div>
+    <a class="btn btn-outline-secondary" href="https://maotong.me/maotongmusic/" target="_blank" rel="noopener noreferrer">打开网站 ↗</a>
+    <form method="post" action="{{ url_for('sync_website') }}" class="m-0" onsubmit="const button=this.querySelector('button');button.disabled=true;button.textContent='正在同步，请稍候…';">
+      <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="next" value="{{ request.full_path }}">
+      <button class="btn btn-success" type="submit">☁️ 同步网站</button>
+    </form>
+  </div>
+</section>
+{% endif %}

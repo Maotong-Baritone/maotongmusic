@@ -8,6 +8,7 @@ const itemsPerPage = 15;
 let currentLyricsId = null;
 let currentPdfUrl = '';
 let currentDetailId = null;
+let publishedLyrics = null;
 
 let favorites = loadStoredFavorites();
 const BASE_PAGE_TITLE = document.title;
@@ -39,15 +40,11 @@ function configureScoreStorage(config) {
 }
 
 async function loadSiteConfig() {
-    try {
-        const response = await fetch('site-config.json', { cache: 'no-cache' });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const config = await response.json();
-        configureScoreStorage(config.scoreStorage);
-    } catch (error) {
-        scoreStorage = { ...DEFAULT_SCORE_STORAGE };
-        console.warn('站点存储配置加载失败，已使用本地 scores/ 目录。', error);
-    }
+    const response = await fetch('site-config.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error('暂时无法读取网站配置，请稍后刷新重试');
+    const config = await response.json();
+    configureScoreStorage(config.scoreStorage);
+    return config;
 }
 
 function scoreStorageKeyFor(item) {
@@ -400,17 +397,21 @@ async function loadData() {
     listSection.innerHTML = '<div class="alert alert-light w-100 text-center font-serif">正在加载数据...</div>';
 
     try {
-        const [dataRes, logRes] = await Promise.all([
-            fetch('data.json', { cache: 'no-cache' }),
-            fetch('logs.json', { cache: 'no-cache' }),
-            loadSiteConfig()
-        ]);
-
-        if (!dataRes.ok) throw new Error("无法加载乐谱数据");
-        musicData = await dataRes.json();
-        
-        if (logRes.ok) {
-            changeLog = await logRes.json();
+        const config = await loadSiteConfig();
+        const published = await WebsiteCatalog.load(config);
+        if (published) {
+            musicData = published.scores;
+            changeLog = published.logs;
+            publishedLyrics = published.lyrics;
+        } else {
+            const [dataRes, logRes] = await Promise.all([
+                fetch('data.json', { cache: 'no-cache' }),
+                fetch('logs.json', { cache: 'no-cache' })
+            ]);
+            if (!dataRes.ok) throw new Error('无法加载乐谱数据');
+            musicData = await dataRes.json();
+            if (logRes.ok) changeLog = await logRes.json();
+            publishedLyrics = null;
         }
 
         initComposerDirectory(musicData);
@@ -423,7 +424,7 @@ async function loadData() {
 
     } catch (error) {
         console.error(error);
-        listSection.innerHTML = `<div class="alert alert-danger w-100 text-center">数据加载失败: ${escapeHtml(error.message)}<br>请检查 data.json 文件是否存在。</div>`;
+        listSection.innerHTML = `<div class="alert alert-danger w-100 text-center">数据加载失败: ${escapeHtml(error.message)}<br>请稍后刷新重试。</div>`;
     }
 }
 
@@ -1190,9 +1191,15 @@ window.openLyricsReader = async function() {
     modal.show();
     
     try {
-        const res = await fetch(`lyrics/${encodeURIComponent(currentLyricsId)}.json`, { cache: 'no-cache' });
-        if (!res.ok) throw new Error("Lyrics not found");
-        const data = await res.json();
+        let data;
+        if (publishedLyrics !== null) {
+            data = publishedLyrics[String(currentLyricsId)];
+            if (!data) throw new Error('Lyrics not found');
+        } else {
+            const res = await fetch(`lyrics/${encodeURIComponent(currentLyricsId)}.json`, { cache: 'no-cache' });
+            if (!res.ok) throw new Error('Lyrics not found');
+            data = await res.json();
+        }
         
         document.getElementById('readerTitle').innerText = data.title || "歌词/剧本";
         document.getElementById('readerComposer').innerHTML = renderComposerLinks(data.composer || "");

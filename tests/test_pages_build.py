@@ -21,6 +21,7 @@ def test_pages_build_contains_only_public_assets():
         "literature.html",
         "literature.json",
         "js/literature.js",
+        "js/catalog-source.js",
         "css/literature.css",
         "data.json",
         "logs.json",

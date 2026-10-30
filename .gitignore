@@ -1,4 +1,5 @@
 .env
+/backup/website_sync/
 .venv/
 __pycache__/
 *.py[cod]

@@ -18,6 +18,7 @@ from urllib.parse import urlsplit
 from flask import Flask, abort, render_template, render_template_string, request, redirect, url_for, flash, session, send_file
 from dotenv import load_dotenv
 import brahms_review as brahms_views
+import website_sync
 
 # 加载 .env 文件中的环境变量
 load_dotenv()
@@ -501,7 +502,28 @@ def save_all(music_data, change_log):
 def add_log(change_log, action_type, message):
     today = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     change_log.insert(0, {"date": today, "type": action_type, "msg": message})
-    del change_log[50:]
+
+
+@app.context_processor
+def website_sync_context():
+    if 'logged_in' not in session:
+        return {}
+    return {'website_sync_state': website_sync.local_status(Path(DATA_FILE).resolve().parent)}
+
+
+@app.route('/sync-website', methods=['POST'])
+@login_required
+def sync_website():
+    try:
+        with CATALOG_LOCK:
+            receipt = website_sync.publish(Path(DATA_FILE).resolve().parent)
+        flash(f"网站已同步：{receipt['score_count']}份乐谱、{receipt['document_count']}份文献。刷新网站即可查看。", 'success')
+    except website_sync.WebsiteSyncError as error:
+        flash(str(error), 'error')
+    except Exception:
+        app.logger.exception('网站同步未完成')
+        flash('网站同步未完成，请检查网络或R2配置后重试；本地资料已保留。', 'error')
+    return redirect(safe_next_url(request.form.get('next')) or url_for('manage'))
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -887,6 +909,7 @@ SUBMISSION_ADMIN_HTML = """
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% for category, message in messages %}<div class="alert {{ 'alert-danger' if category == 'error' else 'alert-success' }}">{{ message }}</div>{% endfor %}
     {% endwith %}
+    {% include 'website_sync_controls.html' %}
     <ul class="nav nav-tabs mb-4">
         <li class="nav-item"><a class="nav-link" href="/dashboard">📊 仪表盘</a></li>
         <li class="nav-item"><a class="nav-link" href="/">📤 上传发布</a></li>
@@ -1070,6 +1093,7 @@ HTML_TEMPLATE = """
             <div class="alert alert-{{ alert_type }}" role="alert">{{ message }}</div>
         {% endfor %}
     {% endwith %}
+    {% include 'website_sync_controls.html' %}
     <ul class="nav nav-tabs mb-4 flex-wrap">
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'dashboard' else '' }}" href="/dashboard">📊 仪表盘</a></li>
         <li class="nav-item"><a class="nav-link {{ 'active' if active_tab == 'health' else '' }}" href="/catalog-health">🩺 资料健康</a></li>

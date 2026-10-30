@@ -42,7 +42,8 @@ jobs:
           root = Path('dist')
           required = {'index.html', 'contact.html', 'resources.html', 'data.json',
                       'literature.html', 'literature.json', 'css/literature.css', 'js/literature.js',
-                      'logs.json', 'site-config.json', 'css/style.css', 'js/app.js'}
+                      'logs.json', 'site-config.json', 'css/style.css', 'js/app.js',
+                      'js/catalog-source.js'}
           missing = [name for name in sorted(required) if not (root / name).is_file()]
           if missing:
               raise SystemExit(f'Missing public files: {missing}')

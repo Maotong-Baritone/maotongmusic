@@ -1310,5 +1310,36 @@ class SubmissionFlowTest(unittest.TestCase):
         self.assertEqual(self.admin.load_deleted_entries(), [])
 
 
+    def test_website_sync_requires_login_and_csrf_and_reports_verified_result(self):
+        self.assertEqual(self.client.post('/sync-website').status_code, 302)
+        with self.client.session_transaction() as session:
+            session['logged_in'] = True
+            session['_csrf_token'] = 'sync-test-token'
+        with mock.patch.object(self.admin.website_sync, 'publish', return_value={'score_count': 3, 'document_count': 2}) as publish:
+            self.assertEqual(self.client.post('/sync-website').status_code, 400)
+            publish.assert_not_called()
+            response = self.client.post('/sync-website', data={'_csrf_token': 'sync-test-token', 'next': '/manage'}, follow_redirects=True)
+            publish.assert_called_once_with(self.temp_root)
+            self.assertIn('网站已同步：3份乐谱、2份文献', response.get_data(as_text=True))
+            self.assertIn('同步网站', response.get_data(as_text=True))
+
+    def test_website_sync_failure_preserves_local_edits_and_can_be_retried(self):
+        with self.client.session_transaction() as session:
+            session['logged_in'] = True
+            session['_csrf_token'] = 'sync-test-token'
+        before = {name: (self.temp_root/name).read_bytes() for name in ['data.json', 'logs.json']}
+        with mock.patch.object(self.admin.website_sync, 'publish', side_effect=self.admin.website_sync.WebsiteSyncError('模拟同步失败，线上未切换')):
+            response = self.client.post('/sync-website', data={'_csrf_token': 'sync-test-token', 'next': 'https://invalid.example/'}, follow_redirects=True)
+        self.assertIn('模拟同步失败', response.get_data(as_text=True))
+        for name, content in before.items():self.assertEqual((self.temp_root/name).read_bytes(), content)
+
+    def test_edit_log_keeps_history_beyond_fifty_entries(self):
+        history = [{'date': '2026-01-01', 'msg': f'历史记录{i}'} for i in range(100)]
+        change_log = list(history)
+        self.admin.add_log(change_log, 'delete', '移除重复乐谱')
+        self.assertEqual(change_log[1:], history)
+        self.assertEqual(len(change_log), 101)
+
+
 if __name__ == "__main__":
     unittest.main()

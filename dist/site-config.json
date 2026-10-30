@@ -1,4 +1,7 @@
 {
+  "catalogSource": {
+    "manifestUrl": "https://scores.maotong.me/website/current.json"
+  },
   "scoreStorage": {
     "baseUrl": "https://scores.maotong.me",
     "objectPrefix": "scores",
