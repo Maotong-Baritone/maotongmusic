@@ -62,6 +62,270 @@
   ],
   "documents": [
     {
+      "title": "德国艺术歌曲字对字译词",
+      "original_title": "",
+      "work_id": "german-art-song-word-for-word",
+      "authors": [
+        {
+          "id": "li-weibo",
+          "name": "李维渤",
+          "role": "编译"
+        },
+        {
+          "id": "zhao-qingrun",
+          "name": "赵庆闰",
+          "role": "编译"
+        }
+      ],
+      "translators": [
+        {
+          "id": "li-weibo",
+          "name": "李维渤",
+          "role": "歌词逐词译释"
+        },
+        {
+          "id": "zhao-qingrun",
+          "name": "赵庆闰",
+          "role": "歌词逐词译释"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "中央音乐学院出版社",
+      "year": 2004,
+      "edition": "扫描文件未含版权页；出版年份及ISBN由出版社书目核对，具体印次未核实",
+      "isbn": "9787810960267",
+      "subjects": [
+        "language",
+        "performance",
+        "reference"
+      ],
+      "tags": [
+        "艺术歌曲",
+        "歌词翻译",
+        "逐词译词",
+        "声乐教学",
+        "德语"
+      ],
+      "purpose": "歌词译释参考书",
+      "languages": [
+        "汉语",
+        "德语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "johann-sebastian-bach",
+          "name": "Johann Sebastian Bach/巴赫",
+          "has_scores": false
+        },
+        {
+          "id": "ludwig-van-beethoven",
+          "name": "Ludwig van Beethoven/贝多芬",
+          "has_scores": true
+        },
+        {
+          "id": "johannes-brahms",
+          "name": "Johannes Brahms/勃拉姆斯",
+          "has_scores": true
+        },
+        {
+          "id": "gustav-mahler",
+          "name": "Gustav Mahler/马勒",
+          "has_scores": false
+        },
+        {
+          "id": "felix-mendelssohn",
+          "name": "Felix Mendelssohn/门德尔松",
+          "has_scores": true
+        },
+        {
+          "id": "wolfgang-amadeus-mozart",
+          "name": "Wolfgang Amadeus Mozart/莫扎特",
+          "has_scores": true
+        },
+        {
+          "id": "franz-schubert",
+          "name": "Franz Schubert/舒伯特",
+          "has_scores": true
+        },
+        {
+          "id": "robert-schumann",
+          "name": "Robert Schumann/舒曼",
+          "has_scores": true
+        },
+        {
+          "id": "richard-strauss",
+          "name": "Richard Strauss/理查·施特劳斯",
+          "has_scores": true
+        },
+        {
+          "id": "hugo-wolf",
+          "name": "Hugo Wolf/沃尔夫",
+          "has_scores": true
+        }
+      ],
+      "summary": "以外文原词、逐词词义和中文整句译文对照，帮助理解艺术歌曲的歌词。",
+      "notes": "逐词词义与整句译文并列，含德奥作曲家作品、套曲及目录、索引；本文件338页，未将书目著录的纸本页数代替PDF页数。本书为中文编译的歌词参考集，并非某一本外文专著的全书译本。",
+      "contents": [
+        {
+          "title": "译者的话",
+          "pdf_page": 2
+        },
+        {
+          "title": "目录",
+          "pdf_page": 3
+        },
+        {
+          "title": "Bist du bei mir",
+          "pdf_page": 11
+        }
+      ],
+      "id": "99c996fd-b8a2-5358-a76c-4fb3ffb9ab29",
+      "document_type": "book",
+      "page_count": 338,
+      "file_size": 9615035,
+      "sha256": "e27d63408f37c0b3926f0db7f7ec2bad0b7d89426723a99c4db1db80fc5d9cd1",
+      "storage_key": "literature/99/99c996fd-b8a2-5358-a76c-4fb3ffb9ab29.pdf",
+      "cover": "img/literature/99c996fd-b8a2-5358-a76c-4fb3ffb9ab29.jpg",
+      "added_at": "2026-10-29",
+      "source": "用户提供的PDF文件",
+      "bibliography_sources": [
+        {
+          "title": "中央音乐学院出版社书目",
+          "url": "https://press.ccom.edu.cn/__local/0/52/6C/071CC730757BF01CE93638BA9AA_3927312E_26E16CD.pdf"
+        }
+      ]
+    },
+    {
+      "title": "法国艺术歌曲字对字译词",
+      "original_title": "",
+      "work_id": "french-art-song-word-for-word",
+      "authors": [
+        {
+          "id": "zhao-qingrun",
+          "name": "赵庆闰",
+          "role": "编译"
+        },
+        {
+          "id": "li-weibo",
+          "name": "李维渤",
+          "role": "编译"
+        }
+      ],
+      "translators": [
+        {
+          "id": "zhao-qingrun",
+          "name": "赵庆闰",
+          "role": "歌词逐词译释"
+        },
+        {
+          "id": "li-weibo",
+          "name": "李维渤",
+          "role": "歌词逐词译释"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "中央音乐学院出版社",
+      "year": 2006,
+      "edition": "2006年7月第1版；CIP编目时间2006年6月",
+      "isbn": "9787810961639",
+      "subjects": [
+        "language",
+        "performance",
+        "reference"
+      ],
+      "tags": [
+        "艺术歌曲",
+        "歌词翻译",
+        "逐词译词",
+        "声乐教学",
+        "法语"
+      ],
+      "purpose": "歌词译释参考书",
+      "languages": [
+        "汉语",
+        "法语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "hector-berlioz",
+          "name": "Hector Berlioz/柏辽兹",
+          "has_scores": true
+        },
+        {
+          "id": "claude-debussy",
+          "name": "Claude Debussy/德彪西",
+          "has_scores": false
+        },
+        {
+          "id": "gabriel-faure",
+          "name": "Gabriel Fauré/福雷",
+          "has_scores": true
+        },
+        {
+          "id": "henri-duparc",
+          "name": "Henri Duparc/杜帕克",
+          "has_scores": true
+        },
+        {
+          "id": "charles-gounod",
+          "name": "Charles Gounod/古诺",
+          "has_scores": true
+        },
+        {
+          "id": "reynaldo-hahn",
+          "name": "Reynaldo Hahn/哈恩",
+          "has_scores": true
+        },
+        {
+          "id": "franz-liszt",
+          "name": "Franz Liszt/李斯特",
+          "has_scores": true
+        },
+        {
+          "id": "jules-massenet",
+          "name": "Jules Massenet/马斯奈",
+          "has_scores": true
+        },
+        {
+          "id": "francis-poulenc",
+          "name": "Francis Poulenc/普朗克",
+          "has_scores": false
+        },
+        {
+          "id": "maurice-ravel",
+          "name": "Maurice Ravel/拉威尔",
+          "has_scores": true
+        }
+      ],
+      "summary": "以外文原词、逐词词义和中文整句译文对照，帮助理解艺术歌曲的歌词。",
+      "notes": "109首法国艺术歌曲的歌词逐词译释；主要为文本，没有完整歌曲钢琴谱，不因文件夹名称而放入乐谱目录。ISBN按封底13位条码9787810961639著录；版权页及条码上方另印10位号7-81096-163-2，其校验位不符，保留此差异说明。本书为中文编译的歌词参考集，并非某一本外文专著的全书译本。",
+      "contents": [
+        {
+          "title": "出版说明",
+          "pdf_page": 3
+        },
+        {
+          "title": "译者的话",
+          "pdf_page": 4
+        },
+        {
+          "title": "目录",
+          "pdf_page": 5
+        }
+      ],
+      "id": "98bc1463-7bca-59f1-b7e7-e52072d29245",
+      "document_type": "book",
+      "page_count": 163,
+      "file_size": 5622336,
+      "sha256": "7490157475ce20a4c9baaa5503b6bd0f17aff774cd79f83a011dc7e14cca002f",
+      "storage_key": "literature/98/98bc1463-7bca-59f1-b7e7-e52072d29245.pdf",
+      "cover": "img/literature/98bc1463-7bca-59f1-b7e7-e52072d29245.jpg",
+      "added_at": "2026-10-29",
+      "source": "用户提供的PDF文件"
+    },
+    {
       "title": "论瓦格纳与马勒",
       "original_title": "Versuch über Wagner；Mahler. Eine musikalische Physiognomik",
       "work_id": "adorno-wagner-mahler",

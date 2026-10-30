@@ -75,7 +75,7 @@ assert.deepEqual(Array.from(context.composerIdsFor('姜夔 / 罗忠镕（配伴�
 evaluate("filters.search='unrelated';filters.category='音乐剧选段';filters.favoritesOnly=true;currentPage=8;");
 element('searchInput').value='unrelated';element('languageSelect').value='英语';element('voiceInput').value='男低音';
 context.navigateToComposer(context.exactComposer('多尼采蒂').id);
-assert.equal(element('filteredCount').innerText,catalog.filter(r=>['Gaetano Donizetti/多尼采蒂','Domenico Gaetano Donizetti/多尼采蒂'].includes(r.composer)).length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer.split('、').some(name=>['Gaetano Donizetti/多尼采蒂','Domenico Gaetano Donizetti/多尼采蒂'].includes(name.trim()))).length+' 首乐谱');
 assert.equal(element('searchInput').value,'');assert.equal(element('voiceInput').value,'');
 assert.equal(element('languageSelect').value,'all');
 assert.equal(evaluate('filters.category'),'all');assert.equal(evaluate('filters.favoritesOnly'),false);
@@ -102,7 +102,7 @@ assert.equal(new URL(location.href).searchParams.has('composer'),false);
         self.run_js(r"""
 location.href='https://example.test/library/?composer=gioachino-rossini#mainContentArea';
 context.restoreLibraryView();context.applyFilters();
-const rossiniCount=catalog.filter(r=>['Gioachino Rossini/罗西尼','Giaochino Rossini'].includes(r.composer)).length+' 首乐谱';
+const rossiniCount=catalog.filter(r=>r.composer.split('、').some(name=>['Gioachino Rossini/罗西尼','Giaochino Rossini'].includes(name.trim()))).length+' 首乐谱';
 assert.equal(element('filteredCount').innerText,rossiniCount);
 evaluate('currentPage=2;');context.saveLibraryViewToHistory();const saved=history.state.libraryView;
 context.navigateToComposer(context.exactComposer('贝多芬').id);
@@ -117,6 +117,22 @@ assert.equal(context.renderComposerLinks('<img src=x onerror=alert(1)>'),'&lt;im
 assert(!context.renderComposerLinks('姜夔 / 罗忠镕（配伴奏）').includes('data-composer-id="罗忠镕"'));
 location.href='https://example.test/library/?score=old';
 assert.equal(new URL(context.composerUrlFor('gioachino-rossini')).searchParams.has('score'),false);
+""")
+
+    def test_collection_is_listed_for_each_credited_composer_and_alias(self):
+        self.run_js(r"""
+const collection={id:-1,public_id:'00000000-0000-4000-8000-000000000001',title:'Three-composer collection fixture',
+ composer:'Giaochino Rossini、Domenico Gaetano Donizetti/多尼采蒂、Vincenzo Bellini/贝里尼',
+ category:'乐谱书/曲集',voice_types:'声乐、钢琴',language:'意大利语',filename:'fixture.pdf',date:'2026-10-29'};
+catalog.push(collection);evaluate('initComposerDirectory(musicData)');
+for(const name of ['罗西尼','多尼采蒂','贝利尼']){
+ context.navigateToComposer(context.exactComposer(name).id);
+ assert(element('mainTableBody').innerHTML.includes(collection.title));
+ assert(element('mobileScoreList').innerHTML.includes(collection.title));
+}
+context.navigateToComposer(context.exactComposer('普契尼').id);
+assert(!element('mainTableBody').innerHTML.includes(collection.title));
+assert.equal((context.renderComposerLinks(collection.composer).match(/data-composer-id=/g)||[]).length,3);
 """)
 
 
