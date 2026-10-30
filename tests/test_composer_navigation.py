@@ -113,6 +113,11 @@ assert.equal(element('filteredCount').innerText,'0 首乐谱');
 const links=context.renderComposerLinks('Benny Andersson、Björn Ulvaeus');
 assert.equal((links.match(/data-composer-id=/g)||[]).length,2);
 assert(!context.renderComposerLinks('ABRSM').includes('<a'));
+for(const name of ['佚名（民歌）','佚名（古曲）','中央乐团（集体创作）']){
+ context.catalog.push({composer:name});evaluate('initComposerDirectory(musicData)');
+ assert.equal(context.exactComposer(name),null);
+ assert.equal(context.renderComposerLinks(name),name);
+}
 assert.equal(context.renderComposerLinks('<img src=x onerror=alert(1)>'),'&lt;img src=x onerror=alert(1)&gt;');
 assert(!context.renderComposerLinks('姜夔 / 罗忠镕（配伴奏）').includes('data-composer-id="罗忠镕"'));
 location.href='https://example.test/library/?score=old';

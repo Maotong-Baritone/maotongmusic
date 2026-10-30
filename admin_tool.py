@@ -95,7 +95,7 @@ ALLOWED_CATEGORIES = {
     '宗教声乐作品总谱', '其他'
 }
 CANONICAL_LANGUAGES = {
-    '意大利语', '德语', '法语', '英语', '俄语', '拉丁语', '捷克语', '西班牙语', '汉语',
+    '意大利语', '德语', '法语', '英语', '俄语', '拉丁语', '捷克语', '西班牙语', '汉语', '韩语', '无词',
     '法语/拉丁语', '多语种',
 }
 BRAHMS_REVIEW_DECISIONS = set(brahms_views.DECISION_LABELS)

@@ -153,7 +153,7 @@ const COMPOSER_NAME_GROUPS = [
     ['Georg Friedrich Händel/亨德尔', 'George Frideric Handel', 'Handel', '亨德尔'],
     ['Franz Joseph Haydn/海顿', 'Joseph Haydn', '海顿']
 ];
-const NON_PERSON_COMPOSERS = new Set(['ABRSM', '多位作曲家', '未署名（待核）', '杨林，莫若伟等']);
+const NON_PERSON_COMPOSERS = new Set(['ABRSM', '多位作曲家', '未署名（待核）', '杨林，莫若伟等', '佚名（民歌）', '佚名（古曲）', '中央乐团（集体创作）']);
 let composerDirectory = new Map();
 let composerCredits = new Map();
 let composerQueryIndex = new Map();

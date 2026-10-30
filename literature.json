@@ -1500,7 +1500,7 @@
         {
           "id": "gustav-mahler",
           "name": "Gustav Mahler/马勒",
-          "has_scores": false
+          "has_scores": true
         },
         {
           "id": "felix-mendelssohn",
@@ -1625,7 +1625,7 @@
         {
           "id": "claude-debussy",
           "name": "Claude Debussy/德彪西",
-          "has_scores": false
+          "has_scores": true
         },
         {
           "id": "gabriel-faure",
@@ -1660,7 +1660,7 @@
         {
           "id": "francis-poulenc",
           "name": "Francis Poulenc/普朗克",
-          "has_scores": false
+          "has_scores": true
         },
         {
           "id": "maurice-ravel",
@@ -1741,7 +1741,7 @@
         {
           "id": "gustav-mahler",
           "name": "Gustav Mahler/马勒",
-          "has_scores": false
+          "has_scores": true
         }
       ],
       "summary": "收录阿多诺关于瓦格纳与马勒的两部研究，涉及音乐思想、作品形式与历史语境。",
