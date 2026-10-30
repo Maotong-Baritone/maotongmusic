@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5139,
-  "unique_content_count": 5117,
+  "entry_count": 5149,
+  "unique_content_count": 5127,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 8117992737,
+  "total_size": 8306549798,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -4517,6 +4517,13 @@
       "sha256": "13eeed38d1501518394f9d6711a7b89a15f7b8ef8850d50646cf40c237bc4a6a"
     },
     {
+      "public_id": "1f5c84ec-f045-5083-bfd9-5ad10e274477",
+      "source_path": "scores/乐谱书/曲集/1f5c84ec-f045-5083-bfd9-5ad10e274477.pdf",
+      "storage_key": "scores/1f/1f5c84ec-f045-5083-bfd9-5ad10e274477.pdf",
+      "file_size": 13535423,
+      "sha256": "3098df4a94e0d3b4d9256a3fed16168f6e29005e0539b8bead5c82c25b272055"
+    },
+    {
       "public_id": "1f63706a-15ae-560d-ae58-06e19a578833",
       "source_path": "scores/歌剧咏叹调/1766007783431_Dell_onda_a_i_fieri_moti_sottratto_in_porto.pdf",
       "storage_key": "scores/1f/1f63706a-15ae-560d-ae58-06e19a578833.pdf",
@@ -7343,6 +7350,13 @@
       "storage_key": "scores/35/359377ff-042f-573d-8446-8503b9cb208f.pdf",
       "file_size": 1455279,
       "sha256": "b9d87d67ff908d2f0060500edef7537622cbf3ce0b1571b82b1b4cbcca770aa7"
+    },
+    {
+      "public_id": "359c4e7f-fdba-5719-acd3-28bfb2ec67b4",
+      "source_path": "scores/乐谱书/曲集/359c4e7f-fdba-5719-acd3-28bfb2ec67b4.pdf",
+      "storage_key": "scores/35/359c4e7f-fdba-5719-acd3-28bfb2ec67b4.pdf",
+      "file_size": 13288273,
+      "sha256": "27235295d2cf9e1eea60b760d5d6d4c721cc380a1d6d3e1521d4bf0cb4c9913f"
     },
     {
       "public_id": "35a5010b-604a-5fb0-bbdc-555458618745",
@@ -11713,6 +11727,13 @@
       "sha256": "8bdd5c8a631547dfa56544bdd89533074dc51a4a62781fc3ab767218b0029872"
     },
     {
+      "public_id": "5499c09e-a19c-50d3-9777-68284a1ff6ee",
+      "source_path": "scores/乐谱书/曲集/5499c09e-a19c-50d3-9777-68284a1ff6ee.pdf",
+      "storage_key": "scores/54/5499c09e-a19c-50d3-9777-68284a1ff6ee.pdf",
+      "file_size": 20180346,
+      "sha256": "a231ac45270ace972b59dfd439401ad784b52d01b9e3f65c818910d9b8534715"
+    },
+    {
       "public_id": "549ec953-7de8-5412-a388-8c6190f497f8",
       "source_path": "scores/歌剧咏叹调/1766007782183_Bel_labbro_formato_per_farmi_beato.pdf",
       "storage_key": "scores/54/549ec953-7de8-5412-a388-8c6190f497f8.pdf",
@@ -11984,6 +12005,13 @@
       "storage_key": "scores/57/5715f5f5-d72a-42a9-a5a3-74b275c4bc90.pdf",
       "file_size": 168223,
       "sha256": "cfa6d2e2f1ad65cea3ca746b3d53592889772656e0ae988afe404d1bc1e9702f"
+    },
+    {
+      "public_id": "5731d133-340d-5d33-8ada-3126cb5d2573",
+      "source_path": "scores/乐谱书/曲集/5731d133-340d-5d33-8ada-3126cb5d2573.pdf",
+      "storage_key": "scores/57/5731d133-340d-5d33-8ada-3126cb5d2573.pdf",
+      "file_size": 16127981,
+      "sha256": "8fc479464bd2961f44d33c11b5c1c661a8bb8d7988c9eaab59e272662460b711"
     },
     {
       "public_id": "5739406c-84a9-523a-a99f-bc5facf46353",
@@ -15192,6 +15220,13 @@
       "sha256": "c4142112f8fd5292a4a8f14ad46d3387252daa22c115594e2775611afd43dc5c"
     },
     {
+      "public_id": "6d102e95-8050-5ef8-8c8f-95ed8247d96e",
+      "source_path": "scores/乐谱书/曲集/6d102e95-8050-5ef8-8c8f-95ed8247d96e.pdf",
+      "storage_key": "scores/6d/6d102e95-8050-5ef8-8c8f-95ed8247d96e.pdf",
+      "file_size": 13121045,
+      "sha256": "f9f8b8c92e05cc8a482ee5fa40b8c23f550604e4f71ffc3845546dbb37099d4a"
+    },
+    {
       "public_id": "6d17a6af-b4a4-5908-ad1a-e10a9fa4b640",
       "source_path": "scores/歌剧咏叹调/1766097618161_Sappi_che_un_rio_dovere.pdf",
       "storage_key": "scores/6d/6d17a6af-b4a4-5908-ad1a-e10a9fa4b640.pdf",
@@ -15925,6 +15960,13 @@
       "storage_key": "scores/72/7238d743-a119-4603-83b3-4a1642c0d88e.pdf",
       "file_size": 188907,
       "sha256": "bf57ca7bc89278d85e6c58043fb7946c743216b0f28b20e8b96efd6c229a4397"
+    },
+    {
+      "public_id": "7248c9ae-c05e-50ed-8e0e-b678bd3086bd",
+      "source_path": "scores/乐谱书/曲集/7248c9ae-c05e-50ed-8e0e-b678bd3086bd.pdf",
+      "storage_key": "scores/72/7248c9ae-c05e-50ed-8e0e-b678bd3086bd.pdf",
+      "file_size": 22529543,
+      "sha256": "3c26e5c4d575eec782e469c38ca510e25818e792ae5d9511f7981c6f9ba28bcb"
     },
     {
       "public_id": "72596b66-7868-4851-b50a-1c820de8c22c",
@@ -17122,6 +17164,13 @@
       "storage_key": "scores/7b/7b8800da-7906-5944-b837-c52e477def17.pdf",
       "file_size": 179604,
       "sha256": "a23e2a1b11dda50a0fe13e738e62ffa026c86707c94e80d1ee330600a500c81b"
+    },
+    {
+      "public_id": "7b8ad1f3-4eb2-5452-92d7-a00dbf193367",
+      "source_path": "scores/乐谱书/曲集/7b8ad1f3-4eb2-5452-92d7-a00dbf193367.pdf",
+      "storage_key": "scores/7b/7b8ad1f3-4eb2-5452-92d7-a00dbf193367.pdf",
+      "file_size": 9190289,
+      "sha256": "c6354db2bbd6ca162b7bd28e5fbf81116794e6765c5ef2bf13062ce37e5cfa43"
     },
     {
       "public_id": "7b91940a-cc1e-4fc9-9d11-bcab623cdb18",
@@ -26273,6 +26322,13 @@
       "sha256": "002eee44c1611660baa4333cf236202aa05cb53bc87b00ce4ca815b345f99962"
     },
     {
+      "public_id": "bb6c265d-ae0c-5680-aa1a-d069f99b51d9",
+      "source_path": "scores/乐谱书/曲集/bb6c265d-ae0c-5680-aa1a-d069f99b51d9.pdf",
+      "storage_key": "scores/bb/bb6c265d-ae0c-5680-aa1a-d069f99b51d9.pdf",
+      "file_size": 40606206,
+      "sha256": "ef3c700c50ea7bf801e21fc1d3fbf3505e5707340302d02f70fade0097931284"
+    },
+    {
       "public_id": "bb7a9fee-5445-5f6d-b7d2-102717b66ed0",
       "source_path": "scores/歌剧咏叹调/1765777208.pdf",
       "storage_key": "scores/bb/bb7a9fee-5445-5f6d-b7d2-102717b66ed0.pdf",
@@ -27559,6 +27615,13 @@
       "storage_key": "scores/c3/c3efd00e-7a0f-4f43-9ff9-b8d8c8b8706e.pdf",
       "file_size": 280131,
       "sha256": "05958c95ad25b7345184f3bb941b215c2c82e6ec0bbf6cb105b98dda978e0b7c"
+    },
+    {
+      "public_id": "c40b331a-573b-59f3-9aa3-cc28319af764",
+      "source_path": "scores/乐谱书/曲集/c40b331a-573b-59f3-9aa3-cc28319af764.pdf",
+      "storage_key": "scores/c4/c40b331a-573b-59f3-9aa3-cc28319af764.pdf",
+      "file_size": 29727372,
+      "sha256": "f97d52fbfaca31aa82f8486029d843e080b316abbeae18cb353b104a7081de20"
     },
     {
       "public_id": "c41e1a40-b6f2-50aa-a26b-3936cf90c5e1",
@@ -35959,6 +36022,13 @@
       "storage_key": "scores/ff/ff76ca03-f4fa-5fe4-9c0e-dc03b051a506.pdf",
       "file_size": 1057072,
       "sha256": "d7462506520222f882f6e3f4466dde6c11d0ac1b4f90b4d32487410607e6c48a"
+    },
+    {
+      "public_id": "ff81f2ed-639d-5e1d-af99-d0fc7dd71bce",
+      "source_path": "scores/乐谱书/曲集/ff81f2ed-639d-5e1d-af99-d0fc7dd71bce.pdf",
+      "storage_key": "scores/ff/ff81f2ed-639d-5e1d-af99-d0fc7dd71bce.pdf",
+      "file_size": 10250583,
+      "sha256": "40e987d4184052957dba97e5b50d2b6462eeb606d9bbc02ef215a2c36073b7c4"
     },
     {
       "public_id": "ffa9e8d0-a1ad-56fe-94b4-4a8c993d66b4",
