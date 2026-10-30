@@ -41,12 +41,13 @@ jobs:
 
           root = Path('dist')
           required = {'index.html', 'contact.html', 'resources.html', 'data.json',
+                      'literature.html', 'literature.json', 'css/literature.css', 'js/literature.js',
                       'logs.json', 'site-config.json', 'css/style.css', 'js/app.js'}
           missing = [name for name in sorted(required) if not (root / name).is_file()]
           if missing:
               raise SystemExit(f'Missing public files: {missing}')
           allowed_files = {'index.html', 'contact.html', 'resources.html',
-                           'data.json', 'logs.json', 'site-config.json'}
+                           'literature.html', 'literature.json', 'data.json', 'logs.json', 'site-config.json'}
           allowed_directories = {'css', 'js', 'img', 'lyrics'}
           paths = list(root.rglob('*'))
           for path in paths:

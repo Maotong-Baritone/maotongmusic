@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="音乐著作、理论、文献与译本：按学科方向、主题、作者和语言查找。">
+    <title>音乐文献 | 征集网站名字中</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=20261029-literature" rel="stylesheet">
+    <link href="css/literature.css?v=20261029a" rel="stylesheet">
+</head>
+<body class="literature-page">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-serif fs-3" href="index.html">🎹 征集网站名字中</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#literatureNavbar" aria-controls="literatureNavbar" aria-expanded="false" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="literatureNavbar"><ul class="navbar-nav ms-auto align-items-lg-center gap-2 mt-3 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">🎼 乐谱库</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold text-warning" aria-current="page" href="literature.html">📚 音乐文献</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">🌍 音乐专业资源</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">👋 联系我</a></li>
+                <li class="nav-item"><button class="nav-link btn border-0" id="literatureTheme" type="button" aria-label="切换深色模式">🌙</button></li>
+            </ul></div>
+        </div>
+    </nav>
+    <header class="lit-hero"><div class="container">
+        <p class="lit-eyebrow">著作 · 理论 · 研究 · 译本</p>
+        <h1 class="font-serif">音乐文献</h1>
+        <p class="lit-lead">从和声与表演，到音乐思想与作品研究。</p>
+        <p class="lit-intro">按学科方向和主题查找，也可以从作者或相关作曲家开始阅读。</p>
+        <div class="lit-stats" id="literatureStats" aria-live="polite">正在整理书架…</div>
+    </div></header>
+    <main class="container lit-layout" id="literatureMain">
+        <aside class="lit-sidebar" aria-label="文献分类">
+            <h2>学科方向</h2><p class="lit-sidebar-note">一本书可以属于多个方向</p>
+            <div id="literatureSubjects" class="lit-subjects" role="group" aria-label="按学科方向筛选"></div>
+            <details class="lit-classification"><summary>如何分类？</summary><p>学科方向回答“讲什么”；细分标签标明和声、声乐咬字等具体主题。书籍、论文等是文献类型；教材、工具书等记录用途，译者与译本另记版本信息。</p></details>
+        </aside>
+        <section class="lit-main" aria-label="文献目录">
+            <form class="lit-toolbar" id="literatureSearchForm" role="search">
+                <label class="lit-search" for="literatureSearch"><span aria-hidden="true">⌕</span><input id="literatureSearch" type="search" placeholder="搜索标题、作者、译者或主题…" aria-label="搜索音乐文献"><button type="submit">搜索</button></label>
+                <div class="lit-selects">
+                    <label>文献类型<select id="literatureType"><option value="">全部类型</option></select></label>
+                    <label>作者<select id="literatureAuthor"><option value="">全部作者</option></select></label>
+                    <label>语言<select id="literatureLanguage"><option value="">全部语言</option></select></label>
+                    <label>细分标签<select id="literatureTag"><option value="">全部标签</option></select></label>
+                </div>
+                <div id="literatureActive" class="lit-active" aria-live="polite"></div>
+            </form>
+            <div class="lit-results-header" id="literatureResults"><h2 id="literatureResultsTitle">全部文献</h2><span id="literatureCount" aria-live="polite"></span><button id="literatureReset" type="button" hidden>清除筛选</button></div>
+            <div id="literatureList" class="lit-list" aria-live="polite"><p>正在加载文献…</p></div>
+            <p class="lit-bottom-note">实际乐谱与谱集收录在<a href="index.html">乐谱库</a>；这里整理音乐著作、研究资料与译释。</p>
+        </section>
+    </main>
+    <dialog id="literatureDetail" class="lit-dialog" aria-labelledby="literatureDetailTitle">
+        <div class="lit-dialog-head"><span>文献详情</span><button type="button" id="literatureClose" aria-label="关闭文献详情">×</button></div>
+        <div id="literatureDetailBody"></div>
+    </dialog>
+    <footer><div class="container text-center"><p class="mb-2">音乐文献 · 按所载版本查阅与引用</p><a class="footer-link" href="index.html">返回乐谱库</a></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/literature.js?v=20261029a"></script>
+</body>
+</html>

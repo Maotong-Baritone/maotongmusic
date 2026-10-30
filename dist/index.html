@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20261029-composers" rel="stylesheet">
+    <link href="css/style.css?v=20261029-literature" rel="stylesheet">
 </head>
 <body>
 
@@ -24,6 +24,9 @@
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-2 mt-3 mt-lg-0">
                     <li class="nav-item">
                         <button class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start w-100" onclick="showFavorites()">❤️ 我的收藏</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start" href="literature.html">📚 音乐文献</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-sm btn-outline-light border-0 rounded-pill px-3 text-start" href="resources.html">🌍 音乐专业资源</a>
@@ -196,6 +199,10 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4" id="recentList"></div>
                 </div>
                 <div id="listSection">
+                    <nav class="d-flex gap-2 mb-3" id="composerViewLinks" aria-label="作曲家资料类型" hidden>
+                        <span class="btn btn-sm btn-primary rounded-pill" aria-current="page">乐谱</span>
+                        <a class="btn btn-sm btn-outline-primary rounded-pill" id="composerLiteratureLink" href="literature.html">相关文献 ↗</a>
+                    </nav>
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h4 id="listTitle" class="fw-bold font-serif display-6" style="font-size: 1.5rem;">📚 乐谱目录</h4>
                         <span class="badge rounded-pill" style="background-color: #e9c46a; color: #333;" id="filteredCount">0 首乐谱</span>
@@ -394,6 +401,6 @@
     <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">最近动态</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭最近动态"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app.js?v=20261029-composers"></script>
+    <script src="js/app.js?v=20261029-literature"></script>
 </body>
 </html>

@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "subjects": [
+    {
+      "id": "musicology",
+      "label": "音乐学与音乐史"
+    },
+    {
+      "id": "theory",
+      "label": "乐理与作曲技术"
+    },
+    {
+      "id": "performance",
+      "label": "表演与教学"
+    },
+    {
+      "id": "aesthetics",
+      "label": "音乐美学与评论"
+    },
+    {
+      "id": "composer-studies",
+      "label": "作曲家与作品研究"
+    },
+    {
+      "id": "language",
+      "label": "语言、歌词与译释"
+    },
+    {
+      "id": "technology",
+      "label": "音乐科技与制作"
+    },
+    {
+      "id": "reference",
+      "label": "研究方法与参考资料"
+    }
+  ],
+  "document_types": [
+    {
+      "id": "book",
+      "label": "书籍"
+    },
+    {
+      "id": "article",
+      "label": "论文与期刊文章"
+    },
+    {
+      "id": "thesis",
+      "label": "学位论文"
+    },
+    {
+      "id": "primary-source",
+      "label": "史料与书信"
+    },
+    {
+      "id": "interview",
+      "label": "访谈与讲座"
+    },
+    {
+      "id": "libretto",
+      "label": "剧本与台本"
+    }
+  ],
+  "documents": [
+    {
+      "title": "论瓦格纳与马勒",
+      "original_title": "Versuch über Wagner；Mahler. Eine musikalische Physiognomik",
+      "work_id": "adorno-wagner-mahler",
+      "authors": [
+        {
+          "id": "theodor-w-adorno",
+          "name": "Theodor W. Adorno/阿多诺"
+        }
+      ],
+      "translators": [
+        {
+          "id": "peng-bei",
+          "name": "彭蓓",
+          "role": "全书中译"
+        }
+      ],
+      "is_translation": true,
+      "publisher": "上海人民出版社",
+      "year": 2022,
+      "edition": "2022年7月第1版；阿多诺选集",
+      "isbn": "9787208175976",
+      "subjects": [
+        "musicology",
+        "aesthetics",
+        "composer-studies"
+      ],
+      "tags": [
+        "音乐哲学",
+        "音乐批评",
+        "瓦格纳研究",
+        "马勒研究"
+      ],
+      "purpose": "专著",
+      "languages": [
+        "汉语"
+      ],
+      "text_status": "扫描版（无正文文本层）",
+      "related_composers": [
+        {
+          "id": "richard-wagner",
+          "name": "Richard Wagner/瓦格纳",
+          "has_scores": true
+        },
+        {
+          "id": "gustav-mahler",
+          "name": "Gustav Mahler/马勒",
+          "has_scores": false
+        }
+      ],
+      "summary": "收录阿多诺关于瓦格纳与马勒的两部研究，涉及音乐思想、作品形式与历史语境。",
+      "notes": "中文译本。保留封面、版权页、目录、索引、译后记及原文件附页。原书签中部分标题页定位与实际页面不同，以下定位采用核对后的PDF页码。",
+      "contents": [
+        {
+          "title": "总目录",
+          "pdf_page": 11
+        },
+        {
+          "title": "试论瓦格纳（标题页）",
+          "pdf_page": 13
+        },
+        {
+          "title": "马勒——一种音乐的面相（标题页）",
+          "pdf_page": 165
+        }
+      ],
+      "id": "f4319f04-2de9-57ec-9679-5fdca65b59d5",
+      "document_type": "book",
+      "page_count": 345,
+      "file_size": 126666861,
+      "sha256": "b5c46bde03be3c8257f32233ec57c91809e144b2362b6c142815c93aa45eccc1",
+      "storage_key": "literature/f4/f4319f04-2de9-57ec-9679-5fdca65b59d5.pdf",
+      "cover": "img/literature/f4319f04-2de9-57ec-9679-5fdca65b59d5.jpg",
+      "added_at": "2026-10-29",
+      "source": "用户提供的PDF文件"
+    },
+    {
+      "title": "Concise Introduction to Tonal Harmony",
+      "original_title": "",
+      "work_id": "concise-introduction-tonal-harmony",
+      "authors": [
+        {
+          "id": "l-poundie-burstein",
+          "name": "L. Poundie Burstein"
+        },
+        {
+          "id": "joseph-n-straus",
+          "name": "Joseph N. Straus"
+        }
+      ],
+      "translators": [],
+      "is_translation": false,
+      "publisher": "W. W. Norton & Company",
+      "year": 2016,
+      "edition": "第1版，电子书版",
+      "isbn": "9780393270440",
+      "subjects": [
+        "theory"
+      ],
+      "tags": [
+        "基础乐理",
+        "和声",
+        "声部进行",
+        "对位",
+        "曲式分析"
+      ],
+      "purpose": "教材",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "可检索文本",
+      "related_composers": [],
+      "summary": "从基础记谱、和声与声部进行，逐步介绍自然音体系、半音和声和曲式，并附练习、自测与索引。",
+      "notes": "两位作者按题名页署名。电子书ISBN与纸本ISBN不同，本条记录电子书ISBN；保留原文件614页，实际PDF页码不等于书内引用页码。",
+      "contents": [
+        {
+          "title": "简目",
+          "pdf_page": 7
+        },
+        {
+          "title": "详细目录",
+          "pdf_page": 9
+        },
+        {
+          "title": "第一部分：Fundamentals",
+          "pdf_page": 22
+        }
+      ],
+      "id": "fd7462ee-eab0-5da1-906c-4a073ba38faa",
+      "document_type": "book",
+      "page_count": 614,
+      "file_size": 70270038,
+      "sha256": "5b000f3e4531483f3bad7b959dafdf9702199f523789492024f030fe18aef9e9",
+      "storage_key": "literature/fd/fd7462ee-eab0-5da1-906c-4a073ba38faa.pdf",
+      "cover": "img/literature/fd7462ee-eab0-5da1-906c-4a073ba38faa.jpg",
+      "added_at": "2026-10-29",
+      "source": "用户提供的PDF文件"
+    },
+    {
+      "title": "The Interpretation of French Song",
+      "original_title": "",
+      "work_id": "interpretation-french-song",
+      "authors": [
+        {
+          "id": "pierre-bernac",
+          "name": "Pierre Bernac"
+        }
+      ],
+      "translators": [
+        {
+          "id": "winifred-radford",
+          "name": "Winifred Radford",
+          "role": "歌词英译"
+        }
+      ],
+      "is_translation": false,
+      "publisher": "W. W. Norton & Company",
+      "year": 1978,
+      "edition": "Norton Library版，扫描本",
+      "isbn": "9780393008784",
+      "subjects": [
+        "performance",
+        "language",
+        "composer-studies"
+      ],
+      "tags": [
+        "声乐",
+        "法语咬字",
+        "艺术歌曲",
+        "歌词译释",
+        "演唱诠释"
+      ],
+      "purpose": "演唱与诠释参考",
+      "languages": [
+        "英语",
+        "法语"
+      ],
+      "text_status": "扫描版（含OCR文本，识别有误差）",
+      "related_composers": [
+        {
+          "id": "hector-berlioz",
+          "name": "Hector Berlioz/柏辽兹",
+          "has_scores": true
+        },
+        {
+          "id": "charles-gounod",
+          "name": "Charles Gounod/古诺",
+          "has_scores": true
+        },
+        {
+          "id": "jules-massenet",
+          "name": "Jules Massenet/马斯奈",
+          "has_scores": true
+        }
+      ],
+      "summary": "讨论法语演唱、歌曲诠释与法国艺术歌曲，结合歌词及其英语译文提供作品解读。",
+      "notes": "Winifred Radford署名为歌词译者，并非整书译者。本条按版权页记录1978年Norton Library版；原扫描包含数字化说明、索引、手写笔记与封底。",
+      "contents": [
+        {
+          "title": "目录",
+          "pdf_page": 9
+        },
+        {
+          "title": "歌曲标题索引",
+          "pdf_page": 337
+        },
+        {
+          "title": "首句索引",
+          "pdf_page": 341
+        },
+        {
+          "title": "作曲家索引",
+          "pdf_page": 345
+        }
+      ],
+      "id": "92e16cb9-09e4-5ab2-a530-bd33fa9c13a1",
+      "document_type": "book",
+      "page_count": 348,
+      "file_size": 13235073,
+      "sha256": "f3a3e0be1073e6761096be6c3b25ba1c7366789715409dd13a8d163a22c232d6",
+      "storage_key": "literature/92/92e16cb9-09e4-5ab2-a530-bd33fa9c13a1.pdf",
+      "cover": "img/literature/92e16cb9-09e4-5ab2-a530-bd33fa9c13a1.jpg",
+      "added_at": "2026-10-29",
+      "source": "用户提供的PDF文件"
+    }
+  ]
+}

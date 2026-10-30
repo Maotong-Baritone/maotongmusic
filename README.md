@@ -8,6 +8,10 @@
 
 ## 文件夹说明
 
+音乐著作、论文、史料与译释使用独立的 [音乐文献页](literature.html)，书目保存在
+`literature.json`，不混入乐谱目录和作曲者字段。分类与续传规则见
+[音乐文献整理说明](README_音乐文献.md)。
+
 目录、最新上传、手机卡片及乐谱详情中的作曲家姓名可以点击，打开该作曲家的全部乐谱。
 作曲家页面使用 `?composer=<标识>#mainContentArea`，支持刷新、分享和浏览器返回。
 点击姓名会清除原来的搜索、分类、语言、编制和收藏限制；进入后仍可继续筛选。
@@ -69,6 +73,7 @@
 
 ```powershell
 python validate_library.py --strict
+python tools/validate_literature.py
 python tools/build_pages.py
 ```
 

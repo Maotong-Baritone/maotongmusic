@@ -17,6 +17,8 @@ PUBLIC_FILES = (
     "index.html",
     "contact.html",
     "resources.html",
+    "literature.html",
+    "literature.json",
     "data.json",
     "logs.json",
     "site-config.json",

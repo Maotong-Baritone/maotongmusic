@@ -709,6 +709,7 @@ footer {
 }
 .composer-link:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 3px; }
 #mainContentArea { scroll-margin-top: 5rem; }
+#composerViewLinks[hidden] { display: none !important; }
 
 @media (max-width: 991px) {
     .resource-group-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

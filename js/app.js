@@ -579,6 +579,11 @@ function renderActiveFilters() {
 
 function updateListTitle() {
     const listTitle = document.getElementById('listTitle');
+    const viewLinks = document.getElementById('composerViewLinks');
+    if (viewLinks) {
+        viewLinks.hidden = !filters.composerId;
+        document.getElementById('composerLiteratureLink').href = `literature.html?composer=${encodeURIComponent(filters.composerId)}#literatureResults`;
+    }
     if (filters.favoritesOnly) {
         listTitle.innerText = '❤️ 我的收藏';
     } else if (filters.search) {
