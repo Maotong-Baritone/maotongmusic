@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5149,
-  "unique_content_count": 5127,
+  "entry_count": 5158,
+  "unique_content_count": 5136,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 8306549798,
+  "total_size": 8541633799,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1883,6 +1883,13 @@
       "storage_key": "scores/0d/0da8d76c-6d1e-4368-a597-1fae7a495a4b.pdf",
       "file_size": 85328,
       "sha256": "f4ba0f4b610cc879027ad3fae9c4633f01fd4058ffbbcf533abef6a05f7f6be0"
+    },
+    {
+      "public_id": "0dbdc11e-16a1-5dd8-bdc6-4487bd0d1312",
+      "source_path": "scores/乐谱书/曲集/0dbdc11e-16a1-5dd8-bdc6-4487bd0d1312.pdf",
+      "storage_key": "scores/0d/0dbdc11e-16a1-5dd8-bdc6-4487bd0d1312.pdf",
+      "file_size": 31618661,
+      "sha256": "79190c05b5a4004aae600d9c9c7f127ad99376e8e140c5aa5f6d4d49546f240e"
     },
     {
       "public_id": "0dc3f315-cee7-5409-8ca6-6184e32e8e16",
@@ -6862,6 +6869,13 @@
       "sha256": "d5b2eabe62cacbf0546f72321aa5f57a1564c872cc84b1fcac822eaac2c596fa"
     },
     {
+      "public_id": "3110d5cc-87d7-5f3a-93bc-4b57bbfe12c9",
+      "source_path": "scores/乐谱书/曲集/3110d5cc-87d7-5f3a-93bc-4b57bbfe12c9.pdf",
+      "storage_key": "scores/31/3110d5cc-87d7-5f3a-93bc-4b57bbfe12c9.pdf",
+      "file_size": 12291112,
+      "sha256": "34197370522f45814d742d80e917fde79a2c05982a3243685dca6f35a83a2fd1"
+    },
+    {
       "public_id": "31374fc3-7e3b-48ac-8e58-c17242799727",
       "source_path": "scores/艺术歌曲/31374fc3-7e3b-48ac-8e58-c17242799727.pdf",
       "storage_key": "scores/31/31374fc3-7e3b-48ac-8e58-c17242799727.pdf",
@@ -9730,6 +9744,13 @@
       "storage_key": "scores/45/45944022-0476-4c40-9c88-51c47b31c04d.pdf",
       "file_size": 311582,
       "sha256": "5a646d1805d8ef615d482a0fa6348dc84ee8661ceee4475b925ad459853d1680"
+    },
+    {
+      "public_id": "4597b2ac-d8ad-57f2-9bee-75b5f86d487d",
+      "source_path": "scores/乐谱书/曲集/4597b2ac-d8ad-57f2-9bee-75b5f86d487d.pdf",
+      "storage_key": "scores/45/4597b2ac-d8ad-57f2-9bee-75b5f86d487d.pdf",
+      "file_size": 9425734,
+      "sha256": "b5867e45d2501e37ee75ad0d8b4e756a317469e59912ff76fb4e9abdfb5b539d"
     },
     {
       "public_id": "459e0096-58e6-51f0-b0ac-a0d6d978e9ba",
@@ -16877,6 +16898,13 @@
       "storage_key": "scores/79/79584b53-7462-5697-8cb0-a235701f49ab.pdf",
       "file_size": 235190,
       "sha256": "8aec630f92d2ac38a42ecc471a57910b1ce5b995a3559a484c55cf1fe8662f40"
+    },
+    {
+      "public_id": "795e3b46-dcda-5c83-8ce0-bd938038db89",
+      "source_path": "scores/乐谱书/曲集/795e3b46-dcda-5c83-8ce0-bd938038db89.pdf",
+      "storage_key": "scores/79/795e3b46-dcda-5c83-8ce0-bd938038db89.pdf",
+      "file_size": 6444121,
+      "sha256": "4fbc293d4058fd21e107fde70411d3212b9ba2cf67248a49cd8f51ed1c788288"
     },
     {
       "public_id": "795faf14-268b-43ac-9fbb-5c1d552a1a46",
@@ -26126,6 +26154,13 @@
       "sha256": "c5a3f83a18c3730bd8a0079d8b884b102a2437ad398f63161c7715a309f549bb"
     },
     {
+      "public_id": "ba2cd23c-f9c9-5139-80fb-bffc2fcaf40b",
+      "source_path": "scores/乐谱书/曲集/ba2cd23c-f9c9-5139-80fb-bffc2fcaf40b.pdf",
+      "storage_key": "scores/ba/ba2cd23c-f9c9-5139-80fb-bffc2fcaf40b.pdf",
+      "file_size": 47482049,
+      "sha256": "b5c6b1b85920a169db8d471c0487659db935c853d924ce3eb6964a418e24f920"
+    },
+    {
       "public_id": "ba448e28-7618-57c7-a485-91853281febc",
       "source_path": "scores/歌剧咏叹调/1766098661392_Cari_luoghi_ovio_passai.pdf",
       "storage_key": "scores/ba/ba448e28-7618-57c7-a485-91853281febc.pdf",
@@ -28436,6 +28471,13 @@
       "sha256": "f67fc44b1b61aac254b152cd28006501713cfe23821cf9f394cb0606f4e76923"
     },
     {
+      "public_id": "c96fc25e-0791-5933-8fbf-26399bd581e9",
+      "source_path": "scores/乐谱书/曲集/c96fc25e-0791-5933-8fbf-26399bd581e9.pdf",
+      "storage_key": "scores/c9/c96fc25e-0791-5933-8fbf-26399bd581e9.pdf",
+      "file_size": 7493050,
+      "sha256": "531b1af24526c923a5a2ac6d477bfdf8d7355afc944b940659707f0c5a791a4d"
+    },
+    {
       "public_id": "c97656ff-07fc-57d7-94b4-731f00eec87a",
       "source_path": "scores/歌剧咏叹调/1766012416054_Nur_mutig_ihr_Freunde_dann_lacht_uns_das_Gluck.pdf",
       "storage_key": "scores/c9/c97656ff-07fc-57d7-94b4-731f00eec87a.pdf",
@@ -30704,6 +30746,13 @@
       "sha256": "e3f1828286f418d3b7f336804742a0641f03c3ab1dc0320ac6a13e1f70552660"
     },
     {
+      "public_id": "d9cc9d34-7c2a-5939-8215-7840c676d591",
+      "source_path": "scores/乐谱书/曲集/d9cc9d34-7c2a-5939-8215-7840c676d591.pdf",
+      "storage_key": "scores/d9/d9cc9d34-7c2a-5939-8215-7840c676d591.pdf",
+      "file_size": 21667038,
+      "sha256": "052308e24df5b5cea3b5749510156fcf418441ba6c4c43ffeee4a11ece22e589"
+    },
+    {
       "public_id": "d9cd88ae-bc8e-49b9-9a79-99d628445700",
       "source_path": "scores/歌剧咏叹调/d9cd88ae-bc8e-49b9-9a79-99d628445700.pdf",
       "storage_key": "scores/d9/d9cd88ae-bc8e-49b9-9a79-99d628445700.pdf",
@@ -31129,6 +31178,13 @@
       "storage_key": "scores/dc/dc5d7d41-58d7-54a5-b991-50f001d256a4.pdf",
       "file_size": 121213,
       "sha256": "dc36644707142beb771cb1d008fb97a9665a215abd5ca899b2139c185abe6aca"
+    },
+    {
+      "public_id": "dc691077-3b01-5881-90d1-84f4df28fa25",
+      "source_path": "scores/乐谱书/曲集/dc691077-3b01-5881-90d1-84f4df28fa25.pdf",
+      "storage_key": "scores/dc/dc691077-3b01-5881-90d1-84f4df28fa25.pdf",
+      "file_size": 27469112,
+      "sha256": "0d89a685e747d27288d943928b54e61128818efb8b34354392724ad818e649d2"
     },
     {
       "public_id": "dc6bd55f-9075-4a0e-9296-1b09c84e0162",
@@ -31675,6 +31731,13 @@
       "storage_key": "scores/df/dff2c863-028e-4fa8-ad1f-508ebf560fd3.pdf",
       "file_size": 4358793,
       "sha256": "2b411e57ad06acb2c970d5815846d3a069390eb6d138dadda7d29578dcda2629"
+    },
+    {
+      "public_id": "dfff7269-7607-5dcf-8c15-fa45dbff3da5",
+      "source_path": "scores/乐谱书/曲集/dfff7269-7607-5dcf-8c15-fa45dbff3da5.pdf",
+      "storage_key": "scores/df/dfff7269-7607-5dcf-8c15-fa45dbff3da5.pdf",
+      "file_size": 71193124,
+      "sha256": "cd881b27be077c27d1909c038b64be6473f659a38fcac71d0b77b6ea0ecb7712"
     },
     {
       "public_id": "e0117bae-977f-4acd-8fc7-5c1c838c8079",
