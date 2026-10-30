@@ -37,7 +37,7 @@ function literatureCard(doc) {
     return `<article class="lit-book"><a class="lit-cover" href="${litEscape(detail)}" data-document-id="${litEscape(doc.id)}" aria-label="查看 ${litEscape(doc.title)} 的文献详情"><img src="${litEscape(doc.cover)}" alt="${litEscape(doc.title)} 封面" loading="lazy" width="112"></a>
     <div><div class="lit-book-heading"><span class="lit-kind">${litEscape(type)}</span>${doc.is_translation?'<span class="lit-pill">译本</span>':''}<span class="lit-bibliography">${litEscape(doc.purpose)}</span></div>
     <h3><a href="${litEscape(detail)}" data-document-id="${litEscape(doc.id)}">${litEscape(doc.title)}</a></h3>
-    <div class="lit-bibliography">${litPeople(doc.authors)}${doc.translators.length?`<br>${doc.translators.map(p=>`${litEscape(p.name)}（${litEscape(p.role||'译者')}）`).join('、')}`:''}<br>${litEscape(doc.publisher)} · ${litEscape(doc.year)} · ${doc.languages.map(litEscape).join('／')}</div>
+    <div class="lit-bibliography">${litPeople(doc.authors)}${doc.translators.length?`<br>${doc.translators.map(p=>`${litEscape(p.name)}（${litEscape(p.role||'译者')}）`).join('、')}`:''}<br>${litEscape(doc.publisher ?? '出版机构未核')} · ${litEscape(doc.year ?? '年份未核')} · ${doc.languages.map(litEscape).join('／')}</div>
     <p class="lit-summary">${litEscape(doc.summary)}</p><div class="lit-tags">${litTags(doc)}</div>
     <div class="lit-book-footer"><span class="lit-file">PDF · ${doc.page_count.toLocaleString()} 页 · ${(doc.file_size/1024**2).toFixed(1)} MiB</span><a class="lit-action" href="${litEscape(detail)}" data-document-id="${litEscape(doc.id)}">文献详情</a><a class="lit-action" href="${litEscape(literaturePdfUrl(doc))}" target="_blank" rel="noopener">打开 PDF ↗</a></div></div></article>`;
 }
@@ -71,7 +71,7 @@ function showLiteratureDetail(id,push=false) {
     if(push)window.history.pushState({},'',url);
     const pdf=literaturePdfUrl(doc);
     const fields=[['作者',litPeople(doc.authors)],['译者／译释',doc.translators.map(p=>`${litEscape(p.name)}（${litEscape(p.role||'译者')}）`).join('、')||'—'],
-        ['出版机构',litEscape(doc.publisher)],['出版年份',litEscape(doc.year)],['版本',litEscape(doc.edition)],['ISBN',litEscape(doc.isbn||'未载')],['语言',doc.languages.map(litEscape).join('／')],
+        ['出版机构',litEscape(doc.publisher ?? '未核')],['出版年份',litEscape(doc.year ?? '未核')],['版本',litEscape(doc.edition)],['ISBN',litEscape(doc.isbn||'未载')],['语言',doc.languages.map(litEscape).join('／')],
         ['文件',`PDF，${doc.page_count}页，${(doc.file_size/1024**2).toFixed(1)} MiB`],['文本状况',litEscape(doc.text_status)],['收录用途',litEscape(doc.purpose)]];
     document.getElementById('literatureDetailBody').innerHTML=`<div class="lit-detail-grid"><div class="lit-cover"><img src="${litEscape(doc.cover)}" alt="${litEscape(doc.title)} 封面"></div><div><h2 id="literatureDetailTitle">${litEscape(doc.title)}</h2>${doc.original_title?`<p class="lit-bibliography">原题：${litEscape(doc.original_title)}</p>`:''}<dl class="lit-details">${fields.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl><div class="lit-tags">${litTags(doc)}</div><div class="lit-book-footer"><a class="lit-action" href="${litEscape(pdf)}" target="_blank" rel="noopener">打开 PDF ↗</a><a class="lit-action" href="${litEscape(pdf)}" download="${litEscape(doc.title)}.pdf" target="_blank" rel="noopener">下载 PDF</a></div>
     <section class="lit-detail-section"><h3>内容与文件范围</h3><p>${litEscape(doc.summary)}</p><p>${litEscape(doc.notes)}</p></section>

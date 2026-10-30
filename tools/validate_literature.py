@@ -23,12 +23,13 @@ def validate(data,root=ROOT):
             id=str(uuid.UUID(doc['id']))
             assert id==doc['id'] and id not in seen_ids
             seen_ids.add(id)
-            assert doc['title'] and doc['authors'] and doc['publisher'] and doc['edition']
+            assert doc['title'] and doc['authors'] and doc['edition']
+            assert doc['publisher'] is None or (isinstance(doc['publisher'],str) and doc['publisher'].strip())
             assert doc['document_type'] in types
             assert doc['subjects'] and set(doc['subjects'])<=subjects
             assert len(doc['subjects'])==len(set(doc['subjects']))
             assert isinstance(doc['is_translation'],bool)
-            assert isinstance(doc['year'],int) and 1000<=doc['year']<=2100
+            assert doc['year'] is None or (isinstance(doc['year'],int) and 1000<=doc['year']<=2100)
             assert isinstance(doc['page_count'],int) and doc['page_count']>0
             assert isinstance(doc['file_size'],int) and doc['file_size']>0
             assert re.fullmatch(r'[0-9a-f]{64}',doc['sha256']) and doc['sha256'] not in seen_hashes

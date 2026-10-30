@@ -33,6 +33,17 @@ class LiteratureDataTest(unittest.TestCase):
         sample['documents'][0]['translators'].append({'id':person['id'],'name':'Different person label'})
         self.assertTrue(validate(sample))
 
+    def test_unverified_bibliography_uses_null_and_rejects_invalid_values(self):
+        sample=copy.deepcopy(self.data)
+        sample['documents'][0].update(year=None,publisher=None)
+        self.assertEqual(validate(sample),[])
+        for year in ['', '2012', 0, True, 2101]:
+            bad=copy.deepcopy(sample);bad['documents'][0]['year']=year
+            self.assertTrue(validate(bad))
+        for publisher in ['', ' ', False, []]:
+            bad=copy.deepcopy(sample);bad['documents'][0]['publisher']=publisher
+            self.assertTrue(validate(bad))
+
 
 @unittest.skipUnless(shutil.which('node'),'Node.js required for literature behavior')
 class LiteratureBehaviorTest(unittest.TestCase):
@@ -87,6 +98,24 @@ assert(context.literaturePdfUrl(data.documents[0]).startsWith('https://scores.ma
 const malicious={...data.documents[0],title:'<img src=x onerror=alert(1)>',summary:'<script>bad()</script>'};
 const html=context.literatureCard(malicious);assert(!html.includes('<script>'));assert(!html.includes('<img src=x'));
 assert(html.includes('&lt;script&gt;'));
+""")
+
+    def test_unverified_bibliography_is_explicit_in_cards_and_details(self):
+        self.run_js(r"""
+const book={...data.documents[0],publisher:null,year:null};
+const card=context.literatureCard(book);
+assert(card.includes('出版机构未核'));assert(card.includes('年份未核'));
+assert(!card.includes('null'));assert(!card.includes('undefined'));
+const elements=new Map();
+context.document={title:'',getElementById(id){
+ if(!elements.has(id))elements.set(id,{innerHTML:'',open:false,showModal(){this.open=true;}});
+ return elements.get(id);
+}};
+context.book=book;vm.runInContext('literatureCatalog={...literatureCatalog,documents:[book]}',context);
+context.showLiteratureDetail(book.id);
+const detail=elements.get('literatureDetailBody').innerHTML;
+assert(detail.includes('<dt>出版机构</dt><dd>未核</dd>'));
+assert(detail.includes('<dt>出版年份</dt><dd>未核</dd>'));
 """)
 
 

@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5172,
-  "unique_content_count": 5150,
+  "entry_count": 5175,
+  "unique_content_count": 5153,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 8989434994,
+  "total_size": 9028193021,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -8577,6 +8577,13 @@
       "sha256": "c535fdaa8e74e383f8fc32ec310c34c12e43913c7d79271c0dd2ae8e7b86c64f"
     },
     {
+      "public_id": "3d8fe14d-8e14-5871-8397-4bbfb5baf895",
+      "source_path": "scores/乐谱书/曲集/3d8fe14d-8e14-5871-8397-4bbfb5baf895.pdf",
+      "storage_key": "scores/3d/3d8fe14d-8e14-5871-8397-4bbfb5baf895.pdf",
+      "file_size": 11563041,
+      "sha256": "1d044c2c0b184476816c4c1b7d58db09dd673ca610f69badba1d9d5e361a7eff"
+    },
+    {
       "public_id": "3d93d446-3a1c-534f-b53f-a51ed5c187eb",
       "source_path": "scores/歌剧咏叹调/1766098883424_Perche_dell_aure_in_sen.pdf",
       "storage_key": "scores/3d/3d93d446-3a1c-534f-b53f-a51ed5c187eb.pdf",
@@ -16298,6 +16305,13 @@
       "sha256": "87cdd72bbffcc0c8bf4801c92b7cc2f7e7a17c687eb81a9a7b05255fd14ca2ca"
     },
     {
+      "public_id": "7443e934-e7de-549b-9f8e-32e5ed0f1961",
+      "source_path": "scores/乐谱书/曲集/7443e934-e7de-549b-9f8e-32e5ed0f1961.pdf",
+      "storage_key": "scores/74/7443e934-e7de-549b-9f8e-32e5ed0f1961.pdf",
+      "file_size": 14983550,
+      "sha256": "7353e1587808b6a447713226a480c335f7aa3650a557c0aa8464debf4d1aae80"
+    },
+    {
       "public_id": "745567b2-587b-4daa-b840-f163254e2058",
       "source_path": "scores/器乐独奏/745567b2-587b-4daa-b840-f163254e2058.pdf",
       "storage_key": "scores/74/745567b2-587b-4daa-b840-f163254e2058.pdf",
@@ -23730,6 +23744,13 @@
       "storage_key": "scores/a9/a96b9048-74ee-5b11-8ac2-3814bc735d02.pdf",
       "file_size": 2619639,
       "sha256": "e6c0504c7cffd1549ce329a7c091ba872cce12aeaea3268c88a69ae429074b52"
+    },
+    {
+      "public_id": "a97263f9-e254-5759-8259-48cd7f55a6b2",
+      "source_path": "scores/乐谱书/曲集/a97263f9-e254-5759-8259-48cd7f55a6b2.pdf",
+      "storage_key": "scores/a9/a97263f9-e254-5759-8259-48cd7f55a6b2.pdf",
+      "file_size": 12211436,
+      "sha256": "8e36f5e90b2b4f8433fb5875e29c1c2ea279367e6dfd2eb36ee01475cbb29048"
     },
     {
       "public_id": "a979872f-e026-51a9-879e-467450799268",
