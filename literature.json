@@ -62,6 +62,575 @@
   ],
   "documents": [
     {
+      "title": "正道神学院中文论文格式指南（Turabian第九版，2024修订）",
+      "work_id": "logos-turabian-chinese-guide-9th",
+      "authors": [
+        {
+          "id": "zhang-shengzhong",
+          "name": "章胜中",
+          "role": "编修"
+        }
+      ],
+      "publisher": "美国正道福音神学院图书馆",
+      "year": 2024,
+      "edition": "2024年8月修订本",
+      "subjects": [
+        "reference"
+      ],
+      "tags": [
+        "通用参考",
+        "学术写作",
+        "论文格式",
+        "引文格式"
+      ],
+      "purpose": "中文写作格式指南（通用参考）",
+      "languages": [
+        "汉语"
+      ],
+      "text_status": "可检索文本",
+      "summary": "美国正道福音神学院编修的中文学期报告与毕业论文格式指南，提供注释和参考书目范例。",
+      "notes": "中文繁体资料，包含院校自己的论文要求；这是根据Turabian第九版编修的中文格式指南，并非Kate L. Turabian手册的全书译本。PDF内的格式要求是该资料的内容，不作为本站或其他机构的通用规定。",
+      "contents": [
+        {
+          "title": "题名页",
+          "pdf_page": 1
+        },
+        {
+          "title": "前言",
+          "pdf_page": 2
+        },
+        {
+          "title": "目录",
+          "pdf_page": 3
+        },
+        {
+          "title": "第一章：学期报告及毕业论文格式",
+          "pdf_page": 5
+        },
+        {
+          "title": "参考书目",
+          "pdf_page": 47
+        }
+      ],
+      "original_title": "碩士科學期報告及畢業論文中文格式（Turabian第九版）指南",
+      "id": "63cd29a2-35e6-56b5-8882-4364340a9bea",
+      "document_type": "book",
+      "page_count": 47,
+      "file_size": 760441,
+      "sha256": "23817a50c700ae9b4b97aed121984c4ea562ecb1ed29f8d8d46711ef03096d5c",
+      "storage_key": "literature/63/63cd29a2-35e6-56b5-8882-4364340a9bea.pdf",
+      "cover": "img/literature/63cd29a2-35e6-56b5-8882-4364340a9bea.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "isbn": ""
+    },
+    {
+      "title": "Workbook for Tonal Harmony with an Introduction to Twentieth-Century Music（第5版）",
+      "work_id": "tonal-harmony-workbook",
+      "authors": [
+        {
+          "id": "stefan-kostka",
+          "name": "Stefan Kostka"
+        },
+        {
+          "id": "dorothy-payne",
+          "name": "Dorothy Payne"
+        }
+      ],
+      "publisher": "McGraw-Hill",
+      "year": null,
+      "edition": "第5版；扫描未见版权页，出版年份未核",
+      "subjects": [
+        "theory"
+      ],
+      "tags": [
+        "和声",
+        "乐理",
+        "作曲技术",
+        "习题册"
+      ],
+      "purpose": "和声习题册",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "summary": "Tonal Harmony配套和声习题册，按章节安排书写、分析与听辨练习。",
+      "notes": "题名页明确标示Fifth Edition及两位作者，出版社按题名页标识著录；不依据PDF文件时间推定出版年。本文件只有311页PDF，未附光盘或音频。此为教材习题册，归入文献库。",
+      "contents": [
+        {
+          "title": "封面",
+          "pdf_page": 1
+        },
+        {
+          "title": "题名页",
+          "pdf_page": 2
+        },
+        {
+          "title": "目录",
+          "pdf_page": 3
+        },
+        {
+          "title": "第一章习题",
+          "pdf_page": 5
+        },
+        {
+          "title": "听辨练习索引",
+          "pdf_page": 310
+        }
+      ],
+      "id": "feb449a1-b67c-54ef-9f26-59bfc953616b",
+      "document_type": "book",
+      "page_count": 311,
+      "file_size": 74675194,
+      "sha256": "b5054598b0e75f03f02574137e7933d35f9727d142be948b4d2b4aded1668fcb",
+      "storage_key": "literature/fe/feb449a1-b67c-54ef-9f26-59bfc953616b.pdf",
+      "cover": "img/literature/feb449a1-b67c-54ef-9f26-59bfc953616b.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": "",
+      "isbn": ""
+    },
+    {
+      "title": "Body Learning: An Introduction to the Alexander Technique",
+      "work_id": "body-learning",
+      "authors": [
+        {
+          "id": "michael-j-gelb",
+          "name": "Michael J. Gelb"
+        }
+      ],
+      "publisher": "Aurum Press",
+      "year": null,
+      "edition": "扫描本；未见版权页，确切版次与年份未核",
+      "subjects": [
+        "performance"
+      ],
+      "tags": [
+        "亚历山大技巧",
+        "身体觉察",
+        "表演学习"
+      ],
+      "purpose": "表演与身体运用参考",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "summary": "介绍亚历山大技巧中的身体觉察、动作习惯与学习方法，作为表演学习参考。",
+      "notes": "书内同时有新版本前言与第二版序言，未据此推定本扫描的确切版次或出版年。保留原PDF中的Wondershare PDFEditor水印。",
+      "contents": [
+        {
+          "title": "题名页",
+          "pdf_page": 2
+        },
+        {
+          "title": "目录",
+          "pdf_page": 3
+        },
+        {
+          "title": "新版本前言",
+          "pdf_page": 5
+        },
+        {
+          "title": "第二版序言",
+          "pdf_page": 7
+        }
+      ],
+      "id": "3ededd36-2c0a-5117-b054-d8b73d09f838",
+      "document_type": "book",
+      "page_count": 193,
+      "file_size": 23239067,
+      "sha256": "b669f8c9c9ce5897904523d7e957060706b026c5e0f5226594038ada4fcd296e",
+      "storage_key": "literature/3e/3ededd36-2c0a-5117-b054-d8b73d09f838.pdf",
+      "cover": "img/literature/3ededd36-2c0a-5117-b054-d8b73d09f838.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": "",
+      "isbn": ""
+    },
+    {
+      "title": "Diction for Singers：导论节选（原书第3至6页）",
+      "work_id": "diction-for-singers",
+      "authors": [
+        {
+          "id": "joan-wall",
+          "name": "Joan Wall"
+        }
+      ],
+      "publisher": null,
+      "year": null,
+      "edition": "导论扫描节选；未含题名及版权页，版次未核",
+      "subjects": [
+        "language",
+        "performance"
+      ],
+      "tags": [
+        "歌唱咬字",
+        "国际音标",
+        "语音学",
+        "章节节选"
+      ],
+      "purpose": "教材导论节选",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "summary": "介绍歌唱咬字、元音、辅音与国际音标的基础概念。",
+      "notes": "实际为4页，页眉署名Joan Wall，纸本页码3、4、5、6。文件名虽然写Italian及3-7，内容是通用导论，并不包含纸本第7页，也不是完整意大利语章；出版社、年份、版次及其他共同作者待核。",
+      "contents": [
+        {
+          "title": "导论：原书第3页",
+          "pdf_page": 1
+        },
+        {
+          "title": "原书第6页",
+          "pdf_page": 4
+        }
+      ],
+      "id": "206e7ef6-cb69-5c59-89a1-a19ef2f1bb54",
+      "document_type": "book",
+      "page_count": 4,
+      "file_size": 3167076,
+      "sha256": "6c37ad088f1c881f1915a5ad21d1f369c0341fac5cf4800d7bb56ac77446e490",
+      "storage_key": "literature/20/206e7ef6-cb69-5c59-89a1-a19ef2f1bb54.pdf",
+      "cover": "img/literature/206e7ef6-cb69-5c59-89a1-a19ef2f1bb54.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": "",
+      "isbn": ""
+    },
+    {
+      "title": "Diction for Singers：意大利语咬字节选（原书第40至47页）",
+      "work_id": "diction-for-singers",
+      "authors": [
+        {
+          "id": "joan-wall",
+          "name": "Joan Wall"
+        }
+      ],
+      "publisher": null,
+      "year": null,
+      "edition": "意大利语章扫描节选；未含题名及版权页，版次未核",
+      "subjects": [
+        "language",
+        "performance"
+      ],
+      "tags": [
+        "意大利语咬字",
+        "国际音标",
+        "重音",
+        "章节节选"
+      ],
+      "purpose": "教材章节节选",
+      "languages": [
+        "英语",
+        "意大利语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "summary": "以英语说明意大利语音节、重音、辅音重叠以及部分元音、辅音的歌唱发音。",
+      "notes": "8页，纸本页码40至47；并非完整意大利语章。作者按页眉Joan Wall署名，出版社、年份、版次及其他共同作者待核。",
+      "contents": [
+        {
+          "title": "Special Features of the Italian Language",
+          "pdf_page": 1
+        },
+        {
+          "title": "Stressing",
+          "pdf_page": 3
+        },
+        {
+          "title": "Special Doubling",
+          "pdf_page": 5
+        },
+        {
+          "title": "Flipped R",
+          "pdf_page": 8
+        }
+      ],
+      "id": "91d4e9d1-8367-520e-a686-e6499fc44b51",
+      "document_type": "book",
+      "page_count": 8,
+      "file_size": 7044309,
+      "sha256": "e8789b48cd25bc63992d89422468568419c5936e6529616c843fe52c91744618",
+      "storage_key": "literature/91/91d4e9d1-8367-520e-a686-e6499fc44b51.pdf",
+      "cover": "img/literature/91d4e9d1-8367-520e-a686-e6499fc44b51.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": "",
+      "isbn": ""
+    },
+    {
+      "title": "Wagner Beyond Good and Evil",
+      "work_id": "wagner-beyond-good-and-evil",
+      "authors": [
+        {
+          "id": "john-deathridge",
+          "name": "John Deathridge"
+        }
+      ],
+      "publisher": "University of California Press",
+      "year": 2008,
+      "edition": "2008年版，电子PDF",
+      "subjects": [
+        "composer-studies",
+        "musicology",
+        "aesthetics"
+      ],
+      "tags": [
+        "瓦格纳研究",
+        "歌剧",
+        "音乐批评"
+      ],
+      "purpose": "专著",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "可检索文本",
+      "summary": "围绕瓦格纳及其歌剧，讨论作品诠释、音乐批评与文化接受。",
+      "notes": "作者、年份及出版社按题名和版权页核对；ISBN按版权页的精装书号著录。PDF共321页，目录定位使用文件页码。",
+      "contents": [
+        {
+          "title": "题名页",
+          "pdf_page": 6
+        },
+        {
+          "title": "版权页",
+          "pdf_page": 7
+        },
+        {
+          "title": "目录",
+          "pdf_page": 10
+        }
+      ],
+      "isbn": "9780520254534",
+      "related_composers": [
+        {
+          "id": "richard-wagner",
+          "name": "Richard Wagner/瓦格纳",
+          "has_scores": true
+        }
+      ],
+      "id": "3191c563-2352-50e6-880c-5cc84fd906e1",
+      "document_type": "book",
+      "page_count": 321,
+      "file_size": 1470065,
+      "sha256": "afc11d0aad446ac7bc28ec52d3d22e31c1a2c80ef9ea903726b1819d53b79f72",
+      "storage_key": "literature/31/3191c563-2352-50e6-880c-5cc84fd906e1.pdf",
+      "cover": "img/literature/3191c563-2352-50e6-880c-5cc84fd906e1.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "original_title": ""
+    },
+    {
+      "title": "Nonviolent Communication: A Language of Life（英语第3版）",
+      "work_id": "nonviolent-communication-language-of-life",
+      "authors": [
+        {
+          "id": "marshall-b-rosenberg",
+          "name": "Marshall B. Rosenberg"
+        }
+      ],
+      "publisher": "PuddleDancer Press",
+      "year": 2015,
+      "edition": "第3版，2015年9月第1次印刷",
+      "subjects": [
+        "reference"
+      ],
+      "tags": [
+        "通用参考",
+        "非暴力沟通",
+        "沟通",
+        "人际关系"
+      ],
+      "purpose": "沟通参考（非音乐专著）",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "可检索文本",
+      "summary": "非暴力沟通的英语原著，讨论观察、感受、需要、请求及倾听等沟通主题。",
+      "notes": "通用沟通参考资料，不属于音乐学或声乐专著。本文件为英语第三版，并非《非暴力沟通》的中文译本；版本与ISBN按版权页著录，PDF共310页。",
+      "contents": [
+        {
+          "title": "题名页",
+          "pdf_page": 2
+        },
+        {
+          "title": "版权页",
+          "pdf_page": 3
+        },
+        {
+          "title": "目录",
+          "pdf_page": 11
+        }
+      ],
+      "isbn": "9781892005281",
+      "id": "01aec365-7e88-5315-8ad8-6899ce420098",
+      "document_type": "book",
+      "page_count": 310,
+      "file_size": 1974246,
+      "sha256": "727cc1d69f343d2aaea3dcffd940db726f4cd398d6b242346ade6687b2c58fa4",
+      "storage_key": "literature/01/01aec365-7e88-5315-8ad8-6899ce420098.pdf",
+      "cover": "img/literature/01aec365-7e88-5315-8ad8-6899ce420098.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": ""
+    },
+    {
+      "title": "Diction for Singers：德语章（第2版节选）",
+      "work_id": "diction-for-singers",
+      "authors": [
+        {
+          "id": "joan-wall",
+          "name": "Joan Wall"
+        },
+        {
+          "id": "robert-caldwell",
+          "name": "Robert Caldwell"
+        }
+      ],
+      "publisher": null,
+      "year": null,
+      "edition": "第2版；德语章扫描节选，未含版权页",
+      "subjects": [
+        "language",
+        "performance"
+      ],
+      "tags": [
+        "德语咬字",
+        "国际音标",
+        "章节节选"
+      ],
+      "purpose": "教材章节节选",
+      "languages": [
+        "英语",
+        "德语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "summary": "以英语说明德语歌唱发音，并列出国际音标、发音规则及例词。",
+      "notes": "共69页：封面1页加原书第161至228页的德语章68页。作者按可见封面署名Joan Wall、Robert Caldwell著录；未含完整题名和版权页，出版社、年份及完整共同作者名单待核。与另外两份Diction for Singers节选按同一著作关联，但不据此推定它们的版次。",
+      "contents": [
+        {
+          "title": "第2版封面",
+          "pdf_page": 1
+        },
+        {
+          "title": "德语章首页：原书第161页",
+          "pdf_page": 2
+        },
+        {
+          "title": "Chart of German Sounds",
+          "pdf_page": 3
+        },
+        {
+          "title": "Special Features of the German Language",
+          "pdf_page": 7
+        }
+      ],
+      "id": "f2884eec-0865-5447-b768-f15ee8f6e05a",
+      "document_type": "book",
+      "page_count": 69,
+      "file_size": 4414012,
+      "sha256": "023821ce974951bd48da883a9895a82e8a47a71b8123469039c73e4300ac1e52",
+      "storage_key": "literature/f2/f2884eec-0865-5447-b768-f15ee8f6e05a.pdf",
+      "cover": "img/literature/f2884eec-0865-5447-b768-f15ee8f6e05a.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": "",
+      "isbn": ""
+    },
+    {
+      "title": "A Manual for Writers of Research Papers, Theses, and Dissertations（第9版）",
+      "work_id": "turabian-manual-for-writers",
+      "authors": [
+        {
+          "id": "kate-l-turabian",
+          "name": "Kate L. Turabian"
+        }
+      ],
+      "publisher": "University of Chicago Press",
+      "year": 2018,
+      "edition": "第9版，电子排版PDF",
+      "subjects": [
+        "reference"
+      ],
+      "tags": [
+        "通用参考",
+        "学术写作",
+        "研究方法",
+        "引文格式",
+        "芝加哥格式"
+      ],
+      "purpose": "学术写作与引文参考（通用参考）",
+      "languages": [
+        "英语"
+      ],
+      "text_status": "可检索文本",
+      "summary": "涵盖研究写作、文献引注和论文格式的Turabian手册英语第九版。",
+      "notes": "PDF为电子书重排版，共776页，文件页码与纸本页码不同。ISBN著录版权页的电子书号；保留修订者等题名资料。本记录与正道神学院中文格式指南分别著录，后者不作为本书的全译本。",
+      "contents": [
+        {
+          "title": "题名页",
+          "pdf_page": 5
+        },
+        {
+          "title": "版权页",
+          "pdf_page": 6
+        },
+        {
+          "title": "目录",
+          "pdf_page": 8
+        },
+        {
+          "title": "第一部分：Research and Writing",
+          "pdf_page": 19
+        },
+        {
+          "title": "第二部分：Source Citation",
+          "pdf_page": 233
+        },
+        {
+          "title": "第三部分：Style",
+          "pdf_page": 492
+        }
+      ],
+      "isbn": "9780226430607",
+      "id": "5835a877-07ce-57da-a6d7-27472bc128c9",
+      "document_type": "book",
+      "page_count": 776,
+      "file_size": 4516658,
+      "sha256": "52119b911d0c831dc416e9a34ed41acbc5e25d503c310cd96ed90b7f63ae1f6c",
+      "storage_key": "literature/58/5835a877-07ce-57da-a6d7-27472bc128c9.pdf",
+      "cover": "img/literature/5835a877-07ce-57da-a6d7-27472bc128c9.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "translators": [],
+      "is_translation": false,
+      "related_composers": [],
+      "original_title": ""
+    },
+    {
       "title": "德国艺术歌曲字对字译词",
       "original_title": "",
       "work_id": "german-art-song-word-for-word",
