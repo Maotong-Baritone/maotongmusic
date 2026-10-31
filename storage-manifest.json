@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5582,
-  "unique_content_count": 5560,
+  "entry_count": 5594,
+  "unique_content_count": 5572,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9793199460,
+  "total_size": 9797218280,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -14,6 +14,13 @@
       "storage_key": "scores/00/001caf65-b47b-5774-980a-9d7241121678.pdf",
       "file_size": 1314960,
       "sha256": "61d669aa936b6fcf6fa378ea16195d13e68058d6a467f1841a8c93f9e5ee3e47"
+    },
+    {
+      "public_id": "002fdf23-2b11-4019-8899-cebaefae6cbb",
+      "source_path": "scores/器乐分谱/002fdf23-2b11-4019-8899-cebaefae6cbb.pdf",
+      "storage_key": "scores/00/002fdf23-2b11-4019-8899-cebaefae6cbb.pdf",
+      "file_size": 277326,
+      "sha256": "900e09df81770b5151eb0dc2988aeed9143ae09443707c22d59f45697b83c396"
     },
     {
       "public_id": "0033387a-5217-482c-94c7-130b188188fa",
@@ -1575,6 +1582,13 @@
       "storage_key": "scores/0a/0aba8c38-77b1-5ecd-9d4d-27536b20e0cb.pdf",
       "file_size": 481498,
       "sha256": "54fd534eccf3d5e39f6654f19a1036229f67e1849d87717fa97b39ff2506d231"
+    },
+    {
+      "public_id": "0abb583f-8736-434c-bc79-d7ecf6e527b5",
+      "source_path": "scores/器乐分谱/0abb583f-8736-434c-bc79-d7ecf6e527b5.pdf",
+      "storage_key": "scores/0a/0abb583f-8736-434c-bc79-d7ecf6e527b5.pdf",
+      "file_size": 322960,
+      "sha256": "f878b29487cb6ec3c4f48539417af7facc3d6abbf072e3fe72e12ca45e6a5fd0"
     },
     {
       "public_id": "0ac27cd2-98a9-544f-92ac-7dbdc55c9058",
@@ -3829,6 +3843,13 @@
       "storage_key": "scores/18/183e1241-e9c3-5181-b4dd-27fb5824b69b.pdf",
       "file_size": 3431728,
       "sha256": "262434c757d1ce385184bed5c8b61c0b83052af115d7319a79e02a9f76a70aa5"
+    },
+    {
+      "public_id": "184a04e2-7ed3-471a-9814-a09eb5086069",
+      "source_path": "scores/器乐分谱/184a04e2-7ed3-471a-9814-a09eb5086069.pdf",
+      "storage_key": "scores/18/184a04e2-7ed3-471a-9814-a09eb5086069.pdf",
+      "file_size": 359780,
+      "sha256": "867407d21aadbda1551851a00ccf8ca44a2b5ebcaa90392a4dacc2f05942e357"
     },
     {
       "public_id": "184d3b66-dcc1-50f0-9eb5-3462b03a88e3",
@@ -7448,6 +7469,13 @@
       "storage_key": "scores/30/30c1b1d7-171d-5644-b29a-d8f93f09a951.pdf",
       "file_size": 681345,
       "sha256": "3e061f83847df608248f0a1dd508ff1ac9052bd972a41c8c30bb1e0f93b84f2a"
+    },
+    {
+      "public_id": "30ca95a6-d00b-4c39-928d-bbac6d90f558",
+      "source_path": "scores/器乐分谱/30ca95a6-d00b-4c39-928d-bbac6d90f558.pdf",
+      "storage_key": "scores/30/30ca95a6-d00b-4c39-928d-bbac6d90f558.pdf",
+      "file_size": 327548,
+      "sha256": "bb8282a88e1659f63f272f7f239cf5a612c1f0ab98ae8ef915ee7aa552acbcab"
     },
     {
       "public_id": "30d02618-635b-458f-95bb-894671cd5ee5",
@@ -11172,6 +11200,13 @@
       "storage_key": "scores/49/490d1e86-a646-5c0a-8229-eac4784f71af.pdf",
       "file_size": 765684,
       "sha256": "4308df0a52cdde7feecb7c6651961874cbd9abc056f617c663f702cd79e1b870"
+    },
+    {
+      "public_id": "491a493b-13bc-4e39-bf32-97e1f151b2bc",
+      "source_path": "scores/器乐分谱/491a493b-13bc-4e39-bf32-97e1f151b2bc.pdf",
+      "storage_key": "scores/49/491a493b-13bc-4e39-bf32-97e1f151b2bc.pdf",
+      "file_size": 342443,
+      "sha256": "87e0228e097725a7bb5f779cbb92279dee449b99a8caee8b465e71a7209b97e7"
     },
     {
       "public_id": "491e42e4-1383-54d6-8c9d-98d9671f25ce",
@@ -24299,6 +24334,13 @@
       "sha256": "5ad1286b0cdfd97e541c50d57bc20d8797cf2e87761263405ece4e7f834cf499"
     },
     {
+      "public_id": "a0684d37-4fa6-40e2-ba85-e0b882086d5f",
+      "source_path": "scores/器乐分谱/a0684d37-4fa6-40e2-ba85-e0b882086d5f.pdf",
+      "storage_key": "scores/a0/a0684d37-4fa6-40e2-ba85-e0b882086d5f.pdf",
+      "file_size": 163838,
+      "sha256": "c97545692c0948f704868565688f0ca52acf13395bf2d75ff3a0b3e875033a41"
+    },
+    {
       "public_id": "a08b2f8c-9b19-5bc5-a211-596ec9858ef5",
       "source_path": "scores/歌剧咏叹调/1766007821240_Sento_il_cor_che_lieto_gode.pdf",
       "storage_key": "scores/a0/a08b2f8c-9b19-5bc5-a211-596ec9858ef5.pdf",
@@ -26110,6 +26152,13 @@
       "storage_key": "scores/ac/ac1bad01-bdcf-5c43-9963-f9d39c72b65e.pdf",
       "file_size": 120595,
       "sha256": "1abe71952098fd79dc7dfba6f4256cbc64f13d927991629f3d4f7d95573f0265"
+    },
+    {
+      "public_id": "ac2c1677-488e-4ad6-93a8-5bfa74d40648",
+      "source_path": "scores/器乐分谱/ac2c1677-488e-4ad6-93a8-5bfa74d40648.pdf",
+      "storage_key": "scores/ac/ac2c1677-488e-4ad6-93a8-5bfa74d40648.pdf",
+      "file_size": 299153,
+      "sha256": "17a20672505aaba3491deeab305d62526def0ce3ca562d5050a5f92c425dacfa"
     },
     {
       "public_id": "ac395385-801e-54ed-b166-5c9464ca8c04",
@@ -29192,6 +29241,13 @@
       "sha256": "27fd7e8cc060fcbdcc921495c8fb52dfc570b443c02a14e6681088539e511015"
     },
     {
+      "public_id": "bfd5b180-0f5a-42aa-a6cc-d33bc38703d2",
+      "source_path": "scores/器乐分谱/bfd5b180-0f5a-42aa-a6cc-d33bc38703d2.pdf",
+      "storage_key": "scores/bf/bfd5b180-0f5a-42aa-a6cc-d33bc38703d2.pdf",
+      "file_size": 365911,
+      "sha256": "c214dc293986ebcdb96cafb991f10aba87184820f25b87dfdc0a17b1e54bdc4c"
+    },
+    {
       "public_id": "bfde55ad-cb1f-4269-afd9-c5bdb6a9ae23",
       "source_path": "scores/器乐分谱/bfde55ad-cb1f-4269-afd9-c5bdb6a9ae23.pdf",
       "storage_key": "scores/bf/bfde55ad-cb1f-4269-afd9-c5bdb6a9ae23.pdf",
@@ -30205,6 +30261,13 @@
       "storage_key": "scores/c5/c5c65ba0-24e3-4712-af2d-c6b7f2cbd69c.pdf",
       "file_size": 427190,
       "sha256": "38b6a52b5752d65d9e21e552d28d232fa76d4381c208b2b525d1ce4acdeb7b0a"
+    },
+    {
+      "public_id": "c5d14eb1-ea0b-449b-b3cc-f4f69effc311",
+      "source_path": "scores/器乐分谱/c5d14eb1-ea0b-449b-b3cc-f4f69effc311.pdf",
+      "storage_key": "scores/c5/c5d14eb1-ea0b-449b-b3cc-f4f69effc311.pdf",
+      "file_size": 395507,
+      "sha256": "2df2eaa451a4ba343701bf182c7facdb2384abf086cfda5da0a8273b3dcc543d"
     },
     {
       "public_id": "c5d313b0-6a9e-44dc-b807-1c89c308b2b5",
@@ -36374,6 +36437,13 @@
       "sha256": "5529270f96998168c2393fae8779289d9c514c80b79dd86bfcf3171ccc695de7"
     },
     {
+      "public_id": "ed6c1050-d02b-4dfe-96d5-6b2c618f7516",
+      "source_path": "scores/器乐分谱/ed6c1050-d02b-4dfe-96d5-6b2c618f7516.pdf",
+      "storage_key": "scores/ed/ed6c1050-d02b-4dfe-96d5-6b2c618f7516.pdf",
+      "file_size": 797847,
+      "sha256": "92aeb682cd2d1bed66ad5ce48cdf4350b7e6f2c8bd536d92252bea31a82277fd"
+    },
+    {
       "public_id": "ed7387f4-e573-544f-abad-e1754dae9ae0",
       "source_path": "scores/声乐作品/艺术歌曲/1766372540245_Der_Ungluckliche_-_D713_Medium_Original.pdf",
       "storage_key": "scores/ed/ed7387f4-e573-544f-abad-e1754dae9ae0.pdf",
@@ -38467,6 +38537,13 @@
       "sha256": "f3647d6fde901f163e268ca8fac9cac0425e3a9d13198a0651257f82f1d0dbb6"
     },
     {
+      "public_id": "fc2f1cfa-a37d-4eaa-86a2-a269ea341c4f",
+      "source_path": "scores/器乐分谱/fc2f1cfa-a37d-4eaa-86a2-a269ea341c4f.pdf",
+      "storage_key": "scores/fc/fc2f1cfa-a37d-4eaa-86a2-a269ea341c4f.pdf",
+      "file_size": 204050,
+      "sha256": "5c9924a1c7d8d6147a355bae713a6525d417426f862166805122d4d8618a7445"
+    },
+    {
       "public_id": "fc33800e-08ab-53e1-aba8-bf05fc6cc495",
       "source_path": "scores/歌剧咏叹调/1766007825073_Dammi_pace_oh_volto_amato.pdf",
       "storage_key": "scores/fc/fc33800e-08ab-53e1-aba8-bf05fc6cc495.pdf",
@@ -38675,6 +38752,13 @@
       "storage_key": "scores/fd/fd31f849-e6f2-45ff-b84f-9ac0d19d9cf1.pdf",
       "file_size": 360414,
       "sha256": "8cd0b87fe066bbfbbc549010acca8ad9a494b7355f1818dd244e062f642ff236"
+    },
+    {
+      "public_id": "fd344aac-eace-45de-810d-29f9a8f01e8a",
+      "source_path": "scores/器乐分谱/fd344aac-eace-45de-810d-29f9a8f01e8a.pdf",
+      "storage_key": "scores/fd/fd344aac-eace-45de-810d-29f9a8f01e8a.pdf",
+      "file_size": 162457,
+      "sha256": "38382db423f42248db531432229b064d5afc003bf2e1f6de41ac27bb0cab9903"
     },
     {
       "public_id": "fd3cede9-71fc-41df-b946-46d5101aa155",
