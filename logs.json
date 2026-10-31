@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-31 13:27",
+        "type": "add",
+        "msg": "新增勃拉姆斯《Gesang der Parzen, Op. 89》原版器乐分谱13份（42页），含木管、铜管、定音鼓及弦乐；各声部范围与PDF定位已核对。",
+        "batch_id": "brahms-parzen-op89-parts-thirteen-20261031",
+        "count": 13
+    },
+    {
         "date": "2026-10-31 13:14",
         "type": "add",
         "msg": "新增勃拉姆斯《Schicksalslied, Op. 54》原版器乐分谱12份（48页），含木管、铜管、定音鼓及弦乐；各声部范围与PDF定位已核对。",
