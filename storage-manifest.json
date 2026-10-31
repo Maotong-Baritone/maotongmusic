@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5607,
-  "unique_content_count": 5585,
+  "entry_count": 5616,
+  "unique_content_count": 5594,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9827457703,
+  "total_size": 9829384018,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -5420,6 +5420,13 @@
       "sha256": "ee1a4ff37236ef430d963efbd30712dec9bd8cbbdcc2c038daa6286a4b60394d"
     },
     {
+      "public_id": "22cd9b65-1b7a-468d-897d-61beab62fbd8",
+      "source_path": "scores/器乐分谱/22cd9b65-1b7a-468d-897d-61beab62fbd8.pdf",
+      "storage_key": "scores/22/22cd9b65-1b7a-468d-897d-61beab62fbd8.pdf",
+      "file_size": 113743,
+      "sha256": "3ee64b8d9c2325f2398f30e0e28206822b5a0e678cdca7d0353bbf20f91d6d80"
+    },
+    {
       "public_id": "22d8093c-c56f-4e6d-8245-4102680ed099",
       "source_path": "scores/歌剧咏叹调/22d8093c-c56f-4e6d-8245-4102680ed099.pdf",
       "storage_key": "scores/22/22d8093c-c56f-4e6d-8245-4102680ed099.pdf",
@@ -6335,6 +6342,13 @@
       "storage_key": "scores/28/28dee316-8fb9-5280-b999-f75f359fa4f9.pdf",
       "file_size": 1679780,
       "sha256": "dbc0f85bf17be9f4ab1dbc095acb42507bf7bfc25df3064e10fe3db1a6c2ea9f"
+    },
+    {
+      "public_id": "28e260a6-7864-4115-9eaf-dbc76b5bd39a",
+      "source_path": "scores/器乐分谱/28e260a6-7864-4115-9eaf-dbc76b5bd39a.pdf",
+      "storage_key": "scores/28/28e260a6-7864-4115-9eaf-dbc76b5bd39a.pdf",
+      "file_size": 202610,
+      "sha256": "4aa7e8efaa086ce0ffcba9be4b443b3caae93617f73aa3ee3868b9961ab2e960"
     },
     {
       "public_id": "28e5186b-9818-5609-9180-143193d4b3b6",
@@ -14828,6 +14842,13 @@
       "sha256": "074f3ebae0b17349b7a933460e8665a4094806ab9ae51bc2f11a494137e56d69"
     },
     {
+      "public_id": "61022b41-ab40-4081-90b1-8e209c44fec7",
+      "source_path": "scores/器乐分谱/61022b41-ab40-4081-90b1-8e209c44fec7.pdf",
+      "storage_key": "scores/61/61022b41-ab40-4081-90b1-8e209c44fec7.pdf",
+      "file_size": 175328,
+      "sha256": "6bb1ba739a7919266216b6e1701a4a3e30e9c89e7404690620a134babfa3143e"
+    },
+    {
       "public_id": "610d32ef-a711-47eb-88d3-fc5a2fa001f5",
       "source_path": "scores/器乐独奏/610d32ef-a711-47eb-88d3-fc5a2fa001f5.pdf",
       "storage_key": "scores/61/610d32ef-a711-47eb-88d3-fc5a2fa001f5.pdf",
@@ -14980,6 +15001,13 @@
       "storage_key": "scores/62/625d7fd5-852e-5aa0-a310-606cb82cc531.pdf",
       "file_size": 296419,
       "sha256": "8f70cb543eea0b63e150088b568f2fdf925a4a962e570cae607045e11b29b4e5"
+    },
+    {
+      "public_id": "62933d7e-931d-4ec5-996e-ccef1fcc47ee",
+      "source_path": "scores/器乐分谱/62933d7e-931d-4ec5-996e-ccef1fcc47ee.pdf",
+      "storage_key": "scores/62/62933d7e-931d-4ec5-996e-ccef1fcc47ee.pdf",
+      "file_size": 393221,
+      "sha256": "4bd981b227ef32a6d7076018a298829c6a7fca2b9e614bac0d91ed3f757594e6"
     },
     {
       "public_id": "629aa9a9-2879-5dca-940d-c079abaeca80",
@@ -15239,6 +15267,13 @@
       "storage_key": "scores/64/647279e0-a76c-4024-b4d1-931e49ac0616.pdf",
       "file_size": 1778163,
       "sha256": "433113ca79704d4cb23add7582aa96f18b2af4485babf58169e7782d6a276967"
+    },
+    {
+      "public_id": "6496903b-7b05-4554-8afb-9595f640fc2d",
+      "source_path": "scores/器乐分谱/6496903b-7b05-4554-8afb-9595f640fc2d.pdf",
+      "storage_key": "scores/64/6496903b-7b05-4554-8afb-9595f640fc2d.pdf",
+      "file_size": 186787,
+      "sha256": "c8c83409b7d361ef559938935f86b671819387c109f7cbf6ea6250c6011eca59"
     },
     {
       "public_id": "6496c66e-b89c-5e65-aaed-18a5490a18e4",
@@ -17857,6 +17892,13 @@
       "storage_key": "scores/75/75b0471e-d436-58a0-9756-98c555d1bc3c.pdf",
       "file_size": 198433,
       "sha256": "4a057ea2a959bfd17467bda8394141ff752cf38d2324938fc5bd32cc551da97b"
+    },
+    {
+      "public_id": "75b175c1-9f26-4966-b045-dd4c2cb0bf13",
+      "source_path": "scores/器乐分谱/75b175c1-9f26-4966-b045-dd4c2cb0bf13.pdf",
+      "storage_key": "scores/75/75b175c1-9f26-4966-b045-dd4c2cb0bf13.pdf",
+      "file_size": 207756,
+      "sha256": "78335a1c86fa7f471a77d2bbf3b30051d55203b6aba8f366c910555a821adca4"
     },
     {
       "public_id": "75d3b472-a046-55fa-8137-a9e8eca2753f",
@@ -21798,6 +21840,13 @@
       "storage_key": "scores/8f/8fdf9f9f-45f7-409b-bbe1-2cdbf4746f6e.pdf",
       "file_size": 183409,
       "sha256": "c8fbdd5eea16889bbf064146fd16b42b213dc110c803388024a7d60ccf5d3ce2"
+    },
+    {
+      "public_id": "8fe5fdd4-1d36-4279-9477-0d029c6a0250",
+      "source_path": "scores/器乐分谱/8fe5fdd4-1d36-4279-9477-0d029c6a0250.pdf",
+      "storage_key": "scores/8f/8fe5fdd4-1d36-4279-9477-0d029c6a0250.pdf",
+      "file_size": 250936,
+      "sha256": "9895f0674362585d13ac58273000c1dda17a3736c1a5e9f09f1fc0d3afb9b4d5"
     },
     {
       "public_id": "90030134-4a85-54c4-8349-d24f1127ddd9",
@@ -27855,6 +27904,13 @@
       "sha256": "05f07b61685e9b38691cba7c4fd5a9281b4af168b7984b0667f4f3711af58359"
     },
     {
+      "public_id": "b66ac882-61ed-44cf-9503-b697407e62d8",
+      "source_path": "scores/器乐分谱/b66ac882-61ed-44cf-9503-b697407e62d8.pdf",
+      "storage_key": "scores/b6/b66ac882-61ed-44cf-9503-b697407e62d8.pdf",
+      "file_size": 206408,
+      "sha256": "9194e4b2ba6689804229f75a6244bb6be842413ee44b0cfc520ac0ccdde4b153"
+    },
+    {
       "public_id": "b66be8d8-9903-597e-ac90-657de7442767",
       "source_path": "scores/声乐作品/艺术歌曲/1766372537746_Der_Schiffer_-_D536_Low_Original.pdf",
       "storage_key": "scores/b6/b66be8d8-9903-597e-ac90-657de7442767.pdf",
@@ -28434,6 +28490,13 @@
       "storage_key": "scores/b9/b9f097ed-b0bf-55d7-a753-6a27461f884c.pdf",
       "file_size": 2128284,
       "sha256": "f3e63e40262dada6ef86f3564f3fed06ce39ce1ec9c2e7c74399b41b9c8a8b68"
+    },
+    {
+      "public_id": "b9f148f7-cc67-44c0-8b2a-24e2f2114a05",
+      "source_path": "scores/器乐分谱/b9f148f7-cc67-44c0-8b2a-24e2f2114a05.pdf",
+      "storage_key": "scores/b9/b9f148f7-cc67-44c0-8b2a-24e2f2114a05.pdf",
+      "file_size": 189526,
+      "sha256": "4cab10195ca0d851f8c7b2b304eebf58f14365ed930a1b3689e27c8fd38cec8a"
     },
     {
       "public_id": "ba02698a-b320-5a1d-be03-de4916171eb4",
