@@ -1,5 +1,12 @@
 [
     {
+        "date": "2026-10-31 16:26",
+        "type": "add",
+        "msg": "新增勃拉姆斯《Begräbnisgesang, Op. 13》原版器乐分谱13份（14页），含木管、圆号、长号、大号及定音鼓；独立声部及实际PDF范围已核对。",
+        "batch_id": "brahms-begrabnisgesang-op13-parts-thirteen-20261031",
+        "count": 13
+    },
+    {
         "date": "2026-10-31 16:11",
         "type": "add",
         "msg": "新增勃拉姆斯《Alto Rhapsody, Op. 53》原版器乐分谱9份（20页），含木管、圆号及弦乐；分部与连续段落的实际PDF定位已核对。",
