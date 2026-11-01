@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5643,
-  "unique_content_count": 5621,
+  "entry_count": 5647,
+  "unique_content_count": 5625,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9835475456,
+  "total_size": 9837577986,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -6246,6 +6246,13 @@
       "sha256": "8c4ea084f79f2aeeba11f74bcd0e36cc9ebc5b495c4417f4721b455aa7a5eec5"
     },
     {
+      "public_id": "283dff8a-e4c4-48b6-b85c-276d416d9bc6",
+      "source_path": "scores/器乐分谱/283dff8a-e4c4-48b6-b85c-276d416d9bc6.pdf",
+      "storage_key": "scores/28/283dff8a-e4c4-48b6-b85c-276d416d9bc6.pdf",
+      "file_size": 446761,
+      "sha256": "dc4d2b64a1d303122650c4f8034e4f13fa220dd09ef8f4c6e8dcf623836e9ebf"
+    },
+    {
       "public_id": "28448f72-b604-5fb7-9cc2-2b7fda9c4a93",
       "source_path": "scores/艺术歌曲/28448f72-b604-5fb7-9cc2-2b7fda9c4a93.pdf",
       "storage_key": "scores/28/28448f72-b604-5fb7-9cc2-2b7fda9c4a93.pdf",
@@ -9296,6 +9303,13 @@
       "storage_key": "scores/3c/3caf2ac8-51b1-44cb-918b-5ab05db5cf27.pdf",
       "file_size": 164036,
       "sha256": "8dd803632c472790d564b2f89f7b9b42432323c8635f945fa644fb2d9db6c5c6"
+    },
+    {
+      "public_id": "3cc06436-10f6-4268-8346-7634d5579b58",
+      "source_path": "scores/器乐分谱/3cc06436-10f6-4268-8346-7634d5579b58.pdf",
+      "storage_key": "scores/3c/3cc06436-10f6-4268-8346-7634d5579b58.pdf",
+      "file_size": 500009,
+      "sha256": "5f6f49942bb7cd7265b0586cc00168f83beb54091508d53f46d0af68cdb03f73"
     },
     {
       "public_id": "3cccf3fe-dd6e-5274-9979-95af9468f0e2",
@@ -33343,6 +33357,13 @@
       "sha256": "077f14d2192b7aef0c072e207d5eedd7c274849b9e6a93975d602db7b3475373"
     },
     {
+      "public_id": "d81f7528-a67b-4ba1-8cd8-cf815b8d0244",
+      "source_path": "scores/器乐分谱/d81f7528-a67b-4ba1-8cd8-cf815b8d0244.pdf",
+      "storage_key": "scores/d8/d81f7528-a67b-4ba1-8cd8-cf815b8d0244.pdf",
+      "file_size": 621173,
+      "sha256": "0745373d92f3ee538e0852312fcf432f64b67973e963ca1969afa80f0ab4ead8"
+    },
+    {
       "public_id": "d81fc82d-6160-556a-a6b9-b295e80ac769",
       "source_path": "scores/艺术歌曲/d81fc82d-6160-556a-a6b9-b295e80ac769.pdf",
       "storage_key": "scores/d8/d81fc82d-6160-556a-a6b9-b295e80ac769.pdf",
@@ -33586,6 +33607,13 @@
       "storage_key": "scores/d9/d9672eb7-2c7e-51aa-92bd-b448581d038d.pdf",
       "file_size": 1240018,
       "sha256": "9126fee5a561ae62076ab975b37fa380b8ce857f561e688fc95e74561407f53e"
+    },
+    {
+      "public_id": "d96ba7af-200d-4105-a3b0-1321ba7e1772",
+      "source_path": "scores/器乐分谱/d96ba7af-200d-4105-a3b0-1321ba7e1772.pdf",
+      "storage_key": "scores/d9/d96ba7af-200d-4105-a3b0-1321ba7e1772.pdf",
+      "file_size": 534587,
+      "sha256": "ec47c3180d2ec26f15ec13aa6f3f64f0a5d2d70c4f4de548a025777510c4059b"
     },
     {
       "public_id": "d96cc2cb-6ec5-4e81-a47f-628eff0500f4",
