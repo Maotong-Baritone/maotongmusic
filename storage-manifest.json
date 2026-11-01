@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5639,
-  "unique_content_count": 5617,
+  "entry_count": 5643,
+  "unique_content_count": 5621,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9833208890,
+  "total_size": 9835475456,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -6813,6 +6813,13 @@
       "sha256": "edb2c757aadd9c16fc85b9b2cfa6772390f7dd9fdc5f9e2656953d0d873020b5"
     },
     {
+      "public_id": "2c3e6344-0381-4c89-baea-deeede1fb9b5",
+      "source_path": "scores/器乐分谱/2c3e6344-0381-4c89-baea-deeede1fb9b5.pdf",
+      "storage_key": "scores/2c/2c3e6344-0381-4c89-baea-deeede1fb9b5.pdf",
+      "file_size": 139172,
+      "sha256": "c47f514604081dce02c7276af88dfbfe4eab9c0a0f6175419aa9e8f1814fa37b"
+    },
+    {
       "public_id": "2c46da00-99e9-4cbe-a7a5-d3af10ddfe2d",
       "source_path": "scores/歌剧咏叹调/2c46da00-99e9-4cbe-a7a5-d3af10ddfe2d.pdf",
       "storage_key": "scores/2c/2c46da00-99e9-4cbe-a7a5-d3af10ddfe2d.pdf",
@@ -13223,6 +13230,13 @@
       "storage_key": "scores/57/5715f5f5-d72a-42a9-a5a3-74b275c4bc90.pdf",
       "file_size": 168223,
       "sha256": "cfa6d2e2f1ad65cea3ca746b3d53592889772656e0ae988afe404d1bc1e9702f"
+    },
+    {
+      "public_id": "5721bfb9-891d-49be-a81a-1e26a472eafd",
+      "source_path": "scores/器乐分谱/5721bfb9-891d-49be-a81a-1e26a472eafd.pdf",
+      "storage_key": "scores/57/5721bfb9-891d-49be-a81a-1e26a472eafd.pdf",
+      "file_size": 156212,
+      "sha256": "40815c8aafdf7a11592dfebd4ff924f1cbf883d06555ba47e6bb2eae6d2e6b8c"
     },
     {
       "public_id": "5731d133-340d-5d33-8ada-3126cb5d2573",
@@ -27386,6 +27400,13 @@
       "sha256": "a8dc391163768d01de5af2e6c622dc65e02dedba9e04f438b9dba93a97cc3858"
     },
     {
+      "public_id": "b26c323d-5561-422a-a3e9-058bb6bc53b0",
+      "source_path": "scores/器乐分谱/b26c323d-5561-422a-a3e9-058bb6bc53b0.pdf",
+      "storage_key": "scores/b2/b26c323d-5561-422a-a3e9-058bb6bc53b0.pdf",
+      "file_size": 1350710,
+      "sha256": "d5d7270ba2dc4cafd26d0fc8ce7654b432c0c381f1b34c6860de0f36515dcc48"
+    },
+    {
       "public_id": "b2714ba8-178c-5044-8f28-ddca5e529347",
       "source_path": "scores/歌剧咏叹调/1766012385724_Vorrei_dir_e_cor_non_ho.pdf",
       "storage_key": "scores/b2/b2714ba8-178c-5044-8f28-ddca5e529347.pdf",
@@ -34272,6 +34293,13 @@
       "storage_key": "scores/dd/ddbf6d95-ce3f-50bb-bb43-060a6102ca3e.pdf",
       "file_size": 77326,
       "sha256": "fd51ce48506038112182241f08fca204200610cfa9394092d8790b34c67227ac"
+    },
+    {
+      "public_id": "ddcb1f18-51bd-487d-bf4c-24c0850be47e",
+      "source_path": "scores/器乐分谱/ddcb1f18-51bd-487d-bf4c-24c0850be47e.pdf",
+      "storage_key": "scores/dd/ddcb1f18-51bd-487d-bf4c-24c0850be47e.pdf",
+      "file_size": 620472,
+      "sha256": "089b74dd0a4c8e9a7b84fe9431563dfa73ce649bc9aa0fd69f4304c0d996823a"
     },
     {
       "public_id": "ddcc92eb-8977-5b83-ac74-f0bff323cd60",
