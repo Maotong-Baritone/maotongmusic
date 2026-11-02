@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5721,
-  "unique_content_count": 5699,
+  "entry_count": 5729,
+  "unique_content_count": 5707,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9868533398,
+  "total_size": 9872299784,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1647,6 +1647,13 @@
       "sha256": "0c3d33f1cf59c841e230987637f3fbf408df9884dc193399bc1d3f16f4030a46"
     },
     {
+      "public_id": "0aef5975-a2c4-48e9-970a-954c01b7f01d",
+      "source_path": "scores/器乐分谱/0aef5975-a2c4-48e9-970a-954c01b7f01d.pdf",
+      "storage_key": "scores/0a/0aef5975-a2c4-48e9-970a-954c01b7f01d.pdf",
+      "file_size": 332982,
+      "sha256": "213d1e90e4ec6a045a91c32d0c5cf738082453c8dcd25019a9dbc51897f036e7"
+    },
+    {
       "public_id": "0afa050c-2551-536b-abe1-02f04457cce6",
       "source_path": "scores/歌剧咏叹调/1766294174991_Deinen_Worten_weicht_das_Bangen.pdf",
       "storage_key": "scores/0a/0afa050c-2551-536b-abe1-02f04457cce6.pdf",
@@ -2429,6 +2436,13 @@
       "storage_key": "scores/0f/0f963e04-2750-4f20-86cb-18b905db6c6c.pdf",
       "file_size": 286140,
       "sha256": "13ce2b9a49717d5b8dc1acf28d21d827ac3ac0a1d27cdcb5192be1a335bc81fc"
+    },
+    {
+      "public_id": "0fa1c5ae-82f7-40ff-8278-d0468821cf65",
+      "source_path": "scores/器乐分谱/0fa1c5ae-82f7-40ff-8278-d0468821cf65.pdf",
+      "storage_key": "scores/0f/0fa1c5ae-82f7-40ff-8278-d0468821cf65.pdf",
+      "file_size": 183254,
+      "sha256": "9a8d883f0c1fe3eb603933830373cbc9eafafb88f356295292abd82485a28f9c"
     },
     {
       "public_id": "0fa7debf-3b06-5a87-9518-40aebc8a8feb",
@@ -16809,6 +16823,13 @@
       "sha256": "77c6cc8acca67a81b1f38d2a1f0771290d8e970cdff7dad3aecc45f90564a842"
     },
     {
+      "public_id": "6b8c527d-aa83-4308-8f51-b1bdec3f381b",
+      "source_path": "scores/器乐分谱/6b8c527d-aa83-4308-8f51-b1bdec3f381b.pdf",
+      "storage_key": "scores/6b/6b8c527d-aa83-4308-8f51-b1bdec3f381b.pdf",
+      "file_size": 753460,
+      "sha256": "47e0968bbf7bf4947947e00fb3c3353243106b13710b8d701d2abb8f29f58b0b"
+    },
+    {
       "public_id": "6b9442f6-e617-5465-830a-e1c04e337bc9",
       "source_path": "scores/歌剧咏叹调/1766007764205_Lascioti_oh_bella_il_volto.pdf",
       "storage_key": "scores/6b/6b9442f6-e617-5465-830a-e1c04e337bc9.pdf",
@@ -22610,6 +22631,13 @@
       "storage_key": "scores/92/924570cc-6fe7-56f2-9cdb-3e39f41e9470.pdf",
       "file_size": 1309654,
       "sha256": "5f0d66caee05e700df478df07d62379d48d1b66b04dc2e85801593cfa5ab153a"
+    },
+    {
+      "public_id": "92526778-5495-47ba-bf1c-ff439cbf81d3",
+      "source_path": "scores/器乐分谱/92526778-5495-47ba-bf1c-ff439cbf81d3.pdf",
+      "storage_key": "scores/92/92526778-5495-47ba-bf1c-ff439cbf81d3.pdf",
+      "file_size": 641035,
+      "sha256": "db8672c915157a14218581ad1b113c2de16956b278408bbddd69fdc751e5f0f8"
     },
     {
       "public_id": "9252f9f4-f764-4efd-b84b-54280270de90",
@@ -32370,6 +32398,13 @@
       "sha256": "54a0a2d764bedc6b64084cfb0969986f425c4b8aea86b45a9982edd2883a689b"
     },
     {
+      "public_id": "ce372a6f-0302-4361-976a-913a5f00ff1a",
+      "source_path": "scores/器乐分谱/ce372a6f-0302-4361-976a-913a5f00ff1a.pdf",
+      "storage_key": "scores/ce/ce372a6f-0302-4361-976a-913a5f00ff1a.pdf",
+      "file_size": 257197,
+      "sha256": "2129cae68c0363858d059d975c6b1a7e91a86f75b8aafb06cef0317241db9cd0"
+    },
+    {
       "public_id": "ce4cb6cc-c117-5e7b-9bfa-449c4a326ded",
       "source_path": "scores/声乐作品/艺术歌曲/1766372533887_Der_Kreuzzug_-_D932_Medium_Original.pdf",
       "storage_key": "scores/ce/ce4cb6cc-c117-5e7b-9bfa-449c4a326ded.pdf",
@@ -36248,6 +36283,13 @@
       "sha256": "0284b18986cc51f2d141c906563d8e8b3d59ee93feb908d5c170c825298080b5"
     },
     {
+      "public_id": "e70a36c0-5ac6-42a8-bbaf-845cc3f419c1",
+      "source_path": "scores/器乐分谱/e70a36c0-5ac6-42a8-bbaf-845cc3f419c1.pdf",
+      "storage_key": "scores/e7/e70a36c0-5ac6-42a8-bbaf-845cc3f419c1.pdf",
+      "file_size": 474675,
+      "sha256": "e2dbf9524b7d78768b745bfa66253ecc1049b7b565cb9c61488babca01a6ab7d"
+    },
+    {
       "public_id": "e717baa9-79f9-5fda-8b2d-d01cd65b8303",
       "source_path": "scores/声乐作品/艺术歌曲/1766372575679_Freiwilliges_Versinken_-_D700_Medium_Original.pdf",
       "storage_key": "scores/e7/e717baa9-79f9-5fda-8b2d-d01cd65b8303.pdf",
@@ -38894,6 +38936,13 @@
       "sha256": "b5c4f796d980cb878c682ebb016090749f99d9e102b433330d96c739c6adc0ff"
     },
     {
+      "public_id": "f7e1c34c-3442-4cd9-a3de-37b34ccb2d2e",
+      "source_path": "scores/器乐分谱/f7e1c34c-3442-4cd9-a3de-37b34ccb2d2e.pdf",
+      "storage_key": "scores/f7/f7e1c34c-3442-4cd9-a3de-37b34ccb2d2e.pdf",
+      "file_size": 574263,
+      "sha256": "d05c161172caa2d618398f0242f3aa35db1db2e079d55589129a3b6ff3e0a58f"
+    },
+    {
       "public_id": "f7f9cd8d-a522-5d4d-a076-ab1e803d34a4",
       "source_path": "scores/歌剧咏叹调/1766007800455_Lascia_chio_pianga_mia_cruda_sorte.pdf",
       "storage_key": "scores/f7/f7f9cd8d-a522-5d4d-a076-ab1e803d34a4.pdf",
@@ -39326,6 +39375,13 @@
       "storage_key": "scores/fb/fb80aae7-ee31-5e7e-baf5-f9c146faa9a7.pdf",
       "file_size": 587119,
       "sha256": "120a71514974b6a911c0d16e3ebd42eedc0c9ffe390bc9d8dfc7aaa311a7e00f"
+    },
+    {
+      "public_id": "fb997544-b4b4-49a8-b207-d2a254b0498b",
+      "source_path": "scores/器乐分谱/fb997544-b4b4-49a8-b207-d2a254b0498b.pdf",
+      "storage_key": "scores/fb/fb997544-b4b4-49a8-b207-d2a254b0498b.pdf",
+      "file_size": 549520,
+      "sha256": "e44c6c8ced8dcd6b7bb904c47405209da36182830988e31e5097f771182ea515"
     },
     {
       "public_id": "fb9d862d-541c-5365-a3fe-2df54dd11adf",
