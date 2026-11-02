@@ -2,12 +2,19 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5729,
-  "unique_content_count": 5707,
+  "entry_count": 5740,
+  "unique_content_count": 5718,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9872299784,
+  "total_size": 9877287417,
   "entries": [
+    {
+      "public_id": "00140917-da7c-41a7-b32f-088693128ba7",
+      "source_path": "scores/器乐分谱/00140917-da7c-41a7-b32f-088693128ba7.pdf",
+      "storage_key": "scores/00/00140917-da7c-41a7-b32f-088693128ba7.pdf",
+      "file_size": 313184,
+      "sha256": "4e1da663266def3a7ca71385422d3dc600f275e2474b743049c00a9d4d1297ae"
+    },
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
       "source_path": "scores/歌剧咏叹调/1766007750213_Tu_solcasti_il_mare_infido_agitata_navicella.pdf",
@@ -5147,6 +5154,13 @@
       "sha256": "af5514a9c7543697bc18c19e06a123176a09d97f35800271d9b0a0fc671bdcf7"
     },
     {
+      "public_id": "201e4b1d-2e42-45a4-af8e-4f96f0343ee9",
+      "source_path": "scores/器乐分谱/201e4b1d-2e42-45a4-af8e-4f96f0343ee9.pdf",
+      "storage_key": "scores/20/201e4b1d-2e42-45a4-af8e-4f96f0343ee9.pdf",
+      "file_size": 707234,
+      "sha256": "ec335c904cbb91b6ab42eacb5c6ed1eb4be1ae0fb57eac96a68a0b5e63622fbc"
+    },
+    {
       "public_id": "20326b1f-5fd2-5988-95ec-f604c9d12564",
       "source_path": "scores/歌剧咏叹调/1766039080234_Oh_chi_torna_lardente_pensiero...Piu_che_i_vezzi_e_lo_splendore.pdf",
       "storage_key": "scores/20/20326b1f-5fd2-5988-95ec-f604c9d12564.pdf",
@@ -5803,6 +5817,13 @@
       "storage_key": "scores/25/2518d13b-7e22-42f4-b4c6-f2a1bfd1bedd.pdf",
       "file_size": 964946,
       "sha256": "586117d5dbd0bde54289da90377111ecca3c5325ff8c4616cf786eadfa1a53ed"
+    },
+    {
+      "public_id": "251d87db-7e5c-4d1f-8a89-955f40b3b6a5",
+      "source_path": "scores/器乐分谱/251d87db-7e5c-4d1f-8a89-955f40b3b6a5.pdf",
+      "storage_key": "scores/25/251d87db-7e5c-4d1f-8a89-955f40b3b6a5.pdf",
+      "file_size": 402962,
+      "sha256": "f7c433599d9b2390ddc3266750041899f3b86e1f3b225be61f527a6fd9779ff4"
     },
     {
       "public_id": "251f34d8-ce94-55c4-9eee-6bcc318d101a",
@@ -7933,6 +7954,13 @@
       "sha256": "cb4a413d3bc2a7550a7c51726a66022c6f76ce75650d068a4c312ab80a64c593"
     },
     {
+      "public_id": "32f5690f-1eaf-4abf-a465-bd4efbacb902",
+      "source_path": "scores/器乐分谱/32f5690f-1eaf-4abf-a465-bd4efbacb902.pdf",
+      "storage_key": "scores/32/32f5690f-1eaf-4abf-a465-bd4efbacb902.pdf",
+      "file_size": 494444,
+      "sha256": "5c26724e99d2bbb7253208f561bb563d7aaef5e3cd9ffd8897d8486c816fee01"
+    },
+    {
       "public_id": "32f60cf5-580c-5295-be82-6e52a39652dc",
       "source_path": "scores/歌剧咏叹调/1766007761770_Alma_mia_si_sol_tu_sei.pdf",
       "storage_key": "scores/32/32f60cf5-580c-5295-be82-6e52a39652dc.pdf",
@@ -9242,6 +9270,13 @@
       "sha256": "d96731e65d79b319b58e6d0f09bccfc42b24fb1ccc4270736aa7a35e93d99a4d"
     },
     {
+      "public_id": "3b501a3a-d074-48bf-8ecd-b07a83ca478e",
+      "source_path": "scores/器乐分谱/3b501a3a-d074-48bf-8ecd-b07a83ca478e.pdf",
+      "storage_key": "scores/3b/3b501a3a-d074-48bf-8ecd-b07a83ca478e.pdf",
+      "file_size": 713132,
+      "sha256": "c50ddd1ff1490209bd92a22bfc1ed00dbe99a5ac6cd4dd936447c8a85e3575ba"
+    },
+    {
       "public_id": "3b64a382-3850-4674-a718-2fde63a716ca",
       "source_path": "scores/歌剧咏叹调/3b64a382-3850-4674-a718-2fde63a716ca.pdf",
       "storage_key": "scores/3b/3b64a382-3850-4674-a718-2fde63a716ca.pdf",
@@ -10136,6 +10171,13 @@
       "storage_key": "scores/40/40970d9c-18f7-58b5-8914-8f154a2f603a.pdf",
       "file_size": 381885,
       "sha256": "3f06dab136004229882fce23dc53475d04c5084f3423ebdc0dbf496f8c6e6403"
+    },
+    {
+      "public_id": "4099bd0c-6971-40c1-9c85-c4ddd31434fc",
+      "source_path": "scores/器乐分谱/4099bd0c-6971-40c1-9c85-c4ddd31434fc.pdf",
+      "storage_key": "scores/40/4099bd0c-6971-40c1-9c85-c4ddd31434fc.pdf",
+      "file_size": 282087,
+      "sha256": "86590afaf0c34cead7f1404567d2c4cc0261c3dad9323af14db264706fb16cda"
     },
     {
       "public_id": "40a782c7-05f4-4f62-8a4d-60364dd0ac0c",
@@ -15010,6 +15052,13 @@
       "sha256": "736abeb4ec5d682e451146d1ccd8dd4d541a2e5b3fadbbf43ae23d6a3327dbf5"
     },
     {
+      "public_id": "5ff096e3-a06a-44de-921b-f2c5ebbc990e",
+      "source_path": "scores/器乐分谱/5ff096e3-a06a-44de-921b-f2c5ebbc990e.pdf",
+      "storage_key": "scores/5f/5ff096e3-a06a-44de-921b-f2c5ebbc990e.pdf",
+      "file_size": 477904,
+      "sha256": "b060b712242dfa24f9b4c345f9d5236e06134428585836e31e69c1b1d08fa2aa"
+    },
+    {
       "public_id": "60268182-b686-476b-99d7-12d905358d51",
       "source_path": "scores/艺术歌曲/60268182-b686-476b-99d7-12d905358d51.pdf",
       "storage_key": "scores/60/60268182-b686-476b-99d7-12d905358d51.pdf",
@@ -19518,6 +19567,13 @@
       "sha256": "bbe83d435116859550d94db1e0b8215fafeb3dbc19eb2104252127b13a5f265f"
     },
     {
+      "public_id": "7e422046-1f6a-41f4-959f-b8b53f0bb8c7",
+      "source_path": "scores/器乐分谱/7e422046-1f6a-41f4-959f-b8b53f0bb8c7.pdf",
+      "storage_key": "scores/7e/7e422046-1f6a-41f4-959f-b8b53f0bb8c7.pdf",
+      "file_size": 291585,
+      "sha256": "17972276a06e622477cf68c7558ab93f1f6c5bce60aaaf06634b8c2e9b87a9db"
+    },
+    {
       "public_id": "7e443017-dee8-59a3-bc83-2e01fd9a53bf",
       "source_path": "scores/歌剧咏叹调/1766038835240_Un_ignoto_tre_lune_or_saranno.pdf",
       "storage_key": "scores/7e/7e443017-dee8-59a3-bc83-2e01fd9a53bf.pdf",
@@ -23046,6 +23102,13 @@
       "sha256": "c159424ebe8fe35eab5a603b26bb726ea24aaa0e048c0f9931732e7c66fcb4b3"
     },
     {
+      "public_id": "94ba8fc0-b2ed-4135-bafd-473aab3e9495",
+      "source_path": "scores/器乐分谱/94ba8fc0-b2ed-4135-bafd-473aab3e9495.pdf",
+      "storage_key": "scores/94/94ba8fc0-b2ed-4135-bafd-473aab3e9495.pdf",
+      "file_size": 365145,
+      "sha256": "327edc1ab9fb9fc6020a311f8142a3151edecc15a69fd9ea9ab0e9a9433497db"
+    },
+    {
       "public_id": "94d0bbb2-5c13-5390-bdb9-5bd9be05e029",
       "source_path": "scores/歌剧咏叹调/1766294181464_Iphigenie_helas_vous_a_trop_fait_connaitre.pdf",
       "storage_key": "scores/94/94d0bbb2-5c13-5390-bdb9-5bd9be05e029.pdf",
@@ -23814,6 +23877,13 @@
       "storage_key": "scores/99/99960f4e-33ab-52e3-8e47-c0c00e283184.pdf",
       "file_size": 766503,
       "sha256": "1d51c7bf0fefd68f916051794750f246468f64b2e9acaf28a71b66f9368dcdcb"
+    },
+    {
+      "public_id": "999a335c-8634-433f-9754-60704dd7e8f3",
+      "source_path": "scores/器乐分谱/999a335c-8634-433f-9754-60704dd7e8f3.pdf",
+      "storage_key": "scores/99/999a335c-8634-433f-9754-60704dd7e8f3.pdf",
+      "file_size": 711175,
+      "sha256": "a6dc65ab4466744479519f1c92ccb20f9ccabc199d790c6de02f63b37faca2a2"
     },
     {
       "public_id": "999eefc3-265e-5bf3-932c-f89b66bffc0f",
@@ -36862,6 +36932,13 @@
       "storage_key": "scores/eb/eb05f678-fff5-5d1f-b62e-6b16aa48e9c5.pdf",
       "file_size": 1114582,
       "sha256": "a5633b4c194748768c43a2d0d3dccd0067993d6154f0149c99f58fd6983449d3"
+    },
+    {
+      "public_id": "eb0d5eba-4ce4-4900-aad3-ad5c3640918b",
+      "source_path": "scores/器乐分谱/eb0d5eba-4ce4-4900-aad3-ad5c3640918b.pdf",
+      "storage_key": "scores/eb/eb0d5eba-4ce4-4900-aad3-ad5c3640918b.pdf",
+      "file_size": 228781,
+      "sha256": "b15c40557753c6aed046c6c69df19ccb652d61fc8347bcca665e5155c12fe9a2"
     },
     {
       "public_id": "eb1f94a6-c4f3-5341-b9ed-1c0c19d81f34",
