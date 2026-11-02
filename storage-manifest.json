@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5713,
-  "unique_content_count": 5691,
+  "entry_count": 5721,
+  "unique_content_count": 5699,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9865803831,
+  "total_size": 9868533398,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -6790,6 +6790,13 @@
       "storage_key": "scores/2a/2afe5faa-4501-533a-968a-13c85b5b8f0b.pdf",
       "file_size": 197013,
       "sha256": "eb42261f15014425e045a2bb7ff7df22046bce1e108d39621b05f89118e77bb3"
+    },
+    {
+      "public_id": "2b162703-09d2-46bf-8822-92464afba984",
+      "source_path": "scores/器乐分谱/2b162703-09d2-46bf-8822-92464afba984.pdf",
+      "storage_key": "scores/2b/2b162703-09d2-46bf-8822-92464afba984.pdf",
+      "file_size": 274360,
+      "sha256": "f81361ef8f76c4e0682ec73ab5da25f62958e67426cfd9b10a392243d962eb90"
     },
     {
       "public_id": "2b270bf5-65d7-4cd7-8160-e36a73f7008f",
@@ -15101,6 +15108,13 @@
       "sha256": "c605e818a90baa65c334e1cc2a4729429ff86e14916d2a810c769739d96ee20f"
     },
     {
+      "public_id": "609d22cb-f77b-4573-bb9b-98554f6c5e29",
+      "source_path": "scores/器乐分谱/609d22cb-f77b-4573-bb9b-98554f6c5e29.pdf",
+      "storage_key": "scores/60/609d22cb-f77b-4573-bb9b-98554f6c5e29.pdf",
+      "file_size": 122859,
+      "sha256": "8813261e2b234f5c842e8353ac4051846bbd005367a332384ee02d8a93185e92"
+    },
+    {
       "public_id": "60a2fb45-2abd-58b9-b0c2-97cddd8177e2",
       "source_path": "scores/艺术歌曲/60a2fb45-2abd-58b9-b0c2-97cddd8177e2.pdf",
       "storage_key": "scores/60/60a2fb45-2abd-58b9-b0c2-97cddd8177e2.pdf",
@@ -18662,6 +18676,13 @@
       "storage_key": "scores/78/787cbb2b-e61d-49aa-acfb-852f410dfac9.pdf",
       "file_size": 2560992,
       "sha256": "8bc5d572da2b24b443e2304b394d2317c996ecd7f6c3beba839cbbed86ccea87"
+    },
+    {
+      "public_id": "78828162-225d-4e3f-a73f-aef0ea83d3e4",
+      "source_path": "scores/器乐分谱/78828162-225d-4e3f-a73f-aef0ea83d3e4.pdf",
+      "storage_key": "scores/78/78828162-225d-4e3f-a73f-aef0ea83d3e4.pdf",
+      "file_size": 438518,
+      "sha256": "e96cda84e7df0da4f95e676bac96d24f96eb8f123c2ddf37378c4e63c42149ef"
     },
     {
       "public_id": "78932032-cba8-5615-80aa-206a33784026",
@@ -24313,6 +24334,13 @@
       "sha256": "29adce51bc3b8de82d5e07e861fd535392167c8a231eb1e5c7903b01a5f91ec7"
     },
     {
+      "public_id": "9d074194-3598-449e-bf92-1a4a53a4d2e8",
+      "source_path": "scores/器乐分谱/9d074194-3598-449e-bf92-1a4a53a4d2e8.pdf",
+      "storage_key": "scores/9d/9d074194-3598-449e-bf92-1a4a53a4d2e8.pdf",
+      "file_size": 497876,
+      "sha256": "381ae29770a1eb21f6c292523906b2033fd94991e17c73b6a2a90936efc7da9f"
+    },
+    {
       "public_id": "9d07e885-507b-4e72-bef7-1f2f8b2664d6",
       "source_path": "scores/歌剧咏叹调/9d07e885-507b-4e72-bef7-1f2f8b2664d6.pdf",
       "storage_key": "scores/9d/9d07e885-507b-4e72-bef7-1f2f8b2664d6.pdf",
@@ -28051,6 +28079,13 @@
       "sha256": "b85b4b06cb1d189535eb823ec1f0767f10b3ca0462d000d5deba791105c6e299"
     },
     {
+      "public_id": "b4166a81-1289-4efc-b310-695c092f1002",
+      "source_path": "scores/器乐分谱/b4166a81-1289-4efc-b310-695c092f1002.pdf",
+      "storage_key": "scores/b4/b4166a81-1289-4efc-b310-695c092f1002.pdf",
+      "file_size": 408851,
+      "sha256": "ff5607504ea6fd76d5116ec9fe21387d63895562804a9fd4b4faae16f3773d48"
+    },
+    {
       "public_id": "b42a1440-a5fa-5baa-b83c-07a4a14ebd9e",
       "source_path": "scores/歌剧咏叹调/1766098146779_Gran_Dio...Giusto_Dio_che_umile_adoro.pdf",
       "storage_key": "scores/b4/b42a1440-a5fa-5baa-b83c-07a4a14ebd9e.pdf",
@@ -29589,6 +29624,13 @@
       "storage_key": "scores/be/be39075b-4171-575b-af63-d8bb68f5a797.pdf",
       "file_size": 331995,
       "sha256": "7d7cfed8d9e3973d906617c595a8d8f7b64149260f0c329a0fec3be0421f19cd"
+    },
+    {
+      "public_id": "be451bb0-db7a-4efd-b00f-941bb7312152",
+      "source_path": "scores/器乐分谱/be451bb0-db7a-4efd-b00f-941bb7312152.pdf",
+      "storage_key": "scores/be/be451bb0-db7a-4efd-b00f-941bb7312152.pdf",
+      "file_size": 338783,
+      "sha256": "1205f38378578ef7496dbc62aa11edb923fc9c1b4cf11525983f2ebfebf1ab75"
     },
     {
       "public_id": "be493072-f8f6-43ef-a011-7c5c2a9c3e1f",
@@ -34680,6 +34722,13 @@
       "sha256": "e5e84ef9797300a7ed85128e5a9710e5b4ec49d57fb32d44db8a90a21b04f67f"
     },
     {
+      "public_id": "dd8b329b-53fe-41ea-bd94-62d7ba7e8567",
+      "source_path": "scores/器乐分谱/dd8b329b-53fe-41ea-bd94-62d7ba7e8567.pdf",
+      "storage_key": "scores/dd/dd8b329b-53fe-41ea-bd94-62d7ba7e8567.pdf",
+      "file_size": 460805,
+      "sha256": "c008366d76de572540e5794fdfb1e21c57a1408a3e528bb1267cffaa193c1b46"
+    },
+    {
       "public_id": "dd8cbd60-1a35-5689-b405-e6ecb9bdb3a3",
       "source_path": "scores/歌剧咏叹调/1766097755663_Giusto_ciel_in_tal_periglio.pdf",
       "storage_key": "scores/dd/dd8cbd60-1a35-5689-b405-e6ecb9bdb3a3.pdf",
@@ -38381,6 +38430,13 @@
       "storage_key": "scores/f4/f470d5c2-bedd-5c78-aa57-7de1864ff745.pdf",
       "file_size": 382786,
       "sha256": "3264e040889ab85f858b476a205c5972454750c164ad33ca4ad770920b05c1e3"
+    },
+    {
+      "public_id": "f4861d4d-09fa-4fc4-8659-d16b7181543b",
+      "source_path": "scores/器乐分谱/f4861d4d-09fa-4fc4-8659-d16b7181543b.pdf",
+      "storage_key": "scores/f4/f4861d4d-09fa-4fc4-8659-d16b7181543b.pdf",
+      "file_size": 187515,
+      "sha256": "fdfa0c0f6521f0c537ba97f6e4f671632b18d7ea5b12c988619a21fe4ea76ca0"
     },
     {
       "public_id": "f49d885d-c5a6-5013-84ce-b96b5df9744f",
