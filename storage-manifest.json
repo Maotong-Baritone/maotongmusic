@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5693,
-  "unique_content_count": 5671,
+  "entry_count": 5705,
+  "unique_content_count": 5683,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 9859877547,
+  "total_size": 9863042981,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -5644,6 +5644,13 @@
       "sha256": "d81bdff756f6beea26c5cb09516c0ca3b014c5dfee35fadaf6690812ec2e97d9"
     },
     {
+      "public_id": "2437d046-f3bd-475a-8bff-0636cdcc4e28",
+      "source_path": "scores/器乐分谱/2437d046-f3bd-475a-8bff-0636cdcc4e28.pdf",
+      "storage_key": "scores/24/2437d046-f3bd-475a-8bff-0636cdcc4e28.pdf",
+      "file_size": 222581,
+      "sha256": "76581ef12497d1eb737395ccb6d7d2daa20b2abfebcf998288c220e0c3277d82"
+    },
+    {
       "public_id": "2439d610-4a7d-50b8-97db-b020c457ebc8",
       "source_path": "scores/歌剧咏叹调/1766007802468_Ahi_perche_giusto_ciel_tanta_pena_a_questo_cor.pdf",
       "storage_key": "scores/24/2439d610-4a7d-50b8-97db-b020c457ebc8.pdf",
@@ -6561,6 +6568,13 @@
       "sha256": "d335faebc13da9ce86213c36a67319b27818f1111a7b56717b48e369a08f31b2"
     },
     {
+      "public_id": "297acefa-66be-4a9a-b827-56bd6903b3a9",
+      "source_path": "scores/器乐分谱/297acefa-66be-4a9a-b827-56bd6903b3a9.pdf",
+      "storage_key": "scores/29/297acefa-66be-4a9a-b827-56bd6903b3a9.pdf",
+      "file_size": 298510,
+      "sha256": "35dbbc3760adb6c9b5a2333de2930dcdd50a069c14be3e488671723cbdd27e9d"
+    },
+    {
       "public_id": "2984ee70-3d7d-5084-beb8-a755154cf813",
       "source_path": "scores/歌剧咏叹调/1766294198234_Addio_addio_o_miei_sospiri.pdf",
       "storage_key": "scores/29/2984ee70-3d7d-5084-beb8-a755154cf813.pdf",
@@ -6615,6 +6629,13 @@
       "storage_key": "scores/29/29c99205-2633-5981-a8b8-a6c9b0dd4f56.pdf",
       "file_size": 1257069,
       "sha256": "90cf97ebe77ab6417d74a8efd77ee961955b8b8b27a1750f3bcf1bcb51b4178a"
+    },
+    {
+      "public_id": "29ca563a-ba2d-44ad-8385-ded4401f8a0c",
+      "source_path": "scores/器乐分谱/29ca563a-ba2d-44ad-8385-ded4401f8a0c.pdf",
+      "storage_key": "scores/29/29ca563a-ba2d-44ad-8385-ded4401f8a0c.pdf",
+      "file_size": 714766,
+      "sha256": "c11be145310c3c1b6d4112fa42a6c10c88c57b0d49e31ec0f6781e179749902f"
     },
     {
       "public_id": "29d5d87e-2c42-5ea4-9301-254a66fdc49c",
@@ -8339,6 +8360,13 @@
       "sha256": "c62706dd3b5f5dfb65d21aedeeac3989a36833fc1d97b04b3911917f34faa1e1"
     },
     {
+      "public_id": "3645bb64-da0d-4ed1-8edf-fe8cb767f31d",
+      "source_path": "scores/器乐分谱/3645bb64-da0d-4ed1-8edf-fe8cb767f31d.pdf",
+      "storage_key": "scores/36/3645bb64-da0d-4ed1-8edf-fe8cb767f31d.pdf",
+      "file_size": 256003,
+      "sha256": "b01d2481964745e030679004072e5fe9d5f6f2f2720bf54f182f232607c6a0d7"
+    },
+    {
       "public_id": "36469b86-fa13-5dc5-a55d-8900802c3921",
       "source_path": "scores/歌剧咏叹调/1766093786162_Nein_Lasst_ihn_unenthullt.pdf",
       "storage_key": "scores/36/36469b86-fa13-5dc5-a55d-8900802c3921.pdf",
@@ -9072,6 +9100,13 @@
       "storage_key": "scores/3a/3ab9dfaa-b616-57e9-8bd1-5e021923e6fd.pdf",
       "file_size": 391903,
       "sha256": "ec497d8904beb82ac6c88597b5a74bb781f8eeec6e2467a470e3b05ff296ab1a"
+    },
+    {
+      "public_id": "3ad42a73-3040-4ac2-a91e-f70d3ea4030d",
+      "source_path": "scores/器乐分谱/3ad42a73-3040-4ac2-a91e-f70d3ea4030d.pdf",
+      "storage_key": "scores/3a/3ad42a73-3040-4ac2-a91e-f70d3ea4030d.pdf",
+      "file_size": 324083,
+      "sha256": "e0f75b7415aedf3259953b9e3695568c9037c5525a2c48fb0b6831e6c898c544"
     },
     {
       "public_id": "3adac108-b33c-40a0-a714-2407ba645367",
@@ -9968,6 +10003,13 @@
       "storage_key": "scores/3f/3fb4f652-2fd9-41d2-b6fa-a51f4438cc16.pdf",
       "file_size": 975848,
       "sha256": "b51524f0be238ce8b9d3df982024bf85baee5f41f15588ca5e36658961969b64"
+    },
+    {
+      "public_id": "3fcd5bb4-1bb8-4b81-be9f-43d072791d62",
+      "source_path": "scores/器乐分谱/3fcd5bb4-1bb8-4b81-be9f-43d072791d62.pdf",
+      "storage_key": "scores/3f/3fcd5bb4-1bb8-4b81-be9f-43d072791d62.pdf",
+      "file_size": 126312,
+      "sha256": "b6bcdc0ead29c0182a824238dd80018882de2503df072f890c533451e7aa5349"
     },
     {
       "public_id": "3fecb784-7749-47a2-8770-9e0a9c55addd",
@@ -20484,6 +20526,13 @@
       "sha256": "25bcb58635974e1ce7d09cd228231b4405e33dcfd420277ccc7b54e2098203ff"
     },
     {
+      "public_id": "858310cf-33fa-49db-81e4-d31d477d4802",
+      "source_path": "scores/器乐分谱/858310cf-33fa-49db-81e4-d31d477d4802.pdf",
+      "storage_key": "scores/85/858310cf-33fa-49db-81e4-d31d477d4802.pdf",
+      "file_size": 240069,
+      "sha256": "46dec997b514a3be9d0bbc6fa6b3e41c690b75c2c7a824b75f5f3f75b7883505"
+    },
+    {
       "public_id": "858d4a29-4299-536b-8cd9-9a2149f76c50",
       "source_path": "scores/歌剧咏叹调/1766098819444_Grazie_clementi_Dei.pdf",
       "storage_key": "scores/85/858d4a29-4299-536b-8cd9-9a2149f76c50.pdf",
@@ -25263,6 +25312,13 @@
       "storage_key": "scores/a3/a3e2a280-b651-52ea-9659-f3da746b44e0.pdf",
       "file_size": 772982,
       "sha256": "b71fac455e6471541094dac2086dc7e57e99e8bc05a33147ecca03ded38890e6"
+    },
+    {
+      "public_id": "a3e5619b-f58e-4d61-acc7-134af3235c48",
+      "source_path": "scores/器乐分谱/a3e5619b-f58e-4d61-acc7-134af3235c48.pdf",
+      "storage_key": "scores/a3/a3e5619b-f58e-4d61-acc7-134af3235c48.pdf",
+      "file_size": 241056,
+      "sha256": "6fa691a9cf23777d5cbe358f39f1402a1bf2a8177c646aa038f8e0dc7ce8ddaa"
     },
     {
       "public_id": "a3ea379b-cc82-5119-9932-9f5a4e9a3ce0",
@@ -31908,6 +31964,13 @@
       "sha256": "830ac415f4fbfd79e61d749b596c4327781ba8f7ad7270aee14d245c68e53f0c"
     },
     {
+      "public_id": "cc454676-e629-4514-ad34-048551c9c7ac",
+      "source_path": "scores/器乐分谱/cc454676-e629-4514-ad34-048551c9c7ac.pdf",
+      "storage_key": "scores/cc/cc454676-e629-4514-ad34-048551c9c7ac.pdf",
+      "file_size": 277704,
+      "sha256": "afc645ec8db6e780a9424a3064a2cfe38dcabe997327659f4dbd125dc5905aba"
+    },
+    {
       "public_id": "cc73f883-e0e5-41e8-8208-171b93abc83b",
       "source_path": "scores/歌剧咏叹调/cc73f883-e0e5-41e8-8208-171b93abc83b.pdf",
       "storage_key": "scores/cc/cc73f883-e0e5-41e8-8208-171b93abc83b.pdf",
@@ -33301,6 +33364,13 @@
       "sha256": "6651607d0030b3d3a8922b1aca179a28224c5b1542b9100b24c966107dc28827"
     },
     {
+      "public_id": "d63b5b5f-b39a-4628-b3ce-05a8b81d071b",
+      "source_path": "scores/器乐分谱/d63b5b5f-b39a-4628-b3ce-05a8b81d071b.pdf",
+      "storage_key": "scores/d6/d63b5b5f-b39a-4628-b3ce-05a8b81d071b.pdf",
+      "file_size": 161973,
+      "sha256": "d0bab9ad0bf3dd89bc32b4a5ce17903c5eee1c66275c3f1c8c3d58d325115082"
+    },
+    {
       "public_id": "d63de8e8-f311-439e-bcfe-19c77cdc7199",
       "source_path": "scores/歌剧咏叹调/d63de8e8-f311-439e-bcfe-19c77cdc7199.pdf",
       "storage_key": "scores/d6/d63de8e8-f311-439e-bcfe-19c77cdc7199.pdf",
@@ -33614,6 +33684,13 @@
       "storage_key": "scores/d7/d7f91f74-9709-5349-a712-9cc21aeb9669.pdf",
       "file_size": 660509,
       "sha256": "3df89d4f87ebac63ae05dc4d9a987a321251ca24e1245fc9e490d810363ec765"
+    },
+    {
+      "public_id": "d7febf5b-0181-4cc8-ac32-1ef44c74f248",
+      "source_path": "scores/器乐分谱/d7febf5b-0181-4cc8-ac32-1ef44c74f248.pdf",
+      "storage_key": "scores/d7/d7febf5b-0181-4cc8-ac32-1ef44c74f248.pdf",
+      "file_size": 176247,
+      "sha256": "1098f1e092bd7c2bdf06114c0981c0cf8f050a564ea4ea5e651d0c5e78ac0b12"
     },
     {
       "public_id": "d8026243-a5ef-434c-a8e6-f6d6d4fd345d",
@@ -37975,6 +38052,13 @@
       "storage_key": "scores/f2/f2d0d8d8-65d7-54a6-b9bd-6dfa535771af.pdf",
       "file_size": 388501,
       "sha256": "655b54e4e1d36115daa61cf003d72886e2df3936fa4c1bfd17b1d79e535a4cf7"
+    },
+    {
+      "public_id": "f2db5658-26b7-49ca-adc7-7dd38cac4de2",
+      "source_path": "scores/器乐分谱/f2db5658-26b7-49ca-adc7-7dd38cac4de2.pdf",
+      "storage_key": "scores/f2/f2db5658-26b7-49ca-adc7-7dd38cac4de2.pdf",
+      "file_size": 126130,
+      "sha256": "34f7566a0d9f94273b487a7e33e9b9762219cdf4bb5bd0241b31beaed437f051"
     },
     {
       "public_id": "f30b8ad1-95da-5aed-aa38-d09eee2a1cc9",
