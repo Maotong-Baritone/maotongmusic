@@ -1,7 +1,7 @@
 let literatureCatalog = {subjects:[],document_types:[],documents:[]};
 let literatureBaseUrl = '';
 const literatureKeys = ['q','subject','type','author','language','tag','composer'];
-const literatureBaseTitle = '音乐文献 | 征集网站名字中';
+const literatureBaseTitle = '音乐文献 | 猫瞳音乐';
 
 function litEscape(value) { return String(value ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;'); }
 function litNormalize(value) { return String(value || '').normalize('NFKC').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim(); }

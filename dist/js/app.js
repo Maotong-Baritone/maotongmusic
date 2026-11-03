@@ -2,7 +2,8 @@
 let musicData = [];
 let changeLog = [];
 let filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false };
-let sortType = 'date_desc';
+let sortType = 'relevance';
+let searchDocuments = new WeakMap();
 let currentPage = 1;
 const itemsPerPage = 15;
 let currentLyricsId = null;
@@ -160,6 +161,7 @@ function normalizeComposerName(value) {
 }
 
 function initComposerDirectory(data) {
+    searchDocuments = new WeakMap();
     composerDirectory = new Map();
     composerCredits = new Map();
     composerQueryIndex = new Map();
@@ -248,7 +250,7 @@ function restoreLibraryView(view) {
     if (view?.filters) {
         filters = { ...filters, ...view.filters };
         currentPage = Math.max(1, Number(view.currentPage) || 1);
-        sortType = view.sortType || 'date_desc';
+        sortType = view.sortType || 'relevance';
     } else {
         const route = new URL(window.location.href).searchParams.get('composer');
         if (route) {
@@ -449,27 +451,116 @@ function withinOneEdit(a, b) {
     return edits + (i < a.length || j < b.length ? 1 : 0) <= 1;
 }
 
-function matchesSearch(item, query) {
-    const text = normalizeSearch([item.title, composerSearchText(item.composer), item.work, item.description].filter(Boolean).join(' '));
-    const needle = normalizeSearch(query);
-    if (!needle) return false;
-    if (text.includes(needle)) return true;
-    // 连写/省音形式，例如 Dagl'immortali 与 Dagli immortali。
-    const compact = text.replace(/ /g, '');
-    const joined = needle.replace(/ /g, '');
-    if (compact.includes(joined)) return true;
-    if (joined.length >= 8) {
-        for (let i = 0; i < compact.length; i++) {
-            if (compact[i] !== joined[0] && compact[i] !== joined[1] && compact[i + 1] !== joined[0]) continue;
-            for (const size of [joined.length - 1, joined.length, joined.length + 1]) {
-                if (i + size <= compact.length && withinOneEdit(joined, compact.slice(i, i + size))) return true;
-            }
-        }
-    }
-    const words = text.split(' ');
-    return needle.split(' ').every(token => text.includes(token) ||
-        (token.length >= 5 && words.some(word => withinOneEdit(token, word))));
+// 同义声部只影响检索和显示，保留目录中的原始著录。
+function normalizeVoiceType(value) {
+    return String(value || '').normalize('NFKC').trim()
+        .replace(/\bcoloratura\s*\/\s*花腔女高音/gi, '花腔女高音')
+        .replace(/\blyric coloratura\b/gi, '抒情花腔女高音')
+        .replace(/\bbass[\s-]*baritone\b(?:\s*\/\s*低男中音)?/gi, '低男中音')
+        .replace(/\bmezzo[\s-]*soprano\b(?:\s*\/\s*次女高音)?|\bmezzo\b|次女高音/gi, '女中音')
+        .replace(/\bsoprano\b(?:\s*\/\s*女高音)?/gi, '女高音')
+        .replace(/\bcontralto\b(?:\s*\/\s*女低音)?/gi, '女低音')
+        .replace(/\btenor\b(?:\s*\/\s*男高音)?/gi, '男高音')
+        .replace(/\bbaritone\b(?:\s*\/\s*男中音)?/gi, '男中音')
+        .replace(/\bbass\b(?:\s*\/\s*男低音)?/gi, '男低音')
+        .replace(/\blyric\s+(?=[男女])/gi, '抒情')
+        .replace(/\bbuffo\s+(?=[男女])/gi, '喜剧')
+        .replace(/\s*\/\s*/g, '／').replace(/\s+/g, ' ');
 }
+
+function matchesVoiceType(value, query) {
+    const voice = normalizeStr(normalizeVoiceType(value));
+    const needle = normalizeStr(normalizeVoiceType(query));
+    if (!needle) return true;
+    // 高/中/低声部不能互相替代；低男中音也保留独立入口。
+    if (needle === '男中音') return /(?<!低)男中音/.test(voice);
+    return voice.includes(needle);
+}
+
+function catalogReferences(value) {
+    const references = [];
+    const pattern = /\b(op(?:us)?|bwv|kv|hwv|woo|anh|rv|k|d|s)\s*\.?\s*(\d+[a-z]?)(?![\p{L}\p{N}])/gu;
+    const text = normalizeStr(String(value || '').normalize('NFKC'));
+    for (const match of text.matchAll(pattern)) {
+        const scheme = match[1] === 'opus' ? 'op' : match[1] === 'kv' ? 'k' : match[1];
+        references.push({ key: `${scheme}:${match[2].replace(/^0+(?=\d)/, '')}`, text: match[0] });
+    }
+    return references;
+}
+
+function compileSearchQuery(query) {
+    let remainder = normalizeStr(String(query || '').normalize('NFKC'));
+    const references = catalogReferences(remainder);
+    references.forEach(reference => { remainder = remainder.replace(reference.text, ' '); });
+    const text = normalizeSearch(normalizeVoiceType(remainder).replace(/\b(no|nr)\.?\s*(\d+)/g, 'no $2'));
+    return { references, text, tokens: text.split(' ').filter(Boolean) };
+}
+
+function searchDocumentFor(item) {
+    if (searchDocuments.has(item)) return searchDocuments.get(item);
+    const fields = [item.title, item.work, composerSearchText(item.composer), normalizeVoiceType(item.voice_types), item.description]
+        .map(value => normalizeSearch(normalizeVoiceType(String(value || '').replace(/https?:\/\/[^\s；;，。<>]+/g, ''))));
+    const document = {
+        fields,
+        words: fields.map(field => field.split(' ')),
+        compact: fields.map(field => field.replace(/ /g, '')),
+        references: new Set(catalogReferences(`${item.title || ''} ${item.work || ''}`).map(reference => reference.key))
+    };
+    searchDocuments.set(item, document);
+    return document;
+}
+
+function searchScore(item, query) {
+    const compiled = typeof query === 'string' ? compileSearchQuery(query) : query;
+    if (!compiled.tokens.length && !compiled.references.length) return 0;
+    const document = searchDocumentFor(item);
+    // 作品号只从标题及所属作品读取，页码、来源编号和出版说明不能命中。
+    if (!compiled.references.every(reference => document.references.has(reference.key))) return 0;
+    if (!compiled.tokens.length) return 600;
+    const weights = [80, 60, 50, 30, 8];
+    let score = compiled.references.length ? 600 : 0;
+    for (const token of compiled.tokens) {
+        let tokenScore = 0;
+        document.fields.forEach((field, index) => {
+            const exact = /\d/.test(token) ? document.words[index].includes(token) : field.includes(token);
+            if (exact) tokenScore = Math.max(tokenScore, weights[index]);
+        });
+        if (!tokenScore && token.length >= 5 && !/\d/.test(token)) {
+            document.words.forEach((words, index) => {
+                if (words.some(word => withinOneEdit(token, word))) tokenScore = Math.max(tokenScore, weights[index] / 4);
+            });
+        }
+        if (!tokenScore) {
+            // 保留省音与连写检索，例如 Dagl'immortali / Dagli immortali。
+            const joined = compiled.text.replace(/ /g, '');
+            const index = document.compact.findIndex(field => field.includes(joined));
+            if (joined.length >= 5 && !/\d/.test(joined) && index >= 0) return score + weights[index];
+            if (joined.length >= 8 && !/\d/.test(joined)) {
+                for (let fieldIndex = 0; fieldIndex < 2; fieldIndex++) {
+                    const field = document.compact[fieldIndex];
+                    for (let start = 0; start < field.length; start++) {
+                        if (field[start] !== joined[0] && field[start] !== joined[1] && field[start + 1] !== joined[0]) continue;
+                        for (const size of [joined.length - 1, joined.length, joined.length + 1]) {
+                            if (start + size <= field.length && withinOneEdit(joined, field.slice(start, start + size))) return score + weights[fieldIndex] / 4;
+                        }
+                    }
+                }
+            }
+            return 0;
+        }
+        score += tokenScore;
+    }
+    if (!/\d/.test(compiled.text)) {
+        const phraseBonuses = [400, 250, 200, 80, 20];
+        document.fields.forEach((field, index) => {
+            if (field === compiled.text) score += phraseBonuses[index] * 2;
+            else if (field.includes(compiled.text)) score += phraseBonuses[index];
+        });
+    }
+    return score;
+}
+
+function matchesSearch(item, query) { return searchScore(item, query) > 0; }
 
 function compareByDateDesc(a, b) {
     const dateCompare = String(b.date || '').localeCompare(String(a.date || ''));
@@ -479,13 +570,18 @@ function compareByDateAsc(a, b) {
     const dateCompare = String(a.date || '').localeCompare(String(b.date || ''));
     return dateCompare || Number(a.id) - Number(b.id);
 }
-function performSearch() { const val = document.getElementById('searchInput').value.trim(); filters.search = val; if(val.length > 0) { document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' }); } applyFilters(); }
+function performSearch() {
+    filters.search = document.getElementById('searchInput').value.trim();
+    currentPage = 1;
+    if (filters.search) document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
+    applyFilters();
+}
 
 function initStatsAndDropdowns() {
     document.getElementById('statTotal').innerText = musicData.length;
     const composers = [...composerDirectory.values()].map(c => c.name).sort((a, b) => a.localeCompare(b));
     const languages = [...new Set(musicData.map(m => m.language).filter(l => l && l !== '无歌词'))].sort();
-    const voiceTypes = [...new Set(musicData.map(m => m.voice_types).filter(v => v))].sort();
+    const voiceTypes = [...new Set(musicData.map(m => normalizeVoiceType(m.voice_types)).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'zh-CN'));
     document.getElementById('statComposer').innerText = composers.length;
     
     const composerDataList = document.getElementById('composerOptions');
@@ -493,11 +589,13 @@ function initStatsAndDropdowns() {
     
     const langSelect = document.getElementById('languageSelect'); 
     // 保留第一个option
-    langSelect.replaceChildren(new Option('🌐 语言', 'all'));
+    langSelect.replaceChildren(new Option('演唱语言', 'all'));
     languages.forEach(value => langSelect.add(new Option(value, value)));
     
     const voiceDataList = document.getElementById('voiceOptions'); 
-    voiceDataList.replaceChildren(...voiceTypes.map(value => new Option('', value)));
+    const commonVoices = ['女高音', '女中音', '女低音', '男高音', '男中音', '低男中音', '男低音'];
+    const voiceOptions = [...new Set([...commonVoices.filter(voice => musicData.some(item => matchesVoiceType(item.voice_types, voice))), ...voiceTypes])];
+    voiceDataList.replaceChildren(...voiceOptions.map(value => new Option('', value)));
     
     document.querySelectorAll('.count-badge').forEach(badge => { const cat = badge.getAttribute('data-cat'); const count = musicData.filter(m => m.category === cat).length; badge.innerText = count; if(count === 0) badge.classList.add('opacity-25'); });
 }
@@ -641,6 +739,7 @@ window.removeActiveFilter = function(key) {
 }
 
 function applyFilters() {
+    const previousInputs = [filters.composer, filters.language, filters.voice, sortType];
     filters.composer = document.getElementById('composerInput').value; 
     const selectedComposer = exactComposer(filters.composer);
     const currentName = composerDirectory.get(filters.composerId)?.name || filters.composerId;
@@ -655,8 +754,10 @@ function applyFilters() {
     filters.language = document.getElementById('languageSelect').value;
     filters.voice = document.getElementById('voiceInput').value; 
     sortType = document.getElementById('sortSelect').value;
+    if ([filters.composer, filters.language, filters.voice, sortType].some((value, index) => value !== previousInputs[index])) currentPage = 1;
     
     let result = musicData;
+    const relevance = new Map();
     
     // 0. 收藏夹过滤
     if (filters.favoritesOnly) {
@@ -665,30 +766,28 @@ function applyFilters() {
 
     // 搜索规则随网站发布，不依赖外部组件是否加载成功。
     if (filters.search) {
-        result = result.filter(item => matchesSearch(item, filters.search));
+        const query = compileSearchQuery(filters.search);
+        result = result.filter(item => {
+            const score = searchScore(item, query);
+            relevance.set(item, score);
+            return score > 0;
+        });
     }
 
     // 2. 应用其他过滤器 (精确匹配)
     const searchComposer = normalizeStr(filters.composer);
-    const searchVoice = normalizeStr(filters.voice);
     
     result = result.filter(item => {
         let composerKeywords = normalizeStr(composerSearchText(item.composer));
-        const itemVoice = normalizeStr(item.voice_types);
 
         return (filters.category === 'all' || item.category === filters.category) && 
                (filters.language === 'all' || item.language === filters.language) && 
                (filters.composerId ? composerIdsFor(item.composer).includes(filters.composerId) : (filters.composer === '' || composerKeywords.includes(searchComposer))) &&
-               (filters.voice === '' || (item.voice_types && itemVoice.includes(searchVoice)));
+               matchesVoiceType(item.voice_types, filters.voice);
     });
 
-    // 3. 排序 (如果进行了模糊搜索，通常希望保留相关性排序，除非用户显式选择了其他排序)
-    // 这里我们简单处理：只有当用户没搜索或者显式选择了排序时才重排。
-    // 如果是默认 'date_desc' 且进行了搜索，可能保留 Fuse 的相关性更好？
-    // 但为了保持 UI 一致性，我们还是尊重用户的 sortType。
-    // 如果用户想看“最相关”，我们可以加一个 'relevance' 选项，目前暂不加。
-    
     result.sort((a, b) => {
+        if (sortType === 'relevance') return (relevance.get(b) || 0) - (relevance.get(a) || 0) || compareByDateDesc(a, b);
         if (sortType === 'date_desc') return compareByDateDesc(a, b);
         if (sortType === 'date_asc') return compareByDateAsc(a, b);
         if (sortType === 'title_asc') return a.title.localeCompare(b.title); 
@@ -709,7 +808,7 @@ function renderPaginationTable(data) {
     const total = data.length; const pages = Math.ceil(total / itemsPerPage);
     if (currentPage > pages) currentPage = pages || 1; if (currentPage < 1) currentPage = 1;
     const start = (currentPage - 1) * itemsPerPage; const pageData = data.slice(start, start + itemsPerPage);
-    const tbody = document.getElementById('mainTableBody'); document.getElementById('filteredCount').innerText = total + ' 首乐谱';
+    const tbody = document.getElementById('mainTableBody'); document.getElementById('filteredCount').innerText = total + ' 份乐谱资料';
     const mobileList = document.getElementById('mobileScoreList');
     
     const noResult = document.getElementById('noResult');
@@ -774,7 +873,7 @@ function renderPaginationTable(data) {
     pageData.forEach(item => {
         let badgeClass = getCategoryClass(item.category);
         let tonalityBadge = item.tonality ? `<span class="badge bg-light text-dark border ms-2" style="font-size:0.7rem; opacity: 0.7;">${escapeHtml(item.tonality)}</span>` : '';
-        let voiceBadge = item.voice_types ? `<span class="badge bg-secondary ms-1" style="font-size:0.7rem; opacity: 0.8;">${escapeHtml(item.voice_types)}</span>` : '';
+        let voiceBadge = item.voice_types ? `<span class="badge bg-secondary ms-1" style="font-size:0.7rem; opacity: 0.8;">${escapeHtml(normalizeVoiceType(item.voice_types))}</span>` : '';
         let lyricIcon = item.has_lyrics ? `<span class="badge bg-info text-dark ms-1" style="font-size:0.6rem" title="包含歌词/剧本">📖</span>` : '';
         const redundantSubcategory = item.sub_category === item.category
             || (item.category === '艺术歌曲' && item.sub_category === '香颂');
@@ -825,6 +924,7 @@ function renderPaginationTable(data) {
 
 window.resetFilters = () => { 
     currentPage = 1; filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false };
+    sortType = 'relevance'; document.getElementById('sortSelect').value = sortType;
     document.getElementById('searchInput').value = ''; document.getElementById('composerInput').value = ''; 
     document.getElementById('languageSelect').value = 'all'; document.getElementById('voiceInput').value = ''; 
     document.querySelectorAll('.category-group button').forEach(b => b.classList.remove('active-cat')); 
@@ -1081,7 +1181,7 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     document.getElementById('mLanguage').innerText = item.language || "-";
     document.getElementById('mCategory').innerText = item.category;
     document.getElementById('mSubCat').innerText = item.sub_category || "-";
-    document.getElementById('mVoice').innerText = item.voice_types || item.voice_count || "-";
+    document.getElementById('mVoice').innerText = normalizeVoiceType(item.voice_types) || item.voice_count || "-";
     document.getElementById('mTonality').innerText = item.tonality || "-";
     document.getElementById('mDate').innerText = item.date || "-";
 

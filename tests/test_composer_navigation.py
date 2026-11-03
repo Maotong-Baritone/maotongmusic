@@ -75,7 +75,7 @@ assert.deepEqual(Array.from(context.composerIdsFor('姜夔 / 罗忠镕（配伴�
 evaluate("filters.search='unrelated';filters.category='音乐剧选段';filters.favoritesOnly=true;currentPage=8;");
 element('searchInput').value='unrelated';element('languageSelect').value='英语';element('voiceInput').value='男低音';
 context.navigateToComposer(context.exactComposer('多尼采蒂').id);
-assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer.split('、').some(name=>['Gaetano Donizetti/多尼采蒂','Domenico Gaetano Donizetti/多尼采蒂'].includes(name.trim()))).length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer.split('、').some(name=>['Gaetano Donizetti/多尼采蒂','Domenico Gaetano Donizetti/多尼采蒂'].includes(name.trim()))).length+' 份乐谱资料');
 assert.equal(element('searchInput').value,'');assert.equal(element('voiceInput').value,'');
 assert.equal(element('languageSelect').value,'all');
 assert.equal(evaluate('filters.category'),'all');assert.equal(evaluate('filters.favoritesOnly'),false);
@@ -86,15 +86,15 @@ assert(element('mainTableBody').innerHTML.includes('data-composer-id="gaetano-do
 assert(element('mobileScoreList').innerHTML.includes('data-composer-id="gaetano-donizetti"'));
 assert(element('listTitle').innerText.includes('多尼采蒂'));
 context.navigateToComposer(context.exactComposer('Richard Strauss').id);
-assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer==='Richard Strauss/理查·施特劳斯').length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer==='Richard Strauss/理查·施特劳斯').length+' 份乐谱资料');
 context.navigateToComposer(context.exactComposer('Johann Strauss II').id);
-assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer==='Johann Strauss II/小约翰·施特劳斯').length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.filter(r=>r.composer==='Johann Strauss II/小约翰·施特劳斯').length+' 份乐谱资料');
 context.navigateToComposer(context.exactComposer('Benny Andersson').id);
-assert.equal(element('filteredCount').innerText,catalog.filter(r=>['Benny Andersson','Benny Andersson、Björn Ulvaeus'].includes(r.composer)).length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.filter(r=>['Benny Andersson','Benny Andersson、Björn Ulvaeus'].includes(r.composer)).length+' 份乐谱资料');
 context.navigateToComposer(context.exactComposer('Björn Ulvaeus').id);
-assert.equal(element('filteredCount').innerText,catalog.filter(r=>['Björn Ulvaeus','Benny Andersson、Björn Ulvaeus'].includes(r.composer)).length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.filter(r=>['Björn Ulvaeus','Benny Andersson、Björn Ulvaeus'].includes(r.composer)).length+' 份乐谱资料');
 element('composerInput').value='';context.applyFilters();
-assert.equal(element('filteredCount').innerText,catalog.length+' 首乐谱');
+assert.equal(element('filteredCount').innerText,catalog.length+' 份乐谱资料');
 assert.equal(new URL(location.href).searchParams.has('composer'),false);
 """)
 
@@ -102,14 +102,14 @@ assert.equal(new URL(location.href).searchParams.has('composer'),false);
         self.run_js(r"""
 location.href='https://example.test/library/?composer=gioachino-rossini#mainContentArea';
 context.restoreLibraryView();context.applyFilters();
-const rossiniCount=catalog.filter(r=>r.composer.split('、').some(name=>['Gioachino Rossini/罗西尼','Giaochino Rossini'].includes(name.trim()))).length+' 首乐谱';
+const rossiniCount=catalog.filter(r=>r.composer.split('、').some(name=>['Gioachino Rossini/罗西尼','Giaochino Rossini'].includes(name.trim()))).length+' 份乐谱资料';
 assert.equal(element('filteredCount').innerText,rossiniCount);
 evaluate('currentPage=2;');context.saveLibraryViewToHistory();const saved=history.state.libraryView;
 context.navigateToComposer(context.exactComposer('贝多芬').id);
 context.restoreLibraryView(saved);context.applyFilters();
 assert.equal(evaluate('currentPage'),2);assert.equal(element('filteredCount').innerText,rossiniCount);
 location.href='https://example.test/library/?composer=no-such-person';context.restoreLibraryView();context.applyFilters();
-assert.equal(element('filteredCount').innerText,'0 首乐谱');
+assert.equal(element('filteredCount').innerText,'0 份乐谱资料');
 const links=context.renderComposerLinks('Benny Andersson、Björn Ulvaeus');
 assert.equal((links.match(/data-composer-id=/g)||[]).length,2);
 assert(!context.renderComposerLinks('ABRSM').includes('<a'));
