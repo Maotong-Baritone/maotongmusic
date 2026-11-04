@@ -569,6 +569,15 @@ function renderTranslationBadge(item) {
         ? '<span class="badge translation-badge" title="中文标题为暂译，可在详情中查看原文参考">暂译</span>' : '';
 }
 
+function scoreSubmitterName(item) {
+    return typeof item.submitter_name === 'string' ? item.submitter_name.trim() : '';
+}
+
+function renderSubmitterCredit(item) {
+    const name = scoreSubmitterName(item);
+    return name ? `<div class="score-submitter small text-muted text-break mt-1">投稿：${escapeHtml(name)}</div>` : '';
+}
+
 function renderTitleMetadata(item) {
     const metadata = item.bilingual_title;
     if (!metadata) return '';
@@ -653,6 +662,7 @@ function renderRecent() {
                     <h6 class="card-title mb-1${item.bilingual_title ? '' : ' text-truncate'}" title="${escapeHtml(item.title)}"><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button> ${renderTranslationBadge(item)}</h6>
                     <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(composerDisplayName(item.composer))}">${renderComposerLinks(item.composer)}</div>
                     ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${escapeHtml(item.work)}">选自: ${escapeHtml(item.work)}</div>` : ''}
+                    ${renderSubmitterCredit(item)}
                 </div>
                 <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
                     <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span></button>
@@ -920,6 +930,7 @@ function renderPaginationTable(data) {
                     <div>
                         <div><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button> ${renderTranslationBadge(item)} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
                         ${item.work ? `<small class="text-muted fst-italic">选自: ${escapeHtml(item.work)}</small>` : ''}
+                        ${renderSubmitterCredit(item)}
                     </div>
                 </div>
             </td>
@@ -938,6 +949,7 @@ function renderPaginationTable(data) {
                 <h3 class="h6 mb-2"><button type="button" class="score-title score-title-button fw-bold text-dark text-start" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h3>
                 <p class="small text-secondary fw-medium mb-1">${renderComposerLinks(item.composer)}</p>
                 ${item.work ? `<p class="small text-muted fst-italic mb-2">选自: ${escapeHtml(item.work)}</p>` : ''}
+                ${renderSubmitterCredit(item)}
                 <div class="d-flex flex-wrap gap-1 mb-3">${renderTranslationBadge(item)}${tonalityBadge}${voiceBadge}${lyricIcon}${subBadge}${item.language ? `<span class="badge bg-light text-secondary border">${escapeHtml(item.language)}</span>` : ''}</div>
                 <div class="d-flex justify-content-between align-items-center border-top pt-3">
                     <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span><span class="ms-1" data-favorite-copy>${isFav ? '已收藏' : '收藏'}</span></button>
@@ -1214,6 +1226,13 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     document.getElementById('mVoice').innerText = normalizeVoiceType(item.voice_types) || item.voice_count || "-";
     document.getElementById('mTonality').innerText = item.tonality || "-";
     document.getElementById('mDate').innerText = item.date || "-";
+    const submitterRow = document.getElementById('mSubmitterRow');
+    const submitterName = document.getElementById('mSubmitter');
+    if (submitterRow && submitterName) {
+        const name = scoreSubmitterName(item);
+        submitterName.textContent = name;
+        submitterRow.hidden = !name;
+    }
 
     const descCard = document.getElementById('descCard');
     if (item.description) {

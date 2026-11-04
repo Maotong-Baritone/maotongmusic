@@ -1,5 +1,27 @@
 [
     {
+        "id": 1793819311468,
+        "public_id": "ce1b8633-497e-46ec-b18a-a2d62c700da7",
+        "title": "Vision fugitive / 短暂的幻影",
+        "composer": "Jules Massenet/马斯奈",
+        "work": "Hérodiade",
+        "language": "法语",
+        "category": "歌剧咏叹调",
+        "sub_category": "",
+        "voice_count": "",
+        "voice_types": "男中音",
+        "tonality": "",
+        "description": "《Hérodiade》中 Hérode 的宣叙调与咏叹调。男中音、钢琴，法语原词。共6页，原书印刷页157–162。含前置宣叙调与完整咏叹调；仅附法文歌词，与站内5页法英对照扫描本的排版不同，保留为独立版本。来源及出版信息未注明。",
+        "filename": "歌剧咏叹调/ce1b8633-497e-46ec-b18a-a2d62c700da7.pdf",
+        "date": "2026-11-04",
+        "has_lyrics": false,
+        "storage_key": "scores/ce/ce1b8633-497e-46ec-b18a-a2d62c700da7.pdf",
+        "storage_sha256": "da11421bc4193d30dbec2f37e296b6e5179fe7acd07ec670a43c03c0a19e459a",
+        "storage_size": 1082557,
+        "storage_synced_at": "2026-11-04T19:08:33+00:00",
+        "submitter_name": "于茂同"
+    },
+    {
         "id": 1790049743253,
         "public_id": "7e7da903-3ed5-434d-beb9-439b322259e5",
         "title": "Schicksalslied, Op. 54（管弦乐总谱）",
@@ -64939,7 +64961,8 @@
         "description": "Sopra l'acqua indormenzada\r\nLa Barcheta\r\nL'avertimento\r\nLa Biondina in Gondoleta\r\nChe peca!\r\nLa Primavera\r\n歌词主要使用威尼斯方言",
         "filename": "乐谱书/曲集/4642e5d5-bbc6-424f-8ffd-01c0c65a9f8a.pdf",
         "date": "2026-08-23",
-        "has_lyrics": false
+        "has_lyrics": false,
+        "submitter_name": "于茂同"
     },
     {
         "title": "Dein ist mein ganzes Herz/你是我的一切",
