@@ -56,6 +56,8 @@ const pairs=[['Christoph Gluck / 格鲁克','Christoph Willibald Gluck/格鲁克
  ['Jules Massenet/儒勒 马斯内','Jules Massenet/马斯奈'],
  ['Ruggero Leoncavallo/莱翁卡瓦洛','Ruggero Leoncavallo/莱昂卡瓦洛'],
  ['Vincenzo Bellini/贝里尼','Vincenzo Bellini/贝利尼']];
+// Alias identity should remain covered when one spelling loses its last active score.
+context.initComposerDirectory(catalog.concat(pairs.flat().map(composer=>({composer}))));
 for(const [a,b] of pairs){
  assert.equal(context.composerIdsFor(a)[0],context.composerIdsFor(b)[0]);
  assert.equal(context.composerDisplayName(a),context.composerDisplayName(b));

@@ -30,11 +30,10 @@ assert(context.matchesSearch({title:'No. 1 Capriccio, Op. 116',composer:'Johanne
 assert(!context.matchesSearch({title:'No. 10 Capriccio, Op. 116',composer:'Johannes Brahms/勃拉姆斯'}, 'Brahms Op116 No1'));
 """)
 
-    def test_real_op116_search_returns_only_the_eight_catalog_records(self):
+    def test_delisted_instrumental_op116_is_absent_from_catalog_search(self):
         self.run_js(r"""
 const hits = catalog.filter(item => context.matchesSearch(item, 'Op. 116'));
-assert.equal(hits.length, 8);
-assert(hits.every(item => /Op\.\s*116\b/.test(item.title + ' ' + item.work)));
+assert.equal(hits.length, 0);
 """)
 
     def test_title_beats_description_and_explicit_date_sort_still_works(self):
