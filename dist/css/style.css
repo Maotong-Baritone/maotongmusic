@@ -100,6 +100,12 @@ body {
 }
 .navbar-brand { display: inline-flex; align-items: center; gap: .65rem; font-size: 1.4rem; }
 .brand-monogram { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #a9d2c1; border-radius: 9px; color: #d6eadb; font: italic 700 25px Georgia, serif; }
+.site-navbar .nav-link { min-height: 44px; display: flex; align-items: center; }
+.site-navbar .navbar-nav .nav-contact { display: inline-flex; color: #f1f7f3; border: 1px solid rgba(196, 225, 210, .5); border-radius: 999px; padding: .4rem .85rem; }
+.site-navbar .nav-contact:hover,
+.site-navbar .nav-contact:focus-visible { color: #fff; background: rgba(210, 235, 220, .13); border-color: #c4e1d2; }
+.site-menu { --bs-dropdown-bg: var(--card-bg); --bs-dropdown-color: var(--text-main); --bs-dropdown-link-color: var(--text-main); --bs-dropdown-link-hover-color: var(--text-main); --bs-dropdown-link-hover-bg: var(--bg-color); --bs-dropdown-border-color: var(--border-color); min-width: 12rem; padding: .4rem; border-radius: 12px; box-shadow: 0 12px 30px rgba(0, 0, 0, .12); }
+.site-menu .dropdown-item { display: flex; align-items: center; min-height: 44px; border-radius: 7px; font-size: .9rem; }
 .skip-link { position: fixed; top: -100px; left: 1rem; z-index: 2000; padding: .7rem 1rem; color: #fff; background: #264653; border-radius: 6px; }
 .skip-link:focus { top: .5rem; }
 @media (min-width: 992px) {
@@ -107,6 +113,7 @@ body {
     .navbar .nav-link { white-space: nowrap; }
     .navbar .navbar-nav { gap: 0.25rem !important; }
     .navbar .nav-link { padding-left: 0.65rem !important; padding-right: 0.65rem !important; }
+    .site-navbar .nav-contact { margin-left: .4rem; }
 }
 @media (max-width: 991px) {
     .navbar-collapse {
@@ -115,6 +122,8 @@ body {
         border-radius: 0 0 12px 12px;
         margin-top: 0.5rem;
     }
+    .site-navbar .nav-contact { margin: .25rem 0; }
+    .site-navbar .site-menu { margin: .25rem 0 .5rem; box-shadow: none; }
 }
 
 /* 首页使用须知提示条 */
@@ -181,14 +190,14 @@ body {
 /* Hero 区域 */
 .hero-section {
     background: linear-gradient(115deg, #213f49 0%, #24675f 100%);
-    padding: 3.7rem 0 2.1rem;
+    padding: 2.5rem 0 2.1rem;
     color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 @media (max-width: 768px) {
-    .hero-section { padding: 2.6rem 0 1.6rem; }
+    .hero-section { padding: 2rem 0 1.6rem; }
     .display-4 { font-size: 2.5rem; }
 }
 .hero-section::before {
@@ -206,9 +215,7 @@ body {
     backdrop-filter: blur(5px);
 }
 .hero-eyebrow { margin-bottom: 1.1rem; color: #e1c98b; font-size: .72rem; letter-spacing: .16em; }
-.hero-section h1 { margin: 0 auto 1rem; font-size: clamp(1.8rem, 3.1vw, 2.8rem); line-height: 1.5; }
-.hero-section h1 span { display: inline-block; }
-.hero-lead { margin: 0 0 1.8rem; color: #dce8e3; font-size: 1rem; line-height: 1.8; }
+.hero-lead { margin: 0 0 1.8rem; color: #dce8e3; font-size: 1rem; font-weight: 400; line-height: 1.8; }
 .hero-search-wrap { max-width: 660px; margin: 0 auto; }
 .search-container { color: #54716d; box-shadow: 0 8px 25px rgba(0,0,0,.1); }
 .search-container .form-control { min-width: 0; font-size: .96rem; box-shadow: none; color: #263f42 !important; }
@@ -242,7 +249,6 @@ body {
 @media (max-width: 575px) {
     .hero-eyebrow { font-size: .65rem; }
     .hero-lead { max-width: 290px; margin-left: auto; margin-right: auto; font-size: .88rem; }
-    .hero-section h1 { max-width: 330px; }
     .search-container { padding: 5px; }
     .search-container .input-group-text { padding-left: .55rem !important; padding-right: .35rem; }
     .search-container .form-control { font-size: .8rem; padding-left: .3rem; padding-right: .3rem; }

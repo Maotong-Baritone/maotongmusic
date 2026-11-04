@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20261103-bilingual1" rel="stylesheet">
+    <link href="css/style.css?v=20261103-navigation" rel="stylesheet">
 </head>
 <body>
 
     <a class="skip-link" href="#mainContentArea">跳到乐谱目录</a>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="主导航">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" aria-label="主导航">
         <div class="container">
             <a class="navbar-brand fw-bold font-serif" href="index.html"><span class="brand-monogram" aria-hidden="true">m</span>征集网站名字中</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button>
@@ -24,6 +24,16 @@
                     <li class="nav-item"><button class="nav-link btn border-0 text-start" type="button" onclick="showFavorites()">我的收藏</button></li>
                     <li class="nav-item"><a class="nav-link" href="literature.html">音乐文献</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">专业资源</a></li>
+                    <li class="nav-item"><a class="nav-link nav-contact" href="contact.html" title="联系方式、求谱与问题反馈">联系我</a></li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link btn border-0 text-start dropdown-toggle" id="siteInfoMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">更多</button>
+                        <ul class="dropdown-menu dropdown-menu-end site-menu" aria-labelledby="siteInfoMenu">
+                            <li><button class="dropdown-item" type="button" onclick="showLogModal()">更新动态</button></li>
+                            <li><button class="dropdown-item" type="button" onclick="showUsageNotice()">使用与版权说明</button></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" type="button" onclick="showSponsorModal()">支持本站</button></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><button class="nav-link btn border-0" id="themeToggleBtn" type="button" onclick="toggleTheme()" title="切换深色模式" aria-label="切换深色模式">🌙</button></li>
                 </ul>
             </div>
@@ -33,8 +43,7 @@
     <header class="hero-section">
         <div class="container position-relative">
             <p class="hero-eyebrow">MAOTONG’S SCORES · 乐谱与文献</p>
-            <h1 class="font-serif fw-bold"><span>为每一次研习，</span><span>找到合适的乐谱。</span></h1>
-            <p class="hero-lead">专注声乐、歌剧与艺术歌曲，兼收器乐乐谱与音乐文献。</p>
+            <h1 class="hero-lead">专注声乐、歌剧与艺术歌曲，兼收器乐乐谱与音乐文献。</h1>
             <div class="hero-search-wrap">
                 <div class="input-group input-group-lg search-container" role="search" aria-label="乐谱检索">
                     <span class="input-group-text bg-transparent border-0 ps-3" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>
