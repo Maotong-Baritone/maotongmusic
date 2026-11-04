@@ -62,6 +62,181 @@
   ],
   "documents": [
     {
+      "title": "巴赫手稿：按年代排列的影印（BGA第44卷）",
+      "original_title": "Joh. Seb. Bach’s Handschrift in zeitlich geordneten Nachbildungen",
+      "work_id": "bga-44-facsimiles",
+      "authors": [
+        {
+          "id": "johann-sebastian-bach",
+          "name": "Johann Sebastian Bach/巴赫",
+          "role": "手稿作者"
+        },
+        {
+          "id": "hermann-kretzschmar",
+          "name": "Hermann Kretzschmar",
+          "role": "编者"
+        }
+      ],
+      "translators": [],
+      "is_translation": false,
+      "publisher": "Breitkopf & Härtel, Leipzig",
+      "year": 1895,
+      "edition": "Bach-Gesellschaft Ausgabe，第44卷；原版扫描",
+      "document_type": "primary-source",
+      "subjects": [
+        "musicology",
+        "composer-studies",
+        "reference"
+      ],
+      "tags": [
+        "巴赫",
+        "BGA",
+        "手稿影印",
+        "史料",
+        "年代研究"
+      ],
+      "purpose": "手稿笔迹、年代与版本研究",
+      "languages": [
+        "德语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "johann-sebastian-bach",
+          "name": "Johann Sebastian Bach/巴赫",
+          "has_scores": true
+        }
+      ],
+      "summary": "按年代编排的巴赫手稿影印与编者说明，属于原始文献资料，不作为钢琴演奏谱集。",
+      "notes": "现存PDF共169页，保留卷首与附录；德语为文献正文语言。文件约501MB，保持原始PDF字节，采用对象存储提供下载。",
+      "contents": [
+        {
+          "title": "Vorwort des Herausgebers",
+          "pdf_page": 13
+        },
+        {
+          "title": "Inhalt",
+          "pdf_page": 22
+        },
+        {
+          "title": "Nachbildungen",
+          "pdf_page": 24
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "Bach-Gesellschaft Ausgabe：卷次与编者",
+          "url": "https://imslp.org/wiki/Bach-Gesellschaft_Ausgabe"
+        }
+      ],
+      "id": "0f9142f1-abae-58b3-89ba-71df62b67b4c",
+      "page_count": 169,
+      "file_size": 525777700,
+      "sha256": "d4c23a6d3f24a9052ae025c9a20e22fc7602685bd44514d9ba92e214592ff6ff",
+      "storage_key": "literature/0f/0f9142f1-abae-58b3-89ba-71df62b67b4c.pdf",
+      "cover": "img/literature/0f9142f1-abae-58b3-89ba-71df62b67b4c.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
+      "title": "巴赫旧全集终卷：出版报告与主题目录（BGA第46卷）",
+      "original_title": "Joh. Seb. Bach’s Werke: Schlussband. Bericht und Verzeichnisse",
+      "work_id": "bga-46-catalogue",
+      "authors": [
+        {
+          "id": "hermann-kretzschmar",
+          "name": "Hermann Kretzschmar",
+          "role": "编著"
+        }
+      ],
+      "translators": [],
+      "is_translation": false,
+      "publisher": "Breitkopf & Härtel, Leipzig",
+      "year": 1899,
+      "edition": "Bach-Gesellschaft Ausgabe，第46卷；原版扫描",
+      "document_type": "book",
+      "subjects": [
+        "musicology",
+        "composer-studies",
+        "reference"
+      ],
+      "tags": [
+        "巴赫",
+        "BGA",
+        "主题目录",
+        "版本研究",
+        "参考书目"
+      ],
+      "purpose": "作品与全集卷次检索、版本研究",
+      "languages": [
+        "德语"
+      ],
+      "text_status": "扫描版（无可检索正文文本）",
+      "related_composers": [
+        {
+          "id": "johann-sebastian-bach",
+          "name": "Johann Sebastian Bach/巴赫",
+          "has_scores": true
+        }
+      ],
+      "summary": "旧巴赫全集出版报告、声乐主题目录、器乐索引及总目录，属于研究参考文献。",
+      "notes": "现存PDF共332页，保留卷首与附录；德语为文献正文语言。",
+      "contents": [
+        {
+          "title": "Schlußband",
+          "pdf_page": 11
+        },
+        {
+          "title": "Inhalt",
+          "pdf_page": 13
+        },
+        {
+          "title": "Die Bach-Gesellschaft",
+          "pdf_page": 15
+        },
+        {
+          "title": "Die Gesangwerke Bach's",
+          "pdf_page": 67
+        },
+        {
+          "title": "Übersicht (Instrumentalwerke)",
+          "pdf_page": 312
+        },
+        {
+          "title": "Namen- und Sachregister",
+          "pdf_page": 319
+        },
+        {
+          "title": "Werke nach Jahrgängen sortiert",
+          "pdf_page": 329
+        },
+        {
+          "title": "Werke nach Gruppen sortiert",
+          "pdf_page": 329
+        },
+        {
+          "title": "Instrumentalwerke",
+          "pdf_page": 331
+        }
+      ],
+      "bibliography_sources": [
+        {
+          "title": "Bach-Gesellschaft Ausgabe：卷次与编者",
+          "url": "https://imslp.org/wiki/Bach-Gesellschaft_Ausgabe"
+        }
+      ],
+      "id": "d911ebb7-be95-5902-9de4-47ac2e7696eb",
+      "page_count": 332,
+      "file_size": 35806258,
+      "sha256": "0f555602ff62f5f301c0da38e51c816876c65e90931837918dfbd899f0ac1a7e",
+      "storage_key": "literature/d9/d911ebb7-be95-5902-9de4-47ac2e7696eb.pdf",
+      "cover": "img/literature/d911ebb7-be95-5902-9de4-47ac2e7696eb.jpg",
+      "added_at": "2026-10-30",
+      "source": "用户提供的PDF文件",
+      "isbn": ""
+    },
+    {
       "title": "阿尔辛娜（Castel音标与逐词英译）",
       "original_title": "Alcina",
       "work_id": "alcina-libretto",

@@ -783,3 +783,9 @@ footer {
     .resource-card { padding: 1.15rem; }
     .resource-full-name { min-height: 0; }
 }
+/* Translation state stays separate from the canonical bilingual title. */
+.translation-badge { background: #fff0d3; color: #85580d; vertical-align: middle; }
+#mTitleStatus:has(.translation-badge) { margin-bottom: .5rem; }
+.title-metadata { color: #53655c; overflow-wrap: anywhere; }
+.title-metadata summary { color: #35634f; cursor: pointer; }
+.title-metadata li + li { margin-top: .35rem; }

@@ -498,7 +498,9 @@ function compileSearchQuery(query) {
 
 function searchDocumentFor(item) {
     if (searchDocuments.has(item)) return searchDocuments.get(item);
-    const fields = [item.title, item.work, composerSearchText(item.composer), normalizeVoiceType(item.voice_types), item.description]
+    const titleMetadata = item.bilingual_title || {};
+    const titleAliases = [titleMetadata.source_title, ...(titleMetadata.aliases_original || []), ...(titleMetadata.aliases_zh || [])].filter(Boolean).join(' ');
+    const fields = [item.title, item.work, composerSearchText(item.composer), normalizeVoiceType(item.voice_types), item.description, titleAliases]
         .map(value => normalizeSearch(normalizeVoiceType(String(value || '').replace(/https?:\/\/[^\s；;，。<>]+/g, ''))));
     const document = {
         fields,
@@ -517,7 +519,7 @@ function searchScore(item, query) {
     // 作品号只从标题及所属作品读取，页码、来源编号和出版说明不能命中。
     if (!compiled.references.every(reference => document.references.has(reference.key))) return 0;
     if (!compiled.tokens.length) return 600;
-    const weights = [80, 60, 50, 30, 8];
+    const weights = [80, 60, 50, 30, 8, 55];
     let score = compiled.references.length ? 600 : 0;
     for (const token of compiled.tokens) {
         let tokenScore = 0;
@@ -551,7 +553,7 @@ function searchScore(item, query) {
         score += tokenScore;
     }
     if (!/\d/.test(compiled.text)) {
-        const phraseBonuses = [400, 250, 200, 80, 20];
+        const phraseBonuses = [400, 250, 200, 80, 20, 160];
         document.fields.forEach((field, index) => {
             if (field === compiled.text) score += phraseBonuses[index] * 2;
             else if (field.includes(compiled.text)) score += phraseBonuses[index];
@@ -561,6 +563,32 @@ function searchScore(item, query) {
 }
 
 function matchesSearch(item, query) { return searchScore(item, query) > 0; }
+
+function renderTranslationBadge(item) {
+    return item.bilingual_title?.translation_status === 'provisional'
+        ? '<span class="badge translation-badge" title="中文标题为暂译，可在详情中查看原文参考">暂译</span>' : '';
+}
+
+function renderTitleMetadata(item) {
+    const metadata = item.bilingual_title;
+    if (!metadata) return '';
+    const provisional = metadata.translation_status === 'provisional';
+    const status = provisional ? '中文标题为暂译，欢迎提出更合适的译法。'
+        : metadata.translation_status === 'legacy' ? '沿用本站已有中文译名。' : '采用可查证的中文译名用例；译法可能不止一种。';
+    const sources = (metadata.translation_sources || []).map(source => {
+        try {
+            const url = new URL(source.url);
+            if (!['https:', 'http:'].includes(url.protocol)) return '';
+            return `<li><a href="${escapeHtml(url.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>${source.access_note ? `<p class="mb-0 text-muted">${escapeHtml(source.access_note)}</p>` : ''}</li>`;
+        } catch { return ''; }
+    }).filter(Boolean).join('');
+    const aliases = [...(metadata.aliases_original || []), ...(metadata.aliases_zh || [])].map(escapeHtml).join('、');
+    return `<details class="title-metadata mb-3 small"><summary>标题与译名依据</summary>
+        <p class="mt-2 mb-2">${status}</p>
+        ${aliases ? `<p class="mb-2">其他检索写法：${aliases}</p>` : ''}
+        ${sources ? `<p class="mb-1 fw-bold">${provisional ? '原文语义参考' : '译名参考'}</p><ul class="ps-3 mb-2">${sources}</ul>` : ''}
+        <p class="mb-0 text-muted">整理前标题：${escapeHtml(metadata.source_title || '')}</p></details>`;
+}
 
 function compareByDateDesc(a, b) {
     const dateCompare = String(b.date || '').localeCompare(String(a.date || ''));
@@ -622,7 +650,7 @@ function renderRecent() {
                         <span class="badge ${badgeClass}">${escapeHtml(item.category)}</span>
                         <small class="text-muted" style="font-size: 0.75rem;">${escapeHtml(item.date || '')}</small>
                     </div>
-                    <h6 class="card-title mb-1 text-truncate" title="${escapeHtml(item.title)}"><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h6>
+                    <h6 class="card-title mb-1${item.bilingual_title ? '' : ' text-truncate'}" title="${escapeHtml(item.title)}"><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button> ${renderTranslationBadge(item)}</h6>
                     <div class="text-secondary small mb-2 text-truncate" title="${escapeHtml(composerDisplayName(item.composer))}">${renderComposerLinks(item.composer)}</div>
                     ${item.work ? `<div class="small text-muted fst-italic text-truncate" title="${escapeHtml(item.work)}">选自: ${escapeHtml(item.work)}</div>` : ''}
                 </div>
@@ -890,7 +918,7 @@ function renderPaginationTable(data) {
                 <div class="d-flex align-items-center">
                     <button class="btn btn-link p-0 me-3 fs-5 text-decoration-none ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" style="line-height:1;" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span></button>
                     <div>
-                        <div><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button> ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
+                        <div><button type="button" class="score-title score-title-button fw-bold text-dark" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button> ${renderTranslationBadge(item)} ${tonalityBadge} ${voiceBadge} ${lyricIcon}</div>
                         ${item.work ? `<small class="text-muted fst-italic">选自: ${escapeHtml(item.work)}</small>` : ''}
                     </div>
                 </div>
@@ -910,7 +938,7 @@ function renderPaginationTable(data) {
                 <h3 class="h6 mb-2"><button type="button" class="score-title score-title-button fw-bold text-dark text-start" onclick="openDetail('${stableId}')">${escapeHtml(item.title)}</button></h3>
                 <p class="small text-secondary fw-medium mb-1">${renderComposerLinks(item.composer)}</p>
                 ${item.work ? `<p class="small text-muted fst-italic mb-2">选自: ${escapeHtml(item.work)}</p>` : ''}
-                <div class="d-flex flex-wrap gap-1 mb-3">${tonalityBadge}${voiceBadge}${lyricIcon}${subBadge}${item.language ? `<span class="badge bg-light text-secondary border">${escapeHtml(item.language)}</span>` : ''}</div>
+                <div class="d-flex flex-wrap gap-1 mb-3">${renderTranslationBadge(item)}${tonalityBadge}${voiceBadge}${lyricIcon}${subBadge}${item.language ? `<span class="badge bg-light text-secondary border">${escapeHtml(item.language)}</span>` : ''}</div>
                 <div class="d-flex justify-content-between align-items-center border-top pt-3">
                     <button class="btn btn-sm btn-link text-decoration-none p-0 ${favClass}" data-favorite-id="${stableId}" data-favorite-title="${escapeHtml(item.title)}" onclick="toggleFavorite('${stableId}', event)" title="${isFav ? '取消收藏' : '收藏'}" aria-label="${isFav ? '取消收藏' : '收藏'} ${escapeHtml(item.title)}" aria-pressed="${isFav}"><span data-favorite-icon aria-hidden="true">${favIcon}</span><span class="ms-1" data-favorite-copy>${isFav ? '已收藏' : '收藏'}</span></button>
                     <button type="button" class="btn btn-sm btn-primary rounded-pill px-3" onclick="openDetail('${stableId}')">查看详情</button>
@@ -1176,6 +1204,8 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     document.title = `${item.title} | ${BASE_PAGE_TITLE}`;
 
     document.getElementById('mTitle').innerText = item.title;
+    document.getElementById('mTitleStatus').innerHTML = renderTranslationBadge(item);
+    document.getElementById('mTitleMetadata').innerHTML = renderTitleMetadata(item);
     document.getElementById('mComposer').innerHTML = renderComposerLinks(item.composer);
     document.getElementById('mWork').innerText = item.work || "";
     document.getElementById('mLanguage').innerText = item.language || "-";
