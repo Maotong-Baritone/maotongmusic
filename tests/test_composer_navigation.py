@@ -15,6 +15,7 @@ const elements = new Map();
 function element(id) {
   if (!elements.has(id)) elements.set(id, {value:'', innerHTML:'', innerText:'', hidden:false, style:{}, dataset:{},
     classList:{add(){},remove(){},toggle(){},contains(){return false;}},
+    attributes:{},setAttribute(name,value){this.attributes[name]=value;},removeAttribute(name){delete this.attributes[name];},
     scrollIntoView(){},addEventListener(){},replaceChildren(){},querySelector(){return null;}});
   return elements.get(id);
 }

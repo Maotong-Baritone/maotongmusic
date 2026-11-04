@@ -1,7 +1,7 @@
 // 全局变量
 let musicData = [];
 let changeLog = [];
-let filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false };
+let filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false, submissionsOnly: false };
 let sortType = 'relevance';
 let searchDocuments = new WeakMap();
 let currentPage = 1;
@@ -221,6 +221,7 @@ function composerSearchText(composer) {
 function composerUrlFor(id) {
     const url = new URL(window.location.href);
     url.searchParams.delete('score');
+    url.searchParams.delete('view');
     url.searchParams.set('composer', id);
     url.hash = 'mainContentArea';
     return url;
@@ -235,6 +236,7 @@ function renderComposerLinks(raw) {
 }
 
 function libraryPageTitle() {
+    if (filters.submissionsOnly) return `用户投稿 | ${BASE_PAGE_TITLE}`;
     const composer = composerDirectory.get(filters.composerId);
     return composer ? `${composer.name} 的作品 | ${BASE_PAGE_TITLE}` : BASE_PAGE_TITLE;
 }
@@ -245,6 +247,7 @@ function saveLibraryViewToHistory() {
 
 function restoreLibraryView(view) {
     clearNonSearchFilters();
+    filters.submissionsOnly = new URL(window.location.href).searchParams.get('view') === 'submissions';
     filters.search = '';
     document.getElementById('searchInput').value = '';
     if (view?.filters) {
@@ -280,6 +283,31 @@ function navigateToComposer(id) {
     });
     applyFilters();
     document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+window.navigateLibraryView = function(view, event) {
+    if (event) {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button > 0) return;
+        event.preventDefault();
+    }
+    saveLibraryViewToHistory();
+    const target = new URL(window.location.href);
+    target.searchParams.delete('score');
+    target.searchParams.delete('composer');
+    if (view === 'submissions') target.searchParams.set('view', 'submissions');
+    else target.searchParams.delete('view');
+    target.hash = 'mainContentArea';
+    window.history.pushState({}, '', target);
+    restoreLibraryView();
+    ['readerModal', 'detailModal'].forEach(id => bootstrap.Modal.getInstance(document.getElementById(id))?.hide());
+    applyFilters();
+    const scrollToList = () => document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const navbar = document.getElementById('navbarContent');
+    const collapse = bootstrap.Collapse?.getInstance(navbar);
+    if (collapse && navbar.classList.contains('show')) {
+        navbar.addEventListener('hidden.bs.collapse', scrollToList, { once: true });
+        collapse.hide();
+    } else scrollToList();
 }
 
 const categoryMap = { 
@@ -387,7 +415,7 @@ window.toggleFavorite = function(id, event) {
 }
 
 window.showFavorites = function() {
-    resetFilters();
+    navigateLibraryView('all');
     filters.favoritesOnly = true;
     document.getElementById('listTitle').innerText = '❤️ 我的收藏';
     document.getElementById('mainContentArea').scrollIntoView({ behavior: 'smooth' });
@@ -721,7 +749,19 @@ function updateListTitle() {
         viewLinks.hidden = !filters.composerId;
         document.getElementById('composerLiteratureLink').href = `literature.html?composer=${encodeURIComponent(filters.composerId)}#literatureResults`;
     }
-    if (filters.favoritesOnly) {
+    const submissionNotice = document.getElementById('submissionViewNotice');
+    if (submissionNotice) submissionNotice.hidden = !filters.submissionsOnly;
+    for (const [id, active] of [['libraryNav', !filters.submissionsOnly && !filters.favoritesOnly], ['submissionsNav', filters.submissionsOnly]]) {
+        const link = document.getElementById(id);
+        if (link) {
+            link.classList.toggle('active', active);
+            if (active) link.setAttribute('aria-current', 'page');
+            else link.removeAttribute('aria-current');
+        }
+    }
+    if (filters.submissionsOnly) {
+        listTitle.innerText = filters.search ? `用户投稿 · “${filters.search}” 的搜索结果` : '🤝 用户投稿';
+    } else if (filters.favoritesOnly) {
         listTitle.innerText = '❤️ 我的收藏';
     } else if (filters.search) {
         listTitle.innerText = `🔍 “${filters.search}” 的搜索结果`;
@@ -794,7 +834,7 @@ function applyFilters() {
     sortType = document.getElementById('sortSelect').value;
     if ([filters.composer, filters.language, filters.voice, sortType].some((value, index) => value !== previousInputs[index])) currentPage = 1;
     
-    let result = musicData;
+    let result = filters.submissionsOnly ? musicData.filter(item => scoreSubmitterName(item)) : musicData;
     const relevance = new Map();
     
     // 0. 收藏夹过滤
@@ -837,7 +877,7 @@ function applyFilters() {
     updateListTitle();
     if (!currentDetailId) document.title = libraryPageTitle();
     renderPaginationTable(result);
-    document.getElementById('recentSection').style.display = (filters.search || filters.favoritesOnly || filters.composer || filters.language !== 'all' || filters.voice || filters.category !== 'all') ? 'none' : 'block';
+    document.getElementById('recentSection').style.display = (filters.submissionsOnly || filters.search || filters.favoritesOnly || filters.composer || filters.language !== 'all' || filters.voice || filters.category !== 'all') ? 'none' : 'block';
 }
 
 function getCategoryClass(cat) { for (const key in categoryMap) { if (cat.includes(key)) return categoryMap[key]; } return 'bg-other'; }
@@ -864,7 +904,7 @@ function renderPaginationTable(data) {
         if (searchVal) {
             noResult.innerHTML = `
                 <div class="fs-1 mb-3">🧐</div>
-                <h4 class="font-serif mb-3">${activeFilters.length > 0 ? `当前筛选下没有找到“${escapeHtml(searchVal)}”` : '本地暂无相关乐谱'}</h4>
+                <h4 class="font-serif mb-3">${activeFilters.length > 0 ? `当前筛选下没有找到“${escapeHtml(searchVal)}”` : (filters.submissionsOnly ? '用户投稿中暂无相关乐谱' : '本地暂无相关乐谱')}</h4>
                 ${activeFilters.length > 0 ? `
                     <div class="no-result-filter-alert">
                         <p class="fw-bold mb-2">搜索仍受到以下 ${activeFilters.length} 个条件限制：</p>
@@ -898,6 +938,8 @@ function renderPaginationTable(data) {
                  noResult.innerHTML = '<div class="fs-1 mb-3">❤️</div><h4 class="font-serif">您的收藏夹为空</h4><p>当前启用了“仅看收藏”。在列表中点击心形图标即可收藏，或返回查看完整乐谱目录。</p><button type="button" class="btn btn-primary rounded-pill px-4" onclick="clearFiltersAndRetry()">查看完整乐谱目录</button>';
              } else if (activeFilters.length > 0) {
                  noResult.innerHTML = `<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">当前筛选下没有找到乐谱</h4><div class="no-result-filter-alert"><p class="fw-bold mb-2">仍在生效：</p><div class="active-filters-list mb-3">${activeFilterChips}</div><button type="button" class="btn btn-warning rounded-pill px-4 fw-bold" onclick="clearFiltersAndRetry()">清除全部筛选</button></div>`;
+             } else if (filters.submissionsOnly) {
+                 noResult.innerHTML = '<div class="fs-1 mb-3">🤝</div><h4 class="font-serif">暂无已收录的用户投稿</h4><p>投稿通过审核并收录后，会出现在这里。</p><a href="https://upload.maotong.me/" class="btn btn-primary rounded-pill px-4">分享你的乐谱</a>';
              } else {
                  noResult.innerHTML = '<div class="fs-1 mb-3">🧐</div><h4 class="font-serif">未找到相关乐谱</h4><p>它可能尚未收录，也可能暂不具备公开分享条件。</p><a href="contact.html" class="btn btn-primary rounded-pill px-4">💬 联系我求谱</a>';
              }
@@ -963,7 +1005,7 @@ function renderPaginationTable(data) {
 }
 
 window.resetFilters = () => { 
-    currentPage = 1; filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false };
+    currentPage = 1; filters = { category: 'all', composer: '', composerId: '', language: 'all', voice: '', search: '', favoritesOnly: false, submissionsOnly: filters.submissionsOnly };
     sortType = 'relevance'; document.getElementById('sortSelect').value = sortType;
     document.getElementById('searchInput').value = ''; document.getElementById('composerInput').value = ''; 
     document.getElementById('languageSelect').value = 'all'; document.getElementById('voiceInput').value = ''; 

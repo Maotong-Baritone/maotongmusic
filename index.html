@@ -20,7 +20,8 @@
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-2 mt-3 mt-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#mainContentArea">乐谱库</a></li>
+                    <li class="nav-item"><a id="libraryNav" class="nav-link active" aria-current="page" href="index.html#mainContentArea" onclick="navigateLibraryView('all', event)">乐谱库</a></li>
+                    <li class="nav-item"><a id="submissionsNav" class="nav-link" href="?view=submissions#mainContentArea" onclick="navigateLibraryView('submissions', event)">用户投稿</a></li>
                     <li class="nav-item"><button class="nav-link btn border-0 text-start" type="button" onclick="showFavorites()">我的收藏</button></li>
                     <li class="nav-item"><a class="nav-link" href="literature.html">音乐文献</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">专业资源</a></li>
@@ -56,7 +57,7 @@
                     <button type="button" onclick="filterCategory('歌剧咏叹调')">歌剧咏叹调 <span aria-hidden="true">↗</span></button>
                     <button type="button" onclick="filterCategory('艺术歌曲')">艺术歌曲 <span aria-hidden="true">↗</span></button>
                     <button type="button" onclick="filterCategory('声乐套曲')">声乐套曲 <span aria-hidden="true">↗</span></button>
-                    <button type="button" onclick="resetFilters()">全部乐谱 <span aria-hidden="true">→</span></button>
+                    <button type="button" onclick="navigateLibraryView('all')">全部乐谱 <span aria-hidden="true">→</span></button>
                 </div>
             </div>
             <div class="hero-stats" aria-label="馆藏概况">
@@ -128,6 +129,11 @@
     </section>
 
     <div class="container content-section" id="mainContentArea">
+        <div id="submissionViewNotice" class="alert alert-light border rounded-3 mb-4" hidden>
+            <p class="mb-2">这里集中展示用户分享、已审核收录的乐谱。可在下方继续按作曲家、语言和编制筛选，也可通过顶部搜索框检索投稿曲目。</p>
+            <a class="me-3" href="https://upload.maotong.me/">分享你的乐谱 ↗</a>
+            <a href="index.html#mainContentArea" onclick="navigateLibraryView('all', event)">查看全部乐谱 →</a>
+        </div>
         <div class="card filter-panel shadow-sm border-0 mb-4">
             <div class="card-body py-3">
                 <div class="row align-items-center g-3">
@@ -390,6 +396,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/catalog-source.js?v=20261030-sync1"></script>
-    <script src="js/app.js?v=20261104-submitter-credit"></script>
+    <script src="js/app.js?v=20261104-submissions-view"></script>
 </body>
 </html>
