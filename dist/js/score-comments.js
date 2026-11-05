@@ -72,10 +72,22 @@
     function turnstile() {
         turnstileScript ||= new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+            const callback = 'maotongScoreCommentTurnstileLoaded';
+            const failed = () => {
+                clearTimeout(timeout);
+                delete window[callback];
+                script.remove();
+                reject(new Error());
+            };
+            const timeout = setTimeout(failed, 15000);
+            window[callback] = () => {
+                clearTimeout(timeout);
+                delete window[callback];
+                resolve(window.turnstile);
+            };
+            script.src = `https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=${callback}`;
             script.async = true;
-            script.onload = () => window.turnstile ? resolve(window.turnstile) : reject(new Error());
-            script.onerror = () => { script.remove(); reject(new Error()); };
+            script.onerror = failed;
             document.head.append(script);
         }).catch(error => { turnstileScript = undefined; throw error; });
         return turnstileScript;
@@ -90,22 +102,20 @@
         try {
             const service = await turnstile();
             if (current !== generation) return;
-            service.ready(() => {
+            const update = value => {
                 if (current !== generation) return;
-                const update = value => {
+                challenge = value;
+                submit.disabled = !value || !!attempts.get(scoreId)?.busy;
+            };
+            widget = service.render(challengeBox, {
+                sitekey: siteKey, action: 'score_comment', language: 'zh-cn',
+                size: challengeBox.clientWidth < 300 ? 'compact' : 'flexible',
+                'response-field': false, callback: update,
+                'expired-callback': () => update(''), 'error-callback': () => {
                     if (current !== generation) return;
-                    challenge = value;
-                    submit.disabled = !value || !!attempts.get(scoreId)?.busy;
-                };
-                widget = service.render(challengeBox, {
-                    sitekey: siteKey, action: 'score_comment', language: 'zh-cn',
-                    size: challengeBox.clientWidth < 300 ? 'compact' : 'flexible',
-                    'response-field': false, callback: update,
-                    'expired-callback': () => update(''), 'error-callback': () => {
-                        update('');
-                        formStatus.textContent = '验证码暂时不可用，请关闭留言区后重试。';
-                    }
-                });
+                    update('');
+                    formStatus.textContent = '验证码暂时不可用，请关闭留言区后重试。';
+                }
             });
         } catch {
             if (current === generation) formStatus.textContent = '验证码加载失败，请关闭留言区后重试。';
