@@ -643,6 +643,10 @@ footer {
     #detailModal .responsive-modal-body { min-height: 0; flex: 1; overflow: hidden; }
 }
 
+.score-comments-panel { min-height: 0; overflow-y: auto; }
+.score-comments-content { max-width: 40rem; }
+.score-comment-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+
 /* 音乐专业资源页 */
 .resources-page { min-height: 100vh; }
 .resources-page .navbar-brand { color: #fff; text-decoration: none; }

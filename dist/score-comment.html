@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <title>管理我的留言</title>
+    <style>
+        body { max-width: 34rem; padding: 1.5rem; margin: 2rem auto; color: #264653; font: 1rem/1.65 system-ui, sans-serif; }
+        button { padding: .55rem .8rem; font: inherit; border: 1px solid #9e2727; border-radius: .45rem; background: white; color: #9e2727; cursor: pointer; }
+    </style>
+</head>
+<body>
+<main>
+    <a href="index.html">返回乐谱库</a>
+    <h1>管理我的留言</h1>
+    <p id="commentReceiptStatus" data-api="https://comments.maotong.me/score-comments/api/" role="status">正在查询留言状态…</p>
+    <details id="commentWithdraw" hidden>
+        <summary>撤回留言…</summary>
+        <p>撤回后会清除公开服务中的昵称和正文，留言无法恢复。</p>
+        <button type="button" id="commentWithdrawConfirm">确认撤回</button>
+    </details>
+</main>
+<script src="js/score-comments.js?v=2" defer></script>
+</body>
+</html>

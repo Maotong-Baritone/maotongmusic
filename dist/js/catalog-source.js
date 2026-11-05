@@ -30,6 +30,7 @@
             data.scores.length !== pointer.score_count || data.literature.documents.length !== pointer.document_count) {
             throw new Error('云端目录内容无效');
         }
+        data.commentScoreIds = Array.isArray(pointer.comment_score_ids) ? pointer.comment_score_ids : [];
         return data;
     }
     root.WebsiteCatalog = {load};

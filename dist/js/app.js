@@ -429,6 +429,7 @@ async function loadData() {
     try {
         const config = await loadSiteConfig();
         const published = await WebsiteCatalog.load(config);
+        window.ScoreComments?.configure(config.scoreComments, published?.commentScoreIds);
         if (published) {
             musicData = published.scores;
             changeLog = published.logs;
@@ -1170,6 +1171,7 @@ async function loadTouchPdfPreview(url) {
 function initDetailNavigation() {
     const modalElement = document.getElementById('detailModal');
     modalElement.addEventListener('hidden.bs.modal', () => {
+        window.ScoreComments?.select(null);
         clearPdfPreview();
         currentPdfUrl = '';
         currentDetailId = null;
@@ -1251,6 +1253,7 @@ window.openDetail = function(id, { syncUrl = true } = {}) {
     if (!item) return;
 
     currentDetailId = getStableId(item);
+    window.ScoreComments?.select(item);
     if (syncUrl) {
         saveLibraryViewToHistory();
         window.history.pushState({ scoreId: currentDetailId }, '', detailUrlFor(currentDetailId));

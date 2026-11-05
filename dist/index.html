@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20261103-navigation" rel="stylesheet">
+    <link href="css/style.css?v=20261104-comments-pilot" rel="stylesheet">
 </head>
 <body>
 
@@ -225,8 +225,9 @@
                     </div>
                     <label class="small d-block mt-2">若下载后打开了 PDF，请使用阅读器的下载或分享菜单保存。</label>
                     <input id="detailLinkFallback" class="form-control mt-2" aria-label="长按复制乐谱详情链接" readonly hidden>
+                    <button id="scoreCommentsToggle" type="button" class="btn btn-sm btn-outline-secondary rounded-pill mt-2" aria-expanded="false" aria-controls="scoreCommentsPanel" hidden>版本留言</button>
                 </div>
-                <div class="modal-body p-0 responsive-modal-body">
+                <div class="modal-body p-0 responsive-modal-body" id="scoreDetailBody">
                     <div class="row h-100 g-0 responsive-row">
                         <div class="col-lg-3 col-12 p-4 bg-white responsive-col-left">
                             <span class="badge bg-primary mb-3" id="mCategory" style="background-color: #264653 !important;"></span>
@@ -273,6 +274,46 @@
                         </div>
                     </div>
                 </div>
+                <section id="scoreCommentsPanel" class="modal-body score-comments-panel" aria-labelledby="scoreCommentsHeading" hidden>
+                    <div class="score-comments-content mx-auto">
+                        <h2 id="scoreCommentsHeading" class="h5" tabindex="-1">版本留言 <span id="scoreCommentsBadge" class="badge text-bg-secondary">试点</span></h2>
+                        <p id="scoreCommentsTitle" class="small fw-semibold mb-3"></p>
+                        <p class="small text-muted">欢迎分享这一版的调性、编制、使用心得，或指出有问题的 PDF 页码。</p>
+                        <div id="scoreCommentsList" class="vstack gap-2"></div>
+                        <p id="scoreCommentsListStatus" class="small text-muted" role="status"></p>
+                        <button id="scoreCommentsMore" type="button" class="btn btn-sm btn-outline-secondary" hidden>更多留言</button>
+                        <form id="scoreCommentForm" class="score-comment-form border rounded-3 p-3 mt-3">
+                            <h3 class="h6">写一条留言</h3>
+                            <div class="row g-2 mb-2">
+                                <div class="col-sm">
+                                    <label class="form-label small" for="scoreCommentNickname">公开昵称</label>
+                                    <input class="form-control" id="scoreCommentNickname" name="nickname" maxlength="30" required>
+                                </div>
+                                <div class="col-sm">
+                                    <label class="form-label small" for="scoreCommentKind">类型</label>
+                                    <select class="form-select" id="scoreCommentKind" name="kind">
+                                        <option value="edition">版本补充</option>
+                                        <option value="experience">使用心得</option>
+                                        <option value="correction">谱面纠错</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label class="form-label small" for="scoreCommentBody">留言（最多 600 字）</label>
+                            <textarea id="scoreCommentBody" class="form-control" name="body" rows="3" maxlength="600" required aria-describedby="scoreCommentHint"></textarea>
+                            <p class="small text-muted my-2" id="scoreCommentHint">审核通过后公开昵称和正文。请避免个人联系方式和外链。版权或求谱请走「联系我」。</p>
+                            <div id="scoreCommentChallenge" class="mb-2" hidden></div>
+                            <button type="submit" class="btn btn-primary btn-sm">提交审核</button>
+                            <p id="scoreCommentFormStatus" class="small mt-2 mb-0" role="status"></p>
+                        </form>
+                        <div id="scoreCommentReceipt" class="border rounded-3 p-3 mt-3" hidden>
+                            <p class="small mb-2">请保存私密管理链接。拿到链接的人可查看状态并撤回这条留言。</p>
+                            <label for="scoreCommentReceiptUrl" class="visually-hidden">私密管理链接</label>
+                            <input id="scoreCommentReceiptUrl" class="form-control form-control-sm mb-2" readonly>
+                            <button id="scoreCommentCopy" type="button" class="btn btn-sm btn-outline-secondary">复制私密链接</button>
+                            <a id="scoreCommentManage" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">管理这条留言</a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -380,7 +421,8 @@
     <div class="modal fade" id="logModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content" style="border-radius: 12px;"><div class="modal-header border-0"><h5 class="modal-title fw-bold font-serif">最近动态</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭最近动态"></button></div><div class="modal-body" id="logBody"></div></div></div></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/catalog-source.js?v=20261030-sync1"></script>
-    <script src="js/app.js?v=20261104-submissions-view"></script>
+    <script src="js/catalog-source.js?v=20261104-comments"></script>
+    <script src="js/score-comments.js?v=2"></script>
+    <script src="js/app.js?v=20261104-comments-cloud"></script>
 </body>
 </html>

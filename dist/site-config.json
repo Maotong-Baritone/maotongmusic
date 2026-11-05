@@ -2,6 +2,11 @@
   "catalogSource": {
     "manifestUrl": "https://scores.maotong.me/website/current.json"
   },
+  "scoreComments": {
+    "origin": "https://maotong.me",
+    "apiBase": "https://comments.maotong.me/score-comments/api/",
+    "receiptPath": "score-comment.html"
+  },
   "scoreStorage": {
     "baseUrl": "https://scores.maotong.me",
     "objectPrefix": "scores",
