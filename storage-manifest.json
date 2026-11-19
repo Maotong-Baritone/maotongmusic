@@ -2,11 +2,11 @@
   "schema_version": 1,
   "key_strategy": "public_id_sharded",
   "object_prefix": "scores",
-  "entry_count": 5447,
-  "unique_content_count": 5425,
+  "entry_count": 5452,
+  "unique_content_count": 5430,
   "duplicate_content_groups": 22,
   "duplicate_file_count": 22,
-  "total_size": 10983382278,
+  "total_size": 10993680492,
   "entries": [
     {
       "public_id": "001caf65-b47b-5774-980a-9d7241121678",
@@ -1598,6 +1598,13 @@
       "sha256": "0667e227d55546782db0075acfe8fc35886a89be839c218c44fa48412fdf2115"
     },
     {
+      "public_id": "0b320f9e-c1cb-4f3d-a9e2-82071640d34f",
+      "source_path": "scores/合唱作品/0b320f9e-c1cb-4f3d-a9e2-82071640d34f.pdf",
+      "storage_key": "scores/0b/0b320f9e-c1cb-4f3d-a9e2-82071640d34f.pdf",
+      "file_size": 2614416,
+      "sha256": "66bfe082b96d98b208131a9813021f497f19d85f7d0fb3f57e652c823fff5b1e"
+    },
+    {
       "public_id": "0b3e5178-3aac-476b-a901-f7381cb44251",
       "source_path": "scores/歌剧咏叹调/0b3e5178-3aac-476b-a901-f7381cb44251.pdf",
       "storage_key": "scores/0b/0b3e5178-3aac-476b-a901-f7381cb44251.pdf",
@@ -3003,6 +3010,13 @@
       "storage_key": "scores/13/13fef65e-3951-5c81-bfb3-3220ab8081f9.pdf",
       "file_size": 176268,
       "sha256": "6ba273a9b483136f4cb8bd81091c1709053573679300ccaff3a9a2833575dfdd"
+    },
+    {
+      "public_id": "13ff3b1c-8462-49f0-be2d-0be7bf3ffc3c",
+      "source_path": "scores/合唱作品/13ff3b1c-8462-49f0-be2d-0be7bf3ffc3c.pdf",
+      "storage_key": "scores/13/13ff3b1c-8462-49f0-be2d-0be7bf3ffc3c.pdf",
+      "file_size": 1476613,
+      "sha256": "14c2599bdf747a1870d684bec4a43d66dc36ba9ef3b714b19ac2993dad254ded"
     },
     {
       "public_id": "140d7d18-7f08-5319-be7a-3d813ee4bc4e",
@@ -6461,6 +6475,13 @@
       "storage_key": "scores/2b/2b826ab3-1cbb-4d6f-9bfb-1c6bcf5b0445.pdf",
       "file_size": 176655,
       "sha256": "8acf6511484dc620e27c6496497457aac57d449b10d938d79fe8c296291f2a23"
+    },
+    {
+      "public_id": "2b95cbc2-0ee8-432f-8ccb-6fe6fb378ad7",
+      "source_path": "scores/声乐套曲/2b95cbc2-0ee8-432f-8ccb-6fe6fb378ad7.pdf",
+      "storage_key": "scores/2b/2b95cbc2-0ee8-432f-8ccb-6fe6fb378ad7.pdf",
+      "file_size": 3413759,
+      "sha256": "25595360aacda72ad25bfb248b8afacb2aaa313f77c66dc78639d988aa694ecb"
     },
     {
       "public_id": "2ba98d71-a3f3-56c0-9a9d-6c8c07254d99",
@@ -15925,6 +15946,13 @@
       "storage_key": "scores/6a/6ad4ab93-d1a0-596d-9850-c9c80322e0e2.pdf",
       "file_size": 277709,
       "sha256": "7e79d9ba4d1d84238ce043b458cc047ed38669fbcea80864cda96a1120f57917"
+    },
+    {
+      "public_id": "6ad8d029-ca27-4e60-b7d9-b8414a1404e6",
+      "source_path": "scores/合唱作品/6ad8d029-ca27-4e60-b7d9-b8414a1404e6.pdf",
+      "storage_key": "scores/6a/6ad8d029-ca27-4e60-b7d9-b8414a1404e6.pdf",
+      "file_size": 1552304,
+      "sha256": "bdfb5b60ecbb06923b78dd3ddb2470cebd0dcebba3d7e573c66079ff0342f83f"
     },
     {
       "public_id": "6aed4917-9dc2-4df8-bd14-afe47cd9dfc3",
@@ -35798,6 +35826,13 @@
       "storage_key": "scores/ee/eef33e30-0a7a-540a-b29f-957189b6c74d.pdf",
       "file_size": 738041,
       "sha256": "9370c7e744e1d07dd3db0f29f06c26dcb53c6196956a2019cdd41136c525c8df"
+    },
+    {
+      "public_id": "ef14efec-ef52-4cb0-b096-ff49555abd8d",
+      "source_path": "scores/合唱作品/ef14efec-ef52-4cb0-b096-ff49555abd8d.pdf",
+      "storage_key": "scores/ef/ef14efec-ef52-4cb0-b096-ff49555abd8d.pdf",
+      "file_size": 1241122,
+      "sha256": "c4d08d99358b605f595c3a3072fdd356623343383ed03301312d6cc6f17f6d23"
     },
     {
       "public_id": "ef2f225a-e305-5a9e-8cb8-18871d46fa15",
